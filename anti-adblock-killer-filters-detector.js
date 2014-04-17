@@ -1,0 +1,1 @@
+Aak.requiresfirefox();

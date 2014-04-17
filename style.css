@@ -1,0 +1,41 @@
+@charset=utf-8;
+
+html {
+background-color:#eee;
+}
+
+body {
+  font-variant:small-caps;
+  margin: 5% 10%;
+  padding:5% 5%;
+  background-color:#fff;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 12px #555;
+  border-radius:5px;
+}
+
+img {
+  width:96px;
+  height:96px;
+}
+
+.subscribe {
+  border-radius:5px;
+  background-color:#c00; 
+  padding:10px 30px; 
+  border:1px solid #f00;
+  color:white;
+}
+
+.subscribe:hover {
+  background-color:#000; 
+  border:1px solid #333;
+  color:white;
+}
+
+.notice {
+  margin: 10px 10px;
+  padding: 10px;
+  background-color:#eee;
+  border: 1px solid #ccc;
+}
