@@ -5,8 +5,9 @@
 ! Author: Reek | http://reeksite.com/
 ! Homepage: http://userscripts.org/scripts/show/155840
 ! Contact: http://userscripts.org/scripts/discuss/155840
-! Rules: https://adblockplus.org/fr/filters
-! RedundantRuleChecker: https://arestwo.org/famlam/redundantRuleChecker.html
+! Github: https://github.com/reek/anti-adblock-killer
+! WritingRules: https://adblockplus.org/fr/filters
+! RedundantRule: https://arestwo.org/famlam/redundantRuleChecker.html
 !----------------------------------------------------------------------------------------------------!
 ! Used to detect this list
 !----------------------------------------------------------------------------------------------------!
@@ -321,7 +322,7 @@ mydisc.net#@#.ad_2
 @@||b.scorecardresearch.com^$xmlhttprequest,object-subrequest,domain=tv.majorleaguegaming.com
 @@||pubads.g.doubleclick.net/gampad/ads?*$object-subrequest,xmlhttprequest,domain=tv.majorleaguegaming.com
 ! hentai-flix.net
-!hentai-flix.net###wppa-overlay-bg
+hentai-flix.net###wppa-overlay-bg
 hentai-flix.net##.trs_sticky_notice_text_box
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
