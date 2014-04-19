@@ -6,7 +6,7 @@
 ! Homepage: http://userscripts.org/scripts/show/155840
 ! Contact: http://userscripts.org/scripts/discuss/155840
 ! Rules: https://adblockplus.org/fr/filters
-! Redundancy Check: https://arestwo.org/famlam/redundantRuleChecker.html
+! RedundantRuleChecker: https://arestwo.org/famlam/redundantRuleChecker.html
 !----------------------------------------------------------------------------------------------------!
 ! Used to detect this list
 !----------------------------------------------------------------------------------------------------!
