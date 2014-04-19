@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2013
+! Version: 7.0
 ! License: Creative Commons BY-NC-SA
 ! Title: Anti-Adblock Killer | Filters for Adblockers
 ! Author: Reek | http://reeksite.com/
@@ -321,7 +321,7 @@ mydisc.net#@#.ad_2
 @@||b.scorecardresearch.com^$xmlhttprequest,object-subrequest,domain=tv.majorleaguegaming.com
 @@||pubads.g.doubleclick.net/gampad/ads?*$object-subrequest,xmlhttprequest,domain=tv.majorleaguegaming.com
 ! hentai-flix.net
-hentai-flix.net###wppa-overlay-bg
+!hentai-flix.net###wppa-overlay-bg
 hentai-flix.net##.trs_sticky_notice_text_box
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
