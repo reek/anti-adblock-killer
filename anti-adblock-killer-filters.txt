@@ -389,6 +389,9 @@ mamega.com###fblikebg
 ||cdn.q.gs/js/entry.js$script
 ! shorte.st
 ||cdn.shorte.st/link-converter.min.js
+! filecore.co.nz / fcore.eu
+filecore.co.nz,fcore.eu#@#div[id^="div-gpt-ad-"]
+@@||partner.googleadservices.com/gpt/*$domain=filecore.co.nz|fcore.eu,script
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
@@ -446,6 +449,10 @@ comopremium.com.ar##IMG[src="templates/plugmod/images/a.png"]
 rapid8.com###blcokMzg
 rapid8.com##.backk
 ||mobatory.com^$domain=rapid8.com
+! eami.in
+@@||eami.in/images/js/ads.js
+! @@||cnzz.mmstat.com/9a.gif$domain=
+@@||cnzz.mmstat.com/*.gif$domain=400gb.com
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##[href^="http://api.adlure.net/partner/click/"]
@@ -559,8 +566,10 @@ adbuck.cc###col_publi
 ||adbuck.cc^$third-party
 @@||adbuck.cc/player/*
 ! livesoccerhq.com
+livesoccerhq.com,fixolas.net##[href^="http://fixolas.net/cms/"]
 livesoccerhq.com,fixolas.net#@#[align="absmiddle"]
-livesoccerhq.com,fixolas.net##[href^="https://action.metaffiliation.com/trk.php?"] 
+livesoccerhq.com,fixolas.net##[href^="https://action.metaffiliation.com/trk.php?"]
+||go.ad2up.com^$domain=livesoccerhq.com|fixolas.net
 livesoccerhq.com,fixolas.net###pubclose
 livesoccerhq.com,fixolas.net###pubclosep2
 ! sport-show.fr
@@ -574,6 +583,8 @@ cdn.tiv.pw##.floater
 ! sharecast.to
 sharecast.to##iframe[src^="http://delitaly.com.br/"]
 sharecast.to##iframe[src^="http://mixturecloud.com.br/"]
+! hdcast.org
+hdcast.org##[id^="html"]
 ! Others ---------------------------------------------------------------------------------------
 ! tvi
 tvi24.iol.pt##iframe[id=barraIOL]
@@ -622,3 +633,4 @@ filestube.com##A[href^="https://shorte.st/ref/"] FONT[color="red"]
 ! temp
 filmovizija.com##DIV[style="width: 100%; top: 0px; bottom: 0px; left: 0px; right: 0px; background: none repeat scroll 0% 0% rgb(0, 0, 0); position: fixed; z-index: 100000; opacity: 0.8;"]
 filmovizija.com##DIV[style="width: 400px; font-family: Arial; font-size: 14px; top: 20px; margin-right: auto; background: none repeat scroll 0% 0% rgb(255, 255, 255); z-index: 100001; position: fixed; left: 50%; margin-left: -200px; margin-top: 200px; color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-radius: 5px;"]
+
