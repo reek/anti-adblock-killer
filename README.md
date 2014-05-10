@@ -7,14 +7,15 @@ Anti-Adblock Killer removes many protections used on some website that force the
 * <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a> (Chrome)
 * <a href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/">Tampermonkey</a> (Opera)
 * <a href="http://ss-o.net/safari/extension/NinjaKit.safariextz">NinjaKit</a> (Safari)
+
 ##### Note: Restart browser
 
-#### Step 2: Anti-Adblock Killer | Filters for Adblockers
-* <a class="subscribe" href="http://bc.vc/jGFxOb">Subscribe</a>
+#### Step 2: Subscribe filters
+* <a class="subscribe" href="http://bc.vc/jGFxOb">Anti-Adblock Killer | Filters for Adblockers</a>
 
-#### Step 3: Anti-Adblock Killer | Userscript
+#### Step 3: Install userscript
 * <a class="subscribe" href="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js
-">Install</a>
+">Anti-Adblock Killer | Userscript</a>
 
 ## Help
 
