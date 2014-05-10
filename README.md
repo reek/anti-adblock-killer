@@ -14,12 +14,9 @@ Anti-Adblock Killer removes many protections used on some website that force the
 * <a class="subscribe" href="http://bc.vc/jGFxOb">Subscribe</a>
 
 #### Step 3: Userscript
-* <a class="subscribe" href="https://userscripts.org/scripts/source/155840.user.js
-">Install</a> from userscripts.org
-* <a class="subscribe" href="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js
-">Install</a> from greasyfork.org
-* <a class="subscribe" href="https://github.com/reek/anti-adblock-killer/raw/master/anti-adblock-killer.user.js
-">Install</a> from github.com
+* <a class="subscribe" href="https://userscripts.org/scripts/source/155840.user.js">Install</a> from userscripts.org
+* <a class="subscribe" href="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js">Install</a> from greasyfork.org
+* <a class="subscribe" href="https://github.com/reek/anti-adblock-killer/raw/master/anti-adblock-killer.user.js">Install</a> from github.com
 
 
 ## Help
