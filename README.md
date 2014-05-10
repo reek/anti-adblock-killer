@@ -8,13 +8,14 @@ Anti-Adblock Killer removes many protections used on some website that force the
 * Tampermonkey (Opera)
 * NinjaKit (Safari)
 
-#### Step 2:
+#### Step 2: Restart browser
 
-#### Step 3: Subscribe filters
-* https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
+#### Step 3: Anti-Adblock Killer | Filters for Adblockers
+* <a class="subscribe" href="http://bc.vc/jGFxOb">Subscribe</a>
 
-#### Step 4: Install userscript
-* https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js
+#### Step 4: Anti-Adblock Killer | Userscript
+* <a class="subscribe" href="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js
+">Install</a>
 
 ## Help
 
