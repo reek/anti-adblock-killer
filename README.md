@@ -7,6 +7,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Instruction
+
+##### Requires: Adblock or Adblock Plus
+
 #### Step 1: Script Manager (Install)
 * <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png"/> <a href="https://addons.mozilla.org/firefox/addon/greasemonkey/">Greasemonkey</a> / <a href="https://addons.mozilla.org/firefox/addon/scriptish/">Scriptish</a>
 * <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png"/> <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a>
