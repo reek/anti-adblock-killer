@@ -1197,7 +1197,7 @@ Rules = {
 	  var reClass = /^[a-z]{8} [a-z]{8}$/;
 	  var reStyle = /top: -?[\d]+px; opacity: [\d]; visibility: visible;/;
 	  var reBg = /^[a-z]{8}-bg$/;
-	  var reMessage = /Il semblerait que vous utilisiez un bloqueur de publicité !/;
+	  var reMessage = /Il semblerait que vous utilisiez un bloqueur de publicitÃ© !/;
 	  
   	  // Full Screen Message (Premium)
   	  if (insertedNode.id &&
@@ -1232,7 +1232,7 @@ Rules = {
   	  var reName1 = /(div|span|b|i|font|strong|center)/i;
   	  var reName2 = /[abisuqp]{1}/i;
   	  var reWords1 = /ad blocker|ad block|ad-block|adblocker|ad-blocker|adblock|bloqueur|bloqueador|Werbeblocker|adblockert|?????? ???/i;
-  	  var reWords2 = /disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|ape?e???p???s?|?????????|állítsd le/i;
+  	  var reWords2 = /disable|dÃ©sactivez|dÃ©sactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|ape?e???p???s?|?????????|Ã¡llÃ­tsd le/i;
   	  var reImg = /data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAA|data:image\/gif;base64,R0lGODlhMwLKAPcAAAAAAIAAAACAAICAAAAA|filmovizija.com\/kodee.png|dbzog.de\/Bilder\/dbzogb1.png/;
 
   	    // Communs
