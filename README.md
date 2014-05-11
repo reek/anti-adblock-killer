@@ -3,10 +3,10 @@ Anti-Adblock Killer removes many protections used on some website that force the
 
 ## Instruction
 #### Step 1: Script Manager (Install)
-* <a href="https://addons.mozilla.org/firefox/addon/greasemonkey/">Greasemonkey</a> / <a href="https://addons.mozilla.org/firefox/addon/scriptish/">Scriptish</a> (Firefox)
-* <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a> (Chrome)
-* <a href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/">Tampermonkey</a> (Opera)
-* <a href="http://ss-o.net/safari/extension/NinjaKit.safariextz">NinjaKit</a> (Safari)
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png"/> <a href="https://addons.mozilla.org/firefox/addon/greasemonkey/">Greasemonkey</a> / <a href="https://addons.mozilla.org/firefox/addon/scriptish/">Scriptish</a>
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png"/> <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a>
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png"/> <a href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/">Tampermonkey</a>
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png"/> <a href="http://ss-o.net/safari/extension/NinjaKit.safariextz">NinjaKit</a>
 
 ##### Note: Restart browser
 
@@ -23,10 +23,10 @@ Anti-Adblock Killer removes many protections used on some website that force the
 
 
 ## Browsers supported
-* Firefox
-* Chrome
-* Opera
-* Safari
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png"/> Firefox
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png"/> Chrome
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png"/> Opera
+* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png"/> Safari
 
 
 ## Sites supported
