@@ -1231,8 +1231,8 @@ Rules = {
   	  var reId = /^[a-z0-9]{4,10}$/i;
   	  var reName1 = /(div|span|b|i|font|strong|center)/i;
   	  var reName2 = /[abisuqp]{1}/i;
-  	  var reWords1 = /ad blocker|ad block|ad-block|adblocker|ad-blocker|adblock|bloqueur|bloqueador|Werbeblocker|adblockert|?????? ???/i;
-  	  var reWords2 = /disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|ape?e???p???s?|?????????|állítsd le/i;
+  	  var reWords1 = /ad blocker|ad block|ad-block|adblocker|ad-blocker|adblock|bloqueur|bloqueador|Werbeblocker|adblockert|آدبلوك بلس/i;
+  	  var reWords2 = /disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|απενεργοποίηση|запрещать|állítsd le/i;
   	  var reImg = /data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAA|data:image\/gif;base64,R0lGODlhMwLKAPcAAAAAAIAAAACAAICAAAAA|filmovizija.com\/kodee.png|dbzog.de\/Bilder\/dbzogb1.png/;
 
   	    // Communs
