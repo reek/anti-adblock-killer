@@ -45,7 +45,7 @@ Coming soon...
 Coming soon...
 
 
-## license 
+## License 
 * Creative Commons BY-NC-SA
 
 ## Changelog
