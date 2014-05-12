@@ -24,7 +24,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 #### Step 1: Script Manager (Install)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) / [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) / Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
 ##### Note: Restart browser
@@ -41,16 +41,24 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Features
 * Disable Anti-Adblock Protections
 * Check & Notify updates
-* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues)
-
+* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues) on Github
+* [Suggest Features](http://userscripts.org/scripts/discuss/155840) on Userscripts
 
 ## Report
-* [Issue](https://github.com/reek/anti-adblock-killer/issues)
-
+* [Issue](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
 ## Help
-Coming soon...
-
+1. Check if userscript manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
+2. Check if Anti AdBlock Killer is activated.
+3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript
+4. Check if you have subscribe to Anti AdBlock Killer | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
+5. Check if you have another userscript not interfere with Anti AdBlock Killer.
+6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
+7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
+8. Check if the site is in "Supported Sites".
+  1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
+  2. If it exists, but the script does not work, it probably means that the anti adblock protection has changed in it please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+9. Consult Discussions or Issues
 
 ## Browsers supported
 * ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox
@@ -60,14 +68,23 @@ Coming soon...
 
 
 ## Sites supported
-Coming soon...
+**Works With**
+* Antiblock.org V2 & V3
+* Anti-Adblock V2 (d3xt3r.com)
+* RTK Anti Adblock
+* Anti Ad Buster
+* AADB Anti Ads Blocker
+* AdUnBlock Free & Premium
+* FuckAdBlock
+* ABT - Ad Block Test
+* Block Adblock (thepcspy.com)
 
 
 ## License 
 * Creative Commons BY-NC-SA
 
 ## Changelog
-* <a href="https://github.com/reek/anti-adblock-killer/wiki/Changelog">See changes</a>
+* [See changes](https://github.com/reek/anti-adblock-killer/wiki/Changelog)
 
 ## Mirrors
 * [userscripts](https://userscripts.org/scripts/show/155840)
