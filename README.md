@@ -4,7 +4,12 @@
 Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
 
 ## Donate
+> Make a donation is an act of generosity, and because your support, however modest it is necessary. Because you love or enjoy Anti-Adblock Killer. Your donations help to continue to support and improve this project!
 
+> Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.
+
+
+<ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted"><img alt="Donate Paypal" title="Donate Paypal" src="http://i.imgur.com/BMZdW6j.png"></a></li><li><img alt="Donate Bitcoins" title="Donate Bitcoins" src="http://i.imgur.com/H2u0ctp.png"> 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n</li><li><a href="https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840"><img alt="Flattr this" title="Flattr this" src="http://i.imgur.com/DhaHwAV.png"></a></li></ul>
 
 ## Instruction
 
@@ -19,26 +24,26 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Note: Restart browser
 
 #### Step 2: Filters for Adblockers
-* <a class="subscribe" href="http://bc.vc/jGFxOb">Subscribe</a>
+* [Subscribe](http://bc.vc/jGFxOb)
 
 #### Step 3: Userscript
-* <a class="subscribe" href="https://userscripts.org/scripts/source/155840.user.js">Install</a> from userscripts.org
-* <a class="subscribe" href="https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js">Install</a> from greasyfork.org
-* <a class="subscribe" href="https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js">Install</a> from openuserjs.org
-* <a class="subscribe" href="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js">Install</a> from github.com
+* [Install](https://userscripts.org/scripts/source/155840.user.js) from userscripts.org
+* [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) from greasyfork.org
+* [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) from openuserjs.org
+* [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) from github.com
 
 ## Issues
-https://github.com/reek/anti-adblock-killer/issues
+* [New issue](https://github.com/reek/anti-adblock-killer/issues)
 
 ## Help
 Coming soon...
 
 
 ## Browsers supported
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png"/> Firefox
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png"/> Chrome
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png"/> Opera
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png"/> Safari
+* ![ Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png)
+* ![ Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png)
+* ![ Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png)
+* ![ Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png)
 
 
 ## Sites supported
@@ -49,7 +54,7 @@ Coming soon...
 * Creative Commons BY-NC-SA
 
 ## Changelog
-Coming soon...
+* <a href="https://github.com/reek/anti-adblock-killer/wiki/Changelog">See changes</a>
 
 ## More
 * userscripts https://userscripts.org/scripts/show/155840
@@ -57,7 +62,7 @@ Coming soon...
 * openuserjs https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek
 
 
-## Tag
+## Tags
 * Disable Anti Adblock
 * Remove Anti Adblock
 * Skip Anti Adblock
