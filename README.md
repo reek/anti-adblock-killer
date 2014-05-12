@@ -3,13 +3,19 @@
 ## About
 Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
 
+
+## /!\ Important /!\
+* **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
+* **BEFORE REPORTING ANYTHING PLEASE READ THIS**
+
+
 ## Donate
 > Make a donation is an act of generosity, and because your support, however modest it is necessary. Because you love or enjoy Anti-Adblock Killer. Your donations help to continue to support and improve this project!
 
 > Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.
 
+<ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted"><img alt="Donate Paypal" title="Donate Paypal" src="http://i.imgur.com/BMZdW6j.png"> Donate</a></li><li><img alt="Donate Bitcoins" title="Donate Bitcoins" src="http://i.imgur.com/H2u0ctp.png"> 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n</li><li><a href="https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840"><img alt="Flattr this" title="Flattr this" src="http://i.imgur.com/DhaHwAV.png"> Donate</a></li></ul>
 
-<ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted"><img alt="Donate Paypal" title="Donate Paypal" src="http://i.imgur.com/BMZdW6j.png"></a></li><li><img alt="Donate Bitcoins" title="Donate Bitcoins" src="http://i.imgur.com/H2u0ctp.png"> 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n</li><li><a href="https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840"><img alt="Flattr this" title="Flattr this" src="http://i.imgur.com/DhaHwAV.png"></a></li></ul>
 
 ## Instruction
 
@@ -32,18 +38,25 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) from openuserjs.org
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) from github.com
 
-## Issues
-* [New issue](https://github.com/reek/anti-adblock-killer/issues)
+## Features
+* Disable Anti-Adblock Protections
+* Check & Notify updates
+* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues)
+
+
+## Report
+* [Issue](https://github.com/reek/anti-adblock-killer/issues)
+
 
 ## Help
 Coming soon...
 
 
 ## Browsers supported
-* ![ Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png)
-* ![ Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png)
-* ![ Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png)
-* ![ Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png)
+* ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox
+* ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) Chrome
+* ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) Opera
+* ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) Safari
 
 
 ## Sites supported
@@ -56,7 +69,7 @@ Coming soon...
 ## Changelog
 * <a href="https://github.com/reek/anti-adblock-killer/wiki/Changelog">See changes</a>
 
-## More
+## Mirrors
 * userscripts https://userscripts.org/scripts/show/155840
 * greasyfork https://greasyfork.org/scripts/735-anti-adblock-killer-reek
 * openuserjs https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek
