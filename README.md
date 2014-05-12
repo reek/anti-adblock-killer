@@ -22,10 +22,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Requires: Adblock or Adblock Plus
 
 #### Step 1: Script Manager (Install)
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png"/> <a href="https://addons.mozilla.org/firefox/addon/greasemonkey/">Greasemonkey</a> / <a href="https://addons.mozilla.org/firefox/addon/scriptish/">Scriptish</a>
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png"/> <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a>
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png"/> <a href="https://addons.opera.com/en/extensions/details/tampermonkey-beta/">Tampermonkey</a>
-* <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png"/> <a href="http://ss-o.net/safari/extension/NinjaKit.safariextz">NinjaKit</a>
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png") [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) / [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
 ##### Note: Restart browser
 
