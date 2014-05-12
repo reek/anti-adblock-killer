@@ -70,9 +70,9 @@ Coming soon...
 * <a href="https://github.com/reek/anti-adblock-killer/wiki/Changelog">See changes</a>
 
 ## Mirrors
-* userscripts https://userscripts.org/scripts/show/155840
-* greasyfork https://greasyfork.org/scripts/735-anti-adblock-killer-reek
-* openuserjs https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek
+* [userscripts](https://userscripts.org/scripts/show/155840)
+* [greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
+* [openuserjs](https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek)
 
 
 ## Tags
