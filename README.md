@@ -14,7 +14,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 > Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.
 
-<ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted"><img alt="Donate Paypal" title="Donate Paypal" src="http://i.imgur.com/BMZdW6j.png"> Donate</a></li><li><img alt="Donate Bitcoins" title="Donate Bitcoins" src="http://i.imgur.com/H2u0ctp.png"> 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n</li><li><a href="https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840"><img alt="Flattr this" title="Flattr this" src="http://i.imgur.com/DhaHwAV.png"> Donate</a></li></ul>
+<ul><li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted"><img alt="Donate Paypal" title="Donate Paypal" src="http://i.imgur.com/BMZdW6j.png"></a></li><li><img alt="Donate Bitcoins" title="Donate Bitcoins" src="http://i.imgur.com/H2u0ctp.png"> 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n</li><li><a href="https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840"><img alt="Flattr this" title="Flattr this" src="http://i.imgur.com/DhaHwAV.png"></a></li></ul>
 
 
 ## Instruction
