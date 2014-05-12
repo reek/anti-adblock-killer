@@ -22,7 +22,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Requires: Adblock or Adblock Plus
 
 #### Step 1: Script Manager (Install)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png") [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) / [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) / [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
