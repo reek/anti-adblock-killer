@@ -5,8 +5,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## /!\ Important /!\
-* **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
-* **BEFORE REPORTING ANYTHING PLEASE READ THIS**
+> **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
+> **BEFORE REPORTING ANYTHING PLEASE READ THIS**
 
 
 ## Donate
@@ -68,7 +68,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Sites supported
-**Works With**
+##### Works With
 * Antiblock.org V2 & V3
 * Anti-Adblock V2 (d3xt3r.com)
 * RTK Anti Adblock
