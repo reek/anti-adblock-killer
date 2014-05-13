@@ -33,7 +33,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Subscribe](http://bc.vc/jGFxOb)
 
 #### Step 3: Userscript
-* [Install](https://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
+* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
@@ -87,7 +87,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [See changes](https://github.com/reek/anti-adblock-killer/wiki/Changelog)
 
 ## Mirrors
-* [userscripts](https://userscripts.org:8080/scripts/show/155840)
+* [userscripts](http://userscripts.org:8080/scripts/show/155840)
 * [greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
 * [openuserjs](https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek)
 
