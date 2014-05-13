@@ -31,7 +31,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 #### Step 2: Filters for Adblockers
 * [Subscribe](http://bc.vc/jGFxOb) from jbin
-* * [Subscribe](abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock%20Killer%20|%20Filters%20for%20Adblockers) (auto)
+
 
 #### Step 3: Userscript
 * [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
