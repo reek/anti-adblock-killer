@@ -39,7 +39,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 
 ## Features
-* Disable Anti-Adblock Protections
+* Detect & Kill Anti-Adblock Systems
 * Check & Notify updates
 * [Suggest Features](https://github.com/reek/anti-adblock-killer/issues) on Github
 * [Suggest Features](http://userscripts.org/scripts/discuss/155840) on Userscripts
