@@ -30,7 +30,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Note: Restart browser
 
 #### Step 2: Filters for Adblockers
-* [Subscribe](http://bc.vc/jGFxOb) from jbin
+* [Subscribe](http://bc.vc/jGFxOb)
 
 
 #### Step 3: Userscript
