@@ -101,6 +101,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+-
+
+##### Version 7.1 (May 14, 2014)
 * New: Anti-Adblock Killer on Greasefork.org
 * New: Anti-Adblock Killer on Openuserjs.org
 * New: Anti-Adblock Killer on Github.com
