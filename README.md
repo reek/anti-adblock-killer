@@ -27,7 +27,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) / Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
-##### Note: Restart browser
+##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
 * [Subscribe](http://bc.vc/jGFxOb)
@@ -39,6 +39,14 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 
+#### Step 4: Ready
+* [Test](http://tinyurl.com/qecfa7w)
+* [Say Thanks](http://bc.vc/OgKw1G)
+* Donate
+* Review
+* Add to favorites
+* Share it
+
 ## Features
 * Detect & Kill Anti-Adblock Systems
 * Detect Anti-Adblock Killer Filters
@@ -47,7 +55,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Suggest Features](http://userscripts.org:8080/scripts/discuss/155840) on Userscripts
 
 ## Report
-* [Issue](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+* [Issues, bugs, new site or fix site](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
 ## Help
 1. Check if userscript manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
