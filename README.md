@@ -79,10 +79,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Browsers supported
-* ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox
-* ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) Chrome
-* ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) Opera
-* ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) Safari
+* ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox &#10004;
+* ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) Chrome &#10004;
+* ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) Opera &#10004;
+* ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) Safari &#10004;
 
 
 ## Sites supported
