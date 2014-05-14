@@ -30,7 +30,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) / Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
-##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
+> ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
 * [Subscribe](http://bc.vc/jGFxOb)
@@ -42,7 +42,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 
-##### Note: [Test](http://tinyurl.com/qecfa7w)
+> ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
 #### Step 4: Support Author
 * [Say Thanks](http://bc.vc/OgKw1G)
