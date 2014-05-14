@@ -4,7 +4,7 @@
 Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
 
 
-## /!\ Important /!\
+## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
 > **BEFORE REPORTING ANYTHING PLEASE READ THIS**
 
