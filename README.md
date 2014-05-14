@@ -1,12 +1,14 @@
 <h1><img width="32px" height="32px" src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png"/> Anti-Adblock Killer | Reek</h1>
 
-## About
-Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
-
 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
 > **BEFORE REPORTING ANYTHING PLEASE READ THIS**
+
+
+## About
+Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
+
 
 
 ## Donate
