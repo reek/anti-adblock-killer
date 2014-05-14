@@ -39,13 +39,15 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 
-#### Step 4: Ready
-* [Test](http://tinyurl.com/qecfa7w)
+##### Note: [Test](http://tinyurl.com/qecfa7w)
+
+#### Step 4: Support Author
 * [Say Thanks](http://bc.vc/OgKw1G)
-* Donate
-* Review
-* Add to favorites
-* Share it
+* Donate it
+* Rate it. (Reviews)
+* Become it Fan. (Fans)
+* Share it (Social Network, Forums, Blogs, etc...)
+
 
 ## Features
 * Detect & Kill Anti-Adblock Systems
@@ -54,8 +56,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Suggest Features](https://github.com/reek/anti-adblock-killer/issues) on Github
 * [Suggest Features](http://userscripts.org:8080/scripts/discuss/155840) on Userscripts
 
+
 ## Report
 * [Issues, bugs, new site or fix site](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+
 
 ## Help
 1. Check if userscript manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
@@ -69,6 +73,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
   1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
   2. If it exists, but the script does not work, it probably means that the anti adblock protection has changed in it please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 9. Consult Discussions or Issues
+
 
 ## Browsers supported
 * ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox
