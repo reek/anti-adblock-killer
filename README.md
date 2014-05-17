@@ -109,6 +109,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Upcoming changes
 * Fix: getVersion for unsupported script managers
 * Fix: getScriptManager news script managers
+* Fix: filmovizija.com
+* Fix: uptobox.com
 
 ##### Version 7.1 (May 14, 2014)
 * New: Anti-Adblock Killer on Greasefork.org
