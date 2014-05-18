@@ -91,8 +91,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) Safari &#10004;
 
 
-## Sites supported
-##### Contains
+## Sites Supported
+##### That contains a generic script
 * Antiblock.org V2 & V3
 * Anti-Adblock V2 (d3xt3r.com)
 * RTK Anti Adblock
@@ -104,7 +104,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Block Adblock (thepcspy.com)
 * Remove Adblock (removeadblock.com)
 
-> More sites in changelog
+##### That contains a custom script
+* Please consult the changelog
 
 ## Changelog
 ##### Upcoming changes
