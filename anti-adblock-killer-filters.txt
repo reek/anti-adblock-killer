@@ -15,12 +15,11 @@
 !----------------------------------------------------------------------------------------------------!
 ! Generic
 !----------------------------------------------------------------------------------------------------!
-! AdWorkMedia
-!@@||adworkmedia.com/gLoader.php?*$script
-!@@||loxtk.com/gLoader.php?*$script
-! AdScendMedia
-###gw_overlay
-###gw_main
+! AdWorkMedia (domain=thebesttrainers.net)
+@@||adworkmedia.com/gLoader.php?*$script
+@@||loxtk.com/gLoader.php?*$script
+! AdScendMedia (domain=bee4.biz|filesdld.com)
+@@||adscendmedia.com/gwjs.php?*$script
 ! cpagrip.com
 @@||cpagrip.com/script_include.php?id=*$script
 ! RTKAntiAdblock
@@ -282,8 +281,6 @@ z0r.de##.adb
 @@||720pmkv.com/wp-content/plugins/anti-block/js/advertisement.js?*
 ! forum.pac-rom.com
 forum.pac-rom.com#@#.banner_ads
-! bee4.biz
-@@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz
 ! runningmanengsub.com
 @@||cpalead.com/gwjs.php?*$script,domain=runningmanengsub.com
 ! pc.online143.com
@@ -331,6 +328,9 @@ watcharab.com#@##adblock
 ! uptobox.com
 uptobox.com#@##adblocktrap
 @@||advertstream.com/banners/$image,domain=uptobox.com
+! privateinsta.com
+@@||cpalead.com/mygateway.php?*$domain=privateinsta.com
+@@||privateinsta.com/javascript/rqrkrm.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

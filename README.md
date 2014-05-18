@@ -102,15 +102,19 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * FuckAdBlock
 * ABT - Ad Block Test
 * Block Adblock (thepcspy.com)
+* Remove Adblock (removeadblock.com)
 
-**more sites in changelog**
+> More sites in changelog
 
 ## Changelog
 ##### Upcoming changes
+* Add: nas-forum.com
 * Fix: getVersion for unsupported script managers
 * Fix: getScriptManager news script managers
 * Fix: filmovizija.com
 * Fix: uptobox.com
+* Fix: filesdld.com
+* Fix: privateinsta.com
 
 ##### Version 7.1 (May 14, 2014)
 * New: Anti-Adblock Killer on Greasefork.org
@@ -568,6 +572,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Tags
 * Disable Anti Adblock
+* Disable Anti Adblock Script
 * Remove Anti Adblock
 * Skip Anti Adblock
 * Bypass Anti Adblock
@@ -587,7 +592,12 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * uptobox
 * Cancel Anti Adblock
 * No Anti Adblock
-
+* Anti Anti Adblock
+* How Remove Anti Adblock
+* Removes Ad Blocking Protections
+* Adblock Plus
+* Adblock
+* Disables AdBlock Protection
 
 ## Tags 2
 * remove anti adblock protection
