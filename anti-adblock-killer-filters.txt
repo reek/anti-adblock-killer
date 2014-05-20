@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 7.1
+! Version: 7.2
 ! License: Creative Commons BY-NC-SA
 ! Title: Anti-Adblock Killer | Filters for Adblockers
 ! Author: Reek | http://reeksite.com/

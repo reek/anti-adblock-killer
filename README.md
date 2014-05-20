@@ -109,6 +109,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+
+##### Version 7.2 (May 20, 2014)
 * Add: advertise.com
 * Add: allsoftinone.com
 * Add: annuaire-xavbox.com
@@ -129,21 +131,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: thehyphy.com
 * Add: timepasss.com
 * Add: videos.sominaltvfilms.com
-* Add: xavbox.com
-* Add: xavbox.info
-* Add: xavbox.org
-* Add: xavbox360.com
-* Add: xavboxds.com
-* Add: xavboxforum.com
-* Add: xavboxgirls.com
-* Add: xavboxone.com
-* Add: xavboxphone.com
-* Add: xavboxps3.com
-* Add: xavboxps4.com
-* Add: xavboxpsp.com
-* Add: xavboxtuning.com
-* Add: xavboxwii.com
-* Add: xavboxwiiu.com
 * Add: yooclick.com
 * Add: yourcodeis.com 
 * Add: Blogspot no country redirect (NCR)
@@ -161,6 +148,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: uptobox.com
 * Fix: filesdld.com
 * Fix: privateinsta.com
+* Fix: core userscript
 
 ##### Version 7.1 (May 14, 2014)
 * New: Anti-Adblock Killer on Greasefork.org
@@ -183,7 +171,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: MutationObserver
 * Fix: updateURL and downloadURL
 * Fix: auto check update
-* Fix: core script
+* Fix: core userscript
 
 ##### Version 7.0 (Apr 16, 2014)
 * Add: tv.majorleaguegaming.com
@@ -207,6 +195,21 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: pic5you.ru
 * Add: forum.thgtr.com
 * Add: better-explorer.com
+* Add: xavbox.com
+* Add: xavbox.info
+* Add: xavbox.org
+* Add: xavbox360.com
+* Add: xavboxds.com
+* Add: xavboxforum.com
+* Add: xavboxgirls.com
+* Add: xavboxone.com
+* Add: xavboxphone.com
+* Add: xavboxps3.com
+* Add: xavboxps4.com
+* Add: xavboxpsp.com
+* Add: xavboxtuning.com
+* Add: xavboxwii.com
+* Add: xavboxwiiu.com
 * Fix: livesoccerhq.com
 * Fix: clean redundant rules (Anti-Adblock Killer Filters)
 
@@ -617,6 +620,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Tags
+* Anti Adblock Killer
 * Disable Anti Adblock
 * Disable Anti Adblock Script
 * Remove Anti Adblock
