@@ -109,7 +109,52 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: advertise.com
+* Add: allsoftinone.com
+* Add: annuaire-xavbox.com
+* Add: b-books.info
+* Add: consoledejeux.info
+* Add: copsilver.com
+* Add: free-itunes-gift-cards.com
+* Add: freebo2.com
+* Add: freeminecraftaccount.us
+* Add: freewowmembership.com
+* Add: fullmovieshd.org
+* Add: fullsoftwaredownload.info
+* Add: getterraria.info
+* Add: mecozz.com
+* Add: minecraftraffle.com
+* Add: pose-de-puce.info
+* Add: search-an-inmate.com 
+* Add: thehyphy.com
+* Add: timepasss.com
+* Add: videos.sominaltvfilms.com
+* Add: xavbox.com
+* Add: xavbox.info
+* Add: xavbox.org
+* Add: xavbox360.com
+* Add: xavboxds.com
+* Add: xavboxforum.com
+* Add: xavboxgirls.com
+* Add: xavboxone.com
+* Add: xavboxphone.com
+* Add: xavboxps3.com
+* Add: xavboxps4.com
+* Add: xavboxpsp.com
+* Add: xavboxtuning.com
+* Add: xavboxwii.com
+* Add: xavboxwiiu.com
+* Add: yooclick.com
+* Add: yourcodeis.com 
+* Add: Blogspot no country redirect (NCR)
 * Add: nas-forum.com
+* Add: duoliphotography.com
+* Add: pickcrackpasswords.blogspot.com
+* Add: tekkitdupes.blogspot.com
+* Add: watch-latest-movies-online-daily.blogspot.com
+* Fix: thebesttrainers.net
+* Fix: bee4.biz
+* Fix: filesdld.com
 * Fix: getVersion for unsupported script managers
 * Fix: getScriptManager news script managers
 * Fix: filmovizija.com

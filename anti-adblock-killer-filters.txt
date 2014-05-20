@@ -15,11 +15,11 @@
 !----------------------------------------------------------------------------------------------------!
 ! Generic
 !----------------------------------------------------------------------------------------------------!
-! AdWorkMedia (domain=thebesttrainers.net)
-@@||adworkmedia.com/gLoader.php?*$script
-@@||loxtk.com/gLoader.php?*$script
-! AdScendMedia (domain=bee4.biz|filesdld.com)
-@@||adscendmedia.com/gwjs.php?*$script
+! AdWorkMedia
+! if (!awm) { window.location = 'http://loxtk.com/help/removeAB.php'; }
+@@/^http:\/\/www\.(adworkmedia|loxtk)\.com\/gLoader\.php/$script,domain=thebesttrainers.net|pickcrackpasswords.blogspot.com|tekkitdupes.blogspot.com|watch-latest-movies-online-daily.blogspot.com|duoliphotography.com|yourcodeis.com|mecozz.com|yourcodeis.com|mecozz.com|b-books.info|search-an-inmate.com|freeminecraftaccount.us|freebo2.com|free-itunes-gift-cards.com|minecraftraffle.com|fullmovieshd.org|timepasss.com|fullsoftwaredownload.info|getterraria.info|thehyphy.com|freewowmembership.com|copsilver.com
+! AdScendMedia
+@@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz|filesdld.com
 ! cpagrip.com
 @@||cpagrip.com/script_include.php?id=*$script
 ! RTKAntiAdblock
@@ -103,8 +103,8 @@ mix.dj###maskads
 cp-g.net###adblock_layer
 ! generation-nt.com
 generation-nt.com##P[style="margin:10px 18px 0;border:3px solid red;padding:10px;line-height:1.4em;font-size:14px;color:#333;"]
-! shoegames.blogspot.kr
-shoegames.blogspot.kr###HTML5
+! shoegames.blogspot.com
+shoegames.blogspot.com###HTML5
 ! unfair.co
 unfair.co###awesomemessage
 ! magestorm.net
@@ -127,8 +127,8 @@ enigmaboard.com##.no
 megagames.com##.message.adblock-message
 ! romulation.net
 romulation.net##DIV[style="background-color: #CC4444; color: #fff; padding:10px;"]
-! xxxdownloadsfree.blogspot.kr
-xxxdownloadsfree.blogspot.kr##DIV[style*="position:fixed;width:100%;top:0px;height:100%;background-color:black;z-index:100;"]
+! xxxdownloadsfree.blogspot.com
+xxxdownloadsfree.blogspot.com##DIV[style*="position:fixed;width:100%;top:0px;height:100%;background-color:black;z-index:100;"]
 ! instantmanga.com
 instantmanga.com###notice
 ! scan-manga.com
@@ -471,7 +471,7 @@ planet-series.tv##IMG[src="http://www.planet-series.tv/images/250-1.png"]
 planet-series.tv##IMG[src="http://www.planet-series.tv/images/728-2.png"]
 ! Streaming --------------------------------------------------------------------------------------
 ! floatLayer
-tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.ch,miscanales21.blogspot.ch,miscanalescp25.blogspot.ch,peliculascp.blogspot.ch,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net##*[id^="floatLayer"]
+tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.com,miscanales21.blogspot.com,miscanalescp25.blogspot.com,peliculascp.blogspot.com,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net##*[id^="floatLayer"]
 ! str3amtv
 /^http://str3amtvads[\d].blogspot.com/$subdocument 
 ! livesoccerhq
