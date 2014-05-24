@@ -43,10 +43,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 #### Step 3: Userscript
-* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
+* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
@@ -110,7 +110,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Changelog
 ##### Upcoming changes
 
+
 ##### Version 7.2 (May 20, 2014)
+* Add: javzoo.com
 * Add: advertise.com
 * Add: allsoftinone.com
 * Add: annuaire-xavbox.com
@@ -139,12 +141,13 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: pickcrackpasswords.blogspot.com
 * Add: tekkitdupes.blogspot.com
 * Add: watch-latest-movies-online-daily.blogspot.com
+* Add: filmovizija.net/
+* Fix: filmovizija.com
 * Fix: thebesttrainers.net
 * Fix: bee4.biz
 * Fix: filesdld.com
 * Fix: getVersion for unsupported script managers
 * Fix: getScriptManager news script managers
-* Fix: filmovizija.com
 * Fix: uptobox.com
 * Fix: filesdld.com
 * Fix: privateinsta.com
