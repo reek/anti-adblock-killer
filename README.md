@@ -62,6 +62,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Detect & Kill Anti-Adblock Systems
 * Detect Anti-Adblock Killer Filters
 * Check & Notify updates
+* More filters for Adblockers
 * [Suggest Features](https://github.com/reek/anti-adblock-killer/issues) on Github
 * [Suggest Features](http://userscripts.org:8080/scripts/discuss/155840) on Userscripts
 
@@ -109,7 +110,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-
+* Add: ndsroms.altervista.org
 
 ##### Version 7.2 (May 20, 2014)
 * Add: javzoo.com
