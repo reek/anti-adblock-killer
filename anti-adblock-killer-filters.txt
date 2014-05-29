@@ -654,5 +654,6 @@ downloadsharedfilez.com##[href^="http://epnredirect.ru/redirect/cpa/"]
 isearchfiles.com,filescroptube.com##[href^="http://66.55.151.22/download.php?ref="]
 ! filegaga.com
 filegaga.com##A[href^="/ot/fast.php"]
-
+! general-fil.es
+general-fil.es###sponsored
 

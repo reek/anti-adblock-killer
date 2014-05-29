@@ -17,11 +17,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
-* [![](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=JPL2C78M3TGAG&amp;lc=CH&amp;item_name=Anti%20Adblock%20Killer%20Donate&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
+* [![](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
 
 * ![](http://i.imgur.com/H2u0ctp.png) 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n
 
-* [![](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/submit/auto?user_id=reek&amp;title=Anti-AdBlock%20Killer%20%7C%20Reek&amp;url=http%3A%2F%2Fuserscripts.org%2Fscripts%2Fshow%2F155840)
+* [![](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
 
 
 
@@ -52,7 +52,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 #### Step 4: Support Author
 * [Say Thanks](http://bc.vc/OgKw1G)
-* Donate it
+* [Donate It](http://reeksite.com/donate.php)
 * Rate it. (Reviews)
 * Become it Fan. (Fans)
 * Share it (Social Network, Forums, Blogs, etc...)
