@@ -18,12 +18,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
 * [![](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
-
 * ![](http://i.imgur.com/H2u0ctp.png) 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n
-
 * [![](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
-
-
+* [Donate It](http://reeksite.com/aak/donate.php)
 
 
 ## Instruction
@@ -39,20 +36,22 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
-* [Subscribe](http://bc.vc/jGFxOb)
-
+* [Subscribe](http://bc.vc/jGFxOb) *from jsbin.com*
+* [Subscribe](http://jsfiddle.net/AH4jh/embedded/result/) *from jsfiddle.net*
+* [Subscribe](http://reeksite.com/aak/subscribe.php) *from reeksite.com*
 
 #### Step 3: Userscript
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
+* [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
 #### Step 4: Support Author
 * [Say Thanks](http://bc.vc/OgKw1G)
-* [Donate It](http://reeksite.com/donate.php)
+* [Donate It](http://reeksite.com/aak/donate.php)
 * Rate it. (Reviews)
 * Become it Fan. (Fans)
 * Share it (Social Network, Forums, Blogs, etc...)
