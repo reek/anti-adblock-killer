@@ -331,6 +331,8 @@ uptobox.com#@##adblocktrap
 ! privateinsta.com
 @@||cpalead.com/mygateway.php?*$domain=privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
+! javzoo.com
+@@|http://www.javzoo.com/script/adblock/adfr.js
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

@@ -111,6 +111,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Changelog
 ##### Upcoming changes
 * Add: ndsroms.altervista.org
+* Add: javzoo.com
 
 ##### Version 7.2 (May 20, 2014)
 * Add: javzoo.com
