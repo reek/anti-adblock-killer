@@ -169,8 +169,7 @@ jheberg.net#@##ads_bottom
 jheberg.net##.jadb
 jheberg.net##.loading-background
 ! go4up.com
-##A[href^=" http://www.FriendlyDuck.com/AF_TA/rel/"]
-go4up.com##IMG[src="images/downloadbutton.png"]
+go4up.com##IMG[src="http://go4up.com/assets/img/downloadfr.gif"]
 ! myspass.de
 !@@||nuggad.net^$object-subrequest,domain=myspass.de
 !@@||adscale.de^$object-subrequest,domain=myspass.de
@@ -332,7 +331,9 @@ uptobox.com#@##adblocktrap
 @@||cpalead.com/mygateway.php?*$domain=privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
 ! javzoo.com
-@@|http://www.javzoo.com/script/adblock/adfr.js
+@@||javzoo.com/script/adblock/adfr.js$script
+! javpee.com
+@@||javpee.com/script/adblock/adfr.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -352,8 +353,6 @@ mamega.com###fblikebg
 ! Ads
 !----------------------------------------------------------------------------------------------------!
 ! Advertisers ---------------------------------------------------------------------------------------
-! pubdirecte.com
-||pubdirecte.com^$popup
 ! linkbucks.com (Visit Script)
 ||linkbucks.com/visitScript/*$script
 ||any.gs/visitScript/*$script
@@ -391,11 +390,53 @@ mamega.com###fblikebg
 ||youfap.me/visitScript/*$script
 ||rqq.co/visitScript/*$script
 ||zff.co/visitScript/*$script
+! linkbucks.com (Full Page Script)
+||linkbucks.com/Webservices/jsParseLinks.aspx?id=*$script
+||any.gs/Webservices/jsParseLinks.aspx?id=*$script
+||cash4links.co/Webservices/jsParseLinks.aspx?id=*$script
+||cash4files.com/Webservices/jsParseLinks.aspx?id=*$script
+||dyo.gs/Webservices/jsParseLinks.aspx?id=*$script
+||filesonthe.net/Webservices/jsParseLinks.aspx?id=*$script
+||goneviral.com/Webservices/jsParseLinks.aspx?id=*$script
+||megaline.co/Webservices/jsParseLinks.aspx?id=*$script
+||miniurls.co/Webservices/jsParseLinks.aspx?id=*$script
+||seriousdeals.net/Webservices/jsParseLinks.aspx?id=*$script
+||theseblogs.com/Webservices/jsParseLinks.aspx?id=*$script
+||theseforums.com/Webservices/jsParseLinks.aspx?id=*$script
+||tinylinks.co/Webservices/jsParseLinks.aspx?id=*$script
+||tubeviral.com/Webservices/jsParseLinks.aspx?id=*$script
+||ultrafiles.net/Webservices/jsParseLinks.aspx?id=*$script
+||urlbeat.net/Webservices/jsParseLinks.aspx?id=*$script
+||whackyvidz.com/Webservices/jsParseLinks.aspx?id=*$script
+||qqc.co/Webservices/jsParseLinks.aspx?id=*$script
+||yyv.co/Webservices/jsParseLinks.aspx?id=*$script
+||allanalpass.com/Webservices/jsParseLinks.aspx?id=*$script
+||amy.gs/Webservices/jsParseLinks.aspx?id=*$script
+||deb.gs/Webservices/jsParseLinks.aspx?id=*$script
+||drstickyfingers.com/Webservices/jsParseLinks.aspx?id=*$script
+||fapoff.com/Webservices/jsParseLinks.aspx?id=*$script
+||freean.us/Webservices/jsParseLinks.aspx?id=*$script
+||freegaysitepass.com/Webservices/jsParseLinks.aspx?id=*$script
+||galleries.bz/Webservices/jsParseLinks.aspx?id=*$script
+||hornywood.tv/Webservices/jsParseLinks.aspx?id=*$script
+||linkbabes.com/Webservices/jsParseLinks.aspx?id=*$script
+||picbucks.com/Webservices/jsParseLinks.aspx?id=*$script
+||poontown.net/Webservices/jsParseLinks.aspx?id=*$script
+||sexpalace.gs/Webservices/jsParseLinks.aspx?id=*$script
+||tnabucks.com/Webservices/jsParseLinks.aspx?id=*$script
+||youfap.me/Webservices/jsParseLinks.aspx?id=*$script
+||rqq.co/Webservices/jsParseLinks.aspx?id=*$script
+||zff.co/Webservices/jsParseLinks.aspx?id=*$script
 ! adf.ly
-||adf.ly/js/$third-party,domain=~j.gs|~q.gs
 ||cdn.adf.ly/js/entry.js$script
 ||cdn.j.gs/js/entry.js$script
 ||cdn.q.gs/js/entry.js$script
+||cdn.adf.ly/js/link-converter.js$script
+||cdn.j.gs/js/link-converter.js$script
+||cdn.q.gs/js/link-converter.js$script
+||cdn.adf.ly/js/display.js$script
+||cdn.j.gs/js/display.js$script
+||cdn.q.gs/js/display.js$script
 ! shorte.st
 ||cdn.shorte.st/link-converter.min.js
 ! filecore.co.nz / fcore.eu
