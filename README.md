@@ -112,6 +112,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: ndsroms.altervista.org
 * Add: itunesgiftcard.fbmaniaz.com
 * Add: phone-track.net
+* Add: filepixy.com
+* Add: watchmovies.just4umedia.com
+* Add: netflixaccount.org
 * Add: javzoo.com
 * Add: javpee.com
 * Fix: donate buttons
