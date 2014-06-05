@@ -109,8 +109,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: asiofree.com
 * Add: mol.cheatsplanet.net
-* Add: www.debrideurgratuit.org
+* Add: debrideurgratuit.org
 * Add: thebesttrainers.net
 * Add: pickcrackpasswords.blogspot.fr
 * Add: yourcodeis.com
@@ -119,6 +120,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: search-an-inmate.com
 * Add: getterraria.info
 * Add: fullsoftwaredownload.info
+* Add: premium-spotify.com
 * Add: ndsroms.altervista.org
 * Add: itunesgiftcard.fbmaniaz.com
 * Add: phone-track.net

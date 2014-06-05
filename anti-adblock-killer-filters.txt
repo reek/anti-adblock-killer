@@ -18,7 +18,7 @@
 ! AdWorkMedia
 ! if (!awm) { window.location = 'http://adworkmedia.com/help/removeAB.php'; }
 ! if (!awm) { window.location = 'http://loxtk.com/help/removeAB.php'; }
-@@/^http:\/\/www\.(adworkmedia|loxtk)\.com\/gLoader\.php/$script,domain=thebesttrainers.net|pickcrackpasswords.blogspot.com|tekkitdupes.blogspot.com|watch-latest-movies-online-daily.blogspot.com|duoliphotography.com|yourcodeis.com|mecozz.com|yourcodeis.com|mecozz.com|b-books.info|search-an-inmate.com|freeminecraftaccount.us|freebo2.com|free-itunes-gift-cards.com|minecraftraffle.com|fullmovieshd.org|timepasss.com|fullsoftwaredownload.info|getterraria.info|thehyphy.com|freewowmembership.com|copsilver.com|ndsroms.altervista.org|itunesgiftcard.fbmaniaz.com|phone-track.net|filepixy.com|watchmovies.just4umedia.com|netflixaccount.org|mol.cheatsplanet.net|www.debrideurgratuit.org|thebesttrainers.net|pickcrackpasswords.blogspot.fr|yourcodeis.com|timepasss.com|thehyphy.com|search-an-inmate.com|getterraria.info|fullsoftwaredownload.info
+@@/^http:\/\/www\.(adworkmedia|loxtk)\.com\/gLoader\.php/$script,domain=thebesttrainers.net|pickcrackpasswords.blogspot.com|tekkitdupes.blogspot.com|watch-latest-movies-online-daily.blogspot.com|duoliphotography.com|yourcodeis.com|mecozz.com|yourcodeis.com|mecozz.com|b-books.info|search-an-inmate.com|freeminecraftaccount.us|freebo2.com|free-itunes-gift-cards.com|minecraftraffle.com|fullmovieshd.org|timepasss.com|fullsoftwaredownload.info|getterraria.info|thehyphy.com|freewowmembership.com|copsilver.com|ndsroms.altervista.org|itunesgiftcard.fbmaniaz.com|phone-track.net|filepixy.com|watchmovies.just4umedia.com|netflixaccount.org|mol.cheatsplanet.net|www.debrideurgratuit.org|thebesttrainers.net|pickcrackpasswords.blogspot.fr|yourcodeis.com|timepasss.com|thehyphy.com|search-an-inmate.com|getterraria.info|fullsoftwaredownload.info|premium-spotify.com
 ! AdScendMedia
 @@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz|filesdld.com
 ! cpagrip.com
@@ -496,6 +496,8 @@ coredistrict.com##IMG[src^="http://pixxur.com/pfb/"]
 ! comopremium.com.ar
 comopremium.com.ar###blanuncio
 comopremium.com.ar##IMG[src="templates/plugmod/images/a.png"]
+! fullpremiums.com
+fullpremiums.com##IMG[src="templates/plugmod/images/a.png"]
 ! rapid8.com
 rapid8.com###blcokMzg
 rapid8.com##.backk
