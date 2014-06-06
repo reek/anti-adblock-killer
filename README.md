@@ -109,6 +109,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: mypcgamesfreedownload.blogspot.com
+* Add: nakedhelen.com
 * Add: asiofree.com
 * Add: mol.cheatsplanet.net
 * Add: debrideurgratuit.org
