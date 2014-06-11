@@ -109,6 +109,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Fix: abola.pt
+* Add: ffa-hosting.com
 * Add: skincodesgiveaway.com
 * Add: game-debate.com
 * Add: uploaded-premium.ru
