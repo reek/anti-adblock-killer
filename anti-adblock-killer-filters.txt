@@ -49,7 +49,7 @@
 ! FuckAdBlock
 ! http://www.sitexw.fr/fuckadblock/
 ! https://github.com/sitexw/FuckAdBlock
-/fuckadblock/fuckadblock.js|$script
+/fuckadblock.js|$script
 ! http://xenodesystems.appspot.com/adbuddy.html
 /js/adbuddy.min.js|$script
 ! ABT - Ad Block Test
@@ -331,12 +331,10 @@ uptobox.com#@##adblocktrap
 ! privateinsta.com
 @@||cpalead.com/mygateway.php?*$domain=privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
-! javzoo.com
-@@||javzoo.com/script/adblock/adfr.js$script
-@@||javzoo.com/adgear.js$script
-! javpee.com
-@@||javpee.com/script/adblock/adfr.js$script
-@@||javpee.com/adgear.js$script
+! javzoo.com & javpee.com
+!@@/^http:\/\/www\.(javzoo|javpee)\.com\/ad\w+\.js$/$script
+@@||javzoo.com/ad*.js|$script
+@@||javpee.com/ad*.js|$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
