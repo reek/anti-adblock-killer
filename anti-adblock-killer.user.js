@@ -99,11 +99,7 @@ NinjaKit:
 
 // if contains text
 String.prototype.contains = function (str) {
-  if (this.indexOf(str) != -1) {
-    return true;
-  } else {
-    return false;
-  }
+  return this.indexOf(str) != -1;
 };
 
 Aak = {
