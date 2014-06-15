@@ -18,7 +18,7 @@
 ! AdWorkMedia
 ! if (!awm) { window.location = 'http://adworkmedia.com/help/removeAB.php'; }
 ! if (!awm) { window.location = 'http://loxtk.com/help/removeAB.php'; }
-@@/^http:\/\/www\.(adworkmedia|loxtk)\.com\/gLoader\.php/$script,domain=thebesttrainers.net|pickcrackpasswords.blogspot.com|tekkitdupes.blogspot.com|watch-latest-movies-online-daily.blogspot.com|duoliphotography.com|yourcodeis.com|mecozz.com|yourcodeis.com|mecozz.com|b-books.info|search-an-inmate.com|freeminecraftaccount.us|freebo2.com|free-itunes-gift-cards.com|minecraftraffle.com|fullmovieshd.org|timepasss.com|fullsoftwaredownload.info|getterraria.info|thehyphy.com|freewowmembership.com|copsilver.com|ndsroms.altervista.org|itunesgiftcard.fbmaniaz.com|phone-track.net|filepixy.com|watchmovies.just4umedia.com|netflixaccount.org|mol.cheatsplanet.net|www.debrideurgratuit.org|thebesttrainers.net|pickcrackpasswords.blogspot.fr|yourcodeis.com|timepasss.com|thehyphy.com|search-an-inmate.com|getterraria.info|fullsoftwaredownload.info|premium-spotify.com|mypcgamesfreedownload.blogspot.com|nakedhelen.com|spotifygratuit.com|free-itunes-gift-cards.com|freeminecraftaccount.us
+@@/^http:\/\/www\.(adworkmedia|loxtk)\.com\/gLoader\.php/$script,domain=thebesttrainers.net|pickcrackpasswords.blogspot.com|tekkitdupes.blogspot.com|watch-latest-movies-online-daily.blogspot.com|duoliphotography.com|yourcodeis.com|mecozz.com|yourcodeis.com|mecozz.com|b-books.info|search-an-inmate.com|freeminecraftaccount.us|freebo2.com|free-itunes-gift-cards.com|minecraftraffle.com|fullmovieshd.org|timepasss.com|fullsoftwaredownload.info|getterraria.info|thehyphy.com|freewowmembership.com|copsilver.com|ndsroms.altervista.org|itunesgiftcard.fbmaniaz.com|phone-track.net|filepixy.com|watchmovies.just4umedia.com|netflixaccount.org|mol.cheatsplanet.net|www.debrideurgratuit.org|thebesttrainers.net|pickcrackpasswords.blogspot.fr|yourcodeis.com|timepasss.com|thehyphy.com|search-an-inmate.com|getterraria.info|fullsoftwaredownload.info|premium-spotify.com|mypcgamesfreedownload.blogspot.com|nakedhelen.com|spotifygratuit.com|free-itunes-gift-cards.com|freeminecraftaccount.us|b-books.info|copsilver.com|freebo2.com|techietricks.net
 ! AdScendMedia
 @@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz|filesdld.com
 ! cpagrip.com
@@ -684,6 +684,12 @@ mylivesocial.com##.bgimg
 /grooptoo/index/getGrooptooAd/|
 ! assurance-conseil.net
 ||assurance-conseil.net/popup.js
+! mesddl.cc
+mesddl.cc###cboxContent
+! fake download link
+##A[href^="http://share.payoneer-affiliates.com/a/clk/"]
+##A[href="http://goo.gl/jQ9bcz"]
+##A[href^="http://www.yourfilezone.com/play?lng="]
 ! fake codec
 ###WarningCodec
 ! File Search Engines ---------------------------------------------------------------------------
@@ -708,5 +714,3 @@ isearchfiles.com,filescroptube.com##[href^="http://66.55.151.22/download.php?ref
 filegaga.com##A[href^="/ot/fast.php"]
 ! general-fil.es
 general-fil.es###sponsored
-! telecharger-films-gratuit.com
-##A[href^="http://share.payoneer-affiliates.com/a/clk/"]
