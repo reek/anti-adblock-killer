@@ -109,9 +109,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-* Fix: abola.pt
-* Fix: javpee.com
-* Fix: javzoo.com
+* Add: anime4fun.com
+* Add: kingleech.com
 * Add: securefile.info
 * Add: b-books.info
 * Add: copsilver.com
@@ -147,6 +146,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: netflixaccount.org
 * Add: javzoo.com
 * Add: javpee.com
+* Fix: abola.pt (video player)
+* Fix: javpee.com
+* Fix: javzoo.com
 * Fix: donate buttons
 
 ##### Version 7.2 (May 20, 2014)

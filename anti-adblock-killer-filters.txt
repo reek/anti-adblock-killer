@@ -335,6 +335,9 @@ uptobox.com#@##adblocktrap
 !@@/^http:\/\/www\.(javzoo|javpee)\.com\/ad\w+\.js$/$script
 @@||javzoo.com/ad*.js|$script
 @@||javpee.com/ad*.js|$script
+! anime4fun.com
+!anime4fun.com#@#.top-side-ads
+||anime4fun.com/js/newanime.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -512,6 +515,8 @@ rapid8.com##.backk
 @@||uploaded-premium.ru/ads/ad.js$script
 @@||ad.sevenads.net/layer.php?p=*$script,domain=uploaded-premium.ru
 @@||ad.sevenads.net/banner.php?*$script,domain=uploaded-premium.ru
+! kingleech.com
+@@||filmyfundaz.googlecode.com/files/google_ads.js$script,domain=kingleech.com
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##[href^="http://api.adlure.net/partner/click/"]
@@ -686,6 +691,10 @@ mylivesocial.com##.bgimg
 ||assurance-conseil.net/popup.js
 ! mesddl.cc
 mesddl.cc###cboxContent
+! urlchecker.net
+urlchecker.net###adchecker
+urlchecker.net###adchecker_btn
+urlchecker.net###ads_notify
 ! fake download link
 ##A[href^="http://share.payoneer-affiliates.com/a/clk/"]
 ##A[href="http://goo.gl/jQ9bcz"]
