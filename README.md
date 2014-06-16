@@ -112,6 +112,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: abola.pt
 * Fix: javpee.com
 * Fix: javzoo.com
+* Add: securefile.info
 * Add: b-books.info
 * Add: copsilver.com
 * Add: freebo2.com
