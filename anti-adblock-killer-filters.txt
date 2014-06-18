@@ -223,9 +223,9 @@ snsw.us#@##ad_1
 !teknofil.no##.subscription-popup.clearfix
 ||static.tek.no/js/jquery.colorbox-min.js?*
 ! vostfr-vf.com
-vostfr-vf.com##[href="/100Mbs.html"]
+vostfr-vf.com##A[href="/100Mbs.html"]
 vostfr-vf.com##.fixe
-vostfr-vf.com##[href^="http://api.adlure.net/partner/click/"]
+vostfr-vf.com##A[href^="http://api.adlure.net/partner/click/"]
 ! video.kooora.com
 @@||zedo.com/ads2/*$object-subrequest,domain=video.kooora.com
 @@||zedo.com/asw/*$object-subrequest,domain=video.kooora.com
@@ -463,8 +463,8 @@ seedpeer.me###body > #pageTop + * + #headerbox + TABLE[width="100%"]
 ! mininova.org
 mininova.org###content > #adspot-a + .maintable
 ! zetorrents.com
-zetorrents.com##[href^="http://acces.directionplaisir.com/a.php?"]
-zetorrents.com##[href^="http://www.insta-cash.net/tds/?"]
+zetorrents.com##A[href^="http://acces.directionplaisir.com/a.php?"]
+zetorrents.com##A[href^="http://www.insta-cash.net/tds/?"]
 ! rarbg.com
 rarbg.com##A[href^="/download_direct.php"]
 ! emule-island.ru##
@@ -519,7 +519,7 @@ rapid8.com##.backk
 @@||filmyfundaz.googlecode.com/files/google_ads.js$script,domain=kingleech.com
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
-wawa-film.org##[href^="http://api.adlure.net/partner/click/"]
+wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
 ! planet-series.tv
 planet-series.tv##IMG[src="http://www.planet-series.tv/images/468-1.png"]
 planet-series.tv##A[href*="http://www.yourfilezone.com/play"]
@@ -528,7 +528,7 @@ planet-series.tv##IMG[src="http://www.planet-series.tv/images/250-1.png"]
 planet-series.tv##IMG[src="http://www.planet-series.tv/images/728-2.png"]
 ! Streaming --------------------------------------------------------------------------------------
 ! floatLayer
-tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.com,miscanales21.blogspot.com,miscanalescp25.blogspot.com,peliculascp.blogspot.com,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net##*[id^="floatLayer"]
+tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.com,miscanales21.blogspot.com,miscanalescp25.blogspot.com,peliculascp.blogspot.com,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net,wowhq.ws##*[id^="floatLayer"]
 ! str3amtv
 /^http://str3amtvads[\d].blogspot.com/$subdocument 
 ! livesoccerhq
@@ -629,13 +629,16 @@ youmoviz.tv##.plugbarremozi
 adbuck.cc###col_publi
 ||adbuck.cc^$third-party
 @@||adbuck.cc/player/*
-! livesoccerhq.com
-livesoccerhq.com,fixolas.net##[href^="http://fixolas.net/cms/"]
-livesoccerhq.com,fixolas.net#@#[align="absmiddle"]
-livesoccerhq.com,fixolas.net##[href^="https://action.metaffiliation.com/trk.php?"]
-||go.ad2up.com^$domain=livesoccerhq.com|fixolas.net
-livesoccerhq.com,fixolas.net###pubclose
-livesoccerhq.com,fixolas.net###pubclosep2
+! livesoccerhq.com / wowhq.ws
+wowhq.ws##.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable
+wowhq.ws##.theblogwidgets
+wowhq.ws,futeonline.altervista.org###pubclose
+wowhq.ws,futeonline.altervista.org###pubclose2
+wowhq.ws,futeonline.altervista.org###PUB1-300x250Z
+wowhq.ws,futeonline.altervista.org###PUB2-300x250Z
+wowhq.ws,cbox.ws##[href="http://buefixe.net/apostas/"]
+wowhq.ws,futeonline.altervista.org,fixolas.net##A[href^="http://fixolas.net/cms/"]
+##iframe[src^="http://somoslapublicidad.com/"]
 ! sport-show.fr
 sport-show.fr##DIV[style="padding-top:0px;float:left;width:100%;font-size:13px;line-height:0px;top:4px;text-align:left"]
 ! majax31sport
@@ -655,7 +658,7 @@ tvi24.iol.pt##iframe[id=barraIOL]
 tvi24.iol.pt###heightPH
 ! jornal record
 ||sportingbet-affiliate.host.bannerflow.com/core_bannerviewer.swf?*
-record.xl.pt##[href^="http://partner.sbaffiliates.com/"]
+record.xl.pt##A[href^="http://partner.sbaffiliates.com/"]
 ||record.xl.pt/pub/*
 ||record.xl.pt/common/images/pub/*
 ||js.xl.pt/molduras/record/deco/*
@@ -699,6 +702,8 @@ urlchecker.net###ads_notify
 ##A[href^="http://share.payoneer-affiliates.com/a/clk/"]
 ##A[href="http://goo.gl/jQ9bcz"]
 ##A[href^="http://www.yourfilezone.com/play?lng="]
+##A[href^="https://action.metaffiliation.com/trk.php?"]
+##A[href^="http://action.metaffiliation.com/trk.php?"]
 ! fake codec
 ###WarningCodec
 ! File Search Engines ---------------------------------------------------------------------------
@@ -708,7 +713,7 @@ sharedir.com##IMG[src="http://premiumdl4.me/rseimages/rse_banner64_3.png"]
 filetram.com###triangle-border
 ! filediva.com
 filediva.com##.download_top
-filediva.com##[href*="http://www.insta-cash.net/tds/"]
+filediva.com##A[href*="http://www.insta-cash.net/tds/"]
 ! fileshut.biz
 fileshut.biz##.download_item2
 ! 4shared.net
@@ -716,9 +721,9 @@ fileshut.biz##.download_item2
 ! downloadnow.net
 downloadnow.net##.results-premium.results-premium__top.holder-padding
 ! downloadsharedfilez.com
-downloadsharedfilez.com##[href^="http://epnredirect.ru/redirect/cpa/"]
+downloadsharedfilez.com##A[href^="http://epnredirect.ru/redirect/cpa/"]
 ! isearchfiles.com
-isearchfiles.com,filescroptube.com##[href^="http://66.55.151.22/download.php?ref="]
+isearchfiles.com,filescroptube.com##A[href^="http://66.55.151.22/download.php?ref="]
 ! filegaga.com
 filegaga.com##A[href^="/ot/fast.php"]
 ! general-fil.es
