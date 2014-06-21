@@ -103,12 +103,14 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ABT - Ad Block Test
 * Block Adblock (thepcspy.com)
 * Remove Adblock (removeadblock.com)
+* Adblock Detector
 
 ##### That contains a custom script
 * Please consult the changelog
 
 ## Changelog
 ##### Upcoming changes
+* Add: leecher.us
 * Add: wowhq.ws
 * Add: anime4fun.com
 * Add: kingleech.com
@@ -147,6 +149,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: netflixaccount.org
 * Add: javzoo.com
 * Add: javpee.com
+* Add: multifichier.com
 * Fix: yellowbridge.com
 * Fix: abola.pt (video player)
 * Fix: javpee.com

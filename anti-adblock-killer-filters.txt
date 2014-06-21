@@ -58,6 +58,8 @@
 #@##sponsored-ad
 ! Better Stop Adblock
 ||codeclan.altervista.org/wp-content/uploads/*/*/*.mp3|
+! AdblockDetector 
+/AdblockDetector/handler.min.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Specific
 !----------------------------------------------------------------------------------------------------!
@@ -692,6 +694,9 @@ mylivesocial.com##.bgimg
 /grooptoo/index/getGrooptooAd/|
 ! assurance-conseil.net
 ||assurance-conseil.net/popup.js
+! tvgolo.com
+tvgolo.com###hstp-bg-overlay
+tvgolo.com###hstp_interstitial
 ! mesddl.cc
 mesddl.cc###cboxContent
 ! urlchecker.net
