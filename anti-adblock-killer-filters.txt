@@ -37,6 +37,8 @@
 ! http://d3xt3r.com/anti-adblock?test
 ! http://erikswan.net/abp/
 @@/\/advertisement[\d]?\.js$/$script
+! Antiadblock.js
+@@/antiadblock.js|$script
 ! blockblockA - blockblockB
 @@/advertisement-AdBlock.js|$script
 ! jQuery Adblock Detector
@@ -702,6 +704,10 @@ tvgolo.com###hstp-bg-overlay
 tvgolo.com###hstp_interstitial
 ! mesddl.cc
 mesddl.cc###cboxContent
+! aseanlegacy.net
+aseanlegacy.net##[id^="box"]
+||amkserver1.com^$subdocument,documemt=aseanlegacy.net
+||adgila.com^$subdocument,documemt=aseanlegacy.net
 ! urlchecker.net
 urlchecker.net###adchecker
 urlchecker.net###adchecker_btn
