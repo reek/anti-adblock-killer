@@ -156,6 +156,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: javpee.com
 * Fix: javzoo.com
 * Fix: donate buttons
+* Fix: notre-planete.info
 
 ##### Version 7.2 (May 20, 2014)
 * Add: javzoo.com
