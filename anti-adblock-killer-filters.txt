@@ -37,8 +37,6 @@
 ! http://d3xt3r.com/anti-adblock?test
 ! http://erikswan.net/abp/
 @@/\/advertisement[\d]?\.js$/$script
-! Antiadblock.js
-@@/antiadblock.js|$script
 ! blockblockA - blockblockB
 @@/advertisement-AdBlock.js|$script
 ! jQuery Adblock Detector
@@ -524,6 +522,11 @@ rapid8.com##.backk
 @@||ad.sevenads.net/banner.php?*$script,domain=uploaded-premium.ru
 ! kingleech.com
 @@||filmyfundaz.googlecode.com/files/google_ads.js$script,domain=kingleech.com
+! aseanlegacy.net
+@@/antiadblock.js|$script,document=aseanlegacy.net
+aseanlegacy.net##[id^="box"]
+||amkserver1.com^$subdocument,document=aseanlegacy.net
+||adgila.com^$subdocument,document=aseanlegacy.net
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
@@ -704,10 +707,6 @@ tvgolo.com###hstp-bg-overlay
 tvgolo.com###hstp_interstitial
 ! mesddl.cc
 mesddl.cc###cboxContent
-! aseanlegacy.net
-aseanlegacy.net##[id^="box"]
-||amkserver1.com^$subdocument,documemt=aseanlegacy.net
-||adgila.com^$subdocument,documemt=aseanlegacy.net
 ! urlchecker.net
 urlchecker.net###adchecker
 urlchecker.net###adchecker_btn
