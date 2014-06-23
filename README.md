@@ -118,7 +118,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: kingleech.com
 * Add: securefile.info
 * Add: 4shared.downloadlagu.info
-* Add: www.freeudidregistration.com
+* Add: freeudidregistration.com
 * Add: b-books.info
 * Add: copsilver.com
 * Add: freebo2.com
