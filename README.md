@@ -110,6 +110,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: btspread.com
 * Add: aseanlegacy.net
 * Add: leecher.us
 * Add: debrid.us
