@@ -345,7 +345,7 @@ uptobox.com#@##adblocktrap
 @@||googleads.g.doubleclick.net^$subdocument,document=notre-planete.info
 notre-planete.info#@##pub_meh
 ! btspread.com
-@@||clkrev.com/adServe/banners?*$domain=btspread.com
+@@||clkrev.com/adServe/banners?*$script,domain=btspread.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
