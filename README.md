@@ -116,8 +116,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: debrid.us
 * Add: wowhq.ws
 * Add: anime4fun.com
+* Add: gta5hack.com
 * Add: kingleech.com
 * Add: securefile.info
+* Add: xpango.com-cheat.in
 * Add: 4shared.downloadlagu.info
 * Add: freeudidregistration.com
 * Add: b-books.info
