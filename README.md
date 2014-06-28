@@ -95,6 +95,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### That contains a generic script
 * Antiblock.org V2 & V3
 * Anti-Adblock V2 (d3xt3r.com)
+* AdBlock Plus Detection (erikswan.net)
 * RTK Anti Adblock
 * Anti Ad Buster
 * AADB Anti Ads Blocker
@@ -110,12 +111,17 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+
+##### Version 7.3 (June 29, 2014)
+* Add: anisubsia.com
+* Add: eveskunk.com
 * Add: btspread.com
 * Add: aseanlegacy.net
 * Add: leecher.us
 * Add: debrid.us
 * Add: wowhq.ws
 * Add: anime4fun.com
+* Add: xbox360pcemulator.com
 * Add: gta5hack.com
 * Add: kingleech.com
 * Add: securefile.info

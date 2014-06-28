@@ -3,7 +3,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
 // @author Reek | http://reeksite.com/
-// @version 7.2
+// @version 7.3
 // @license Creative Commons BY-NC-SA
 // @encoding utf-8
 // @homepage https://github.com/reek/anti-adblock-killer
@@ -40,22 +40,37 @@
 // @exclude http*://*imdb.com/*
 // @exclude http*://*apple.com/*
 // @exclude http*://*stackoverflow.com/*
+// @exclude http*://*ghacks.net/*
+// @grant GM_addStyle
+// @grant GM_getValue
+// @grant GM_setValue
+// @grant GM_xmlhttpRequest
+// @grant GM_registerMenuCommand
+// @grant GM_deleteValue
+// @grant GM_listValues
+// @grant GM_getResourceText
+// @grant GM_getResourceURL
+// @grant GM_log
+// @grant GM_openInTab
+// @grant GM_setClipboard
+// @grant GM_info
+// @grant GM_getMetadata
 // @run-at document-start
 // ==/UserScript==
 /*=====================================================
   Thanks
 =======================================================
 
-Collaborators:
-  InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, noname120
-
 Donors:
-  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch
+  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo
+  
+Collaborators:
+  InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32
 
 Users:
   Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
-	
-	
+
+
 /*=====================================================
   Mirrors
 =======================================================
@@ -99,59 +114,101 @@ NinjaKit:
 
 // if contains text
 String.prototype.contains = function (str) {
-  if (this.indexOf(str) != -1) {
-    return true;
-  } else {
-    return false;
-  }
+  return this.indexOf(str) != -1;
 };
 
 Aak = {
-  version : '7.2',
+  version : '7.3',
   scriptid : 'gJWEp0vB',
-  homeURL : 'https://github.com/reek/anti-adblock-killer',
-  changelogURL : 'https://github.com/reek/anti-adblock-killer',
+  homeURL : 'https://github.com/reek/anti-adblock-killer#-anti-adblock-killer--reek',
+  changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
+  donateURL : 'https://github.com/reek/anti-adblock-killer#donate',
+  featuresURL : 'https://github.com/reek/anti-adblock-killer#features',
   reportURL : 'https://github.com/reek/anti-adblock-killer/wiki/Report-Guide',
   downloadURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js',
   filtersSubscribe : 'abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock%20Killer%20|%20Filters%20for%20Adblockers',
   filtersURL : "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
   iconURL : 'https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
   init : function () {
-  
+
     // Stop if user not use Script Manager or not support GM Api
-    if (!Aak.ApiRequires()) return false;
-  
-    // Debug
-    Aak.debug();
-    
-	// Check GM Api supported
-    //Aak.ApiSupported();
+    if (Aak.ApiRequires()) {
 
-    // Add Command in Greasemonkey Menu
-    Aak.registerMenuCommand();
+      // Debug
+      Aak.debug();
 
-    // Detect Filters
-    Aak.once(30, 'aak-last-detectfilters', Aak.detectFilters);
+      // Check GM Api supported
+      //Aak.ApiSupported();
 
-    // Check Update
-    Aak.once(5, 'aak-last-checkupdate', Aak.update.checkAuto);
-	
-	// Kill Protections
-	Aak.killer();
+      // Add Command in Greasemonkey Menu
+      Aak.registerMenuCommand();
+
+      // Detect Filters
+      Aak.once(30, 'aak-detectfilters', Aak.detectFilters);
+
+      // Check Update
+      Aak.once(5, 'aak-checkupdate', Aak.update.checkAuto);
+
+      // Detect and Kill
+      Aak.kill();
+    }
   },
   debug : function () {
-
-    if (window.top != window.self)
-      return; // stop if iframe
-      
-    //console.log(GM_listValues);
-	
-    //GM_deleteValue('aak-last-checkupdate');
-
-	//Aak.ApiSupported();
-
+    //if (Aak.isTopWindow) {
+    //Aak.listValues();
+	//localStorage.clear();
+    //console.log(localStorage);
+    //Aak.ApiSupported();
+    //GM_deleteValue('aak-detectfilters');
+    //GM_deleteValue('aak-checkupdate');
     //console.info('Anti-Adblock Killer v' + Aak.getVersion() + ' on ' + Aak.getScriptManager() + ' in ' + Aak.getBrowser(), Aak.getUUID());
+    //}
+  },
+  isTopWindow : !(window.top != window.self),
+  ApiRequires : function () {
+    if (typeof GM_xmlhttpRequest != 'undefined' &&
+      typeof GM_setValue != 'undefined' &&
+      typeof GM_getValue != 'undefined' &&
+      typeof GM_addStyle != 'undefined' &&
+      typeof GM_registerMenuCommand != 'undefined') {
+      return true;
+    } else {
+      return false;
+    }
+  },  
+  ApiSupported : function () {
+    if (Aak.isTopWindow) {
+      console.info('Requires');
+      console.info('GM_xmlhttpRequest', (typeof GM_xmlhttpRequest != 'undefined') ? true : false);
+      console.info('GM_setValue', (typeof GM_setValue != 'undefined') ? true : false);
+      console.info('GM_getValue', (typeof GM_getValue != 'undefined') ? true : false);
+      console.info('GM_addStyle', (typeof GM_addStyle != 'undefined') ? true : false);
+      console.info('GM_registerMenuCommand', (typeof GM_registerMenuCommand != 'undefined') ? true : false);
 
+      console.info('No requires');
+      console.info('GM_info', (typeof GM_info != 'undefined') ? GM_info : false);
+      console.info('GM_getMetadata', (typeof GM_getMetadata != 'undefined') ? GM_getMetadata : false);
+      console.info('GM_deleteValue', (typeof GM_deleteValue != 'undefined') ? true : false);
+      console.info('GM_listValues', (typeof GM_listValues != 'undefined') ? true : false);
+      console.info('GM_getResourceText', (typeof GM_getResourceText != 'undefined') ? true : false);
+      console.info('GM_getResourceURL', (typeof GM_getResourceURL != 'undefined') ? true : false);
+      console.info('GM_log', (typeof GM_log != 'undefined') ? true : false);
+      console.info('GM_openInTab', (typeof GM_openInTab != 'undefined') ? true : false);
+      console.info('GM_setClipboard', (typeof GM_setClipboard != 'undefined') ? true : false);
+    }
+  },
+  listValues : function (del) {
+    if (typeof GM_listValues != 'undefined') {
+      var del = (del) ? true : false;
+      var list = GM_listValues();
+      for (var i in list) {
+        if (del) {
+          GM_deleteValue(list[i]);
+        } else {
+          console.log(list[i], GM_getValue(list[i]));
+        }
+      }
+    }
   },
   onAllStateChanges : function (callback) {
     document.onreadystatechange = function () {
@@ -166,41 +223,7 @@ Aak = {
         break;
       }
     }
-  },
-  ApiSupported : function () {
-
-    if (window.top != window.self)
-      return; // stop if iframe
-
-    console.info('Requires');
-    console.info('GM_xmlhttpRequest', (typeof GM_xmlhttpRequest != 'undefined') ? true : false);
-    console.info('GM_setValue', (typeof GM_setValue != 'undefined') ? true : false);
-    console.info('GM_getValue', (typeof GM_getValue != 'undefined') ? true : false);
-    console.info('GM_addStyle', (typeof GM_addStyle != 'undefined') ? true : false);
-    console.info('GM_registerMenuCommand', (typeof GM_registerMenuCommand != 'undefined') ? true : false);
-
-    console.info('No requires');
-    console.info('GM_info', (typeof GM_info != 'undefined') ? GM_info : false);
-    console.info('GM_getMetadata', (typeof GM_getMetadata != 'undefined') ? GM_getMetadata : false);
-    console.info('GM_deleteValue', (typeof GM_deleteValue != 'undefined') ? true : false);
-    console.info('GM_listValues', (typeof GM_listValues != 'undefined') ? true : false);
-    console.info('GM_getResourceText', (typeof GM_getResourceText != 'undefined') ? true : false);
-    console.info('GM_getResourceURL', (typeof GM_getResourceURL != 'undefined') ? true : false);
-    console.info('GM_log', (typeof GM_log != 'undefined') ? true : false);
-    console.info('GM_openInTab', (typeof GM_openInTab != 'undefined') ? true : false);
-    console.info('GM_setClipboard', (typeof GM_setClipboard != 'undefined') ? true : false);
-  },
-  ApiRequires : function () {
-    if (typeof GM_xmlhttpRequest != 'undefined' &&
-      typeof GM_setValue != 'undefined' &&
-      typeof GM_getValue != 'undefined' &&
-      typeof GM_addStyle != 'undefined' &&
-      typeof GM_registerMenuCommand != 'undefined') {
-      return true;
-    } else {
-      return false;
-    }
-  },
+  },  
   getBrowser : function () {
     if (navigator.userAgent.contains('Firefox')) {
       return "Firefox";
@@ -271,32 +294,29 @@ Aak = {
   log : function (text) {
     console.info('Anti-Adblock Killer: ' + text);
   },
-  once : function (day, store, callback) {
-
-    var time = new Date().getTime();
-
-    //
-    if (isNaN(GM_getValue(store))) {
-      GM_setValue(store, 0);
-    }
-
-    //
-    if (Number(GM_getValue(store)) < time) {
-      GM_setValue(store, (time + (day * 24 * 60 * 60 * 1000)).toString());
-      callback();
-    } else {
-      return; // stop execution
-    }
+  once : function (day, name, callback) {
+    setTimeout(function () {
+      if (typeof GM_getValue != 'undefined') {
+        // Current time
+        var time = new Date().getTime();
+        // Create setValue
+        if (isNaN(GM_getValue(name))) {
+          GM_setValue(name, 1);
+        }
+        // Execute
+        if (Number(GM_getValue(name)) < time) {
+          GM_setValue(name, (time + (day * 24 * 60 * 60 * 1000)).toString());
+          callback();
+        }
+      }
+    }, 0);
   },
   registerMenuCommand : function () {
 
     // Scriptish
     // Note: No menu command is created when the user script is run in a iframe window.
     // https://github.com/scriptish/scriptish/wiki/GM_registerMenuCommand
-    if (window.top != window.self)
-      return; // stop if iframe
-
-    if (typeof GM_registerMenuCommand != 'undefined') {
+    if (Aak.isTopWindow && typeof GM_registerMenuCommand != 'undefined') {
       GM_registerMenuCommand('Anti-Adblock Killer v' + Aak.getVersion() + ' Homepage', function () {
         location.href = Aak.homeURL;
       });
@@ -304,60 +324,61 @@ Aak = {
     }
   },
   notification : function (message, delay) {
-    
-    if (window.top != window.self) return; // stop if iframe
 
-    // Style notification
-    Aak.addStyle('#aak-notification { color:#000 !important; background-color: #fff !important; display:block !important; width:100% !important; position:fixed !important; z-index: 99999 !important; left: 0; top: 0;  text-align: left; vertical-align:middle; margin:0 !important; font-size:14px !important; font-family:arial !important; border-bottom:3px solid #000 !important; line-height:1.2 !important; font-variant:small-caps;}');
+    if (Aak.isTopWindow) {
 
-    // Style notification Menu
-    Aak.addStyle('#aak-notification-menu { padding:0px 10px 0px 112px !important; background-color: #000 !important; }');
-    Aak.addStyle('#aak-notification-menu a { padding:5px !important; color: #fff !important; display:inline-block; text-decoration: none; }');
-    Aak.addStyle('#aak-notification-menu a:hover { color: #000 !important; background-color: #fff !important; }');
-    Aak.addStyle('#aak-notification-close { padding:5px !important; color: #fff !important; background-color: #c00 !important; display:inline-block; text-decoration: none; }');
+      // Style notification
+      Aak.addStyle('#aak-notification { color:#000 !important; background-color: #fff !important; display:block !important; width:100% !important; position:fixed !important; z-index: 99999 !important; left: 0; top: 0;  text-align: left; vertical-align:middle; margin:0 !important; font-size:14px !important; font-family:arial !important; border-bottom:3px solid #000 !important; line-height:1.2 !important; font-variant:small-caps;}');
 
-    // Style notification Content height:72px;
-    Aak.addStyle('#aak-notification-content { padding:10px 0px 10px 112px !important;  background-image:url("' + Aak.iconURL + '"); background-repeat:no-repeat; background-position:20px 10px; background-size:72px; min-height:72px;}');
-    Aak.addStyle('#aak-notification-content a { color: #c00 !important; text-decoration: none; }');
-    Aak.addStyle('#aak-notification-content a:hover { text-decoration: underline; }');
+      // Style notification Menu
+      Aak.addStyle('#aak-notification-menu { padding:0px 10px 0px 112px !important; background-color: #000 !important; }');
+      Aak.addStyle('#aak-notification-menu a { padding:5px !important; color: #fff !important; display:inline-block; text-decoration: none; }');
+      Aak.addStyle('#aak-notification-menu a:hover { color: #000 !important; background-color: #fff !important; }');
+      Aak.addStyle('#aak-notification-close { padding:5px !important; color: #fff !important; background-color: #c00 !important; display:inline-block; text-decoration: none; }');
 
-    // Create notification
-    var node = document.createElement('div');
-    node.id = 'aak-notification';
-    node.innerHTML = '<div id="aak-notification-menu"><a title="Visit Homepage." href="' + Aak.homeURL + '">Homepage</a> | <a title="Report new site, fix site or bug." href="' + Aak.reportURL + '">Report</a> | <a title="See changes" href="' + Aak.changelogURL + '">Changelog</a> | <a title="Make a donation to support the project." href="' + Aak.homeURL + '">Donate</a> | <a title="Submit a new feature." href="http://userscripts.org/scripts/discuss/155840">Suggest Features</a> | <a title="Close" href="javascript:void(0);" id="aak-notification-close">Close</a></div><div id="aak-notification-content"><div style="font-size: 20px;">Anti-Adblock Killer v' + Aak.getVersion() + '</div>' + message + '</div>';
+      // Style notification Content height:72px;
+      Aak.addStyle('#aak-notification-content { padding:10px 0px 10px 112px !important;  background-image:url("' + Aak.iconURL + '"); background-repeat:no-repeat; background-position:20px 10px; background-size:72px; min-height:72px;}');
+      Aak.addStyle('#aak-notification-content a { color: #c00 !important; text-decoration: none; }');
+      Aak.addStyle('#aak-notification-content a:hover { text-decoration: underline; }');
 
-    // Append notification
-    document.documentElement.appendChild(node);
+      // Create notification
+      var node = document.createElement('div');
+      node.id = 'aak-notification';
+      node.innerHTML = '<div id="aak-notification-menu"><a title="Visit Homepage." href="' + Aak.homeURL + '">Homepage</a> | <a title="Report new site, fix site or bug." href="' + Aak.reportURL + '">Report</a> | <a title="See changes" href="' + Aak.changelogURL + '">Changelog</a> | <a title="Make a donation to support the project." href="' + Aak.donateURL + '">Donate</a> | <a title="Submit a new feature." href="' + Aak.featuresURL + '">Suggest Features</a> | <a title="Close" href="javascript:void(0);" id="aak-notification-close">Close</a></div><div id="aak-notification-content"><div style="font-size: 20px;">Anti-Adblock Killer v' + Aak.getVersion() + '</div>' + message + '</div>';
 
-    // Manually Close notification
-    node.onclick = function () {
-      Aak.removeElement('#aak-notification');
+      // Append notification
+      document.documentElement.appendChild(node);
+
+      // Manually Close notification
+      node.onclick = function () {
+        Aak.removeElement('#aak-notification');
+      }
+
+      // Automatically Close notification
+      setTimeout(function () {
+        Aak.removeElement('#aak-notification');
+      }, delay);
+
     }
-
-    // Automatically Close notification
-    setTimeout(function () {
-      Aak.removeElement('#aak-notification');
-    }, delay);
   },
   detectFilters : function () {
-    window.addEventListener('load', function () {
-      if (window.top != window.self)
-        return; // stop if iframe
+    if (Aak.isTopWindow) {
+      window.addEventListener('load', function () {
+        var elem = document.createElement("div");
+        elem.id = "k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I";
+        elem.innerHTML = "<br>";
+        document.body.appendChild(elem);
 
-      var elem = document.createElement("div");
-      elem.id = "k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I";
-      elem.innerHTML = "<br/>";
-      document.body.appendChild(elem);
-
-      setTimeout(function () {
-        if (elem.clientHeight) {
-          Aak.notification('It seems that you have not subscribed to the list <b>Anti-Adblock Killer - Filters for Adblockers</b>, this list is necessary for the proper functioning of Anti-Adblock Killer. <a href="' + Aak.filtersSubscribe + '" target="_blank">Subscribe</a>', 30000);
-          console.warn("Anti-Adblock Killer: Filters for Adblockers No detected :( " + elem.clientHeight);
-        } else {
-          console.info("Anti-Adblock Killer: Filters for Adblockers detected");
-        }
-      }, 5000);
-    });
+        setTimeout(function () {
+          if (elem.clientHeight) {
+            Aak.notification('It seems that you have not subscribed to the list <b>Anti-Adblock Killer - Filters for Adblockers</b>, this list is necessary for the proper functioning of Anti-Adblock Killer. <a href="' + Aak.filtersSubscribe + '" target="_blank">Subscribe</a>', 30000);
+            console.warn("Anti-Adblock Killer: Filters for Adblockers No detected :( " + elem.clientHeight);
+          } else {
+            console.info("Anti-Adblock Killer: Filters for Adblockers detected");
+          }
+        }, 5000);
+      });
+    }
   },
   buildQuery : function (obj) {
     var array = [];
@@ -368,46 +389,46 @@ Aak = {
   },
   update : {
     check : function () {
-
-	  if(!Aak.getVersion()) return;
-	  if (window.top != window.self) return; // stop if iframe
-
-      Aak.notification('<b>Userscript: </b><i id="aak-update-script">Checking...</i><br/><b>Filters: </b><i id="aak-update-filters">Checking...</i>', 60000);
-	  
-	  setTimeout(function () {
-	    Aak.update.getLatestVerScript();
-		Aak.update.getLatestVerFilters();
-	  },2000);
-	  
+      if (Aak.isTopWindow) {
+        Aak.notification('<b>Userscript: </b><i id="aak-update-script">Checking...</i><br/><b>Filters: </b><i id="aak-update-filters">Checking...</i>', 60000);
+        setTimeout(function () {
+          Aak.update.getLatestVerScript();
+          Aak.update.getLatestVerFilters();
+        }, 2000);
+      }
     },
     checkAuto : function () {
-      var data = {
-        scriptid : Aak.scriptid,
-        uuid : Aak.getUUID(),
-        version : Aak.getVersion(),
-        browser : Aak.getBrowser(),
-        scriptmanager : Aak.getScriptManager()
-      };
-      GM_xmlhttpRequest({
-        timeout : 10000, // 10s
-        method : "POST",
-        data : Aak.buildQuery(data),
-        url : 'http://reeksite.com/php/get.php?checkupdate',
-        headers : {
-          "Content-Type" : "application/x-www-form-urlencoded"
-        },
-        onload : function (response) {
-          var res = response.responseText;
-          var status = response.status;
-          var json = JSON.parse(res);
-          //console.log(res, status, json);
- 
-          if (status == 200 && typeof json == 'object' && json.update) {
-            Aak.downloadURL = json.url;
-			Aak.update.check();
-          }
-        }
-      });
+      if (Aak.isTopWindow) {
+        window.addEventListener('load', function () {
+          var data = {
+            scriptid : Aak.scriptid,
+            uuid : Aak.getUUID(),
+            version : Aak.getVersion(),
+            browser : Aak.getBrowser(),
+            scriptmanager : Aak.getScriptManager()
+          };
+          GM_xmlhttpRequest({
+            timeout : 10000, // 10s
+            method : "POST",
+            data : Aak.buildQuery(data),
+            url : 'http://reeksite.com/php/get.php?checkupdate',
+            headers : {
+              "Content-Type" : "application/x-www-form-urlencoded"
+            },
+            onload : function (response) {
+              var res = response.responseText;
+              var status = response.status;
+              var json = JSON.parse(res);
+              console.log(res, status, json);
+
+              if (status == 200 && typeof json == 'object' && json.update) {
+                Aak.downloadURL = json.url;
+                Aak.update.check();
+              }
+            }
+          });
+        });
+      }
     },
     getLatestVerScript : function () {
       GM_xmlhttpRequest({
@@ -469,25 +490,60 @@ Aak = {
       });
     }
   },
-  autoReport : function (system, host) {
-    var data = {
-      system : system,
-      host : host
-    };
-    GM_xmlhttpRequest({
-      timeout : 10000, // 10s
-      method : "POST",
-      data : Aak.buildQuery(data),
-      url : 'http://reeksite.com/php/get.php?autoreport',
-      headers : {
-        "Content-Type" : "application/x-www-form-urlencoded"
-      },
-      onload : function (response) {
-        var res = response.responseText;
-        var status = response.status;
-        //console.log(res, status);
+  autoReport : function (system, host, target) {
+
+    var host = (host) ? host : location.host;
+	var target = (target) ? target : '';
+    var name = 'Aak' + system;
+
+    Aak.log(system);
+
+    if (typeof localStorage != "undefined") {
+      if (typeof localStorage[name] == "undefined") {
+
+        // w3schools.com/html/html5_webstorage.asp
+        // Using localStorage because GM get/setValue does not work
+        localStorage[name] = host;
+
+        var data = {
+          system : system,
+          host : host,
+		  target : target
+        };
+        GM_xmlhttpRequest({
+          timeout : 10000, // 10s
+          method : "POST",
+          data : Aak.buildQuery(data),
+          url : 'http://reeksite.com/php/get.php?autoreport',
+          headers : {
+            "Content-Type" : "application/x-www-form-urlencoded"
+          },
+          onload : function (response) {
+            var res = response.responseText;
+            var status = response.status;
+            //console.log(res, status);
+          }
+        });
+      } else {
+        //console.log('Already reported !');
       }
-    });
+    } else {
+      console.warn('Sorry! No Web Storage support.');
+    }
+  },
+  setStorage : function () {
+    if (localStorage) {
+      // Le navigateur supporte le localStorage
+    } else {
+      //throw 'localStorage non supporté';
+    }
+  },
+  getStorage : function () {
+    if (localStorage) {
+      // Le navigateur supporte le localStorage
+    } else {
+      //throw 'localStorage non supporté';
+    }
   },
   getReadme : function (selector) {
     GM_xmlhttpRequest({
@@ -524,7 +580,7 @@ Aak = {
       }
     });
   },
-  killer : function () {
+  kill : function () {
   
     // Detect & Kill
     for (var i in Aak.rules) {
@@ -552,7 +608,7 @@ Aak = {
           }
           // Alert just solution for Firefox
           else if (currRule.Host != '.*?') {
-            Aak.notification('This protection can not be neutralized by using the browser Mozilla Firefox.', 5000);
+            Aak.notification('Unfortunately. the solution found to disable this protection is only possible using the browser Mozilla Firefox.', 5000);
           }
         }
         // When Window Load
@@ -563,8 +619,8 @@ Aak = {
         if (currRule.Inserted) {
 
           // Mutation Observer
-          // https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-          // http://caniuse.com/mutationobserver
+          // developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+          // caniuse.com/mutationobserver
           if (typeof window.MutationObserver != 'undefined' ||
             typeof WebKitMutationObserver != 'undefined') {
 
@@ -575,16 +631,14 @@ Aak = {
             var obs = new MutationObserver(function (mutations) {
                 // We can safely use `forEach` because we already use mutation
                 // observers that are more recent than `forEach`. (source: MDN)
-                mutations.forEach(function (mut) {
+                mutations.forEach(function (mutation) {
                   // we want only added nodes
-                  if (!mut.addedNodes) {
+                  if (!mutation.addedNodes) {
                     return;
                   }
-                  Array.prototype.forEach.call(mut.addedNodes, function (addedNode) {
-
+                  Array.prototype.forEach.call(mutation.addedNodes, function (addedNode) {
                     //console.log(addedNode);
                     currRule.Inserted(addedNode);
-
                   });
                 });
               });
@@ -595,7 +649,7 @@ Aak = {
             });
           }
           // Mutation Events (Alternative Solution)
-          // https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Mutation_events
+          // developer.mozilla.org/en-US/docs/Web/Guide/Events/Mutation_events
           else {
             window.addEventListener("DOMNodeInserted", function (e) {
               currRule.Inserted(e.target);
@@ -617,23 +671,29 @@ Aak = {
   innerScript : function (e) {
     return e.target.innerHTML;
   },
-  addScript : function (s) {
-    if (/\.js$/.test(s)) { // External
-      document.head.appendChild(document.createElement('script')).src = s;
+  addScript : function (code) {
+    if (/\.js$/.test(code)) { // External
+      document.head.appendChild(document.createElement('script')).src = code;
     } else { // inline
-      document.head.appendChild(document.createElement('script')).innerHTML = s.toString().replace(/^function.*{|}$/g, '');
+      document.head.appendChild(document.createElement('script')).innerHTML = code.toString().replace(/^function.*{|}$/g, '');
     }
   },
-  addElement : function (id) {
-    Aak.addScript('function() { document.documentElement.appendChild(document.createElement("div")).id = "' + id + '"; }');
+  addElement : function (str) { // ex: div.ads or span#ads
+    if (str.contains('.')) {
+      var str = str.replace('.', ':className:');
+    } else if (str.contains('#')) {
+      var str = str.replace('#', ':id:');
+    }
+    var arr = str.split(':');
+	Aak.addScript('function() { document.documentElement.appendChild(document.createElement("' + arr[0] + '")).' + arr[1] + ' = "' + arr[2] + '"; document.querySelector("' + arr[0] + '").innerHTML = "<br>"; }');
   },
   removeElement : function (o) {
     if (typeof o === "object") {
+	if(o.parentNode!=null)
       return o.parentNode.removeChild(o);
     } else if (typeof o === "string") {
       var elem = document.querySelectorAll(o);
       for (var i = 0; i < elem.length; i++) {
-        //Aak.log("Remove ", elem[i]);
         elem[i].parentNode.removeChild(elem[i]);
       }
     } else {
@@ -672,12 +732,13 @@ Aak = {
     expires.setTime(today.getTime() + sTime); // 365*24*60*60*1000
     document.cookie = sName + "=" + encodeURIComponent(sValue) + ";expires=" + expires.toGMTString() + ";path=/";
   },
-  player : function (file, width, height) {
-    if (/^streamer/.test(file)) {
-      var flashvars = file;
-    } else {
-      var flashvars = "file=" + file;
-    }
+  player : function (file, width, height, autostart) {
+
+    var flashvars = (/^streamer/.test(file)) ? file : "file=" + file;
+    var width = (width) ? width : '480';
+    var height = (height) ? height : '270';
+    var autostart = (autostart) ? false : true;
+
     // Create player  // 480x270
     var player = document.createElement("object");
     player.setAttribute("data", "http://player.longtailvideo.com/player5.9.swf");
@@ -690,17 +751,17 @@ Aak = {
     player.setAttribute("bgcolor", "#000000");
     player.setAttribute("wmode", "opaque");
     player.setAttribute("seamlesstabbing", "true");
-    player.setAttribute("flashvars", flashvars);
+    player.setAttribute("flashvars", flashvars + "&autostart=" + autostart);
     return player;
   },
   rules : { // Rules
-    // ----------------------------------------------------
+    // --------------------------------------------------------------------------------------------
     // Specific
-    // ----------------------------------------------------
+    // --------------------------------------------------------------------------------------------
 	blogspot : { // No Country Redirect (NCR)
       Host : ['.blogspot.'],
       Inject : function () {
-        // http://www.webgranth.com/how-to-prevent-redirecting-blogspot-blog-to-country-specific-urls
+        // webgranth.com/how-to-prevent-redirecting-blogspot-blog-to-country-specific-urls
         var blog = location.host.split(".");
         if (blog[blog.length - 1] != "com") {
           var ncr = "http://" + blog[0] + ".blogspot.com/ncr";
@@ -716,7 +777,6 @@ Aak = {
         if (id != null) {
           Aak.addStyle("#" + id[0] + " { height: 12px !important; }");
         }
-
 		// New 12.05.2014
 		// + abp rule (alternative solution)
 		Aak.addStyle("#adblocktrap { height: 12px !important; }");
@@ -728,6 +788,29 @@ Aak = {
         }
       }
     },
+    notreplanete : {
+      Host : ['notre-planete.info'],
+      Inject : function () {
+        Aak.addStyle("#testpub { height: 51px !important; }");
+        Aak.addStyle("#pub_meh { height: 51px !important; }");
+      },
+      Loaded : function () {
+        unsafeWindow.elp = false;
+        unsafeWindow.elt = false;
+        unsafeWindow.largeur = false;
+      }
+    },
+    anisubsia : {
+      Host : ['anisubsia.com'],
+      Inject : function () {
+	    // + abp rule #@#.adsantilok
+        Aak.addStyle(".adsantilok { height: 5px !important; }");
+      },
+      Loaded : function () {
+        unsafeWindow.jAntiBlock = function () {return;};
+        unsafeWindow.CekBlok = function () {return;};
+      }
+    },	
     elahmad : {
       Host : ['elahmad.com'],
       Inject : function () {
@@ -780,6 +863,12 @@ Aak = {
         Aak.addStyle("#ad_1 { height: 1px !important; }");
       }
     },
+    urlchecker : {
+      Host : ['urlchecker.net'],
+      Inject : function () {
+        Aak.addStyle("#adchecker { height: 20px !important; }");
+      }
+    },	
     interfans : { // http://www.interfans.org/forum/
       Host : ['interfans.org'],
       Inject : function () {
@@ -798,6 +887,17 @@ Aak = {
         Aak.addStyle(".forumAd { height: 1px !important; display: none !important; }");
       }
     },
+    eveskunk : {
+      Host : ['eveskunk.com'],
+      Inject : function () {
+	    // + abp rule eveskunk.com#@#.adsbygoogle
+        Aak.addStyle(".adsbygoogle { height: 5px !important; }");
+		//Aak.addElement('div.adsbygoogle');
+      },
+      Loaded : function () {
+        document.querySelector('.adsbygoogle').innerHTML = '<br>';
+      }
+    },	
     tweaktown : {
       Host : ['tweaktown.com'],
       Inject : function () {
@@ -849,25 +949,25 @@ Aak = {
       }
     },
     divIdZdXd : { // packed function eval
-      Host : ['picstwist.com', 'pornblogy.com', 'imgboo.me', 'urlgalleries.net', 'camelstyle.net', 'filmovizija.com', 'imgleech.com', 'hqpdb.com'],
+      Host : ['picstwist.com', 'pornblogy.com', 'imgboo.me', 'urlgalleries.net', 'camelstyle.net', 'imgleech.com', 'hqpdb.com'],
       Inject : function () {
         Aak.addStyle("#zd, #xd { height: 1px !important; visibility: visible !important;  display: block  !important; }");
-        Aak.addElement('zd');
-        Aak.addElement('xd');
+        Aak.addElement('div#zd');
+        Aak.addElement('div#xd');
       }
     },
     divIdWdGd : { // packed function eval
-      Host : ['onlyteensx.net', 'filmovizija.com'],
+      Host : ['onlyteensx.net'],
       Inject : function () {
         Aak.addStyle("#wd, #gd { height: 1px !important; visibility: visible !important;  display: block  !important; }");
-        Aak.addElement('wd');
-        Aak.addElement('gd');
+        Aak.addElement('div#wd');
+        Aak.addElement('div#gd');
       }
     },
     divIdTester : {
-      Host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'filmovizija.com', 'nosteam.ro', 'openrunner.com', 'chine-informations.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com'],
+      Host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'chine-informations.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'filmovizija.com', 'filmovizija.net'],
       Inject : function () {
-        Aak.addElement('tester');
+        Aak.addElement('div#tester');
       }
     },
     divIdAdd : {
@@ -875,19 +975,19 @@ Aak = {
       // @@||filecom.net/advertisement.js
       // document.write('<div id="add"></div>');
       Inject : function () {
-        Aak.addElement('add');
+        Aak.addElement('div#add');
       }
     },
     freegamehosting : {
       Host : ['freegamehosting.nl'],
       Inject : function () {
-        Aak.addElement('adtest');
+        Aak.addElement('div#adtest');
       }
     },
     theweatherspace : {
       Host : ['theweatherspace.com'],
       Inject : function () {
-        Aak.addElement('ab-bl-advertisement');
+        Aak.addElement('div#ab-bl-advertisement');
       }
     },
     leaguesecretary : {
@@ -895,38 +995,38 @@ Aak = {
       // <div id="adpbtest">;
       Host : ['leaguesecretary.com', 'teknogods.com'],
       Inject : function () {
-        Aak.addElement('adpbtest');
+        Aak.addElement('div#adpbtest');
       }
     },
     primeshare : {
       Host : ['primeshare.tv'],
       Inject : function () {
-        Aak.addElement('adblock');
+        Aak.addElement('div#adblock');
       }
     },
     freesportsbet : {
       Host : ['freesportsbet.com'],
       Inject : function () {
-        Aak.addElement('ad-tester');
+        Aak.addElement('div#ad-tester');
       }
     },
     jkanime : {
       Host : ['jkanime.net'],
       // @@||jkanime.net/assets/js/advertisement2.js
       Inject : function () {
-        Aak.addElement('reco');
+        Aak.addElement('div#reco');
       }
     },
     _720pmkv : {
       Host : ['720pmkv.com'],
       Inject : function () {
-        Aak.addElement('advert');
+        Aak.addElement('div#advert');
       }
     },
     eventhubs : {
       Host : ['eventhubs.com'],
       Inject : function () {
-        Aak.addElement('blahyblaci1');
+        Aak.addElement('div#blahyblaci1');
         unsafeWindow.clearInterval(tid);
       },
       Loaded : function () {
@@ -936,7 +1036,6 @@ Aak = {
     kissanime : {
       Host : ['kissanime.com'],
       Loaded : function () {
-
         if (/id=[\d]+$/.test(location.href)) {
           setTimeout(function () {
 
@@ -960,7 +1059,6 @@ Aak = {
 
           }, 3000);
         }
-
       },
       BeforeFix : function () {},
       Before : function (e) {
@@ -1033,6 +1131,7 @@ Aak = {
         }
       }
     },
+	/*
     openuserjs : { 
       Host : ['openuserjs.org'],
       Loaded : function () {
@@ -1049,6 +1148,7 @@ Aak = {
         }
       }
     },	
+	*/
     aidemu : {
       Host : ['aidemu.fr'],
       Inject : function () {
@@ -1090,7 +1190,7 @@ Aak = {
       }
     },
     filmovizija : { // many changes
-      Host : ['filmovizija.com'],
+      Host : ['filmovizija.com', 'filmovizija.net'],
       Inject : function () {
 	    // code are obfuscated
         Aak.setCookie('ipsos', 0);
@@ -1222,14 +1322,14 @@ Aak = {
         sessionStorage.clear();
       }
     },
-    livesoccerhq : {
-      Host : ['livesoccerhq.com', 'lvshd.altervista.org'],
+    wowhq : {
+      Host : ['livesoccerhq.com', 'lvshd.altervista.org', 'wowhq.ws', 'futeonline.altervista.org'],
       Loaded : function () {
-        if ("http://livesoccerhq.com/" == location.href) {
-          location.href = 'http://livesoccerhq.com/programacao.php';
+        if ("http://wowhq.ws/" == location.href) {
+          //location.href = 'http://futeonline.altervista.org/programacao2.php';
         } else {
           var matches = location.href.match(/link=([\w]+)/i);
-          if (matches[1]) {
+          if (matches != null) {
             console.log(atob(matches[1]));
             location.href = atob(matches[1]);
           }
@@ -1244,10 +1344,15 @@ Aak = {
         Aak.removeElement("#gw_overlay");
       }
     },
-    str3amtv : { // remove ads
-      Host : ['altervista.org'],
+    str3amtv : { // remove ads + popupwindow
+      Host : ['futhd1.blogspot.com'],
       Loaded : function () {
         Aak.removeElement('div[id^="floatLayer"]');
+		var anchors = document.querySelectorAll('a[onclick^="window.open"]');
+		for(i in anchors) {
+		  anchors[i].onclick = null;
+		  anchors[i].target = '_self';
+		}
       }
     },
     risikogesundheit : {
@@ -1275,13 +1380,29 @@ Aak = {
 		var path = location.pathname;
         if (path.contains('/help/removeAB.php') && !ref.host.contains(host)) {
           // Auto report
-          Aak.autoReport(host, ref.host);
+          Aak.autoReport('Adworkmedia', ref.host, host);
+		  // Notification
+		  Aak.notification('You must subscribe to Anti-Adblock Killer - Filters for Adblockers. <a href="' + Aak.filtersSubscribe + '" target="_blank">Subscribe Now !</a>, ', 20000);
         }
       }
     },
-    // ----------------------------------------------------
-    // Specific & Players
-    // ----------------------------------------------------
+    adworkmediasurvey : { // experimental
+      Host : ['4shared.downloadlagu.info'],
+      Loaded : function () {
+	    // http://www.adworkmedia.com/gLoader.php?GID=10184&go=&sid=
+        for (i in unsafeWindow) {
+          if (typeof unsafeWindow[i] == 'function' &&
+            !/native/.test(unsafeWindow[i].toString()) &&
+            /_\d+$/.test(i)) {
+            console.log(i);
+            unsafeWindow[i] = false;
+          }
+        }
+      }
+    },	
+    // --------------------------------------------------------------------------------------------
+    // Players
+    // --------------------------------------------------------------------------------------------
     videobug : {
       Host : ['videobug.net'],
       Inserted : function (insertedNode) {
@@ -1294,23 +1415,29 @@ Aak = {
     abola : {
       Host : ['miragens.abola.pt'],
       Loaded : function () {
-        //http://www.miragens.abola.pt/videosdetalhe.aspx?id=19695
-        //http://www.miragens.abola.pt/vabolaoffice/uploads/19/69/5/19695.flv
+        // http://www.miragens.abola.pt/media.aspx?id=20390&op=2&p=1
+        // http://www.miragens.abola.pt/MiragensBO/uploads/20/39/0/20390.mp4
 
-        // video
-        if (location.pathname !== '/videosdetalhe.aspx') {
-          return false;
+        // Fix: 9.6.2014 (new player)
+        if ('/media.aspx' == location.pathname) {
+          var id = location.href.match(/media.aspx[?]id=([\d]+)/)[1];
+          var path = id.match(/.{1,2}/g).join('/');
+          var file = 'http://www.miragens.abola.pt/MiragensBO/uploads/' + path + '/' + id + '.mp4';
+
+          var newPlayer = Aak.player(file, '554', '311');
+          var divPlayer = document.querySelector('#videoplayer');
+          divPlayer.innerHTML = '';
+          divPlayer.appendChild(newPlayer);
+
+          /*
+          setTimeout(function () {
+          unsafeWindow.$('#pub').hide();
+          unsafeWindow.$('#line1').css('visibility', 'visible');
+          unsafeWindow.jwplayer('preroll').remove();
+          unsafeWindow.criaPlayer('player');
+          }, 2000);
+           */
         }
-        var videoid = location.href.match(/videosdetalhe.aspx[\?]id=([\d]+)/)[1];
-        var videodir = videoid.match(/.{1,2}/g).join('/');
-        var videofile = 'http://www.miragens.abola.pt/vabolaoffice/uploads/' + videodir + '/' + videoid + '.flv';
-        var oldPlayer = document.querySelector("#flvplayerIE");
-        var newPlayer = Aak.player(videofile, '500', '281');
-        var divPlayer = oldPlayer.parentNode;
-
-        // replace player
-        divPlayer.replaceChild(newPlayer, oldPlayer);
-
       }
     },
     voxnow : {
@@ -1347,58 +1474,61 @@ Aak = {
 		
 		//Aak.addStyle('#cboxOverlay, #cboxWrapper { display:none;}');
 
-        // Solution using mobile webpage
-        //if ("playtv.fr" == location.host) {
-        //  location.href = 'http://m.playtv.fr/';
-        //}
+		/*
+        Solution using mobile webpage
+        if ("playtv.fr" == location.host) {
+          location.href = 'http://m.playtv.fr/';
+        }
+		*/
 
       },
       Before : function (e) {
-	    // http://playtv.fr/assets/scripts/main.1399905958517.js
-        //if (/scripts\/main\.\d+\.js$/.test(e.target.src)) {
-          //Aak.stopScript(e);
-		  //console.log(e.target.src);
-        //}
+	    // playtv.fr/assets/scripts/main.1399905958517.js
+        /*
+		if (/scripts\/main\.\d+\.js$/.test(e.target.src)) {
+          Aak.stopScript(e);
+		  console.log(e.target.src);
+        }
+		*/
       }
     },
     myspass : {
       Host : ['myspass.de'],
       Loaded : function () {
 
-        var videoid = location.pathname.match(/\/(\d+)\/$/)[1];
+        var videoid = location.pathname.match(/\/(\d+)\/$/);
 
-        if (!videoid)
-          return false;
+        if (videoid != null) {
 
-        GM_xmlhttpRequest({
-          method : "GET",
-          url : 'http://www.myspass.de/myspass/includes/apps/video/getvideometadataxml.php?id=' + videoid,
-          headers : {
-            'User-agent' : navigator.userAgent,
-            'Content-Type' : 'application/xml',
-          },
-          onload : function (result) {
-            var res = result.responseText;
-            //console.log(res);
+          GM_xmlhttpRequest({
+            method : "GET",
+            url : 'http://www.myspass.de/myspass/includes/apps/video/getvideometadataxml.php?id=' + videoid[1],
+            headers : {
+              'User-agent' : navigator.userAgent,
+              'Content-Type' : 'application/xml',
+            },
+            onload : function (result) {
+              var res = result.responseText;
+              //console.log(res);
 
-            // parser xml
-            parser = new DOMParser();
-            xmlDoc = parser.parseFromString(res, "application/xml");
+              // parser xml
+              parser = new DOMParser();
+              xmlDoc = parser.parseFromString(res, "application/xml");
 
-            // video
-            var videofile = xmlDoc.getElementsByTagName("url_flv").item(0).textContent;
-            var oldPlayer = document.querySelector('embed#player');
-            var newPlayer = Aak.player(videofile, '640', '360');
-            var divPlayer = document.querySelector('div#player');
+              // video
+              var videofile = xmlDoc.getElementsByTagName("url_flv").item(0).textContent;
+              var oldPlayer = document.querySelector('embed#player');
+              var newPlayer = Aak.player(videofile, '640', '360');
+              var divPlayer = document.querySelector('div#player');
 
-            // replace
-            divPlayer.innerHTML = '';
-            divPlayer.appendChild(newPlayer);
-            //divVideo.replaceChild(newPlayer, oldVideo);
+              // replace
+              divPlayer.innerHTML = '';
+              divPlayer.appendChild(newPlayer);
+              //divVideo.replaceChild(newPlayer, oldVideo);
 
-          }
-        });
-
+            }
+          });
+        }
       }
     },
     ilive : {
@@ -1421,43 +1551,29 @@ Aak = {
       Host : ['sharecast.to'],
       Loaded : function () {
         if (/^\/embed.php/i.test(location.pathname)) {
+          
+		  // Disable popunders
+          var interval = setInterval(function () {
+              Aak.setCookie('vid_main', true);
+              Aak.setCookie('vid_sub', true);
+              Aak.setCookie('vid_delay', true);
+            }, 100);
 
-          //setInterval(function(){ // remove event
-          //  unsafeWindow.document.body.onclick = false;
-          //},0);
+          setTimeout(function () {
+            clearInterval(interval);
+          }, 5000);
+
+          unsafeWindow.document.removeEventListener('unload', this, false);
+          unsafeWindow.document.removeEventListener('click', this, false);
 
           var oldPlayer = document.querySelector("object#container");
           var flashvars = oldPlayer.querySelector('param[name="flashvars"]').value;
-          var flashvars = flashvars.replace("&stretching=uniform&controlbar.position=over", "");
+          var flashvars = flashvars.replace("&controlbar.position=over", "");
           var newPlayer = Aak.player(flashvars, '600', '400');
           var divPlayer = oldPlayer.parentNode;
 
           // remove head
-          document.querySelector('head').innerHTML = '';
-
-          // replace player
-          divPlayer.replaceChild(newPlayer, oldPlayer);
-        }
-      },
-      Before : function (e) {
-        if (Aak.innerScript(e).contains('function popundrInit()')) {
-          Aak.stopScript(e);
-        }
-      }
-    },
-    kingofplayers : {
-      Host : ['kingofplayers.com66'],
-      Loaded : function () {
-        if (/^\/stream[\d]+.html/i.test(location.pathname)) {
-
-          var oldPlayer = document.querySelector("object#playerflash");
-          var flashvars = oldPlayer.querySelector('param[name="flashvars"]').value;
-          var flashvars = flashvars.replace("&stretching=uniform&controlbar.position=over", "");
-          var newPlayer = Aak.player(flashvars, '600', '400');
-          var divPlayer = oldPlayer.parentNode;
-
-          // remove head
-          document.querySelector('head').innerHTML = '';
+          document.head.innerHTML = '';
 
           // replace player
           divPlayer.replaceChild(newPlayer, oldPlayer);
@@ -1467,27 +1583,37 @@ Aak = {
     flowplayer : {
       Host : ['videofun.me', 'play44.net'],
       Loaded : function () {
-
         if (/^\/embed/i.test(location.pathname)) {
           setTimeout(function () {
-
             var player = document.querySelector("#flowplayer_api");
-            console.log(location.pathname);
             var parent = player.parentNode;
             var clone = player.cloneNode(true);
             clone.querySelector('param[name="allowfullscreen"]').value = true;
 
-            // replace player
+            // Replace player
             parent.replaceChild(clone, player);
-
           }, 1000);
         }
       }
     },
-    // ----------------------------------------------------
-    // Specific & Firefox
-    // ----------------------------------------------------
-     gamespowerita : {
+    // --------------------------------------------------------------------------------------------
+    // Firefox
+    // --------------------------------------------------------------------------------------------
+    yellowbridge : {
+      Host : ['yellowbridge.com'],
+      Loaded : function () {
+        unsafeWindow.finalizePage = function () {return;};
+      },
+      BeforeFix : function () {
+        unsafeWindow.finalizePage = function () {return;};
+      },
+      Before : function (e) {
+        if (Aak.innerScript(e).contains('finalizePage()')) {
+          Aak.stopScript(e);
+        }
+      }
+    },
+    gamespowerita : {
       Host : ['gamespowerita.com'],
       BeforeFix : function () {
         /* solved with abp rule */
@@ -1498,12 +1624,12 @@ Aak = {
         }
       }
     },
-    sporttvdireto : {
+    sporttvdireto : { // bug auto redirect loop
       Host : ['sporttvdireto.com', 'tvdesporto.com'],
       Inject : function () {
         // this solution dont works
         // document.getElementById('ads1').clientHeight < 20
-        Aak.addElement('ads1');
+        Aak.addElement('div#ads1');
         Aak.addStyle("#ads1 { height: 30px !important; }");
       },
       Before : function (e) {
@@ -1524,33 +1650,55 @@ Aak = {
         }
       }
     },
-    sawlive : { // to check
-      Host : ['sawlive.tv'],
+    // Cloudflare
+    rocketloader : {
+      Host : ['fpabd.com'],
+      BeforeFix : function (e) {
+        // do nothing
+      },
       Before : function (e) {
-        // Find timer and proceed
-        if (Aak.innerScript(e).contains('function closeMyAd(){')) {
-          Aak.stopScript(e);
+        /*
+        console.log(e.target);
+        var script = e.target;
+        var regex = /\/(visitScript\/|Webservices\/jsParseLinks.aspx[?]id=)[a-z0-9]+$/i;
+        if (script.getAttribute('data-rocketsrc') &&
+        regex.test(script.getAttribute('data-rocketsrc'))) {
+        Aak.stopScript(e);
+        }
+         */
+        // /visitScript/S7G2
+        // data-rocketsrc="/Webservices/jsParseLinks.aspx?id=
 
-          document.getElementById("sawdiv").innerHTML = "";
-          document.getElementById("sawdiv").style.display = "none";
-          document.getElementById("splay").style.visibility = "visible";
-          document.getElementById("sloading").innerHTML = "";
-          unsafeWindow.active = 1;
-          unsafeWindow.so.write("jwplayer1");
+        /*
+        if (script.type == 'text/rocketscript' && script.getAttribute('data-rocketsrc')) {
+
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', script.getAttribute('data-rocketsrc'));
+        script.removeAttribute('data-rocketsrc');
+        console.log(script);
+
         }
+         */
+      },
+      Loaded : function (e) {
+        /*
+        var scripts = document.scripts;
+        for (i = 0; i < scripts.length; i++) {
+        var script = scripts[i];
+        if (script.type == 'text/rocketscript' && script.getAttribute('data-rocketsrc')) {
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', script.getAttribute('data-rocketsrc'));
+        script.removeAttribute('data-rocketsrc');
+        console.log(script);
+        //Aak.removeElement(script);
+        }
+        }
+         */
       }
     },
-    dinozap : { // to check
-      Host : ['dinozap.tv'],
-      Before : function (e) {
-        if (Aak.innerScript(e).contains('window.location = "http://www.dinozap.tv/noadsblock.html"') || Aak.innerScript(e).contains('window.location = "http://cache.hdcastream.com/noadsblock.html"')) {
-          Aak.stopScript(e);
-        }
-      }
-    },
-    // ----------------------------------------------------
+    // --------------------------------------------------------------------------------------------
     // Generic
-    // ----------------------------------------------------
+    // --------------------------------------------------------------------------------------------
     generic : {
       Host : ['.*?'],
       Inject : function () {
@@ -1571,12 +1719,13 @@ Aak = {
           Aak.removeElement('#blockdiv');
         }
 
+
         // Antiblock - http://antiblock.org/
         localStorage.antiblockId = false;
         var styles = document.querySelectorAll('style');
         for (var i in styles) {
           var style = styles[i];
-          //console.log(currStyle); 
+          //console.log(style); 
           if (typeof style == "object") {
             var css = style.innerHTML.replace(/[\n\r\t\s]+/g, "");
             var matches = css.match(/#([0-9a-z]{4,10})\{.*position:fixed\!important;.+document\.documentElement.scrollTop\?document\.documentElement\.scrollTop:document\.body\.scrollTop.+\}#/i);
@@ -1586,11 +1735,37 @@ Aak = {
             }
           }
         }
+		
+        // Anti-Adblockers
+		var systems = {
+		  'Adworkmedia' : '(adworkmedia|loxtk).com/gLoader.php',
+		  'FuckAdBlock' : '/fuckadblock.js$',
+		  'jQueryAdblock' : '/jquery.adblock.js$',
+		  'jQueryAdblockDetector' : '/jquery.adblock-detector.js$',
+		  'AdvertisementJs' : '/advertisement([\d]|-AdBlock)?.js$',
+		  'DetectAdBlockingSoftware' : '/adframe.js$',
+		  'AntiAdBuster' : '/anti-ad-buster.js$',
+		  'RTKAntiAdblock' : '/blockcake.js$'
+		}
+		var scripts = document.scripts;
+		for (var i = 0; i < scripts.length; i++) {
+		  var script = scripts[i];
+		  if (script.src) {
+		    for (key in systems) {
+		      if (new RegExp(systems[key]).test(script.src)) {
+		        //console.log(key, location.host, script.src);
+				Aak.autoReport(key, location.host, script.src);
+		      }
+		    }
+		  }
+		}
+		
       },
       Inserted : function (insertedNode) {
 
         // All Nodes
         //console.log(insertedNode);
+
 
         // Adunblock - http://adunblock.com/
         var reId = /^[a-z]{8}$/;
@@ -1612,7 +1787,7 @@ Aak = {
           reBg.test(insertedNode.nextSibling.className)) {
 
           // Remove Message
-          Aak.log("Remove AdUnBlock.com (Premium)");
+          Aak.autoReport("AdUnBlockPremium");
           Aak.removeElement(insertedNode.nextSibling);
           Aak.removeElement(insertedNode);
         }
@@ -1622,7 +1797,7 @@ Aak = {
           reMessage.test(insertedNode.innerHTML)) {
 
           // Remove Message
-          Aak.log("Remove AdUnBlock.com (Free)");
+          Aak.autoReport("AdUnBlockFree");
           Aak.removeElement(insertedNode);
         }
 
@@ -1645,52 +1820,56 @@ Aak = {
           reTag2.test(insertedNode.firstChild.nodeName)) {
           //console.log(insertedNode);
 
+		  
+          // Antiblock.org v3 + Fork
+           if (insertedNode.firstChild.firstChild &&
+            insertedNode.firstChild.firstChild.nodeName == "IMG" &&
+            typeof unsafeWindow[insertedNode.id] == 'object' &&
+            typeof unsafeWindow[insertedNode.id].displayMessage == 'function') {
 
-          // Better Stop Adblock
-          if (/Better Stop Adblock/.test(insertedNode.innerHTML) &&
-            insertedNode.id.length == 10) {
-
-            var nodes = document.body.childNodes;
-            for (var i = 0; i < nodes.length; i++) {
-              if (nodes[i].nodeName == 'DIV' && nodes[i].id && nodes[i].className) {
-                nodes[i].style.display = "block";
-                //console.log(nodes[i]);
+            // Better Stop Adblock
+            // Demo: http://codeclan.altervista.org/
+            if (typeof unsafeWindow[insertedNode.id].toggle == 'function') {
+			  var childs = document.body.childNodes;
+              for (var i = 0; i < childs.length; i++) {
+                var child = childs[i];
+                if (child.nodeType == 1 && child.style.display == 'none') {
+                  child.style.display = ''; // show
+                  //console.log(node);
+                }
               }
+			  Aak.autoReport('BetterStopAdblock');
             }
-            // Remove
+			// Antiblock.org v3
+			else { 
+			  Aak.autoReport('Antiblock3');
+            }
+			// Disable
+            //console.log(insertedNode, unsafeWindow[insertedNode.id]);
             Aak.removeElement(insertedNode);
-            Aak.log("Remove Better Stop Adblock");
+            unsafeWindow[insertedNode.id] = false;
           }
-
+          // Antiblock.org v3 + v2 (Alternative Solution)
+          else if (localStorage.antiblockId != false &&
+            insertedNode.id == localStorage.antiblockId) {
+            // V3
+            if (typeof unsafeWindow[insertedNode.id] == 'object') {
+              unsafeWindow[insertedNode.id] = false;
+              Aak.autoReport("Antiblock3");
+            } else { // V2
+              Aak.autoReport("Antiblock2");
+            }
+            // Disable
+            //console.log(insertedNode);
+            Aak.removeElement(insertedNode);
+          }
           // Antiblock.org v2
           else if (reWords1.test(insertedNode.innerHTML) &&
             reWords2.test(insertedNode.innerHTML)) {
-
-            // Remove
-            Aak.log("Remove Antiblock.org v2");
-            Aak.removeElement(insertedNode);
+            // Disable
             //console.log(insertedNode);
-          }
-          // Antiblock.org v3
-          else if (insertedNode.firstChild.firstChild &&
-            insertedNode.firstChild.firstChild.nodeName == "IMG" &&
-			typeof unsafeWindow[insertedNode.id] == 'object' &&
-			typeof unsafeWindow[insertedNode.id].displayMessage == 'function') {
-			
-            // Remove Message
-            Aak.log("Remove Antiblock.org v3");
+            Aak.autoReport("Antiblock2");
             Aak.removeElement(insertedNode);
-			unsafeWindow[insertedNode.id] = false;
-            //console.log(insertedNode);
-          }
-          // Alternative solution to disable all versions
-          else if (localStorage.antiblockId != false &&
-            insertedNode.id == localStorage.antiblockId) {
-
-            // Remove
-            Aak.log("Remove Antiblock.org v2 & v3");
-            Aak.removeElement(insertedNode);
-            //console.log(insertedNode);
           }
           //  Many false positive
           else {

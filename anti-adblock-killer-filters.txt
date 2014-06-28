@@ -39,14 +39,14 @@
 ! AntiAdBuster 
 ! http://anti-ad-blocker.blogspot.kr/
 /anti-ad-buster.js|$script
-! adframe.js
+! Detect Ad-blocking Software
 ! http://detect-ad-blocking-software.webconrad.com/
 @@/adframe.js|$script
-! advertisement.js 
-! http://d3xt3r.com/anti-adblock?test
-! http://erikswan.net/abp/
+! AdBlock Plus Detection
+! http://erikswan.net/abp/ (<div id="tester">)
 @@/\/advertisement[\d]?\.js$/$script
-! blockblockA - blockblockB
+! Anti-Adblock V2
+! http://d3xt3r.com/anti-adblock?test (blockblockA )
 @@/advertisement-AdBlock.js|$script
 ! jQuery Adblock Detector
 ! https://github.com/broom9/jquery-adblock-detector
@@ -355,6 +355,10 @@ uptobox.com#@##adblocktrap
 notre-planete.info#@##pub_meh
 ! btspread.com
 @@||clkrev.com/adServe/banners?*$script,domain=btspread.com
+! eveskunk.com
+eveskunk.com#@#.adsbygoogle
+! anisubsia.com
+anisubsia.com#@#.adsantilok
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -719,6 +723,8 @@ mylivesocial.com##.bgimg
 /grooptoo/index/getGrooptooAd/|
 ! assurance-conseil.net
 ||assurance-conseil.net/popup.js
+! kizu.org
+||kizu.org/adv-*$popup
 ! tvgolo.com
 tvgolo.com###hstp-bg-overlay
 tvgolo.com###hstp_interstitial
