@@ -31,23 +31,25 @@
 @@||adworkmedia.com/gTemplate.php?GID=*$subdocument,third-party
 ! AdScendMedia
 @@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz|filesdld.com
+@@||adscendmedia.com/gwframe.php?*$domain=bee4.biz|filesdld.com
 ! cpagrip.com
 @@||cpagrip.com/script_include.php?id=*$script
 ! RTKAntiAdblock
 ! http://ryanteck.github.io/RTK-Anti-Adblock/
 /blockcake.js|$script
-! AntiAdBuster 
-! http://anti-ad-blocker.blogspot.kr/
+! AntiAdBuster (Anti-Ad Blocker / Defender)
+! http://anti-ad-blocker.blogspot.com/
 /anti-ad-buster.js|$script
 ! Detect Ad-blocking Software
 ! http://detect-ad-blocking-software.webconrad.com/
 @@/adframe.js|$script
 ! AdBlock Plus Detection
 ! http://erikswan.net/abp/ (<div id="tester">)
-@@/\/advertisement[\d]?\.js$/$script
 ! Anti-Adblock V2
 ! http://d3xt3r.com/anti-adblock?test (blockblockA )
+@@/\/advertisement[\d]?\.js$/$script
 @@/advertisement-AdBlock.js|$script
+@@/advertisement.js?*|$script
 ! jQuery Adblock Detector
 ! https://github.com/broom9/jquery-adblock-detector
 /jquery.adblock-detector.js|$script
@@ -151,8 +153,6 @@ ilix.in,urlink.at,priva.us##.backk
 ilix.in,urlink.at,priva.us###blockMsg
 ! senmanga.com
 senmanga.com##P[class="no"]
-! cardinals.clubs.nfl.com
-@@||prod.static.cardinals.clubs.nfl.com/nfl-assets/js/*
 ! removeadblock.com
 @@||removeadblock.com/js/show_ads.js
 ! gametrailers.com
@@ -345,20 +345,29 @@ uptobox.com#@##adblocktrap
 @@||privateinsta.com/javascript/rqrkrm.js$script
 ! javzoo.com & javpee.com
 !@@/^http:\/\/www\.(javzoo|javpee)\.com\/ad\w+\.js$/$script
-@@||javzoo.com/ad*.js|$script
-@@||javpee.com/ad*.js|$script
+@@||javzoo.com/*.js|$script
+@@||javpee.com/*.js|$script
+! btspread.com
+@@||btspread.com/*.js|$script
 ! anime4fun.com
 !anime4fun.com#@#.top-side-ads
 ||anime4fun.com/js/newanime.js$script
 ! notre-planete.info
 @@||googleads.g.doubleclick.net^$subdocument,document=notre-planete.info
 notre-planete.info#@##pub_meh
-! btspread.com
-@@||clkrev.com/adServe/banners?*$script,domain=btspread.com
 ! eveskunk.com
 eveskunk.com#@#.adsbygoogle
 ! anisubsia.com
 anisubsia.com#@#.adsantilok
+! play44.net / videobug.net
+play44.net,videobug.net,videofun.me,byzoo.org##.jhasvdjhas
+! prod.static.cardinals.clubs.nfl.com
+azcardinals.com###adblock-notice
+@@/js/detect-blocked-ads.js$script,domain=prod.static.cardinals.clubs.nfl.com
+! breakmanga.com
+breakmanga.com###notice
+! chine-informations.com
+chine-informations.com###entete + div[id][class="nomobile"]
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -742,6 +751,8 @@ urlchecker.net###ads_notify
 ##A[href^="http://action.metaffiliation.com/trk.php?"]
 ! fake codec
 ###WarningCodec
+! malwares
+||getapplicationmy.info^
 ! File Search Engines ---------------------------------------------------------------------------
 ! sharedir.com
 sharedir.com##IMG[src="http://premiumdl4.me/rseimages/rse_banner64_3.png"]
