@@ -14,7 +14,7 @@
 !----------------------------------------------------------------------------------------------------!
 ###k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I
 !----------------------------------------------------------------------------------------------------!
-! Generic
+! AntiAdblock - Generic
 !----------------------------------------------------------------------------------------------------!
 ! AdWorkMedia
 ! if (!awm) { window.location = 'http://adworkmedia.com/help/removeAB.php'; }
@@ -30,8 +30,11 @@
 @@||adworkmedia.com/gLoader.php?GID=*$script,third-party
 @@||adworkmedia.com/gTemplate.php?GID=*$subdocument,third-party
 ! AdScendMedia
-@@||adscendmedia.com/gwjs.php?*$script,domain=bee4.biz|filesdld.com
-@@||adscendmedia.com/gwframe.php?*$domain=bee4.biz|filesdld.com
+! if (gwloaded==false){window.location = "http://adscendmedia.com/gateway_adblock.php?p=4316";}
+! https://adscendmedia.com/widget_adblock.php?p=12377 --> redirect
+! http://adscendmedia.com/gwjs.php?aff=4316&prf=18180&sid=
+@@||adscendmedia.com/gwjs.php?aff=*$script,third-party
+!@@||adscendmedia.com/gwframe.php?*$domain=bee4.biz|filesdld.com
 ! cpagrip.com
 @@||cpagrip.com/script_include.php?id=*$script
 ! RTKAntiAdblock
@@ -73,7 +76,7 @@
 ! AdblockDetector 
 /AdblockDetector/handler.min.js$script
 !----------------------------------------------------------------------------------------------------!
-! Specific
+! AntiAdblock - Specific
 !----------------------------------------------------------------------------------------------------!
 ! ads.js
 /ads.js|$script,domain=visoterra.com
@@ -111,7 +114,7 @@ gamecopyworld.com,gamecopyworld.eu###confirmOverlay
 ecchi.animeron.tv###confirmBox
 ecchi.animeron.tv###confirmOverlay
 ! mix.dj
-@@||mix.dj/jscripts/jquery/mdj_adverts.js
+@@||mix.dj/jscripts/jquery/mdj_adverts.js$script
 mix.dj##.classAds
 mix.dj###maskads
 ! cp-g.net
@@ -154,7 +157,7 @@ ilix.in,urlink.at,priva.us###blockMsg
 ! senmanga.com
 senmanga.com##P[class="no"]
 ! removeadblock.com
-@@||removeadblock.com/js/show_ads.js
+@@||removeadblock.com/js/show_ads.js$script
 ! gametrailers.com
 @@||v.fwmrm.net/crossdomain.xml$object-subrequest,domain=gametrailers.com
 @@||v.fwmrm.net/ad/p/1?$object-subrequest,domain=gametrailers.com
@@ -368,6 +371,8 @@ azcardinals.com###adblock-notice
 breakmanga.com###notice
 ! chine-informations.com
 chine-informations.com###entete + div[id][class="nomobile"]
+! hellsmedia.com
+@@||hellsmedia.com/js/advert.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -564,7 +569,7 @@ planet-series.tv##IMG[src="http://www.planet-series.tv/images/250-1.png"]
 planet-series.tv##IMG[src="http://www.planet-series.tv/images/728-2.png"]
 ! Streaming --------------------------------------------------------------------------------------
 ! floatLayer
-tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.com,miscanales21.blogspot.com,miscanalescp25.blogspot.com,peliculascp.blogspot.com,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net,wowhq.ws,futhd1.blogspot.com##*[id^="floatLayer"]
+tvportugalhd.info,tvportugalhd.com,tvportugalhd.org,tvphd.com,sporttv.pt.am,pogotv.eu,zonatugatv.com,flashstreams.net,cocas.tv,soccertoall.net,tvgente.com,sportvgratis1.com,icasthd.tv,hdtvtuga.com,hdembed.com,streamking.org,championsuefa.tv,canalescp.blogspot.com,miscanales21.blogspot.com,miscanalescp25.blogspot.com,peliculascp.blogspot.com,zeyutvcanales.com,micast.tv,turbocast.tv,torcidatricolor.eu,fixolas.net,wowhq.ws,futhd1.blogspot.com,tugastream.com##*[id^="floatLayer"]
 ! str3amtv
 /^http://str3amtvads[\d].blogspot.com/$subdocument 
 ! livesoccerhq

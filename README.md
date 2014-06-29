@@ -123,6 +123,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: btspread.com
 * Fix: javzoo.com
 * Fix: javpee.com
+* Add: hellsmedia.com
 
 ##### Version 7.3 (June 29, 2014)
 * Add: anisubsia.com
