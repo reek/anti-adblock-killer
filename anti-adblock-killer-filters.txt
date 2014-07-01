@@ -75,8 +75,24 @@
 ||codeclan.altervista.org/wp-content/uploads/*/*/*.mp3|
 ! AdblockDetector 
 /AdblockDetector/handler.min.js$script
+! Anti-Adblock (from easylist)
+/adb_detector.
+/adblock-blocker/*
+/adblock_detector.
+/adblockdetect.
+/adblockdetection.
+/anti-adblock/*$~stylesheet
+/anti_ab.
+/antiadblock.
+/blockblock/blockblock.jquery.js
+/no-adblock/*
+/wp-content/plugins/anti-block/*
+/wp-content/plugins/anti_ad_blocker/*
+! italy
+/antipubblicita.js
+/noadblock.jpg
 !----------------------------------------------------------------------------------------------------!
-! AntiAdblock - Specific
+! Anti-Adblock (Specific)
 !----------------------------------------------------------------------------------------------------!
 ! ads.js
 /ads.js|$script,domain=visoterra.com
@@ -162,7 +178,7 @@ senmanga.com##P[class="no"]
 @@||v.fwmrm.net/crossdomain.xml$object-subrequest,domain=gametrailers.com
 @@||v.fwmrm.net/ad/p/1?$object-subrequest,domain=gametrailers.com
 ! hdtvtuga.com
-||hdtvtuga.com/canais/jsads.js
+||hdtvtuga.com/canais/jsads.js$script
 ! tweaktown.com
 tweaktown.com#@#div[id^="div-gpt-ad"]
 ! tek.no
@@ -174,7 +190,7 @@ tweaktown.com#@#div[id^="div-gpt-ad"]
 ! teknofil.no
 !@@||static.tek.no/js/ads.js?*$script
 @@||www.hardware.no/js/*.js$script
-||static.tek.no/js/subscription.js?*
+||static.tek.no/js/subscription.js?*$script
 ! seekingalpha.com
 seekingalpha.com###alphabox-modal-overlay
 seekingalpha.com###readlater_register_login
@@ -236,7 +252,7 @@ snsw.us#@##ad_1
 ! teknofil.no
 !teknofil.no##.tek-black-overlay.subscription-popup-overlay
 !teknofil.no##.subscription-popup.clearfix
-||static.tek.no/js/jquery.colorbox-min.js?*
+||static.tek.no/js/jquery.colorbox-min.js?*$script
 ! vostfr-vf.com
 vostfr-vf.com##A[href="/100Mbs.html"]
 vostfr-vf.com##.fixe
@@ -246,7 +262,7 @@ vostfr-vf.com##A[href^="http://api.adlure.net/partner/click/"]
 @@||zedo.com/asw/*$object-subrequest,domain=video.kooora.com
 ! majorleaguegaming.com
 ||pagefair.com/static/adblock_detection/js/*
-||majorleaguegaming.com/assets/ab.js
+||majorleaguegaming.com/assets/ab.js$script
 ! free-movie-home.com
 @@||mgcashgate.com/cpalocker/?*$domain=free-movie-home.com
 ! allostreaming-fr.com
@@ -347,7 +363,6 @@ uptobox.com#@##adblocktrap
 @@||cpalead.com/mygateway.php?*$domain=privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
 ! javzoo.com & javpee.com
-!@@/^http:\/\/www\.(javzoo|javpee)\.com\/ad\w+\.js$/$script
 @@||javzoo.com/*.js|$script
 @@||javpee.com/*.js|$script
 ! btspread.com
@@ -373,6 +388,21 @@ breakmanga.com###notice
 chine-informations.com###entete + div[id][class="nomobile"]
 ! hellsmedia.com
 @@||hellsmedia.com/js/advert.js$script
+! teknogods.com
+@@||teknogods.com/advert.js$script
+! chrissmoove.com
+chrissmoove.com#@##adserver
+@@||ads.google.com/adserver/adlogger_tracker.php$domain=chrissmoove.com
+! tiervermittlung.de
+@@||tiervermittlung.de/adblock.js$script
+! funniermoments.com
+@@||rackcdn.com/ads1.js$script,domain=funniermoments.com
+! vapingunderground.com
+||vapingunderground.com/js/vapingunderground/3253a5a323gaw352.js$domain=vapingunderground.com
+! ||ytconv.net/site/adblock_detect
+||ytconv.net/site/adblock_detect
+! ddl-search.biz
+ddl-search.biz###mc35
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -392,7 +422,6 @@ mamega.com###fblikebg
 ! Ads
 !----------------------------------------------------------------------------------------------------!
 ! Advertisers ---------------------------------------------------------------------------------------
-||theseforums.com^
 ! linkbucks.com (Visit Script)
 ||linkbucks.com/visitScript/*$script,third-party
 ||any.gs/visitScript/*$script,third-party
@@ -780,3 +809,8 @@ isearchfiles.com,filescroptube.com##A[href^="http://66.55.151.22/download.php?re
 filegaga.com##A[href^="/ot/fast.php"]
 ! general-fil.es
 general-fil.es###sponsored
+! mrtzcmp3.net
+mrtzcmp3.net###hstp-bg-overlay
+mrtzcmp3.net###hstp_interstitial
+! ddl-search.biz##.wpbanner_superlenny
+ddl-search.biz##.wpbanner_superlenny

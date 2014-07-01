@@ -111,6 +111,14 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: hellsmedia.com
+* Add: sportsplays.com
+* Add: chrissmoove.com
+* Add: pipocas.tv
+* Add: tiervermittlung.de
+* Add: mufa.de
+* Add: vapingunderground.com
+* Add: ytconv.net
 * Fix: videobug.net
 * Fix: play44.net
 * Fix: videofun.me
@@ -123,7 +131,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: btspread.com
 * Fix: javzoo.com
 * Fix: javpee.com
-* Add: hellsmedia.com
+* Fix: eveskunk.com
 
 ##### Version 7.3 (June 29, 2014)
 * Add: anisubsia.com
