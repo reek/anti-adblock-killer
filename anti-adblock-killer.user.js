@@ -890,14 +890,20 @@ Aak = {
     eveskunk : {
       Host : ['eveskunk.com'],
       Inject : function () {
-	    // + abp rule eveskunk.com#@#.adsbygoogle
+		// Disable Antiblock 1
+		//Aak.addElement('div.adsbygoogle'); // dont work
+		// + abp rule eveskunk.com#@#.adsbygoogle
         Aak.addStyle(".adsbygoogle { height: 5px !important; }");
-		//Aak.addElement('div.adsbygoogle');
+		// Disable Antiblock 2
+		Aak.addStyle(".container .row .col-lg-12 div[id] { height: 35px !important; }");
       },
       Loaded : function () {
+		// Disable Antiblock 1
         document.querySelector('.adsbygoogle').innerHTML = '<br>';
+		// Disable Antiblock 2
+		unsafeWindow.trackAdBlocking = function () {return;};		
       }
-    },	
+    },
     tweaktown : {
       Host : ['tweaktown.com'],
       Inject : function () {
