@@ -92,7 +92,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Sites Supported
-##### That contains a generic script
+##### Plugins (Website)
 * Antiblock.org V2 & V3
 * Anti-Adblock V2 (d3xt3r.com)
 * AdBlock Plus Detection (erikswan.net)
@@ -106,11 +106,19 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Remove Adblock (removeadblock.com)
 * Adblock Detector
 
-##### That contains a custom script
+##### Plugins (Wordpress)
+WordPress AdBlock Blocker (thisismyurl.com)
+No Adblock (noadblock.com)
+AdBlock Alerter
+
+##### Custom
 * Please consult the changelog
 
 ## Changelog
 ##### Upcoming changes
+* Add: jeuxactu.com
+* Add: fansubresistance.biz
+* Add: pronpic.org
 * Add: hellsmedia.com
 * Add: sportsplays.com
 * Add: chrissmoove.com
@@ -119,6 +127,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Add: mufa.de
 * Add: vapingunderground.com
 * Add: ytconv.net
+* Fix: privateinsta.com
 * Fix: videobug.net
 * Fix: play44.net
 * Fix: videofun.me
@@ -132,6 +141,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fix: javzoo.com
 * Fix: javpee.com
 * Fix: eveskunk.com
+* Fix: notre-planete.info
 
 ##### Version 7.3 (June 29, 2014)
 * Add: anisubsia.com

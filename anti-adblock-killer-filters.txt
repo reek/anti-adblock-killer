@@ -40,7 +40,7 @@
 ! RTKAntiAdblock
 ! http://ryanteck.github.io/RTK-Anti-Adblock/
 /blockcake.js|$script
-! AntiAdBuster (Anti-Ad Blocker / Defender)
+! Anti Ad Buster (Anti-Ad Blocker / Defender)
 ! http://anti-ad-blocker.blogspot.com/
 /anti-ad-buster.js|$script
 ! Detect Ad-blocking Software
@@ -59,22 +59,36 @@
 ! jQuery Adblock
 ! http://www.vivekv.com
 /jquery.adblock.js|$script
+! check
 ! http://kjanime.net/aclaracion-sobre-el-anti-adblock/
 /jquery.antiadsblock.js|$script
 ! FuckAdBlock
 ! http://www.sitexw.fr/fuckadblock/
 ! https://github.com/sitexw/FuckAdBlock
 /fuckadblock.js|$script
+! Adbuddy
 ! http://xenodesystems.appspot.com/adbuddy.html
 /js/adbuddy.min.js|$script
-! ABT - Ad Block Test
+! ABT - Ad Block Test check
 ! http://esd.io/blog/detecting-adblock-javascript.html
 ! https://github.com/elidickinson/ad-block-test
 #@##sponsored-ad
 ! Better Stop Adblock
 ||codeclan.altervista.org/wp-content/uploads/*/*/*.mp3|
-! AdblockDetector 
+! Adblock Detector 
 /AdblockDetector/handler.min.js$script
+! check
+! No Adblock - http://www.noadblock.com/
+/plugins/no-adblock/*
+/blockBlock.jquery.js
+! WordPress AdBlock Blocker - http://thisismyurl.com/
+@@/wp-content/plugins/wordpress-adblock-blocker/adframe.js
+! Anti-Block - http://www.bukssaayman.co.za/anti-block/
+/plugins/anti-block/*
+/anti-block-modal.js
+! AdBlock Alerter
+! https://github.com/wp-plugins/adblock-alerter
+#@##div-gpt-ad-1-0
 ! Anti-Adblock (from easylist)
 /adb_detector.
 /adblock-blocker/*
@@ -84,11 +98,8 @@
 /anti-adblock/*$~stylesheet
 /anti_ab.
 /antiadblock.
-/blockblock/blockblock.jquery.js
-/no-adblock/*
-/wp-content/plugins/anti-block/*
 /wp-content/plugins/anti_ad_blocker/*
-! italy
+/adblock_detection/*
 /antipubblicita.js
 /noadblock.jpg
 !----------------------------------------------------------------------------------------------------!
@@ -290,6 +301,9 @@ dailybitcoins.org#@#.ad-img
 anime-shinden.info#@##ads_video
 ! beppegrillo.it
 beppegrillo.it#@#div[id^="div-gpt-ad-"]
+! filecore.co.nz / fcore.eu
+filecore.co.nz,fcore.eu#@#div[id^="div-gpt-ad-"]
+@@||partner.googleadservices.com/gpt/*$domain=filecore.co.nz|fcore.eu,script
 ! gaijin.at
 gaijin.at##.box_error.box_error_icon
 ! makemehost.com
@@ -360,15 +374,15 @@ watcharab.com#@##adblock
 uptobox.com#@##adblocktrap
 @@||advertstream.com/banners/$image,domain=uptobox.com
 ! privateinsta.com
-@@||cpalead.com/mygateway.php?*$domain=privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
+@@||cpalead.com/mygateway.php?*$domain=privateinsta.com,script
 ! javzoo.com & javpee.com
 @@||javzoo.com/*.js|$script
 @@||javpee.com/*.js|$script
 ! btspread.com
 @@||btspread.com/*.js|$script
 ! anime4fun.com
-!anime4fun.com#@#.top-side-ads
+anime4fun.com###hover
 ||anime4fun.com/js/newanime.js$script
 ! notre-planete.info
 @@||googleads.g.doubleclick.net^$subdocument,document=notre-planete.info
@@ -403,6 +417,9 @@ chrissmoove.com#@##adserver
 ||ytconv.net/site/adblock_detect
 ! ddl-search.biz
 ddl-search.biz###mc35
+! tvcatchup.com
+tvcatchup.com#@#.afs_ads
+@@||adverts.cdn.tvcatchup.com/ads/*$domain=tvcatchup.com,object-subrequest
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -508,9 +525,6 @@ mamega.com###fblikebg
 ||cdn.q.gs/js/display.js$script,third-party
 ! shorte.st
 ||cdn.shorte.st/link-converter.min.js
-! filecore.co.nz / fcore.eu
-filecore.co.nz,fcore.eu#@#div[id^="div-gpt-ad-"]
-@@||partner.googleadservices.com/gpt/*$domain=filecore.co.nz|fcore.eu,script
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
@@ -587,6 +601,8 @@ rapid8.com##.backk
 aseanlegacy.net##[id^="box"]
 ||amkserver1.com^$subdocument,document=aseanlegacy.net
 ||adgila.com^$subdocument,document=aseanlegacy.net
+! jeuxactu.com (just hide message)
+jeuxactu.com###infoBlock
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
@@ -814,3 +830,9 @@ mrtzcmp3.net###hstp-bg-overlay
 mrtzcmp3.net###hstp_interstitial
 ! ddl-search.biz##.wpbanner_superlenny
 ddl-search.biz##.wpbanner_superlenny
+! pronpic.org
+!||*$domain=pronpic.org,subdocument,third-partyscript
+@@||googleapis.com^$script,domain=pronpic.org
+$domain=pronpic.org,script,third-party,subdocument
+! pregen.net
+pregen.net###olayer
