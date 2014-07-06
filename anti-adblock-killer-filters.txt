@@ -420,6 +420,8 @@ ddl-search.biz###mc35
 ! tvcatchup.com
 tvcatchup.com#@#.afs_ads
 @@||adverts.cdn.tvcatchup.com/ads/*$domain=tvcatchup.com,object-subrequest
+! jeuxactu.com (just hide message)
+jeuxactu.com###infoBlock
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -601,8 +603,6 @@ rapid8.com##.backk
 aseanlegacy.net##[id^="box"]
 ||amkserver1.com^$subdocument,document=aseanlegacy.net
 ||adgila.com^$subdocument,document=aseanlegacy.net
-! jeuxactu.com (just hide message)
-jeuxactu.com###infoBlock
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
