@@ -116,6 +116,7 @@ AdBlock Alerter
 
 ## Changelog
 ##### Upcoming changes
+* Add: generatupremium.biz
 * Add: jeuxactu.com
 * Add: fansubresistance.biz
 * Add: pronpic.org
