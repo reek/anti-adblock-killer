@@ -116,6 +116,9 @@ AdBlock Alerter
 
 ## Changelog
 ##### Upcoming changes
+
+##### Version 7.4 (July 12, 2014)
+* Add: writing.com
 * Add: generatupremium.biz
 * Add: jeuxactu.com
 * Add: fansubresistance.biz
