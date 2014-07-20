@@ -118,6 +118,9 @@ AdBlock Alerter
 ##### Upcoming changes
 
 ##### Version 7.4 (July 12, 2014)
+* Add: aloneteam.net
+* Add: video44.net
+* Add: gamergen.com
 * Add: writing.com
 * Add: generatupremium.biz
 * Add: jeuxactu.com
@@ -146,6 +149,7 @@ AdBlock Alerter
 * Fix: javpee.com
 * Fix: eveskunk.com
 * Fix: notre-planete.info
+* Fix: myanimes.li
 
 ##### Version 7.3 (June 29, 2014)
 * Add: anisubsia.com
