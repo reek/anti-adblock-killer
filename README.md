@@ -28,9 +28,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Requires: Adblock or Adblock Plus
 
 #### Step 1: Script Manager (Install)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) / [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or [Scriptish](https://addons.mozilla.org/firefox/addon/scriptish/)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) / Violentmonkey (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
@@ -62,8 +62,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Detect Anti-Adblock Killer Filters
 * Check & Notify updates
 * More filters for Adblockers
-* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues) on Github
-* [Suggest Features](http://userscripts.org:8080/scripts/discuss/155840) on Userscripts
+* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues)
 
 
 ## Report
