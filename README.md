@@ -62,7 +62,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Detect Anti-Adblock Killer Filters
 * Check & Notify updates
 * More filters for Adblockers
-* [Suggest Features](https://github.com/reek/anti-adblock-killer/issues)
+* [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
 
 
 ## Report
