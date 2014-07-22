@@ -9,6 +9,7 @@
 ! Report: https://github.com/reek/anti-adblock-killer/wiki/Report-Guide
 ! WritingRules: https://adblockplus.org/fr/filters
 ! RedundantRules: https://arestwo.org/famlam/redundantRuleChecker.html
+! RegExpVisualizer http://www.regexper.com/
 !----------------------------------------------------------------------------------------------------!
 ! Used to detect this list
 !----------------------------------------------------------------------------------------------------!
@@ -50,10 +51,12 @@
 ! http://erikswan.net/abp/ (<div id="tester">)
 ! D3xt3r AntiAdblock
 ! http://d3xt3r.com/anti-adblock?test (blockblockA )
-@@/\/advertisement[\d]?\.js$/$script
-@@/advertisement-AdBlock.js|$script
-@@/advertisement.js?*|$script
-! @@/advert.js?*|$script
+! Default
+@@/advertisement.js$script
+! Min
+@@/advert.js$script
+! Suffix
+@@/\/advertisement([0-9]+|[\-._][a-z0-9]+)\.js/$script
 ! jQuery Adblock Detector
 ! https://github.com/broom9/jquery-adblock-detector
 /jquery.adblock-detector.js|$script
@@ -236,7 +239,6 @@ go4up.com##IMG[src="http://go4up.com/assets/img/downloadfr.gif"]
 @@||dbzog.de^$elemhide
 ! needrom.com
 @@||needrom.com/wp-content/plugins/blockalyzer-adblock-counter/img/ads/*$image
-@@||needrom.com/wp-content/plugins/blockalyzer-adblock-counter/js/advertisement.js
 ! dizi-mag.com
 @@||adhood.com^$third-party,domain=dizi-mag.com
 ! hentaistream.com
@@ -322,8 +324,6 @@ elahmad.com#@##adblock
 z0r.de##.adb
 ! filmon.com
 @@||static.filmon.com/ad/affiliateimages/banner-250x350.png
-! 720pmkv.com
-@@||720pmkv.com/wp-content/plugins/anti-block/js/advertisement.js?*
 ! forum.pac-rom.com
 forum.pac-rom.com#@#.banner_ads
 ! runningmanengsub.com

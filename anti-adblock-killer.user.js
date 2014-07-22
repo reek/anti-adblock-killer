@@ -3,7 +3,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
 // @author Reek | http://reeksite.com/
-// @version 7.3
+// @version 7.4
 // @license Creative Commons BY-NC-SA
 // @encoding utf-8
 // @homepage https://github.com/reek/anti-adblock-killer
@@ -62,7 +62,7 @@
 =======================================================
 
 Donors:
-  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo
+  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, Roy Martin, DrFiZ
   
 Collaborators:
   InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32
@@ -118,7 +118,8 @@ String.prototype.contains = function (str) {
 };
 
 Aak = {
-  version : '7.3',
+  name : 'AntiAdblockKiller',
+  version : '7.4',
   scriptid : 'gJWEp0vB',
   homeURL : 'https://github.com/reek/anti-adblock-killer#-anti-adblock-killer--reek',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -128,7 +129,8 @@ Aak = {
   downloadURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js',
   filtersSubscribe : 'abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock%20Killer%20|%20Filters%20for%20Adblockers',
   filtersURL : "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
-  iconURL : 'https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
+  iconURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
+  imagePlayer : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-player.png',
   init : function () {
 
     // Stop if user not use Script Manager or not support GM Api
@@ -292,7 +294,7 @@ Aak = {
     return GM_getValue(store);
   },
   log : function (text) {
-    console.info('Anti-Adblock Killer: ' + text);
+    console.info('AntiAdblockKiller: ' + text);
   },
   once : function (day, name, callback) {
     setTimeout(function () {
@@ -732,27 +734,118 @@ Aak = {
     expires.setTime(today.getTime() + sTime); // 365*24*60*60*1000
     document.cookie = sName + "=" + encodeURIComponent(sValue) + ";expires=" + expires.toGMTString() + ";path=/";
   },
-  player : function (file, width, height, autostart) {
+  uniqid : function () {
+    return Math.random().toString(36).substring(4);
+  },
+  playerAlt : function (nameplayer, id, flashvars) {
 
-    var flashvars = (/^streamer/.test(file)) ? file : "file=" + file;
-    var width = (width) ? width : '480';
-    var height = (height) ? height : '270';
-    var autostart = (autostart) ? false : true;
+    if (nameplayer == 'flowplayer') {
+      flashvars.clip.height = flashvars.clip.height || "100%";
+      flashvars.clip.width = flashvars.clip.width || "100%";
+    } else {
+      if (nameplayer == 'jwplayer5') {
+        flashvars.flashplayer = "http://player.longtailvideo.com/player.swf"; // v5.10
+        if (flashvars.skin) {
+          flashvars.skin = 'http://www.longtailvideo.com/files/skins/' + flashvars.skin + '/5/' + flashvars.skin + '.zip';
+        }
+      } else { // jwplayer6
+	    flashvars.primary= 'flash';
+	  }
+      flashvars.height = flashvars.height || "100%";
+      flashvars.width = flashvars.width || "100%";
+      flashvars.image = Aak.imagePlayer;
+    }
+	 
+	var uniqid = Aak.uniqid();
+    var encoded = btoa(JSON.stringify(flashvars));
+    var newNode = document.createElement('iframe');
+    newNode.id = 'Aak-external-' + nameplayer + '-' + uniqid;
+    newNode.height = flashvars.height || flashvars.clip.height;
+    newNode.width = flashvars.width || flashvars.clip.width;
+    newNode.frameBorder = "0";
+    newNode.scrolling = "no";
+    newNode.src = 'http://reeksite/player/player.php?' + nameplayer + '=' + encoded;
+    var oldNode = document.getElementById(id);
+	oldNode.parentNode.replaceChild(newNode, oldNode);	
+  },
+  player : function (nameplayer, id, setup) {
 
-    // Create player  // 480x270
-    var player = document.createElement("object");
-    player.setAttribute("data", "http://player.longtailvideo.com/player5.9.swf");
-    player.setAttribute("height", height);
-    player.setAttribute("width", width);
-    player.setAttribute("type", "application/x-shockwave-flash");
-    player.setAttribute("id", 'Aak-jwPlayer');
-    player.setAttribute('allowscriptaccess', 'always');
-    player.setAttribute("allowfullscreen", 'true'); ;
-    player.setAttribute("bgcolor", "#000000");
-    player.setAttribute("wmode", "opaque");
-    player.setAttribute("seamlesstabbing", "true");
-    player.setAttribute("flashvars", flashvars + "&autostart=" + autostart);
-    return player;
+    var uniqid = Aak.uniqid();
+    var attributes = {
+      wmode : 'opaque',
+      quality : 'high',
+      bgcolor : '#000000',
+      allowscriptaccess : 'always',
+      allowfullscreen : true,
+      type : 'application/x-shockwave-flash',
+      width : 500,
+      height : 500,
+      id : "Aak-" + nameplayer + "-" + uniqid,
+      name : "Aak-" + nameplayer + "-" + uniqid,
+      title : "Aak-" + nameplayer + "-" + uniqid
+    };
+
+    // Flowplayer
+    if (nameplayer == 'flowplayer') {
+      attributes.height = setup.clip.height || "100%";
+      attributes.width = setup.clip.width || "100%";
+      var flashplayer = "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf";
+      var setup = {
+        config : JSON.stringify(setup)
+      };
+    }
+    // Jwplayer 5
+    else if (nameplayer == 'jwplayer5') {
+      attributes.height = setup.height || "100%";
+      attributes.width = setup.width || "100%";
+      var flashplayer = "http://player.longtailvideo.com/player5.9.swf"; // v5.9
+      var flashplayer = "http://player.longtailvideo.com/player.swf"; // v5.10
+      setup.image = Aak.imagePlayer;
+	  setup.autostart = true;
+	  setup.controlbar = 'over';
+      if (setup.skin) {
+        setup.skin = 'http://www.longtailvideo.com/files/skins/' + setup.skin + '/5/' + setup.skin + '.zip';
+      }
+    }
+    // Jwplayer 6
+    else if (nameplayer == 'jwplayer6') {
+
+      setup.image = Aak.imagePlayer;
+      setup.autostart = true;
+      setup.primary = 'flash';
+
+      // Add library
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js';
+      script.async = true;
+      head.appendChild(script);
+
+      // Add player
+      setTimeout(function () {
+        unsafeWindow.jwplayer(id).setup(setup);
+      }, 1000);
+
+      return false; // stop
+    }
+
+    // create player
+    var object = document.createElement('object');
+    // set attributes
+    for (name in attributes) {
+      object.setAttribute(name, attributes[name]);
+    }
+    // set flashvars
+    var flashvars = '';
+    for (name in setup) {
+      flashvars += name + "=" + setup[name] + '&';
+    }
+	var flashvars = flashvars.substr(0, flashvars.length-1);
+    object.setAttribute('data', flashplayer + '?' + flashvars);
+	var element = document.getElementById(id);
+    element.parentNode.replaceChild(object, element);
+
   },
   rules : { // Rules
     // --------------------------------------------------------------------------------------------
@@ -795,9 +888,10 @@ Aak = {
         Aak.addStyle("#pub_meh { height: 51px !important; }");
       },
       Loaded : function () {
-        unsafeWindow.elp = false;
-        unsafeWindow.elt = false;
-        unsafeWindow.largeur = false;
+	    /* + abp rule
+		  var pub --> pagead2.googlesyndication.com
+		*/
+		//console.log(unsafeWindow.pub, document.getElementById("pub_meh").clientHeight, unsafeWindow.largeur)
       }
     },
     anisubsia : {
@@ -903,7 +997,7 @@ Aak = {
 		// Disable Antiblock 2
 		unsafeWindow.trackAdBlocking = function () {return;};		
       }
-    },
+    },	
     tweaktown : {
       Host : ['tweaktown.com'],
       Inject : function () {
@@ -934,6 +1028,14 @@ Aak = {
         Aak.addStyle("#reklam { height: 1px !important; }");
       }
     },
+    mufa : {
+      Host : ['mufa.de'],
+      Inject : function () {
+        Aak.addStyle("#leaderboard { height: 5px !important; }");
+		Aak.addStyle("#large-rectangle { height: 5px !important; }");
+		Aak.addStyle("#ad-header-468x60 { height: 5px !important; }");
+      }
+    },	
     watcharab : {
       Host : ['watcharab.com'],
       Inject : function () {
@@ -954,24 +1056,8 @@ Aak = {
         Aak.addStyle("#nopub { display: block !important; }");
       }
     },
-    divIdZdXd : { // packed function eval
-      Host : ['picstwist.com', 'pornblogy.com', 'imgboo.me', 'urlgalleries.net', 'camelstyle.net', 'imgleech.com', 'hqpdb.com'],
-      Inject : function () {
-        Aak.addStyle("#zd, #xd { height: 1px !important; visibility: visible !important;  display: block  !important; }");
-        Aak.addElement('div#zd');
-        Aak.addElement('div#xd');
-      }
-    },
-    divIdWdGd : { // packed function eval
-      Host : ['onlyteensx.net'],
-      Inject : function () {
-        Aak.addStyle("#wd, #gd { height: 1px !important; visibility: visible !important;  display: block  !important; }");
-        Aak.addElement('div#wd');
-        Aak.addElement('div#gd');
-      }
-    },
     divIdTester : {
-      Host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'chine-informations.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'filmovizija.com', 'filmovizija.net'],
+      Host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'filmovizija.com', 'filmovizija.net'],
       Inject : function () {
         Aak.addElement('div#tester');
       }
@@ -999,7 +1085,7 @@ Aak = {
     leaguesecretary : {
       // @@||teknogods.com/advert.js
       // <div id="adpbtest">;
-      Host : ['leaguesecretary.com', 'teknogods.com'],
+      Host : ['leaguesecretary.com', 'teknogods.com', 'hellsmedia.com'],
       Inject : function () {
         Aak.addElement('div#adpbtest');
       }
@@ -1011,7 +1097,7 @@ Aak = {
       }
     },
     freesportsbet : {
-      Host : ['freesportsbet.com'],
+      Host : ['freesportsbet.com', 'sportsplays.com'],
       Inject : function () {
         Aak.addElement('div#ad-tester');
       }
@@ -1029,6 +1115,12 @@ Aak = {
         Aak.addElement('div#advert');
       }
     },
+    chrissmoove : {
+      Host : ['chrissmoove.com'],
+      Inject : function () {
+        //Aak.addElement('div#adserver');
+      }
+    },	
     eventhubs : {
       Host : ['eventhubs.com'],
       Inject : function () {
@@ -1098,7 +1190,7 @@ Aak = {
       }
     },
     disableWindowAlert : {
-      Host : ['drivearabia.com', 'putlocker.com', 'doatoolsita.altervista.org', 'sockshare.com', 'free-movie-home.com', 'pc.online143.com', 'pregen.net', 'kooora.com', 'str3amtv.co.nr', 'str3amtv.altervista.org', 'str3am.altervista.org'],
+      Host : ['drivearabia.com', 'putlocker.com', 'doatoolsita.altervista.org', 'sockshare.com', 'free-movie-home.com', 'pc.online143.com', 'pregen.net', 'kooora.com', 'str3amtv.co.nr', 'str3amtv.altervista.org', 'str3am.altervista.org','filecom.net', 'pipocas.tv', 'generatupremium.biz'],
       Inject : function () {
         unsafeWindow.alert = false;
       }
@@ -1125,6 +1217,15 @@ Aak = {
       Loaded : function () {
         //unsafeWindow.is_loaded = true;
         //Aak.removeElement('.box-error');
+      }
+    },
+    luxyad : { // skip redirect myanimes.li
+      Host : ['luxyad.com'],
+      Loaded : function () {
+        if ('/Information.php' == location.pathname) {
+          var href = location.href;
+          location.href = href.substr(href.indexOf('url=') + 4, href.length);
+        }
       }
     },
     userscripts : {
@@ -1261,8 +1362,12 @@ Aak = {
     picload : {
       Host : ['picload.org'],
       Inject : function () {
-        // No AdBlocker
         Aak.setCookie('pl_adblocker', false);
+      },
+      Loaded : function () {
+        unsafeWindow.ads_loaded = true;
+        unsafeWindow.imageAds = false;
+        Aak.removeElement('div[oncontextmenu="return false;"]');
       }
     },
     freezedownload : {
@@ -1345,9 +1450,10 @@ Aak = {
     privateinsta : {
       Host : ['privateinsta.com'],
       Loaded : function () {
-        // AdScendMedia
-        unsafeWindow.unscroll = false;
-        Aak.removeElement("#gw_overlay");
+		// + abp rule
+		unsafeWindow.dont_scroll = false;
+        Aak.removeElement("#overlay_div");
+		Aak.removeElement("#overlay_main_div");
       }
     },
     str3amtv : { // remove ads + popupwindow
@@ -1374,6 +1480,22 @@ Aak = {
       Inject : function () {
         Aak.setCookie('visitedf', true);
         Aak.setCookie('visitedh', true);
+      }
+    },	
+    adscendmedia : {
+      Host : ['adscendmedia.com'],
+      Inject : function () {
+        // adscendmedia - https://www.adscendmedia.com/
+		var ref = document.createElement('a');
+              ref.href = document.referrer;
+		var host = location.host;
+		var path = location.pathname;
+        if (path.contains('/widget_adblock.php') && !ref.host.contains(host)) {
+          // Auto report
+          Aak.autoReport('Adscendmedia', ref.host, host);
+		  // Notification
+		  Aak.notification('You must subscribe to Anti-Adblock Killer - Filters for Adblockers. <a href="' + Aak.filtersSubscribe + '" target="_blank">Subscribe Now !</a>, ', 20000);
+        }
       }
     },	
     adworkmedia : {
@@ -1409,20 +1531,63 @@ Aak = {
     // --------------------------------------------------------------------------------------------
     // Players
     // --------------------------------------------------------------------------------------------
-    videobug : {
-      Host : ['videobug.net'],
-      Inserted : function (insertedNode) {
-        if (insertedNode.nextSibling.id == 'flowplayer_api' && insertedNode.style && insertedNode.innerHTML.contains('Please dont use A.dblock, its very expensive to maintain video hosting. Thank you')) {
-          //console.log(insertedNode);
-          Aak.removeElement(insertedNode);
-        }
+    mcsportbfmtv : { // webradio
+      Host : ['rmcsport.bfmtv.com'],
+      Loaded : function () {
+
+        var flashvars = {
+          urlRadio : "http://mp3lg4.tdf-cdn.com/10160/rmc.mp3",
+          nom : "live",
+          categorie : "live",
+          urlSmart : "" // set empty to remove audio ad
+        };
+        var params = {
+          wmode : "transparent"
+        };
+
+        unsafeWindow.swfobject.embedSWF("/swf/RMCLIVE.swf", "liveplayer", "70", "90", "10.0.0", "", flashvars, params);
+
       }
-    }, 
-    abola : {
+    },
+    eclypsia : {
+      Host : ['eclypsia.com'],
+      Loaded : function () {
+	  /*
+        //http://www.dailymotion.com/swf/video/x1tayy1
+        var element = document.querySelector('div[id^="webtv_iframe_"]');
+        if (element) {
+          var videoId = element.id.split('_')[2];
+		  setTimeout(function () {
+          element.innerHTML = '<iframe frameborder="0" width="812" height="500" src="http://www.dailymotion.com/embed/video/' + videoId + '?logo=0&autoPlay=1&autoMute=0"></iframe>';
+        }
+		},1000);
+	  */
+      }
+    },
+    channel4 : {
+      Host : ['channel4.com'],
+      Loaded : function () {
+        /*
+        var player = document.querySelector("#catchUpPlayer");
+        var parent = player.parentNode;
+        var clone = player.cloneNode(true);
+
+        // change flashvars
+        var flashvars = clone.querySelector('param[name="flashvars"]');
+        //flashvars.value = flashvars.value.replace(/true/g, false);
+        flashvars.value = 'preSelectAsset=3719760&amp;overRideIA=true';
+        // replace player
+        parent.replaceChild(clone, player);
+
+        console.log(Aak.getElement('#catchUpPlayer param[name="flashvars"]'));
+         */
+      }
+    },	
+	abola : {
       Host : ['miragens.abola.pt'],
       Loaded : function () {
-        // http://www.miragens.abola.pt/media.aspx?id=20390&op=2&p=1
-        // http://www.miragens.abola.pt/MiragensBO/uploads/20/39/0/20390.mp4
+        // miragens.abola.pt/media.aspx?id=20390&op=2&p=1
+        // miragens.abola.pt/MiragensBO/uploads/20/39/0/20390.mp4
 
         // Fix: 9.6.2014 (new player)
         if ('/media.aspx' == location.pathname) {
@@ -1430,22 +1595,46 @@ Aak = {
           var path = id.match(/.{1,2}/g).join('/');
           var file = 'http://www.miragens.abola.pt/MiragensBO/uploads/' + path + '/' + id + '.mp4';
 
-          var newPlayer = Aak.player(file, '554', '311');
-          var divPlayer = document.querySelector('#videoplayer');
-          divPlayer.innerHTML = '';
-          divPlayer.appendChild(newPlayer);
+          Aak.player('jwplayer5', 'videoplayer', {
+            skin : 'lulu',
+            file : file,
+            autostart : true,
+            width : 554,
+            height : 311
+          });
 
-          /*
-          setTimeout(function () {
-          unsafeWindow.$('#pub').hide();
-          unsafeWindow.$('#line1').css('visibility', 'visible');
-          unsafeWindow.jwplayer('preroll').remove();
-          unsafeWindow.criaPlayer('player');
-          }, 2000);
-           */
         }
       }
     },
+    tvcatchup : {
+      Host : ['tvcatchup.com'],
+      Inject : function () {
+	    // + abp rule
+        //Aak.setCookie('ad-block-counter', 0);
+      },
+      Loaded : function () {
+        //Aak.setCookie('ad-block-counter', 0);
+/*
+		var ch = {
+		'1':'bbcone',
+		'2':'bbctwo',
+		'3':'itvone',
+		'4':'chan4',
+		'5':'five'		
+		}
+		
+		var number = location.pathname.split('/')[2];
+
+		var setup = { // jwv6 rtmp
+		  file : "http://tvcatchup-live.hls.adaptive.level3.net/tvcatchup-201/smil:"+ch[number]+"_desk_wifi.smil/playlist.m3u8",
+		  autostart : true,
+		  live: true,
+		  primary : 'flash'
+		};
+*/
+
+      }
+    },	
     voxnow : {
       Host : ['voxnow.de', 'rtl-now.rtl.de', 'rtl2now.rtl2.de', 'n-tvnow.de', 'superrtlnow.de', 'rtlnitronow.de'],
       Loaded : function () {
@@ -1477,8 +1666,6 @@ Aak = {
         var container = document.querySelector(".notice-adb-container");
         var player = document.querySelector("#player");
         container.appendChild(player);
-		
-		//Aak.addStyle('#cboxOverlay, #cboxWrapper { display:none;}');
 
 		/*
         Solution using mobile webpage
@@ -1516,21 +1703,23 @@ Aak = {
             onload : function (result) {
               var res = result.responseText;
               //console.log(res);
+			  
+			  // Get video
+              var parser = new DOMParser();
+              var dom = parser.parseFromString(res, "application/xml");
+              var file = dom.getElementsByTagName("url_flv").item(0).textContent;
 
-              // parser xml
-              parser = new DOMParser();
-              xmlDoc = parser.parseFromString(res, "application/xml");
-
-              // video
-              var videofile = xmlDoc.getElementsByTagName("url_flv").item(0).textContent;
-              var oldPlayer = document.querySelector('embed#player');
-              var newPlayer = Aak.player(videofile, '640', '360');
-              var divPlayer = document.querySelector('div#player');
-
-              // replace
-              divPlayer.innerHTML = '';
-              divPlayer.appendChild(newPlayer);
-              //divVideo.replaceChild(newPlayer, oldVideo);
+			  // Remove elements
+              Aak.removeElement('div.loadingGif');
+			  
+			  // New player
+              Aak.player('jwplayer5', 'player', {
+			    skin: 'lulu',
+                file : file,
+                autostart : true,
+                width : 640,
+                height : 360
+              });
 
             }
           });
@@ -1541,7 +1730,7 @@ Aak = {
       Host : ['ilive.to'],
       Loaded : function () {
         if (/^\/embedplayer.php/i.test(location.pathname)) {
-
+		  // Skip timer
           var close = setInterval(function () {
               document.querySelector("#ad_overlay_close").click();
             }, 1000);
@@ -1549,7 +1738,16 @@ Aak = {
           setTimeout(function () {
             clearInterval(close);
           }, 5000);
-
+        }
+      }
+    },
+    sawlive : {
+      Host : ['sawlive.tv'],
+      Loaded : function () {
+        if (/^\/embed\/watch\//i.test(location.pathname)) {
+          // Skip timer and close ads
+          unsafeWindow.display = false;
+          unsafeWindow.closeMyAd();
         }
       }
     },
@@ -1569,28 +1767,18 @@ Aak = {
             clearInterval(interval);
           }, 5000);
 
-          unsafeWindow.document.removeEventListener('unload', this, false);
-          unsafeWindow.document.removeEventListener('click', this, false);
-
-          var oldPlayer = document.querySelector("object#container");
-          var flashvars = oldPlayer.querySelector('param[name="flashvars"]').value;
-          var flashvars = flashvars.replace("&controlbar.position=over", "");
-          var newPlayer = Aak.player(flashvars, '600', '400');
-          var divPlayer = oldPlayer.parentNode;
-
-          // remove head
-          document.head.innerHTML = '';
-
-          // replace player
-          divPlayer.replaceChild(newPlayer, oldPlayer);
+		  // Remove transparent overlay
+		  Aak.removeElement('#table1');
         }
       }
     },
     flowplayer : {
-      Host : ['videofun.me', 'play44.net'],
+      Host : ['videofun.me', 'videobug.net', 'video44.net', 'play44.net', 'byzoo.org'],
       Loaded : function () {
-        if (/^\/embed/i.test(location.pathname)) {
-          setTimeout(function () {
+	    // + abp rule for hide antiadblock message
+		// http://videofun.me/embed/f471ef96b0247884bc1c6fda2d37c4da?w=790&h=410
+        if (/^\/embed/.test(location.pathname)) {
+		  setTimeout(function () {
             var player = document.querySelector("#flowplayer_api");
             var parent = player.parentNode;
             var clone = player.cloneNode(true);
@@ -1708,22 +1896,52 @@ Aak = {
     generic : {
       Host : ['.*?'],
       Inject : function () {
-        // Adunblock - http://adunblock.com/
-        Aak.setCookie("adblock", 0);
-        unsafeWindow.adblock = !1;
+         // do nothing
       },
       Loaded : function () {
-        // Adunblock - http://adunblock.com/
-        Aak.setCookie("adblock", 0);
-        unsafeWindow.adblock = !1;
 
+        /* Alternative solution
+		// AntiAdblock (Packer) only Zdxd
+		if (typeof unsafeWindow.k == 'function' &&
+		  typeof unsafeWindow.h == 'function' &&
+		  typeof unsafeWindow.ShowAdbblock == 'function' &&
+		  unsafeWindow.ShowAdbblock.toString().contains('warningMessage.innerHTML=text_detected()')) {
+
+		  // Disable
+		  unsafeWindow.ShowAdbblock = function () {return;};
+		  unsafeWindow.k = function () {return;};
+		  unsafeWindow.h = function () {return;};
+		  Aak.autoReport('AntiAdblockPackerZdxd)');
+		}
+		*/
+		
+		/*
+		// Adunblock - http://adunblock.com/
+	    if (Aak.getCookie('adblock') == 1) {
+		  Aak.setCookie('adblock', 0);
+		  Aak.setCookie('bar_closed', 1);
+		}
+	   */
+	  
         // Better Stop Adblock
         //unsafeWindow.audio_file = false;
+		
+		
+		// AdBlock Alerter (WP)
+		if (Aak.getElement('div.adb_overlay') &&
+		  Aak.getElement('div.adb_modal') &&
+		  Aak.getElement('p.adb_detected')) {
+		  // Remove Alert + Allow Scroll
+		  Aak.removeElement('div.adb_overlay');
+		  Aak.addStyle('html,body {height:auto !important; overflow: scroll !important;}');
+		  Aak.autoReport('AdBlockAlerter');
+		}
 
-        // Unknow Anti AdBlock system
-        if (Aak.getElement('#blockdiv') && Aak.getElement('#blockdiv').innerHTML.contains('disable ad blocking or use another browser without any adblocker when you visit')) {
-          Aak.removeElement('#blockdiv');
-        }
+
+		// Unknow Anti AdBlock system
+		if (Aak.getElement('#blockdiv') && Aak.getElement('#blockdiv').innerHTML.contains('disable ad blocking or use another browser without any adblocker when you visit')) {
+		  Aak.removeElement('#blockdiv');
+		}
 
 
         // Antiblock - http://antiblock.org/
@@ -1745,20 +1963,27 @@ Aak = {
         // Anti-Adblockers
 		var systems = {
 		  'Adworkmedia' : '(adworkmedia|loxtk).com/gLoader.php',
-		  'FuckAdBlock' : '/fuckadblock.js$',
-		  'jQueryAdblock' : '/jquery.adblock.js$',
-		  'jQueryAdblockDetector' : '/jquery.adblock-detector.js$',
-		  'AdvertisementJs' : '/advertisement([\d]|-AdBlock)?.js$',
-		  'DetectAdBlockingSoftware' : '/adframe.js$',
-		  'AntiAdBuster' : '/anti-ad-buster.js$',
-		  'RTKAntiAdblock' : '/blockcake.js$'
+		  'Adscendmedia' : 'adscendmedia.com/gwjs.php',
+		  'FuckAdBlock' : '/fuckadblock.js',
+		  'jQueryAdblock' : '/jquery.adblock.js',
+		  'jQueryAdblockDetector' : '/jquery.adblock-detector.js',
+		  'AdvertisementJs' : '/advertisement.js',
+		  'AdvertisementJsMin' : '/advert.js',
+		  'AdvertisementJsSuffix' : '/advertisement([0-9]+|[\-._][a-z0-9]+)\.js',
+		  'AdframeJs' : '/adframe.js',
+		  'AntiAdBuster' : '/anti-ad-buster.js',
+		  'RTKAntiAdblock' : '/blockcake.js',
+		  'AdblockDetector' : '/AdblockDetector/handler.min.js',
+		  'jQueryAntiAdsBlock': '/jquery.antiadsblock.js',
+		  'Adbuddy' : '/js/adbuddy.min.js',
+		  'NoAdblock' : '(/plugins/no-adblock/|/blockBlock/blockBlock.jquery.js)'
 		}
 		var scripts = document.scripts;
 		for (var i = 0; i < scripts.length; i++) {
 		  var script = scripts[i];
 		  if (script.src) {
 		    for (key in systems) {
-		      if (new RegExp(systems[key]).test(script.src)) {
+		      if (new RegExp(systems[key],'i').test(script.src)) {
 		        //console.log(key, location.host, script.src);
 				Aak.autoReport(key, location.host, script.src);
 		      }
@@ -1772,40 +1997,81 @@ Aak = {
         // All Nodes
         //console.log(insertedNode);
 
+        // AntiAdblock (Packer)
+        var reIframeId = /^(zd|wd)$/;
+        var reImgId = /^(xd|gd)$/;
+        var reImgSrc = /\/ads\/banner.jpg/;
+        var reIframeSrc = /(\/adhandler\/|\/adimages\/)/;
 
+        // Communs
+        if (insertedNode.id &&
+          reImgId.test(insertedNode.id) &&
+          insertedNode.nodeName == 'IMG' &&
+          reImgSrc.test(insertedNode.src) ||
+          insertedNode.id &&
+          reIframeId.test(insertedNode.id) &&
+          insertedNode.nodeName == 'IFRAME' &&
+          reIframeSrc.test(insertedNode.src)) {
+
+          // variant 1
+          if (insertedNode.id == 'xd') {
+            Aak.autoReport('AntiAdblockPackerZdxd', false, location.href);
+          } // variant 2
+		  else if (insertedNode.id == 'gd') {
+            Aak.autoReport('AntiAdblockPackerWdgd', false, location.href);
+          }
+          // Remove
+		  //console.log(insertedNode);
+          Aak.removeElement(insertedNode);
+        }
+
+		
         // Adunblock - http://adunblock.com/
         var reId = /^[a-z]{8}$/;
         var reClass = /^[a-z]{8} [a-z]{8}$/;
+		var reBg = /^[a-z]{8}-bg$/;
         var reStyle = /top: -?[\d]+px; opacity: [\d]; visibility: visible;/;
-        var reBg = /^[a-z]{8}-bg$/;
         var reMessage = /Il semblerait que vous utilisiez un bloqueur de publicité !/;
 
-        // Full Screen Message (Premium)
-        if (insertedNode.id &&
-          insertedNode.className &&
-          insertedNode.style &&
-          reId.test(insertedNode.id) &&
-          reClass.test(insertedNode.className) &&
-          reStyle.test(insertedNode.style.cssText) &&
-          reMessage.test(insertedNode.innerHTML) &&
-          insertedNode.nextSibling.nodeName == 'DIV' &&
-          insertedNode.nextSibling.className &&
-          reBg.test(insertedNode.nextSibling.className)) {
+		// Communs
+		if (typeof unsafeWindow.vtfab != 'undefined' &&
+		  typeof unsafeWindow.adblock_antib != 'undefined' &&
+		  insertedNode.parentNode &&
+		  insertedNode.parentNode.nodeName == 'BODY' &&
+		  insertedNode.id &&
+		  reId.test(insertedNode.id) &&
+		  insertedNode.nodeName == 'DIV' &&
+		  insertedNode.nextSibling &&
+		  insertedNode.nextSibling.className &&
+		  insertedNode.nextSibling.nodeName == 'DIV') {
 
-          // Remove Message
-          Aak.autoReport("AdUnBlockPremium");
-          Aak.removeElement(insertedNode.nextSibling);
-          Aak.removeElement(insertedNode);
-        }
-        // Top bar Message (Free)
-        else if (insertedNode.id &&
-          reId.test(insertedNode.id) &&
-          reMessage.test(insertedNode.innerHTML)) {
+		  // Full Screen Message (Premium)
+		  // <div id="lfyhsvdq" class="tvwnoqdf svonexrk" style="top: 100px; opacity: 1; visibility: visible;">
+		  // <div class="tvwnoqdf-bg" style="display: block;"></div>
+		  if (insertedNode.className &&
+		    reClass.test(insertedNode.className) &&
+		    reBg.test(insertedNode.nextSibling.className) &&
+		    insertedNode.nextSibling.style &&
+		    insertedNode.nextSibling.style.display != 'none') {
 
-          // Remove Message
-          Aak.autoReport("AdUnBlockFree");
-          Aak.removeElement(insertedNode);
-        }
+		    // Remove Message
+		    Aak.autoReport("AdUnBlockPremium");
+		    Aak.removeElement(insertedNode.nextSibling); // overlay
+		    Aak.removeElement(insertedNode); // box
+		  }
+		  // Top bar Message (Free)
+		  // <div id="vixmgrly">
+		  // <div id="mfnhaiyx" class="lkrnvbyt">
+		  else if (insertedNode.nextSibling.id &&
+		    reId.test(insertedNode.nextSibling.id) &&
+		    reMessage.test(insertedNode.innerHTML)) {
+
+		    // Remove Message
+		    Aak.autoReport("AdUnBlockFree");
+		    Aak.removeElement(insertedNode);
+		  }
+		}
+		
 
         // Antiblock - http://antiblock.org/
         var reId = /^[a-z0-9]{4,10}$/i;
@@ -1816,7 +2082,9 @@ Aak = {
 		
 
         // Communs
-        if (insertedNode.id &&
+        if (insertedNode.parentNode &&
+		  insertedNode.parentNode.nodeName == 'BODY' &&
+		  insertedNode.id &&
           insertedNode.style &&
           insertedNode.firstChild &&
 		  !insertedNode.firstChild.id &&

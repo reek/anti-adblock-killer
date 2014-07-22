@@ -116,7 +116,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Changelog
 ##### Upcoming changes
 
-##### Version 7.4 (July 21, 2014)
+##### Version 7.4 (July 22, 2014)
 * Add: siamfishing.com
 * Add: aloneteam.net
 * Add: video44.net
