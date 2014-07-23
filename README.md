@@ -93,8 +93,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Sites Supported
 ##### Plugins (Website)
 * Antiblock.org V2 & V3
-* Anti-Adblock (erikswan.net)
-* Anti-Adblock V2 (d3xt3r.com)
+* AntiAdblock (ClemensConrads)
+* AntiAdblock (ErikSwan)
+* AntiAdblock (D3xt3r)
 * RTK Anti Adblock
 * Anti Ad Buster
 * AADB Anti Ads Blocker
@@ -109,12 +110,17 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * WordPress AdBlock Blocker (thisismyurl.com)
 * No Adblock (noadblock.com)
 * AdBlock Alerter
+* BlockAlyzer - Adblock counter
+* Ad Blocking Detector
+* AntiBlock (BukssaAyman)
 
 ##### Custom
 * Please consult the changelog
 
 ## Changelog
 ##### Upcoming changes
+* maxcheaters.com
+
 
 ##### Version 7.4 (July 22, 2014)
 * Add: siamfishing.com
