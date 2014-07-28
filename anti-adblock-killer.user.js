@@ -1653,7 +1653,7 @@ Aak = {
       }
     },
     playtv : {
-      Host : ['playtv.fr'],
+      Host : ['play.tv'],
       Inject : function () {},
       Loaded : function () {
 
@@ -1669,14 +1669,14 @@ Aak = {
 
 		/*
         Solution using mobile webpage
-        if ("playtv.fr" == location.host) {
-          location.href = 'http://m.playtv.fr/';
+        if ("play.tv" == location.host) {
+          location.href = 'http://m.play.tv/';
         }
 		*/
 
       },
       Before : function (e) {
-	    // playtv.fr/assets/scripts/main.1399905958517.js
+	    // play.tv/assets/scripts/main.1399905958517.js
         /*
 		if (/scripts\/main\.\d+\.js$/.test(e.target.src)) {
           Aak.stopScript(e);

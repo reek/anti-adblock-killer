@@ -241,14 +241,14 @@ go4up.com##IMG[src="http://go4up.com/assets/img/downloadfr.gif"]
 @@||myspass.de/myspass/includes/apps/video/getvideometadataxml.php?$object-subrequest
 @@||myspass.de/myspass/includes/apps/player/standard/avt_config.php?$object-subrequest
 @@||serving-sys.com^$third-party,domain=myspass.de
-! playtv.fr
-@@||playtv.fr^$elemhide
-@@||ad4.liverail.com^$domain=m.playtv.fr
-@@||addirector.vindicosuite.com/crossdomain.xml$domain=playtv.fr
-@@||ads.stickyadstv.com/crossdomain.xml$domain=playtv.fr
-@@||ads.stickyadstv.com/www/delivery/*$domain=playtv.fr
-@@||adserver.playtv.fr/crossdomain.xml$domain=playtv.fr
-@@||ima3vpaid.appspot.com^$domain=playtv.fr
+! play.tv
+@@||play.tv^$elemhide
+@@||ad4.liverail.com^$domain=m.play.tv
+@@||addirector.vindicosuite.com/crossdomain.xml$domain=play.tv
+@@||ads.stickyadstv.com/crossdomain.xml$domain=play.tv
+@@||ads.stickyadstv.com/www/delivery/*$domain=play.tv
+@@||adserver.play.tv/crossdomain.xml$domain=play.tv
+@@||ima3vpaid.appspot.com^$domain=play.tv
 ! eclypsia.com
 !@@||adverts.eclypsia.com/www/delivery/spcjs.php?*$domain=eclypsia.com
 ! dbzog.de
