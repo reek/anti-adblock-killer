@@ -119,8 +119,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: vinestown.com
 * Add: maxcheaters.com
 * Fix: file4go.com
+* Fix: play.tv (matyo91)
 
 ##### Version 7.4 (July 22, 2014)
 * Add: siamfishing.com

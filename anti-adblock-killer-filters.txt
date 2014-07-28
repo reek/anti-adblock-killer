@@ -870,8 +870,18 @@ mrtzcmp3.net###hstp_interstitial
 ! ddl-search.biz##.wpbanner_superlenny
 ddl-search.biz##.wpbanner_superlenny
 ! pronpic.org
-!||*$domain=pronpic.org,subdocument,third-partyscript
-@@||googleapis.com^$script,domain=pronpic.org
-$domain=pronpic.org,script,third-party,subdocument
+||pronpic.org/52mp/index.php/adhandler/
+||advertclicks.ru^$domain=pronpic.org
+||limon.biz^$domain=pronpic.org
+||tizru.com^$domain=pronpic.org
+||piroji.com^$domain=pronpic.org
+||crpoy.com^$domain=pronpic.org
+||xaogi.com^$domain=pronpic.org
+||6likosy.com^$domain=pronpic.org
+||midlemee.ru^$domain=pronpic.org
+||tafyeta.ru^$domain=pronpic.org
+||tmserver-1.com^$domain=pronpic.org
+||zinzimo.info^$domain=pronpic.org
+||avitya.ru^$domain=pronpic.org
 ! pregen.net
 pregen.net###olayer
