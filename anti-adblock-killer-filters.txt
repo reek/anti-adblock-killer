@@ -677,8 +677,6 @@ ilive.to###ad_overlay_countdown
 cdn.tiv.pw###Advertisement1
 ! pornoshara.tv
 ||pornoshara.tv/template/branding/swf/*
-! aliez.tv
-emb.aliez.tv###ads
 ! megaviptv.me
 megaviptv.me###floatLayer
 ! privatecdn.tv
@@ -736,12 +734,12 @@ adbuck.cc###col_publi
 ! livesoccerhq.com / wowhq.ws
 wowhq.ws##.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable
 wowhq.ws##.theblogwidgets
-wowhq.ws,futeonline.altervista.org###pubclose
-wowhq.ws,futeonline.altervista.org###pubclose2
-wowhq.ws,futeonline.altervista.org###PUB1-300x250Z
-wowhq.ws,futeonline.altervista.org###PUB2-300x250Z
+wowhq.ws,futeonline.altervista.org,futeb.altervista.org###pubclose
+wowhq.ws,futeonline.altervista.org,futeb.altervista.org###pubclose2
+wowhq.ws,futeonline.altervista.org,futeb.altervista.org###PUB1-300x250Z
+wowhq.ws,futeonline.altervista.org,futeb.altervista.org###PUB2-300x250Z
 wowhq.ws,cbox.ws##[href="http://buefixe.net/apostas/"]
-wowhq.ws,futeonline.altervista.org,fixolas.net##A[href^="http://fixolas.net/cms/"]
+wowhq.ws,cbox.ws,futeonline.altervista.org,fixolas.net,futeb.altervista.org##A[href^="http://fixolas.net/cms/"]
 ##iframe[src^="http://somoslapublicidad.com/"]
 ! sport-show.fr
 sport-show.fr##DIV[style="padding-top:0px;float:left;width:100%;font-size:13px;line-height:0px;top:4px;text-align:left"]
@@ -773,6 +771,8 @@ jjcast.com###timer1
 jjcast.com###timer2
 jjcast.com###timer3
 jjcast.com##IMG[src="close_button.png"]
+! aliez.tv
+aliez.tv###ads
 ! Others ---------------------------------------------------------------------------------------
 ! tvi
 tvi24.iol.pt##iframe[id=barraIOL]

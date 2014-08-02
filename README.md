@@ -1,5 +1,5 @@
-<h1><img width="32px" height="32px" src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png"/> Anti-Adblock Killer | Reek</h1>
-
+<h1>AntiAdblockKiller | Reek</h1>
+[![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-header.png)]
 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
@@ -17,9 +17,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
-* [![](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
-* ![](http://i.imgur.com/H2u0ctp.png) 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n
-* [![](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
+* [![Paypal](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
+* ![Bitcoin](http://i.imgur.com/H2u0ctp.png) 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n
+* [![Flattr](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
 * [Donate It](http://reeksite.com/aak/donate.php)
 
 
