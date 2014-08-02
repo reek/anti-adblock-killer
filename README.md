@@ -1,4 +1,5 @@
-##[![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-header.png)]
+<h1>AntiAdblockKiller | Reek</h1>
+[![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-header.png)]
 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
@@ -54,7 +55,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Rate it. (Reviews)
 * Become it Fan. (Fans)
 * Share it (Social Network, Forums, Blogs, etc...)
-
+* Follow ([Twitter](https://twitter.com/antiadbkiller))
 
 ## Features
 * Detect & Kill Anti-Adblock Systems
