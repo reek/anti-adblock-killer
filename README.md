@@ -1,5 +1,5 @@
 ##AntiAdblockKiller | Reek
-![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-header.png)
+![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
