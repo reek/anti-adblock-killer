@@ -436,6 +436,8 @@ jeuxactu.com###infoBlock
 @@||maxcheaters.com/public/js/jsLoader.js$script
 ! straight-world.de
 @@||straight-world.de/js/ads.js$script
+! clubedohardware.com.br
+@@||ads.clubedohardware.com.br/www/delivery/spcjs.php$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

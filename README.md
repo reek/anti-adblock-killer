@@ -33,6 +33,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
+
+
+
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
@@ -52,14 +55,15 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 #### Step 4: Support Author
 * [Say Thanks](http://bc.vc/OgKw1G)
 * [Donate It](http://reeksite.com/aak/donate.php)
-* Rate it. (Reviews)
-* Become it Fan. (Fans)
-* Share it (Social Network, Forums, Blogs, etc...)
-* Follow ([Twitter](https://twitter.com/antiadbkiller))
+* Rate It
+* Share It (Social Network, Forums, Blogs, etc...)
+* Follow It ([Twitter](https://twitter.com/antiadbkiller))
+* Become Fan
+
 
 ## Features
 * Detect & Kill Anti-Adblock Systems
-* Detect Anti-Adblock Killer Filters
+* Detect AntiAdblockKiller Filterlist
 * Check & Notify updates
 * More filters for Adblockers
 * [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
@@ -70,10 +74,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Help
-1. Check if userscript manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
-2. Check if Anti AdBlock Killer is activated.
+1. Check if script manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
+2. Check if AntiAdblockKiller is activated.
 3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript
-4. Check if you have subscribe to Anti AdBlock Killer | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
+4. Check if you have subscribe to AntiAdblockKiller | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
 5. Check if you have another userscript not interfere with Anti AdBlock Killer.
 6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
 7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
@@ -119,6 +123,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Add: clubedohardware.com.br
 * Add: straight-world.de
 * Add: vinestown.com
 * Add: maxcheaters.com
@@ -759,6 +764,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Adblock Plus
 * Adblock
 * Disables AdBlock Protection
+* AntiAdblockKiller
 
 ## Tags 2
 * remove anti adblock protection
