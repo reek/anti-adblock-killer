@@ -70,7 +70,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Report
-* [Issues, bugs, new site or fix site](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+* [Issue or antiblock](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
 
 ## Help
