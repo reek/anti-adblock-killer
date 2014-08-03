@@ -131,7 +131,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fixed: play.tv
 * Improved: notification box
 * New: AntiAdblockKiller on Twitter
-* Modified: icon
+* New: icon
 
 ##### Version 7.4 (July 22, 2014)
 * Added: siamfishing.com
