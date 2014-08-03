@@ -123,14 +123,15 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-* New: AntiAdblockKiller on Twitter
 * Added: clubedohardware.com.br
 * Added: straight-world.de
 * Added: vinestown.com
 * Added: maxcheaters.com
 * Fixed: file4go.com
 * Fixed: play.tv
-
+* Improved: notification box
+* New: AntiAdblockKiller on Twitter
+* Modified: icon
 
 ##### Version 7.4 (July 22, 2014)
 * Added: siamfishing.com
