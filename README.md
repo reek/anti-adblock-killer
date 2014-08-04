@@ -1,5 +1,5 @@
-##AntiAdblockKiller | Reek
-![AntiAdblockKiller](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
+##Anti-Adblock Killer | Reek
+![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
@@ -63,7 +63,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Features
 * Detect & Kill Anti-Adblock Systems
-* Detect AntiAdblockKiller Filterlist
+* Detect Anti-Adblock Killer Filterlist
 * Check & Notify updates
 * More filters for Adblockers
 * [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
@@ -75,9 +75,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Help
 1. Check if script manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
-2. Check if AntiAdblockKiller is activated.
+2. Check if Anti-Adblock Killer is activated.
 3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript
-4. Check if you have subscribe to AntiAdblockKiller | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
+4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
 5. Check if you have another userscript not interfere with Anti AdBlock Killer.
 6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
 7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
@@ -130,7 +130,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Fixed: file4go.com
 * Fixed: play.tv
 * Improved: notification box
-* New: AntiAdblockKiller on Twitter
+* New: Anti-Adblock Killer on Twitter
 * New: icon
 
 ##### Version 7.4 (July 22, 2014)
@@ -271,9 +271,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Improved: core userscript
 
 ##### Version 7.1 (May 14, 2014)
-* New: AntiAdblockKiller on Greasefork.org
-* New: AntiAdblockKiller on Openuserjs.org
-* New: AntiAdblockKiller on Github.com
+* New: Anti-Adblock Killer on Greasefork.org
+* New: Anti-Adblock Killer on Openuserjs.org
+* New: Anti-Adblock Killer on Github.com
 * Added: support Tampermonkey (Opera)
 * Added: feature detect Anti-Adblock Killer Filters
 * Added: ftlwiki.com
