@@ -47,7 +47,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
-* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org*
+* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org (dead)* 
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
@@ -59,6 +59,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Share It (Social Network, Forums, Blogs, etc...)
 * Follow It ([Twitter](https://twitter.com/antiadbkiller))
 * Become Fan
+* Report Anti-Adblock's
 
 
 ## Features
@@ -74,17 +75,18 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Help
-1. Check if script manager is activated. (Greasemonkey, Tampermonkey, NinjaKit).
-2. Check if Anti-Adblock Killer is activated.
-3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript
-4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers - [Subscribe](http://bc.vc/jGFxOb)
+1. Check if script manager is enabled. (Greasemonkey, Tampermonkey, NinjaKit).
+2. Check if Anti-Adblock Killer is enabled.
+3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript (Step 3)
+4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers (Step 2)
 5. Check if you have another userscript not interfere with Anti AdBlock Killer.
 6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
 7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
-8. Check if the site is in "Supported Sites and Changelog".
+8. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
+9. Check if the site is in "Supported Sites and Changelog".
   1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
   2. If it exists, but the script does not work, it probably means that the anti adblock protection has changed in it please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
-9. Consult Discussions or Issues
+10. Consult Discussions or Issues
 
 
 ## Browsers supported
@@ -123,6 +125,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Added: putlocker.is
 * Added: clubedohardware.com.br
 * Added: straight-world.de
 * Added: vinestown.com
