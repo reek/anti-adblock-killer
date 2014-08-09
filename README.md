@@ -2,7 +2,8 @@
 ![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
 
 [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)
- [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png)](https://twitter.com/antiadbkiller) 
+[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png)](https://twitter.com/antiadbkiller) 
+ 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
 >
