@@ -1,6 +1,7 @@
 ##Anti-Adblock Killer | Reek
 ![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
 
+[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek) [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png) ](https://twitter.com/antiadbkiller) 
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
 >
@@ -47,8 +48,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
-* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org (dead)* 
+* [Install](https://monkeyguts.com/codeinstall_raw.php?id=351) *from monkeyguts.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
+* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org (dead)* 
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
@@ -132,8 +134,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Added: maxcheaters.com
 * Fixed: file4go.com
 * Fixed: play.tv
-* Improved: notification box
 * New: Anti-Adblock Killer on Twitter
+* New: Anti-Adblock Killer on MonkeyGuts
+* New: notification box
 * New: icon
 
 ##### Version 7.4 (July 22, 2014)
@@ -740,6 +743,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Userscripts](http://userscripts.org:8080/scripts/show/155840)
 * [Greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
 * [Openuserjs](https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek)
+* [MonkeyGuts](https://monkeyguts.com/code.php?id=351)
+
 
 
 ## Tags
