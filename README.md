@@ -128,612 +128,627 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-* Added: putlocker.is
-* Added: clubedohardware.com.br
-* Added: straight-world.de
-* Added: vinestown.com
-* Added: maxcheaters.com
-* Fixed: file4go.com
-* Fixed: play.tv
-* New: Anti-Adblock Killer on Twitter
-* New: Anti-Adblock Killer on MonkeyGuts
-* New: notification box
+* Kill: tvn24.pl
+* Kill: putlocker.is
+* Kill: clubedohardware.com.br
+* Kill: straight-world.de
+* Kill: vinestown.com
+* Kill: maxcheaters.com
+* Kill: kissanime.com (Fix)
+* Kill: file4go.com (Fix)
+* Kill: play.tv & playtv.fr (Fix)
+* Kill: pipocas.tv (Fix)
+* Add: Anti-Adblock Killer on Twitter
+* Add: Anti-Adblock Killer on MonkeyGuts
+* Add: @grant unsafewindow
+* Add: redirect discuss, feedback, comments to Github
+* New: icon
+* Edit: event listeners
+* Improve: Aak.notification
+* Improve: detection of generic antiblocks
+
+##### Release 7.4 (July 22, 2014)
+* Kill: siamfishing.com
+* Kill: aloneteam.net
+* Kill: video44.net
+* Kill: gamergen.com
+* Kill: writing.com
+* Kill: generatupremium.biz
+* Kill: jeuxactu.com
+* Kill: fansubresistance.biz
+* Kill: pronpic.org
+* Kill: hellsmedia.com
+* Kill: sportsplays.com
+* Kill: chrissmoove.com
+* Kill: pipocas.tv
+* Kill: tiervermittlung.de
+* Kill: mufa.de
+* Kill: vapingunderground.com
+* Kill: ytconv.net
+* Kill: privateinsta.com (Fix)
+* Kill: videobug.net (Fix)
+* Kill: play44.net (Fix)
+* Kill: videofun.me (Fix)
+* Kill: filecom.net (Fix)
+* Kill: cardinals.clubs.nfl.com (Fix)
+* Kill: breakmanga.com (Fix)
+* Kill: fitshr.net (Fix)
+* Kill: picload.org (Fix)
+* Kill: chine-informations.com (Fix)
+* Kill: btspread.com (Fix)
+* Kill: javzoo.com (Fix)
+* Kill: javpee.com (Fix)
+* Kill: eveskunk.com (Fix)
+* Kill: notre-planete.info (Fix)
+* Kill: myanimes.li (Fix)
+* Improve: detection of generic antiblocks
+* Improve: Aak.player (jw5,jw6,flow)
+* Remove: obsolete code
+
+##### Release 7.3 (June 29, 2014)
+* Kill: anisubsia.com
+* Kill: eveskunk.com
+* Kill: btspread.com
+* Kill: aseanlegacy.net
+* Kill: leecher.us
+* Kill: debrid.us
+* Kill: wowhq.ws
+* Kill: anime4fun.com
+* Kill: xbox360pcemulator.com
+* Kill: gta5hack.com
+* Kill: kingleech.com
+* Kill: securefile.info
+* Kill: xpango.com-cheat.in
+* Kill: 4shared.downloadlagu.info
+* Kill: freeudidregistration.com
+* Kill: b-books.info
+* Kill: copsilver.com
+* Kill: freebo2.com
+* Kill: techietricks.net
+* Kill: vinaftw.co.uk
+* Kill: spotifygratuit.com
+* Kill: free-itunes-gift-cards.com
+* Kill: freeminecraftaccount.us
+* Kill: ffa-hosting.com
+* Kill: skincodesgiveaway.com
+* Kill: game-debate.com
+* Kill: uploaded-premium.ru
+* Kill: mypcgamesfreedownload.blogspot.com
+* Kill: nakedhelen.com
+* Kill: asiofree.com
+* Kill: mol.cheatsplanet.net
+* Kill: debrideurgratuit.org
+* Kill: thebesttrainers.net
+* Kill: pickcrackpasswords.blogspot.com
+* Kill: yourcodeis.com
+* Kill: timepasss.com
+* Kill: thehyphy.com
+* Kill: search-an-inmate.com
+* Kill: getterraria.info
+* Kill: fullsoftwaredownload.info
+* Kill: premium-spotify.com
+* Kill: ndsroms.altervista.org
+* Kill: itunesgiftcard.fbmaniaz.com
+* Kill: phone-track.net
+* Kill: filepixy.com
+* Kill: watchmovies.just4umedia.com
+* Kill: netflixaccount.org
+* Kill: javzoo.com
+* Kill: javpee.com
+* Kill: multifichier.com
+* Kill: yellowbridge.com (Fix)
+* Kill: abola.pt (video player) (Fix)
+* Kill: javpee.com (Fix)
+* Kill: javzoo.com (Fix)
+* Kill: notre-planete.info (Fix)
+* Fix: donate buttons
+* Add: Aak.autoReport
+* Add: various @grant
+* Improve: detection of generic antiblocks
+* Improve: prototype.contains
+* Improve: Aak.addElement
+
+##### Release 7.2 (May 20, 2014)
+* Kill: javzoo.com
+* Kill: advertise.com
+* Kill: allsoftinone.com
+* Kill: annuaire-xavbox.com
+* Kill: b-books.info
+* Kill: consoledejeux.info
+* Kill: copsilver.com
+* Kill: free-itunes-gift-cards.com
+* Kill: freebo2.com
+* Kill: freeminecraftaccount.us
+* Kill: freewowmembership.com
+* Kill: fullmovieshd.org
+* Kill: fullsoftwaredownload.info
+* Kill: getterraria.info
+* Kill: mecozz.com
+* Kill: minecraftraffle.com
+* Kill: pose-de-puce.info
+* Kill: search-an-inmate.com 
+* Kill: thehyphy.com
+* Kill: timepasss.com
+* Kill: videos.sominaltvfilms.com
+* Kill: yooclick.com
+* Kill: yourcodeis.com 
+* Kill: Blogspot no country redirect (NCR)
+* Kill: nas-forum.com
+* Kill: duoliphotography.com
+* Kill: pickcrackpasswords.blogspot.com
+* Kill: tekkitdupes.blogspot.com
+* Kill: watch-latest-movies-online-daily.blogspot.com
+* Kill: filmovizija.net/
+* Kill: filmovizija.com (Fix)
+* Kill: thebesttrainers.net (Fix)
+* Kill: bee4.biz (Fix)
+* Kill: filesdld.com (Fix)
+* Kill: uptobox.com (Fix)
+* Kill: filesdld.com (Fix)
+* Kill: privateinsta.com (Fix)
+* Improve: Aak.getVersion (for unsupported script managers)
+* Improve: Aak.getScriptManager (news script managers)
+* Optimize: userscript code
+
+##### Release 7.1 (May 14, 2014)
+* Kill: ftlwiki.com
+* Kill: eami.in
+* Kill: seguridadwireless.es
+* Kill: tout-gratuit.be
+* Kill: bg-gledai.tv
+* Kill: filecore.co.nz
+* Kill: fcore.eu
+* Kill: hqpdb.com
+* Kill: watcharab.com (Fix)
+* Add: Anti-Adblock Killer on Greasefork.org
+* Add: Anti-Adblock Killer on Openuserjs.org
+* Add: Anti-Adblock Killer on Github.com
+* Add: Aak.detectFilters
+* Fix: bugs on Tampermonkey (Opera)
+* Fix: bugs on NinjaKit (Safari)
+* Fix: bug GM_getMetadata on Scriptish (Firefox)
+* Fix: bug GM_registerMenuCommand on Scriptish (Firefox)
+* Replace: updateURL
+* Replace: downloadURL
+* Improve: Aak.checkAuto
+* Improve: Aak.update
+* Improve: Mutation Events + Mutation Observer
+* Optimize: userscript code
+
+##### Release 7.0 (Apr 16, 2014)
+* Kill: tv.majorleaguegaming.com
+* Kill: imgleech.com
+* Kill: yellowbridge.com
+* Kill: oploverz.net
+* Kill: mydisc.net
+* Kill: tusfiles.net
+* Kill: filmovizija.com (Fix)
+* Kill: codeclan.altervista.org (Fix)
+* Kill: Better Stop Adblock (script) (Fix)
+* Fix: bug synch repository (Github)
+
+##### Release 6.9 (Mar 22, 2014)
+* Kill: adBuddy  (script)
+* Kill: AdUnBlock Free and Premium (script)
+* Kill: FuckAdBlock (script)
+* Kill: bustycrush.com
+* Kill: sharecast.to
+* Kill: exashare.com
+* Kill: pic5you.ru
+* Kill: forum.thgtr.com
+* Kill: better-explorer.com
+* Kill: xavbox.com
+* Kill: xavbox.info
+* Kill: xavbox.org
+* Kill: xavbox360.com
+* Kill: xavboxds.com
+* Kill: xavboxforum.com
+* Kill: xavboxgirls.com
+* Kill: xavboxone.com
+* Kill: xavboxphone.com
+* Kill: xavboxps3.com
+* Kill: xavboxps4.com
+* Kill: xavboxpsp.com
+* Kill: xavboxtuning.com
+* Kill: xavboxwii.com
+* Kill: xavboxwiiu.com
+* Kill: livesoccerhq.com (Fix)
+* Optimize: cleanup redundant rules filterlist
+
+##### Release 6.8 (Fev 25, 2014)
+* Kill: xavboxforum.com
+* Kill: dramapassion.com
+* Kill: pic4you.ru
+* Kill: fichier.net
+* Kill: avaxhome.cc
+* Kill: vostfr-vf.com
+* Kill: prototurk.com
+* Kill: afreesms.com (Fix)
+* Kill: video.kooora.com (Fix)
+
+##### Release 6.7 (Fev 5, 2014)
+* Kill: livesoccerhq.com
+* Kill: pc.online143.com
+* Kill: forum.pac-rom.com
+* Kill: seekingalpha.com (by @prdonahue)
+* Kill: needrom.com (Fix)
+* Kill: rtl.de (by hoshie) (Fix)
+
+##### Release 6.6 (Jan 26, 2014)
+* Kill: playtv.fr (Fix)
+* Remove: detectFilters (dont works properly)
+
+##### Release 6.5 (Jan 26, 2014)
+* Kill: elahmad.com
+* Kill: z0r.de
+* Kill: rapid8.com
+* Kill: filmon.com
+* Kill: xlocker.net
+* Kill: 720pmkv.com
+* Kill: voxnow.de
+* Kill: rtl.de
+* Kill: abola.pt
+* Kill: sominaltvfilms.com
+* Kill: tek.no
+* Kill: akam.no
+* Kill: teknojobb.no
+* Kill: hardware.no
+* Kill: amobil.no
+* Kill: gamer.no
+* Kill: teknofil.no
+* Kill: eclypsia.com
+* Kill: filmovizija.com (Fix)
+* Kill: leetgamerz.net (Fix)
+* Kill: playtv.fr (Fix)
+* Add: detectFilters
+* Replace: Mutation Events to Mutation Observer (by Watilin)
+
+##### Release 6.4 (Jan 6, 2014)
+* Kill: roleplayer.me
+* Kill: dbzog.de
+* Kill: notre-planete.info
+* Kill: risiko-gesundheit.de (Fix)
+* Kill: maisgasolina.com (Fix)
+* Improve: notification box
+
+##### Release 6.3 (Dec 30, 2013)
+* Kill: beppegrillo.it
+* Kill: gaijin.at
+* Kill: makemehost.com
+* Kill: ukvarminting.com
+* Kill: beppegrillo.it
+* Kill: dailybitcoins.org
+* Kill: 2unlimited.info
+* Kill: freebitco.in
+* Kill: anime-shinden.info 
+* Kill: pregen.net
+* Kill: uptobox.com (Fix)
+
+##### Release 6.2 (Dec 18, 2013)
+* Kill: eami.in
+* Kill: sporttvdireto.com (only firefox)
+* Kill: eventhubs.com (Fix)
+
+##### Release 6.1 (Dec 1, 2013)
+* Kill: free-movie-home.com
+* Kill: wrestletalk.net
+* Kill: planetaua.net
+* Kill: amobil.no
+* Kill: embed.revision3.com
+* Kill: en.anisearch.com
+* Kill: allostreaming-fr.com
+* Kill: eventhubs.com
+* Kill: boerse.bz
+* Kill: youmoviz.tv
+
+##### Release 6.0 (Nov 16, 2013)
+* Kill: snsw.us
+* Kill: mako.co.il
+* Kill: eami.in
+* Kill: yellowbridge.com
+* Kill: cineplanet21.com
+
+##### Release 5.9 (Nov 8, 2013)
+* Kill: thesimsresource.com
+* Kill: coder143.com
+* Kill: video.kooora.com
+* Kill: eventhubs.com
+* Kill: runningmanengsub.com
+* Kill: jheberg.net (Fix)
+
+##### Release 5.8 (Oct 26, 2013)
+* Kill: eclypsia.com
+* Kill: viki.com
+* Kill: footstream.tv
+* Kill: Aadb Anti Ads Blocker (script)
 * New: icon
 
-##### Version 7.4 (July 22, 2014)
-* Added: siamfishing.com
-* Added: aloneteam.net
-* Added: video44.net
-* Added: gamergen.com
-* Added: writing.com
-* Added: generatupremium.biz
-* Added: jeuxactu.com
-* Added: fansubresistance.biz
-* Added: pronpic.org
-* Added: hellsmedia.com
-* Added: sportsplays.com
-* Added: chrissmoove.com
-* Added: pipocas.tv
-* Added: tiervermittlung.de
-* Added: mufa.de
-* Added: vapingunderground.com
-* Added: ytconv.net
-* Fixed: privateinsta.com
-* Fixed: videobug.net
-* Fixed: play44.net
-* Fixed: videofun.me
-* Fixed: filecom.net
-* Fixed: cardinals.clubs.nfl.com
-* Fixed: breakmanga.com
-* Fixed: fitshr.net
-* Fixed: picload.org
-* Fixed: chine-informations.com
-* Fixed: btspread.com
-* Fixed: javzoo.com
-* Fixed: javpee.com
-* Fixed: eveskunk.com
-* Fixed: notre-planete.info
-* Fixed: myanimes.li
-* Improved: generic detection antiblocks
+##### Release 5.7 (Oct 22, 2013)
+* Kill: hentaistream.com
+* Kill: mrtzcmp3.net
+* Kill: twds4e2.nation2.com
+* Kill: videotools.12pings.net
+* Kill: preemlinks.com (Fix)
 
-##### Version 7.3 (June 29, 2014)
-* Added: anisubsia.com
-* Added: eveskunk.com
-* Added: btspread.com
-* Added: aseanlegacy.net
-* Added: leecher.us
-* Added: debrid.us
-* Added: wowhq.ws
-* Added: anime4fun.com
-* Added: xbox360pcemulator.com
-* Added: gta5hack.com
-* Added: kingleech.com
-* Added: securefile.info
-* Added: xpango.com-cheat.in
-* Added: 4shared.downloadlagu.info
-* Added: freeudidregistration.com
-* Added: b-books.info
-* Added: copsilver.com
-* Added: freebo2.com
-* Added: techietricks.net
-* Added: vinaftw.co.uk
-* Added: spotifygratuit.com
-* Added: free-itunes-gift-cards.com
-* Added: freeminecraftaccount.us
-* Added: ffa-hosting.com
-* Added: skincodesgiveaway.com
-* Added: game-debate.com
-* Added: uploaded-premium.ru
-* Added: mypcgamesfreedownload.blogspot.com
-* Added: nakedhelen.com
-* Added: asiofree.com
-* Added: mol.cheatsplanet.net
-* Added: debrideurgratuit.org
-* Added: thebesttrainers.net
-* Added: pickcrackpasswords.blogspot.fr
-* Added: yourcodeis.com
-* Added: timepasss.com
-* Added: thehyphy.com
-* Added: search-an-inmate.com
-* Added: getterraria.info
-* Added: fullsoftwaredownload.info
-* Added: premium-spotify.com
-* Added: ndsroms.altervista.org
-* Added: itunesgiftcard.fbmaniaz.com
-* Added: phone-track.net
-* Added: filepixy.com
-* Added: watchmovies.just4umedia.com
-* Added: netflixaccount.org
-* Added: javzoo.com
-* Added: javpee.com
-* Added: multifichier.com
-* Fixed: yellowbridge.com
-* Fixed: abola.pt (video player)
-* Fixed: javpee.com
-* Fixed: javzoo.com
-* Fixed: donate buttons
-* Fixed: notre-planete.info
-* Improved: generic detection antiblocks
+##### Release 5.6 (Oct 14, 2013)
+* Kill: camelstyle.net
+* Kill: urlgalleries.net
+* Kill: onlyteensx.net
+* Kill: journaldugeek.com
+* Kill: dizi-mag.com (Fix)
+* Kill: jheberg.net (Fix)
 
-##### Version 7.2 (May 20, 2014)
-* Added: javzoo.com
-* Added: advertise.com
-* Added: allsoftinone.com
-* Added: annuaire-xavbox.com
-* Added: b-books.info
-* Added: consoledejeux.info
-* Added: copsilver.com
-* Added: free-itunes-gift-cards.com
-* Added: freebo2.com
-* Added: freeminecraftaccount.us
-* Added: freewowmembership.com
-* Added: fullmovieshd.org
-* Added: fullsoftwaredownload.info
-* Added: getterraria.info
-* Added: mecozz.com
-* Added: minecraftraffle.com
-* Added: pose-de-puce.info
-* Added: search-an-inmate.com 
-* Added: thehyphy.com
-* Added: timepasss.com
-* Added: videos.sominaltvfilms.com
-* Added: yooclick.com
-* Added: yourcodeis.com 
-* Added: Blogspot no country redirect (NCR)
-* Added: nas-forum.com
-* Added: duoliphotography.com
-* Added: pickcrackpasswords.blogspot.com
-* Added: tekkitdupes.blogspot.com
-* Added: watch-latest-movies-online-daily.blogspot.com
-* Added: filmovizija.net/
-* Fixed: filmovizija.com
-* Fixed: thebesttrainers.net
-* Fixed: bee4.biz
-* Fixed: filesdld.com
-* Fixed: getVersion for unsupported script managers
-* Fixed: getScriptManager news script managers
-* Fixed: uptobox.com
-* Fixed: filesdld.com
-* Fixed: privateinsta.com
-* Improved: core userscript
+##### Release 5.5 (Oct 10, 2013)
+* Kill: jheberg.net
+* Kill: filmovizija.com
+* Kill: tubemonsoon.com
+* Kill: seekingalpha.com
+* Kill: kissanime.com (Fix)
 
-##### Version 7.1 (May 14, 2014)
-* New: Anti-Adblock Killer on Greasefork.org
-* New: Anti-Adblock Killer on Openuserjs.org
-* New: Anti-Adblock Killer on Github.com
-* Added: support Tampermonkey (Opera)
-* Added: feature detect Anti-Adblock Killer Filters
-* Added: ftlwiki.com
-* Added: eami.in
-* Added: seguridadwireless.es
-* Added: tout-gratuit.be
-* Added: bg-gledai.tv
-* Added: filecore.co.nz
-* Added: fcore.eu
-* Added: hqpdb.com
-* Fixed: watcharab.com
-* Fixed: support NinjaKit (Safari)
-* Fixed: GM_getMetadata on Scriptish
-* Fixed: GM_registerMenuCommand on Scriptish
-* Fixed: MutationObserver
-* Fixed: updateURL and downloadURL
-* Fixed: auto check update
-* Fixed: core userscript
+##### Release 5.4 (Oct 4, 2013)
+* Kill: maxdebrideur.com
+* Kill: needrom.com
+* Kill: hardware.no
 
-##### Version 7.0 (Apr 16, 2014)
-* Added: tv.majorleaguegaming.com
-* Added: imgleech.com
-* Added: yellowbridge.com
-* Added: oploverz.net
-* Added: mydisc.net
-* Added: tusfiles.net
-* Fixed: Better Stop Adblock (script)
-* Fixed: filmovizija.com
-* Fixed: codeclan.altervista.org
-* Fixed: Github synch filters list
+##### Release 5.3 (Sep 25, 2013)
+* Kill: playtv.fr
+* Kill: videofun.me (fullscreen)
+* Kill: forums.tweaktown.com 
+* Kill: eventhubs.com (Fix)
+* Kill: dizi-mag.com (Fix)
+* Kill: antennesport.com (Fix)
 
-##### Version 6.9 (Mar 22, 2014)
-* Added: adBuddy  (script)
-* Added: AdUnBlock Free and Premium (script)
-* Added: FuckAdBlock (script)
-* Added: bustycrush.com
-* Added: sharecast.to
-* Added: exashare.com
-* Added: pic5you.ru
-* Added: forum.thgtr.com
-* Added: better-explorer.com
-* Added: xavbox.com
-* Added: xavbox.info
-* Added: xavbox.org
-* Added: xavbox360.com
-* Added: xavboxds.com
-* Added: xavboxforum.com
-* Added: xavboxgirls.com
-* Added: xavboxone.com
-* Added: xavboxphone.com
-* Added: xavboxps3.com
-* Added: xavboxps4.com
-* Added: xavboxpsp.com
-* Added: xavboxtuning.com
-* Added: xavboxwii.com
-* Added: xavboxwiiu.com
-* Fixed: livesoccerhq.com
-* Fixed: clean redundant rules (Anti-Adblock Killer Filters)
+##### Release 5.2 (Sep 21, 2013)
+* Kill: 2site.me
+* Kill: tweaktown.com
+* Kill: dizi-mag.com
 
-##### Version 6.8 (Fev 25, 2014)
-* Added: xavboxforum.com
-* Added: dramapassion.com
-* Added: pic4you.ru
-* Added: fichier.net
-* Added: avaxhome.cc
-* Added: vostfr-vf.com
-* Added: prototurk.com
-* Fixed: afreesms.com
-* Fixed: video.kooora.com
+##### Release 5.1 (Sep 19, 2013)
+* Kill: hdtvtuga.com
+* Kill: bee4.biz
+* Kill: filmovizija.com
 
-##### Version 6.7 (Fev 5, 2014)
-* Added: livesoccerhq.com
-* Added: pc.online143.com
-* Added: forum.pac-rom.com
-* Added: seekingalpha.com (by @prdonahue)
-* Fixed: needrom.com
-* Fixed: rtl.de (by hoshie)
+##### Release 5.0 (Sep 14, 2013)
+* Kill: privateinsta.com
+* Kill: gametrailers.com
+* Kill: sport-show.fr
+* Kill: vipflash.net
+* Kill: eventhubs.com (Fix)
 
-##### Version 6.6 (Jan 26, 2014)
-* Del: feature detect Anti-Adblock Killer Filters (does not work properly)
-* Fixed: playtv.fr
+##### Release 4.9 (Sep 12, 2013)
+* Kill: debrastagi.com
+* Kill: downparadiz.com
+* Kill: sockshare.com
 
-##### Version 6.5 (Jan 26, 2014)
-* Added: feature detect Anti-Adblock Killer Filters
-* Added: elahmad.com
-* Added: z0r.de
-* Added: rapid8.com
-* Added: filmon.com
-* Added: xlocker.net
-* Added: 720pmkv.com
-* Added: voxnow.de
-* Added: rtl.de
-* Added: abola.pt
-* Added: sominaltvfilms.com
-* Added: tek.no
-* Added: akam.no
-* Added: teknojobb.no
-* Added: hardware.no
-* Added: amobil.no
-* Added: gamer.no
-* Added: teknofil.no
-* Added: eclypsia.com
-* Fixed: filmovizija.com
-* Fixed: leetgamerz.net
-* Fixed: playtv.fr
-* Fixed: Mutation Events to Mutation Observer (by Watilin)
+##### Release 4.8 (Sep 7, 2013)
+* Kill: doatoolsita.altervista.org
+* Kill: putlocker.com
+* Kill: spedylink.tk
+* Kill: televisaofutebol.com
+* Kill: thepcspy.com
+* Kill: thebesttrainers.net
+* Kill: azcardinals.com
+* Kill: removeadblock.com
+* Kill: generation-nt.com
+* Kill: magestorm.net
+* Kill: shoegames.blogspot.kr
+* Kill: unfair.co
+* Kill: forum.gizmolord.com
+* Kill: de.adklick.net
+* Kill: bitcoins4.me
+* Kill: canhasbitcoin.com
+* Kill: enigmaboard.com
+* Kill: eventhubs.com
+* Kill: megagames.com
+* Kill: ytconv.net
+* Kill: tpmrpg.net
+* Kill: visoterra.com
+* Kill: mp32u.net
+* Kill: animecrave.com
+* Kill: catchvideo.net
+* Kill: boincstats.com
+* Kill: coursdeprofs.fr
+* Kill: mgcash.com
+* Kill: notre-planete.info
+* Kill: voyageforum.com
+* Kill: coursdeprofs.fr
+* Kill: kissanime.com (Fix)
+* Kill: rapidebrideur.com (Fix)
+* Kill: bigdownloader.com (Fix)
+* Fix: check updates automaticaly (now hourly)
+* Add: command menu (checkupdates)
+* Create: filters list "Anti-Adblock Killer | Filters for Adblockers"
 
-##### Version 6.4 (Jan 6, 2014)
-* Added: roleplayer.me
-* Added: dbzog.de
-* Added: notre-planete.info
-* Fixed: risiko-gesundheit.de
-* Fixed: maisgasolina.com
-* edit: feature: notification box
+##### Release 4.7 (Sep 3, 2013)
+* Kill: estadiofutebol.com
+* Kill: casadossegredos.tv
+* Kill: tvdez.com
+* Kill: desportogratis.com
+* Kill: kissanime.com (just player) (Fix)
 
-##### Version 6.3 (Dec 30, 2013)
-* Added: beppegrillo.it
-* Added: gaijin.at
-* Added: makemehost.com
-* Added: ukvarminting.com
-* Added: beppegrillo.it
-* Added: dailybitcoins.org
-* Added: 2unlimited.info
-* Added: freebitco.in
-* Added: anime-shinden.info 
-* Added: pregen.net
-* Fixed: uptobox.com
+##### Release 4.6 (Sep 1, 2013)
+* Kill: fshost.me
 
-##### Version 6.2 (Dec 18, 2013)
-* Added: eami.in
-* Added: sporttvdireto.com (only firefox)
-* Fixed: eventhubs.com
+##### Release 4.5 (Aug 30, 2013)
+* Kill: allsoftinone.com
+* Kill: zeb89.altervista.org
+* Kill: romulation.net
+* Kill: freeallmusic.info
+* Kill: antiblock.org (script) (Improve)
+* Kill: adfly (disable event unbeforeunload) (Fix)
+* Kill: kissanime.com (just player) (Fix)
 
-##### Version 6.1 (Dec 1, 2013)
-* Added: free-movie-home.com
-* Added: wrestletalk.net
-* Added: planetaua.net
-* Added: amobil.no
-* Added: embed.revision3.com
-* Added: en.anisearch.com
-* Added: allostreaming-fr.com
-* Added: eventhubs.com
-* Added: boerse.bz
-* Added: youmoviz.tv
+##### Release 4.4 (Aug 28, 2013)
+* Kill: ecchi.animeron.tv
+* Kill: imgboo.me
+* Kill: antennesport.com (only Firefox)
+* Kill: kissanime.com (just player) (Fix)
 
-##### Version 6.0 (Nov 16, 2013)
-* Added: snsw.us
-* Added: mako.co.il
-* Added: eami.in
-* Added: yellowbridge.com
-* Added: cineplanet21.com
+##### Release 4.3 (Aug 27, 2013)
+* Kill: backin.net
+* Kill: kissanime.com (just player) (Fix)
 
-##### Version 5.9 (Nov 8, 2013)
-* Added: thesimsresource.com
-* Added: coder143.com
-* Added: video.kooora.com
-* Added: eventhubs.com
-* Added: runningmanengsub.com
-* Fixed: jheberg.net
+##### Release 4.2 (Aug 25, 2013)
+* Kill: up-flow.org
+* Kill: mwfiles.net
+* Kill: kissanime.com (just player) (Fix)
 
-##### Version 5.8 (Oct 26, 2013)
-* Added: create Anti-Adblock Killer icon
-* Added: eclypsia.com
-* Added: viki.com
-* Added: Aadb Anti Ads Blocker (script)
-* Added: footstream.tv
+##### Release 4.1 (Aug 23, 2013)
+* Kill: kissanime.com (Fix)
+* Kill: exrapidleech.info (Fix)
+* Kill: elahmad.com (Fix)
 
-##### Version 5.7 (Oct 22, 2013)
-* Added: hentaistream.com
-* Added: mrtzcmp3.net
-* Added: twds4e2.nation2.com
-* Added: videotools.12pings.net
-* Fixed: preemlinks.com
+##### Release 4.0 (Aug 23, 2013)
+* Kill: teknogods.com
+* Kill: aseanlegacy.net
+* Kill: dreamer.weboptime.com
+* Kill: webfilmek-sorozatok.blogspot.com
+* Kill: forum.gamespowerita.com (Fix)
 
-##### Version 5.6 (Oct 14, 2013)
-* Added: camelstyle.net
-* Added: urlgalleries.net
-* Added: onlyteensx.net
-* Added: journaldugeek.com
-* Fixed: dizi-mag.com
-* Fixed: jheberg.net
+##### Release 3.9 (Aug 22, 2013)
+* Kill: fileice.net
+* Kill: filmovizija.com
+* Kill: nosteam.ro
+* Kill: openrunner.com
+* Kill: chine-informations.com
+* Kill: easybillets.com
+* Kill: spox.fr
+* Kill: yovoyages.com
+* Kill: tv3.co.nz
+* Kill: freesportsbet.com
+* Kill: primeshare.tv
+* Kill: leaguesecretary.com
+* Kill: theweatherspace.com
+* Kill: wakanim.tv
+* Kill: debrideurstream.fr
+* Kill: aidemu.fr
+* Kill: vgunetwork.com
+* Kill: gamespowerita.com (Fix)
 
-##### Version 5.5 (Oct 10, 2013)
-* Added: jheberg.net
-* Added: filmovizija.com
-* Added: tubemonsoon.com
-* Added: seekingalpha.com
-* Fixed: kissanime.com
+##### Release 3.8 (Aug 21, 2013)
+* Kill: realamateurwivesandgirlfriends.pornblogy.com
+* Kill: d3brid4y0u.info
+* Add: @exclude chromeactions.com
 
-##### Version 5.4 (Oct 4, 2013)
-* Added: maxdebrideur.com
-* Added: needrom.com
-* Added: hardware.no
+##### Release 3.7 (Aug 20, 2013)
+* Kill: kissanime.com (Fix)
+* Kill: go4up.com (Fix)
 
-##### Version 5.3 (Sep 25, 2013)
-* Added: playtv.fr
-* Added: videofun.me (fullscreen)
-* Added: forums.tweaktown.com 
-* Fixed: eventhubs.com
-* Fixed: dizi-mag.com
-* Fixed: antennesport.com
+##### Release 3.6 (Aug 19, 2013)
+* Kill: ziddu.com (redirect to captcha)
+* Kill: jkanime.net
+* Kill: kissanime.com (Fix)
 
-##### Version 5.2 (Sep 21, 2013)
-* Added: 2site.me
-* Added: tweaktown.com
-* Added: dizi-mag.com
+##### Release 3.5 (Aug 18, 2013)
+* Add: check updates automaticaly (every 8 hours)
+* Add: @grant
 
-##### Version 5.1 (Sep 19, 2013)
-* Added: hdtvtuga.com
-* Added: bee4.biz
-* Added: filmovizija.com
+##### Release 3.4 (Aug 17, 2013)
+* Kill: freegamehosting.nl
+* Kill: osoarcade.com
+* Kill: mix.dj
+* Kill: watcharab.com
+* Kill: scan-manga.com
+* Kill: instantmanga.com
+* Kill: streamzzz.com
+* Kill: girafeshow.tv
+* Kill: automobile-sportive.com
 
-##### Version 5.0 (Sep 14, 2013)
-* Added: privateinsta.com
-* Added: gametrailers.com
-* Added: sport-show.fr
-* Added: vipflash.net
-* Fixed: eventhubs.com
+##### Release 3.3 (Aug 15, 2013)
+* Kill: urlink.at
+* Kill: priva.us
+* Kill: picload.org
+* Kill: elahmad.com
+* Kill: filesdld.com (Fix)
+* Add: SSL on updateURL and downloadURL
+* Edit: css notification box
 
-##### Version 4.9 (Sep 12, 2013)
-* Added: debrastagi.com
-* Added: downparadiz.com
-* Added: sockshare.com
+##### Release 3.2 (Aug 14, 2013)
+* Kill: go.phpnulledscripts.com
+* Kill: picstwist.com
 
-##### Version 4.8 (Sep 7, 2013)
-* Added: GM menu command (notify user box)
-* Added: create filters list "Anti-Adblock Killer | Filters for Adblockers"
-* Added: doatoolsita.altervista.org
-* Added: putlocker.com
-* Added: spedylink.tk
-* Added: televisaofutebol.com
-* Added: thepcspy.com
-* Added: thebesttrainers.net
-* Added: azcardinals.com
-* Added: removeadblock.com
-* Added: generation-nt.com
-* Added: magestorm.net
-* Added: shoegames.blogspot.kr
-* Added: unfair.co
-* Added: forum.gizmolord.com
-* Added: de.adklick.net
-* Added: bitcoins4.me
-* Added: canhasbitcoin.com
-* Added: enigmaboard.com
-* Added: eventhubs.com
-* Added: megagames.com
-* Added: ytconv.net
-* Added: tpmrpg.net
-* Added: visoterra.com
-* Added: mp32u.net
-* Added: animecrave.com
-* Added: catchvideo.net
-* Added: boincstats.com
-* Added: coursdeprofs.fr
-* Added: mgcash.com
-* Added: notre-planete.info
-* Added: voyageforum.com
-* Added: coursdeprofs.fr
-* Fixed: kissanime.com
-* Fixed: rapidebrideur.com
-* Fixed: bigdownloader.com
-* Fixed: auto update check (check updated hourly)
+##### Release 3.1 (Aug 12, 2013)
+* Kill: topzone.lt
+* Kill: file4go.com
+* Kill: cp-g.net
+* Kill: kissanime.com (Fix)
 
-##### Version 4.7 (Sep 3, 2013)
-* Added: estadiofutebol.com
-* Added: casadossegredos.tv
-* Added: tvdez.com
-* Added: desportogratis.com
-* Fixed: kissanime.com (display only player)
+##### Release 3.0 (Aug 11, 2013)
+* Kill: 9.bb
+* Kill: u.bb
+* Kill: j.gs
+* Kill: q.gs
+* Kill: filesdld.com
+* Edit: css notification box
 
-##### Version 4.6 (Sep 1, 2013)
-* Added: fshost.me
+##### Release 2.9 (Aug 10, 2013)
+* Fix: various bugs
 
-##### Version 4.5 (Aug 30, 2013)
-* Added: allsoftinone.com
-* Added: zeb89.altervista.org
-* Added: romulation.net
-* Added: freeallmusic.info
-* Fixed: antiblock.org (script)
-* Fixed: adfly (disable event unbeforeunload)
-* Fixed: kissanime.com (display only player)
+##### Release 2.8 (Aug 10, 2013)
+* Kill: kissanime.com (Fix)
 
-##### Version 4.4 (Aug 28, 2013)
-* Added: ecchi.animeron.tv
-* Added: imgboo.me
-* Added: antennesport.com (only Firefox)
-* Fixed: kissanime.com (display only player)
+##### Release 2.7 (Aug 9, 2013)
+* Kill: becompta.be
+* Kill: ebookdz.com
+* Kill: theliverugby.com
+* Kill: materiel-informatique.be
+* Kill: ppsmania.fr
+* Kill: scifi-movies.com
+* Kill: streamupload.org
+* Kill: tous-sports.tv
+* Kill: pro-sport.ws
+* Kill: pro-ddl.ws
+* Kill: leetgamerz.net
 
-##### Version 4.3 (Aug 27, 2013)
-* Added: backin.net
-* Fixed: kissanime.com (display only player)
+##### Release 2.6 (Aug 8, 2013)
+* Kill: interfans.org/forum
+* Kill: risiko-gesundheit.de (Fix)
 
-##### Version 4.2 (Aug 25, 2013)
-* Added: up-flow.org
-* Added: mwfiles.net
-* Fixed: kissanime.com (display only player)
+##### Release 2.5 (Aug 7, 2013)
+* Kill: kissanime.com
+* Kill: 360haven.com (Fix)
 
-##### Version 4.1 (Aug 23, 2013)
-* Fixed: kissanime.com
-* Fixed: exrapidleech.info
-* Fixed: elahmad.com
+##### Release 2.4 (Aug 7, 2013)
+* Kill: xxxdownloadsfree.blogspot.com
+* Kill: 360haven.com
 
-##### Version 4.0 (Aug 23, 2013)
-* Added: teknogods.com
-* Added: aseanlegacy.net
-* Added: dreamer.weboptime.com
-* Added: webfilmek-sorozatok.blogspot.hu
-* Fixed: forum.gamespowerita.com
+##### Release 2.3 (Aug 6, 2013)
+* Kill: receive-sms.com
+* Kill: bokepspot.com
+* Kill: afreesms.com
+* Kill: youwatch.org
+* Kill: btcflow.net
+* Kill: bitcointree.net
+* Kill: fightnext.com
+* Kill: bitcoiner.net
+* Kill: drivearabia.com
+* Kill: nowvideo.ch
+* Kill: youwatch.org
+* Kill: leetgamerz.net
 
-##### Version 3.9 (Aug 22, 2013)
-* Added: fileice.net
-* Added: filmovizija.com
-* Added: nosteam.ro
-* Added: openrunner.com
-* Added: chine-informations.com
-* Added: easybillets.com
-* Added: spox.fr
-* Added: yovoyages.com
-* Added: tv3.co.nz
-* Added: freesportsbet.com
-* Added: primeshare.tv
-* Added: leaguesecretary.com
-* Added: theweatherspace.com
-* Added: wakanim.tv
-* Added: debrideurstream.fr
-* Added: aidemu.fr
-* Added: vgunetwork.com
-* Fixed: gamespowerita.com
+##### Release 2.2 (Aug 5, 2013)
+* Kill: risiko-gesundheit.de
+* Kill: leetgamerz.net
+* Kill: codeclan.altervista.org
 
-##### Version 3.8 (Aug 21, 2013)
-* Added: metadata @exclude chromeactions.com
-* Added: realamateurwivesandgirlfriends.pornblogy.com
-* Added: d3brid4y0u.info
+##### Release 2.1 (Aug 4, 2013)
+* Kill: gooddrama.net
+* Kill: anti-ad-blocker.blogspot.com
+* Kill: ryanteck.org.uk
+* Kill: ilix.in
+* Add: notification box
 
-##### Version 3.7 (Aug 20, 2013)
-* Fixed: kissanime.com
-* Fixed: go4up.com
-
-##### Version 3.6 (Aug 19, 2013)
-* Added: ziddu.com (redirect to captcha)
-* Added: jkanime.net
-* Fixed: kissanime.com
-
-##### Version 3.5 (Aug 18, 2013)
-* Added: auto check update (every 8 hours)
-* Added: @grant
-
-##### Version 3.4 (Aug 17, 2013)
-* Added: freegamehosting.nl
-* Added: osoarcade.com
-* Added: mix.dj
-* Added: watcharab.com
-* Added: scan-manga.com
-* Added: instantmanga.com
-* Added: streamzzz.com
-* Added: girafeshow.tv
-* Added: automobile-sportive.com
-
-##### Version 3.3 (Aug 15, 2013)
-* Added: urlink.at
-* Added: priva.us
-* Added: picload.org
-* Added: elahmad.com
-* Fixed: filesdld.com
-* Fixed: updateURL and downloadURL on SSL
-* Edit: style notification box
-
-##### Version 3.2 (Aug 14, 2013)
-* Added: go.phpnulledscripts.com
-* Added: picstwist.com
-
-##### Version 3.1 (Aug 12, 2013)
-* Added: topzone.lt
-* Added: file4go.com
-* Added: cp-g.net
-* Fixed: kissanime.com
-
-##### Version 3.0 (Aug 11, 2013)
-* Added: 9.bb
-* Added: u.bb
-* Added: j.gs
-* Added: q.gs
-* Added: filesdld.com
-* Edit: notification box
-
-##### Version 2.9 (Aug 10, 2013)
-* Fixed: various bugs
-
-##### Version 2.8 (Aug 10, 2013)
-* Fixed: kissanime.com
-
-##### Version 2.7 (Aug 9, 2013)
-* Added: becompta.be
-* Added: ebookdz.com
-* Added: theliverugby.com
-* Added: materiel-informatique.be
-* Added: ppsmania.fr
-* Added: scifi-movies.com
-* Added: streamupload.org
-* Added: tous-sports.tv
-* Added: pro-sport.ws
-* Added: pro-ddl.ws
-* Added: leetgamerz.net
-
-##### Version 2.6 (Aug 8, 2013)
-* Added: interfans.org/forum
-* Fixed: risiko-gesundheit.de
-
-##### Version 2.5 (Aug 7, 2013)
-* Added: kissanime.com
-* Fixed: 360haven.com
-
-##### Version 2.4 (Aug 7, 2013)
-* Added: xxxdownloadsfree.blogspot.kr
-* Added: 360haven.com
-
-##### Version 2.3 (Aug 6, 2013)
-* Added: receive-sms.com
-* Added: bokepspot.com
-* Added: afreesms.com
-* Added: youwatch.org
-* Added: btcflow.net
-* Added: bitcointree.net
-* Added: fightnext.com
-* Added: bitcoiner.net
-* Added: drivearabia.com
-* Added: nowvideo.ch
-* Added: youwatch.org
-* Added: leetgamerz.net
-
-##### Version 2.2 (Aug 5, 2013)
-* Added: risiko-gesundheit.de
-* Added: leetgamerz.net
-* Added: codeclan.altervista.org
-
-##### Version 2.1 (Aug 4, 2013)
-* Added: notification box
-* Added: gooddrama.net
-* Added: anti-ad-blocker.blogspot.kr
-* Added: ryanteck.org.uk
-* Added: ilix.in
-
-##### Version 2.0 (Aug 3, 2013)
+##### Release 2.0 (Aug 3, 2013)
+* Kill: skippyfile.com
+* Kill: upshare.org
+* Kill: gamehack.eu
+* Kill: raw.senmanga.com
+* Kill: antiblock v3 (script)
 * Fork: "Anti-AntiBlock Plus 2.1" by InfinityCoding
-* Added: skippyfile.com
-* Added: upshare.org
-* Added: gamehack.eu
-* Added: raw.senmanga.com
-* Fixed: antiblock v2 and v3 (script)
 
-##### Version 1.4 (Jul 30, 2013)
-* Added: adf.ly
-* Fixed: antiblock v2 and v3 (script)
+##### Release 1.4 (Jul 30, 2013)
+* Kill: adf.ly
+* Kill: antiblock v2 (script)
 
 
 ## License 
