@@ -453,6 +453,9 @@ clubedohardware.com.br#@##banner
 clubedohardware.com.br#@#.ipsAd
 ! secret-zone.net
 @@||secret-zone.net/abp/adblock_detector.js$script
+! cbs.com
+@@||analytics.edgesuite.net^$domain=cbs.com,object-subrequest
+@@||ailde.biz/a.sponsorads.js$domain=cbs.com,script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
