@@ -2,7 +2,7 @@
 ! Title: Anti-Adblock Killer | Filters for Adblockers
 ! Author: Reek | http://reeksite.com/
 ! License: Creative Commons BY-NC-SA
-! Version: 7.4
+! Version: 7.5
 ! Expires: 1 days
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 ! Contact: https://github.com/reek/anti-adblock-killer/issues
