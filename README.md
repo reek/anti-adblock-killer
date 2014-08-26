@@ -128,9 +128,13 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-* Kill: hln.be (Test)
-* Kill: nieuwsblad.be (Test)
-* Kill: demorgen.be (Test)
+-
+
+##### Release 7.5 (August 26, 2014)
+* Kill: secret-zone.net
+* Kill: hln.be
+* Kill: nieuwsblad.be
+* Kill: demorgen.be
 * Kill: megagames.com
 * Kill: online.dramacafe.tv
 * Kill: tvn24.pl
@@ -138,7 +142,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: straight-world.de
 * Kill: vinestown.com
 * Kill: maxcheaters.com
-* Kill: clubedohardware.com.br (Fix)
+* Kill: clubedohardware.com.br
+* Kill: forum.clubedohardware.com.br
 * Kill: kissanime.com (Fix)
 * Kill: file4go.com (Fix)
 * Kill: play.tv & playtv.fr (Fix)
@@ -150,6 +155,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * New: icon
 * Edit: event listeners
 * Fix: bug command menu (Scriptish)
+* Fix: bug Aak.addScript
 * Improve: Aak.notification
 * Improve: detection of generic antiblocks
 

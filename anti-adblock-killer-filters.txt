@@ -444,6 +444,15 @@ online.dramacafe.tv#@#.afs_ads
 ! hln.be + nieuwsblad.be + demorgen.be
 @@||imasdk.googleapis.com/flash/*.swf$domain=syndication.vmma.be,object-subrequest
 @@||pubads.g.doubleclick.net/gampad/ads?*$domain=syndication.vmma.be,object-subrequest
+! tvn24.pl
+@@||tvn.hit.gemius.pl^$script,domain=tvn24.pl
+@@||tvn.adocean.pl/_*/ad.js?*$script,domain=tvn24.pl
+! clubedohardware.com.br
+clubedohardware.com.br#@#.nexusad
+clubedohardware.com.br#@##banner
+clubedohardware.com.br#@#.ipsAd
+! secret-zone.net
+@@||secret-zone.net/abp/adblock_detector.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
