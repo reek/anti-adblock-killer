@@ -6,42 +6,52 @@
 // @version 7.5
 // @license Creative Commons BY-NC-SA
 // @encoding utf-8
-// @homepage https://github.com/reek/anti-adblock-killer
+// @homepage https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 // @twitter https://twitter.com/antiadbkiller
 // @updateURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
 // @downloadURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
 // @include http*://*
-// @exclude http*://*google.*
-// @exclude http*://*yahoo.*/*
-// @exclude http*://*youtube.com/*
-// @exclude http*://*facebook.com/*
-// @exclude http*://*twitter.com/*
-// @exclude http*://*reeksite.com/*
-// @exclude http*://*chromeactions.com/*
-// @exclude http*://*preloaders.net/*
-// @exclude http*://*imgur.com/*
-// @exclude http*://*jsbin.com/*
-// @exclude http*://*jsfiddle.net/*
-// @exclude http*://*reddit.com/*
-// @exclude http*://*baidu.com/*
-// @exclude http*://*wikipedia.org/*
-// @exclude http*://*linkedin.com/*
-// @exclude http*://*live.com/*
-// @exclude http*://*amazon.com/*
-// @exclude http*://*bing.com/*
-// @exclude http*://*ebay.com/*
-// @exclude http*://*pinterest.com/*
-// @exclude http*://*ask.com/*
-// @exclude http*://*msn.com/*
-// @exclude http*://*instagram.com/*
-// @exclude http*://*tumblr.com/*
-// @exclude http*://*microsoft.com/*
-// @exclude http*://*paypal.com/*
-// @exclude http*://*imdb.com/*
-// @exclude http*://*apple.com/*
-// @exclude http*://*stackoverflow.com/*
-// @exclude http*://*ghacks.net/*
+// @exclude http*://*.google.*
+// @exclude http*://*.yahoo.*/*
+// @exclude http*://*.youtube.com/*
+// @exclude http*://*.facebook.com/*
+// @exclude http*://*.chromeactions.com/*
+// @exclude http*://*.imgbox.com/*
+// @exclude http*://*.imgur.com/*
+// @exclude http*://*.reddit.com/*
+// @exclude http*://*.baidu.com/*
+// @exclude http*://*.wikipedia.org/*
+// @exclude http*://*.linkedin.com/*
+// @exclude http*://*.amazon.*/*
+// @exclude http*://*.bing.com/*
+// @exclude http*://*.ebay.com/*
+// @exclude http*://*.pinterest.com/*
+// @exclude http*://*.ask.com/*
+// @exclude http*://*.live.com/*
+// @exclude http*://*.msn.com/*
+// @exclude http*://*.tumblr.com/*
+// @exclude http*://*.microsoft.com/*
+// @exclude http*://*.paypal.com/*
+// @exclude http*://*.imdb.com/*
+// @exclude http*://*.apple.com/*
+// @exclude http*://*.ghacks.net/*
+// @exclude http*://*.yandex.ru/*
+// @exclude http*://*.qq.com/*
+// @exclude http*://*.flickr.com/*
+// @exclude http*://vimeo.com/*
+// @exclude http*://360.cn/*
+// @exclude http*://mail.ru/*
+// @exclude http*://jsbin.com/*
+// @exclude http*://jsfiddle.net/*
+// @exclude http*://flattr.com/*
+// @exclude http*://instagram.com/*
+// @exclude http*://stackoverflow.com/*
+// @exclude http*://youtu.be/*
+// @exclude http*://twitter.com/*
+// @exclude http*://t.co/*
+// @exclude http*://reeksite.com/*
+// @exclude http*://preloaders.net/*
 // @grant unsafeWindow
 // @grant GM_addStyle
 // @grant GM_getValue
@@ -64,7 +74,7 @@
 =======================================================
 
 Donors:
-  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, Roy Martin, DrFiZ, Tippy, Brian Rohner
+  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, Roy Martin, DrFiZ, Tippy, Brian Rohner, Piotr Kozica, Minesh Patel
   
 Collaborators:
   InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe
@@ -1361,11 +1371,6 @@ Aak = {
         Aak.removeElement('#ad_blocking');
       }
     },
-    raitv : {
-      host : ['rai.tv'],
-      onStart : function () {},
-      onLoad : function () {}
-    },
     filmovizija : { // many changes
       host : ['filmovizija.com', 'filmovizija.net'],
       onStart : function () {
@@ -1788,6 +1793,37 @@ Aak = {
         }
       }
     },
+    raitv : {
+      host : ['rai.tv'],
+      onStart : function () {},
+      onLoad : function () {}
+    },
+    cbscom : { // research solution
+      host : ['cbs.com'],
+      onStart : function () {
+        // + abp rule
+        //Aak.setCookie('ad-block-counter', 0);
+      },
+      onLoad : function () {
+        /*
+        setTimeout(function () {
+        var player = document.querySelector("#rcpHolder");
+        var parent = player.parentNode;
+        var clone = player.cloneNode(true);
+
+        // change flashvars
+        var flashvars = clone.querySelector('param[name="flashvars"]');
+        flashvars.value = flashvars.value = 'partner=cbs&amp;pid=RdI81TR9rA2Q&amp;autoPlayVid=true&amp;showControls=true&amp;gsess=3ac49142-e56b-427a-8ea7-d1c4b41bcc55&amp;gusr=0&amp;bint=10&amp;link=http://www.cbs.com/video/show-redirect/?pid=RdI81TR9rA2Q&amp;prevImg=http://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2014/08/25/321939523555/CBS_LETTERMAN_4073_IMAGE_385274_640x360.jpg&amp;config=&amp;1uvpc=http://can.cbs.com/thunder/player/chromeless/uvp/overrides/pause_ad.xml,http://can.cbs.com/thunder/player/chromeless/uvp/overrides/error_config.xml';
+
+        // replace player
+        parent.replaceChild(clone, player);
+        }, 3000);
+
+
+         */
+
+      }
+    },
     tvcatchup : { // research solution
       host : ['tvcatchup.com'],
       onStart : function () {
@@ -1815,6 +1851,23 @@ Aak = {
 		};
 */
 
+      }
+    },
+    gamingroomtv : { // putlocker.is
+      host : ['gamingroom.tv'],
+      onStart : function () {
+        unsafeWindow.adblock_detect = function () {};
+        unsafeWindow.GR_adblock_hide_video = function () {};
+        unsafeWindow.adblock_video_msg_start = function () {};
+        unsafeWindow.adblock_video_msg_stop = function () {};
+        unsafeWindow.disable_chat = function () {};
+      },
+      onLoad : function () {
+        unsafeWindow.adblock_detect = function () {};
+        unsafeWindow.GR_adblock_hide_video = function () {};
+        unsafeWindow.adblock_video_msg_start = function () {};
+        unsafeWindow.adblock_video_msg_stop = function () {};
+        unsafeWindow.disable_chat = function () {};
       }
     },
     hqqtv : { // putlocker.is

@@ -128,7 +128,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
--
+* Kill: gamingroom.tv
+* Kill: domislive.com
+* Edit: @excludes
 
 ##### Release 7.5 (August 26, 2014)
 * Kill: secret-zone.net
