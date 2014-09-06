@@ -128,9 +128,17 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: wrzuta.pl
+* Kill: pudelek.tv
+* Kill: komediowo.pl
+* Kill: wp.pl
+* Kill: wp.tv
 * Kill: gamingroom.tv
 * Kill: domislive.com
+* Kill: upf.co.il
+* Kill: file4go.com (Fix)
 * Edit: @excludes
+* Improve: Aak.player
 
 ##### Release 7.5 (August 26, 2014)
 * Kill: secret-zone.net
