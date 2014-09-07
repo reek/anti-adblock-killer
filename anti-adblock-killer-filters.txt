@@ -150,6 +150,7 @@ tvdez.com,casadossegredos.tv,estadiofutebol.com,televisaofutebol.com##DIV[style=
 ! pro-zik.ws domains
 /js/check.js$domain=pro-zik.ws|pro-tect.ws|pro-ddl.ws|pro-sport.ws
 ! file4go.com
+file4go.com###banner_728x90B
 file4go.com#@#.afs_ads
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 ! afreesms.com
@@ -821,8 +822,6 @@ record.xl.pt##A[href^="http://partner.sbaffiliates.com/"]
 pubs.xl.pt###descontos
 record.xl.pt###BannerINQ
 netviagens.com###nvAdForm
-! file4go.com
-file4go.com###banner_728x90B
 ! pro-ddl.ws
 pro-ddl.ws###cboxOverlay + #colorbox + #fb-root + * + * + .fixe
 androidhellas.com##IMG[src="http://androidhellas.com/wp-content/uploads/2013/08/Android-Hellas-banner-728x90A.gif"]
