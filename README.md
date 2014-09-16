@@ -128,6 +128,12 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: sat1.de
+* Kill: kooralive.info
+* Kill: player.pl
+* kill: scan-mx.com
+* Kill: paidverts.com
+* Kill: biztok.pl
 * Kill: wrzuta.pl
 * Kill: pudelek.tv
 * Kill: komediowo.pl
@@ -136,6 +142,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: gamingroom.tv
 * Kill: domislive.com
 * Kill: upf.co.il
+* Kill: tvn24.pl (Fix)
+* Kill: playtv.fr (Fix)
 * Kill: file4go.com (Fix)
 * Edit: @excludes
 * Improve: Aak.player
