@@ -30,6 +30,7 @@
 // @exclude http*://*.ask.com/*
 // @exclude http*://*.live.com/*
 // @exclude http*://*.msn.com/*
+// @exclude http*://*.nyaa.se/*
 // @exclude http*://*.tumblr.com/*
 // @exclude http*://*.microsoft.com/*
 // @exclude http*://*.paypal.com/*
