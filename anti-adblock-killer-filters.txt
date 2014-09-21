@@ -468,6 +468,8 @@ paidverts.com#@#.afs_ads
 @@||gmads.net^$object-subrequest,domain=sat1.de|sat1.ch
 ! firstrowfr.eu
 firstrowfr.eu###adblockplus
+! spaste.com
+||spaste.com/adblock-detector.htm$subdocument
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

@@ -128,6 +128,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: spaste.com
 * Kill: sat1.de
 * Kill: kooralive.info
 * Kill: player.pl
