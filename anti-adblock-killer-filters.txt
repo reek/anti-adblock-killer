@@ -476,11 +476,14 @@ linkshrink.net#@#.overlay_ad
 ! eclypsia.com
 eclypsia.com#@##adv_tester
 @@||adverts.eclypsia.com/www/images/*.jpg$image
-@@||adverts.eclypsia.com/www/delivery/spcjs.php?*$script
+@@||adverts.eclypsia.com/www/delivery/spcjs.php*$script
 @@||eclypsia.com/advertisement_fr.js$script
 ! coolkora.com
 coolkora.com#@##advertise
 cast.coolkora.com###co_holder
+! videomega.tv
+@@||videomega.tv/JWJFfELSbJ/advertising.php*$script
+||goo.gl^$popup,domain=videomega.tv
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
