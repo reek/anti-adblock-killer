@@ -475,6 +475,13 @@ firstrowfr.eu###adblockplus
 ||spaste.com/adblock-detector.htm$subdocument
 ! linkshrink.net
 linkshrink.net#@#.overlay_ad
+! eclypsia.com
+eclypsia.com#@##adv_tester
+@@||adverts.eclypsia.com/www/images/*.jpg$image
+@@||eclypsia.com/advertisement_fr.js$script
+! coolkora.com
+coolkora.com#@##advertise
+cast.coolkora.com###co_holder
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
