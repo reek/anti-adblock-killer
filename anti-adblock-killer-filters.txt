@@ -250,8 +250,6 @@ go4up.com##IMG[src="http://go4up.com/assets/img/downloadfr.gif"]
 @@||serving-sys.com^$third-party,domain=myspass.de
 ! play.tv
 !||play.tv/assets/scripts/main-*.js$script
-! eclypsia.com
-!@@||adverts.eclypsia.com/www/delivery/spcjs.php?*$domain=eclypsia.com
 ! dbzog.de
 @@||dbzog.de/Bilder/$image
 @@||dbzog.de^$elemhide
@@ -477,6 +475,7 @@ firstrowfr.eu###adblockplus
 linkshrink.net#@#.overlay_ad
 ! eclypsia.com
 eclypsia.com#@##adv_tester
+@@||adverts.eclypsia.com/www/delivery/spcjs.php?*
 @@||adverts.eclypsia.com/www/images/*.jpg$image
 @@||eclypsia.com/advertisement_fr.js$script
 ! coolkora.com
