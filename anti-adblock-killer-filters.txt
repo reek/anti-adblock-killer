@@ -475,8 +475,8 @@ firstrowfr.eu###adblockplus
 linkshrink.net#@#.overlay_ad
 ! eclypsia.com
 eclypsia.com#@##adv_tester
-@@||adverts.eclypsia.com/www/delivery/spcjs.php?*
 @@||adverts.eclypsia.com/www/images/*.jpg$image
+@@||adverts.eclypsia.com/www/delivery/spcjs.php?*$script
 @@||eclypsia.com/advertisement_fr.js$script
 ! coolkora.com
 coolkora.com#@##advertise
