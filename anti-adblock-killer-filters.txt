@@ -489,6 +489,8 @@ cast.coolkora.com###co_holder
 ||javso.com/popjs/popred.js$script
 ||js.adkrazy.com^$script,domain=javso.com
 ||adkrazy.com^$popup,domain=javso.com
+! online.dramacafe.in
+online.dramacafe.in#@#.afs_ads
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
