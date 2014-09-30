@@ -491,6 +491,8 @@ cast.coolkora.com###co_holder
 ||adkrazy.com^$popup,domain=javso.com
 ! online.dramacafe.in
 online.dramacafe.in#@#.afs_ads
+! lequipe.fr
+/js/adUnblock.js$script,domain=lequipe.fr
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

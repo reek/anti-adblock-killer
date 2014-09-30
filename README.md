@@ -129,7 +129,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
--
+* Kill: lequipe.fr
 
 ##### Release 7.6 (September 28, 2014)
 * kill: online.dramacafe.in
