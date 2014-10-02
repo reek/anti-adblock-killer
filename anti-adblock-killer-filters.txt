@@ -493,6 +493,8 @@ cast.coolkora.com###co_holder
 online.dramacafe.in#@#.afs_ads
 ! lequipe.fr
 /js/adUnblock.js$script,domain=lequipe.fr
+! receive-sms-online.info
+@@||receive-sms-online.info/advertisment.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
