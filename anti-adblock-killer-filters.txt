@@ -495,6 +495,10 @@ online.dramacafe.in#@#.afs_ads
 /js/adUnblock.js$script,domain=lequipe.fr
 ! receive-sms-online.info
 @@||receive-sms-online.info/advertisment.js$script
+! extreamleech.com
+extreamleech.com#@#.afs_ads
+! linkguard.biz
+||linkguard.biz/adblock-detector.htm$subdocument
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -509,6 +513,7 @@ online.dramacafe.in#@#.afs_ads
 ! Tracking
 !----------------------------------------------------------------------------------------------------!
 ||js.sapo.pt/SAPOWebAnalytics/
+||flash.banners-service.info^
 !----------------------------------------------------------------------------------------------------!
 ! Ads
 !----------------------------------------------------------------------------------------------------!
@@ -784,7 +789,8 @@ pirlotv.tv###ad_overlay_countdown
 @@||cdn.chatytvgratis.me/ads/ads2.php?*$domain=cineplanet21.com
 ! sharecast.to
 sharecast.to###closeb
-||sharecast.to/matomybanner.html
+||sharecast.to/stats.php
+||sharecast.to/popup.html$popup
 ! youmoviz.tv
 youmoviz.tv##.plugbarremozi
 ! adbuck.cc

@@ -129,6 +129,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: linkguard.biz
+* Kill: receive-sms-online.info
+* Kill: extreamleech.com
 * Kill: lequipe.fr
 
 ##### Release 7.6 (September 28, 2014)
