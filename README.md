@@ -115,6 +115,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Remove Adblock (removeadblock.com)
 * Adblock Detector
 * StopAdBlock (stopadblock.org)
+* AdBuddy
 
 ##### Plugins (Wordpress)
 * WordPress AdBlock Blocker (thisismyurl.com)
@@ -129,10 +130,12 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: doulci.net
 * Kill: linkguard.biz
 * Kill: receive-sms-online.info
 * Kill: extreamleech.com
 * Kill: lequipe.fr
+* Kill: AdBuddy (script)
 
 ##### Release 7.6 (September 28, 2014)
 * kill: online.dramacafe.in

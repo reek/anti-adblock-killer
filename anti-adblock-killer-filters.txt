@@ -499,6 +499,9 @@ online.dramacafe.in#@#.afs_ads
 extreamleech.com#@#.afs_ads
 ! linkguard.biz
 ||linkguard.biz/adblock-detector.htm$subdocument
+! doulci.net
+doulci.net###adbuddy-no-adb-container
+doulci.net###adbuddy-overlay
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -954,3 +957,5 @@ pregen.net###olayer
 ||s3-sa-east-1.amazonaws.com^$third-party
 ! bet-at-home.com
 ||affiliates.bet-at-home.com^$popup
+! ||scorebull.com
+||scorebull.com/adv/*$popup
