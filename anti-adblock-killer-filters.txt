@@ -310,6 +310,9 @@ uptobox.com#@#.ad-leader > div[id]
 dailybitcoins.org#@#.ad-img
 ! freebitco.in
 @@/ad_pages/1386307785/left_sky_out.html|$domain=freebitco.in
+! freedoge.co.in
+freedoge.co.in#@#.ad-img
+freedoge.co.in#@#.adsbygoogle
 ! 2unlimited.info
 @@||2unlimited.info/js/adsense.js
 ! anime-shinden.info
