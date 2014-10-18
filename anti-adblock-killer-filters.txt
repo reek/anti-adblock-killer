@@ -520,6 +520,8 @@ rapeit.net#@#.afs_ads
 ! tzetze.it
 tzetze.it#@##TzeTze_728x90
 tzetze.it#@#div[id^="div-gpt-ad-"]
+! filmweb.pl
+@@||ad.filmweb.pl/adbanner/reklamy/adx.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
