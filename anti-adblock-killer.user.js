@@ -2010,6 +2010,14 @@ Aak = {
               Aak.removeElement(container);
             }
         }
+      },
+      linkcrypt_ws : {
+      	host : ['linkcrypt.ws'],
+      	onLoad : function () {
+       		document.getElementById('ad_cont').style.display='';
+        	document.getElementById('ad_cont').id = '';
+		document.getElementById('container_check').style.display='none'; 
+      	}
       }
     },
     // --------------------------------------------------------------------------------------------
