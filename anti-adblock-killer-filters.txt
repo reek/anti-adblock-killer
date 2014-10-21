@@ -522,6 +522,8 @@ tzetze.it#@##TzeTze_728x90
 tzetze.it#@#div[id^="div-gpt-ad-"]
 ! filmweb.pl
 @@||ad.filmweb.pl/adbanner/reklamy/adx.js$script
+! coingamez.com
+@@||advert.popunder.ru/banners/advert.php$domain=coingamez.com,subdocument,image
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
