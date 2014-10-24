@@ -131,6 +131,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ## Changelog
 ##### Upcoming changes
 
+* Kill: redtube.com
 * Kill: banid.pl
 * Kill: coingamez.com
 * Kill: linkcrypt.ws

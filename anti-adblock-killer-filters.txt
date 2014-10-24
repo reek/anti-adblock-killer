@@ -527,6 +527,9 @@ tzetze.it#@#div[id^="div-gpt-ad-"]
 ! banid.pl
 banid.pl#@#.ga
 @@||pagead2.googlesyndication.com/pagead/*$script,domain=banid.pl
+! floozycity.com
+||floozycity.com/ad/*$popup
+redtube.com##.add-blocker-msg
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
