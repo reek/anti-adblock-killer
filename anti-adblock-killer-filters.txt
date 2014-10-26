@@ -530,6 +530,12 @@ banid.pl#@#.ga
 ! floozycity.com
 ||floozycity.com/ad/*$popup
 redtube.com##.add-blocker-msg
+! play.novatv.bg
+@@||adm.fwmrm.net/p/MTG_Live/Video2AdRenderer.swf$domain=play.novatv.bg,object-subrequest
+@@||5d427.v.fwmrm.net/ad/p/1$domain=play.novatv.bg,object-subrequest
+@@||5d3e9.v.fwmrm.net/ad/l/1$domain=play.novatv.bg,object-subrequest
+! mackproject.com
+||mackproject.com/tara.php$subdocument
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -635,6 +641,8 @@ redtube.com##.add-blocker-msg
 ||cdn.q.gs/js/display.js$script,third-party
 ! shorte.st
 ||cdn.shorte.st/link-converter.min.js
+! link.tl
+||$domain=link.tl,subdocument,third-party
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
