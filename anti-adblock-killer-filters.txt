@@ -539,6 +539,8 @@ redtube.com##.add-blocker-msg
 ||mackproject.com/tara.php$subdocument
 ! apkmirror.com
 @@||apkmirror.com/wp-content/themes/APKMirror/js/*$script
+! latesthackingnews.com
+latesthackingnews.com#@#.afs_ads
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
