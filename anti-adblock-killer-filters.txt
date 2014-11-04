@@ -543,6 +543,8 @@ redtube.com##.add-blocker-msg
 @@||apkmirror.com/wp-content/themes/APKMirror/js/*$script
 ! latesthackingnews.com
 latesthackingnews.com#@#.afs_ads
+! streamlive.to
+streamlive.to###adblockplus
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
