@@ -310,7 +310,8 @@ uptobox.com#@#.ad-leader > div[id]
 ! dailybitcoins.org
 dailybitcoins.org#@#.ad-img
 ! freebitco.in
-@@/ad_pages/1386307785/left_sky_out.html|$domain=freebitco.in
+freebitco.in#@#.ad-img
+freebitco.in#@#.adsbygoogle
 @@||freebitco.in/adsbygoogle.js$script
 ! freedoge.co.in
 freedoge.co.in#@#.ad-img
@@ -545,6 +546,12 @@ redtube.com##.add-blocker-msg
 latesthackingnews.com#@#.afs_ads
 ! streamlive.to
 streamlive.to###adblockplus
+! knowlet3389.blogspot.com
+knowlet3389.blogspot.com#@##gAds
+@@||pagead2.googlesyndication.com/pagead/$script,domain=knowlet3389.blogspot.com
+! fantagazzetta.com
+@@||fantagazzetta.com/js/FuckAdBlock-master/fuckadblock.min.js$script
+@@||fantagazzetta.com^$elemhide
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -660,11 +667,11 @@ streamlive.to###adblockplus
 kat.ph,kickass.to,katproxy.com,proxykat.me##.partner1Button
 ! thepiratebay
 /poptest.js|$popup,domain=thepiratebay.sx|pirateproxy.se|unblocked.co|piratesniper.net|pirateproxy.net|piratebaybyproxy.com|proxybay.eu|tpbunion.com|quluxingba.info|tpb.ducke.co|piratebayunion.com|tpb.piraten.lu|tpb.ipredator.se|tpb.pirati.cz|theproxybay.biz|51tsj.com|bay.alanaktion.net|tpbpirate.tk
-! extratorrent.com
-extratorrent.com,extratorrent.cc,extratorrent.ws,extramirror.com,195.144.21.228##table > tbody > tr:nth-of-type(3) > td > table > tbody > tr > td > div:nth-of-type(3)
+! extratorrent.cc
 ||projekt95.net^$popup,script,third-party
 ||go.onhitads.net^$popup,script,third-party
 ||go.oclasrv.com^$popup,script,third-party
+||go.wsockd.com^$other,script,third-party
 ! fenopy.se
 fenopy.se##[rel="nofollow external"][href^="/ddl/"]
 ! seedpeer.me
