@@ -313,10 +313,12 @@ dailybitcoins.org#@#.ad-img
 freebitco.in#@#.ad-img
 freebitco.in#@#.adsbygoogle
 @@||freebitco.in/adsbygoogle.js$script
+@@||freebitco.in/show_ad.js$script
 ! freedoge.co.in
 freedoge.co.in#@#.ad-img
 freedoge.co.in#@#.adsbygoogle
 @@||freedoge.co.in/adsbygoogle.js$script
+@@||freedoge.co.in/show_ad.js$script
 ! 2unlimited.info
 @@||2unlimited.info/js/adsense.js
 ! anime-shinden.info
