@@ -555,6 +555,9 @@ knowlet3389.blogspot.com#@##gAds
 ! fantagazzetta.com
 @@||fantagazzetta.com/js/FuckAdBlock-master/fuckadblock.min.js$script
 @@||fantagazzetta.com^$elemhide
+! gtaxscripting.blogspot.com
+gtaxscripting.blogspot.com#@##AdSense2
+@@||pagead2.googlesyndication.com/pagead/$script,domain=gtaxscripting.blogspot.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
