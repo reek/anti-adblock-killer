@@ -562,6 +562,10 @@ knowlet3389.blogspot.com#@##gAds
 ! gtaxscripting.blogspot.com
 gtaxscripting.blogspot.com#@##AdSense2
 @@||pagead2.googlesyndication.com/pagead/$script,domain=gtaxscripting.blogspot.com
+! turkdown.com
+||tekproxy.com/$popup,domain=turkdown.com
+! onvasortir.com
+@@||onvasortir.com/advertisements.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
