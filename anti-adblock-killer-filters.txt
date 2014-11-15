@@ -314,11 +314,13 @@ dailybitcoins.org#@#.ad-img
 ! freebitco.in
 freebitco.in#@#.ad-img
 freebitco.in#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/*$domain=freebitco.in
 @@||freebitco.in/adsbygoogle.js$script
 @@||freebitco.in/show_ad.js$script
 ! freedoge.co.in
 freedoge.co.in#@#.ad-img
 freedoge.co.in#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/*$domain=freedoge.co.in
 @@||freedoge.co.in/adsbygoogle.js$script
 @@||freedoge.co.in/show_ad.js$script
 ! 2unlimited.info
@@ -566,6 +568,9 @@ gtaxscripting.blogspot.com#@##AdSense2
 ||tekproxy.com/$popup,domain=turkdown.com
 ! onvasortir.com
 @@||onvasortir.com/advertisements.js$script
+! pogocheats.net
+@@||pagead2.googlesyndication.com/pagead/js/*$domain=pogocheats.net
+pogocheats.net#@#.adsbygoogle
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
