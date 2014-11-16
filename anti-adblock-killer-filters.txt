@@ -485,6 +485,7 @@ firstrowfr.eu###adblockplus
 ! spaste.com
 ||spaste.com/adblock-detector.htm$subdocument
 ! linkshrink.net
+linkshrink.net###frme
 linkshrink.net#@#.overlay_ad
 ! eclypsia.com
 eclypsia.com#@##adv_tester
