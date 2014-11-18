@@ -572,6 +572,10 @@ gtaxscripting.blogspot.com#@##AdSense2
 ! pogocheats.net
 @@||pagead2.googlesyndication.com/pagead/js/*$domain=pogocheats.net
 pogocheats.net#@#.adsbygoogle
+! torrent-rutor.org
+@@||advert.popunder.ru/banners/advert.php$image,subdocument,document=torrent-rutor.org
+||activepr.ru^$domain=torrent-rutor.org
+||stats.tadic.tk^$domain=torrent-rutor.org
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
