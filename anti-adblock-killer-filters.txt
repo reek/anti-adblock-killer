@@ -496,8 +496,9 @@ eclypsia.com#@##adv_tester
 !@@||adverts.eclypsia.com/www/images/*.jpg$image
 !@@||eclypsia.com/advertisement_fr.js$script
 ! coolkora.com
-coolkora.com#@##advertise
-cast.coolkora.com###co_holder
+!coolkora.com#@#iframe[id^="advertise"]
+!cast.coolkora.com###co_holder
+@@||coolkora.com^$elemhide
 ! videomega.tv
 @@||videomega.tv/JWJFfELSbJ/*$script
 ||goo.gl^$popup,domain=videomega.tv
@@ -576,6 +577,13 @@ pogocheats.net#@#.adsbygoogle
 @@||advert.popunder.ru/banners/advert.php$image,subdocument,document=torrent-rutor.org
 ||activepr.ru^$domain=torrent-rutor.org
 ||stats.tadic.tk^$domain=torrent-rutor.org
+! rutube.ru
+@@||yast.rutube.ru/crossdomain.xml$object-subrequest
+@@||rutube.ru/dbg/player_stat?*$object-subrequest
+! porn-blog.me
+@@||porn-blog.me/ads/banner.jpg$image
+@@||porn-blog.me/?pr_api=true&/ad_holder/$subdocument
+porn-blog.me###dbx_light
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
