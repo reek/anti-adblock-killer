@@ -80,7 +80,7 @@
 ! http://codecanyon.net/item/anti-adblock-aadb-anti-ads-blocker-script/5367731
 /aadb/script.js|$script
 ! Better Stop Adblock
-||codeclan.altervista.org/wp-content/uploads/*/*/*.mp3|
+||codeclan.altervista.org/wp-content/uploads/*/*/*.mp3$media
 ! Adblock Detector 
 /AdblockDetector/handler.min.js$script
 ! StopAdBlock
@@ -572,6 +572,7 @@ gtaxscripting.blogspot.com#@##AdSense2
 ||tekproxy.com/$popup,domain=turkdown.com
 ! onvasortir.com
 @@||onvasortir.com/advertisements.js$script
+@@||onvasortir.com/smartadserver.com.js$script
 ! pogocheats.net
 @@||pagead2.googlesyndication.com/pagead/js/*$domain=pogocheats.net
 pogocheats.net#@#.adsbygoogle
@@ -596,6 +597,11 @@ goldenboys.fr#@#.afs_ads
 ! filecore.co.nz
 filecore.co.nz#@#.adsense
 @@||enrondev.net/ads/server/www/delivery/*$domain=filecore.co.nz,subdocument
+! streaming-foot.info
+||foot-live.info/images/adblok.mp3$media
+||streaming-foot.info/images/adblok.mp3$media
+! gratisbitco.in
+@@||gratisbitco.in/scripts/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -958,6 +964,13 @@ aovivoagora.com##div[id^="anuncio"]
 liguendirect.com##div[id^="bannerfloat"]
 ! biggestplayer.me
 biggestplayer.me##.cuadrado.rmv
+! playerhd1.pw
+playerhd1.pw###total
+playerhd1.pw###total_banner 
+playerhd1.pw##.ad
+streaming-foot.info###timer1
+streaming-foot.info###timer2
+streaming-foot.info###timer3
 ! Others ---------------------------------------------------------------------------------------
 ! tvi
 tvi24.iol.pt##iframe[id=barraIOL]
