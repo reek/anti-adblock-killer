@@ -616,7 +616,7 @@ onemanga.me#@#.adblock
 @@||optimized-by.rubiconproject.com/a/10926/26000/*$subdocument,domain=onemanga.me
 @@||ads.rubiconproject.com/ad/*$script,domain=onemanga.me
 ! tyrant.40in.net
-@@||pagead2.googlesyndication.com/pagead/$domain=tyrant.40in.net,script
+@@||pagead2.googlesyndication.com/pagead/*$domain=tyrant.40in.net,script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
