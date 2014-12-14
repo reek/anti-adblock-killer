@@ -619,6 +619,8 @@ onemanga.me#@#.adblock
 @@||pagead2.googlesyndication.com/pagead/*$domain=tyrant.40in.net,script
 ! iphones.ru
 iphones.ru##DIV[style="background-color: rgb(222, 71, 0); margin-bottom: 20px; padding: 60px 0px;"]
+! hackintosh.zone
+@@hackintosh.zone/adblock/advertisement.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
