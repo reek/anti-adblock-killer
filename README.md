@@ -130,7 +130,23 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-
+rtlxl.nl
+oploverz.net
+afreesms.com
+manga9.com
+avmask.com
+fz.se
+premiumleecher.com
+leecher.us 
+debridx.com
+tv-porinternet.com
+debridit.com
+premiumst0re.blogspot.com
+readms.com
+maxedtech.com
+* Kill: lequipe.fr
+* Kill: tvxat.org
+* Kill: comptoir-hardware.com
 * Kill: call-share.ddns.net
 * Kill: hackintosh.zone
 * Kill: testious.com
