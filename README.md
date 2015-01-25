@@ -130,20 +130,21 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
-rtlxl.nl
-oploverz.net
-afreesms.com
-manga9.com
-avmask.com
-fz.se
-premiumleecher.com
-leecher.us 
-debridx.com
-tv-porinternet.com
-debridit.com
-premiumst0re.blogspot.com
-readms.com
-maxedtech.com
+
+* Kill: rtlxl.nl
+* Kill: oploverz.net
+* Kill: afreesms.com
+* Kill: manga9.com
+* Kill: avmask.com
+* Kill: fz.se
+* Kill: premiumleecher.com
+* Kill: leecher.us 
+* Kill: debridx.com
+* Kill: tv-porinternet.com
+* Kill: debridit.com
+* Kill: premiumst0re.blogspot.com
+* Kill: readms.com
+* Kill: maxedtech.com
 * Kill: lequipe.fr
 * Kill: tvxat.org
 * Kill: comptoir-hardware.com
