@@ -647,7 +647,9 @@ fz.se###AdBlockerInfo
 ! avmask.com
 @@||avmask.com/eroex.js$script
 ! pencurimovie.cc
+pencurimovie.cc##.adb_overlay
 pencurimovie.cc###simplemodal-overlay
+pencurimovie.cc###simplemodal-container
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
