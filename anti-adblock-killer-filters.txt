@@ -515,7 +515,7 @@ eclypsia.com#@##adv_tester
 ! online.dramacafe.in
 online.dramacafe.in#@#.afs_ads
 ! lequipe.fr
-||lequipe.fr/v6/js/popinVideo.js?$script
+||lequipe.fr/v6/js/popinVideo.js$script
 ! receive-sms-online.info
 @@||receive-sms-online.info/advertisment.js$script
 ! extreamleech.com
@@ -650,6 +650,10 @@ fz.se###AdBlockerInfo
 pencurimovie.cc##.adb_overlay
 pencurimovie.cc###simplemodal-overlay
 pencurimovie.cc###simplemodal-container
+! mangabird.com
+mangabird.com#@#.afs_ads
+! sports.ru
+@@||sports.ru^*/adfox.$xmlhttprequest
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
