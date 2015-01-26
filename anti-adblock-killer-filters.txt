@@ -654,6 +654,8 @@ pencurimovie.cc###simplemodal-container
 mangabird.com#@#.afs_ads
 ! sports.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
+! smashboards.com
+smashboards.com###noticeMain
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
