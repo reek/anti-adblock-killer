@@ -656,6 +656,7 @@ mangabird.com#@#.afs_ads
 @@||sports.ru^*/adfox.$xmlhttprequest
 ! smashboards.com
 smashboards.com###noticeMain
+smashboards.com##.premiumContain
 ! tv3play.se
 ! tv6play.se
 ! tv8play.se
