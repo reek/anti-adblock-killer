@@ -656,6 +656,13 @@ mangabird.com#@#.afs_ads
 @@||sports.ru^*/adfox.$xmlhttprequest
 ! smashboards.com
 smashboards.com###noticeMain
+! tv3play.se
+! tv6play.se
+! tv8play.se
+! tv10play.se
+@@||5d3e9.v.fwmrm.net/ad/*$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
+@@||adm.fwmrm.net/p/MTG_Live/Video2AdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
+@@||adm.fwmrm.net/p/MTG_Live/ExternalHTMLAdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
