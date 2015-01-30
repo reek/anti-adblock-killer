@@ -684,6 +684,8 @@ videopremium.tv#@#.text_ad
 videopremium.tv#@#.text_ads
 videopremium.tv#@#.text-ads
 videopremium.tv#@#.text-ad-links
+! filmovizija.com
+@@||filmovizija.com/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
