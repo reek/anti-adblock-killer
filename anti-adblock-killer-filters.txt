@@ -2,7 +2,7 @@
 ! Title: Anti-Adblock Killer | Filters for Adblockers
 ! Author: Reek | http://reeksite.com/
 ! License: Creative Commons BY-NC-SA
-! Version: 7.6
+! Version: 7.7
 ! Expires: 1 days
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 ! Contact: https://github.com/reek/anti-adblock-killer/issues
@@ -642,6 +642,7 @@ lien-torrent.com###ad_divl
 maxedtech.com#@#.a160x600
 ! readms.com
 readms.com###reader-sky
+readms.com##.message-ld.pull-right
 ! fz.se
 fz.se###AdBlockerInfo
 ! avmask.com
@@ -664,6 +665,24 @@ smashboards.com##.premiumContain
 @@||5d3e9.v.fwmrm.net/ad/*$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
 @@||adm.fwmrm.net/p/MTG_Live/Video2AdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
 @@||adm.fwmrm.net/p/MTG_Live/ExternalHTMLAdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
+! zive.cz
+doupe.zive.cz#@##adblock-leaderboard
+@@||ads.rubiconproject.com/ad/*$script,domain=doupe.zive.cz
+||doupe.zive.cz/Client.Scripts/jquery.onp.sociallocker.1.7.6.js$script
+! viki.com
+@@||imasdk.googleapis.com/flash/core/3.177.0/adsapi.swf$object-subrequest,domain=viki.com
+! debilizator.tv
+||debilizator.tv/static/ab.min.js$script
+! videopremium.tv
+videopremium.tv#@#.pub_300x250
+videopremium.tv#@#.pub_300x250m
+videopremium.tv#@#.pub_728x90
+videopremium.tv#@#.text-ad
+videopremium.tv#@#.textAd
+videopremium.tv#@#.text_ad
+videopremium.tv#@#.text_ads
+videopremium.tv#@#.text-ads
+videopremium.tv#@#.text-ad-links
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

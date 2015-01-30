@@ -130,6 +130,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: zive.cz
+* Kill: viki.com
+* Kill: debilizator.tv
+* Kill: videopremium.tv
 
 
 ##### Release 7.7 (January 26, 2014)
