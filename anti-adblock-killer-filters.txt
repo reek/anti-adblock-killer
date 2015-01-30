@@ -628,7 +628,8 @@ lien-torrent.com###ad_divl
 ! miniup.com
 @@||miniup.com/ads/ads.png
 ! hackintosh.zone
-@@hackintosh.zone/adblock/advertisement.js$script
+hackintosh.zone#@#.adsbygoogle
+!hackintosh.zone#@#.ipsAd
 ||coindushopping.fr/public/$popup,script,third-party
 ! call-share.ddns.net
 @@||googleads.g.doubleclick.net/favicon.ico$domain=call-share.ddns.net
