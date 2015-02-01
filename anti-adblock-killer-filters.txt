@@ -687,6 +687,10 @@ videopremium.tv#@#.text-ads
 videopremium.tv#@#.text-ad-links
 ! filmovizija.com
 @@||filmovizija.com/ads.js$script
+! psarips.com
+@@||psarips.com/wp-content/plugins/@NT1-PSA/js/directrev.com.js$script
+! skidrowcrack.com
+||skidrowcrack.com/adblock-checker.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

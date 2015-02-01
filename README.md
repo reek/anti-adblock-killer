@@ -136,6 +136,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: videopremium.tv
 * Kill: hackintosh.zone (Fix)
 * Kill: filmovizija.com (Fix)
+* Kill: psarips.com
+* Kill: skidrowcrack.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL
@@ -145,7 +147,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: tv10play.se
 * Kill: smashboards.com
 * Kill: sports.ru
-* Kill: psarips.com
 * Kill: mangabird.com
 * Kill: rtlxl.nl
 * Kill: oploverz.net
