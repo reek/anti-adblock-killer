@@ -138,6 +138,22 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: filmovizija.com (Fix)
 * Kill: psarips.com
 * Kill: skidrowcrack.com
+* Kill: afdah.com
+* Kill: alternativeto.net
+* Kill: transferfile.tk
+* Kill: bitdebrid.com
+* Kill: uploaded-fastpremium.com
+* Kill: uploaded-premium.in
+* Kill: bez-premki.pl
+* Kill: contasfree.com
+* Kill: ketubanjiwa.com
+* Kill: hentaienespañol.net
+* Kill: turbogenerator.info
+* Kill: nana10.co.il
+* Kill: grifthost.com
+* Kill: dota-trade.com
+* Kill: rojadirecta.me
+* Kill: planetatvonlinehd.blogspot.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL
