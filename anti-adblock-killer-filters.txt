@@ -478,6 +478,7 @@ clubedohardware.com.br#@#.ipsAd
 @@||ailde.biz/a.sponsorads.js$domain=cbs.com,script
 ! gamingroom.tv
 gamingroom.tv#@#.adsbygoogle
+@@||ad4.liverail.com^$xmlhttprequest
 ! upf.co.il
 @@||upf.co.il/advertisment.js$script
 ! paidverts.com
