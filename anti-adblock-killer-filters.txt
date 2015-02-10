@@ -834,6 +834,7 @@ zetorrents.com##A[href^="http://www.insta-cash.net/tds/?"]
 ||prm.cpasbien.pe/js/ec_connectorDelivery.js$script
 ! rarbg.com
 rarbg.com##A[href^="/download_direct.php"]
+rarbg.com##A[href^="/pub_download_d.php"]
 ! emule-island.ru##
 emule-island.ru##.newsgroup
 emule-island.ru##.lastnews + A[href^="http://www.downloadmr.com/dmr/download/"]
