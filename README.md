@@ -156,6 +156,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: planetatvonlinehd.blogspot.com
 seriesbang.net
 mangabee.co
+xpremiumx.blogspot.com
+phonandroid.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL
