@@ -154,10 +154,24 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: dota-trade.com
 * Kill: rojadirecta.me
 * Kill: planetatvonlinehd.blogspot.com
-seriesbang.net
-mangabee.co
-xpremiumx.blogspot.com
-phonandroid.com
+* Kill: seriesbang.net
+* Kill: mangabee.co
+* Kill: xpremiumx.blogspot.com
+* Kill: phonandroid.com
+* Kill: an1me.se
+* Kill: psarips.com
+* Kill: lolesporte.com
+* Kill: rlsbb.com
+* Kill: genbird.com
+* Kill: crococoin.com
+* Kill: treebitcoin.com
+* Kill: bithourly.com
+* Kill: dailyfreebits.com
+* Kill: jewelrybitco.in
+* Kill: welovebtc.com
+* Kill: satoshiquiz.com
+* Kill: ogmcdownload.com
+* Kill: jetetroll.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL
