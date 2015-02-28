@@ -139,7 +139,8 @@
 !@@||anywriters.com/main/js/advert.js$script
 !@@||1stwrites.com/main/js/ads-adv.js$script
 !@@||writingaids.com/main/js/ads-adv.js$script
-@@/main/js/ads-adv.js$script,third-party,domain=writing.com
+!@@||writeracademy.com/main/js/ad-text.js
+@@/main/js/ad*.js$script,third-party,domain=writing.com
 ! teknogods.com
 @@||teknogods.com/advert.js$script
 ! siamfishing.com
