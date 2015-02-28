@@ -629,7 +629,7 @@ iphones.ru##DIV[style="background-color: rgb(222, 71, 0); margin-bottom: 20px; p
 lien-torrent.com###ad_divr
 lien-torrent.com###ad_divl
 ! miniup.com
-@@||miniup.com/ads/ads.png
+@@||miniup.com/images/ads.png$image
 ! hackintosh.zone
 hackintosh.zone#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=hackintosh.zone
@@ -1106,6 +1106,8 @@ biggestplayer.me##.cuadrado.rmv
 playerhd1.pw###total
 playerhd1.pw###total_banner 
 playerhd1.pw##.ad
+! streaming-foot.info
+streaming-foot.info###id7d
 streaming-foot.info###timer1
 streaming-foot.info###timer2
 streaming-foot.info###timer3
