@@ -733,12 +733,12 @@ rlsbb.com###contentArea > .information
 ogmcdownload.com#@#.afs_ads
 ! jetetroll.com
 jetetroll.com#@##adsense
-! lachainemeteo.com
-||lachainemeteo.com/js/lachainemeteo.js$script
 ! hack-sat.com
 hack-sat.com#@#.afs_ads
 ! flashback.org
 flashback.org###top-banner-container
+! captchme.net
+@@||api.captchme.net/js/advertisement-min.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
