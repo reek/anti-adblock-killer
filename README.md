@@ -51,7 +51,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://monkeyguts.com/codeinstall_raw.php?id=351) *from monkeyguts.com*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
-* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org (dead)* 
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
