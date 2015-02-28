@@ -84,7 +84,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers (Step 2)
 5. Check if you have another userscript not interfere with Anti AdBlock Killer.
 6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
-7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
+7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
 8. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
 9. Check if the site is in "Supported Sites and Changelog".
   1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
@@ -172,6 +172,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: satoshiquiz.com
 * Kill: ogmcdownload.com
 * Kill: jetetroll.com
+* Kill : lachainemeteo.com
+* Kill : hack-sat.com
+* Kill : flashback.org
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL

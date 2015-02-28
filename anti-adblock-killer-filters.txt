@@ -732,6 +732,12 @@ rlsbb.com###contentArea > .information
 ogmcdownload.com#@#.afs_ads
 ! jetetroll.com
 jetetroll.com#@##adsense
+! lachainemeteo.com
+||lachainemeteo.com/js/lachainemeteo.js$script
+! hack-sat.com
+hack-sat.com#@#.afs_ads
+! flashback.org
+flashback.org###top-banner-container
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1231,4 +1237,6 @@ ojogo.pt###moldura_ojogo
 ||cpatrendreklam.com^$third-party,script
 ! go4up.com
 go4up.com##[href^="http://liversely.com/g4u?q="]
-go4up.com##[href^="http://go.ad2up.com/afu.php?id="] 
+go4up.com##[href^="http://go.ad2up.com/afu.php?id="]
+! academia.edu
+@@||api.academia.edu/v0/users/*/stats$script
