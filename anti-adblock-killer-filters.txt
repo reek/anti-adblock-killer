@@ -739,6 +739,8 @@ hack-sat.com#@#.afs_ads
 flashback.org###top-banner-container
 ! captchme.net
 @@||api.captchme.net/js/advertisement-min.js$script
+! toolslib.net
+toolslib.net##.panel.panel-default > .panel-body > .center-table.block-3x2
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
