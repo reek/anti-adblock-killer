@@ -177,6 +177,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: flashback.org
 * Kill: captchme.net
 * Kill: sos-lettre.fr
+* Kill: socialblade.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL

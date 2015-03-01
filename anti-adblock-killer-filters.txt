@@ -741,6 +741,8 @@ flashback.org###top-banner-container
 @@||api.captchme.net/js/advertisement-min.js$script
 ! toolslib.net
 toolslib.net##.panel.panel-default > .panel-body > .center-table.block-3x2
+! socialblade.com
+socialblade.com#@##bottomAd
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1117,6 +1119,9 @@ streaming-foot.info###timer3
 foot-live.info###timer1
 foot-live.info###timer2
 foot-live.info###timer3
+! tvfree.me
+antena.tvfree.me###layer1
+||tvfree.me/pub/*$subdocument,image
 ! Others ---------------------------------------------------------------------------------------
 ! tvi
 tvi24.iol.pt##iframe[id=barraIOL]
