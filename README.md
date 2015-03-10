@@ -182,6 +182,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: dailyacc.com
 * Kill: premiumst0re.com
 * Kill: desihoes.com
+* Kill: vgtv.no
+* Kill: bitcoinpuddle.com
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL
