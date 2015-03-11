@@ -19,7 +19,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
-* [![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png)] Paypal: (https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
+* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
 * ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
 * ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
 * ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
