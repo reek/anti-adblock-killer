@@ -23,7 +23,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
 * ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
 * ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
-* [![Flattr](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
 * [Donate It](http://reeksite.com/aak/donate.php)
 
 
