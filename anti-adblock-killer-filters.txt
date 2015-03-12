@@ -756,6 +756,18 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .top
 vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 ! bitcoinpuddle.com
 @@||bitcoinpuddle.com/show_ads.js$script
+! dogecoinpuddle.com
+@@||dogecoinpuddle.com/show_ads.js$script
+! btc-gratis.com
+@@||btc-gratis.com/banner.gif$image
+! btcgratis.com
+@@||btcgratis.com/banner.gif$image
+! omux.ru
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=omux.ru
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=omux.ru
+! lachainemeteo.com
+@@||ww691.smartadserver.com^$domain=lachainemeteo.com
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=lachainemeteo.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
