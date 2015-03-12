@@ -131,6 +131,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+
+
+##### Release 7.8 (March 12, 2015)
 * Kill: zive.cz
 * Kill: viki.com
 * Kill: debilizator.tv
@@ -197,7 +200,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: faucet.cashcat.eu
 * Kill: icebitco.in
 
-##### Release 7.7 (January 26, 2014)
+##### Release 7.7 (January 26, 2015)
 * Add: meta keys @supportURL and @contributionURL
 * Kill: tv3play.se
 * Kill: tv6play.se

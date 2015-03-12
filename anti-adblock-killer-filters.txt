@@ -2,7 +2,7 @@
 ! Title: Anti-Adblock Killer | Filters for Adblockers
 ! Author: Reek | http://reeksite.com/
 ! License: Creative Commons BY-NC-SA
-! Version: 7.7
+! Version: 7.8
 ! Expires: 1 days
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 ! Contact: https://github.com/reek/anti-adblock-killer/issues
@@ -767,8 +767,8 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 ! omux.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=omux.ru
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=omux.ru
-! lachainemeteo.com
-@@||lachainemeteo.com/js/lachainemeteo.js$script
+! lachainemeteo.com + script rule
+!@@||lachainemeteo.com/js/lachainemeteo.js$script
 ! bitonplay.com
 @@||bitonplay.com/js/ads.js$script
 !----------------------------------------------------------------------------------------------------!
