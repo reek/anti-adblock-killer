@@ -19,12 +19,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
-* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
+* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
 * ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
 * ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
 * ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
-* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
-* [Donate It](http://reeksite.com/aak/donate.php)
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
 
 
 ## Instruction
@@ -43,9 +42,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
-* [Subscribe](http://bc.vc/jGFxOb) *from jsbin.com*
-* [Subscribe](http://jsfiddle.net/AH4jh/embedded/result/) *from jsfiddle.net*
-* [Subscribe](http://reeksite.com/aak/subscribe.php) *from reeksite.com*
+* [Subscribe](http://bit.ly/aaklist1) *from jsbin.com*
+* [Subscribe](http://bit.ly/aaklist2) *from jsfiddle.net*
+* [Subscribe](http://bit.ly/aaklist3) *from reeksite.com*
 
 #### Step 3: Userscript
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
@@ -54,11 +53,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
 
-> ##### Note: [Test](http://tinyurl.com/qecfa7w)
+> ##### Note: [Test](http://bit.ly/aaktest)
 
 #### Step 4: Support Author
-* [Say Thanks](http://bc.vc/OgKw1G)
-* [Donate It](http://reeksite.com/aak/donate.php)
+* [Say Thanks](http://bit.ly/aakthanks)
+* [Donate It](https://github.com/reek/anti-adblock-killer#donate)
 * Rate It
 * Share It (Social Network, Forums, Blogs, etc...)
 * Follow It ([Twitter](https://twitter.com/antiadbkiller))
@@ -192,6 +191,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: btc-gratis.com
 * Kill: dogecoinpuddle.com
 * Kill: omux.ru
+* Kill: moonliteco.in
+* Kill: bitonplay.com
+* Kill: cryptodrips.com
+* Kill: faucet.cashcat.eu
+* Kill: icebitco.in
 
 ##### Release 7.7 (January 26, 2014)
 * Add: meta keys @supportURL and @contributionURL

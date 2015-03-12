@@ -758,6 +758,8 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 @@||bitcoinpuddle.com/show_ads.js$script
 ! dogecoinpuddle.com
 @@||dogecoinpuddle.com/show_ads.js$script
+! icebitco.in
+@@||icebitco.in/show_ads.js$script
 ! btc-gratis.com
 @@||btc-gratis.com/banner.gif$image
 ! btcgratis.com
@@ -768,6 +770,8 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 ! lachainemeteo.com
 @@||ww691.smartadserver.com^$domain=lachainemeteo.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=lachainemeteo.com
+! bitonplay.com
+@@||bitonplay.com/js/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
