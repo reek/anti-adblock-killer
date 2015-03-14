@@ -1225,6 +1225,8 @@ filediva.com##.download_top
 filediva.com##A[href*="http://www.insta-cash.net/tds/"]
 ! fileshut.biz
 fileshut.biz##.download_item2
+! 4shared.net
+4shared.net##.results-premium__link
 ! downloadnow.net
 downloadnow.net##.results-premium.results-premium__top.holder-padding
 ! downloadsharedfilez.com
@@ -1282,3 +1284,4 @@ go4up.com##[href^="http://go.ad2up.com/afu.php?id="]
 @@||api.academia.edu/v0/users/*/stats$script
 ! uptobox.com
 uptobox.com##[href^="http://ads.uptobox.com/www/delivery/ck.php"]
+
