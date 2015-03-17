@@ -768,6 +768,10 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 @@||4shared.com/show_ad_.xml$script
 ! bit-vortex.com
 @@||bit-vortex.com/js/antiadblock.js$script
+! fit.sh
+@@||server1.affiz.net/tracking/ads_display.php$script,domain=fit.sh
+! fosshub.com
+@@||fosshub.com/media/v2/js/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

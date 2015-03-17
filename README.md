@@ -133,6 +133,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Upcoming changes
 * Kill: bit-vortex.com
 * Kill: 4shared.com (Fix)
+* Kill: fit.sh
+* Kill: fosshub.com
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin
