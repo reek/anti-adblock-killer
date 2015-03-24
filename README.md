@@ -135,6 +135,15 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: 4shared.com (Fix)
 * Kill: fit.sh
 * Kill: fosshub.com
+* Kill: coinracket.com
+* Kill: faucetofamerica.com
+* Kill: thebitcoinsheep.com
+* Kill: landofdogecoin.com
+* Kill: usafaucet.tk
+* Kill: flightradar24.com
+* Kill: fan-de-cinema.com
+* Kill: xiaopan.co
+
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

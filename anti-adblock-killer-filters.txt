@@ -770,8 +770,34 @@ vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
 @@||bit-vortex.com/js/antiadblock.js$script
 ! fit.sh
 @@||server1.affiz.net/tracking/ads_display.php$script,domain=fit.sh
+@@||c.ad6media.fr/l.js$script,domain=fit.sh
 ! fosshub.com
 @@||fosshub.com/media/v2/js/ads.js$script
+! coinracket.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=coinracket.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=coinracket.com
+! faucetofamerica.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=faucetofamerica.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=faucetofamerica.com
+! thebitcoinsheep.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=thebitcoinsheep.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=thebitcoinsheep.com
+! landofdogecoin.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=landofdogecoin.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=landofdogecoin.com
+! usafaucet.tk
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=usafaucet.tk
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=usafaucet.tk
+! flightradar24.com
+flightradar24.com##.noads
+! ville-ideale.com
+ville-ideale.com###sp
+! fan-de-cinema.com
+@@||c.ad6media.fr/l.js$domain=fan-de-cinema.com
+! xiaopan.co
+xiaopan.co#@#.adsbygoogle
+! thebitcoinsheep.com
+thebitcoinsheep.com##.col-md-6 font[size="5"] > font[color="white"] > font[color="white"][size="3"]
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -900,8 +926,7 @@ zetorrents.com##A[href^="http://www.insta-cash.net/tds/?"]
 ! cpasbien.pe
 ||prm.cpasbien.pe/js/ec_connectorDelivery.js$script
 ! rarbg.com
-rarbg.com##A[href^="/download_direct.php"]
-rarbg.com##A[href^="/pub_download_d.php"]
+rarbg.com##A[href^="/w_d_adpub.php?id="]
 ! emule-island.ru##
 emule-island.ru##.newsgroup
 emule-island.ru##.lastnews + A[href^="http://www.downloadmr.com/dmr/download/"]
