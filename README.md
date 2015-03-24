@@ -143,7 +143,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: flightradar24.com
 * Kill: fan-de-cinema.com
 * Kill: xiaopan.co
-
+* Kill: ville-ideale.com
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin
