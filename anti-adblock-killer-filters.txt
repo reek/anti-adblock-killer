@@ -798,6 +798,10 @@ ville-ideale.com###espace
 xiaopan.co#@#.adsbygoogle
 ! thebitcoinsheep.com
 thebitcoinsheep.com##.col-md-6 font[size="5"] > font[color="white"] > font[color="white"][size="3"]
+! mobilevids.org
+mobilevids.org#@#.afs_ads
+@@||syndication.exoclick.com/ads-iframe-display.php$subdocument,domain=mobilevids.org
+@@||ads.exoclick.com/ads.js$script,domain=mobilevids.org
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
