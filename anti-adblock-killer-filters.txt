@@ -802,6 +802,16 @@ thebitcoinsheep.com##.col-md-6 font[size="5"] > font[color="white"] > font[color
 mobilevids.org#@#.afs_ads
 @@||syndication.exoclick.com/ads-iframe-display.php$subdocument,domain=mobilevids.org
 @@||ads.exoclick.com/ads.js$script,domain=mobilevids.org
+! saikoanimes.net
+saikoanimes.net#@#.afs_ads
+! cryptospout.com
+cryptospout.com#@#.adsbygoogle
+! cmmonitor.com
+cmmonitor.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=cmmonitor.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=cmmonitor.com
+! 777bitco.in
+@@||777bitco.in/static/js/Controller/Advertise.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1118,9 +1128,13 @@ adbuck.cc###col_publi
 ||adbuck.cc^$third-party
 @@||adbuck.cc/player/
 ! wowhq.ws - wowhq.eu - wowhq.info
-wowhq.umbb.net,cbox.ws,fixolas.net##[href="/300x250.php"]
-wowhq.umbb.net,cbox.ws,fixolas.net##[href^="http://porreiropa.com/cms/"]
-wowhq.umbb.net,cbox.ws,fixolas.net##[href="http://fixolas.net/"]
+! @@||wowhq.eu^$elemhide
+wowhq.umbb.net##IMG[width="970"][height="90"]
+wowhq.umbb.net##IMG[width="160"][height="600"]
+wowhq.umbb.net##[href^="http://porreiropa.com/cms/"] > IMG
+cbox.ws##[href^="http://secretstory24h.com/cms/"] > IMG
+cbox.ws##[href="http://fixolas.net/"] > IMG
+fixolas.net##[href="http://fixolas.net/"] > IMG
 ! sport-show.fr
 sport-show.fr##DIV[style="padding-top:0px;float:left;width:100%;font-size:13px;line-height:0px;top:4px;text-align:left"]
 ! majax31sport

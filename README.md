@@ -145,6 +145,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: xiaopan.co
 * Kill: ville-ideale.com
 * Kill: mobilevids.org
+* Kill: saikoanimes.net
+* Kill: bitvisits.com
+* Kill: cryptospout.com
+* Kill: cmmonitor.com
+* Kill: 777bitco.in
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin
@@ -1063,4 +1068,4 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * 删除反Adblock的保护
 * 안티 애드 블록 보호를 제거
 * 抗AdBlockを保護を解除
-* إزالة مكافحة ادبلوك حماية
+* تعطيل مضادات آدبلوك
