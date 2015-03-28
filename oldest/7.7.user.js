@@ -3,13 +3,11 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker.
 // @author Reek | reeksite.com
-// @version 7.8
+// @version 7.7
 // @license Creative Commons BY-NC-SA
 // @encoding utf-8
 // @homepage https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 // @twitter https://twitter.com/antiadbkiller
-// @updateURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
-// @downloadURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
 // @supportURL https://github.com/reek/anti-adblock-killer/issues
 // @contributionURL https://github.com/reek/anti-adblock-killer#donate
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -57,7 +55,6 @@
 // @exclude http*://reeksite.com/*
 // @exclude http*://preloaders.net/*
 // @exclude http*://tampermonkey.net/*
-// @exclude http*://bufferapp.com/*
 // @grant unsafeWindow
 // @grant GM_addStyle
 // @grant GM_getValue
@@ -83,7 +80,7 @@ Donors:
   Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, Roy Martin, DrFiZ, Tippy, Brian Rohner, Piotr Kozica, Minesh Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben
 
 Collaborators:
-  InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro
+  InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger
 
 Users:
   Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
@@ -135,7 +132,7 @@ NinjaKit:
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '7.8',
+  version : '7.7',
   scriptid : 'gJWEp0vB',
   homeURL : 'https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -1441,12 +1438,6 @@ Aak = {
         Aak.addStyle(".forumAd { height: 1px !important; display: none !important; }");
       }
     },
-    nana10_co_il : {
-      host : ['.nana10.'],
-      onLoad : function () {
-        Aak.addStyle("#advert-tracker { height: 1px !important; }");
-      }
-    },
     eveskunk_com : {
       host : ['eveskunk.com'],
       onStart : function () {
@@ -1530,7 +1521,7 @@ Aak = {
       }
     },
     manga9_com : {
-      host : ['manga9.com','mangabee.co'],
+      host : ['manga9.com','onemanga2.com'],
       onStart : function () {
         Aak.addStyle(".adblock { height: 31px !important; }");
       }
@@ -1815,17 +1806,14 @@ Aak = {
     },
 	// Bitcoins
 	bitcoinker_com : {
-	  host : ['bitcoinker.com'],
+	  host : ['faucet.bitcoinzebra.com', 'bitcoinker.com', 'moonbit.co.in'],
+	  onAlways : function () {
+	    //Aak.uw.feedTheZebra = function () {};
+	  },
 	  onLoad : function () {
 	    Aak.removeElement('#AdBlocked');
 	  }
 	},
-    moondoge_co_in : {
-      host : ['moondoge.co.in', 'moonliteco.in', 'moonbit.co.in', 'faucet.bitcoinzebra.com'],
-      onLoad : function () {
-        Aak.removeElement('#AB');
-      }
-    },
     bitcoiner_net : {
       host : ['bitcoiner.net'],
       onLoad : function () {
@@ -1849,7 +1837,7 @@ Aak = {
       onAlways : function () {
         Aak.uw.check = function () {return false};
       }
-    },
+    },	
     canalplus_fr : {
       host : ['canalplus.fr'],
       onEnd : function () {
@@ -1882,30 +1870,6 @@ Aak = {
       host : ['dailybitcoins.org'],
       onLoad : function () {
         Aak.removeElement('.ad-img');
-      }
-    },
-    psarips_com : {
-      host : ['psarips.com'],
-      onStart : function () {
-        Aak.addElement('div#advert');
-      }
-    },	
-    online_dramacafe_in : { // skip viral locker
-      host : ['online.dramacafe.in'],
-      onEnd : function () {
-        // <input type="hidden" name="bin-rating-uniq_id" value="aff7bfc00">
-        var vid = Aak.getElement('input[name="bin-rating-uniq_id"]');
-        if (vid) {
-          GM_xmlhttpRequest({
-            method : "GET",
-            url : 'http://www.online.dramacafe.in/ajax.php?p=video&do=getplayer&vid='+vid.value+'&aid=4&player=detail',
-            onload : function (response) {
-              var res = response.responseText;
-              //Aak.log(res);
-              document.querySelector('#preroll_placeholder').innerHTML = res;
-            }
-          });
-        }
       }
     },
     filmovizija_domains : { // many changes
@@ -2028,13 +1992,6 @@ Aak = {
         Aak.removeElement('div.backk');
       }
     },
-    turkdown_com : {
-      host : ['turkdown.com'],
-      onLoad : function () {
-		// remove facebook box
-        Aak.removeElement('#duyuru');
-      }
-    },	
     adf_domains : {
       host : ['adf.ly', 'q.gs', 'j.gs', 'u.bb', '9.bb', 'go.phpnulledscripts.com'],
       onLoad : function () {
@@ -2110,13 +2067,6 @@ Aak = {
         }, 5000);
       }
     },
-    oneplaylist_eu_pn : {
-      host : ['oneplaylist.eu.pn'],
-      onLoad : function () {
-        // kill popunder
-        Aak.uw.makePopunder = false;
-      }
-    },
     _4shared_com : {
       host : ['4shared.com'],
       onLoad : function () {
@@ -2135,17 +2085,6 @@ Aak = {
       host : ['comptoir-hardware.com'],
       onAlways : function () {
         Aak.uw.adblock = 'non';
-      }
-    },
-    lachainemeteo_com : {
-      host : ['lachainemeteo.com'],
-      onAlways : function () {
-		// Solution 1
-		// + abp rule
-        //Aak.uw.showscript = function (){};
-		
-		// Solution 2
-		Aak.uw.js_loaded = true;
       }
     },
     adscendmedia : {
@@ -2252,7 +2191,7 @@ Aak = {
     kissanime_com : { // fixed 2014.08.11
       host : ['kissanime.com'],
       onStart : function () {
-        // Solution 1
+        // Solution 2
         Aak.uw.DoDetect2 = null;
       },
       onLoad : function () {
@@ -2260,36 +2199,30 @@ Aak = {
         // Solution 3 abp rule
         // @@||kissanime.com^$elemhide
 
-        var divContentVideo = document.querySelector('#divContentVideo');
+        if (/id=[\d]+$/.test(location.href)) {
 
-        // Solution 1
-        if (Aak.uw.DoDetect2) {
-          Aak.uw.DoDetect2 = null;
-          Aak.uw.CheckAdImage = null;
-          Aak.removeElement('iframe[id^="adsIfrme"], .divCloseBut');
-          Aak.log('1');
-        } //Solution 2
-        else if (divContentVideo) {
+          var divContentVideo = document.querySelector('#divContentVideo');
 
-          var divDownload = document.querySelector('#divDownload').cloneNode(true);
-          //Aak.log(divDownload,divContentVideo);
-
-          setTimeout(function () {
-            divContentVideo.innerHTML = '';
-            Aak.uw.DoHideFake();
-            divContentVideo.appendChild(divDownload);
+          // Solution 1
+          if (Aak.uw.DoDetect2) {
+            Aak.uw.DoDetect2 = null;
             Aak.removeElement('iframe[id^="adsIfrme"], .divCloseBut');
-            Aak.log('2');
-          }, 5500);
+            Aak.log('1');
+          } //Solution 2
+          else if (divContentVideo) {
+
+            var divDownload = document.querySelector('#divDownload').cloneNode(true);
+            //Aak.log(divDownload,divContentVideo);
+
+            setTimeout(function () {
+              divContentVideo.innerHTML = '';
+              Aak.uw.DoHideFake();
+              divContentVideo.appendChild(divDownload);
+              Aak.removeElement('iframe[id^="adsIfrme"], .divCloseBut');
+              Aak.log('2');
+            }, 5500);
+          }
         }
-      }
-    },
-    an1me_se : {
-      host : ['an1me.se'],
-      onLoad : function () {
-        setTimeout(function () {
-          Aak.uw.isBlockAds2 = false;
-        }, 10000);
       }
     },
     channel4_com : { // research solution
@@ -2806,28 +2739,6 @@ Aak = {
         }
       }
     },
-    micast_tv : {
-      host : ['micast.tv'],
-      onEnd : function () {
-        if (/^\/gen\d+.php/.test(location.pathname)) {
-          setTimeout(function () {
-		    // Skip timer and close ads
-            Aak.uw.removeOverlayHTML();
-          }, 1000);
-        }
-      }
-    },
-    pxstream_tv : {
-      host : ['pxstream.tv'],
-      onEnd : function () {
-        if (/^\/embedrouter.php/.test(location.pathname)) {
-          setTimeout(function () {
-		    // Skip timer and close ads
-            Aak.uw.closeAd();
-          }, 1000);
-        }
-      }
-    },
     sawlive_tv : {
       host : ['sawlive.tv'],
       onLoad : function () {
@@ -3058,23 +2969,6 @@ Aak = {
 
         // All Nodes
         //Aak.log(insertedNode);
-		
-		
-		// No-Adblock - http://www.no-adblock.com/
-		if (insertedNode.id &&
-		  insertedNode.id.length == 4 &&
-		  /^[a-z0-9]{4}$/.test(insertedNode.id) &&
-		  insertedNode.nodeName == 'DIV' &&
-		  insertedNode.firstChild &&
-		  insertedNode.firstChild.id &&
-		  insertedNode.firstChild.id == insertedNode.id &&
-		  Aak.contains(insertedNode.innerHTML, 'no-adblock.com')) {
-		  // Remove
-		  Aak.autoReport('No-Adblock', false, location.href);
-		  Aak.removeElement(insertedNode);
-		  //Aak.log(insertedNode);
-		}		
-		
 		
 		// StopAdblock - http://stopadblock.org/downloads/
 		if (insertedNode.id &&

@@ -8,8 +8,6 @@
 // @encoding utf-8
 // @homepage https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
 // @twitter https://twitter.com/antiadbkiller
-// @updateURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
-// @downloadURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
 // @supportURL https://github.com/reek/anti-adblock-killer/issues
 // @contributionURL https://github.com/reek/anti-adblock-killer#donate
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png

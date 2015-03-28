@@ -19,10 +19,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
-* [![Paypal](http://i.imgur.com/BMZdW6j.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JPL2C78M3TGAG&lc=CH&item_name=Donate&currency_code=EUR&bn=PP%2dDonationsBF%3aaQfIENj%2ejpg%3aNonHosted)
-* ![Bitcoin](http://i.imgur.com/H2u0ctp.png) 1Lbr1wxgpX2YqVbdW4tfaqcvoeDRVWvc8n
-* [![Flattr](http://i.imgur.com/DhaHwAV.png)](https://flattr.com/thing/2778428/Anti-AdBlock-Killer-Reek)
-* [Donate It](http://reeksite.com/aak/donate.php)
+* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
+* ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
+* ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
+* ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
 
 
 ## Instruction
@@ -41,9 +42,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
-* [Subscribe](http://bc.vc/jGFxOb) *from jsbin.com*
-* [Subscribe](http://jsfiddle.net/AH4jh/embedded/result/) *from jsfiddle.net*
-* [Subscribe](http://reeksite.com/aak/subscribe.php) *from reeksite.com*
+* [Subscribe](http://bit.ly/aaklist1) *from jsbin.com*
+* [Subscribe](http://bit.ly/aaklist2) *from jsfiddle.net*
+* [Subscribe](http://bit.ly/aaklist3) *from reeksite.com*
 
 #### Step 3: Userscript
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
@@ -51,13 +52,12 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://monkeyguts.com/codeinstall_raw.php?id=351) *from monkeyguts.com*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
-* [Install](http://userscripts.org:8080/scripts/source/155840.user.js) *from userscripts.org (dead)* 
 
-> ##### Note: [Test](http://tinyurl.com/qecfa7w)
+> ##### Note: [Test](http://bit.ly/aaktest)
 
 #### Step 4: Support Author
-* [Say Thanks](http://bc.vc/OgKw1G)
-* [Donate It](http://reeksite.com/aak/donate.php)
+* [Say Thanks](http://bit.ly/aakthanks)
+* [Donate It](https://github.com/reek/anti-adblock-killer#donate)
 * Rate It
 * Share It (Social Network, Forums, Blogs, etc...)
 * Follow It ([Twitter](https://twitter.com/antiadbkiller))
@@ -84,7 +84,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers (Step 2)
 5. Check if you have another userscript not interfere with Anti AdBlock Killer.
 6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
-7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
+7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
 8. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
 9. Check if the site is in "Supported Sites and Changelog".
   1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
@@ -115,6 +115,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Remove Adblock (removeadblock.com)
 * Adblock Detector
 * StopAdBlock (stopadblock.org)
+* No-Adblock - (no-adblock.com)
 * AdBuddy
 
 ##### Plugins (Wordpress)
@@ -130,6 +131,30 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: bit-vortex.com
+* Kill: 4shared.com (Fix)
+* Kill: fit.sh
+* Kill: fosshub.com
+* Kill: coinracket.com
+* Kill: faucetofamerica.com
+* Kill: thebitcoinsheep.com
+* Kill: landofdogecoin.com
+* Kill: usafaucet.tk
+* Kill: flightradar24.com
+* Kill: fan-de-cinema.com
+* Kill: xiaopan.co
+* Kill: ville-ideale.com
+* Kill: mobilevids.org
+* Kill: saikoanimes.net
+* Kill: bitvisits.com
+* Kill: cryptospout.com
+* Kill: cmmonitor.com
+* Kill: 777bitco.in
+
+##### Release 7.8 (March 12, 2015)
+* Add: posibility donate by Dogecoin
+* Add: posibility donate by Litecoin
+* Optimize: Aak list
 * Kill: zive.cz
 * Kill: viki.com
 * Kill: debilizator.tv
@@ -154,8 +179,49 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: dota-trade.com
 * Kill: rojadirecta.me
 * Kill: planetatvonlinehd.blogspot.com
+* Kill: seriesbang.net
+* Kill: mangabee.co
+* Kill: xpremiumx.blogspot.com
+* Kill: phonandroid.com
+* Kill: an1me.se
+* Kill: psarips.com
+* Kill: lolesporte.com
+* Kill: rlsbb.com
+* Kill: genbird.com
+* Kill: crococoin.com
+* Kill: treebitcoin.com
+* Kill: bithourly.com
+* Kill: dailyfreebits.com
+* Kill: jewelrybitco.in
+* Kill: welovebtc.com
+* Kill: satoshiquiz.com
+* Kill: ogmcdownload.com
+* Kill: jetetroll.com
+* Kill: lachainemeteo.com
+* Kill: hack-sat.com
+* Kill: flashback.org
+* Kill: captchme.net
+* Kill: sos-lettre.fr
+* Kill: socialblade.com
+* Kill: tamilmovierockers.net
+* Kill: dailyacc.com
+* Kill: premiumst0re.com
+* Kill: desihoes.com
+* Kill: vgtv.no
+* Kill: bitcoinpuddle.com
+* Kill: moondoge.co.in
+* Kill: faucet.bitcoinzebra.com
+* Kill: btcgratis.com
+* Kill: btc-gratis.com
+* Kill: dogecoinpuddle.com
+* Kill: omux.ru
+* Kill: moonliteco.in
+* Kill: bitonplay.com
+* Kill: cryptodrips.com
+* Kill: faucet.cashcat.eu
+* Kill: icebitco.in
 
-##### Release 7.7 (January 26, 2014)
+##### Release 7.7 (January 26, 2015)
 * Add: meta keys @supportURL and @contributionURL
 * Kill: tv3play.se
 * Kill: tv6play.se
@@ -1002,4 +1068,4 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * 删除反Adblock的保护
 * 안티 애드 블록 보호를 제거
 * 抗AdBlockを保護を解除
-* إزالة مكافحة ادبلوك حماية
+* تعطيل مضادات آدبلوك
