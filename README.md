@@ -32,7 +32,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 #### Step 1: Script Manager (Install)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or [Scriptish Nightlies](https://github.com/scriptish/scriptish-nightlies/releases)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native Chrome (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
 
@@ -150,6 +150,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: cryptospout.com
 * Kill: cmmonitor.com
 * Kill: 777bitco.in
+* Kill: vipleague.se
+* Kill: vipleague.me
+* Kill: mangamap.com
+* Kill: videomega.tv
+* Kill: psarips.com
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

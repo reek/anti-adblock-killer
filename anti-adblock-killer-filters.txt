@@ -505,9 +505,6 @@ eclypsia.com#@##adv_tester
 !coolkora.com#@#iframe[id^="advertise"]
 !cast.coolkora.com###co_holder
 @@||coolkora.com^$elemhide
-! videomega.tv
-@@||videomega.tv/JWJFfELSbJ/$script
-||goo.gl^$popup,domain=videomega.tv
 ! javso.com
 @@/adblock/adblock.js$script,domain=javso.com
 ||javso.com/popjs/popred.js$script
@@ -653,6 +650,8 @@ fz.se###AdBlockerInfo
 pencurimovie.cc##.adb_overlay
 pencurimovie.cc###simplemodal-overlay
 pencurimovie.cc###simplemodal-container
+! onemanga2
+onemanga2#@#.afs_ads
 ! mangabird.com
 mangabird.com#@#.afs_ads
 ! sports.ru
@@ -685,8 +684,6 @@ videopremium.tv#@#.text-ads
 videopremium.tv#@#.text-ad-links
 ! filmovizija.com
 @@||filmovizija.com/ads.js$script
-! psarips.com
-@@||psarips.com/wp-content/plugins/@NT1-PSA/js/directrev.com.js$script
 @@||popads2.byethost33.com/directrev.com.js$script,domain=psarips.com
 ! skidrowcrack.com
 ||skidrowcrack.com/adblock-checker.js$script
@@ -812,6 +809,14 @@ cmmonitor.com#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=cmmonitor.com
 ! 777bitco.in
 @@||777bitco.in/static/js/Controller/Advertise.js$script
+! vipleague.se
+@@||cdn.vipleague.se/js/ads.js$script
+! mangamap.com
+mangamap.com#@#.afs_ads
+! videomega.tv
+@@||adv.videomega.tv/hashverify.php$subdocument
+@@||videomega.tv/vjs/lib/videojs-contrib-ads/videojs.ads.css$stylesheet
+@@||videomega.tv/vjs/plugin/css/ads.css$stylesheet
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
