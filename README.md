@@ -155,6 +155,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: mangamap.com
 * Kill: videomega.tv
 * Kill: psarips.com
+* Kill: theextopia.com
+* Kill: urlchecker.org
+* Kill: onepiece-mx.net
+* Kill: filmovizija.com (Fix)
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

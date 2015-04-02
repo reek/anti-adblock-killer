@@ -15,6 +15,7 @@
 ! Used to detect this list
 !----------------------------------------------------------------------------------------------------!
 ###k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I
+@@||raw.githubusercontent.com/reek/anti-adblock-killer/
 !----------------------------------------------------------------------------------------------------!
 ! AntiAdblock - Generic
 !----------------------------------------------------------------------------------------------------!
@@ -682,9 +683,6 @@ videopremium.tv#@#.text_ad
 videopremium.tv#@#.text_ads
 videopremium.tv#@#.text-ads
 videopremium.tv#@#.text-ad-links
-! filmovizija.com
-@@||filmovizija.com/ads.js$script
-@@||popads2.byethost33.com/directrev.com.js$script,domain=psarips.com
 ! skidrowcrack.com
 ||skidrowcrack.com/adblock-checker.js$script
 ! afdah.com
@@ -817,6 +815,12 @@ mangamap.com#@#.afs_ads
 @@||adv.videomega.tv/hashverify.php$subdocument
 @@||videomega.tv/vjs/lib/videojs-contrib-ads/videojs.ads.css$stylesheet
 @@||videomega.tv/vjs/plugin/css/ads.css$stylesheet
+! theextopia.com
+theextopia.com##.adsbanner
+theextopia.com##.adsfoot1
+theextopia.com##.adsfoot2
+! filmovizija.com
+||adpro.ml/ncode.js$script,domain=filmovizija.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1251,10 +1255,13 @@ tvgolo.com###hstp-bg-overlay
 tvgolo.com###hstp_interstitial
 ! mesddl.cc
 mesddl.cc###cboxContent
-! urlchecker.net
+! urlchecker.net & urlchecker.org
 urlchecker.net###adchecker
 urlchecker.net###adchecker_btn
 urlchecker.net###ads_notify
+urlchecker.org###adchecker
+urlchecker.org###adchecker_btn
+urlchecker.org###ads_notify
 ! Fake --------------------------------------------------------------------------------------
 ##A[href^="http://share.payoneer-affiliates.com/a/clk/"]
 ##A[href="http://goo.gl/jQ9bcz"]
