@@ -1196,7 +1196,7 @@ liguendirect.com##div[id^="bannerfloat"]
 ! biggestplayer.me
 biggestplayer.me##.cuadrado.rmv
 ! playerhd1.pw
-playerhd1.pw###total
+playerhd1.pw##[id^="total"]
 playerhd1.pw###total_banner
 playerhd1.pw##.ad
 ! streaming-foot.info
