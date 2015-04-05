@@ -159,6 +159,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: urlchecker.org
 * Kill: onepiece-mx.net
 * Kill: filmovizija.com (Fix)
+* Kill: vivo.sx
+* Kill: vvvvid.it
+* Kill: miniup.com (Fix)
+* Kill: umahdroid.blogspot.com
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

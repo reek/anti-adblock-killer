@@ -626,6 +626,7 @@ lien-torrent.com###ad_divr
 lien-torrent.com###ad_divl
 ! miniup.com
 @@||miniup.com/images/ads.png$image
+@@||miniup.com/ads/ads.png$image
 ! hackintosh.zone
 hackintosh.zone#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=hackintosh.zone
@@ -821,6 +822,8 @@ theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
 ! filmovizija.com
 ||adpro.ml/ncode.js$script,domain=filmovizija.com
+! umahdroid.blogspot.com
+umahdroid.blogspot.com###energysaving
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -968,6 +971,8 @@ torrent-francais.com##A[onclick^="this.href='http://www.FriendlyDuck.com/AF_TA/r
 ! t411.me
 t411.me##IMG[src="http://www.t411.me/images/external/usenet.jpg"]
 t411.me##.ads
+! extratorrent.cc
+||uiqatnpooq.com/0f8b73d477b554394e23077935e1fff4.js$script,domain=extratorrent.cc
 ! Debriders --------------------------------------------------------------------------------------
 ! preemlinks.com
 preemlinks.com#@##divads
