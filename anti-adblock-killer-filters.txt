@@ -824,6 +824,8 @@ theextopia.com##.adsfoot2
 ||adpro.ml/ncode.js$script,domain=filmovizija.com
 ! umahdroid.blogspot.com
 umahdroid.blogspot.com###energysaving
+! streaming-foot.me
+@@||streaming-foot.me/js/adblock.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -930,8 +932,6 @@ umahdroid.blogspot.com###energysaving
 ||cdn.shorte.st/link-converter.min.js$script,third-party
 ! bc.vc
 ||bc.vc/js/link-converter.js$script,third-party
-! gca.sh
-||$subdocument,domain=gca.sh
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
