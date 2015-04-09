@@ -31,7 +31,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 ##### Requires: Adblock or Adblock Plus
 
 #### Step 1: Script Manager (Install)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or [Scriptish Nightlies](https://github.com/scriptish/scriptish-nightlies/releases)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (No more updated)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native Chrome (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
@@ -164,6 +164,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: miniup.com (Fix)
 * Kill: umahdroid.blogspot.com
 * Kill: streaming-foot.me
+* Kill: generatupremium.biz
+* Kill: linkcrypt.ws
+* Kill: myspass.de (Fix)
+* Kill: droidsoft.fr
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin
