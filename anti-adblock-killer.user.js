@@ -2794,6 +2794,12 @@ Aak = {
       onStart : function () {},
       onLoad : function () {}
     },
+    vvvvid_it : {
+      host : ['vvvvid.it'],
+      onEnd : function () {
+          Aak.uw.vvvvid.onAdBlock = function() {};
+      }
+    },
     // TV Stream
     ilive_domains : {
       host : ['ilive.to', 'streamlive.to'],
