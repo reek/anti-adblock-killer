@@ -168,6 +168,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: linkcrypt.ws
 * Kill: myspass.de (Fix)
 * Kill: droidsoft.fr
+* Kill: dirtstyle.tv
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

@@ -829,6 +829,9 @@ theextopia.com##.adsfoot2
 umahdroid.blogspot.com###energysaving
 ! streaming-foot.me
 @@||streaming-foot.me/js/adblock.js$script
+! dirtstyle.tv
+||dirtstyle.tv/img/adblock.jpg
+dirtstyle.tv##.lightbox
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
