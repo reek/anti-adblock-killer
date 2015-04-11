@@ -125,6 +125,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * BlockAlyzer - Adblock counter
 * Ad Blocking Detector
 * AntiBlock (BukssaAyman)
+* AdBlock Notify
 
 ##### Custom
 * Please consult the changelog
@@ -169,6 +170,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: myspass.de (Fix)
 * Kill: droidsoft.fr
 * Kill: dirtstyle.tv
+* Kill: slideplayer.org
+* Kill: streaming.crazy-bros.fr
+* Kill: AdBlock Notify (Plugin)
 
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin

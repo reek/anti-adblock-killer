@@ -113,6 +113,10 @@
 ! Ad Blocking Detector
 ! http://adblockingdetector.jtmorris.net/demo/
 @@/plugins/ad-blocking-detector/assets/js/advertisement.js$script
+! AdBlock Notify
+! http://b-website.com/plugin-wordpress-adblock-notify
+/plugins/adblock-notify-by-bweb/*
+||b-website.com/wp-content/uploads/an-temp/RrW75pkNMbSB.js$script
 ! Anti-Adblock (from easylist) -------------------------------------------------------------
 /ad-blocking-detector/*
 /adb_detector.
