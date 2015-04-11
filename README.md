@@ -132,6 +132,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+* Kill: strikeout.co
+* Kill: bknime.com
+* Kill: vg.no
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code

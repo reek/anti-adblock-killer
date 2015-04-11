@@ -831,6 +831,8 @@ umahdroid.blogspot.com###energysaving
 ! dirtstyle.tv
 ||dirtstyle.tv/img/adblock.jpg
 dirtstyle.tv##.lightbox
+! vg.no
+@@||adserver.adtech.de/multiad/2.0/0/0/0/-1/$script,domain=vg.no
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
