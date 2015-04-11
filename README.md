@@ -53,7 +53,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
 
-> ##### Note: [Test](http://bit.ly/aaktest)
+> ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
 #### Step 4: Support Author
 * [Say Thanks](http://bit.ly/aakthanks)
@@ -132,6 +132,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 ## Changelog
 ##### Upcoming changes
+
+##### Release 7.9 (April 11, 2015)
+* Improve: part script code
 * Kill: bit-vortex.com
 * Kill: 4shared.com (Fix)
 * Kill: fit.sh
@@ -171,6 +174,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: droidsoft.fr
 * Kill: dirtstyle.tv
 * Kill: slideplayer.org
+* Kill: hackintosh.zone (Fix)
 * Kill: streaming.crazy-bros.fr
 * Kill: AdBlock Notify (Plugin)
 

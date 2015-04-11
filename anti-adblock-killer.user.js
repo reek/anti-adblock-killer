@@ -3,7 +3,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker.
 // @author Reek | reeksite.com
-// @version 7.8
+// @version 7.9
 // @license Creative Commons BY-NC-SA
 // @encoding utf-8
 // @homepage https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
@@ -14,7 +14,7 @@
 // @contributionURL https://github.com/reek/anti-adblock-killer#donate
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
 // @include http*://*
-// @exclude http*://*.google.*
+// @exclude http*://*.google.*/*
 // @exclude http*://*.yahoo.*/*
 // @exclude http*://*.youtube.com/*
 // @exclude http*://*.facebook.com/*
@@ -41,6 +41,7 @@
 // @exclude http*://*.yandex.ru/*
 // @exclude http*://*.qq.com/*
 // @exclude http*://*.flickr.com/*
+// @exclude http*://*.mail.ru/*
 // @exclude http*://*.chatango.com/*
 // @exclude http*://chatango.com/*
 // @exclude http*://vimeo.com/*
@@ -58,6 +59,7 @@
 // @exclude http*://preloaders.net/*
 // @exclude http*://tampermonkey.net/*
 // @exclude http*://bufferapp.com/*
+// @exclude http*://easyinplay.net/*
 // @grant unsafeWindow
 // @grant GM_addStyle
 // @grant GM_getValue
@@ -79,55 +81,31 @@
   Thanks
 =======================================================
 
-Donors:
-  Mike Howard, Shunjou, Charmine, Kierek93, George Barnard, Henry Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, Roy Martin, DrFiZ, Tippy, Brian Rohner, Piotr Kozica, Minesh Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben
+  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young
+  
+  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex
+  
+  Users: Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
 
-Collaborators:
-  InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro
-
-Users:
-  Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
-
-
-/*=====================================================
+=======================================================
   Mirrors
 =======================================================
 
-Github:
-  https://github.com/reek/anti-adblock-killer
-
-Userscripts:
-  https://userscripts.org/scripts/show/155840
-
-Greasyfork:
-  https://greasyfork.org/scripts/735
-
-Openuserjs:
-  https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek
-
-MonkeyGuts:
-  https://monkeyguts.com/code.php?id=351
-
+  Github: http://tinyurl.com/mcra3dn
+  Greasyfork: http://tinyurl.com/puyxrn4
+  Openuserjs: http://tinyurl.com/nnqje32
+  MonkeyGuts: http://tinyurl.com/ka5fcqm
+  Userscripts: http://tinyurl.com/q8xcejl
 
 =======================================================
   Documentation
 =======================================================
 
-Greasemonkey:
-  http://wiki.greasespot.net/Greasemonkey_Manual:API
-
-Scriptish:
-  https://github.com/scriptish/scriptish/wiki/Manual%3A-API
-
-Tampermonkey:
-  http://tampermonkey.net/documentation.php
-
-Violentmonkey:
-  https://github.com/gera2ld/Violentmonkey-oex/wiki
-
-NinjaKit:
-  https://github.com/os0x/NinjaKit
-
+  Greasemonkey: http://tinyurl.com/yeefnj5
+  Scriptish: http://tinyurl.com/cnd9nkd
+  Tampermonkey: http://tinyurl.com/pdytfde
+  Violentmonkey: http://tinyurl.com/n34wn6j
+  NinjaKit: http://tinyurl.com/pkkm9ug
 
 =======================================================
   Script
@@ -135,7 +113,7 @@ NinjaKit:
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '7.8',
+  version : '7.9',
   scriptid : 'gJWEp0vB',
   homeURL : 'https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -147,20 +125,37 @@ Aak = {
   filtersSubscribe : 'abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock%20Killer%20|%20Filters%20for%20Adblockers',
   filtersURL : "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
   iconURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
-  uw: unsafeWindow || window  || false,
-  init : function () {
+  debug : {
+	log: true,
+    dump : false,
+    inserted : false
+  },
+  initialize : function () {
+
+    // Debug
+    if (Aak.debug.dump) {
+		
+      Aak.log('Anti-Adblock Killer v' + Aak.getVersion() + ' on ' + Aak.getScriptManager() + ' in ' + Aak.getBrowser());
+
+      Aak.log('Aak');
+      Aak.log(Aak);
+	  
+      Aak.log('Local Storage');
+      Aak.log(localStorage);
+      //localStorage.clear();
+	  
+      Aak.log('GM Storage');
+      Aak.log(Aak.listValues());
+
+      Aak.log('GM API Supported');
+      Aak.log(Aak.apiSupported());
+    }
 
     // Stop if user not use Script Manager or not support GM Api
-    if (Aak.ApiRequires()) {
-
-      // Debug
-      Aak.debug();
-
-      // Check GM Api supported
-      //Aak.ApiSupported();
-
+    if (Aak.apiRequires()) {
+		
       // Add Command in Greasemonkey Menu
-      Aak.registerMenuCommand();
+      Aak.addCommands();
 
       // Detect Filters
       Aak.once(30, 'aak-detectfilters', Aak.detectFilters);
@@ -172,18 +167,7 @@ Aak = {
       Aak.kill();
     }
   },
-  debug : function () {
-    //if (Aak.isTopWindow) {
-    //Aak.player.dom();
-    //Aak.listValues();
-    //localStorage.clear();
-    //Aak.log(localStorage);
-    //Aak.ApiSupported();
-    //GM_deleteValue('aak-detectfilters');
-    //GM_deleteValue('aak-checkupdate');
-    //console.info('Anti-Adblock Killer v' + Aak.getVersion() + ' on ' + Aak.getScriptManager() + ' in ' + Aak.getBrowser(), Aak.getUUID());
-    //}
-  },
+  uw : unsafeWindow || window,
   isTopWindow : !(window.top != window.self),
   ready : function (fn) {
     window.addEventListener('load', fn);
@@ -191,7 +175,15 @@ Aak = {
   contains : function (string, search) {
     return string.indexOf(search) != -1;
   },
-  ApiRequires : function () {
+  log : function (msg, type) {
+    if (Aak.debug.log) {
+      if (typeof console === 'undefined') {
+        console = unsafeWindow.console;
+      }
+      console[type || 'info']('AntiAdblockKiller: ' + msg);
+    }
+  },
+  apiRequires : function () {
     if (typeof GM_xmlhttpRequest != 'undefined' &&
       typeof GM_setValue != 'undefined' &&
       typeof GM_getValue != 'undefined' &&
@@ -202,39 +194,35 @@ Aak = {
       return false;
     }
   },
-  ApiSupported : function () {
+  apiSupported : function () { 
     if (Aak.isTopWindow) {
-      console.info('Requires');
-      console.info('GM_xmlhttpRequest', (typeof GM_xmlhttpRequest != 'undefined') ? true : false);
-      console.info('GM_setValue', (typeof GM_setValue != 'undefined') ? true : false);
-      console.info('GM_getValue', (typeof GM_getValue != 'undefined') ? true : false);
-      console.info('GM_addStyle', (typeof GM_addStyle != 'undefined') ? true : false);
-      console.info('GM_registerMenuCommand', (typeof GM_registerMenuCommand != 'undefined') ? true : false);
-
-      console.info('No requires');
-      console.info('GM_info', (typeof GM_info != 'undefined') ? GM_info : false);
-      console.info('GM_getMetadata', (typeof GM_getMetadata != 'undefined') ? GM_getMetadata : false);
-      console.info('GM_deleteValue', (typeof GM_deleteValue != 'undefined') ? true : false);
-      console.info('GM_listValues', (typeof GM_listValues != 'undefined') ? true : false);
-      console.info('GM_getResourceText', (typeof GM_getResourceText != 'undefined') ? true : false);
-      console.info('GM_getResourceURL', (typeof GM_getResourceURL != 'undefined') ? true : false);
-      console.info('GM_log', (typeof GM_log != 'undefined') ? true : false);
-      console.info('GM_openInTab', (typeof GM_openInTab != 'undefined') ? true : false);
-      console.info('GM_setClipboard', (typeof GM_setClipboard != 'undefined') ? true : false);
+      // GM API
+      // Doc: http://tinyurl.com/yeefnj5
+	  return {
+	    GM_xmlhttpRequest : typeof GM_xmlhttpRequest != 'undefined',
+	    GM_setValue : typeof GM_setValue != 'undefined',
+	    GM_getValue : typeof GM_getValue != 'undefined',
+	    GM_addStyle : typeof GM_addStyle != 'undefined',
+	    GM_registerMenuCommand : typeof GM_registerMenuCommand != 'undefined',
+	    GM_info : typeof GM_info != 'undefined',
+	    GM_getMetadata : typeof GM_getMetadata != 'undefined',
+	    GM_deleteValue : typeof GM_deleteValue != 'undefined',
+	    GM_listValues : typeof GM_listValues != 'undefined',
+	    GM_getResourceText : typeof GM_getResourceText != 'undefined',
+	    GM_getResourceURL : typeof GM_getResourceURL != 'undefined',
+	    GM_log : typeof GM_log != 'undefined',
+	    GM_openInTab : typeof GM_openInTab != 'undefined',
+	    GM_setClipboard : typeof GM_setClipboard != 'undefined'
+	  }
     }
   },
-  listValues : function (del) {
-    if (typeof GM_listValues != 'undefined') {
-      var del = (del) ? true : false;
-      var list = GM_listValues();
-      for (var i in list) {
-        if (del) {
-          GM_deleteValue(list[i]);
-        } else {
-          Aak.log(list[i], GM_getValue(list[i]));
-        }
-      }
+  listValues : function () {
+    var list = GM_listValues();
+    var obj = {};
+    for (var i in list) {
+      obj[list[i]] = GM_getValue(list[i]);
     }
+    return obj;
   },
   getBrowser : function () {
     var ua = navigator.userAgent;
@@ -266,7 +254,7 @@ Aak = {
     return Number(Aak.version);
   },
   getScriptManager : function () {
-    if (Aak.ApiRequires()) {
+    if (Aak.apiRequires()) {
       if (typeof GM_info == 'object') {
         // Greasemonkey (Firefox)
         if (typeof GM_info.uuid != 'undefined') {
@@ -292,9 +280,12 @@ Aak = {
         }
       }
     } else {
-      Aak.log('No scriptmanager detected');
+      Aak.log('No Script Manager detected');
       return false;
     }
+  },
+  generateID : function () {
+    return 'Aak-' + Math.random().toString(36).substring(4);
   },
   generateUUID : function () {
     // Universally Unique IDentifier
@@ -308,18 +299,11 @@ Aak = {
   },
   getUUID : function () {
     // Universally Unique IDentifier
-    var store = 'aak-uuid';
-    if (typeof GM_getValue(store) == 'undefined') {
-      GM_setValue(store, Aak.generateUUID());
+    var name = 'aak-uuid';
+    if (typeof GM_getValue(name) == 'undefined') {
+      GM_setValue(name, Aak.generateUUID());
     }
-    return GM_getValue(store);
-  },
-  log : function (text) {
-    if (typeof console.log === 'undefined') {
-      unsafeWindow.console.log(text);
-    } else {
-      console.log(text);
-    }
+    return GM_getValue(name);
   },
   once : function (day, name, callback) {
     setTimeout(function () {
@@ -338,11 +322,11 @@ Aak = {
       }
     }, 0);
   },
-  registerMenuCommand : function () {
+  addCommands : function () {
     Aak.ready(function () {
       // Scriptish
       // Note: No menu command is created when the user script is run in a iframe window.
-      // https://github.com/scriptish/scriptish/wiki/GM_registerMenuCommand
+      // Doc: http://tinyurl.com/kvvv7yt
       if (Aak.isTopWindow && typeof GM_registerMenuCommand != 'undefined') {
         GM_registerMenuCommand(Aak.name + ' ' + Aak.getVersion() + ' Homepage', function () {
           location.href = Aak.homeURL;
@@ -358,27 +342,27 @@ Aak = {
       Aak.addStyle('@-webkit-keyframes aak-fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@keyframes aak-fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}');
 
       // box
-      Aak.addStyle('#aak-notice { -webkit-animation: aak-fadeInDown  .5s ease;  animation: aak-fadeInDown  .5s ease; padding: 0px; color:#000 !important; background-color: #fff !important; display:block !important; width:100% !important; position:fixed !important; z-index: 999999 !important; left: 0; top: 0;  text-align: left; vertical-align:middle; margin:0 !important; font-size:14px !important; font-family:arial !important; border-bottom:5px solid #DF3A32 !important; line-height:1.2 !important; font-variant:small-caps;}');
+      Aak.addStyle('#aak-notice {-webkit-animation:aak-fadeInDown .5s ease; animation:aak-fadeInDown .5s ease; padding:0px; color:#000; background-color:#fff; display:block; width:100%; position:fixed; z-index:999999; left: 0; top: 0;  text-align: left; vertical-align:middle; margin:0; font-size:14px; font-family:arial; border-bottom:5px solid #DF3A32; line-height:1.2; font-variant:small-caps;}'.replace(/;/g, ' !important;'));
 
       // navbar
-      Aak.addStyle('#aak-notice-navbar { background-color: #DF3A32 !important; padding: 0px 20px 0px 62px !important;  background-image:url("' + Aak.iconURL + '"); background-repeat:no-repeat; background-position:20px 3px; background-size:32px; }');
+      Aak.addStyle('#aak-notice-navbar {background-color:#DF3A32; padding:0px 20px 0px 62px; background-image:url("' + Aak.iconURL + '"); background-repeat:no-repeat; background-position:20px 3px; background-size:32px;}'.replace(/;/g, ' !important;'));
 
       // link
-      Aak.addStyle('.aak-navbar-link { padding: 0px 5px !important; line-height:35px !important; color: #fff !important; display: inline-block; text-decoration: none; transform: skew(345deg, 0deg); background-color: #DF3A32 !important; border-bottom:3px solid #DF3A32; }');
+      Aak.addStyle('.aak-navbar-link {padding:0px 5px; line-height:35px; color:#fff; display:inline-block; text-decoration:none; transform:skew(345deg, 0deg); background-color:#DF3A32; border-bottom:3px solid #DF3A32;}'.replace(/;/g, ' !important;'));
 
       // link:hover
-      Aak.addStyle('.aak-navbar-link:hover { color: #fff !important; background-color: #000 !important; border-bottom:3px solid #fff; text-decoration: none;}');
+      Aak.addStyle('.aak-navbar-link:hover {color:#fff; background-color:#000; border-bottom:3px solid #fff; text-decoration:none;}'.replace(/;/g, ' !important;'));
 
       // close
-      Aak.addStyle('#aak-notice-close {  color:#fff; float: right !important;  margin:0px 5px; padding:10px 10px 8px 10px; text-decoration: none;}');
+      Aak.addStyle('#aak-notice-close {color:#fff; float: right; margin:0px 5px; padding:10px 10px 8px 10px; text-decoration: none;}'.replace(/;/g, ' !important;'));
 
       // brand
-      Aak.addStyle('#aak-notice .brand { padding-right:20px !important; color: #fff !important;  font-size:14px !important; }');
+      Aak.addStyle('#aak-notice .brand {padding-right:20px; color:#fff; font-size:14px;}'.replace(/;/g, ' !important;'));
 
       // content
-      Aak.addStyle('#aak-notice-content {  padding:5px 20px; min-height:72px;}');
-      Aak.addStyle('#aak-notice-content a { color: #DF3A32 !important; text-decoration: none; }');
-      Aak.addStyle('#aak-notice-content a:hover { text-decoration: underline; }');
+      Aak.addStyle('#aak-notice-content {padding:5px 20px; min-height:72px;}'.replace(/;/g, ' !important;'));
+      Aak.addStyle('#aak-notice-content a {color:#DF3A32; text-decoration:none;}'.replace(/;/g, ' !important;'));
+      Aak.addStyle('#aak-notice-content a:hover {text-decoration:underline;}'.replace(/;/g, ' !important;'));
 
       // remove
       Aak.removeElement('#aak-notice');
@@ -416,7 +400,7 @@ Aak = {
             Aak.notification('It seems that you have not subscribed to the list <b>Anti-Adblock Killer - Filters for Adblockers</b>, this list is necessary for the proper functioning of Anti-Adblock Killer. <a href="' + Aak.filtersSubscribe + '" target="_blank">Subscribe</a>', 30000);
             console.warn("Anti-Adblock Killer: Filters for Adblockers No detected :( " + elem.clientHeight);
           } else {
-            console.info("Anti-Adblock Killer: Filters for Adblockers detected");
+            Aak.log("Anti-Adblock Killer: Filters for Adblockers detected");
           }
         }, 5000);
       });
@@ -432,7 +416,7 @@ Aak = {
   update : {
     check : function () {
       if (Aak.isTopWindow) {
-        Aak.notification('<b>Userscript: </b><i id="aak-update-script">Checking...</i><br/><b>Filters: </b><i id="aak-update-filters">Checking...</i>', 60000);
+        Aak.notification('<b>Script: </b><i id="aak-update-script">Checking...</i><br/><b>List: </b><i id="aak-update-filters">Checking...</i>', 60000);
         setTimeout(function () {
           Aak.update.getLatestVerScript();
           Aak.update.getLatestVerFilters();
@@ -543,8 +527,8 @@ Aak = {
     if (typeof localStorage != "undefined") {
       if (typeof localStorage[name] == "undefined") {
 
-        // w3schools.com/html/html5_webstorage.asp
         // Using localStorage because GM get/setValue does not work
+		// Doc: http://tinyurl.com/8peqwvd
         localStorage[name] = host;
 
         var data = {
@@ -587,48 +571,13 @@ Aak = {
       //throw 'localStorage non supporté';
     }
   },
-  getReadme : function (selector) {
-    GM_xmlhttpRequest({
-      method : "GET",
-      url : Aak.homeURL,
-      headers : {
-        "User-Agent" : navigator.userAgent,
-        "Accept" : "text/html"
-      },
-      onload : function (response) {
-        var res = response.responseText;
-        var parser = new DOMParser();
-        var dom = parser.parseFromString(res, "text/html");
-        var readme = dom.querySelector("div#readme article.markdown-body");
-        //Aak.log(readme);
-        document.querySelector(selector).appendChild(readme);
-      }
-    });
-  },
-  getChangelog : function () {
-    GM_xmlhttpRequest({
-      method : "GET",
-      url : Aak.changelogURL,
-      headers : {
-        "User-Agent" : navigator.userAgent,
-        "Accept" : "text/html"
-      },
-      onload : function (response) {
-        var res = response.responseText;
-        var parser = new DOMParser();
-        var dom = parser.parseFromString(res, "text/html");
-        var elem = dom.querySelector("#post-body-505690");
-        Aak.notification(elem.textContent, 60000);
-      }
-    });
-  },
   kill : function () {
 
     // Detect & Kill
     for (var i in Aak.rules) {
 
       // Current
-      current = Aak.rules[i];
+      var current = Aak.rules[i];
 
       // RegExp host
       var reHost = new RegExp(current.host.join('|'), 'i');
@@ -636,7 +585,7 @@ Aak = {
       if (reHost.test(location.host)) {
         // On all statements
         if (current.onAlways) {
-		  current.onAlways();// loading
+		  current.onAlways(); // loading
 		  window.addEventListener('DOMContentLoaded', current.onAlways); // interactive
 		  window.addEventListener('load', current.onAlways); // complete
         }
@@ -649,8 +598,6 @@ Aak = {
           if ('onbeforescriptexecute' in document) { // Mozilla Firefox
             window.addEventListener('beforescriptexecute', current.onBeforeScript);
           }
-		  // Opera
-		  // Doc: http://www.opera.com/docs/userjs/specs/
         } // When After Script Executed
         if (current.onAfterScript) {
           if ('onafterscriptexecute' in document) { // Mozilla Firefox
@@ -677,8 +624,8 @@ Aak = {
         if (current.onInsert) {
 
           // Mutation Observer
-          // developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-          // caniuse.com/mutationobserver
+          // Doc: http://tinyurl.com/mxxzee4
+          // Support: http://tinyurl.com/nepn7vy
           if (typeof window.MutationObserver != 'undefined' ||
             typeof WebKitMutationObserver != 'undefined') {
 
@@ -707,7 +654,7 @@ Aak = {
             });
           }
           // Mutation Events (Alternative Solution)
-          // developer.mozilla.org/en-US/docs/Web/Guide/Events/Mutation_events
+          // Doc: http://tinyurl.com/op95rfy
           else {
             window.addEventListener("DOMNodeInserted", function (e) {
               current.onInsert(e.target);
@@ -718,8 +665,8 @@ Aak = {
         if (current.onRemove) {
 
           // Mutation Observer
-          // developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-          // caniuse.com/mutationobserver
+          // Doc: http://tinyurl.com/mxxzee4
+          // Support: http://tinyurl.com/nepn7vy
           if (typeof window.MutationObserver != 'undefined' ||
             typeof WebKitMutationObserver != 'undefined') {
 
@@ -748,7 +695,7 @@ Aak = {
             });
           }
           // Mutation Events (Alternative Solution)
-          // developer.mozilla.org/en-US/docs/Web/Guide/Events/Mutation_events
+          // Doc: http://tinyurl.com/op95rfy
           else {
             window.addEventListener("DOMNodeRemoved", function (e) {
               current.onRemove(e.target);
@@ -763,15 +710,15 @@ Aak = {
       return '';
     };
   },
-  confirmReport : function (element) {
-    element.innerHTML = 'Report';
-    element.title = 'Report issue or anti-adblock';
-    element.onclick = function (e) {
+  confirmReport : function (elem) {
+    elem.innerHTML = 'Report';
+    elem.title = 'Report issue or anti-adblock';
+    elem.onclick = function (e) {
       e.preventDefault();
       if (confirm("Do you want to report issue or anti-adblock")) { // Clic on OK
         location.href = Aak.reportURL;
       } else {
-        location.href = element.href;
+        location.href = elem.href;
       }
     }
   },
@@ -834,26 +781,25 @@ Aak = {
   addStyle : function (css) {
     GM_addStyle(css);
   },
-  getStyle : function (el, styleProp) {
-    if (el.currentStyle)
-      return el.currentStyle[styleProp];
+  getStyle : function (elem, prop) {
+    if (elem.currentStyle)
+      return elem.currentStyle[prop];
     else if (window.getComputedStyle)
-      return document.defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+      return document.defaultView.getComputedStyle(elem, null).getPropertyValue(prop);
   },
-  getCookie : function (sName) {
-    var oRegex = new RegExp("(?:; )?" + sName + "=([^;]*);?");
+  getCookie : function (name) {
+    var oRegex = new RegExp("(?:; )?" + name + "=([^;]*);?");
     if (oRegex.test(document.cookie)) {
       return decodeURIComponent(RegExp["$1"]);
     } else {
       return null;
     }
   },
-  setCookie : function (sName, sValue, sTime) {
-    sTime = (sTime) ? sTime : 365 * 24 * 60 * 60 * 1000;
-    var today = new Date(),
-    expires = new Date();
-    expires.setTime(today.getTime() + sTime); // 365*24*60*60*1000
-    document.cookie = sName + "=" + encodeURIComponent(sValue) + ";expires=" + expires.toGMTString() + ";path=/";
+  setCookie : function (name, value, time) {
+    var time = (time) ? time : 365 * 24 * 60 * 60 * 1000; // 1 year
+    var expires = new Date();
+    expires.setTime(new Date().getTime() + time);
+    document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + expires.toGMTString() + ";path=/";
   },
   decodeURI : function (str) {
     return decodeURIComponent(str);
@@ -866,9 +812,6 @@ Aak = {
   },
   decodeHTML : function (str) {
     return String(str).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
-  },
-  uniqid : function () {
-    return 'Aak-' + Math.random().toString(36).substring(4);
   },
   allowfullscreen : function (elem, boolen) {
     var boolen = (boolen) ? boolen : true;
@@ -949,7 +892,7 @@ Aak = {
       this.in.parent = this.in.node.parentNode;
       this.in.tag = this.in.node.tagName;
 
-      this.attributes.id = this.attributes.name = Aak.uniqid();
+      this.attributes.id = this.attributes.name = Aak.generateID();
       this.attributes.height = this.in.node.height || this.in.node.clientHeight || '100%';
       this.attributes.width = this.in.node.width || this.in.node.clientWidth || '100%';
 
@@ -1134,7 +1077,8 @@ Aak = {
     },
     jwplayer5 : function (id, setup) {
       // Jwplayer 5 (flash)
-	  // Support http://tinyurl.com/mjavxdr: mp4, m4v, f4v, mov, flv, webm, aac, mp3, vorbis, hls, rtmp, youtube, aac, m4a, f4a, mp3, ogg, oga
+	  // Support: http://tinyurl.com/mjavxdr
+	  // mp4, m4v, f4v, mov, flv, webm, aac, mp3, vorbis, hls, rtmp, youtube, aac, m4a, f4a, mp3, ogg, oga
 
       this.get(id);
       this.nameplayer = 'jwplayer5';
@@ -1154,7 +1098,7 @@ Aak = {
 	  this.options.output = 'embed';
       this.insert();
     },
-    flow : function (id, setup) {
+    flowplayer : function (id, setup) {
       // Flowplayer (flash)
 	  // Support: mp4, flv, f4v, m4v, mov
       // Config: http://tinyurl.com/na7vy7b
@@ -1195,7 +1139,7 @@ Aak = {
     jwplayer6 : function (id, setup) {
       // Jwplayer 6 (flash)
       // Config: http://tinyurl.com/lcygyu9
-      // http://stackoverflow.com/questions/8240101/set-content-of-iframe
+      // Iframe: http://tinyurl.com/86agg68
 
       this.get(id);
       this.nameplayer = 'jwplayer6';
@@ -1275,7 +1219,7 @@ Aak = {
 
       this.get(id);
       //this.attributes = {};
-      this.attributes.id = this.attributes.name = Aak.uniqid();
+      this.attributes.id = this.attributes.name = Aak.generateID();
       this.attributes.height = setup.height || this.in.node.clientHeight || "100%";
       this.attributes.width = setup.width || this.in.node.clientWidth || "100%";
       this.attributes.src = setup.file || setup.src;
@@ -1289,7 +1233,7 @@ Aak = {
       this.insert();
     }
   },
-  rules : { // Rules
+  rules : {
     // --------------------------------------------------------------------------------------------
     // Specific
     // --------------------------------------------------------------------------------------------
@@ -1612,7 +1556,7 @@ Aak = {
         Aak.addElement('div.afs_ads');
       }
     },
-    referencemega_com : {
+    totaldebrid_org : {
       host : ['totaldebrid.org', 'referencemega.com'],
       onStart : function () {
         Aak.addElement('div.afs_ads');
@@ -1658,9 +1602,17 @@ Aak = {
     disableAlertbox : {
       host : ['drivearabia.com', 'putlocker.com', 'doatoolsita.altervista.org', 'sockshare.com', 'free-movie-home.com', 'pc.online143.com', 'pregen.net', 'kooora.com', 'str3amtv.co.nr', 'str3amtv.altervista.org', 'str3am.altervista.org', 'filecom.net', 'pipocas.tv', 'generatupremium.biz', 'mega-debrid.eu', 'premiumst0re.blogspot.com','dl-protect.com'],
       onAlways : function () {
-        Aak.uw.alert = false;
+        Aak.uw.alert = function (){};
       }
     },	
+    generatupremium_biz : {
+      host : ['generatupremium.biz'],
+      onStart : function () {
+		// Disable Confirm Box
+        //Aak.uw.confirm = function (){};
+		Aak.setCookie('genera', false);
+      }
+    },
     planetatvonlinehd_blogspot : {
       host : ['planetatvonlinehd.blogspot.'],
       onAlways : function () {
@@ -1673,6 +1625,13 @@ Aak = {
         Aak.uw.stopAdBlock = {};
       }
     },
+    slideplayer_org : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/296
+      host : ['slideplayer.org'],
+      onAlways : function () {
+        Aak.uw.is_adblock_detect = function () {};
+      }
+    },	
     pipocas_tv : {
       host : ['pipocas.tv'],
       onStart : function () {
@@ -1729,6 +1688,35 @@ Aak = {
       host : ['eventosppv.me'],
       onLoad : function () {
         Aak.removeElement('#nf37');
+      }
+    },
+    vivo_sx : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/280
+      host : ['vivo.sx'],
+      onEnd : function () {
+        var alert = Aak.getElement('#alert-throttle');
+        if (alert) {
+          Aak.removeElement(alert);
+        }
+        var button = Aak.getElement('button#access');
+        if (button) {
+          button.removeAttribute('id');
+          button.removeAttribute('disabled');
+          button.innerHTML = 'Continue to video';
+        }
+        setTimeout(function () {
+          var input = Aak.getElement('input[name="throttle"]');
+          if (input) {
+            Aak.removeElement(input);
+          }
+        }, 1000);
+      }
+    },
+    vvvvid_it : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/205
+      host : ['vvvvid.it'],
+      onEnd : function () {
+        Aak.uw.vvvvid.onAdBlock = function () {};
       }
     },
     luxyad_com : { // skip redirect myanimes.li
@@ -1802,8 +1790,9 @@ Aak = {
         Aak.removeElement('#ad_blocking');
       }
     },
-    scanmx_com : {
-      host : ['scan-mx.com'],
+    ad_block_test : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/279
+      host : ['scan-mx.com','onepiece-mx.net'],
       onAlways : function () {
         Aak.uw.ad_block_test = function () {};
       },
@@ -1850,32 +1839,37 @@ Aak = {
         Aak.uw.check = function () {return false};
       }
     },
+    hackintosh_zone : { 
+	  // issue: https://greasyfork.org/fr/forum/discussion/3786/
+      host : ['hackintosh.zone'],
+      onStart : function () {
+        Aak.addStyle(".adsbygoogle, #topframead { height: 5px !important; }");
+        Aak.addElement('div.adsbygoogle');
+        Aak.addElement('div#topframead');
+      },
+      onAlways : function () {
+        Aak.uw.writeHTMLasJS = function () {};
+      }
+    },
+    bitvisits_com : { 
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/266
+      host : ['bitvisits.com'],
+      onAlways : function () {
+        Aak.uw.blockAdblockUser = function () {};
+      }
+    },
+    vipleague_domains : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/290
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/297
+      host : ['vipleague.se', 'vipleague.me', 'vipleague.co', 'vipleague.sx', 'vipbox.tv'],
+      onAlways : function () {
+        Aak.uw.showblock = function () {};
+      }
+    },
     canalplus_fr : {
       host : ['canalplus.fr'],
       onEnd : function () {
-	  
-	  //<meta content="http://player.canalplus.fr/embed/flash/CanalPlayerEmbarque.swf?vid=1179576" itemprop="embedURL">
-	  /*
-              Aak.player.custom('#CanalPlayerEmbarque', {
-                src : 'http://playercanal2.kakimediadesign.com/CanalPlayerEmbarque.swf'
-              }, {
-                set : {
-                  videoId : 1179576,
-                  controls : 'controls'
-                }
-              });	  
-	  */
-	  
-	  Aak.uw.CANAL.useVideoplaza=false;
-	  /*
-	  setInterval(function() {
-	    var CANAL=Aak.uw.CANAL;
-        Aak.log(CANAL) // = function () {return false};
-		CANAL.options.adServer="";
-		CANAL.players.CanalPlayerEmbarque.adServer="";
-		CANAL.players.CanalPlayerEmbarque.adServerUrl="";
-      },0);
-	  */
+
 	  }
     },	
     dailybitcoins_org : {
@@ -1885,6 +1879,7 @@ Aak = {
       }
     },
     psarips_com : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/153
       host : ['psarips.com'],
       onStart : function () {
         Aak.addElement('div#advert');
@@ -1917,6 +1912,25 @@ Aak = {
       onLoad : function () {
         Aak.setCookie('ipsos', 0);
         //Aak.removeElement('body div[style*="position: fixed"]');
+      }
+    },
+    extratorrent_domains : {
+      host : ['extratorrent.cc', 'extratorrent.com'],
+      onStart : function () {
+		// prevent popup
+        // code are obfuscated in external js
+        Aak.setCookie('ppu_delay', 1);
+        Aak.setCookie('ppu_main', 1);
+        Aak.setCookie('ppu_sub', 1);
+        Aak.setCookie('ppu_show_on', 1);
+      }
+    },
+    tny_cz : {
+      host : ['tny.cz'],
+      onStart : function () {
+		// prevent popup
+        Aak.setCookie('__.popunderCap', 1);
+        Aak.setCookie('__.popunder', 1);
       }
     },
     clubedohardware_com_br : { // two antiadblock
@@ -1973,7 +1987,7 @@ Aak = {
         }
       }
     },
-    blockblockA : { // Solution was also added to AAK-Filters
+    blockblockA : { // Solved by aaklist
       // http://sport-show.fr/js/advertisement-AdBlock.js
       // http://www.2site.me/advertisement-AdBlock.js
       host : ['sport-show.fr', 'vipflash.net', '2site.me'],
@@ -2257,18 +2271,18 @@ Aak = {
       },
       onLoad : function () {
 
-        // Solution 3 abp rule
+        // Solution 1 abp rule
         // @@||kissanime.com^$elemhide
 
         var divContentVideo = document.querySelector('#divContentVideo');
 
-        // Solution 1
+        // Solution 2
         if (Aak.uw.DoDetect2) {
           Aak.uw.DoDetect2 = null;
           Aak.uw.CheckAdImage = null;
           Aak.removeElement('iframe[id^="adsIfrme"], .divCloseBut');
-          Aak.log('1');
-        } //Solution 2
+          Aak.log('Solution 2');
+        } //Solution 3
         else if (divContentVideo) {
 
           var divDownload = document.querySelector('#divDownload').cloneNode(true);
@@ -2279,7 +2293,7 @@ Aak = {
             Aak.uw.DoHideFake();
             divContentVideo.appendChild(divDownload);
             Aak.removeElement('iframe[id^="adsIfrme"], .divCloseBut');
-            Aak.log('2');
+            Aak.log('Solution 3');
           }, 5500);
         }
       }
@@ -2461,7 +2475,8 @@ Aak = {
         }, timeout);
       }
     },
-    tvn_pl : { // http://tinyurl.com/mcwtz27
+    tvn_pl : { 
+	  // Test: http://tinyurl.com/mcwtz27
       host : ['tvn.pl', 'tvn24.pl', 'player.pl'],
       onStart : function () {
 
@@ -2488,78 +2503,13 @@ Aak = {
       }
     },
     // France
-    playtv_fr : {
+    playtv_fr : { // research solution
       host : ['play.tv', 'playtv.fr'],
+	  onAlways : function () {
+
+	  },
       onEnd : function () {
-
-        // Aak.uw.ppl.vars.redirect = function () {};
-        Aak.log(Aak.uw);
-
-        //return false;
-        var channel = Aak.uw.ptv.Data.Remote.channel;
-
-        if (typeof channel == 'object' && Aak.contains(location.pathname, channel.alias)) {
-
-          // When pathname change
-          setInterval(function () {
-            if (!Aak.contains(location.pathname, channel.alias)) {
-              location.reload();
-            } else if (Aak.contains(location.pathname, 'adblock')) {
-              window.stop();
-            }
-          }, 1000);
-
-          var timestamp = new Date().getTime();
-          var rand = Math.random().toString().slice(2, 18);
-          var container = document.querySelector(".notice-adb");
-          var url = 'http://tvplayer.play.tv/config/?callback=jQuery' + rand + '_' + timestamp + '&id=' + channel.tvplayer_id + '&appzone=desktop.playtv&_=' + timestamp;
-          Aak.log(channel, url, timestamp, rand);
-
-          GM_xmlhttpRequest({
-            method : "GET",
-            url : url,
-            headers : {
-              "User-Agent" : navigator.userAgent
-            },
-            onload : function (response) {
-              var res = response.responseText;
-              Aak.log('ajax ', res);
-
-              //
-              var json = res.substring(res.indexOf('{'), res.lastIndexOf('}') + 1);
-              var obj = JSON && JSON.parse(json);
-              Aak.log(res, json, obj);
-
-              var a = obj && obj.flashVars.a || res.match(/"fa":"([a-z0-9]+)/)[1];
-              var b = obj && obj.flashVars.b || res.match(/"bf":"([a-z0-9]+)/)[1];
-              //Aak.log(a, b);
-
-              // http://tvplayer.play.tv/swf/tvplayer259.swf // dead
-              // http://tvplayer.playtv.fr/swf/tvplayer301.swf // dead
-              // http://tvplayer.playtv.fr/swf/tvplayer302.swf
-
-              Aak.player.custom(container, {
-                src : 'http://tvplayer.playtv.fr/swf/tvplayer302.swf',
-                id : channel.tvplayer_id,
-                name : channel.tvplayer_id,
-                width : 610,
-                height : 384
-              }, {
-                set : {
-                  controls : 1,
-                  caching : true,
-                  a : a,
-                  b : b
-                }
-              });
-
-              /*
-              container.innerHTML = '<embed title="ree-' + channel.alias + '" width="610" height="384" id="' + channel.tvplayer_id + '" name="' + channel.tvplayer_id + '" type="application/x-shockwave-flash" src="http://tvplayer.playtv.fr/swf/tvplayer301.swf" flashvars="controls=1&amp;background=1579032&amp;volume_cookie=true&amp;caching=true&amp;a=' + a + '&amp;b=' + b + '" allowfullscreen="true" allowscriptaccess="always" bgcolor="#000000"/>';
-               */
-            }
-          });
-
-        }
+		  
       }
     },
     rmcsportbfmtv_com : { // webradio
@@ -2577,7 +2527,6 @@ Aak = {
         };
 
         Aak.uw.swfobject.embedSWF("/swf/RMCLIVE.swf", "liveplayer", "70", "90", "10.0.0", "", flashvars, params);
-
       }
     },
     eclypsia_com : {
@@ -2591,10 +2540,7 @@ Aak = {
 	    Aak.uw.refresh_iframe = function () {}; // Stop ads to be loaded
 	  },
       onEnd : function () {
-	    //Aak.log(Aak.uw.OA_show, Aak.uw.isABActivated());
-
 	    // Solution 3
-        //http://www.dailymotion.com/swf/video/x1tayy1
         var element = document.querySelector('div[id^="webtv_iframe_"]');
         if (element != null) {
           var videoId = element.id.split('_')[2];
@@ -2615,15 +2561,9 @@ Aak = {
       }
     },
     // Germany
-    sat1_de : { //
+    sat1_de : { // research solution
       host : ['sat1.de', 'sat1.ch'],
       onStart : function () {
-        /*
-        setInterval(function () {
-        Aak.uw.SIMAD.hideAds();
-        Aak.uw.SIMAD_CONFIG=true;
-        },0);
-         */
       },
       onEnd : function () {
         /*
@@ -2664,14 +2604,13 @@ Aak = {
 
       }
     },
-    myspass_de : { // http://tinyurl.com/lto9pyd
+    myspass_de : { 
       host : ['myspass.de'],
       onLoad : function () {
-
+        // Test: http://tinyurl.com/lto9pyd
         var videoid = location.pathname.match(/\/(\d+)\/$/);
 
         if (videoid != null) {
-
           GM_xmlhttpRequest({
             method : "GET",
             url : 'http://www.myspass.de/myspass/includes/apps/video/getvideometadataxml.php?id=' + videoid[1],
@@ -2692,14 +2631,14 @@ Aak = {
               Aak.removeElement('div.loadingGif');
 
               // Replace player
-              Aak.player.jwplayer5('player', {
+              Aak.player.html5('player', {
                 autostart : true,
                 file : file
               });
 
               /*
               // Replace player
-              Aak.player.flow('player', {
+              Aak.player.flowplayer('player', {
               clip : {
               autoPlay : true,
               url : file
@@ -2754,7 +2693,8 @@ Aak = {
       }
     },
 	// Nederland
-    rtlxl_nl : { // http://tinyurl.com/l2zkv3d
+    rtlxl_nl : { 
+	  // Test: http://tinyurl.com/l2zkv3d
       host : ['rtlxl.nl','rtlnieuws.nl'],
       onEnd : function () {
         // 
@@ -2765,31 +2705,8 @@ Aak = {
         });
       }
     },
-    // Portugal
-    abola_pt : {
-      host : ['miragens.abola.pt'],
-      onEnd : function () {
-        // miragens.abola.pt/media.aspx?id=20390&op=2&p=1
-        // miragens.abola.pt/MiragensBO/uploads/20/39/0/20390.mp4
-
-        /* protected by crossdomain.xml
-        // Fix: 9.6.2014 (new player)
-        if ('/media.aspx' == location.pathname) {
-        var id = location.href.match(/media.aspx[?]id=([\d]+)/)[1];
-        var path = id.match(/.{1,2}/g).join('/');
-        var file = 'http://www.miragens.abola.pt/MiragensBO/uploads/' + path + '/' + id + '.mp4';
-
-        // Replace player
-        Aak.player.jwplayer5('player', {
-        autostart : true,
-        file : file
-        });
-        }
-         */
-      }
-    },
     // Italy
-    rai_tv : {
+    rai_tv : { // research solution
       host : ['rai.tv'],
       onStart : function () {},
       onLoad : function () {}
@@ -2864,7 +2781,7 @@ Aak = {
         }
       }
     },
-    flowplayer : {
+    flowplayer_antiadblock : {
       host : ['videofun.me', 'videobug.net', 'video44.net', 'play44.net', 'byzoo.org'],
       onLoad : function () {
         // + abp rule for hide antiadblock message
@@ -2980,7 +2897,6 @@ Aak = {
 		
         // Adbuddy
         if (typeof Aak.uw.closeAdbuddy === 'function') {
-          //Aak.log(typeof Aak.uw.closeAdbuddy);
 		  Aak.uw.closeAdbuddy();
           Aak.autoReport('Adbuddy');
         }
@@ -3057,8 +2973,9 @@ Aak = {
       onInsert : function (insertedNode) {
 
         // All Nodes
-        //Aak.log(insertedNode);
-		
+        if (Aak.debug.inserted) {
+          Aak.log(insertedNode);
+        }
 		
 		// No-Adblock - http://www.no-adblock.com/
 		if (insertedNode.id &&
@@ -3253,9 +3170,4 @@ Aak = {
   }
 };
 
-/*=====================================================
-Start
-======================================================*/
-
-// Initialize
-Aak.init();
+Aak.initialize();
