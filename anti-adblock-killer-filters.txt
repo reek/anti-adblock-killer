@@ -833,6 +833,9 @@ umahdroid.blogspot.com###energysaving
 dirtstyle.tv##.lightbox
 ! vg.no
 @@||adserver.adtech.de/multiad/2.0/0/0/0/-1/$script,domain=vg.no
+! viki domains
+@@/google-ad-block-test-googleadservices-gpt-pubads.js$script,domain=viki.mx|viki.com
+@@||pubads.g.doubleclick.net/gampad/ads?$object-subrequest,domain=viki.mx|viki.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
