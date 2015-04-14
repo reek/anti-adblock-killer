@@ -137,6 +137,11 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: vg.no
 * Kill: viki.mx
 * Kill: viki.com
+* Kill: alientube.co
+* Kill: proboards.com
+* Kill: freeforums.net
+* Kill: boards.net
+* Kill: pagefair.com (Tracking)
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
