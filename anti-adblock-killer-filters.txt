@@ -839,6 +839,8 @@ dirtstyle.tv##.lightbox
 alientube.co###adblockContainer
 ! proboards.com
 proboards.com,freeforums.net,boards.net###support-message
+! youwatch.org
+@@||youwatch.org/iframe1.html$subdocument,domain=youwatch.org
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

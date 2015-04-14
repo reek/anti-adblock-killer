@@ -142,6 +142,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: freeforums.net
 * Kill: boards.net
 * Kill: pagefair.com (Tracking)
+* Kill: youwatch.org
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
