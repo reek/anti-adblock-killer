@@ -850,6 +850,10 @@ dirtstyle.tv##.lightbox
 ||js.sapo.pt/SAPOWebAnalytics/
 ||flash.banners-service.info^
 ||compteur-visite.com^$script,third-party
+! PageFair
+||asset.pagefair.com^
+||asset.pagefair.net^
+||pagefair.com/static/adblock_detection/js/d.min.js
 !----------------------------------------------------------------------------------------------------!
 ! Ads
 !----------------------------------------------------------------------------------------------------!
