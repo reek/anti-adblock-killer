@@ -56,7 +56,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
 #### Step 4: Support Author
-* [Say Thanks](http://bit.ly/aakthanks)
 * [Donate It](https://github.com/reek/anti-adblock-killer#donate)
 * Rate It
 * Share It (Social Network, Forums, Blogs, etc...)
@@ -143,6 +142,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: boards.net
 * Kill: pagefair.com (Tracking)
 * Kill: youwatch.org
+* Kill: kwejk.pl
+* Kill: e24.no
+* Kill: online.ua
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
