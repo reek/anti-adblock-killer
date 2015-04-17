@@ -846,6 +846,8 @@ proboards.com,freeforums.net,boards.net###support-message
 @@||ps3-infos.fr/adsense/openads/ads/ads.js$script
 ! plej.tv
 plej.tv#@#.advert_box
+! danslescoulisses.com
+@@||danslescoulisses.com/fr/min/$stylesheet
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

@@ -145,6 +145,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: kwejk.pl
 * Kill: e24.no
 * Kill: online.ua
+* Kill: danslescoulisses.com
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
