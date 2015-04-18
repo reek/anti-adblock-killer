@@ -20,15 +20,16 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 **Benefits: Your queries will be given priority, and you will figure in the source code as well as a generous donor.**
 
 * ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
 * ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
 * ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
 * ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
-* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
+
 
 
 ## Instruction
 
-##### Requires: Adblock or Adblock Plus
+##### Requires: Adblock, Adblock Plus or uBlock Origin
 
 #### Step 1: Script Manager (Install)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (No more updated)
@@ -49,7 +50,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 #### Step 3: Userscript
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
-* [Install](https://monkeyguts.com/codeinstall_raw.php?id=351) *from monkeyguts.com*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
 * [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
 
@@ -77,17 +77,17 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Help
-1. Check if script manager is enabled. (Greasemonkey, Tampermonkey, NinjaKit).
+1. Check if script manager is enabled (Greasemonkey, Tampermonkey, NinjaKit, etc...).
 2. Check if Anti-Adblock Killer is enabled.
-3. Check if you have installed the latest version of Anti AdBlock Killer | Userscript (Step 3)
-4. Check if you have subscribe to Anti-Adblock Killer | Filters for Adblockers (Step 2)
-5. Check if you have another userscript not interfere with Anti AdBlock Killer.
-6. Disable userscripts: Anti-AntiBlock Plus, Anti-Adblocker, because it can generate the conflict.
-7. Disable add-ons: Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), because it can generate the conflict.
-8. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
-9. Check if the site is in "Supported Sites and Changelog".
+3. Check if you have installed the latest version of Anti-Adblock Killer (Step 3).
+4. Check if you have subscribe to Anti-Adblock Killer (Step 2).
+5. Check if you have another userscript not interfere with Anti-Adblock Killer.
+6. Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub)).
+7. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
+8. Remove or disable personal filters.
+9. Check if the site is in "Supported Sites" or in "Changelog".
   1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
-  2. If it exists, but the script does not work, it probably means that the anti adblock protection has changed in it please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+  2. If it exists, but the script dont work, it probably means that the anti adblock has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 10. Consult Discussions or Issues
 
 

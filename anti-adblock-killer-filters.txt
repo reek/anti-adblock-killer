@@ -472,6 +472,9 @@ jeuxactu.com###infoBlock
 !||c.hqq.tv/js/adb/adb.js$script
 ! online.dramacafe.tv
 online.dramacafe.tv#@#.afs_ads
+online.dramacafe.in##.pm-ad-zone
+online.dramacafe.in##BODY > DIV[style^="background-color: rgb(251, 236, 173); position: fixed;"]
+||wafmedia3.com^$script,domain=online.dramacafe.in
 ! hln.be + nieuwsblad.be + demorgen.be
 @@||imasdk.googleapis.com/flash/*.swf$domain=syndication.vmma.be,object-subrequest
 @@||pubads.g.doubleclick.net/gampad/ads?$domain=syndication.vmma.be,object-subrequest
@@ -861,14 +864,13 @@ plej.tv#@#.advert_box
 !----------------------------------------------------------------------------------------------------!
 ||js.sapo.pt/SAPOWebAnalytics/
 ||flash.banners-service.info^
-||compteur-visite.com^$script,third-party
+! compteur-visite.com
+||compteur-visite.com^$third-party
+! histats.com
+||histats.com^$third-party
 ! pagefair.com (Measure ads blocked)
-||pagefair.com/measure.min.js$script,third-party
-||pagefair.com/ads.min.js$script,third-party
-||pagefair.com/static/adblock_detection/js/d.min.js$script,third-party
-||pagefair.net/measure.min.js$script,third-party
-||pagefair.net/ads.min.js$script,third-party
-||pagefair.net/static/adblock_detection/js/d.min.js$script,third-party
+||pagefair.com^$third-party
+||pagefair.net^$third-party
 !----------------------------------------------------------------------------------------------------!
 ! Ads
 !----------------------------------------------------------------------------------------------------!
