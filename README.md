@@ -35,7 +35,7 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (No more updated)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native Chrome (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit]()
 
 
 
@@ -43,15 +43,16 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: Filters for Adblockers
-* [Subscribe](http://bit.ly/aaklist1) *from jsbin.com*
-* [Subscribe](http://bit.ly/aaklist2) *from jsfiddle.net*
-* [Subscribe](http://bit.ly/aaklist3) *from reeksite.com*
+* [Subscribe](http://tinyurl.com/mulnz7l) *from github.com*
+* [Subscribe](http://tinyurl.com/mdf25f6) *from jsbin.com*
+* [Subscribe](http://tinyurl.com/le5kfdm) *from jsfiddle.net*
+* [Subscribe](http://tinyurl.com/mw4bbka) *from reeksite.com*
 
 #### Step 3: Userscript
-* [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
-* [Install](https://openuserjs.org/install/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
-* [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
-* [Install](http://reeksite.com/aak/anti-adblock-killer.user.js) *from reeksite.com*
+* [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
+* [Install](http://tinyurl.com/k39p6tz) *from openuserjs.org*
+* [Install](http://tinyurl.com/ong3bfe) *from github.com*
+* [Install](http://tinyurl.com/mfx7s42) *from reeksite.com*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
