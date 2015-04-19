@@ -849,7 +849,7 @@ plej.tv#@#.advert_box
 ! danslescoulisses.com
 @@||danslescoulisses.com/fr/min/$stylesheet
 ! vipleague
-vipleague.ws,vipleague.tv,vipleague.se,vipleague.me,vipleague.co,vipleague.sx,vipbox.tv,vipbox.co,vipboxsa.co,strikeout.co,homerun.re##SCRIPT + SCRIPT + SCRIPT + STYLE + div[id]
+vipleague.ws,vipleague.tv,vipleague.se,vipleague.me,vipleague.co,vipleague.sx,vipbox.tv,vipbox.co,vipbox.sx,vipboxsa.co,strikeout.co,homerun.re##SCRIPT + SCRIPT + SCRIPT + STYLE + div[id]
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
