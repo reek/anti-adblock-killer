@@ -142,6 +142,17 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: e24.no
 * Kill: online.ua
 * Kill: danslescoulisses.com
+* Kill: vipleague.ws
+* Kill: vipleague.tv
+* Kill: vipleague.se
+* Kill: vipleague.me
+* Kill: vipleague.co
+* Kill: vipleague.sx
+* Kill: vipbox.tv
+* Kill: vipbox.co
+* Kill: vipboxsa.co
+* Kill: strikeout.co
+* Kill: homerun.re
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
