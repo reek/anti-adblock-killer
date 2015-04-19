@@ -1,17 +1,15 @@
 ##Anti-Adblock Killer | Reek
 ![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
 
-[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png)](https://twitter.com/antiadbkiller) 
+[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate) 
  
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
->
 > **BEFORE REPORTING ANYTHING PLEASE READ THIS**
 
 
 ## About
 Anti-Adblock Killer is a userscript whose functionality is removes many protections used on some website that force the user to disable the AdBlocker. So you can continue to visit this website without having to disable your Adblocker.
-
 
 
 ## Donate
@@ -37,12 +35,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit]()
 
-
-
-
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
-#### Step 2: Filters for Adblockers
+#### Step 2: List
 * [Subscribe](http://tinyurl.com/mulnz7l) *from github.com*
 * [Subscribe](http://tinyurl.com/mdf25f6) *from jsbin.com*
 * [Subscribe](http://tinyurl.com/le5kfdm) *from jsfiddle.net*
@@ -1029,7 +1024,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## License 
-* Creative Commons BY-NC-SA
+* [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 
 ## Mirrors
 * [Github](https://github.com/reek/anti-adblock-killer)
@@ -1037,7 +1033,6 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * [Greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
 * [Openuserjs](https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek)
 * [MonkeyGuts](https://monkeyguts.com/code.php?id=351)
-
 
 
 ## Tags
