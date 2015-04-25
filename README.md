@@ -37,13 +37,13 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
-#### Step 2: List
+#### Step 2: FilterList
 * [Subscribe](http://tinyurl.com/mulnz7l) *from github.com*
 * [Subscribe](http://tinyurl.com/mdf25f6) *from jsbin.com*
 * [Subscribe](http://tinyurl.com/le5kfdm) *from jsfiddle.net*
 * [Subscribe](http://tinyurl.com/mw4bbka) *from reeksite.com*
 
-#### Step 3: Userscript
+#### Step 3: UserScript
 * [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
 * [Install](http://tinyurl.com/k39p6tz) *from openuserjs.org*
 * [Install](http://tinyurl.com/ong3bfe) *from github.com*
@@ -61,8 +61,8 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 
 
 ## Features
-* Detect & Kill Anti-Adblock Systems
-* Detect Anti-Adblock Killer Filterlist
+* Detect & Kill Anti-Adblocks
+* Detect list Anti-Adblock Killer
 * Check & Notify updates
 * More filters for Adblockers
 * [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
@@ -148,12 +148,24 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: vipleague.me
 * Kill: vipleague.co
 * Kill: vipleague.sx
+* Kill: vipleague.ch
 * Kill: vipbox.tv
 * Kill: vipbox.co
 * Kill: vipbox.sx
 * Kill: vipboxsa.co
 * Kill: strikeout.co
 * Kill: homerun.re
+* Kill: stream4free.eu
+* Kill: gsmpro.com.pl
+* Kill: mjmartino.eu
+* Kill: mairie-soustons.fr
+* Kill: lechia.net
+* Kill: rmprepusb.com
+* Kill: openpli.org
+* Kill: simply-debrid.com
+* Kill: FuckAdBlock (Fix)
+* Kill: Better Stop Adblock
+
 
 ##### Release 7.9 (April 11, 2015)
 * Improve: part script code
