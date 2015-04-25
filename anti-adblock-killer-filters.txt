@@ -865,6 +865,14 @@ linkdrop.net#@#.afs_ads
 forums.openpli.org###content > [style="text-align:center;"] > DIV[style="margin 0 auto;display:inline-block;width:728px; height:84px; border:1px solid #000000; text-align:center; font-family:century gothic, arial, helvetica, sans serif;padding:4px;font-weight:bold;"]
 ! simply-debrid.com
 simply-debrid.com#@##adsense
+! onvasortir.com
+@@||onvasortir.com^$elemhide
+@@||onvasortir.com/publicite.html$script
+@@||onvasortir.com/fuckadblock.js$script
+! urbeez.com
+@@||urbeez.com^$elemhide
+@@||urbeez.com/publicite.html$script
+@@||urbeez.com/fuckadblock.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
