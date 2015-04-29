@@ -163,6 +163,9 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: rmprepusb.com
 * Kill: openpli.org
 * Kill: simply-debrid.com
+* Kill: dzemploi.org
+* Kill: sparkylinux.org
+* Kill: captchme.com
 * Kill: FuckAdBlock (Fix)
 * Kill: Better Stop Adblock
 
