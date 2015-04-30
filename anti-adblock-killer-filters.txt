@@ -887,6 +887,8 @@ simply-debrid.com#@##adsense
 ! captchme.com
 @@||api.captchme.net/js/advertisement-min.js$script
 @@||api.captchme.net/ads.html$subdocument
+! demonoid.pw
+@@||demonoid.pw/show_ads_.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
