@@ -889,6 +889,10 @@ simply-debrid.com#@##adsense
 @@||api.captchme.net/ads.html$subdocument
 ! demonoid.pw
 @@||demonoid.pw/show_ads_.js$script
+! carambatv.ru
+@@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=carambatv.ru
+! rookie.com.pl
+@@||rookie.com.pl/jscripts/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
