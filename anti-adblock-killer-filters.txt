@@ -869,6 +869,8 @@ simply-debrid.com#@##adsense
 @@||onvasortir.com^$elemhide
 @@||onvasortir.com/publicite.html$script
 @@||onvasortir.com/fuckadblock.js$script
+@@||smartadserver.com/config.js?$script,domain=onvasortir.com
+@@||r.sascdn.com/diff/js/smart.js$script,domain=onvasortir.com
 ! urbeez.com
 @@||urbeez.com^$elemhide
 @@||urbeez.com/publicite.html$script
@@ -893,6 +895,8 @@ simply-debrid.com#@##adsense
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=carambatv.ru
 ! rookie.com.pl
 @@||rookie.com.pl/jscripts/ads.js$script
+! cwtv.com
+||dzxxxg6ij9u99.cloudfront.net/wb.js$script,domain=cwtv.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
