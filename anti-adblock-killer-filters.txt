@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 7.9
+! Version: 8.0
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
