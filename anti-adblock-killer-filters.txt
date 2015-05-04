@@ -897,6 +897,9 @@ simply-debrid.com#@##adsense
 @@||rookie.com.pl/jscripts/ads.js$script
 ! cwtv.com
 ||dzxxxg6ij9u99.cloudfront.net/wb.js$script,domain=cwtv.com
+! worldofgnome.org
+worldofgnome.org#@#.google-ad
+worldofgnome.org#@##wog-300x250-ads
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
