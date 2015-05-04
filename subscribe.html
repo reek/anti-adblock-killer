@@ -1,78 +1,73 @@
 <!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2015 by reekside (http://jsbin.com/AhewOcox/1/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
 <html>
+
 <head>
-<meta charset=utf-8 />
-<title>Anti-Adblock Killer | Filters for Adblockers</title>
-<style id="jsbin-css">
-@charset=utf-8;
-
-html {
-background-color:#eee;
-}
-
-body {
-  font-variant:small-caps;
-  margin: 5% 10%;
-  padding:5% 5%;
-  background-color:#fff;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 12px #555;
-  border-radius:5px;
-}
-
-img {
-  width:96px;
-  height:96px;
-}
-
-.subscribe {
-  border-radius:5px;
-  background-color:#c00; 
-  padding:10px 30px; 
-  border:1px solid #f00;
-  color:white;
-}
-
-.subscribe:hover {
-  background-color:#000; 
-  border:1px solid #333;
-  color:white;
-}
-
-.notice {
-  margin: 10px 10px;
-  padding: 10px;
-  background-color:#eee;
-  border: 1px solid #ccc;
-}
-</style>
+  <meta charset=utf-8 />
+  <title>AakList (Anti-Adblock Killer)</title>
+  <style>
+    @charset=utf-8;
+    @import url(http://fonts.googleapis.com/css?family=Oswald);
+    html {
+      background-color: #eee;
+    }
+    body {
+      font-family: "Oswald", Arial, Tahoma;
+      margin: 2% 10%;
+      padding: 5% 0%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 12px #555;
+      border-radius: 3px;
+    }
+    #container {
+      text-align: center;
+    }
+    .subscribe {
+      font-size: 20px;
+      border: 2px solid #DC143C;
+      background-color: #DC143C;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    .subscribe:hover {
+      background-color: #FFFFFF;
+      color: #DC143C;
+      text-decoration: none;
+    }
+    .notice {
+      color: #666;
+      margin: 3% 10%;
+      padding: 2%;
+      background-color: #F7F7F7;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
+
 <body>
-  
-  <center>
-  <img src="https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png"/>
-  <h1> Anti-Adblock Killer</h1>
-  
-  <h2>Filters for Adblockers</h2>
-    
-  <br>
-
-  <a class="subscribe" href="abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock Killer | Filters for Adblockers">Subscribe</a>
-
-    <br>
-    <br>
-    <div class="notice" >Compatible with Adblock & Adblock Plus</div>
-  </center>
-  
-
+  <div id="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png" />
+    </header>
+    <h1>AakList (Anti-Adblock Killer)</h1>
+    <section>
+      <a class="subscribe" href="abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=AakList (Anti-Adblock Killer)">Subscribe</a>
+      <div class="notice">Compatible with Adblock, Adblock Plus or uBlock Origin</div>
+    </section>
+    <footer>
+      <p>
+        <a href="https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek"><img style="max-width:100%;" alt="" src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png">
+        </a>
+        <a href="https://twitter.com/antiadbkiller"><img style="max-width:100%;" alt="" src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png">
+        </a>
+        <a href="https://github.com/reek/anti-adblock-killer#donate"><img style="max-width:100%;" alt="" src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/donate_circle_32.png">
+        </a>
+      </p>
+    </footer>
+  </div>
 </body>
+
 </html>

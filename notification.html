@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+	
+
+	
+    #aak-notice {
+      font-family: arial;
+      color: black;
+      font-variant: small-caps;
+      font-size: 14px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      box-shadow: 1px 1px 12px #555;
+      width: 400px;
+      max-width: 400px;
+      min-height: 100px;
+      top: 0px;
+      left: 0;
+      line-height: 1.2;
+      z-index: 999999;
+      position: fixed;
+      display: block;
+      background-color: white;
+      background-image: url("https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 80px;
+      margin: 10px;
+     
+    }
+    #aak-notice-content {
+      background-color: white;
+      width: 260px;
+      min-height: 70px;
+      margin: 20px 10px 10px 100px;
+      text-align: left;
+    }
+    .aak-notice-ok {
+      float: right;
+      bottom: 10px;
+      right: 10px;
+      position: absolute;
+      font-size: 12px;
+      border: 2px solid #DC143C;
+      background-color: #DC143C;
+      color: #FFFFFF;
+      padding: 5px 10px;
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+    }
+    .aak-notice-ok:hover {
+      background-color: #FFFFFF;
+      color: #DC143C;
+      text-decoration: none;
+    }
+    #aak-notice-close {
+      float: right;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+    }
+@-webkit-keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+   animation-duration: 1s;
+       -webkit-animation-name: bounceInLeft;
+    -webkit-animation-duration: 1s; 
+}
+
+
+
+
+    @-webkit-keyframes bounceOutLeft {
+      20% {
+        opacity: 1;
+        -webkit-transform: translate3d(20px, 0, 0);
+        transform: translate3d(20px, 0, 0);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+      }
+    }
+    @keyframes bounceOutLeft {
+      20% {
+        opacity: 1;
+        -webkit-transform: translate3d(20px, 0, 0);
+        transform: translate3d(20px, 0, 0);
+      }
+      100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+      }
+    }
+    .bounceOutLeft {
+  animation-name: bounceOutLeft;
+   animation-duration: 1s;
+       -webkit-animation-name: bounceOutLeft;
+    -webkit-animation-duration: 1s; 
+    }
+	
+	
+	@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 3s; 
+    animation-name: fadeIn;
+    animation-duration: 3s;
+  
+}
+	
+
+	
+	
+	
+	
+  </style>
+</head>
+
+<body>
+
+  <div id="aak-notice" class="bounceInLeft">
+    <img id="aak-notice-close" class="fadeIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEXZIw8AAADZIw/ZIw/ZIw/ZIw/ZIw/ZIw/ZIw/ZIw/ZIw/UUV/XAAAAC3RSTlP+AASmuIRLDUqDQCvuMRAAAABZSURBVAjXYxBUKxQUFE8SZBAMMBIUVGYVZBBlYFYUMmCYyJDAwGCkzMDAxQAkWByAHAagMBAwKzIIAoWAAkBdgg5ASUEEAy4FVwzXDjOQA2ZFIMJSQQ2IMwBiUgvX9r5eBQAAAABJRU5ErkJggg==" />
+    <div id="aak-notice-content" class="fadeIn"><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.<a class="aak-notice-ok" href="https://www.developphp.com/">Install</a>
+    </div>
+  </div>
+  
+  
+  
+  <div id="" class="test1"></div>
+  <!-- 
+<a id="aak-notice-cancel" title="cancel" href="javascript:void(0)">X</a>
+
+<b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p><a class="aak-notice-btn" href="https://www.developphp.com/">Install</a>
+
+<b>Note:</b> It seems that you have not subscribed to <b>AakList (Anti-Adblock Killer )</b>, this list is necessary for the proper functioning. <a class="aak-notice-btn" href="' + Aak.subscribeURL + '" target="_blank">Subscribe</a>
+
+
+
+<b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p><a class="aak-notice-btn" href="https://www.developphp.com/">Install</a>
+
+<b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p><a class="aak-notice-btn" href="https://www.developphp.com/">Install</a>
+-->
+  <script>
+    document.querySelector('#aak-notice-close').addEventListener("click", function() {
+      document.querySelector('#aak-notice').className = 'bounceOutLeft';
+      setTimeout(function() {
+        document.querySelector('#aak-notice').style.display = 'none';
+      }, 1000)
+    });
+
+    console.log(document.querySelector('#aak-notice').clientWidth)
+  </script>
+
+</body>
+
+</html>
