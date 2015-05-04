@@ -900,6 +900,18 @@ simply-debrid.com#@##adsense
 ! worldofgnome.org
 worldofgnome.org#@#.google-ad
 worldofgnome.org#@##wog-300x250-ads
+! bitzfree.com
+@@||bitzfree.com/js/*.js$script
+@@||go.padsdel.com/lg.php$image,domain=bitzfree.com
+@@||cdn.adshexa.com/show_ads.php$image,domain=bitzfree.com
+@@||padsdel.cdnads.com^$image,domain=bitzfree.com
+@@||adsrvmedia.adpdx.com^$image,domain=bitzfree.com
+@@||cdn.adnxs.com^$image,domain=bitzfree.com
+@@||cdn.adk2.co^$image,domain=bitzfree.com
+@@||cdn.adshexa.com^$image,domain=bitzfree.com
+@@||www.adhexa.com^$image,domain=bitzfree.com
+@@||rhtag.com^$image,domain=bitzfree.com
+@@||cdn.adnxs.com^$image,domain=bitzfree.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
