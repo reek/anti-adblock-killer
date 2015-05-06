@@ -867,14 +867,10 @@ forums.openpli.org###content > [style="text-align:center;"] > DIV[style="margin 
 simply-debrid.com#@##adsense
 ! onvasortir.com
 @@||onvasortir.com^$elemhide
-@@||onvasortir.com/publicite.html$script
-@@||onvasortir.com/fuckadblock.js$script
-@@||smartadserver.com/config.js?$script,domain=onvasortir.com
-@@||r.sascdn.com/diff/js/smart.js$script,domain=onvasortir.com
+@@||onvasortir.com^$script
 ! urbeez.com
 @@||urbeez.com^$elemhide
-@@||urbeez.com/publicite.html$script
-@@||urbeez.com/fuckadblock.js$script
+@@||urbeez.com^$script
 ! movie-box.pl + excluded AakScript
 @@||movie-box.pl^$elemhide
 @@||movie-box.pl/js/fuckadblock.js$script
@@ -912,6 +908,19 @@ worldofgnome.org#@##wog-300x250-ads
 @@||www.adhexa.com^$image,domain=bitzfree.com
 @@||rhtag.com^$image,domain=bitzfree.com
 @@||cdn.adnxs.com^$image,domain=bitzfree.com
+! rdio.com
+!rdio.com#@#.ad_background
+!rdio.com#@#.ad_bottom
+!rdio.com#@#.ad_container
+!rdio.com#@#.ad_text
+! trafictube.ro
+trafictube.ro#@#.widget-adv
+! uptobox.com - http://paste2.org/GLBaKYC7
+@@||uptobox.com^$elemhide
+@@||uptostream.com^$elemhide
+@@||pagead2.googlesyndication.com/simgad/$image,domain=uptobox.com|uptostream.com
+! bitcoiner.net
+litecoiner.net,bitcoiner.net#@##ad-top
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
