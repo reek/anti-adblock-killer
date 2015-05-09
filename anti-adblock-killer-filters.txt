@@ -921,6 +921,8 @@ litecoiner.net,bitcoiner.net#@##ad-top
 @@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js$script
 ! softpedia.com
 softpedia.com#@#.ad
+! gamejolt.com
+gamejolt.com###pre-roll-ad-container
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
