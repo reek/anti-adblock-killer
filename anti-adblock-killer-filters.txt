@@ -918,7 +918,7 @@ uptobox.com#@#.ad-leader > div[id]
 ! bitcoiner.net
 litecoiner.net,bitcoiner.net#@##ad-top
 ! mangasproject.com.br (http://brazilunblock.info/)
-@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js$script
+@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js$script,xmlhttprequest
 ! softpedia.com
 softpedia.com#@#.ad
 ! gamejolt.com
