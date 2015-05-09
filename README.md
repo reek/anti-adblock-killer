@@ -133,7 +133,10 @@ Anti-Adblock Killer is a userscript whose functionality is removes many protecti
 * Kill: bitcoiner.net
 * Kill: uptostream.com
 * Kill: uptobox.com
-
+* Kill: game-state.com
+* Kill: gamejolt.com
+* Kill: mangasproject.com.br
+* Kill: softpedia.com
 
 ##### Release 8.0 (May 3, 2015)
 * Improve: fixes and improvement of the entire code

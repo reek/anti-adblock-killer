@@ -70,7 +70,7 @@
 ! FuckAdBlock
 ! http://www.sitexw.fr/fuckadblock/
 ! https://github.com/sitexw/FuckAdBlock
-/fuckadblock.js|$script
+/fuckadblock.js$script
 ! AdBlock Alerter
 ! https://github.com/wp-plugins/adblock-alerter
 ! +rules on aakscript
@@ -122,6 +122,8 @@
 /js/an-scripts.js$script
 /js/an-scripts.min.js$script
 ||b-website.com/wp-content/uploads/an-temp/RrW75pkNMbSB.js$script
+! AdUnBlock - http://adunblock.com
+||adunblock.com/code/*.html
 ! Anti-Adblock (from easylist) -------------------------------------------------------------
 /ad-blocking-detector/*
 /adb_detector.
@@ -324,9 +326,6 @@ anisearch.com##.box-error
 @@||aniroleplay.com/adframe_*.js$script
 ! roleplayer.me
 @@||roleplayer.me/adframe_*.js$script
-! uptobox.com
-uptobox.com#@#.ad-leader
-uptobox.com#@#.ad-leader > div[id]
 ! dailybitcoins.org
 dailybitcoins.org#@#.ad-img
 @@||dailybitcoins.org/banners/$image
@@ -415,9 +414,6 @@ hentai-flix.net##.trs_sticky_notice_text_box
 ftlwiki.com###top-banner-advert
 ! watcharab.com
 watcharab.com#@##adblock
-! uptobox.com
-uptobox.com#@##adblocktrap
-@@||advertstream.com/banners/$image,domain=uptobox.com
 ! privateinsta.com
 @@||privateinsta.com/javascript/rqrkrm.js$script
 @@||cpalead.com/mygateway.php?$domain=privateinsta.com,script
@@ -915,12 +911,16 @@ worldofgnome.org#@##wog-300x250-ads
 !rdio.com#@#.ad_text
 ! trafictube.ro
 trafictube.ro#@#.widget-adv
-! uptobox.com - http://paste2.org/GLBaKYC7
-@@||uptobox.com^$elemhide
-@@||uptostream.com^$elemhide
-@@||pagead2.googlesyndication.com/simgad/$image,domain=uptobox.com|uptostream.com
+! uptobox.com
+uptobox.com#@##adblocktrap
+uptobox.com#@#.ad-leader
+uptobox.com#@#.ad-leader > div[id]
 ! bitcoiner.net
 litecoiner.net,bitcoiner.net#@##ad-top
+! mangasproject.com.br (http://brazilunblock.info/)
+@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js$script
+! softpedia.com
+softpedia.com#@#.ad
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1126,6 +1126,16 @@ turkdown.com###duyuru
 ||nefroto.net^$script,domain=dada44230.fr
 ! generatupremium.biz
 generatupremium.biz##[href="http://www.hostunder.net/windows-rdp/"]
+! generatorlinkpremium.com
+@@||generatorlinkpremium.com/js/ads.js$script
+generatorlinkpremium.com##.thirdsky
+generatorlinkpremium.com##.secondsky
+! game-state.com
+@@||static.game-state.com/js/adblock.js$script
+! gamejolt.com
+gamejolt.com###ima-ad-container
+! mangasproject.net.br
+@@||mangasproject.net.br/assets/js/lib/controllers/Leitor/ads.js$script
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
@@ -1458,6 +1468,4 @@ go4up.com##[href^="http://liversely.com/g4u?q="]
 go4up.com##[href^="http://go.ad2up.com/afu.php?id="]
 ! academia.edu
 @@||api.academia.edu/v0/users/*/stats$script
-! uptobox.com
-uptobox.com##[href^="http://ads.uptobox.com/www/delivery/ck.php"]
 
