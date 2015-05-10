@@ -918,11 +918,15 @@ uptobox.com#@#.ad-leader > div[id]
 ! bitcoiner.net
 litecoiner.net,bitcoiner.net#@##ad-top
 ! mangasproject.com.br (http://brazilunblock.info/)
-@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js$script,xmlhttprequest
+@@/ads.js$domain=mangasproject.com.br
+@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js
 ! softpedia.com
 softpedia.com#@#.ad
 ! gamejolt.com
 gamejolt.com###pre-roll-ad-container
+! ogmods.net
+@@||yllix.com/banner_show.php$subdocument,domain=ogmods.net
+yllix.com##[href^="http://click2.yllix.com/"]
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
