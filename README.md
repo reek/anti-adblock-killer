@@ -127,6 +127,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+
+##### Release 8.1 (May 11, 2015)
 * Kill: worldofgnome.org
 * Kill: foot-live.info
 * Kill: litecoiner.net
