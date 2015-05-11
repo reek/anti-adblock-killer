@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 8.0
+! Version: 8.1
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
@@ -70,7 +70,7 @@
 ! FuckAdBlock
 ! http://www.sitexw.fr/fuckadblock/
 ! https://github.com/sitexw/FuckAdBlock
-/fuckadblock.js$script
+@@/fuckadblock.js$script
 ! AdBlock Alerter
 ! https://github.com/wp-plugins/adblock-alerter
 ! +rules on aakscript
@@ -927,6 +927,12 @@ gamejolt.com###pre-roll-ad-container
 ! ogmods.net
 @@||yllix.com/banner_show.php$subdocument,domain=ogmods.net
 yllix.com##[href^="http://click2.yllix.com/"]
+! sharecash.org
+@@||widget.sharecash.org/jsclick.php$script
+! naekranie.pl
+naekranie.pl###niceMessage
+! turbogenerator.info
+@@||turbogenerator.info/adblock.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!

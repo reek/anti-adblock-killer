@@ -138,6 +138,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: mangasproject.com.br
 * Kill: softpedia.com
 * Kill: ogmods.net
+* Kill: sharecash.org
+* Kill: naekranie.pl
+* Kill: turbogenerator.info
+* Fix: FuckAdBlock
+* Fix: AdUnBlockPremium
 
 ##### Release 8.0 (May 3, 2015)
 * Improve: fixes and improvement of the entire code
