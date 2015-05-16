@@ -127,6 +127,22 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Kill: adultmult.tv (script)
+* Kill: vgtv.no (script)
+* Kill: turkanime.tv (script)
+* Kill: givemesome.tips
+* Kill: tek.no
+* Kill: gamer.no
+* Kill: teknofil.no
+* Kill: insidetelecom.no
+* Kill: prisguide.no
+* Kill: diskusjon.no
+* Kill: teknojobb.no
+* Kill: akam.no
+* Kill: hardware.no
+* Kill: fontsquirrel.com
+* Kill: zerozero.pt
+* Kill: annuaire-bleu.net
 
 ##### Release 8.1 (May 11, 2015)
 * Kill: worldofgnome.org
