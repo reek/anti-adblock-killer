@@ -954,7 +954,7 @@ seansik.tv#@#.text-ads
 seansik.tv#@#.text-ad-links
 ! annuaire-bleu.net
 annuaire-bleu.net#@##adblocktest
-@@||pagead2.googlesyndication.com/pagead/$image
+@@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
