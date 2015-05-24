@@ -73,18 +73,26 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 
 ## Help
-1. Check if the script manager is enabled (Greasemonkey, Tampermonkey, NinjaKit, etc...).
-2. Check if Anti-Adblock Killer is enabled.
-3. Check if you have installed the latest version of Anti-Adblock Killer (Step 3).
-4. Check if you have subscribed to Anti-Adblock Killer (Step 2).
-5. Check if you have another userscript that might interfere with Anti-Adblock Killer.
-6. Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub)).
-7. Remove duplicates Anti-Adblock Killer (Userscripts/Filters)
-8. Remove or disable personal filters.
-9. Check if the site is in "Supported Sites" or in "Changelog".
-  1. If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
-  2. If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
-10. Consult Discussions or Issues
+* Check if you have only one Adblocker enabled. (Adblock, Adblock Plus or uBlock Origin)
+* Check if the script manager is enabled (Greasemonkey, Tampermonkey, NinjaKit, etc...).
+* Check if you have installed the latest version of Anti-Adblock Killer Script (Step 3).
+* Check if you have subscribed to Anti-Adblock Killer List (Step 2).
+* Check if Anti-Adblock Killer Script is enabled.
+* Check if Anti-Adblock Killer List is enabled.
+* Try update or re-install Anti-Adblock Killer Script.
+* Try update or re-subscribe Anti-Adblock Killer List.
+* Check if you have another userscript that might interfere with Anti-Adblock Killer.
+* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script).
+* Remove duplicates Anti-Adblock Killer (Script/List).
+* Remove or disable personal filters.
+* Check if the site is in "Supported Sites" or in "Changelog".
+  * If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
+  * If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+* Try with another browser.
+* Consult Discussions or Issues
+
+
+
 
 
 ## Supported Browsers
@@ -127,9 +135,13 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Exclude: xemvtv.net (script)
 * Kill: adultmult.tv (script)
 * Kill: vgtv.no (script)
 * Kill: turkanime.tv (script)
+* Kill: kisscartoon.me (script)
+* Kill: apkmirror.com (script)
+* Kill: pregen.net (script)
 * Kill: givemesome.tips
 * Kill: tek.no
 * Kill: gamer.no
@@ -143,6 +155,30 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: fontsquirrel.com
 * Kill: zerozero.pt
 * Kill: annuaire-bleu.net
+* Kill: ville-ideale.com
+* Kill: playbitco.in
+* Kill: prizebitcoins.com
+* Kill: bad-boys-bit.co.in
+* Kill: rv-b.com
+* Kill: mojevideo.sk
+* Kill: zeperfs.com
+* Kill: vg.no
+* Kill: aftenposten.no
+* Kill: bt.no
+* Kill: aftenbladet.no
+* Kill: fvn.no
+* Kill: saikoanimes.net
+* Kill: tusmangas.net
+* Kill: moondoge.co.in
+* Kill: youtubeproxy.info
+* Kill: audipassion.com
+* Kill: shqip-tv.info
+* Kill: razem.tv
+* Kill: robcoins.eu
+* Kill: elenabitco.in
+* Kill: freebetco.in
+* Kill: qoinfaucet.com
+* Update: README help section
 
 ##### Release 8.1 (May 11, 2015)
 * Kill: worldofgnome.org
