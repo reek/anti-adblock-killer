@@ -142,6 +142,14 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: kisscartoon.me (script)
 * Kill: apkmirror.com (script)
 * Kill: pregen.net (script)
+* Kill: player.pl (script)
+* Kill: crash-aerien.aero (script)
+* Kill: hackintosh.zone (script)
+* Kill: notre-planete.info (script)
+* Kill: ville-ideale.com (script)
+* Kill: wtfbit.ch (script)
+* Kill: zeberka.pl (script)
+* Kill: kozaczek.pl (script)
 * Kill: givemesome.tips
 * Kill: tek.no
 * Kill: gamer.no
@@ -178,6 +186,17 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: elenabitco.in
 * Kill: freebetco.in
 * Kill: qoinfaucet.com
+* Kill: hdkinoteatr.com
+* Kill: t3n.de
+* Kill: bricozone.fr
+* Kill: heavenly-blue.net
+* Kill: find-my-search.com
+* Kill: filmovizija.in
+* Kill: filmovizija.com
+* Kill: vide-greniers.org
+* Kill: comics-sanctuary.com
+* Kill: planete205.com
+* Kill: planete-205.com
 * Update: README help section
 
 ##### Release 8.1 (May 11, 2015)
