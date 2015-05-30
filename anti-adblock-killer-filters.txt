@@ -362,8 +362,6 @@ ukvarminting.com#@#.ipsAd
 tvdesporto.com#@##ads1
 sporttvdireto.com#@##ads1
 ||sporttvdireto.com/ads/popunder.php$popup
-! notre-planete.info
-notre-planete.info###abp1
 ! elahmad.com
 elahmad.com#@##adblock
 ! z0r.de
@@ -800,6 +798,10 @@ vg.no,aftenposten.no,bt.no,aftenbladet.no,fvn.no###topAd + #content > [style="ri
 flightradar24.com##.noads
 ! ville-ideale.com
 ville-ideale.com###espace
+ville-ideale.com###enc
+ville-ideale.com###antyp
+! notre-planete.info
+notre-planete.info###abp1
 ! fan-de-cinema.com
 @@||c.ad6media.fr/l.js$domain=fan-de-cinema.com
 ! xiaopan.co
@@ -831,7 +833,11 @@ theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
 ! filmovizija.com
-||adpro.ml/ncode.js$script,domain=filmovizija.com
+||filmovizija.com/popads-adblock.js$script
+||filmovizija.com/parent.js$xmlhttprequest
+! filmovizija.in
+||filmovizija.in/popads-adblock.js$script
+||filmovizija.in/parent.js$xmlhttprequest
 ! umahdroid.blogspot.com
 umahdroid.blogspot.com###energysaving
 ! streaming-foot.me
@@ -956,8 +962,6 @@ seansik.tv#@#.text-ad-links
 ! annuaire-bleu.net
 annuaire-bleu.net#@##adblocktest
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
-! ville-ideale.com
-ville-ideale.com###enc[style="display: block;"]
 ! playbitco.in
 @@||playbitco.in/show_ads.js$script
 ! prizebitcoins.com
@@ -970,10 +974,6 @@ mojevideo.sk#@##video_ad
 ! tusmangas.net
 tusmangas.net#@##adsense
 ||tusmangas.net/ama/oso.js$script
-! moonbit.co.in
-moonbit.co.in#@#.adsbygoogle
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=moonbit.co.in
-@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=moonbit.co.in
 ! youtubeproxy.info
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=youtubeproxy.info
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=youtubeproxy.info
@@ -992,6 +992,31 @@ opitz-online.com#@#.adsbygoogle
 ! freebetco.in
 ! qoinfaucet.com
 @@/show_ads.js$script,domain=bithourly.com|dailyfreebits.com|jewelrybitco.in|welovebtc.com
+! hdkinoteatr.com
+@@||moonwalk.cc/assets/fuckadblock-*.js$script
+! player.pl (hide just notice but fixed by AakScript)
+player.pl###vod
+! onet.pl
+||lib.onet.pl/s.csr/adp/adp.js$script
+! t3n.de
+t3n.de##.abContentMsg
+t3n.de##.adb
+! bricozone.fr
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bricozone.fr
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=bricozone.fr
+! heavenly-blue.net
+@@||heavenly-blue.net^$elemhide
+! find-my-search.com
+@@||find-my-search.com/includes/js/adblockDetect/_advertisement.js$script
+! vide-greniers.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vide-greniers.org
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=vide-greniers.org
+vide-greniers.org##A[class^="replacement_"]
+! comics-sanctuary.com
+@@||smartadserver.com/config.js$script,domain=comics-sanctuary.com
+@@||r.sascdn.com/diff/js/smart.js$script,domain=comics-sanctuary.com
+! planete205.com / planete-205.com
+@@||googleads.g.doubleclick.net^$image,domain=planete205.com|planete-205.com
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -1025,6 +1050,10 @@ opitz-online.com#@#.adsbygoogle
 ||sender.contentjs.com^$popup
 ||sports747.com^$popup
 ||sexgangsters.com^$popup
+||atrx7.com^$popup
+||dealxplorer.org^$popup
+||aliexpress.com^$popup
+||offer.alibaba.com^$popup
 ! Advertisers ---------------------------------------------------------------------------------------
 ! linkbucks.com (Visit Script)
 ||linkbucks.com/visitScript/$script,third-party
@@ -1114,6 +1143,8 @@ opitz-online.com#@#.adsbygoogle
 ||cdn.shorte.st/link-converter.min.js$script,third-party
 ! bc.vc
 ||bc.vc/js/link-converter.js$script,third-party
+! gca.sh
+||gca.sh/static/linkreplacer.js$script,third-party
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
@@ -1411,6 +1442,9 @@ foot-live.info###timer3
 ! tvfree.me
 antena.tvfree.me###layer1
 ||tvfree.me/pub/$subdocument,image
+! mytvfree.me
+antena.mytvfree.me###adn1
+antena.mytvfree.me###template01_border
 ! nowwatchtvlive.me
 nowwatchtvlive.me##[id^="bannerfloat"]
 nowwatchtvlive.me##DIV[style="padding-top:5px;float:left;width:100%;font-size:13px;line-height:26px;height:31px;top: 12px;z-index:9999;text-align:left"]
