@@ -1,9 +1,9 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name Anti-Adblock Killer | Reek
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
 // @author Reek | reeksite.com
-// @version 8.1
+// @version 8.2
 // @encoding utf-8
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -35,9 +35,9 @@
   Thanks
 =======================================================
 
-  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung
+  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf
 
-  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx
+  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT
 
   Users: Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
 
@@ -67,7 +67,7 @@
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '8.1',
+  version : '8.2',
   scriptid : 'gJWEp0vB',
   homeURL : 'https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -79,7 +79,7 @@ Aak = {
   subscribeURL : 'abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&title=Anti-Adblock%20Killer%20|%20Filters%20for%20Adblockers',
   listURL : "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
   iconURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
-  excludes : ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "reeksite.com", "stackoverflow.com", "tampermonkey.net", "tumblr.com", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com"],
+  excludes : ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "reeksite.com", "stackoverflow.com", "tampermonkey.net", "tumblr.com", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com", "seansik.tv", "xemvtv.net", "vod.pl"],
   debug : {
     log : true,
     exclude : false,
@@ -1381,7 +1381,7 @@ Aak = {
       }
     },
     bait_tester : {
-      host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'filmovizija.com', 'filmovizija.net', 'online.ua'],
+      host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'online.ua'],
       onStart : function () {
         Aak.addElement('div#tester');
       }
@@ -1515,7 +1515,7 @@ Aak = {
       }
     },
     disableAlertbox : {
-      host : ['drivearabia.com', 'putlocker.com', 'doatoolsita.altervista.org', 'sockshare.com', 'free-movie-home.com', 'pc.online143.com', 'pregen.net', 'kooora.com', 'str3amtv.co.nr', 'str3amtv.altervista.org', 'str3am.altervista.org', 'filecom.net', 'pipocas.tv', 'generatupremium.biz', 'mega-debrid.eu', 'premiumst0re.blogspot.com', 'dl-protect.com'],
+      host : ['drivearabia.com', 'putlocker.com', 'doatoolsita.altervista.org', 'sockshare.com', 'free-movie-home.com', 'pc.online143.com', 'kooora.com', 'str3amtv.co.nr', 'str3amtv.altervista.org', 'str3am.altervista.org', 'filecom.net', 'pipocas.tv', 'generatupremium.biz', 'mega-debrid.eu', 'premiumst0re.blogspot.com', 'dl-protect.com'],
       onAlways : function () {
         Aak.uw.alert = function () {};
       }
@@ -1549,6 +1549,13 @@ Aak = {
         }
       }
     },
+    pregen_net : {
+      host : ['pregen.net'],
+      onStart : function () {
+		// skip page info
+        Aak.setCookie('pginfo', 1);
+      }
+    },	
     onvasortir_com : {
       host : ['onvasortir.com'],
       onAlways : function () {
@@ -1556,6 +1563,36 @@ Aak = {
         Aak.uw.sas = {};
       }
     },	
+    ville_ideale_com : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/258
+      // code: http://pastebin.com/16mnmeMc
+      host : ['ville-ideale.com'],
+      onAlways : function () {
+        // +abp rule alt solution
+        Aak.uw.exec_sp = function () {};
+      }
+    },
+    notre_planete_info : {
+      // issue: 
+      // code: http://pastebin.com/qrS6QGGE
+      host : ['notre-planete.info'],
+      onAlways : function () {
+        // +abp rule alt solution
+        Aak.uw.pubpop = function () {};
+      }
+    },
+    tek_no : {
+      host : ['tek.no'],
+      onAlways : function () {
+        Aak.uw.sas = {};
+      }
+    },	
+    apkmirror_com : {
+      host : ['apkmirror.com'],
+      onAlways : function () {
+        Aak.uw.doCheck = function () {};
+      }
+    },		
     anizm_com : {
       host : ['anizm.com'],
       onAlways : function () {
@@ -1756,15 +1793,17 @@ Aak = {
       }
     },
     moondoge_co_in : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/384
       // issue: https://github.com/reek/anti-adblock-killer/issues/232
       // issue: https://github.com/reek/anti-adblock-killer/issues/233
       // issue: https://github.com/reek/anti-adblock-killer/issues/236
       host : ['moondoge.co.in', 'moonliteco.in', 'moonbit.co.in', 'faucet.bitcoinzebra.com'],
       onIdle : function () {
-        Aak.removeElement('#AB');
+        Aak.removeElement('#AB, #E442Dv, #eCC5h');
       }
     },
     bitcoiner_net : {
+	  // issue: 
       host : ['bitcoiner.net', 'litecoiner.net'],
       onStart : function () {
         Aak.addElement('div#tester');
@@ -1787,18 +1826,47 @@ Aak = {
         };
       }
     },
+    adultmult_tv : { // antiblock.org
+      // issue: https://github.com/reek/anti-adblock-killer/issues/366
+      host : ['adultmult.tv'],
+      onAlways : function () {
+        Aak.uw.ee4e = {};
+      }
+    },
+    turkanime_tv : { 
+      // issue: http://tinyurl.com/n6mzdxs
+      host : ['turkanime.tv'],
+      onAlways : function () {
+        Aak.uw.BlokKontrol = {};
+      }
+    },
+    turkanime_tv : { 
+      // issue: http://tinyurl.com/n6mzdxs
+      host : ['turkanime.tv'],
+      onAlways : function () {
+        Aak.uw.adblockblock = function (){};
+      }
+    },	
     hackintosh_zone : {
+	  // issue: 
       // issue: https://greasyfork.org/fr/forum/discussion/3786/
       host : ['hackintosh.zone'],
       onStart : function () {
-        Aak.addStyle(".adsbygoogle, #topframead { height: 5px; }");
-        Aak.addElement('div.adsbygoogle');
+        Aak.addStyle("#impactradious, #topframead { height: 5px; }");
+        Aak.addElement('div#impactradious');
         Aak.addElement('div#topframead');
       },
       onAlways : function () {
         Aak.uw.writeHTMLasJS = function () {};
       }
     },
+    wtfbit_ch : {
+	  // issue: 
+      host : ['wtfbit.ch'],
+      onAlways : function () {
+        Aak.uw.writeHTMLasJS = function () {};
+      }
+    },	
     bitvisits_com : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/266
       host : ['bitvisits.com'],
@@ -1846,22 +1914,19 @@ Aak = {
         Aak.removeElement('.ad-img');
       }
     },
+    kozaczek_zeberka : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/414
+      host : ['kozaczek.pl', 'zeberka.pl'],
+      onStart : function () {
+        Aak.setCookie('ablc', 1);
+        Aak.setCookie('cookie_policy', 1);
+      }
+    },
     psarips_com : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/153
       host : ['psarips.com'],
       onStart : function () {
         Aak.addElement('div#advert');
-      }
-    },
-    filmovizija_domains : { // many changes
-      host : ['filmovizija.com', 'filmovizija.net'],
-      onStart : function () {
-        // code are obfuscated
-        Aak.setCookie('ipsos', 0);
-      },
-      onIdle : function () {
-        Aak.setCookie('ipsos', 0);
-        //Aak.removeElement('body div[style*="position: fixed"]');
       }
     },
     extratorrent_domains : {
@@ -1876,7 +1941,7 @@ Aak = {
       }
     },
     tny_cz : {
-      host : ['tny.cz'],
+      host : ['tny.cz','pasted.co'],
       onStart : function () {
         // prevent popup
         Aak.setCookie('__.popunderCap', 1);
@@ -2177,13 +2242,14 @@ Aak = {
     // --------------------------------------------------------------------------------------------
     // Players
     // --------------------------------------------------------------------------------------------
-    kissanime_com : { // fixed 2014.08.11
+    kissanime_Kisscartoon : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/381
       // issue: https://github.com/reek/anti-adblock-killer/issues/302
       // issue: https://github.com/reek/anti-adblock-killer/issues/257
       // issue: https://github.com/reek/anti-adblock-killer/issues/178
       // issue: https://github.com/reek/anti-adblock-killer/issues/196
       // issue: https://github.com/reek/anti-adblock-killer/issues/56
-      host : ['kissanime.com'],
+      host : ['kissanime.com','kisscartoon.me'],
       onStart : function () {
         // Solution 1
         Aak.uw.DoDetect2 = null;
@@ -2289,7 +2355,7 @@ Aak = {
     // Poland
     wp_domains : {
       // https://github.com/reek/anti-adblock-killer/issues/300
-      host : ['biztok.pl', 'wp.tv', 'wp.pl', 'sportowefakty.pl', 'kafeteria.tv', '.wrzuta.pl', 'pudelek.tv', 'komediowo.pl', 'sfora.pl', 'autokrata.pl', 'sportfan.pl', 'wawalove.pl', 'hotmoney.pl', 'aleseriale.pl', 'babol.pl', 'snobka.pl', 'nocoty.pl'],
+      host : ['biztok.pl', 'wp.tv', 'wp.pl', 'sportowefakty.pl', 'kafeteria.tv', '.wrzuta.pl', 'pudelek.tv', 'komediowo.pl', 'sfora.pl', 'autokrata.pl', 'sportfan.pl', 'wawalove.pl', 'hotmoney.pl', 'aleseriale.pl', 'babol.pl', 'snobka.pl', 'nocoty.pl', 'money.pl'],
       onIdle : function () {
         //Aak.dumpDOM(3000);
         setTimeout(function () {
@@ -2325,7 +2391,7 @@ Aak = {
                 try {
                   var res = result.responseText;
                   var obj = JSON.parse(res);
-                  Aak.player.html5(elem.parentNode, {
+                  Aak.player.html5(elem, {
                     autostart : autostart,
                     file : obj.url[0].url
                   });
@@ -2336,6 +2402,25 @@ Aak = {
             });
           }
 
+          var replacePlayerlivestream = function (lid, elem, autostart) {
+            Aak.request({
+              // http://wp.tv/player/lid,1354,ts,1432569945076,livestream.json
+              url : 'http://wp.tv/player/lid,' + lid + ',ts,' + Date.now() + ',livestream.json',
+              onload : function (result) {
+                try {
+                  var res = result.responseText;
+                  var obj = JSON.parse(res);
+                  Aak.player.html5(elem, {
+                    autostart : autostart,
+                    file : obj.clip.url[0].url[0]
+                  });
+                } catch (e) {
+                  console.log(result, 'error', player);
+                }
+              }
+            });
+          }
+		  
 		  // Using an external flash player is impossible because protected by crossdomain.xml
           var players = document.querySelectorAll('.wp-player'); //  #Player0, #Player1, #mainPlayer
           if (players.length) {
@@ -2352,12 +2437,21 @@ Aak = {
 				// pudelek.wrzuta.pl: http://tinyurl.com/l8jo5v2
 				// pudelek.tv: http://tinyurl.com/klyzh6r
                 // pudelek.tv (triple): http://tinyurl.com/n9b27o2
+				// film.wp.pl: http://tinyurl.com/q7k5bxp
                 var script = embedvideos[i];
                 var key = /key=(\w+)/.exec(script.src)[1];
                 var channel = /login=(\w+)/.exec(script.src)[1];
                 var autostart = /autoplay/.test(script.src);
-                replacePlayerWrzuta(key, channel, script, autostart);
+                replacePlayerWrzuta(key, channel, player, autostart);
                 Aak.log('embed_video.js')
+              }
+              else if (/lid=/.test(script.innerHTML)) {
+                // wiadomosci.wp.pl: http://tinyurl.com/pdwx7na
+			    // http://wp.tv/player/lid,1354,ts,1432569945076,livestream.json
+			    // http://get.wp.tv/?lid=1354
+                var lid = script.innerHTML.match(/lid[=,]([0-9]+)/);
+				replacePlayerlivestream(lid, player, true);
+				Aak.log('livestream lid');
               }
               else if (titles.length && /mid/.test(titles.href)) {
                 // sportowefakty.pl: http://tinyurl.com/l6zabcx
@@ -2412,27 +2506,44 @@ Aak = {
       }
     },
     tvn_pl : {
+      // issue. https://github.com/reek/anti-adblock-killer/issues/192
       // test: http://tinyurl.com/mcwtz27
+      // source: http://tinyurl.com/ohbvz4r
+      // proxy: http://www.proxy.xmc.pl
       host : ['tvn.pl', 'tvn24.pl', 'player.pl'],
-      onStart : function () {
-        /*
-        // Start EventListener
-        window.addEventListener('DOMNodeInserted', function (e) {
-          var player = e.target;
-          if (player && player.data && /adServerURL/.test(player.data)) {
-            Aak.player.custom(player, {
-              src : 'http://admin.brightcove.com/viewer/us20140807.1543/BrightcoveBootloader.swf'
-            }, {
-              set : {
-                autoStart : true
-              },
-              remove : 'adServerURL,description,linkBaseURL,title,viralPlayerAd,debuggerID,startTime,htmlFallback,viralPlayerWidth,viralPlayerVideoId,viralPlayerUrl,viralPlayerShareUrl,viralPlayerID,templateLoadHandler,viralPlayerCustomPackage,viralPlayerGstream,viralPlayerHeight,exParam1'
-            }, {
-              output : 'iframe'
-            });
-          }
-        }, false);
-		*/
+      onEnd : function () {
+        Aak.onElement('#detailEpisode', function () {
+          /*
+          var videoURL = 'http://n-2-4.dcs.redcdn.pl/dcs/o2/tvnplayer/vod/14_400_20029_0011/TV_MP4/4c407d87-5d77-4778-81e3-dbc560bbc19b/tv_mp4_2928000.mp4?salt=391F25D2E95781550E7A3BA1730AF412&token=8CC29AECB565397B692D4BDE4B37048742B3BD892212F8B9F1DE0D40D8662C775C82311B35074D38BC4EF8FFDCB15067610BB855955359B8F06C629C44485A42DBFEDAF17A812A67F2ECF4B7996A9B73C754E1089DB4A81BDBF798C23B5EBEEF1C6FA6668FB290EA77013C67FEB0DD5005F90D890ED6B76675487EDB7999CE3C9316D6237B009CC97819E798FE760A0B';
+          Aak.player.html5('#detailEpisode', {
+          autostart : true,
+          file : videoURL
+          });
+           */
+
+          var sp = document.location.href.split(/[.,]/);
+          var id = sp[sp.length - 2];
+          // http://player.pl/api/?platform=ConnectedTV&terminal=Samsung&format=json&v=2.0&authKey=ba786b315508f0920eca1c34d65534cd&type=episode&id=34555&sort=newest&m=getItem&deviceScreenHeight=1080&deviceScreenWidth=1920
+          Aak.request({
+            url : '/api/?platform=ConnectedTV&terminal=Samsung&format=json&v=2.0&authKey=ba786b315508f0920eca1c34d65534cd&type=episode&id=' + id + '&sort=newest&m=getItem&deviceScreenHeight=1080&deviceScreenWidth=1920',
+            onload : function (result) {
+              var res = result.responseText;
+              var o = JSON.parse(res);
+              console.log(o)
+              var standardURL = o.item.videos.main.video_content[0].url;
+              Aak.request({
+                url : standardURL,
+                onload : function (result) {
+                  var videoURL = result.responseText;
+                  Aak.player.html5('#detailEpisode', {
+                    autostart : true,
+                    file : videoURL
+                  });
+                }
+              });
+            }
+          });
+        });
       }
     },
     // France
@@ -2545,11 +2656,13 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/336
       // test: http://tinyurl.com/peeobou
       // test: http://jsbin.com/vucobejofo
-      host : ['voxnow.de', 'rtl-now.rtl.de', 'rtl2now.rtl2.de', 'n-tvnow.de', 'superrtlnow.de', 'rtlnitronow.de'],
+      host : ['voxnow.de', 'rtl-now.rtl.de', 'rtl2now.rtl2.de', 'n-tvnow.de', 'superrtlnow.de', 'rtlnitronow.de', 'nowtv.de'],
       onIdle : function () {
-        Aak.editSWF('#videoplayer', {
+        /*
+		Aak.editSWF('#videoplayer', {
           delFlashvars : 'abcheck_enabled,adcall,adclasses,adconfig,admeta,adslog,agof,ama,angebot,as,asparts,breakad,connectioncheck,cslog,dev,dimmer,errorlog,feedback,fmsident,gtv,highlights,ivw,ivw_play,js,js_event_function,logo,logo_basewidth,logopos,nielsen,ord,osmf,svm,tile,videoplaza,videoplaza_base_url,videoplaza_share,videoplaza_tag,vpEnvironmentURL,xl'
         });
+		*/
       }
     },
     myspass_de : {
@@ -2639,6 +2752,36 @@ Aak = {
             adblock : false
           }
         });
+      }
+    },
+    // Norway
+    vgtv_no : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/367
+      // test: http://tinyurl.com/nwp85t
+      host : ['vgtv.no'],
+      onEnd : function () {
+        var prevHash = location.hash;
+        var regexHash = /#\!\/video\/(\d+)\//;
+        setInterval(function () {
+          if (location.hash != prevHash && regexHash.test(location.hash)) {
+            var prevHash = location.hash;
+            var id = prevHash.match(regexHash)[1];
+            var player = Aak.getElement('object[id^="OoFlash"]');
+            Aak.removeElement('div.loader-container');
+            Aak.request({
+              url : 'http://svp.vg.no/svp/api/v1/vgtv/assets/' + id + '?additional=settings|chapters|cuePoints|externalId|barrels|externalCategoryId|nextAsset&appName=vgtv-website',
+              onload : function (result) {
+                var res = result.responseText;
+                var obj = JSON.parse(res);
+                console.log(player, obj.streamUrls.mp4)
+                Aak.player.html5(player, {
+                  autostart : false,
+                  file : obj.streamUrls.mp4
+                });
+              }
+            });
+          }
+        }, 1e3);
       }
     },
     // Italy
@@ -2844,6 +2987,17 @@ Aak = {
         }
       }
     },
+	/*
+    ShowAdbblock : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/412
+	  // screen: http://tinyurl.com/pg37hsu
+	  // code: http://pastebin.com/hiL0w6ZK
+      host : ['exemple.com'],
+      onAlways : function () {
+        Aak.uw.ShowAdbblock = function () {};
+      }
+    },	
+	*/
     fuckAdBlockTest : {
       host : ['fuckAdBlockTest.com'],
       onStart : function () {
@@ -3041,6 +3195,7 @@ Aak = {
           Aak.removeElement(insertedNode);
         }
 		
+		/* Do not still work
         // FuckAdBlock (v3.1.0) - http://github.com/sitexw/FuckAdBlock
         var reClass = /(pub_300x250|pub_300x250m|pub_728x90|text-ad|textAd|text_ad|text_ads|text-ads|text-ad-links)/;
         var reCss = /width: 1px/;
@@ -3055,6 +3210,7 @@ Aak = {
           Aak.autoReport('FuckAdBlock', false, location.href);
           Aak.removeElement(insertedNode);
         }
+		*/
 
         // Adunblock - http://adunblock.com/
         var reId = /^[a-z]{8}$/;
@@ -3107,7 +3263,7 @@ Aak = {
         var reTag1 = /(div|span|b|i|font|strong|center)/i;
         var reTag2 = /[abisuqp]{1}/i;
         var reWords1 = /ad blocker|ad block|ad-block|adblocker|ad-blocker|adblock|bloqueur|bloqueador|Werbeblocker|adblockert|&#1570;&#1583;&#1576;&#1604;&#1608;&#1603; &#1576;&#1604;&#1587;/i;
-        var reWords2 = /kapat|disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|&#945;&#960;&#949;&#957;&#949;&#961;&#947;&#959;&#960;&#959;&#943;&#951;&#963;&#951;|&#1079;&#1072;&#1087;&#1088;&#1077;&#1097;&#1072;&#1090;&#1100;|állítsd le/i;
+        var reWords2 = /kapat|disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|&#945;&#960;&#949;&#957;&#949;&#961;&#947;&#959;&#960;&#959;&#943;&#951;&#963;&#951;|&#1079;&#1072;&#1087;&#1088;&#1077;&#1097;&#1072;&#1090;&#1100;|állítsd le|publicités/i;
 
         // Communs
         if (insertedNode.parentNode &&
