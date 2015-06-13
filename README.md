@@ -135,7 +135,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+
+
+##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
+* Exclude: vod.pl (script)
 * Kill: adultmult.tv (script)
 * Kill: vgtv.no (script)
 * Kill: turkanime.tv (script)
@@ -150,6 +154,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: wtfbit.ch (script)
 * Kill: zeberka.pl (script)
 * Kill: kozaczek.pl (script)
+* Kill: fcportables.com
 * Kill: givemesome.tips
 * Kill: tek.no
 * Kill: gamer.no
@@ -197,6 +202,24 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: comics-sanctuary.com
 * Kill: planete205.com
 * Kill: planete-205.com
+* Kill: trakt.tv
+* Kill: cinemaniahdd.com
+* Kill: agar.io
+* Kill: needrom.com
+* Kill: 4players.de
+* Kill: schoener-fernsehen.com
+* Kill: btava.com
+* Kill: plus-belle-la-vie-replay.blogspot.com
+* Kill: sharewareonsale.com
+* Kill: kozaczek.pl
+* Kill: zeberka.pl
+* Kill: videostar.pl
+* Kill: srnet.eu
+* Kill: carambatv.ru
+* Kill: onlinetv.planetfools.com
+* Kill: tutvgratis.tv
+* Fix: FuckAdBlock
+* Fix: record.xl.pt (bug)
 * Update: README help section
 
 ##### Release 8.1 (May 11, 2015)
