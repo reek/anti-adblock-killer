@@ -135,7 +135,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
-
+* Kill: videoproxy.in
+* Kill: facebookproxy.info
+* Kill: proxywiky.com
+* Kill: kreanclix.com
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
