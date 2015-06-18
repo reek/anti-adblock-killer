@@ -1105,7 +1105,6 @@ videoproxy.in###overlay-holder
 ||sexgangsters.com^$popup
 ||atrx7.com^$popup
 ||dealxplorer.org^$popup
-||aliexpress.com^$popup
 ||offer.alibaba.com^$popup
 ! Advertisers ---------------------------------------------------------------------------------------
 ! linkbucks.com (Visit Script)
