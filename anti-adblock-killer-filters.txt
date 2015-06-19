@@ -1049,6 +1049,29 @@ facebookproxy.info###overlay-holder
 videoproxy.in###overlay-holder
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=videoproxy.in
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=videoproxy.in
+! turkanime.tv
+@@||turkanime.tv/ads.html$subdocument,domain=turkanime.tv
+! playtv.fr
+@@||/*playtv$object-subrequest,domain=play.tv|playtv.fr
+@@||ads.stickyadstv.com/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
+@@||ads.stickyadstv.com/www/delivery$object-subrequest,domain=play.tv|playtv.fr
+@@||bid.g.doubleclick.net/$object-subrequest,domain=play.tv|playtv.fr
+@@||bs.serving-sys.com/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
+@@||bs.serving-sys.com/BurstingPipe/adServer.bs$object-subrequest,domain=play.tv|playtv.fr
+@@||ad*.liverail.com/?LR_$object-subrequest,domain=play.tv|playtv.fr
+@@||ad.doubleclick.net/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
+@@||ad.doubleclick.net/ddm/pfadx/$object-subrequest,domain=play.tv|playtv.fr
+! now.ru
+@@||adsrv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=rutube.ru
+@@||adsrv.gpm-digital.com/$object-subrequest,domain=rutube.ru
+@@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=rutube.ru
+@@||adv.gpm-digital.com/*now.ru*$object-subrequest,domain=rutube.ru
+! rutube.ru
+@@||ad4.liverail.com/?LR_PUBLISHER_ID=$object-subrequest,domain=rutube.ru
+! fptplay.net
+@@||fptplay.net/js/ads.js$script
+! mytunnel.info
+mytunnel.info#@#.afs_ads
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1105,7 +1128,6 @@ videoproxy.in###overlay-holder
 ||sexgangsters.com^$popup
 ||atrx7.com^$popup
 ||dealxplorer.org^$popup
-||aliexpress.com^$popup
 ||offer.alibaba.com^$popup
 ! Advertisers ---------------------------------------------------------------------------------------
 ! linkbucks.com (Visit Script)
