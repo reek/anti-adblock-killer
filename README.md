@@ -135,10 +135,16 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
+* Kill: 15min.lt (script)
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
 * Kill: proxywiky.com
 * Kill: kreanclix.com
+* Fix: turkanime.tv
+* Kill: rutube.ru
+* Kill: now.ru
+* Kill: fptplay.net
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
