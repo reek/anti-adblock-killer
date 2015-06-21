@@ -145,6 +145,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: rutube.ru
 * Kill: now.ru
 * Kill: fptplay.net
+* Kill: mytunnel.info
+* Kill: up2stream.com
+* Kill: crypto-clix.net
+* Fix: videostar.pl
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
