@@ -1033,6 +1033,7 @@ plus-belle-la-vie-replay.blogspot.com#@##adsense
 @@||zeberka.pl/js/ads.js$script,domain=zeberka.pl
 ! videostar.pl
 @@||static-videostar2.4vod.tv/assets/js/adcheck.js$script,domain=videostar.pl
+@@||static-videostar2.4vod.tv/assets/js/adcheck.min.js$script,domain=videostar.pl
 ! srnet.eu
 @@||srnet.eu/ads2.js$script
 ! carambatv.ru
@@ -1072,6 +1073,13 @@ videoproxy.in###overlay-holder
 @@||fptplay.net/js/ads.js$script
 ! mytunnel.info
 mytunnel.info#@#.afs_ads
+! up2stream.com
+@@||up2stream.com/*/ad.php?id=$script,subdocument
+@@||up2stream.com/vjs/plugin/css/ads.css$stylesheet
+! crypto-clix.net
+crypto-clix.net#@#.ad-block
+crypto-clix.net#@#.ad-content
+crypto-clix.net#@#.ad-footer
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
