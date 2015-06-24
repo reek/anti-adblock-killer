@@ -1080,6 +1080,8 @@ mytunnel.info#@#.afs_ads
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
+! newsquid.com - no adblock / paywall
+xyz.ouchmg.com
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
