@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name Anti-Adblock Killer | Reek
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
@@ -2029,6 +2029,31 @@ Aak = {
       onIdle : function () {
         // Remove Disable AdBlock
         Aak.removeElement('#tupiklan');
+      }
+    },
+    gamestar_de : {
+      host : ['gamestar.de'],
+      onAlways : function () {
+        // if removing of functions/objects does not work
+        // those 2 vars avoid loading the ads
+        Aak.uw['UABPtracked']=true; 
+        Aak.uw['UABPPercent']=-1;
+        // kill functions/objects of UABP
+        for (var key in Aak.uw) {
+           element = Aak.uw[key];
+            if (typeof element == 'function' && /^UABP.*$/.test(key)) {
+                console.log("wird blockiert:" + key);
+                element = function () {};
+            } else if (typeof element == 'object') {
+              var objectsWindow=Aak.uw[key];
+              for(var i in objectsWindow){
+                if (/^UABP.*$/.test(i)) {
+                  console.log("wird blockiert object: " + i);
+                  objectsWindow[i] = null;
+                }
+              }
+            }
+        }
       }
     },
     picload_com : {
