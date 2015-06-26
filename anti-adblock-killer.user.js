@@ -2054,6 +2054,12 @@ Aak = {
               }
             }
         }
+      },
+      onIdle : function () {
+          setTimeout(function () {
+              Aak.removeElement('body > div.centeredDiv > div[style="display: inline-block;"]');
+              window.stop();
+        }, 2500);
       }
     },
     picload_com : {
