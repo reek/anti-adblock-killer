@@ -1024,7 +1024,11 @@ agar.io###blocker
 ! btava.com
 @@||btava.com/eroex.js$script,domain=btava.com
 ! plus-belle-la-vie-replay.blogspot.com
+! plus-belle-la-vie-video.blogspot.com
+plus-belle-la-vie-replay.blogspot.com#@##publicite
 plus-belle-la-vie-replay.blogspot.com#@##adsense
+plus-belle-la-vie-video.blogspot.com#@##publicite
+plus-belle-la-vie-video.blogspot.com#@##adsense
 ! sharewareonsale.com
 @@||sharewareonsale.com/wp-content/plugins/checkout-ad-checker/assets/$script,stylesheet,image
 ! kozaczek.pl
@@ -1080,6 +1084,16 @@ mytunnel.info#@#.afs_ads
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
+! openload.io
+@@||openload.io/assets/js/pop.js$script
+! kwalifikacjewzawodzie.pl
+kwalifikacjewzawodzie.pl#@#.afs_ads
+! hireteen.com
+hireteen.com###adb-enabled
+! binbox.io
+@@||binbox.io/adblock.js$script
+! gram.pl
+gram.pl###ab
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
