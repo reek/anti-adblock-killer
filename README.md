@@ -136,7 +136,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 ## Changelog
 ##### Upcoming changes
 * Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
+* Fix: m6web.fr (script)
 * Kill: 15min.lt (script)
+* Kill: gamestar.de (script)
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
 * Kill: proxywiky.com
@@ -149,6 +151,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: up2stream.com
 * Kill: crypto-clix.net
 * Fix: videostar.pl
+* Kill: openload.io
+* Kill: hireteen.com
+* Kill: plus-belle-la-vie-video.blogspot.com
+* Kill: binbox.io
+* Kill: gram.pl
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
