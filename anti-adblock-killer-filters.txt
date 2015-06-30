@@ -1093,7 +1093,7 @@ hireteen.com###adb-enabled
 ! binbox.io
 @@||binbox.io/adblock.js$script
 ! gram.pl
-gram.pl###ab
+@@|http://static0.gram.pl/js/advertising.js$script,domain=gram.pl
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
