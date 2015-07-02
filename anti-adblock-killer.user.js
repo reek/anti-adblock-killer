@@ -2031,30 +2031,21 @@ Aak = {
         Aak.removeElement('#tupiklan');
       }
     },
+    ad_defend_general : {
+        host : ['focus.de','stern.de','sat1.de','prosieben.de','kabeleins.de','sat1gold.de','sixx.de','prosiebenmaxx.de','fem.com','the-voice-of-germany.de','wetteronline.de','wetter.com','finanzen.net','tvspielfilm.de','gamestar.de','pcwelt.de','boerse-online.de','sportauto.de','auto-motor-und-sport.de','motor-klassik.de','4wheelfun.de','autostrassenverkehr.de','lustich.de','itectale.de'],
+        onBeforeScript : function (e) {
+        // check all scripts before they are executed
+        // addefend uses IIFE so the usual function killing isn't working
+        var target = e.target || e.srcElement;
+        if ( /uab.*/i.test( target.innerHTML ) ) {
+            // stop it
+            e.stopPropagation();
+            e.preventDefault();
+        }
+       }
+    },
     gamestar_de : {
       host : ['gamestar.de'],
-      onAlways : function () {
-        // if removing of functions/objects does not work
-        // those 2 vars avoid loading the ads
-        Aak.uw['UABPtracked']=true; 
-        Aak.uw['UABPPercent']=-1;
-        // kill functions/objects of UABP
-        for (var key in Aak.uw) {
-           element = Aak.uw[key];
-            if (typeof element == 'function' && /^UABP.*$/.test(key)) {
-                console.log("wird blockiert:" + key);
-                element = function () {};
-            } else if (typeof element == 'object') {
-              var objectsWindow=Aak.uw[key];
-              for(var i in objectsWindow){
-                if (/^UABP.*$/.test(i)) {
-                  console.log("wird blockiert object: " + i);
-                  objectsWindow[i] = null;
-                }
-              }
-            }
-        }
-      },
       onIdle : function () {
           setTimeout(function () {
               Aak.removeElement('body > div.centeredDiv > div[style="display: inline-block;"]');
