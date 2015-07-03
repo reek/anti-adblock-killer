@@ -2037,7 +2037,7 @@ Aak = {
         // check all scripts before they are executed
         // addefend uses IIFE so the usual function killing isn't working
         var target = e.target || e.srcElement;
-        if ( /uab.*/i.test( target.innerHTML ) ) {
+        if ( /\.uab[A-Z][a-z]+|UABP/.test( target.innerHTML ) ) {
             // stop it
             e.stopPropagation();
             e.preventDefault();
