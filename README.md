@@ -135,15 +135,22 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Fix: Blogspot country redirection
 * Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
 * Fix: m6web.fr (script)
+* Fix: bitcoinzebra.com (script)
 * Kill: 15min.lt (script)
 * Kill: gamestar.de (script)
+* kill: btcacid.com (script)
+* kill: cryptospot.me (script)
+* Kill: epicwallcz.blogspot.com (script)
+* Kill: masterwallcz.blogspot.com (script)
+* Kill: sportsplays.com (script)
+* Fix: turkanime.tv
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
 * Kill: proxywiky.com
 * Kill: kreanclix.com
-* Fix: turkanime.tv
 * Kill: rutube.ru
 * Kill: now.ru
 * Kill: fptplay.net
@@ -156,6 +163,30 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: plus-belle-la-vie-video.blogspot.com
 * Kill: binbox.io
 * Kill: gram.pl
+* Kill: lggautotrasporti.esy.es
+* Fix: filmovizija.com
+* Fix: filmovizija.in
+* Fix: bithourly.com
+* Fix: dailyfreebits.com
+* Fix: ewelrybitco.in
+* Fix: welovebtc.com
+* Fix: waterbitco.in
+* Fix: freedoge.co.in
+* Fix: freebitco.in
+* Kill: spaste.com
+* Kill: mupvl.us
+* Kill: booksmedicos.org
+* Kill: openload.io
+* Kill: wetter3.de
+* Kill: pebx.pl
+* Kill: vgtv.no
+* Kill: telepolis.pl
+* Kill: italiatv.org
+* Kill: rapidmoviez.com
+* Kill: animedigitalnetwork.fr
+* Kill: comptoir-info.com
+* Kill: adultmult.tv
+* Kill: 4chan.org
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
