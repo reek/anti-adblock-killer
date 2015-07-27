@@ -385,11 +385,7 @@ pic4you.ru##.centerdiv
 ! forum.thgtr.com
 forum.thgtr.com##.block_uyari
 ! exashare.com
-exashare.com###adblocker-cover
-!exashare.com#@##adMid1
-!exashare.com#@##adMid2
-!exashare.com#@##player_ads
-!exashare.com#@#.afs_ads
+exashare.com###player_imgo
 ! mydisc.net
 mydisc.net#@#.ad_1
 mydisc.net#@#.ad_2
