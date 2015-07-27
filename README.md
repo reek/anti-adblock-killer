@@ -187,6 +187,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: comptoir-info.com
 * Kill: adultmult.tv
 * Kill: 4chan.org
+* Kill: exashare.com
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
