@@ -385,7 +385,10 @@ pic4you.ru##.centerdiv
 ! forum.thgtr.com
 forum.thgtr.com##.block_uyari
 ! exashare.com
-exashare.com###player_imgo
+exashare.com##[href="http://www.videohube.eu/script/url.php?c=ep"]
+@@||exashare.com/ads.js$script
+@@||pubdirecte.com/script/$script,$domain=exashare.com
+@@||pubdirecte.com/image/$image,domain=exashare.com
 ! mydisc.net
 mydisc.net#@#.ad_1
 mydisc.net#@#.ad_2
