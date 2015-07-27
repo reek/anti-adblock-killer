@@ -2352,17 +2352,6 @@ Aak = {
         }
       }
     },
-    exashare: {
-      host : ['exashare.com'],
-      // www.exashare.com/embed-fqp98nl6sd6x-900x500.html
-      // + abp rule
-      onIdle : function () {
-        var funcName = /\bfunction ([\w_]+)\s*\(\s*\)\s*\{/.exec(
-          Aak.getElement('body > script:last-child').textContent
-        )[1];
-        Aak.uw[funcName] = null;
-      }
-    },
     // Poland
     wp_domains : {
       // https://github.com/reek/anti-adblock-killer/issues/300
