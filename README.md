@@ -146,6 +146,17 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: epicwallcz.blogspot.com (script)
 * Kill: masterwallcz.blogspot.com (script)
 * Kill: sportsplays.com (script)
+* Kill: slideplayer.com (script)
+* Kill: slideplayer.fr (script)
+* Kill: tek.no (script)
+* Kill: amer.no (script)
+* Kill: teknofil.no (script)
+* Kill: insidetelecom.no (script)
+* Kill: prisguide.no (script)
+* Kill: diskusjon.no (script)
+* Kill: teknojobb.no (script)
+* Kill: akam.no (script)
+* Kill: hardware.no (script)
 * Fix: turkanime.tv
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
@@ -188,6 +199,14 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: adultmult.tv
 * Kill: 4chan.org
 * Kill: exashare.com
+* Kill: phonandroid.com
+* Kill: mega-faucet.eu
+* Kill: leakyfaucet.uk
+* Kill: rocketfaucet.co.in
+* Kill: robcoins.eu
+* Kill: big-coin.eu/
+* Kill: btcfaucetlist.net
+* Kill: get-free-bitco.in
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
