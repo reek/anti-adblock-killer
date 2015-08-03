@@ -2356,11 +2356,57 @@ Aak = {
       host : ['exashare.com'],
       // www.exashare.com/embed-fqp98nl6sd6x-900x500.html
       // + abp rule
-      onIdle : function () {
-        var funcName = /\bfunction ([\w_]+)\s*\(\s*\)\s*\{/.exec(
-          Aak.getElement('body > script:last-child').textContent
-        )[1];
-        Aak.uw[funcName] = null;
+      // UPDATE Aug 03 2015
+      onEnd : function () {
+        var jwplayer = Aak.uw.jwplayer;
+        if (jwplayer) {
+          var setupScript = Array.prototype.filter.call(
+            document.scripts,
+            function ($script) {
+              var source = $script.innerHTML;
+              return source && Aak.contains(source, "setup");
+            }
+          )[0];
+
+          var match = setupScript.innerHTML.match(
+            /\bjwplayer\s*\(\s*(["'])(.+?)\1\s*\)\s*\.\s*setup\s*\(\s*(\{(?:.|\s)+?\})\s*\)\s*;/
+          );
+
+          var id = match[2];
+          var setupStr = match[3];
+
+          /* We have to “eval” setupStr because JSON.parse doesn't work,
+            and we have to do it from inside a content function to
+            avoid exposing elevated API. */
+
+          var contentFunction = (function () {
+            // “passing” variables from elevated context (see calls to replace below)
+            var setupObj = _setupStr_;
+            var id = "_id_";
+
+            // Delays execution to let the content script set its timer
+            setTimeout(function () {
+              // violently kills all timers
+              var i = setTimeout(function () {}, 0);
+              for ( ; i--; ) {
+                clearTimeout(i);
+                clearInterval(i);
+              }
+
+              // rearms the player
+              var playerInstance = jwplayer(id).setup(setupObj);
+            }, 500);
+          }.toString()
+            .replace("_setupStr_", setupStr)
+            .replace("_id_", id)
+          );
+
+          // not using Aak.addScript because it messes with nested functions
+          var $script = document.createElement("script");
+          $script.innerHTML = "(" + contentFunction + "());";
+          document.head.appendChild($script);
+
+        }
       }
     },
     // Poland
