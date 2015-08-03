@@ -1110,10 +1110,7 @@ comptoir-info.com#@#.textad
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=adultmult.tv
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=adultmult.tv
 ! 4chan.org
-4chan.org#@#.ad-plea
-4chan.org#@#.topad
-4chan.org#@#.middlead
-4chan.org#@#.bottomad
+4chan.org##.center[style]
 ! mega-faucet.eu
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mega-faucet.eu
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=mega-faucet.eu
