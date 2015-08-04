@@ -135,6 +135,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Add: function Aak.addExternalScript
+* Fix: function Aak.addScript
 * Fix: Blogspot country redirection
 * Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
 * Fix: m6web.fr (script)
@@ -157,6 +159,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: teknojobb.no (script)
 * Kill: akam.no (script)
 * Kill: hardware.no (script)
+* Kill: ipla.tv (script)
 * Fix: turkanime.tv
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
@@ -207,6 +210,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: big-coin.eu/
 * Kill: btcfaucetlist.net
 * Kill: get-free-bitco.in
+* Kill: tree.tv
+* Kill: 4chan.org
+* Kill: aseanlegacy.net
+* Kill: monova.org
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
