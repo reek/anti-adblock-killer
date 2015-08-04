@@ -2352,14 +2352,17 @@ Aak = {
         }
       }
     },
-    exashare: {
+    exashare_com : {
       host : ['exashare.com'],
-      // www.exashare.com/embed-fqp98nl6sd6x-900x500.html
-      // + abp rule
-      // UPDATE Aug 03 2015
+      // by: Watilin
+      // pull: https://github.com/reek/anti-adblock-killer/pull/519
+      // issue: https://github.com/reek/anti-adblock-killer/issues/486
+      // issue: https://github.com/reek/anti-adblock-killer/issues/506
+      // url example: http://www.exashare.com/*
+      // url example: http://www.exashare.com/embed-*.html
       onEnd : function () {
-        var jwplayer = Aak.uw.jwplayer;
-        if (jwplayer) {
+        var vplayer = Aak.getElement('#vplayer');
+        if (vplayer) {
           var setupScript = Array.prototype.filter.call(
             document.scripts,
             function ($script) {
@@ -2368,44 +2371,27 @@ Aak = {
             }
           )[0];
 
-          var match = setupScript.innerHTML.match(
-            /\bjwplayer\s*\(\s*(["'])(.+?)\1\s*\)\s*\.\s*setup\s*\(\s*(\{(?:.|\s)+?\})\s*\)\s*;/
-          );
+          // file: "http://fs27.exashare.com:8777/5sxkiakl3qm56odwt3nolgpwvpk3etu2c7yzyjco46u5dk7bljzrtrpvi2xq/v.mp4",
+          var videoURL = setupScript.innerHTML.match(
+            /\bfile\s*:\s*(["'])(http:\/\/fs\w+.exashare.com:\d+\/\w+\/v.mp4)\1\s*,/
+          )[2];
+          console.log(videoURL);
 
-          var id = match[2];
-          var setupStr = match[3];
+          // delays execution to let the content script set its timer
+          setTimeout(function () {
+            // violently kills all timers
+            var i = setTimeout(function () {}, 0);
+            for ( ; i--; ) {
+              clearTimeout(i);
+              clearInterval(i);
+            }
 
-          /* We have to “eval” setupStr because JSON.parse doesn't work,
-            and we have to do it from inside a content function to
-            avoid exposing elevated API. */
-
-          var contentFunction = (function () {
-            // “passing” variables from elevated context (see calls to replace below)
-            var setupObj = _setupStr_;
-            var id = "_id_";
-
-            // Delays execution to let the content script set its timer
-            setTimeout(function () {
-              // violently kills all timers
-              var i = setTimeout(function () {}, 0);
-              for ( ; i--; ) {
-                clearTimeout(i);
-                clearInterval(i);
-              }
-
-              // rearms the player
-              var playerInstance = jwplayer(id).setup(setupObj);
-            }, 500);
-          }.toString()
-            .replace("_setupStr_", setupStr)
-            .replace("_id_", id)
-          );
-
-          // not using Aak.addScript because it messes with nested functions
-          var $script = document.createElement("script");
-          $script.innerHTML = "(" + contentFunction + "());";
-          document.head.appendChild($script);
-
+            // replaces the player
+            Aak.player.jwplayer6(vplayer, {
+              autostart : true,
+              file : videoURL
+            });
+          }, 500);
         }
       }
     },
