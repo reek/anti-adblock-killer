@@ -2352,15 +2352,47 @@ Aak = {
         }
       }
     },
-    exashare: {
+    exashare_com : {
       host : ['exashare.com'],
-      // www.exashare.com/embed-fqp98nl6sd6x-900x500.html
-      // + abp rule
-      onIdle : function () {
-        var funcName = /\bfunction ([\w_]+)\s*\(\s*\)\s*\{/.exec(
-          Aak.getElement('body > script:last-child').textContent
-        )[1];
-        Aak.uw[funcName] = null;
+      // by: Watilin
+      // pull: https://github.com/reek/anti-adblock-killer/pull/519
+      // issue: https://github.com/reek/anti-adblock-killer/issues/486
+      // issue: https://github.com/reek/anti-adblock-killer/issues/506
+      // url example: http://www.exashare.com/*
+      // url example: http://www.exashare.com/embed-*.html
+      onEnd : function () {
+        var vplayer = Aak.getElement('#vplayer');
+        if (vplayer) {
+          var setupScript = Array.prototype.filter.call(
+            document.scripts,
+            function ($script) {
+              var source = $script.innerHTML;
+              return source && Aak.contains(source, "setup");
+            }
+          )[0];
+
+          // file: "http://fs27.exashare.com:8777/5sxkiakl3qm56odwt3nolgpwvpk3etu2c7yzyjco46u5dk7bljzrtrpvi2xq/v.mp4",
+          var videoURL = setupScript.innerHTML.match(
+            /\bfile\s*:\s*(["'])(http:\/\/fs\w+.exashare.com:\d+\/\w+\/v.mp4)\1\s*,/
+          )[2];
+          console.log(videoURL);
+
+          // delays execution to let the content script set its timer
+          setTimeout(function () {
+            // violently kills all timers
+            var i = setTimeout(function () {}, 0);
+            for ( ; i--; ) {
+              clearTimeout(i);
+              clearInterval(i);
+            }
+
+            // replaces the player
+            Aak.player.jwplayer6(vplayer, {
+              autostart : true,
+              file : videoURL
+            });
+          }, 500);
+        }
       }
     },
     // Poland
