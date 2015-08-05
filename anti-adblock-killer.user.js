@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name Anti-Adblock Killer | Reek
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
@@ -2029,6 +2029,28 @@ Aak = {
       onIdle : function () {
         // Remove Disable AdBlock
         Aak.removeElement('#tupiklan');
+      }
+    },
+    ad_defend_general : {
+        host : ['focus.de','stern.de','sat1.de','prosieben.de','kabeleins.de','sat1gold.de','sixx.de','prosiebenmaxx.de','fem.com','the-voice-of-germany.de','wetteronline.de','wetter.com','finanzen.net','tvspielfilm.de','gamestar.de','pcwelt.de','boerse-online.de','sportauto.de','auto-motor-und-sport.de','motor-klassik.de','4wheelfun.de','autostrassenverkehr.de','lustich.de','itectale.de'],
+        onBeforeScript : function (e) {
+        // check all scripts before they are executed
+        // addefend uses IIFE so the usual function killing isn't working
+        var target = e.target || e.srcElement;
+        if ( /\.uab[A-Z][a-z]+|UABP/.test( target.innerHTML ) ) {
+            // stop it
+            e.stopPropagation();
+            e.preventDefault();
+        }
+       }
+    },
+    gamestar_de : {
+      host : ['gamestar.de'],
+      onIdle : function () {
+          setTimeout(function () {
+              Aak.removeElement('body > div.centeredDiv > div[style="display: inline-block;"]');
+              window.stop();
+        }, 2500);
       }
     },
     picload_com : {
