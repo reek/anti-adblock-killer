@@ -521,14 +521,16 @@ Aak = {
     return e.target.innerHTML;
   },
   addScript : function (code) {
-    // note: Scriptish no support
-    if (document.head) {
-      if (/\.js$/.test(code)) { // External
-        document.head.appendChild(document.createElement('script')).src = code;
-      } else { // Inline
-        document.head.appendChild(document.createElement('script')).innerHTML = code.toString().replace(/^function.*{|}$/g, '');
-      }
-    }
+    var script = document.createElement('script');
+    script.textContent = code.toString();
+    document.head.appendChild(script);
+    document.head.removeChild(script);
+  },
+  addExternalScript : function(src) {
+    var script = document.createElement('script');
+    script.src = src;
+    document.head.appendChild(script);
+    document.head.removeChild(script);
   },
   onElement : function (element, callback, repeat) {
     var repeat = repeat || 10;
@@ -543,7 +545,7 @@ Aak = {
   },
   addElement : function (str) { // ex: div.ads or span#ads
     var split = str.replace('.', ':className:').replace('#', ':id:').split(':');
-    Aak.addScript('function() { document.documentElement.appendChild(document.createElement("' + split[0] + '")).' + split[1] + ' = "' + split[2] + '"; document.querySelector("' + str + '").innerHTML = "<br>"; }');
+    Aak.addScript('document.documentElement.appendChild(document.createElement("' + split[0] + '")).' + split[1] + ' = "' + split[2] + '"; document.querySelector("' + str + '").innerHTML = "<br>";');
   },
   removeElement : function (elem) {
     if (elem instanceof HTMLElement) {
@@ -3080,6 +3082,11 @@ Aak = {
         // Unknow Anti AdBlock system
         if (Aak.getElement('#blockdiv') && Aak.contains(Aak.getElement('#blockdiv').innerHTML, 'disable ad blocking or use another browser without any adblocker when you visit')) {
           Aak.removeElement('#blockdiv');
+        }
+
+        // FuckAdBlock
+        if (typeof (Aak.uw.FuckAdBlock) !== 'undefined') {
+            Aak.addScript("window.FuckAdBlock.prototype._emitEvent = window.FuckAdBlock.prototype.emitEvent; window.FuckAdBlock.prototype.emitEvent = (function(detected) { this._emitEvent(false); });");
         }
 
         // Antiblock - http://antiblock.org/
