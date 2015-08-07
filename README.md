@@ -135,10 +135,12 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
-* Add: function Aak.addExternalScript
-* Fix: function Aak.addScript
-* Fix: Blogspot country redirection
-* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
+* Add: function *getFunctionCode* (script)
+* Add: function *addExternalScript* (script)
+* Fix: FuckAdBlock and BlockAdBlock (script+list)
+* Fix: function *addScript* (script)
+* Fix: Blogspot country redirection (script)
+* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE") (script)
 * Fix: m6web.fr (script)
 * Fix: bitcoinzebra.com (script)
 * Kill: 15min.lt (script)
@@ -160,6 +162,31 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: akam.no (script)
 * Kill: hardware.no (script)
 * Kill: ipla.tv (script)
+* Kill: turbodebrideur.com (script)
+* Kill: focus.de (script)(only firefox)
+* Kill: stern.de (script)(only firefox)
+* Kill: sat1.de (script)(only firefox)
+* Kill: prosieben.de (script)(only firefox)
+* Kill: kabeleins.de (script)(only firefox)
+* Kill: sat1gold.de (script)(only firefox)
+* Kill: sixx.de (script)(only firefox)
+* Kill: prosiebenmaxx.de (script)(only firefox)
+* Kill: fem.com (script)(only firefox)
+* Kill: the-voice-of-germany.de (script)(only firefox)
+* Kill: wetteronline.de (script)(only firefox)
+* Kill: wetter.com (script)(only firefox)
+* Kill: finanzen.net (script)(only firefox)
+* Kill: tvspielfilm.de (script)(only firefox)
+* Kill: gamestar.de (script)(only firefox)
+* Kill: pcwelt.de (script)(only firefox)
+* Kill: boerse-online.de (script)(only firefox)
+* Kill: sportauto.de (script)(only firefox)
+* Kill: auto-motor-und-sport.de (script)(only firefox)
+* Kill: motor-klassik.de (script)(only firefox)
+* Kill: 4wheelfun.de (script)(only firefox)
+* Kill: autostrassenverkehr.de (script)(only firefox)
+* Kill: lustich.de (script)(only firefox)
+* Kill: itectale.de (script)(only firefox)
 * Fix: turkanime.tv
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
@@ -214,6 +241,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: 4chan.org
 * Kill: aseanlegacy.net
 * Kill: monova.org
+* Kill: epoznan.pl
+* Kill: wtkplay.pl
+* Kill: xiaopan.co
 
 ##### Release 8.2 (June 13, 2015)
 * Exclude: xemvtv.net (script)
