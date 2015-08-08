@@ -135,6 +135,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Kill: italiatv.org (script)
+* Fix: youwatch.org
+
+##### Release 8.3 (August 7, 2015)
 * Add: function *getFunctionCode* (script)
 * Add: function *addExternalScript* (script)
 * Fix: FuckAdBlock and BlockAdBlock (script+list)
