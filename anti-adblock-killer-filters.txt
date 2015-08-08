@@ -1412,8 +1412,8 @@ megafilmeshd.net###ad1
 megafilmeshd.net###ad2
 megafilmeshd.net##[href^="http://click.afiliados.uol.com.br/Clique"]
 ! youwatch.org
-!@@||youwatch.org^$elemhide
-||youwatch.org^$popup
+@@||pla.folue.info/neededs.js$script,domain=youwatch.org
+youwatch.org###player_img
 ||adcash.com^$popup,third-party
 ! live.gtcaster.com
 live.gtcaster.com###adc
