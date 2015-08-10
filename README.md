@@ -112,7 +112,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Anti Ad Buster
 * AADB Anti Ads Blocker
 * AdUnBlock Free & Premium
-* FuckAdBlock
+* FuckAdBlock / BlockAdBlock (Sitexw)
 * ABT - Ad Block Test
 * Block Adblock (thepcspy.com)
 * Remove Adblock (removeadblock.com)
@@ -135,8 +135,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 ##### Upcoming changes
+* Exclude: pandoon.info (script)
 * Kill: italiatv.org (script)
-* Fix: youwatch.org
+* Fix: youwatch.org (script+list)
+* Fix: vvvvid.it
+* Fix: djawir.com
 
 ##### Release 8.3 (August 7, 2015)
 * Add: function *getFunctionCode* (script)
