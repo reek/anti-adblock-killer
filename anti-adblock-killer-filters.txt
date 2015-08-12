@@ -864,9 +864,6 @@ simply-debrid.com#@##adsense
 !@@||adv.wp.pl/RM/Box/*/x.gif$image
 ! sparkylinux.org
 @@||sparkylinux.org/images/ad/$image
-! captchme.com
-@@||api.captchme.net/js/advertisement-min.js$script
-@@||api.captchme.net/ads.html$subdocument
 ! demonoid.pw
 @@||demonoid.pw/show_ads_.js$script
 ! carambatv.ru
@@ -1151,6 +1148,12 @@ tree.tv#@##adverts
 ! vvvvid.it
 @@||vvvvid.it/img/ad/advertisment.jpg
 @@||vvvvid.it/img/pic01.jpg
+! captchme.net
+@@||pagead2.googlesyndication.com/pagead/|$subdocument
+! wyborcza.pl
+@@||squid.gazeta.pl/info/squid/fprint.js$script,domain=squid.gazeta.pl
+@@||squid.gazeta.pl/sqpwgl/pwfpl$xmlhttprequest,domain=squid.gazeta.pl
+@@||squid.gazeta.pl/sqpwgl/pwif$subdocument,domain=wyborcza.pl
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1418,7 +1421,8 @@ megafilmeshd.net###ad1
 megafilmeshd.net###ad2
 megafilmeshd.net##[href^="http://click.afiliados.uol.com.br/Clique"]
 ! youwatch.org
-@@||pla.folue.info/neededs.js$script,domain=youwatch.org
+@@||q41.twer.info^$script
+@@||pla.folue.info/needes.js$script
 youwatch.org###player_img
 ! live.gtcaster.com
 live.gtcaster.com###adc
