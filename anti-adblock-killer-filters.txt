@@ -127,7 +127,7 @@
 /adblock_detector.
 /adblockdetect.
 /adblockdetection.
-/anti-adblock$~stylesheet
+/anti-adblock$~stylesheet,~domain=mozilla.org
 /anti_ab.
 /antiadblock.
 /wp-content/plugins/anti_ad_blocker/*
@@ -814,9 +814,8 @@ mangamap.com#@#.afs_ads
 theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
-! filmovizija.in
-@@||filmovizija.in/advertise.js$script
-@@||176.31.95.144/popunder.js$script,domain=filmovizija.in
+! filmovizija.me
+@@||findvideo.tv/popunder.php$script,domain=filmovizija.me|filmovizija.in|filmovizija.com|filmovizija.net
 ! umahdroid.blogspot.com
 umahdroid.blogspot.com###energysaving
 ! streaming-foot.me
@@ -1061,8 +1060,9 @@ mytunnel.info#@#.afs_ads
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
-! openload.io
-@@||openload.io/assets/js/pop.js$script
+! openload.io / openload.tv
+! https://github.com/reek/anti-adblock-killer/issues/475
+@@/adblock.js$script,domain=openload.io|openload.tv
 ! kwalifikacjewzawodzie.pl
 kwalifikacjewzawodzie.pl#@#.afs_ads
 ! hireteen.com
@@ -1149,11 +1149,30 @@ tree.tv#@##adverts
 @@||vvvvid.it/img/ad/advertisment.jpg
 @@||vvvvid.it/img/pic01.jpg
 ! captchme.net
+! https://github.com/reek/anti-adblock-killer/issues/533
 @@||pagead2.googlesyndication.com/pagead/|$subdocument
 ! wyborcza.pl
+! https://github.com/reek/anti-adblock-killer/issues/531
 @@||squid.gazeta.pl/info/squid/fprint.js$script,domain=squid.gazeta.pl
 @@||squid.gazeta.pl/sqpwgl/pwfpl$xmlhttprequest,domain=squid.gazeta.pl
 @@||squid.gazeta.pl/sqpwgl/pwif$subdocument,domain=wyborcza.pl
+! torrent-tv.ru
+! https://github.com/reek/anti-adblock-killer/issues/537
+torrent-tv.ru##.page > .right-side > .section + .section + .section
+! tsa-algerie.com
+! https://greasyfork.org/fr/forum/discussion/5493/
+@@||tsa-algerie.com/wp-content/themes/tsa/js/ads.js$script
+! freemulticoins.com
+! https://greasyfork.org/zh-TW/forum/discussion/5694
+freemulticoins.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=freemulticoins.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=freemulticoins.com
+! prem.link
+! https://github.com/reek/anti-adblock-killer/issues/541
+@@||prem.link/ads.html$subdocument,domain=prem.link
+! lowcygier.pl
+! https://github.com/reek/anti-adblock-killer/issues/539
+@@||lowcygier.pl/wp-content/themes/graphene/js/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1421,8 +1440,11 @@ megafilmeshd.net###ad1
 megafilmeshd.net###ad2
 megafilmeshd.net##[href^="http://click.afiliados.uol.com.br/Clique"]
 ! youwatch.org
-@@||q41.twer.info^$script
+! https://github.com/reek/anti-adblock-killer/issues/535
+@@||i93.whies.info^$script,domain=youwatch.org
+@@||q41.twer.info^$script,domain=youwatch.org
 @@||pla.folue.info/needes.js$script
+@@||cdn.jsdelivr.net/jwplayer/5.10/jwplayer.js$script
 youwatch.org###player_img
 ! live.gtcaster.com
 live.gtcaster.com###adc
