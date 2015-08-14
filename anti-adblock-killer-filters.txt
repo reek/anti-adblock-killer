@@ -127,7 +127,7 @@
 /adblock_detector.
 /adblockdetect.
 /adblockdetection.
-/anti-adblock$~stylesheet
+/anti-adblock$~stylesheet,~domain=mozilla.org
 /anti_ab.
 /antiadblock.
 /wp-content/plugins/anti_ad_blocker/*
