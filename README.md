@@ -137,12 +137,19 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 ##### Upcoming changes
 * Exclude: pandoon.info (script)
 * Kill: italiatv.org (script)
-* Fix: youwatch.org (hide ads allowed by easylist) (script)
+* Fix: youwatch.org (kill + hide ads allowed by easylist) (script+list)
+* Kill: torrent-tv.ru (script+list)
+* Fix: turbodebrideur.com (script)
 * Kill: vvvvid.it
 * Kill: djawir.com
 * Fix: captchme.net
 * Kill: wyborcza.pl
-* Fix: youwatch.org
+* Fix: tsa-algerie.com
+* Fix: openload.io / openload.tv
+* Kill: freemulticoins.com
+* Kill: prem.link
+* Kill: lowcygier.pl
+* Fix: broken Firefox's "Get Add-Ons" page
 
 ##### Release 8.3 (August 7, 2015)
 * Add: function *getFunctionCode* (script)
