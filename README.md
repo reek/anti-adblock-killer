@@ -135,7 +135,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
-##### Release 8.4 (August 23, 2015)
+##### Upcoming changes
 * Exclude: pandoon.info (script)
 * Add: function *unpackScript* (script)
 * Add: function *getScript* (script)
