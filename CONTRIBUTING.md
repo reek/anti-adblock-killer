@@ -1,4 +1,4 @@
-![https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
+![https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/header.png)
 
 ## /!\ IMPORTANT /!\
 > This guide will help you formulate your report, the information you provide to me will allow me to more easily identify and correct the problems. Thank you in advance for your contribution.
