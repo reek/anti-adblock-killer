@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 8.3
+! Version: 8.4
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
@@ -56,7 +56,7 @@
 ! Suffix
 @@/\/advertisement([0-9]+|[\-._][a-z0-9]+)\.js/$script
 ! Min
-@@/advert.js$script,domain=~example.com
+@@/advert.js$script,domain=~adultmult.tv
 ! FFBS Ad Blocker (to see)
 ! http://static.graddit.com/js/advertisement.js
 ! jQuery Adblock Detector
@@ -67,10 +67,6 @@
 /jquery.adblock.js|$script
 ! jQuery AntiAdsBlock (Hendriono)
 /jquery.antiadsblock.js|$script
-! AdBlock Alerter
-! https://github.com/wp-plugins/adblock-alerter
-! +rules on aakscript
-#@##div-gpt-ad-1-0
 ! Adbuddy
 ! http://xenodesystems.appspot.com/adbuddy.html
 /js/adbuddy.min.js$script
@@ -127,7 +123,7 @@
 /adblock_detector.
 /adblockdetect.
 /adblockdetection.
-/anti-adblock$~stylesheet,~domain=mozilla.org
+/anti-adblock$~stylesheet,domain=~mozilla.org
 /anti_ab.
 /antiadblock.
 /wp-content/plugins/anti_ad_blocker/*
@@ -645,13 +641,11 @@ mangabird.com#@#.afs_ads
 ! smashboards.com
 smashboards.com###noticeMain
 smashboards.com##.premiumContain
-! tv3play.se
-! tv6play.se
-! tv8play.se
-! tv10play.se
-@@||5d3e9.v.fwmrm.net/ad/$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
-@@||adm.fwmrm.net/p/MTG_Live/Video2AdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
-@@||adm.fwmrm.net/p/MTG_Live/ExternalHTMLAdRenderer.swf$object-subrequest,domain=tv3play.se,tv6play.se,tv8play.se,tv10play.se
+! tv3play.se|tv6play.se|tv8play.se|tv10play.se
+! https://github.com/reek/anti-adblock-killer/issues?utf8=%E2%9C%93&q=tv3play
+@@||5d3e9.v.fwmrm.net/ad/$object-subrequest,domain=tv3play.se|tv6play.se|tv8play.se|tv10play.se
+@@||adm.fwmrm.net/p/MTG_Live/Video2AdRenderer.swf$object-subrequest,domain=tv3play.se|tv6play.se|tv8play.se|tv10play.se
+@@||adm.fwmrm.net/p/MTG_Live/ExternalHTMLAdRenderer.swf$object-subrequest,domain=tv3play.se|tv6play.se|tv8play.se|tv10play.se
 ! zive.cz
 doupe.zive.cz#@##adblock-leaderboard
 @@||ads.rubiconproject.com/ad/$script,domain=doupe.zive.cz
@@ -815,6 +809,7 @@ theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
 ! filmovizija.me
+! https://github.com/reek/anti-adblock-killer/issues/536
 @@||findvideo.tv/popunder.php$script,domain=filmovizija.me|filmovizija.in|filmovizija.com|filmovizija.net
 ! umahdroid.blogspot.com
 umahdroid.blogspot.com###energysaving
@@ -856,11 +851,11 @@ simply-debrid.com#@##adsense
 @@||urbeez.com^$elemhide
 @@||urbeez.com^$script
 ! WP.tv
-!@@||rek.www.wp.pl/vad.xml$xmlhttprequest
-!@@||rek.www.wp.pl/?rekid=$script
-!@@||rek.www.wp.pl/pliki/*_*.js$script
-!@@||adv.wp.pl/RM/Box/*/advertisement.js$script
-!@@||adv.wp.pl/RM/Box/*/x.gif$image
+@@||rek.www.wp.pl/vad.xml$xmlhttprequest
+@@||rek.www.wp.pl/?rekid=$script
+@@||rek.www.wp.pl/pliki/*_*.js$script
+@@||adv.wp.pl/RM/Box/*/advertisement.js$script
+@@||adv.wp.pl/RM/Box/*/x.gif$image
 ! sparkylinux.org
 @@||sparkylinux.org/images/ad/$image
 ! demonoid.pw
@@ -1060,9 +1055,10 @@ mytunnel.info#@#.afs_ads
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
-! openload.io / openload.tv
+! openload.io / openload.tv / openload.co
 ! https://github.com/reek/anti-adblock-killer/issues/475
-@@/adblock.js$script,domain=openload.io|openload.tv
+@@/assets/css/Ads.css$stylesheet,domain=openload.io|openload.tv|openload.co
+@@/adconfig.js$script,domain=openload.io|openload.tv|openload.co
 ! kwalifikacjewzawodzie.pl
 kwalifikacjewzawodzie.pl#@#.afs_ads
 ! hireteen.com
@@ -1103,8 +1099,8 @@ telepolis.pl##DIV[style="width:750px; height:200px; background-color:black; colo
 ! comptoir-info.com
 comptoir-info.com#@#.textad
 ! adultmult.tv
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=adultmult.tv
-@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=adultmult.tv
+! https://github.com/reek/anti-adblock-killer/issues/366
+@@||37.1.207.27/playlist/*$subdocument,domain=adultmult.tv
 ! 4chan.org
 4chan.org#@#.ad-plea
 4chan.org#@#.topad
@@ -1151,11 +1147,11 @@ tree.tv#@##adverts
 ! captchme.net
 ! https://github.com/reek/anti-adblock-killer/issues/533
 @@||pagead2.googlesyndication.com/pagead/|$subdocument
-! wyborcza.pl
+! wyborcza.pl / gazeta.pl
 ! https://github.com/reek/anti-adblock-killer/issues/531
-@@||squid.gazeta.pl/info/squid/fprint.js$script,domain=squid.gazeta.pl
-@@||squid.gazeta.pl/sqpwgl/pwfpl$xmlhttprequest,domain=squid.gazeta.pl
-@@||squid.gazeta.pl/sqpwgl/pwif$subdocument,domain=wyborcza.pl
+@@||squid.gazeta.pl/info/squid/fprint.js$script,domain=wyborcza.pl|gazeta.pl
+@@||squid.gazeta.pl/sqpwgl/pwfpl$xmlhttprequest,domain=wyborcza.pl|gazeta.pl
+@@||squid.gazeta.pl/sqpwgl/pwif$subdocument,domain=wyborcza.pl|gazeta.pl
 ! torrent-tv.ru
 ! https://github.com/reek/anti-adblock-killer/issues/537
 torrent-tv.ru##.page > .right-side > .section + .section + .section
@@ -1173,6 +1169,25 @@ freemulticoins.com#@#.adsbygoogle
 ! lowcygier.pl
 ! https://github.com/reek/anti-adblock-killer/issues/539
 @@||lowcygier.pl/wp-content/themes/graphene/js/ads.js$script
+! crichd.tv
+! https://github.com/reek/anti-adblock-killer/issues/544
+popeoftheplayers.eu###mask1
+! aflamy.com
+! https://github.com/reek/anti-adblock-killer/issues/546
+aflamy.com#@#.afs_ads
+! la-faculte.net
+! https://github.com/reek/anti-adblock-killer/issues/550
+la-faculte.net#@##adsense
+! femmeactuelle.fr
+! https://github.com/reek/anti-adblock-killer/issues/551
+@@||sascdn.com/config.js?nwid=$domain=femmeactuelle.fr
+@@||sascdn.com/diff/js/smart.js$domain=femmeactuelle.fr
+! algerie360.com
+! https://github.com/reek/anti-adblock-killer/issues/554
+algerie360.com#@#.afs_ads
+! cpubenchmark.net
+! https://github.com/reek/anti-adblock-killer/issues/556
+@@||cpubenchmark.net/js/ads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1441,9 +1456,11 @@ megafilmeshd.net###ad2
 megafilmeshd.net##[href^="http://click.afiliados.uol.com.br/Clique"]
 ! youwatch.org
 ! https://github.com/reek/anti-adblock-killer/issues/535
+@@||p40.trafe.info^$script,domain=youwatch.org
 @@||i93.whies.info^$script,domain=youwatch.org
 @@||q41.twer.info^$script,domain=youwatch.org
-@@||pla.folue.info/needes.js$script
+@@/needes.js|$script,domain=youwatch.org
+!@@||*.*.info^$script,domain=youwatch.org
 @@||cdn.jsdelivr.net/jwplayer/5.10/jwplayer.js$script
 youwatch.org###player_img
 ! live.gtcaster.com
