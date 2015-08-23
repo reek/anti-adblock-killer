@@ -170,7 +170,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: adultmult.tv 
 * Fix: youwatch.org
 * Fix: tv3play.se / tv6play.se / tv8play.se / tv10play.se
-
+* Fix: hackintosh.zone
 
 ##### Release 8.3 (August 7, 2015)
 * Add: function *getFunctionCode* (script)
