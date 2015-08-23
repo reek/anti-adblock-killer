@@ -1,7 +1,7 @@
 ##Anti-Adblock Killer | Reek
-![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/header.png)
+![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/header.png)
 
-[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate) 
+[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate) 
  
 ## /!\ IMPORTANT /!\
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
@@ -17,11 +17,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 **Benefits: Your queries will be given the highest priority, and you will be credited in the source code as a generous donor.**
 
-* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
-* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
-* ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
-* ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
-* ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
+* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
+* ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
+* ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
+* ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
 
 
 
@@ -30,10 +30,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 ##### Requirement: Adblock, Adblock Plus or uBlock Origin
 
 #### Step 1: Script Manager (Install)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) [NinjaKit](https://github.com/os0x/NinjaKit)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [NinjaKit](https://github.com/os0x/NinjaKit)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
@@ -96,10 +96,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 
 ## Supported Browsers
-* ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/firefox.png) Firefox &#10004;
-* ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/chrome.png) Chrome &#10004;
-* ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/opera.png) Opera &#10004;
-* ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/img/safari.png) Safari &#10004;
+* ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) Firefox &#10004;
+* ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) Chrome &#10004;
+* ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) Opera &#10004;
+* ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) Safari &#10004;
 
 
 ## Supported Sites
@@ -121,8 +121,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * No-Adblock - (no-adblock.com)
 * AdBuddy
 
+
 ##### Plugins (Wordpress)
-* WordPress AdBlock Blocker (thisismyurl.com)
+* AdBlock Blocker
 * No Adblock (noadblock.com)
 * AdBlock Alerter
 * BlockAlyzer - Adblock counter
@@ -136,20 +137,40 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 ## Changelog
 ##### Upcoming changes
 * Exclude: pandoon.info (script)
-* Kill: italiatv.org (script)
-* Fix: youwatch.org (kill + hide ads allowed by easylist) (script+list)
+* Add: function *unpackScript* (script)
+* Add: function *getScript* (script)
+* Kill: AdBlock Blocker (script)
 * Kill: torrent-tv.ru (script+list)
+* Kill: italiatv.org (script)
+* Kill: bitcoinaliens.com (script)
+* Kill: binbucks.com (script)
+* Kill: 3dnews.ru (script)
+* Kill: bolor-toli.com (script)
+* Kill: mangahost.com (script)
+* Fix: youwatch.org (kill + hide ads allowed by easylist) (script+list)
 * Fix: turbodebrideur.com (script)
+* Fix: function *player.jwplayer5* (script)
 * Kill: vvvvid.it
 * Kill: djawir.com
-* Fix: captchme.net
 * Kill: wyborcza.pl
-* Fix: tsa-algerie.com
-* Fix: openload.io / openload.tv
 * Kill: freemulticoins.com
 * Kill: prem.link
 * Kill: lowcygier.pl
-* Fix: broken Firefox's "Get Add-Ons" page
+* Fix: broken Firefox's "Get Add-Ons" page (list)
+* Fix: captchme.net
+* Fix: tsa-algerie.com
+* Kill: crichd.tv
+* Kill: aflamy.com
+* Kill: gazeta.pl
+* Kill: la-faculte.net
+* Kill: femmeactuelle.fr
+* Kill: algerie360.com
+* Kill: cpubenchmark.net
+* Fix: openload.io / openload.tv / openload.co
+* Fix: adultmult.tv 
+* Fix: youwatch.org
+* Fix: tv3play.se / tv6play.se / tv8play.se / tv10play.se
+
 
 ##### Release 8.3 (August 7, 2015)
 * Add: function *getFunctionCode* (script)
