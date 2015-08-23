@@ -1188,6 +1188,9 @@ algerie360.com#@#.afs_ads
 ! cpubenchmark.net
 ! https://github.com/reek/anti-adblock-killer/issues/556
 @@||cpubenchmark.net/js/ads.js$script
+! hackintosh.zone
+! https://github.com/reek/anti-adblock-killer/issues/559
+@@||adn.impactradius.com/gen-ad-code/$domain=hackintosh.zone
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
