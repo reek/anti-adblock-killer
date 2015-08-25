@@ -1055,10 +1055,6 @@ mytunnel.info#@#.afs_ads
 crypto-clix.net#@#.ad-block
 crypto-clix.net#@#.ad-content
 crypto-clix.net#@#.ad-footer
-! openload.io / openload.tv / openload.co
-! https://github.com/reek/anti-adblock-killer/issues/475
-@@/assets/css/Ads.css$stylesheet,domain=openload.io|openload.tv|openload.co
-@@/adconfig.js$script,domain=openload.io|openload.tv|openload.co
 ! kwalifikacjewzawodzie.pl
 kwalifikacjewzawodzie.pl#@#.afs_ads
 ! hireteen.com
@@ -1082,8 +1078,6 @@ hireteen.com###adb-enabled
 @@||sportsplays.com/ads/ad.html$subdocument
 ! booksmedicos.org
 booksmedicos.org#@#.afs_ads
-! openload.io
-@@||openload.io/assets/css/Ad.css$stylesheet
 ! wetter3.de
 @@||sponsorads.de/script.php$script,domain=wetter3.de
 ! pebx.pl
@@ -1191,6 +1185,14 @@ algerie360.com#@#.afs_ads
 ! hackintosh.zone
 ! https://github.com/reek/anti-adblock-killer/issues/559
 @@||adn.impactradius.com/gen-ad-code/$domain=hackintosh.zone
+! turbodebrideur.com
+! https://github.com/reek/anti-adblock-killer/issues/563
+turbodebrideur.com#@##pubdirecte
+! openload.io / openload.tv / openload.co
+! https://github.com/reek/anti-adblock-killer/issues/475
+@@||openload.io^$elemhide
+@@||openload.co^$elemhide
+@@||openload.tv^$elemhide
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
