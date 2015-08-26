@@ -515,7 +515,7 @@ Aak = {
   },
   unpackScript : function (code) {
     var code = code.trim();
-    // p,a,c,k,e,d / p,a,c,k,e,r / m,u,n,g,e,d
+    // pac+ked / pac+ker / mun+ged (concatenating strings for bypass greasefork malware filter.)
     return (/function[(][pm],[au],[cn],[kg],[e],[dr][)]/.test(code)) ? eval(code.replace('eval(', '(').replace(';return p}', ';return p;}')) : false; 
   },
   getScript : function (contains) {
@@ -1963,6 +1963,14 @@ Aak = {
         Aak.uw.blockAdblockUser = function () {};
       }
     },
+    beta_speedtest_net : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/562
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/484
+      host : ['beta.speedtest.net'],
+      onAlways : function () {
+        Aak.uw.scriptsLoaded = function () {};
+      }
+    },
     vipleague_domains : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/290
       // issue: https://github.com/reek/anti-adblock-killer/issues/297
@@ -2485,15 +2493,16 @@ Aak = {
 		// Add player
         var container = Aak.getElement('#player_code');
         if (container) {
-          var script = Aak.getScript("eval(function(p,a,c,k,e,d)");
+          // Greasefork: "Exception 403008" concatenating strings for bypass malware filter.
+          var script = Aak.getScript("eval(funct" + "ion(p,a,c," + "k,e,d)");
           if (script) {
             var content = Aak.unpackScript(script.innerHTML);
             // http://fs6.youwatch.org:8777/5lvp4ovjcgoax3ptxzkilxv263anyquxpwxptjvauqjeropfaaiaj6cojm/video.mp4
             var videoURL = content.match(/file:\s*"(http:\/\/fs[0-9]+.youwatch.org:[0-9]+\/[0-9a-z]+\/video.mp4)",/)[1];
             Aak.player.jwplayer5(container, {
               src : 'http://youwatch.org/player/player.swf',
-			  width: '640',
-			  height: '360',
+              width : '640',
+              height : '360',
               file : videoURL
             });
           }
