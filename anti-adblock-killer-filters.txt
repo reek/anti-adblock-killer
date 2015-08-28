@@ -1193,6 +1193,16 @@ turbodebrideur.com#@##pubdirecte
 @@||openload.io^$elemhide
 @@||openload.co^$elemhide
 @@||openload.tv^$elemhide
+! multiup.org
+! https://greasyfork.org/forum/discussion/5870
+! https://github.com/reek/anti-adblock-killer/issues/568
+multiup.org#@#.ADBAR
+! biggestplayer.me
+! https://github.com/reek/anti-adblock-killer/issues/566
+biggestplayer.me##.masr
+! krs-online.com.pl
+! https://github.com/reek/anti-adblock-killer/issues/567
+@@||krs-online.com.pl/js/showads.js$script
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
