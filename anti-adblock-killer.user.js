@@ -35,7 +35,7 @@
   Thanks
 =======================================================
 
-  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone
+  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone, M. Silveira, K. MacArthur
 
   Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT, F4z, Angelsl, Mikhaelk, Marek, Hamsterbacke
 
@@ -285,7 +285,7 @@ Aak = {
           id : 'aak-notice',
           class : 'bounceInLeft',
           html : '<img  id="aak-notice-close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAIVBMVEXcFDwAAADcFDzcFDzcFDzcFDzcFDzcFDzcFDzcFDzcFDxaSbB2AAAACnRSTlP9AASnuEmihYQNEux+bAAAAHpJREFUCNc9jjEKwkAURB8YQX4326jlsri1bJkqtZVYWu4NbK30CN7gQxTBU5olkKkGhuE9dHjFsL8IPYqUNmLnYwy9PTlDSbAmQzdAJRwBVhElgCKkk/lbrQzQSSxT6H9Txkj2drfK1awk9w/bGXFD9yrlr5qGNGn8AcsRF4P77o1SAAAAAElFTkSuQmCC"/><div id="aak-notice-content">' + message + '</div>',
-          to : 'body'
+          append : 'body'
         });
         var close = function () {
           Aak.getElement('#aak-notice').className = 'bounceOutLeft';
@@ -515,13 +515,14 @@ Aak = {
   },
   unpackScript : function (code) {
     var code = code.trim();
+	// Greasefork: "Exception 403008"
     // pac+ked / pac+ker / mun+ged (concatenating strings for bypass greasefork malware filter.)
     return (/function[(][pm],[au],[cn],[kg],[e],[dr][)]/.test(code)) ? eval(code.replace('eval(', '(').replace(';return p}', ';return p;}')) : false; 
   },
-  getScript : function (contains) {
+  getScript : function (contains, doc) {
     // by: Watilin
     return Array.prototype.filter.call(
-      document.scripts,
+      doc && doc.scripts || document.scripts,
       function ($script) {
       var source = $script.innerHTML;
       return source && source.indexOf(contains) != -1;
@@ -563,10 +564,6 @@ Aak = {
         repeat = (repeat) ? repeat - 1 : clearInterval(loop);
       }, 1e3);
   },
-  addElement : function (str) { // ex: div.ads or span#ads
-    var split = str.replace('.', ':className:').replace('#', ':id:').split(':');
-    Aak.addScript('document.documentElement.appendChild(document.createElement("' + split[0] + '")).' + split[1] + ' = "' + split[2] + '"; document.querySelector("' + str + '").innerHTML = "<br>";');
-  },
   removeElement : function (elem) {
     if (elem instanceof HTMLElement) {
       return elem.parentNode.removeChild(elem);
@@ -606,9 +603,17 @@ Aak = {
       case "class":
         node.className = props[name];
         break;
-      case "to":
+      case "append":
         var elem = Aak.getElement(props[name]);
         elem.appendChild(node);
+        break;
+      case "prepend":
+        var elem = Aak.getElement(props[name]);
+        if (elem.childNodes.length) {
+          elem.insertBefore(node, elem.childNodes[0]);
+        } else {
+          elem.appendChild(node);
+        }
         break;
       case "before":
         var elem = Aak.getElement(props[name]);
@@ -626,6 +631,15 @@ Aak = {
         node.setAttribute(name, props[name]);
       }
     }
+	return node;
+  },
+  addBaitElement : function (strOpts) { // ex: div.ads or span#ads@
+    var opts = strOpts.replace('.', ':className:').replace('#', ':id:').split(':');
+    var bait = document.createElement(opts[0]);
+    bait.setAttribute(opts[1], opts[2]);
+    bait.innerHTML = "<br>";
+    document.documentElement.appendChild(bait);
+    return bait;
   },
   replaceElement : function (oldNode, newNode) {
     oldNode.parentNode.replaceChild(newNode, oldNode);
@@ -646,7 +660,7 @@ Aak = {
           node.className = props[name];
           break;
         default:
-          node[name] = props[name];
+          node.setAttribute(name, props[name]);
         }
       }
     }
@@ -1192,12 +1206,6 @@ Aak = {
         Aak.addStyle("#adblock { height: 1px; }");
       }
     },
-    multiup_org : {
-      host : ['multiup.org', 'streamupload.org'],
-      onStart : function () {
-        Aak.addStyle("#crazy { height: 3px; }");
-      }
-    },
     mrtzcmp3_net : {
       host : ['mrtzcmp3.net'],
       onStart : function () {
@@ -1298,7 +1306,7 @@ Aak = {
       host : ['eveskunk.com'],
       onStart : function () {
         // Disable Antiblock 1
-        //Aak.addElement('div.adsbygoogle'); // dont work
+        //Aak.addBaitElement('div.adsbygoogle'); // dont work
         // + abp rule eveskunk.com#@#.adsbygoogle
         Aak.addStyle(".adsbygoogle { height: 5px; }");
         // Disable Antiblock 2
@@ -1406,31 +1414,31 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/547
       host : ['bitcoinaliens.com'],
       onStart : function () {
-        Aak.addElement('ins.adsbygoogle');
+        Aak.addBaitElement('ins.adsbygoogle');
       }
     },
     bait_tester : {
       host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'online.ua'],
       onStart : function () {
-        Aak.addElement('div#tester');
+        Aak.addBaitElement('div#tester');
       }
     },
     bait_add : {
       host : ['filecom.net', 'upshare.org', 'skippyfile.com', 'mwfiles.net', 'up-flow.org'],
       onStart : function () {
-        Aak.addElement('div#add');
+        Aak.addBaitElement('div#add');
       }
     },
     bait_adpbtest : {
       host : ['leaguesecretary.com', 'teknogods.com', 'hellsmedia.com'],
       onStart : function () {
-        Aak.addElement('div#adpbtest');
+        Aak.addBaitElement('div#adpbtest');
       }
     },
     bait_adtester : {
       host : ['freesportsbet.com', 'sportsplays.com'],
       onStart : function () {
-        Aak.addElement('div#ad-tester');
+        Aak.addBaitElement('div#ad-tester');
       }
     },
     tgo_tv_com : {
@@ -1438,7 +1446,7 @@ Aak = {
       host : ['tgo-tv.com'],
       onStart : function () {
         Aak.addStyle("#adb, #bannerad1, .load_stream { display: none; }");
-        Aak.addElement('div#tester');
+        Aak.addBaitElement('div#tester');
       },
       onEnd : function () {
         Aak.uw.threshold = 1000;
@@ -1448,20 +1456,41 @@ Aak = {
     freegamehosting_nl : {
       host : ['freegamehosting.nl'],
       onStart : function () {
-        Aak.addElement('div#adtest');
+        Aak.addBaitElement('div#adtest');
       }
     },
     theweatherspace_com : {
       host : ['theweatherspace.com'],
       onStart : function () {
-        Aak.addElement('div#ab-bl-advertisement');
+        Aak.addBaitElement('div#ab-bl-advertisement');
+      }
+    },
+    prem_link : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/572
+      // issue: https://github.com/reek/anti-adblock-killer/issues/541
+      host : ['prem.link'],
+      onStart : function () {
+        Aak.addBaitElement('div#aswift_0');
+      }
+    },
+    cubeupload_com : {
+      // issue: https://greasyfork.org/en/forum/discussion/5919
+      host : ['cubeupload.com'],
+      onStart : function () {
+        Aak.createElement({
+          tag : 'iframe',
+          name : 'iframe',
+          src : 'about:blank',
+          style : 'display:none;',
+          append : document.documentElement
+        });
       }
     },
     stream4free_eu : {
       host : ['stream4free.eu'],
       onStart : function () {
         // +abp alt solution
-        Aak.addElement('div#jpayday');
+        Aak.addBaitElement('div#jpayday');
         Aak.uw.jpayday_alert = 1;
       }
     },
@@ -1471,7 +1500,7 @@ Aak = {
       onStart : function () {
         Aak.setCookie('adblockwarn', 1);
         Aak.addStyle("#earAds { width: 401px; }");
-        Aak.addElement('div#earAds');
+        Aak.addBaitElement('div#earAds');
         Aak.uw.__AT_detected = true;
       }
     },
@@ -1484,38 +1513,38 @@ Aak = {
     primeshare_tv : {
       host : ['primeshare.tv'],
       onStart : function () {
-        Aak.addElement('div#adblock');
+        Aak.addBaitElement('div#adblock');
       }
     },
     jkanime_net : {
       host : ['jkanime.net'],
       // @@||jkanime.net/assets/js/advertisement2.js
       onStart : function () {
-        Aak.addElement('div#reco');
+        Aak.addBaitElement('div#reco');
       }
     },
     _720pmkv_com : {
       host : ['720pmkv.com'],
       onStart : function () {
-        Aak.addElement('div#advert');
+        Aak.addBaitElement('div#advert');
       }
     },
     paidverts_com : {
       host : ['paidverts.com'],
       onStart : function () {
-        Aak.addElement('div.afs_ads');
+        Aak.addBaitElement('div.afs_ads');
       }
     },
     italiatv_org : {
       host : ['italiatv.org'],
       onStart : function () {
-        Aak.addElement('div#fab13');
+        Aak.addBaitElement('div#fab13');
       }
     },	
     totaldebrid_org : {
       host : ['totaldebrid.org', 'referencemega.com'],
       onStart : function () {
-        Aak.addElement('div.afs_ads');
+        Aak.addBaitElement('div.afs_ads');
       },
       onEnd : function () {
         Aak.removeElement('#dialog');
@@ -1524,19 +1553,19 @@ Aak = {
     chrissmoove_com : {
       host : ['chrissmoove.com'],
       onStart : function () {
-        //Aak.addElement('div#adserver');
+        //Aak.addBaitElement('div#adserver');
       }
     },
     eventhubs_com : {
       host : ['eventhubs.com'],
       onStart : function () {
-        Aak.addElement('div#blahyblaci1');
+        Aak.addBaitElement('div#blahyblaci1');
       }
     },
     forum_pac_rom_com : {
       host : ['forum.pac-rom.com'],
       onStart : function () {
-        Aak.addElement('div.banner_ads');
+        Aak.addBaitElement('div.banner_ads');
       }
     },
     antennesport_com : {
@@ -1598,7 +1627,16 @@ Aak = {
         Aak.uw.testJuicyPay = true;
         Aak.uw.testSensePay = true;
       }
-    },	
+    },
+    narkive_com : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/569
+      host : ['narkive.com'],
+      onAlways : function () {
+        Aak.uw.adblock_status = function (bool) {
+          return false;
+        };
+      }
+    },
     cwtv_com : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/340
       // code: http://pastebin.com/J7e73MpJ
@@ -1876,8 +1914,8 @@ Aak = {
       // issue:
       host : ['bitcoiner.net', 'litecoiner.net'],
       onStart : function () {
-        Aak.addElement('div#tester');
-        Aak.addElement('div#ad-top');
+        Aak.addBaitElement('div#tester');
+        Aak.addBaitElement('div#ad-top');
       }
     },
     bitcoins_nx_tc : {
@@ -1963,12 +2001,11 @@ Aak = {
         Aak.uw.blockAdblockUser = function () {};
       }
     },
-    beta_speedtest_net : {
-      // issue: https://github.com/reek/anti-adblock-killer/issues/562
-	  // issue: https://github.com/reek/anti-adblock-killer/issues/484
-      host : ['beta.speedtest.net'],
+    exrapidleech_info : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/573
+      host : ['exrapidleech.info'],
       onAlways : function () {
-        Aak.uw.scriptsLoaded = function () {};
+        Aak.uw.adblock = false;
       }
     },
     vipleague_domains : {
@@ -2023,7 +2060,7 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/153
       host : ['psarips.com'],
       onStart : function () {
-        Aak.addElement('div#advert');
+        Aak.addBaitElement('div#advert');
       }
     },
     extratorrent_domains : {
@@ -2051,10 +2088,10 @@ Aak = {
         if (Aak.contains(location.host, 'forum')) {
           // Solution 1
           Aak.addStyle("#banner, script { height: 51px; }");
-          Aak.addElement('div#banner');
+          Aak.addBaitElement('div#banner');
         } else { // Website
           // Solution 1
-          Aak.addElement('div.banner_topo');
+          Aak.addBaitElement('div.banner_topo');
         }
       },
       onIdle : function () {
@@ -2231,6 +2268,37 @@ Aak = {
 		*/
       }
     },
+    hackintosh_zone : {
+      // by: Alexander255
+      // issue: https://github.com/reek/anti-adblock-killer/issues/559
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/427
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/187
+	  // issue: https://github.com/reek/anti-adblock-killer/pull/114
+      host : ['hackintosh.zone'],
+      onIdle : function () {
+        var head = document.getElementsByTagName("head")[0];
+       
+        // Fake Google ad frame content
+        var ad1 = document.createElement("ins");
+        ad1.className = "adsbygoogle";
+        ad1.appendChild(document.createTextNode("AAK"));
+        head.insertBefore(ad1, head.childNodes[0]);
+       
+        // Fake CleanMyMac ad frame size
+        var ad2 = document.createElement("div");
+        ad2.id  = "cleanmymac";
+        Object.defineProperty(ad2.wrappedJSObject, 'clientHeight', {value: 1});
+        head.insertBefore(ad2, head.childNodes[0]);
+      }
+    },
+    kingmaker_news : {
+      // by: Alexander255
+      // issue: https://github.com/reek/anti-adblock-killer/issues/561
+      host : ['kingmaker.news'],
+      onIdle : function () {
+        Aak.uw.google_jobrunner = true;
+      }
+    },
     tvdez_domains : {
       // (document.getElementById('pubfooter').clientHeight < 20)
       host : ['tvdez.com', 'casadossegredos.tv', 'estadiofutebol.com', 'televisaofutebol.com'],
@@ -2282,14 +2350,34 @@ Aak = {
         Aak.uw.makePopunder = false;
       }
     },
+    openload_domains : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/475
+      host : ['openload.co', 'openload.io', 'openload.tv'],
+      onIdle : function () {
+	  /*
+        var elMainWrapper = document.querySelector('#main .main-wrapper');
+        var clnMainWrapper = elMainWrapper.cloneNode(true);
+        interval = setInterval(function () {
+            var elAdblock = document.querySelector('#main .main-wrapper .adblock');
+            if (elAdblock) {
+              Aak.replaceElement(elAdblock.parentNode, clnMainWrapper);
+              clearInterval(interval);
+            }
+          }, 500);
+		  */
+      }
+    },
     turbodebrideur_com : {
-	  // issue: https://github.com/reek/anti-adblock-killer/issues/526
+      // issue: https://github.com/reek/anti-adblock-killer/issues/563
+      // issue: https://github.com/reek/anti-adblock-killer/issues/526
       host : ['turbodebrideur.com'],
       onIdle : function () {
-        var div = document.createElement("div");
-        div.id = 'pubdirecte';
-        div.innerHTML = '<img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUNCDsIxR/nKAAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAANklEQVRYw+3OMQEAIAwDsA41+FeDmyJjT6Igk+S2fVkybbPpZJmAgICAgICAgICAgICAwHrgA+mMBzm8q/ebAAAAAElFTkSuQmCCCiAJICAJIAo="/>';
-        document.body.appendChild(div);
+        Aak.createElement({
+          tag : 'div',
+          id : 'pubdirecte',
+          html : '<img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUNCDsIxR/nKAAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAANklEQVRYw+3OMQEAIAwDsA41+FeDmyJjT6Igk+S2fVkybbPpZJmAgICAgICAgICAgICAwHrgA+mMBzm8q/ebAAAAAElFTkSuQmCCCiAJICAJIAo="/>',
+          append : 'body'
+        });
       }
     },
     _4shared_com : {
@@ -2476,24 +2564,25 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/308
       // issue: https://github.com/reek/anti-adblock-killer/issues/529
       // issue: https://github.com/reek/anti-adblock-killer/issues/535
-      host : ['youwatch.org', 'q41.twer.info', 'i93.whies.info', 'p40.trafe.info'],
+      host : ['youwatch.org'],
       onStart : function () {
         // Hide player ads allowed by easylist
-        Aak.addStyle('#player_img, #iframe2, #iframe3 { display:none; }');
+        Aak.addStyle('#player_img, #iframe2, #iframe3, .video_ad { display:none; }');
         // Skip antiblock
         Aak.uw.jwplayer = function () {};
 		// I tried to add jwlib, but without success.
         //Aak.addExternalScript('http://cdn.jsdelivr.net/jwplayer/5.10/jwplayer.js');
       },
-      onEnd : function () {
+      onIdle : function () {
         /* test
         http://youwatch.org/embed-drt18f1uehtc-640x360.html
         http://youwatch.org/drt18f1uehtc
-        */
-		// Add player
+         */
+
+        // main
         var container = Aak.getElement('#player_code');
         if (container) {
-          // Greasefork: "Exception 403008" concatenating strings for bypass malware filter.
+          // concatenating strings for bypass greasefork malware filter.
           var script = Aak.getScript("eval(funct" + "ion(p,a,c," + "k,e,d)");
           if (script) {
             var content = Aak.unpackScript(script.innerHTML);
@@ -2507,6 +2596,42 @@ Aak = {
             });
           }
         }
+
+        // embed
+        if (/\/embed-[0-9a-z]+-[0-9]+x[0-9]+.html$/.test(location.pathname)) {
+          var iframe = document.querySelector('iframe');
+          Aak.request({
+            url : iframe.src,
+            headers : {
+              "Referer" : iframe.src
+            },
+            onload : function (result) {
+              var res = result.responseText;
+              var parser = new DOMParser();
+              var doc = parser.parseFromString(res, "text/html");
+			  // concatenating strings for bypass greasefork malware filter.
+              var script = Aak.getScript("eval(funct" + "ion(p,a,c," + "k,e,d)", doc);
+              if (script) {
+                var content = Aak.unpackScript(script.innerHTML);
+                // http://fs6.youwatch.org:8777/5lvp4ovjcgoax3ptxzkilxv263anyquxpwxptjvauqjeropfaaiaj6cojm/video.mp4
+                var videoURL = content.match(/file:\s*"(http:\/\/fs[0-9]+.youwatch.org:[0-9]+\/[0-9a-z]+\/video.mp4)",/)[1];
+                Aak.player.jwplayer5(iframe, {
+                  src : 'http://youwatch.org/player/player.swf',
+                  width : '640',
+                  height : '360',
+                  file : videoURL
+                });
+              }
+            }
+          });
+        }
+
+        /*
+        iframe.addEventListener("load", function () {
+        iframe.contentWindow.wrappedJSObject.closead();
+        });
+         */
+
       }
     },	
     exashare_com : {
@@ -3289,7 +3414,7 @@ Aak = {
       onStart : function () {
         // this solution dont works
         // document.getElementById('ads1').clientHeight < 20
-        Aak.addElement('div#ads1');
+        Aak.addBaitElement('div#ads1');
         Aak.addStyle("#ads1 { height: 30px; }");
       },
       onBeforeScript : function (e) {
