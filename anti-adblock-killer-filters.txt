@@ -123,7 +123,6 @@
 /adblock_detector.
 /adblockdetect.
 /adblockdetection.
-/anti-adblock$~stylesheet,domain=~mozilla.org
 /anti_ab.
 /antiadblock.
 /wp-content/plugins/anti_ad_blocker/*
@@ -592,8 +591,6 @@ filecore.co.nz#@#.adsense
 @@||gratisbitco.in/scripts/ads.js$script
 ! labnol.org
 ||img.labnol.org/di/support.png$image
-! totaldebrid.org / referencemega.com
-totaldebrid.org,referencemega.com#@#.afs_ads
 ! quickbitco.in
 @@||quickbitco.in/js/ads.js$script
 ! onemanga.me
@@ -920,7 +917,9 @@ fontsquirrel.com###bottom_banner_ad_container
 annuaire-bleu.net#@##adblocktest
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
 ! playbitco.in
-@@||playbitco.in/show_ads.js$script
+! https://github.com/reek/anti-adblock-killer/issues/577
+! https://github.com/reek/anti-adblock-killer/issues/376
+@@||waterbitco.in/show_ads.js$script
 ! prizebitcoins.com
 @@||prizebitcoins.com/banner.gif$image
 ! mojevideo.sk
@@ -1157,15 +1156,14 @@ torrent-tv.ru##.page > .right-side > .section + .section + .section
 freemulticoins.com#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=freemulticoins.com
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=freemulticoins.com
-! prem.link
-! https://github.com/reek/anti-adblock-killer/issues/541
-@@||prem.link/ads.html$subdocument,domain=prem.link
 ! lowcygier.pl
 ! https://github.com/reek/anti-adblock-killer/issues/539
 @@||lowcygier.pl/wp-content/themes/graphene/js/ads.js$script
 ! crichd.tv
+! https://github.com/reek/anti-adblock-killer/issues/557
 ! https://github.com/reek/anti-adblock-killer/issues/544
 popeoftheplayers.eu###mask1
+yocast.tv##.player_div + #video_ads_overdiv + div
 ! aflamy.com
 ! https://github.com/reek/anti-adblock-killer/issues/546
 aflamy.com#@#.afs_ads
@@ -1196,13 +1194,41 @@ turbodebrideur.com#@##pubdirecte
 ! multiup.org
 ! https://greasyfork.org/forum/discussion/5870
 ! https://github.com/reek/anti-adblock-killer/issues/568
+! https://github.com/reek/anti-adblock-killer/issues/570
 multiup.org#@#.ADBAR
 ! biggestplayer.me
 ! https://github.com/reek/anti-adblock-killer/issues/566
 biggestplayer.me##.masr
+popeoftheplayers.eu###html4
 ! krs-online.com.pl
 ! https://github.com/reek/anti-adblock-killer/issues/567
 @@||krs-online.com.pl/js/showads.js$script
+! sc2casts.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=sc2casts.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=sc2casts.com
+! nnm-club.ws
+! https://greasyfork.org/forum/discussion/5923
+@@||assets.nnm-club.ws/forum/misc/js/advertising.js$script
+! bricozone.fr
+! https://github.com/reek/anti-adblock-killer/issues/574
+bricozone.fr#@#.adsbygoogle
+! howtogeek.com
+! https://github.com/reek/anti-adblock-killer/issues/578
+! https://github.com/reek/anti-adblock-killer/issues/576
+@@||howtogeek.com/adframe.js$subdocument
+! piter.tv
+! https://greasyfork.org/forum/discussion/5997
+@@||static.videocore.tv/jscript/PTV_06_13/advert2.js$script,domain=piter.tv
+! articlerewritertool.com
+! https://github.com/reek/anti-adblock-killer/issues/589
+articlerewritertool.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=articlerewritertool.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=articlerewritertool.com
+! spinbot.com
+! https://github.com/reek/anti-adblock-killer/issues/589
+spinbot.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=spinbot.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=spinbot.com
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1649,6 +1675,10 @@ nowwatchtvlive.me##[id^="bannerfloat"]
 nowwatchtvlive.me##DIV[style="padding-top:5px;float:left;width:100%;font-size:13px;line-height:26px;height:31px;top: 12px;z-index:9999;text-align:left"]
 ! goodcast.co.uk
 goodcast.co.uk##[style="position: absolute; top: 100px; left: 160px; z-index: 1000;"]
+! privatestream.tv
+privatestream.tv###timer1
+privatestream.tv###timer2
+privatestream.tv###timer3
 ! Others ---------------------------------------------------------------------------------------
 ! tvi
 tvi24.iol.pt##iframe#barraIOL
