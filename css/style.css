@@ -1,0 +1,310 @@
+@charset=utf-8;
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+html {
+  background-color: #DC143C;
+}
+
+body {
+  font-family: "Oswald", Arial, Tahoma;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: url("https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png") no-repeat 50px 10px;
+  background-size: 48px 48px;
+  background-color: #DC143C;
+  color: #fff;
+  padding: 10px 110px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h1 a {
+  color: #fff;
+}
+
+h2 {
+  font-weight: normal;
+  color: #DC143C;
+  margin: 3px 0px;
+  font-size: 1.9em;
+}
+
+h3 {
+  font-weight: normal;
+  color: #DC143C;
+  padding: 5px 20px;
+  margin: 3px 0px;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 3px solid #DC143C;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-weight: normal;
+  color: #000;
+  padding: 5px 0px;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #DC143C;
+}
+
+ul {
+  list-style-type: square;
+  color: #DC143C;
+}
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 22px;
+  height: 17px;
+  display: inline-block;
+  line-height: 17px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 17px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -17px;
+}
+
+label.css-label {
+  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_0fea4020df9b84ba7b132b93b0c784ed.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+  background-color: #DC143C;
+  color: #fff;
+}
+
+/* Works in Safari */
+::selection {
+  background-color: #DC143C;
+  color: #fff;
+}
+
+.smallest {
+  font-size: .3em;
+}
+
+.small {
+  font-size: .6em;
+}
+
+.normal {
+  font-size: 1em;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+.bigest {
+  font-size: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.notice {
+  color: #F8D0D8;
+  margin: 3% 0%;
+  padding: 2%;
+  background-color: #FFF0F3;
+  border: 1px solid #DC143C;
+}
+
+.fieldset {
+  color: #666;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.content {
+  padding: 10px 20px;
+  min-height: 500px;
+}
+
+.header {
+  background-color: #DC143C;
+  color: #fff;
+  padding-top: 15%;
+  min-height: 650px;
+  text-align: center;
+}
+
+.brand {
+  font-size: 3em;
+}
+
+.slogan {
+  font-size: 1.5em;
+}
+
+.section {
+  margin: 0px 50px 0px 50px;
+  background-color: #fff;
+  color: #000;
+}
+
+.section::before {
+  content: "";
+  display: block;
+  background-color: #DC143C;
+  background-image: url("../images/cut-left.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 30px;
+  height: 30px;
+  width: 100%;
+}
+
+.section::after {
+  content: "";
+  display: block;
+  background-color: #DC143C;
+  background-image: url("../images/cut-bottom-right.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 30px;
+  height: 30px;
+  width: 100%;
+}
+
+.button-alt {
+  font-size: 16px;
+  border: 2px solid #fff;
+  background-color: #DC143C;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-alt:hover {
+  background-color: #fff;
+  color: #DC143C;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+
+.button {
+  font-size: 16px;
+  border: 2px solid #DC143C;
+  background-color: #fff;
+  color: #DC143C;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.field {
+  padding: 10px 20px;
+  width: 40%;
+  border: 2px solid #ddd;
+  color: #666;
+}
+
+.field:focus,
+.filed-empty {
+  color: #000;
+  border: 2px solid #DC143C;
+}
+
+.field-list {
+  color: #DC143C;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 50%;
+  border: 2px solid #DC143C;
+}
+
+.footer {
+  background-color: #333;
+  color: #999;
+  padding: 10px 50px;
+  margin-top: 50px;
+}
+
+#aak-settings-box {
+  display: none;
+}
+
+#alert {
+  /* some styles to position the modal at the center of the page */
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  margin-top: -100px;
+  background-color: #fff;
+  border: 5px solid #fff;
+  text-align: center;
+  /* needed styles for the overlay */
+  z-index: 10;
+  /* keep on top of other elements on the page */
+  outline: 9999px solid rgba(0,0,0,0.5);
+}
+
+#alert-content {
+  overflow: auto;
+  margin: 0 10px;
+  padding-top: 10px;
+  width: 280px;
+  background-color: #fff;
+  height: 100px;
+}
