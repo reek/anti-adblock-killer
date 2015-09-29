@@ -2502,10 +2502,8 @@ Aak = {
     },	
     exashare_com : {
       // by: Watilin
-      // pull: https://github.com/reek/anti-adblock-killer/pull/519
-      // issue: https://github.com/reek/anti-adblock-killer/issues/486
-      // issue: https://github.com/reek/anti-adblock-killer/issues/506
-      host : ['exashare.com'],
+      // issue: https://github.com/reek/anti-adblock-killer/issues/624
+      host : ['exashare.com', 'dowed.info'],
       onEnd : function () {
         var jwplayer = Aak.uw.jwplayer;
         if (jwplayer) {
