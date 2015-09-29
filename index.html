@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <!-- Animate.css -->
+  <!-- https://daneden.github.io/animate.css/ -->
+  <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+
+  <!-- Hover.css -->
+  <!-- http://ianlunn.github.io/Hover/ -->
+  <link rel="stylesheet" href="css/hover.css">
+
+  <!-- JavaScript Library jQuery  -->
+  <!-- https://jquery.com/ -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+
+  <title>Anti-Adblock Killer</title>
+
+</head>
+
+<body>
+  
+  <div id="alert">
+  <h3>Alert</h3>
+  <div id="alert-content">some styles to position the modal at the center of the page</div>
+	<button type="button" class="button hvr-bounce-to-bottom" onclick="$('#alert').fadeOut();"/>Ok</button>
+  </div>
+  
+  <script>
+  /*
+    window.alert = function(msg) {
+      $('#alert').fadeIn();
+      $('#alert-content').html(msg);
+	  return false;
+    }
+	*/
+  </script>
+  
+  
+  <header class="header">
+    <a name="top"></a>
+    <div class="logo animated bounceInDown"><img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png" />
+    </div>
+    <div class="brand animated flipInY">Anti-Adblock Killer</div>
+    <div class="slogan animated flipInX">Don't touch my Adblocker !</div>
+	<br>
+    <p class="animated bounce">
+      <a href="https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek" class="button-alt hvr-wobble-vertical">Github</a> <a href="https://greasyfork.org/fr/scripts/735-anti-adblock-killer-reek" class="button-alt hvr-wobble-vertical">Greasefork</a> <a href="https://openuserjs.org/scripts/reek/Anti-Adblock_Killer_Reek" class="button-alt hvr-wobble-vertical">Openuserjs</a>
+    </p>
+  </header>
+
+
+
+  <h1 class="animated bounceInLeft"><a name="fiterlist" href="#fiterlist">FilterList</a></h1>
+  <section class="section animated bounceInRight">
+    <div class="content">
+
+      <h3>Subscription</h3>
+      <div class="fieldset center">
+        <h2>AakList (Anti-Adblock Killer)</h2>
+        <p>Click to add it automatically</p>
+        <p><a class="button hvr-bounce-to-bottom" href="abp:subscribe?location=https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt&amp;title=AakList (Anti-Adblock Killer)" class="">Subscribe</a></p>
+        <p>Or enable AakList in the filter lists otherwise add it manually</p>
+        <p>
+          <input onfocus="this.select();" class="field-list" type="text" value="https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" />
+        </p>
+      </div>
+
+      <h3>Compatible</h3>
+      <div class="fieldset center">
+        <p>Adblock, Adblock Plus, Adblock Edge, uBlock Origin</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <h1 class="animated bounceInLeft"><a name="contact" href="#contact">Contact</a></h1>
+  <section class="section animated bounceInRight">
+    <div class="content">
+
+      <h3>Get in touch</h3>
+      <div class="fieldset">
+        <script>
+          var sendMail = function() {
+            var data = {};
+            $('#contact-form .field').each(function() {
+              var $field = $(this);
+              $field.removeClass("filed-empty");
+              if ($field.val() == "") {
+                $field.focus();
+                $field.addClass("filed-empty");
+                throw 'field empty';
+              }
+              data[$field.attr('name')] = $field.val();
+            });
+            delete data.robot;
+            $.post("http://reeksite.com/aak/sendMail.php", data)
+              .done(function(data) {
+                alert(data);
+              });
+          }
+        </script>
+        <p>If you have any questions or comments, please use the form below and we will get back to you as soon as possible.</p>
+        <form id="contact-form" onsubmit="return false;">
+          <p>
+            <input type="text" name="name" placeholder="Name" class="field" />
+          </p>
+          <p>
+            <input type="text" name="email" placeholder="Email" class="field" />
+          </p>
+          <p>
+            <input type="text" name="subject" placeholder="Subject" class="field" />
+          </p>
+          <p>
+            <textarea name="message" rows="10" placeholder="Message" class="field"></textarea>
+          </p>
+          <p>
+            <input type="hidden" name="robot" value="true" />
+          </p>
+          <p>
+            <button type="button" onclick="sendMail()" class="button hvr-bounce-to-bottom">Send</button>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <h1 class="animated bounceInLeft"><a name="settings" href="#settings">Settings</a></h1>
+  <section class="section animated bounceInRight">
+    <div class="content">
+
+      <div id="aak-settings-notice">
+        <h3>Notice</h3>
+        <div class="fieldset center">Anti-Adblock Killer is not installed or active, <a href="https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek">see instructions.</a></div>
+      </div>
+
+      <div id="aak-settings-box">
+        <h3>Your Configuration</h3>
+        <div class="fieldset" id="aak-settings-config"></div>
+
+        <h3>Genereal</h3>
+        <div class="fieldset" id="aak-settings-general"></div>
+
+        <h3>Debug</h3>
+        <div class="fieldset" id="aak-settings-debug"></div>
+
+        <p>
+          <button id="aak-settings-save" class="button hvr-bounce-to-bottom">Save</button>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <p class="animated bounceInLeft">
+      Author: Reek License: CC BY-NC-SA
+    </p>
+  </footer>
+
+</body>
+
+</html>
