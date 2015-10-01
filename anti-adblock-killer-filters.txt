@@ -374,6 +374,13 @@ exashare.com##[href="http://www.videohube.eu/script/url.php?c=ep"]
 @@||exashare.com/ads.js$script
 @@||pubdirecte.com/script/$script,$domain=exashare.com
 @@||pubdirecte.com/image/$image,domain=exashare.com
+! dowed.info
+dowed.info###player_img
+dowed.info###player_imgo
+dowed.info##[href="http://www.videohube.eu/script/url.php?c=ep"]
+@@||dowed.info/ads.js$script
+@@||pubdirecte.com/script/$script,$domain=dowed.info
+@@||pubdirecte.com/image/$image,domain=dowed.info
 ! mydisc.net
 mydisc.net#@#.ad_1
 mydisc.net#@#.ad_2

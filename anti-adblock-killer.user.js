@@ -2502,17 +2502,16 @@ Aak = {
     },	
     exashare_com : {
       // by: Watilin
-      // pull: https://github.com/reek/anti-adblock-killer/pull/519
-      // issue: https://github.com/reek/anti-adblock-killer/issues/486
-      // issue: https://github.com/reek/anti-adblock-killer/issues/506
-      host : ['exashare.com'],
+      // issue: https://github.com/reek/anti-adblock-killer/issues/624
+      // test: http://exashare.com/galw2ge2kzsv
+      host : ['exashare.com', 'dowed.info'],
       onEnd : function () {
         var jwplayer = Aak.uw.jwplayer;
-        if (jwplayer) {
-          var setupScript = Aak.getScript("setup");
-
-          var match = setupScript.innerHTML.match(
-              /\bjwplayer\s*\(\s*(["'])(.+?)\1\s*\)\s*\.\s*setup\s*\(\s*(\{(?:.|\s)+?\})\s*\)\s*;/);
+        
+        var injectFix = function (setupText, player) { // drugs are bad
+          var match = setupText.match(
+            /\bjwplayer\s*\(\s*(["'])(.+?)\1\s*\)\s*\.\s*setup\s*\(\s*(\{(?:.|\s)+?\})\s*\)\s*;/
+          );
 
           var id = match[2];
           var setupStr = match[3];
@@ -2541,9 +2540,33 @@ Aak = {
           }
             .toString()
             .replace("_setupStr_", setupStr)
-            .replace("_id_", id));
+            .replace("_id_", id)
+          );
 
           Aak.addScript("(" + contentFunction + "());");
+        };
+
+        if (jwplayer) { // embedded player
+
+          var setupScript = Aak.getScript("setup");
+          injectFix(setupScript.innerHTML, jwplayer);
+
+        } else {
+
+          /* On the in-site player page, scripts are still present in
+          the HTML but have been commented out. We're looking for them
+          to retrieve the setup part, except this time jwplayer hasn't
+          been initialized, so we use our own. */
+
+          var htmlComments = document.body.innerHTML.match(/<!--(.|\n)*?-->/g);
+          var setupComment = htmlComments ?
+            htmlComments.filter(function (s) {
+              return Aak.contains(s, "setup");
+            })[0] :
+            null;
+
+          if (setupComment) injectFix(setupComment, Aak.jwplayer6);
+
         }
       }
     },
