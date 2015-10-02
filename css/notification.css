@@ -1,0 +1,68 @@
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+a {
+    color: #DC143C;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+a:hover {
+    text-decoration: underline;
+}
+#aak-notice {
+    font-family: arial;
+    color: #000;
+    font-size: 1em;
+    border: 1px solid #999;
+    border-radius: 3px;
+    width: 350px;
+    max-width: 350px;
+    min-height: 100px;
+    top: 0;
+    left: 0;
+    line-height: 1.2;
+    z-index: 999999;
+    position: fixed;
+    display: block;
+    margin: 0px;
+    background-color: #fff;
+    background-image: url(https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 64px;
+}
+#aak-notice-content {
+    background-color: #fff;
+    width: 262px;
+    height: 80px;
+    min-height: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0px 10px 10px 80px;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+#aak-notice-close {
+    background-color: #fff;
+    text-align: right;
+    cursor: pointer;
+    color: #999;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    line-height: 0px;
+    padding: 15px 7px 5px 0px;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+#aak-notice-close:before {
+    content: "×";
+}
+#aak-notice-close:hover {
+    color: #DC143C;
+}
