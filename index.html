@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
- 
+
   <!-- Animate.css -->
   <!-- https://daneden.github.io/animate.css/ -->
   <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
@@ -25,31 +25,31 @@
 </head>
 
 <body>
-  
+
   <div id="alert">
-  <h3>Alert</h3>
-  <div id="alert-content">some styles to position the modal at the center of the page</div>
-	<button type="button" class="button hvr-bounce-to-bottom" onclick="$('#alert').fadeOut();"/>Ok</button>
+    <h3>Alert</h3>
+    <div id="alert-content">some styles to position the modal at the center of the page</div>
+    <button type="button" class="button hvr-bounce-to-bottom" onclick="$('#alert').fadeOut();" />Ok</button>
   </div>
-  
+
   <script>
-  /*
-    window.alert = function(msg) {
-      $('#alert').fadeIn();
-      $('#alert-content').html(msg);
-	  return false;
-    }
-	*/
+    /*
+            window.alert = function(msg) {
+              $('#alert').fadeIn();
+              $('#alert-content').html(msg);
+        	  return false;
+            }
+        	*/
   </script>
-  
-  
+
+
   <header class="header">
     <a name="top"></a>
     <div class="logo animated bounceInDown"><img src="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png" />
     </div>
     <div class="brand animated flipInY">Anti-Adblock Killer</div>
     <div class="slogan animated flipInX">Don't touch my Adblocker !</div>
-	<br>
+    <br>
     <p class="animated bounce">
       <a href="https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek" class="button-alt hvr-wobble-vertical">Github</a> <a href="https://greasyfork.org/fr/scripts/735-anti-adblock-killer-reek" class="button-alt hvr-wobble-vertical">Greasefork</a> <a href="https://openuserjs.org/scripts/reek/Anti-Adblock_Killer_Reek" class="button-alt hvr-wobble-vertical">Openuserjs</a>
     </p>
@@ -70,6 +70,19 @@
         <p>
           <input onfocus="this.select();" class="field-list" type="text" value="https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" />
         </p>
+      </div>
+
+      <p class="center"><a href="javascript:void($('#howto').slideToggle());">How to add/update AakList ?</a></p>
+
+      <div id="howto" class="fieldset">
+        <h5>Add</h5>
+        <div>Adblock: <span class="small code">Options -> Filterlist -> Custom filter lists -> Enter a AakList URL and click "Subscribe"</span></div>
+        <div>Adblock Plus: <span class="small code">Options -> Filter lists -> Add filter subscription -> Enter a AakList URL and click "Add"</span></div>
+        <div>uBlock Origin: <span class="small code">Options -> 3rd-party-filters -> Enable AakList -> Click "Apply changes"</span></div>
+        <h5>Update</h5>
+        <div>Adblock: <span class="small code">Options -> Filterlist -> Click "Update now"</span></div>
+        <div>Adblock Plus: <span class="small code">Options -> Filter lists -> Click "Update now"</span></div>
+        <div>uBlock Origin:<span class="small code"> Options -> 3rd-party-filters -> Click "Update now"</span></div>
       </div>
 
       <h3>Compatible</h3>
@@ -149,7 +162,7 @@
         <h3>Your Configuration</h3>
         <div class="fieldset" id="aak-settings-config"></div>
 
-        <h3>Genereal</h3>
+        <h3>General</h3>
         <div class="fieldset" id="aak-settings-general"></div>
 
         <h3>Debug</h3>
@@ -166,9 +179,43 @@
 
 
   <footer class="footer">
-    <p class="animated bounceInLeft">
-      Author: Reek License: CC BY-NC-SA
-    </p>
+  
+    <div class="listBox">
+      <ul class="listFloat">
+        <li class="listTitle">About</li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#instruction">Instructions</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#help">Help</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#report">Report</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#features">Features</a></li>
+      </ul>
+      <ul class="listFloat">
+        <li class="listTitle">&nbsp;</li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#changelog">Changelog</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#donate">Donate</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="http://reek.github.io/anti-adblock-killer/#contact">Contact</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://twitter.com/antiadbkiller">Twitter</a></li>
+      </ul>
+      <ul class="listFloat">
+        <li class="listTitle">Mirrors</li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek">Github</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://greasyfork.org/fr/scripts/735-anti-adblock-killer-reek">Greasefork</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://openuserjs.org/scripts/reek/Anti-Adblock_Killer_Reek">Openuserjs</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="http://reeksite.com/anti-adblock-killer/">Reeksite</a></li>
+      </ul>
+      <ul class="listFloat">
+        <li class="listTitle">Supported</li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#supported-sites">Sites</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#supported-browsers">Browsers</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#supported-adblockers">Adblockers</a></li>
+        <li><a class="listLink hvr-underline-from-left" href="https://github.com/reek/anti-adblock-killer#step-1-script-manager-install">ScriptManagers</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p><img src="http://www.gravatar.com/avatar/afb8376a9f634cd3501af4387de6425f.png" /></p>
+      <p><a class="listLink hvr-underline-from-center" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Author: Reek License: CC BY-NC-SA</a></p>
+    </div>
+
   </footer>
 
 </body>
