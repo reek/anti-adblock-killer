@@ -48,12 +48,12 @@ h3 {
 h5 {
   font-weight: normal;
   color: #000;
-  padding: 5px 0px;
   background-color: transparent;
   text-transform: uppercase;
   text-align: left;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 1em;
+  border-bottom: 2px solid #000;
 }
 
 a {
@@ -63,7 +63,7 @@ a {
 
 ul {
   list-style-type: square;
-  color: #DC143C;
+  color: #fff;
 }
 
 input[type=checkbox].css-checkbox {
@@ -117,12 +117,20 @@ label.css-label {
   color: #fff;
 }
 
+.red {
+  color: #DC143C;
+}
+
+.grey {
+  color: #888;
+}
+
 .smallest {
-  font-size: .3em;
+  font-size: .5em;
 }
 
 .small {
-  font-size: .6em;
+  font-size: .8em;
 }
 
 .normal {
@@ -147,6 +155,13 @@ label.css-label {
 
 .right {
   text-align: right;
+}
+
+.code {
+  color: #888;
+  padding:0 2px;
+  background-color: #eee;
+  border: 1px solid #ddd;
 }
 
 .notice {
@@ -272,8 +287,37 @@ label.css-label {
 .footer {
   background-color: #333;
   color: #999;
-  padding: 10px 50px;
+  padding: 20px 50px;
   margin-top: 50px;
+  height:200px;
+}
+
+.listBox {
+
+}
+
+.listFloat {
+  float:left;
+  width:100px;
+  list-style-type: none;
+}
+
+.listTitle {
+  color: #fff;
+  text-decoration:underline;
+  text-transform: uppercase;
+}
+
+.listLink {
+  color: #999;
+}
+
+.listLink:hover {
+  color: #fff;
+}
+
+.copyright {
+  text-align:center;
 }
 
 #aak-settings-box {
@@ -307,4 +351,8 @@ label.css-label {
   width: 280px;
   background-color: #fff;
   height: 100px;
+}
+
+#howto {
+  display:none;
 }
