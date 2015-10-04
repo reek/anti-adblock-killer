@@ -4,10 +4,11 @@
 ! Version: 8.5
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-! Homepage: https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek
-! Contact: https://github.com/reek/anti-adblock-killer/issues
-! Report: https://github.com/reek/anti-adblock-killer/wiki/Report-Guide
+! Homepage: http://reek.github.io/anti-adblock-killer/
 ! Twitter: https://twitter.com/antiadbkiller
+! Contact: http://reek.github.io/anti-adblock-killer/#contact
+! Support: https://github.com/reek/anti-adblock-killer/issues
+! Contribution: https://github.com/reek/anti-adblock-killer#donate
 ! WritingRules: https://adblockplus.org/fr/filters
 ! RedundantRules: https://arestwo.org/famlam/redundantRuleChecker.html
 ! RegExpVisualizer http://www.regexper.com/
@@ -17,6 +18,8 @@
 ###k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I
 @@||githubusercontent.com/reek/anti-adblock-killer/
 @@||github.com/reek/anti-adblock-killer/
+@@||reek.github.io/anti-adblock-killer/
+@@||reeksite.com/anti-adblock-killer/
 @@||cdn.jsdelivr.net/jwplayer/5.10/jwplayer.js$script
 @@||vjs.zencdn.net/4.12/video.js$script
 @@||jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js$script
@@ -368,12 +371,19 @@ pic4you.ru##.centerdiv
 ! forum.thgtr.com
 forum.thgtr.com##.block_uyari
 ! exashare.com
+! https://github.com/reek/anti-adblock-killer/issues/624
+! https://github.com/reek/anti-adblock-killer/issues/506
+! https://github.com/reek/anti-adblock-killer/issues/486
 exashare.com###player_img
 exashare.com###player_imgo
 exashare.com##[href="http://www.videohube.eu/script/url.php?c=ep"]
-@@||exashare.com/ads.js$script
-@@||pubdirecte.com/script/$script,$domain=exashare.com
-@@||pubdirecte.com/image/$image,domain=exashare.com
+@@||exashare.com/ici.html$subdocument
+! dowed.info (exashare.com)
+dowed.info###player_img
+dowed.info###player_imgo
+dowed.info##[href="http://www.videohube.eu/script/url.php?c=ep"]
+@@||dowed.info/ads.html$subdocument
+@@||dowed.info/js/$script,domain=exashare.com
 ! mydisc.net
 mydisc.net#@#.ad_1
 mydisc.net#@#.ad_2
@@ -713,17 +723,6 @@ kingleech.com#@#.afs_ads
 ! binbox.io
 binbox.io#@#.banner-ad
 @@||pastes.binbox.io/ad/banner$subdocument
-! vgtv.no
-!@@||aka-cdn.adtech.de/dt/common/DAC.js$script,domain=vgtv.no
-vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .top
-vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .left
-vgtv.no##.vgtv-advert.horseshoe.message.advert-visible .right
-! vg.no,aftenposten.no,bt.no,aftenbladet.no,fvn.no
-vg.no,aftenposten.no,bt.no,aftenbladet.no,fvn.no###topAd + #content > [style="left: auto; position: relative; right: auto; width: 100%; height: 150px; margin-top: 0px; background-image: none; cursor: pointer;"]
-vg.no,aftenposten.no,bt.no,aftenbladet.no,fvn.no###topAd + #content > [style="right: -180px; left: auto; cursor: pointer;"]
-vg.no,aftenposten.no,bt.no,aftenbladet.no,fvn.no###topAd + #content > [style="right: -180px; left: auto; cursor: pointer;"] + [style="cursor: pointer;"]
-! e24.no
-@@||adserver.adtech.de/multiad/$script,domain=e24.no
 ! bitcoinpuddle.com
 @@||bitcoinpuddle.com/show_ads.js$script
 ! dogecoinpuddle.com
@@ -914,7 +913,7 @@ naekranie.pl###niceMessage
 ! fontsquirrel.com
 fontsquirrel.com###bottom_banner_ad_container
 ! zerozero.pt
-@@||zerozero.pt/script/ads.js$script
+zerozero.pt###ad_block_msg
 ! annuaire-bleu.net
 annuaire-bleu.net#@##adblocktest
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
@@ -985,6 +984,7 @@ cinemaniahdd.com###i32c
 agar.io###a300x250
 agar.io###helloDialog > center > small.text-muted
 agar.io###blocker
+@@||agar.io/js/ads.js$script
 ! needrom.com (account required)
 ! https://github.com/reek/anti-adblock-killer/issues/593
 ! https://github.com/reek/anti-adblock-killer/issues/425
@@ -1206,6 +1206,7 @@ turbodebrideur.com#@##pubdirecte
 ! https://github.com/reek/anti-adblock-killer/issues/568
 ! https://github.com/reek/anti-adblock-killer/issues/570
 multiup.org#@#.ADBAR
+multiup.org#@#.BannerAd
 ! biggestplayer.me
 ! https://github.com/reek/anti-adblock-killer/issues/566
 biggestplayer.me##.masr
@@ -1302,6 +1303,39 @@ wpworld.pl,windowsowo.pl#@##adBanner
 ! https://github.com/reek/anti-adblock-killer/issues/622
 @@||shippuden.tv/ads.xml
 @@||shippuden.tv/gkplugins_license.swf
+! eska.tv
+! https://github.com/reek/anti-adblock-killer/issues/635
+@@||eska.tv/assets/js/ads.js$script,domain=eska.tv
+! voxmusic.tv
+! https://github.com/reek/anti-adblock-killer/issues/636
+@@||voxmusic.tv/html/js/adv.bbelements.js$script,domain=voxmusic.tv
+! f1fanklub.pl
+! https://github.com/reek/anti-adblock-killer/issues/637
+f1fanklub.pl#@##topad
+@@||3.bp.blogspot.com/*.jpg#/adaffiliate_/adops/ad/adsales/ad/adsby./adtest./$domain=f1fanklub.pl
+! fokus.tv
+! https://github.com/reek/anti-adblock-killer/issues/638
+@@||fokus.tv/html/js/adv.bbelements.js$script,domain=fokus.tv
+! dziennik.pl
+! forsal.pl
+! gazetaprawna.pl
+! jegostrona.pl
+! prawnik.pl
+! https://github.com/reek/anti-adblock-killer/issues/627
+@@||gazetaprawna.pl/js/ads.js$script,domain=dziennik.pl|forsal.pl|gazetaprawna.pl|jegostrona.pl|prawnik.pl
+! freeskier.com (also added script rule)
+! https://github.com/reek/anti-adblock-killer/issues/639
+freeskier.com###adb-enabled
+freeskier.com#@##adb-not-enabled
+! tvsierpc.pl
+! https://github.com/reek/anti-adblock-killer/issues/640
+@@||tvsierpc.pl/media/videoads/FILMY/*.mp4$object,image,domain=tvsierpc.pl
+! inwestycje.pl
+! https://github.com/reek/anti-adblock-killer/issues/641
+inwestycje.pl###show-message
+! hostuje.net
+! https://github.com/reek/anti-adblock-killer/issues/642
+@@||hostuje.net/show_ads.js$script,domain=hostuje.net
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
