@@ -703,6 +703,10 @@ rlsbb.com###contentArea > .information
 ! dailyfreebits.com
 ! jewelrybitco.in
 ! welovebtc.com
+! robcoins.eu
+! elenabitco.in
+! freebetco.in
+! qoinfaucet.com
 @@/show_ads.js$script,domain=bithourly.com|dailyfreebits.com|jewelrybitco.in|welovebtc.com
 ! satoshiquiz.com
 @@/ads.js$script,domain=satoshiquiz.com
@@ -945,11 +949,6 @@ opitz-online.com#@#.adsbygoogle
 @@||shqip-tv.info/webmasters/adblock.js$script
 ! razem.tv
 @@||razem.tv/Scripts/InsysPlayer.v0.1.0/adTest.png$image,domain=razem.tv
-! robcoins.eu
-! elenabitco.in
-! freebetco.in
-! qoinfaucet.com
-@@/show_ads.js$script,domain=bithourly.com|dailyfreebits.com|jewelrybitco.in|welovebtc.com
 ! hdkinoteatr.com
 @@||moonwalk.cc/assets/fuckadblock-*.js$script
 ! player.pl (hide just notice but fixed by AakScript)
@@ -1040,7 +1039,6 @@ videoproxy.in###overlay-holder
 @@||ad.doubleclick.net/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
 @@||ad.doubleclick.net/ddm/pfadx/$object-subrequest,domain=play.tv|playtv.fr
 ! now.ru
-@@||adsrv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=rutube.ru
 @@||adsrv.gpm-digital.com/$object-subrequest,domain=rutube.ru
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=rutube.ru
 @@||adv.gpm-digital.com/*now.ru*$object-subrequest,domain=rutube.ru
@@ -1758,7 +1756,6 @@ liguendirect.com##div[id^="bannerfloat"]
 biggestplayer.me##.cuadrado.rmv
 ! playerhd1.pw
 playerhd1.pw##[id^="total"]
-playerhd1.pw###total_banner
 playerhd1.pw##.ad
 ! streaming-foot.info
 streaming-foot.info##.fb
