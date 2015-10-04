@@ -27,27 +27,27 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Instruction
 
-##### Requirement: Adblock, Adblock Plus or uBlock Origin
+##### Note: AakList & AakScript are complementary each unblocked different websites.
 
 #### Step 1: Script Manager (Install)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or  Native (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or Violentmonkey (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/fr/extensions/details/violent-monkey/) 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [NinjaKit](https://github.com/os0x/NinjaKit)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: FilterList
-* [Subscribe](http://tinyurl.com/mulnz7l) *from github.com*
-* [Subscribe](http://tinyurl.com/moqmytz) *from jsbin.com*
-* [Subscribe](http://tinyurl.com/mgot6ev) *from jsfiddle.net*
-* [Subscribe](http://tinyurl.com/mw4bbka) *from reeksite.com*
+* [Subscribe](http://reek.github.io/anti-adblock-killer/#fiterlist) *from github.com*
+* [Subscribe](http://reeksite.com/anti-adblock-killer/#fiterlist) *from reeksite.com*
+
+> ##### Note: uBlock Origin, you need just enable AakList on Options -> 3rd-party-filters and "Apply changes".
 
 #### Step 3: UserScript
 * [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
 * [Install](http://tinyurl.com/k39p6tz) *from openuserjs.org*
 * [Install](http://tinyurl.com/ong3bfe) *from github.com*
-* [Install](http://tinyurl.com/mfx7s42) *from reeksite.com*
+* [Install](http://tinyurl.com/nd4qwlz) *from reeksite.com*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
@@ -65,6 +65,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Check if Anti-Adblock Killer list is installed
 * Check & Notify updates
 * More filters for Adblockers
+* [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
 
 
@@ -82,9 +83,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Try update or re-install Anti-Adblock Killer Script.
 * Try update or re-subscribe Anti-Adblock Killer List.
 * Check if you have another userscript that might interfere with Anti-Adblock Killer.
-* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script).
+* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript).
+* Check if, your JavaScript is enabled [Test](http://activatejavascript.org/).
 * Remove duplicates Anti-Adblock Killer (Script/List).
 * Remove or disable personal filters.
+* Enable only the filter lists you need, too many can make your browser unresponsive.
 * Check if the site is in "Supported Sites" or in "Changelog".
   * If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
   * If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
@@ -92,14 +95,18 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Consult Discussions or Issues
 
 
-
-
-
 ## Supported Browsers
 * ![Firefox](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) Firefox &#10004;
 * ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) Chrome &#10004;
 * ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) Opera &#10004;
 * ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) Safari &#10004;
+
+
+## Supported Adblockers
+* Adblock &#10004;
+* Adblock Plus &#10004;
+* Adblock Edge &#10004;
+* uBlock Origin &#10004;
 
 
 ## Supported Sites
@@ -135,6 +142,105 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+
+##### Release 8.5 (October 4, 2015)
+##### Script
+* Update: metadata
+* Improve: exclude domains rule
+* Improve: debug mode
+* Improve: function *player*
+* Improve: function *notification*
+* Improve:  function *createElement*
+* Improve: function *request*
+* Improve:  function *update*
+* Improve:  function *getBrowser*
+* Remove: function *addElement*
+* Add: function *addBaitElement*
+* Add: feature settings
+* Add: some issues url
+* Kill: AdBlock Detector (XenForo Rellect) (Plugin)
+* Fix: ncr redirection loop
+* Kill: kingmaker.news
+* Fix: hackintosh.zone
+* Fix: prem.link
+* Kill: narkive.com
+* Kill: cubeupload.com
+* Kill: exrapidleech.info
+* Fix: totaldebrid.org
+* Kill: naruto-mx.net
+* Kill: gametransfers.com
+* Kill: leveldown.fr
+* Kill: turbodebrideur.com
+* Kill: sahadan.com
+* Kill: freeskier.com (script+list)
+* Fix: tek.no
+* Fix: tek.no
+* Fix: vg.no
+* Fix: e24.no
+##### List
+* Fix: youwatch.org (bug fullscreen+embed/iframe)
+* Fix: turbodebrideur.com (allow rule blocked by ListeFR)
+* Fix: openload.io / openload.tv / openload.co
+* Fix: multiup.org
+* Kill: biggestplayer.me
+* Kill: krs-online.com.pl
+* Kill: sc2casts.com
+* Kill: nnm-club.ws
+* Kill: popeoftheplayers.eu
+* Kill: bricozone.fr
+* Kill: howtogeek.com
+* Fix: prizebitcoins.com
+* Remove: rule interfering with Firefox 40 "Get Add-ons"
+* Kill: privatestream.tv (ads/timer)
+* Kill: piter.tv
+* Kill: articlerewritertool.com
+* Kill: spinbot.com
+* Kill: yocast.tv
+* Fix: some redundant rules
+* Fix: phonandroid.com
+* Fix: openload.io / openload.tv / openload.co
+* Fix: lachainemeteo.com (allow content blocked "MES FAVORIS MÉTÉO")
+* Fix: needrom.com
+* Kill: journaldugeek.com
+* Kill: journaldugamer.com
+* Kill: pixelistes.com
+* Kill: jdubuzz.com
+* Kill: 990.ro
+* Kill: unshowmasonline.com
+* Kill: vtele.ca
+* Kill: tibiopedia.pl
+* Kill: playerapp1.pw
+* Kill: fossbytes.com
+* Kill: showup.tv
+* Kill: habrahabr.ru
+* Kill: megamozg.ru
+* Kill: geektimes.ru
+* Kill: sharefreeall.com
+* Kill: dziennikwschodni.pl
+* Kill: polscygracze.pl
+* Kill: wpworld.pl
+* Kill: windowsowo.pl
+* Kill: virpe.com
+* Kill: polotv.pl
+* Kill: lumload.com
+* Kill: shippuden.tv
+* Fix: zerozero.pt
+* Fix: exashare.com
+* Kill: eska.tv
+* Kill: voxmusic.tv
+* Kill: fokus.tv
+* Kill: f1fanklub.pl
+* Fix: multiup.org
+* Kill: dziennik.pl
+* Kill: forsal.pl
+* Kill: gazetaprawna.pl
+* Kill: jegostrona.pl
+* Kill: prawnik.pl
+* Kill: agar.io
+* Kill: hostuje.net
+* Kill: inwestycje.pl
+* Kill: tvsierpc.pl
+
 ##### Release 8.4 (August 23, 2015)
 * Exclude: pandoon.info (script)
 * Add: function *unpackScript* (script)
@@ -1322,10 +1428,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Mirrors
 * [Github](https://github.com/reek/anti-adblock-killer)
-* [Userscripts](http://userscripts.org:8080/scripts/show/155840)
 * [Greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
 * [Openuserjs](https://openuserjs.org/scripts/reek/httpsuserscripts.orgscriptsshow155840/Anti-Adblock_Killer_Reek)
-* [MonkeyGuts](https://monkeyguts.com/code.php?id=351)
+* [Userscripts](http://userscripts.org:8080/scripts/show/155840) (no longer available)
+* [MonkeyGuts](https://monkeyguts.com/code.php?id=351) (no longer available)
 
 
 ## Tags
@@ -1360,7 +1466,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Disables AdBlock Protection
 * AntiAdblockKiller
 
-## Tags 2
+## Tags (World)
 * remove anti adblock protection
 * supprimer protection anti adblock
 * entfernen anti adblock Schutz
