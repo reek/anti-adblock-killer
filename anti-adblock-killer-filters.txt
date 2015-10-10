@@ -414,7 +414,8 @@ watcharab.com#@##adblock
 anime4fun.com###hover
 ||anime4fun.com/js/newanime.js$script
 ! eveskunk.com
-eveskunk.com#@#.adsbygoogle
+! https://github.com/reek/anti-adblock-killer/issues/645
+@@||eveskunk.com/ad/300x250/ads/$xmlhttprequest,domain=eveskunk.com
 ! anisubsia.com
 anisubsia.com#@#.adsantilok
 ! flowplayer_api
@@ -749,7 +750,11 @@ binbox.io#@#.banner-ad
 ! bitonplay.com
 @@||bitonplay.com/js/ads.js$script
 ! 4shared.com
+! https://github.com/reek/anti-adblock-killer/issues/654
+! https://github.com/reek/anti-adblock-killer/issues/244
+! https://github.com/reek/anti-adblock-killer/issues/123
 @@||4shared.com/show_ad_.xml$script
+@@||4shared.com/show_ad_.xml$stylesheet
 ! bit-vortex.com
 @@||bit-vortex.com/js/antiadblock.js$script
 ! fit.sh
@@ -855,7 +860,6 @@ simply-debrid.com#@##adsense
 ! WP.tv
 @@||rek.www.wp.pl/vad.xml$xmlhttprequest
 @@||rek.www.wp.pl/?rekid=$script
-@@||rek.www.wp.pl/pliki/*_*.js$script
 @@||adv.wp.pl/RM/Box/*/advertisement.js$script
 @@||adv.wp.pl/RM/Box/*/x.gif$image
 ! sparkylinux.org
@@ -922,9 +926,11 @@ zerozero.pt###ad_block_msg
 annuaire-bleu.net#@##adblocktest
 @@||pagead2.googlesyndication.com/pagead/$image,domain=annuaire-bleu.net
 ! playbitco.in
+! https://github.com/reek/anti-adblock-killer/issues/644
 ! https://github.com/reek/anti-adblock-killer/issues/577
 ! https://github.com/reek/anti-adblock-killer/issues/376
 @@||waterbitco.in/show_ads.js$script
+@@||playbitco.in/show_ads.js$script
 ! prizebitcoins.com
 @@||prizebitcoins.com/banner.gif$image
 ! mojevideo.sk
@@ -1334,6 +1340,45 @@ inwestycje.pl###show-message
 ! hostuje.net
 ! https://github.com/reek/anti-adblock-killer/issues/642
 @@||hostuje.net/show_ads.js$script,domain=hostuje.net
+! enlacespremium.biz
+! https://github.com/reek/anti-adblock-killer/issues/643
+@@||bajaenlaces.com/adblock.js$script
+! skiplimite.tv
+skiplimite.tv#@##ad300x250
+@@||adcash.com/a/display.php$subdocument,domain=skiplimite.tv
+! 8muses.com
+! https://greasyfork.org/en/forum/discussion/6407
+@@||8muses.com/data/web/js/adverts.js$script
+! videoo.info
+! https://github.com/reek/anti-adblock-killer/issues/646
+@@||videoo.info/show_ads.js$script,domain=videoo.info
+! jetradar.pl
+! https://github.com/reek/anti-adblock-killer/issues/647
+jetradar.pl##.ng-scope.no_adblock_wrapper
+! buickforums.com
+! https://github.com/reek/anti-adblock-killer/issues/648
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=buickforums.com
+@@||pagead2.googlesyndication.com/pagead/js/*show_ads_impl.js$domain=buickforums.com
+! proaudioz2.audio
+! https://github.com/reek/anti-adblock-killer/issues/651
+@@||advert.popunder.ru/banners/advert.php$image,subdocument,domain=proaudioz2.audio
+! al.ly
+! https://github.com/reek/anti-adblock-killer/issues/652
+al.ly#@#.text_ads
+@@||al.ly/Advertiser.js$script
+! dayt.se
+@@||dayt.se/topbannerkw.php$subdocument
+@@||ads.ad-center.com/smart_ad/display$subdocument,domain=dayt.se
+! 360haven.com
+! https://github.com/reek/anti-adblock-killer/issues/653
+@@||ads.360haven.com/Adserver/js/gshowad.js$script
+! zorofiles.com (antiblock.org static)
+! https://greasyfork.org/en/forum/discussion/6451
+zorofiles.com###z662
+! myvideo123.me
+! https://github.com/reek/anti-adblock-killer/issues/655
+@@||go.padstm.com/?id=$script,domain=mediatechnologycenter.info
+@@||go.padsdel.com/?id=$script,domain=mediatechnologycenter.info
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1386,7 +1431,7 @@ inwestycje.pl###show-message
 ||cash4links.co/visitScript/$script,third-party
 ||cash4files.com/visitScript/$script,third-party
 ||dyo.gs/visitScript/$script,third-party
-||filesonthe.net/visitScript/$script,third-party
+$||filesonthe.net/visitScript/$script,third-party
 ||goneviral.com/visitScript/$script,third-party
 ||megaline.co/visitScript/$script,third-party
 ||miniurls.co/visitScript/$script,third-party
@@ -1470,6 +1515,9 @@ inwestycje.pl###show-message
 ||bc.vc/js/link-converter.js$script,third-party
 ! gca.sh
 ||gca.sh/static/linkreplacer.js$script,third-party
+! ouo.io
+/js/ouo/entry.js$script,third-party
+/js/ouo/entry_v1.js$script,third-party
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
