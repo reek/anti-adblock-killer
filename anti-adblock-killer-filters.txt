@@ -997,6 +997,10 @@ agar.io###blocker
 needrom.com#@##ba_banner61
 ! 4players.de
 @@||4players.de/javascript/adtag.check.js$script
+! bild.de
+@@||bild.de^$elemhide
+@@||ec-ns.sascdn.com/diff/251/pages/bild.js$domain=bild.de,script
+@@||cdn1.smartadserver.com/diff/251/smartad.js$domain=bild.de,script
 ! schoener-fernsehen.com
 ||peer-stream.com/api/AdvertisementPlugin$object-subrequest,domain=schoener-fernsehen.com
 ! btava.com
