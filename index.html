@@ -34,13 +34,31 @@
 
   <script>
     /*
-            window.alert = function(msg) {
-              $('#alert').fadeIn();
-              $('#alert-content').html(msg);
-        	  return false;
-            }
-        	*/
+                            window.alert = function(msg) {
+                              $('#alert').fadeIn();
+                              $('#alert-content').html(msg);
+                        	  return false;
+                            }
+                        	*/
   </script>
+
+
+
+  <ul id="menu">
+    <li class="menu-wrap">
+      <a href="#" class="menu-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
+      <ul class="menu-list">
+        <li><a href="#filterlist">FilterList</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </li>
+  </ul>
+
 
 
   <header class="header">
@@ -57,7 +75,7 @@
 
 
 
-  <h1 class="animated bounceInLeft"><a name="fiterlist" href="#fiterlist">FilterList</a></h1>
+  <h1 class="animated bounceInLeft"><a name="filterlist" href="#filterlist">FilterList</a></h1>
   <section class="section animated bounceInRight">
     <div class="content">
 
@@ -87,7 +105,7 @@
 
       <h3>Compatible</h3>
       <div class="fieldset center">
-        <p>Adblock, Adblock Plus, Adblock Edge, uBlock Origin</p>
+        <p>Adblock, Adblock Plus, uBlock Origin</p>
       </div>
 
     </div>
@@ -121,7 +139,7 @@
               });
           }
         </script>
-        <p>If you have any questions or comments, please use the form below and we will get back to you as soon as possible.</p>
+        <p>If you have any questions or comments, please use the form below. However if you wish to report a issue or anti-adblock, <a href="https://github.com/reek/anti-adblock-killer/wiki/Report-Guide">read this</a>.</p>
         <form id="contact-form" onsubmit="return false;">
           <p>
             <input type="text" name="name" placeholder="Name" class="field" />
@@ -179,7 +197,7 @@
 
 
   <footer class="footer">
-  
+
     <div class="listBox">
       <ul class="listFloat">
         <li class="listTitle">About</li>
