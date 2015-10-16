@@ -320,6 +320,81 @@ label.css-label {
   text-align:center;
 }
 
+/* #C61236 #FCE8EC #DC143C */
+#menu {
+  top: 10px;
+  left: 0px;
+  position: fixed;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu .menu-wrap {
+  width: 50px;
+}
+
+#menu .menu-wrap:hover {
+  width: 150px;
+}
+
+#menu .menu-icon {
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  background-color: #DC143C;
+  height: 27px;
+  width: 40px;
+}
+
+#menu .menu-icon:hover {
+  background: rgba(0,0,0,.1);
+}
+
+#menu .menu-icon .line {
+  background-color: #fff;
+  border-radius: 1px;
+  height: 6px;
+  margin-bottom: 4px;
+  width: 40px;
+}
+
+#menu .menu-list {
+  padding: 0;
+  margin: 5px 0;
+  list-style: none;
+  text-align: left;
+  transition: all .5s;
+}
+
+#menu .menu-list li {
+  max-height: 0;
+  overflow: hidden;
+  background: #DC143C;
+  border: none;
+  margin: 0;
+}
+
+#menu .menu-list li a {
+  margin: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  display: block;
+  width: 150px;
+  border-left: 6px solid #DC143C;
+}
+
+#menu .menu-list li a:hover {
+  background: rgba(0,0,0,.1);
+  color: white;
+  border-left: 6px solid white;
+}
+
+#menu .menu-wrap:hover li {
+  max-height: 15em;
+}
+
 #aak-settings-box {
   display: none;
 }
