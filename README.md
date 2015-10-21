@@ -188,6 +188,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: manga-sanctuary.com
 * Kill: itespresso.fr
 * Kill: bild.de
+* Kill: xxx-image.com
 
 ##### Release 8.5 (October 4, 2015)
 ##### Script
