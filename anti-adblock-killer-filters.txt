@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 8.5
+! Version: 8.6
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Homepage: http://reek.github.io/anti-adblock-killer/
@@ -1419,7 +1419,8 @@ topfilmz.com#@##adsense
 londynek.net###abp
 ! javfor.me
 ! https://github.com/reek/anti-adblock-killer/issues/678
-@@|http://js.juicyads.com/jac.js$script,domain=l1.jav4.me
+@@|js.juicyads.com/jac.js$script,domain=l1.jav4.me
+@@||puhtml.com/7c/70/ab/$script,domain=l1.jav4.me
 ! kinoman.tv
 ! https://github.com/reek/anti-adblock-killer/issues/676
 kinoman.tv##IMG[src="http://static.kinoman.tv/assets/img/vip-info.png?v"]
@@ -1429,6 +1430,18 @@ ppe.pl###abl
 ! shinden.pl
 ! https://github.com/reek/anti-adblock-killer/issues/673
 shinden.pl#@#.AD-RC-300x250
+! manga-sanctuary.com
+! https://github.com/reek/anti-adblock-killer/issues/681
+@@||www.smartadserver.com/config.js?$script,domain=manga-sanctuary.com
+@@||r.sascdn.com/diff/js/smart.js$script,domain=manga-sanctuary.com
+! bild.de
+! https://github.com/reek/anti-adblock-killer/pull/687
+@@||bild.de^$elemhide
+@@||sascdn.com^$domain=bild.de
+@@||smartadserver.com^$domain=bild.de
+! itespresso.fr
+! https://github.com/reek/anti-adblock-killer/issues/686
+@@/advertising.js$script,domain=itespresso.fr
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
