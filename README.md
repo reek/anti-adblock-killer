@@ -27,10 +27,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Instruction
 
-##### Note: AakList & AakScript are complementary each unblocked different websites.
+> ##### Note: AakList & AakScript are complementary each unblocked different websites.
 
 #### Step 1: Script Manager (Install)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported/Addon has been discontinued)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/fr/extensions/details/violent-monkey/) 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [NinjaKit](https://github.com/os0x/NinjaKit)
@@ -92,6 +92,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
   * If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
   * If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 * Try with another browser.
+* How to disable the update check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
+* How to disable the list check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * Consult Discussions or Issues
 
 
@@ -105,7 +107,6 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 ## Supported Adblockers
 * Adblock &#10004;
 * Adblock Plus &#10004;
-* Adblock Edge &#10004;
 * uBlock Origin &#10004;
 
 
@@ -142,6 +143,51 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+
+##### Release 8.6 (October x, 2015)
+##### Script
+* Fix: bug no results on Google search bar
+* Fix: ville-ideale.com
+* Kill: bakersfield.com
+* Kill: bild.de
+* Kill: spox.com
+* Kill: shz.de
+* Kill: transfermarkt.de
+* Settings: add an option to enable video HD quality
+##### List
+* Kill: enlacespremium.biz
+* Kill: playbitco.in
+* Kill: skiplimite.tv
+* Kill: 8muses.com
+* Kill: eveskunk.com
+* Kill: jetradar.pl
+* Kill: videoo.info
+* Kill: buickforums.com
+* Kill: dayt.se
+* Kill: al.ly
+* Kill: proaudioz2.audio
+* Kill: 360haven.com
+* Kill: zorofiles.com
+* Kill: ouo.io (ads)
+* Kill: 4shared.com
+* Kill: myvideo123.me
+* Kill: zdunskawola24.pl
+* Kill: bakersfield.com
+* Kill: dayt.se
+* Kill: tv3sport.dk
+* Kill: freedisc.pl
+* Kill: komentare.sme.sk
+* Kill: ghacks.net bug
+* Kill: vstrim.pl
+* Kill: multiup.org
+* Kill: openload.io / openload.tv / openload.co
+* Kill: londynek.net
+* Kill: javfor.me
+* Kill: ppe.pl
+* Kill: shinden.pl
+* Kill: manga-sanctuary.com
+* Kill: itespresso.fr
+* Kill: bild.de
 
 ##### Release 8.5 (October 4, 2015)
 ##### Script
