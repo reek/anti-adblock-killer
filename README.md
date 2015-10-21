@@ -246,7 +246,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: some redundant rules
 * Fix: phonandroid.com
 * Fix: openload.io / openload.tv / openload.co
-* Fix: lachainemeteo.com (allow content blocked "MES FAVORIS M�T�O")
+* Fix: lachainemeteo.com (allow content blocked "MES FAVORIS MÉTÉO")
 * Fix: needrom.com
 * Kill: journaldugeek.com
 * Kill: journaldugamer.com
@@ -655,7 +655,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: bez-premki.pl
 * Kill: contasfree.com
 * Kill: ketubanjiwa.com
-* Kill: hentaienespañol.net
+* Kill: hentaienespaÃ±ol.net
 * Kill: turbogenerator.info
 * Kill: nana10.co.il
 * Kill: grifthost.com
@@ -1552,4 +1552,3 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * 안티 애드 블록 보호를 제거
 * 抗AdBlockを保護を解除
 * تعطيل مضادات آدبلوك
-
