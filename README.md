@@ -144,7 +144,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Changelog
 
-##### Release 8.6 (October x, 2015)
+##### Release 8.6 (October 21, 2015)
 ##### Script
 * Fix: bug no results on Google search bar
 * Fix: ville-ideale.com
