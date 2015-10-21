@@ -3,7 +3,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
 // @author Reek | reeksite.com
-// @version 8.5
+// @version 8.6
 // @encoding utf-8
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -68,7 +68,7 @@
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '8.5',
+  version : '8.6',
   scriptid : 'gJWEp0vB',
   homeURL : 'http://reek.github.io/anti-adblock-killer/',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -117,21 +117,28 @@ Aak = {
       group : 'general',
       type : 'checkbox',
       value : false,
-      label : 'Play video automatically.',
+      label : 'Play video automatically. *',
+      info : ''
+    },
+    videoHD : {
+      group : 'general',
+      type : 'checkbox',
+      value : false,
+      label : 'Play video in HD quality. **',
       info : ''
     },
     videoPlugin : {
       group : 'general',
       type : 'checkbox',
       value : false,
-      label : 'Play video with plugin.',
+      label : 'Play video with plugin. *',
       info : ''
     },
     videoDownload : {
       group : 'general',
       type : 'checkbox',
       value : false,
-      label : 'Add "Download video" button.',
+      label : 'Add "Download video" button. *',
       info : ''
     },
     checkList : {
@@ -1347,7 +1354,7 @@ Aak = {
                 var checked = Aak.opts[key] == true ? "checked" : '';
                 Aak.createElement({
                   tag : 'div',
-                  html : '<input id="' + key + '" class="css-checkbox" ' + checked + ' type="' + setting.type + '"/><label for="' + key + '" class="css-label">' + setting.label + '</label>',
+                  html : '<input id="' + key + '" class="css-checkbox" ' + checked + ' type="' + setting.type + '"/><label for="' + key + '" title="' + setting.info + '" class="css-label">' + setting.label + '</label>',
                   append : '#aak-settings-' + setting.group
                 });
               }
@@ -1579,23 +1586,6 @@ Aak = {
       host : ['plej.tv'],
       onStart : function () {
         Aak.addStyle(".advert_box { height: 1px; }");
-      }
-    },
-    eveskunk_com : {
-      host : ['eveskunk.com'],
-      onStart : function () {
-        // Disable Antiblock 1
-        //Aak.addBaitElement('div.adsbygoogle'); // dont work
-        // + abp rule eveskunk.com#@#.adsbygoogle
-        Aak.addStyle(".adsbygoogle { height: 5px; }");
-        // Disable Antiblock 2
-        Aak.addStyle(".container .row .col-lg-12 div[id] { height: 35px; }");
-      },
-      onIdle : function () {
-        // Disable Antiblock 1
-        document.querySelector('.adsbygoogle').innerHTML = '<br>';
-        // Disable Antiblock 2
-        Aak.uw.trackAdBlocking = function () {};
       }
     },
     tweaktown_com : {
@@ -1970,7 +1960,7 @@ Aak = {
       host : ['ville-ideale.com'],
       onAlways : function () {
         // +abp rule alt solution
-        Aak.uw.exec_sp = function () {};
+        Aak.uw.execsp = function () {};
       }
     },
     notre_planete_info : {
@@ -2447,6 +2437,14 @@ Aak = {
         Aak.addStyle("#blockblockA {visibility:invisible!important;display:none!important;}#blockblockA td {visibility:invisible!important;display:none!important;}#blockblockA td p {visibility:invisible!important;display:none!important;}#blockblockB {visibility:visible!important;display:block!important;}");
       }
     },
+    bild_de : {
+      host : ['bild.de'],
+      onStart : function () {
+        Aak.uw.de = cloneInto({}, Aak.uw);
+        Aak.uw.de.bild = {};
+      },
+      onIdle : function () {}
+    },
     megadebrid_eu : {
       host : ['mega-debrid.eu'],
       onEnd : function () {
@@ -2500,8 +2498,9 @@ Aak = {
     },
     ad_defend_general : {
 	  // by: hamsterbacke
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/685
       // pull: https://github.com/reek/anti-adblock-killer/pull/467
-      host : ['focus.de', 'stern.de', 'sat1.de', 'prosieben.de', 'kabeleins.de', 'sat1gold.de', 'sixx.de', 'prosiebenmaxx.de', 'fem.com', 'the-voice-of-germany.de', 'wetteronline.de', 'wetter.com', 'finanzen.net', 'tvspielfilm.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'itectale.de'],
+      host : ['focus.de', 'stern.de', 'sat1.de', 'prosieben.de', 'kabeleins.de', 'sat1gold.de', 'sixx.de', 'prosiebenmaxx.de', 'fem.com', 'the-voice-of-germany.de', 'wetteronline.de', 'wetter.com', 'finanzen.net', 'tvspielfilm.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'itectale.de', 'spox.com', 'shz.de', 'transfermarkt.de'],
       onBeforeScript : function (e) {
         // check all scripts before they are executed
         // addefend uses IIFE so the usual function killing isn't working
@@ -2704,6 +2703,14 @@ Aak = {
         Aak.uw.adblock = 'non';
       }
     },
+    bakersfield_com : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/657
+	  // note: also solution to AakList
+      host : ['bakersfield.com'],
+      onAlways : function () {
+        Aak.uw.AD_SLOT_RENDERED = true;
+      }
+    },	
     lachainemeteo_com : {
 	  // issue: https://github.com/reek/anti-adblock-killer/issues/590
       // issue: https://github.com/reek/anti-adblock-killer/issues/245
@@ -3247,7 +3254,7 @@ Aak = {
 		      onload : function (result) {
 		        var res = result.responseText;
 		        var o = JSON.parse(res);
-		        var standardURL = o.item.videos.main.video_content[0].url;
+		        var standardURL = o.item.videos.main.video_content[Number(Aak.opts.videoHD)].url;
 		        Aak.request({
 		          url : standardURL.replace('http://tvnplayer.pl/', 'http://player.pl/'),
 		          onload : function (result) {
@@ -4112,7 +4119,7 @@ Aak = {
             if (Aak.opts.logExcluded) {
               Aak.warn('Excluded');
             }
-            return false; // stop script execution
+			throw 'Anti-Adblock killer stopped because domain excluded.';
           }
           // Before DOM load
           if (current.onStart) {
