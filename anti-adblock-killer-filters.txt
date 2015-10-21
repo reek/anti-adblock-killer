@@ -1442,6 +1442,9 @@ shinden.pl#@#.AD-RC-300x250
 ! itespresso.fr
 ! https://github.com/reek/anti-adblock-killer/issues/686
 @@/advertising.js$script,domain=itespresso.fr
+! xxx-image.com
+! https://github.com/reek/anti-adblock-killer/issues/675
+xxx-image.com###footer > font > b 
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
