@@ -2019,3 +2019,7 @@ go4up.com##[href^="http://liversely.com/g4u?q="]
 go4up.com##[href^="http://go.ad2up.com/afu.php?id="]
 ! academia.edu
 @@||api.academia.edu/v0/users/*/stats$script
+! bild.de
+@@||bild.de^$elemhide
+@@||sascdn.com^$domain=bild.de
+@@||smartadserver.com^$domain=bild.de
