@@ -1439,6 +1439,9 @@ shinden.pl#@#.AD-RC-300x250
 @@||bild.de^$elemhide
 @@||sascdn.com^$domain=bild.de
 @@||smartadserver.com^$domain=bild.de
+! geo.de
+geo.de##div.lp_mwi_dialog-overlay.lp_mwi_dialog-overlay--is-active
+geo.de##.lp_mwi_dialog-wrapper
 ! itespresso.fr
 ! https://github.com/reek/anti-adblock-killer/issues/686
 @@/advertising.js$script,domain=itespresso.fr
