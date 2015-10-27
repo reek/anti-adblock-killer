@@ -1209,6 +1209,7 @@ turbodebrideur.com#@##pubdirecte
 @@||openload.co/assets/css/Advertisement.css$stylesheet
 @@||openload.io/assets/css/Advertisement.css$stylesheet
 @@||openload.tv/assets/css/Advertisement.css$stylesheet
+@@||openload.co/assets/js/advertisement.js
 ! multiup.org
 ! https://greasyfork.org/forum/discussion/6568
 ! https://greasyfork.org/forum/discussion/5870
