@@ -484,6 +484,7 @@ gamingroom.tv#@#.adsbygoogle
 @@||upf.co.il/advertisment.js$script
 ! paidverts.com
 paidverts.com#@#.afs_ads
+qnimate.com##script:contains(document.body.innerHTML =)
 ! sat1.de
 @@||gmads.net^$object-subrequest,domain=sat1.de|sat1.ch
 ! firstrowfr.eu
