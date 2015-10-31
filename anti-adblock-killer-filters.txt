@@ -120,6 +120,7 @@
 /js/an-scripts.js$script
 /js/an-scripts.min.js$script
 ||b-website.com/wp-content/uploads/an-temp/RrW75pkNMbSB.js$script
+b-website.com#@##adsense
 ! AdUnBlock - http://adunblock.com
 ||adunblock.com/code/*.html
 ! Anti-Adblock (from easylist) -------------------------------------------------------------
@@ -1194,10 +1195,13 @@ algerie360.com#@#.afs_ads
 ! hackintosh.zone
 ! https://github.com/reek/anti-adblock-killer/issues/559
 @@||adn.impactradius.com/gen-ad-code/$domain=hackintosh.zone
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=hackintosh.zone
+@@||pagead2.googlesyndication.com/pagead/js/*show_ads_impl.js$domain=hackintosh.zone
 ! turbodebrideur.com
 ! https://github.com/reek/anti-adblock-killer/issues/563
 turbodebrideur.com#@##pubdirecte
 ! openload.io / openload.tv / openload.co
+! https://github.com/reek/anti-adblock-killer/pull/697
 ! https://github.com/reek/anti-adblock-killer/issues/680
 ! https://github.com/reek/anti-adblock-killer/issues/475
 @@||openload.io^$elemhide
@@ -1206,9 +1210,15 @@ turbodebrideur.com#@##pubdirecte
 @@||openload.io/Adv.png$image
 @@||openload.co/Adv.png$image
 @@||openload.tv/Adv.png$image
-@@||openload.co/assets/css/Advertisement.css$stylesheet
 @@||openload.io/assets/css/Advertisement.css$stylesheet
+@@||openload.co/assets/css/Advertisement.css$stylesheet
 @@||openload.tv/assets/css/Advertisement.css$stylesheet
+@@||openload.io/assets/js/advertisement.js$xmlhttprequest
+@@||openload.co/assets/js/advertisement.js$xmlhttprequest
+@@||openload.tv/assets/js/advertisement.js$xmlhttprequest
+@@||openload.io/ad.php$xmlhttprequest
+@@||openload.co/ad.php$xmlhttprequest
+@@||openload.tv/ad.php$xmlhttprequest
 ! multiup.org
 ! https://greasyfork.org/forum/discussion/6568
 ! https://greasyfork.org/forum/discussion/5870
@@ -1444,7 +1454,35 @@ shinden.pl#@#.AD-RC-300x250
 @@/advertising.js$script,domain=itespresso.fr
 ! xxx-image.com
 ! https://github.com/reek/anti-adblock-killer/issues/675
-xxx-image.com###footer > font > b 
+xxx-image.com###footer > font > b
+! geo.de
+! https://github.com/reek/anti-adblock-killer/pull/691
+geo.de##div.lp_mwi_dialog-overlay.lp_mwi_dialog-overlay--is-active
+geo.de##.lp_mwi_dialog-wrapper
+! androiding.how
+! https://github.com/reek/anti-adblock-killer/pull/693
+androiding.how##.jsXY6yjBmGN4
+androiding.how##.jsXY6yjBmGN4-bg
+! techsini.com
+! https://github.com/reek/anti-adblock-killer/issues/698
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=techsini.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=techsini.com
+! cuisineactuelle.fr
+! https://github.com/reek/anti-adblock-killer/issues/702
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=cuisineactuelle.fr
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=cuisineactuelle.fr
+! maskinteknik.dk
+! https://github.com/reek/anti-adblock-killer/issues/709
+@@||maskinteknik.dk/assets/templates/maskinteknik/gfx/ads.png 
+! dagens.dk
+! https://github.com/reek/anti-adblock-killer/issues/708
+||avxwcuaagfcdn.net^$domain=dagens.dk
+! al.ly
+! https://github.com/reek/anti-adblock-killer/issues/706
+@@||al.ly/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest
+! gokano.com
+! https://github.com/reek/anti-adblock-killer/issues/704
+gokano.com#@#.adsbygoogle
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1492,6 +1530,7 @@ xxx-image.com###footer > font > b
 ||offer.alibaba.com^$popup
 ! Advertisers ---------------------------------------------------------------------------------------
 ! linkbucks.com (Visit Script)
+||eafyfsuh.net/visitScript/$script,third-party
 ||linkbucks.com/visitScript/$script,third-party
 ||any.gs/visitScript/$script,third-party
 ||cash4links.co/visitScript/$script,third-party
@@ -1529,6 +1568,7 @@ $||filesonthe.net/visitScript/$script,third-party
 ||rqq.co/visitScript/$script,third-party
 ||zff.co/visitScript/$script,third-party
 ! linkbucks.com (Full Page Script)
+||eafyfsuh.net/Webservices/jsParseLinks.aspx?id=$script,third-party
 ||linkbucks.com/Webservices/jsParseLinks.aspx?id=$script,third-party
 ||any.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
 ||cash4links.co/Webservices/jsParseLinks.aspx?id=$script,third-party
@@ -1584,6 +1624,7 @@ $||filesonthe.net/visitScript/$script,third-party
 ! ouo.io
 /js/ouo/entry.js$script,third-party
 /js/ouo/entry_v1.js$script,third-party
+||cdn.ouo.io/js/full-page-script.js$script,third-party
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
