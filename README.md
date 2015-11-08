@@ -94,6 +94,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Try with another browser.
 * How to disable the update check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * How to disable the list check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
+* Where can report an advertisement [here](https://forums.lanik.us/)
 * Consult Discussions or Issues
 
 
@@ -143,6 +144,50 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+##### Release 8.7 (November 8, 2015)
+##### Script
+* Improve: Aak.setCookie *function* (add argument path)
+* Fix: Aak.detected *function* (bug)
+* Fix: Aak.update *function* (bug auto update)
+* Fix: Antiblock.org (bug)
+* Fix: prem.link
+* Fix: bild.de
+* Kill: cleodesktop.com
+* Kill: qnimate.com
+* Fix: hackintosh.zone
+* Kill: rp-online.de (Ad-Defend)
+* Kill: cloudwebcopy.com
+* Kill: derstandard.at
+* Exclude: adblockplus.org
+* Kill: motorradonline.de (Ad-Defend)
+* Kill: 20min.ch (Ad-Defend)
+* Fix: bitcoinker.com
+##### List
+* Kill: geo.de
+* Kill: eafyfsuh.net (ads)
+* Kill: androiding.how
+* Kill: techsini.com
+* Kill: b-website.com
+* Kill: cuisineactuelle.fr
+* Kill: maskinteknik.dk
+* Kill: dagens.dk
+* Kill: al.ly
+* Kill: gokano.com
+* Kill: binbox.io (blockscript)
+* Kill: bc.vc (blockscript)
+* Kill: hdwallpapers4you.com
+* Kill: dinozap.info
+* Kill: ctenetwork.com
+* Kill: p2pcast.tv
+* Fix: filmovizija.club
+* Fix: exashare.com (ads)
+* Kill: youporn.com
+* Fix: openload.io / openload.tv / openload.co
+* Fix: dayt.se
+* Kill: corporatecentral.com
+* Kill: cityam.com
+* Kill: rtlxl.nl
+* Kill: macos-app.com
 
 ##### Release 8.6 (October 21, 2015)
 ##### Script
