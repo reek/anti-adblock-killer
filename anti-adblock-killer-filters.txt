@@ -375,8 +375,8 @@ forum.thgtr.com##.block_uyari
 ! https://github.com/reek/anti-adblock-killer/issues/624
 ! https://github.com/reek/anti-adblock-killer/issues/506
 ! https://github.com/reek/anti-adblock-killer/issues/486
-exashare.com###player_img
-exashare.com###player_imgo
+exashare.com,dowed.info###player_mgs
+exashare.com,dowed.info###player_mgo
 exashare.com##[href="http://www.videohube.eu/script/url.php?c=ep"]
 @@||exashare.com/ici.html$subdocument
 ! dowed.info (exashare.com)
@@ -816,9 +816,10 @@ mangamap.com#@#.afs_ads
 theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
 theextopia.com##.adsfoot2
-! filmovizija.me
+! filmovizija.club
+! https://github.com/reek/anti-adblock-killer/issues/719
 ! https://github.com/reek/anti-adblock-killer/issues/536
-@@||findvideo.tv/popunder.php$script,domain=filmovizija.me|filmovizija.in|filmovizija.com|filmovizija.net
+@@||filmovizija.club/advertise.js$script
 ! umahdroid.blogspot.com
 umahdroid.blogspot.com###energysaving
 ! streaming-foot.me
@@ -1219,6 +1220,9 @@ turbodebrideur.com#@##pubdirecte
 @@||openload.io/ad.php$xmlhttprequest
 @@||openload.co/ad.php$xmlhttprequest
 @@||openload.tv/ad.php$xmlhttprequest
+@@||openload.io/adv.php$xmlhttprequest
+@@||openload.co/adv.php$xmlhttprequest
+@@||openload.tv/adv.php$xmlhttprequest
 ! multiup.org
 ! https://greasyfork.org/forum/discussion/6568
 ! https://greasyfork.org/forum/discussion/5870
@@ -1384,8 +1388,11 @@ al.ly#@#.text_ads
 @@||al.ly/Advertiser.js$script
 ! dayt.se
 ! http://paste2.org/jeHAk7sg
+! https://github.com/reek/anti-adblock-killer/issues/722
 dayt.se#@##bottomcenterit
 @@||dayt.se/bottombannerkw.php$subdocument,domain=dayt.se
+dayt.se#@##Ad3TextAd
+@@||aflrm.com/$subdocument,domain=dayt.se
 dayt.se#@##ads
 @@||ads.ad-center.com^$subdocument,domain=dayt.se
 ! 360haven.com
@@ -1483,6 +1490,33 @@ androiding.how##.jsXY6yjBmGN4-bg
 ! gokano.com
 ! https://github.com/reek/anti-adblock-killer/issues/704
 gokano.com#@#.adsbygoogle
+! hdwallpapers4you.com
+! https://greasyfork.org/es/forum/discussion/6838
+@@||hdwallpapers4you.com/js/adsbygoogle.js$script
+! ctenetwork.com
+! https://github.com/reek/anti-adblock-killer/issues/713
+||ctenetwork.com^$third-party
+! p2pcast.tv
+! https://github.com/reek/anti-adblock-killer/issues/717
+p2pcast.tv#@##adblock
+! youporn.com
+! https://github.com/reek/anti-adblock-killer/issues/720
+@@||media.trafficjunky.net/js/holiday-promo.js$script,domain=youporn.com
+! corporatecentral.com
+! https://github.com/reek/anti-adblock-killer/issues/725
+corporatecentral.com#@##top_add
+corporatecentral.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=corporatecentral.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=corporatecentral.com
+! cityam.com
+! https://github.com/reek/anti-adblock-killer/issues/700
+||cityam.com/assets/js/PbCode.min.js$script
+! rtlxl.nl
+! https://github.com/reek/anti-adblock-killer/issues/726
+@@||staticfiles.rtl.nl/lib/rtl.jsapi/pubads_impl_70r.js$script,domain=rtlxl.nl
+! macos-app.com
+! https://github.com/reek/anti-adblock-killer/issues/727
+macos-app.com#@##adsense
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1568,43 +1602,43 @@ $||filesonthe.net/visitScript/$script,third-party
 ||rqq.co/visitScript/$script,third-party
 ||zff.co/visitScript/$script,third-party
 ! linkbucks.com (Full Page Script)
-||eafyfsuh.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||linkbucks.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||any.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
-||cash4links.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||cash4files.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||dyo.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
-||filesonthe.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||goneviral.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||megaline.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||miniurls.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||seriousdeals.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||theseblogs.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||theseforums.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||tinylinks.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||tubeviral.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||ultrafiles.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||urlbeat.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||whackyvidz.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||qqc.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||yyv.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||allanalpass.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||amy.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
-||deb.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
-||drstickyfingers.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||fapoff.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||freean.us/Webservices/jsParseLinks.aspx?id=$script,third-party
-||freegaysitepass.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||galleries.bz/Webservices/jsParseLinks.aspx?id=$script,third-party
-||hornywood.tv/Webservices/jsParseLinks.aspx?id=$script,third-party
-||linkbabes.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||picbucks.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||poontown.net/Webservices/jsParseLinks.aspx?id=$script,third-party
-||sexpalace.gs/Webservices/jsParseLinks.aspx?id=$script,third-party
-||tnabucks.com/Webservices/jsParseLinks.aspx?id=$script,third-party
-||youfap.me/Webservices/jsParseLinks.aspx?id=$script,third-party
-||rqq.co/Webservices/jsParseLinks.aspx?id=$script,third-party
-||zff.co/Webservices/jsParseLinks.aspx?id=$script,third-party
+||eafyfsuh.net/Webservices/jsParseLinks.aspx$script,third-party
+||linkbucks.com/Webservices/jsParseLinks.aspx$script,third-party
+||any.gs/Webservices/jsParseLinks.aspx$script,third-party
+||cash4links.co/Webservices/jsParseLinks.aspx$script,third-party
+||cash4files.com/Webservices/jsParseLinks.aspx$script,third-party
+||dyo.gs/Webservices/jsParseLinks.aspx$script,third-party
+||filesonthe.net/Webservices/jsParseLinks.aspx$script,third-party
+||goneviral.com/Webservices/jsParseLinks.aspx$script,third-party
+||megaline.co/Webservices/jsParseLinks.aspx$script,third-party
+||miniurls.co/Webservices/jsParseLinks.aspx$script,third-party
+||seriousdeals.net/Webservices/jsParseLinks.aspx$script,third-party
+||theseblogs.com/Webservices/jsParseLinks.aspx$script,third-party
+||theseforums.com/Webservices/jsParseLinks.aspx$script,third-party
+||tinylinks.co/Webservices/jsParseLinks.aspx$script,third-party
+||tubeviral.com/Webservices/jsParseLinks.aspx$script,third-party
+||ultrafiles.net/Webservices/jsParseLinks.aspx$script,third-party
+||urlbeat.net/Webservices/jsParseLinks.aspx$script,third-party
+||whackyvidz.com/Webservices/jsParseLinks.aspx$script,third-party
+||qqc.co/Webservices/jsParseLinks.aspx$script,third-party
+||yyv.co/Webservices/jsParseLinks.aspx$script,third-party
+||allanalpass.com/Webservices/jsParseLinks.aspx$script,third-party
+||amy.gs/Webservices/jsParseLinks.aspx$script,third-party
+||deb.gs/Webservices/jsParseLinks.aspx$script,third-party
+||drstickyfingers.com/Webservices/jsParseLinks.aspx$script,third-party
+||fapoff.com/Webservices/jsParseLinks.aspx$script,third-party
+||freean.us/Webservices/jsParseLinks.aspx$script,third-party
+||freegaysitepass.com/Webservices/jsParseLinks.aspx$script,third-party
+||galleries.bz/Webservices/jsParseLinks.aspx$script,third-party
+||hornywood.tv/Webservices/jsParseLinks.aspx$script,third-party
+||linkbabes.com/Webservices/jsParseLinks.aspx$script,third-party
+||picbucks.com/Webservices/jsParseLinks.aspx$script,third-party
+||poontown.net/Webservices/jsParseLinks.aspx$script,third-party
+||sexpalace.gs/Webservices/jsParseLinks.aspx$script,third-party
+||tnabucks.com/Webservices/jsParseLinks.aspx$script,third-party
+||youfap.me/Webservices/jsParseLinks.aspx$script,third-party
+||rqq.co/Webservices/jsParseLinks.aspx$script,third-party
+||zff.co/Webservices/jsParseLinks.aspx$script,third-party
 ! adf.ly
 ||cdn.adf.ly/js/entry.js$script,third-party
 ||cdn.j.gs/js/entry.js$script,third-party
@@ -1619,12 +1653,16 @@ $||filesonthe.net/visitScript/$script,third-party
 ||cdn.shorte.st/link-converter.min.js$script,third-party
 ! bc.vc
 ||bc.vc/js/link-converter.js$script,third-party
+||bc.vc/js/bcvc_go.js$script,third-party
+||bc.vc/js/bcvc_in.js$script,third-party
 ! gca.sh
 ||gca.sh/static/linkreplacer.js$script,third-party
 ! ouo.io
 /js/ouo/entry.js$script,third-party
 /js/ouo/entry_v1.js$script,third-party
 ||cdn.ouo.io/js/full-page-script.js$script,third-party
+! binbox.io
+||binbox.io/autolink.js$script,third-party
 ! Torrent --------------------------------------------------------------------------------------
 ! torrentz.eu
 ||torrentz.eu/p/$popup
@@ -1876,10 +1914,12 @@ sharecast.to##iframe[src^="http://delitaly.com.br/"]
 sharecast.to##iframe[src^="http://mixturecloud.com.br/"]
 ! hdcast.org
 hdcast.org##[id^="html"]
-! dinozap.com
-dinozap.com###total
-dinozap.com###total_banner
-dinozap.com##[target="_blank"][href="http://drakulastream.eu"]
+! dinozap.com / dinozap.info
+! https://github.com/reek/anti-adblock-killer/issues/715
+dinozap.com,dinozap.info###total
+dinozap.com,dinozap.info###total_banner
+dinozap.com,dinozap.info###divPanel
+dinozap.com,dinozap.info##[target="_blank"][href="http://drakulastream.eu"]
 ! u-stream.me##.videoSF
 u-stream.me##.videoSF
 u-stream.me##.video
