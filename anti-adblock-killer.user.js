@@ -2007,13 +2007,13 @@ Aak = {
     },
     cwtv_com : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/340
-      // code: http://pastebin.com/J7e73MpJ
+      // issue: https://github.com/reek/anti-adblock-killer/issues/762
       host : ['cwtv.com'],
       onAlways : function () {
-        Aak.uw.CLAPI = undefined;
+        Aak.uw.CWTVIsAdBlocking = undefined;
       },
       onBeforeScript : function (e) {
-        if (Aak.contains(Aak.innerScript(e), 'CLAPI.IsAdBlocking(function(isAdBlocking, hasAdBlocked)')) {
+        if (Aak.contains(Aak.innerScript(e), 'CWTVIsAdBlocking(c)')) {
           Aak.stopScript(e);
         }
       }
