@@ -2948,7 +2948,8 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/178
       // issue: https://github.com/reek/anti-adblock-killer/issues/196
       // issue: https://github.com/reek/anti-adblock-killer/issues/56
-      host : ['kissanime.com'],
+      // issue: https://github.com/reek/anti-adblock-killer/issues/736
+      host : ['kissanime.to'],
       onStart : function () {
         // Masking ads
         Aak.addStyle('iframe[id^="adsIfrme"], .divCloseBut { display:none; }');
