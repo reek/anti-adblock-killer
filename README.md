@@ -127,9 +127,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Remove Adblock (removeadblock.com)
 * Adblock Detector
 * StopAdBlock (stopadblock.org)
-* No-Adblock - (no-adblock.com)
+* No-Adblock (no-adblock.com)
 * AdBuddy
-
+* AdBlockConverter (adblockconverter.com)
 
 ##### Plugins (Wordpress)
 * AdBlock Blocker
@@ -144,8 +144,53 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+
+##### Release 8.8 (November 22, 2015)
+> Script
+* Fix: Antiblock.org
+* Fix: exclude domains
+* Fix: bild.de
+* Kill: computerbild.de (Ad-Defend)
+* Fix: kissanime.to
+* Fix: exrapidleech.info
+* Kill: vipbox.biz
+* Kill: vipboxtv.co
+* Kill: vipapp.me
+* Kill: vipbox.eu
+* Kill: vipbox.so
+* Fix: cwtv.com
+* Kill: cnews.ru
+* Kill: phys.org
+
+> List
+* Kill: AdBlockConverter (generic)
+* Kill: squidboards.com
+* Kill: hubturkey.net
+* Kill: afreesms.com
+* Kill: iplex.pl
+* Kill: giovanniterlingen.com
+* Kill: starmusiq.com
+* Kill: yocast.tv
+* Kill: getdebrid.com
+* Kill: megabitload.com
+* Kill: thesimsresource.com
+* Kill: filmovizija.co
+* Kill: skidrowcrack.com
+* Kill: javfor.me
+* Kill: vtele.ca
+* Kill: aseanlegacy.net
+* Kill: synonim.net
+* Fix: olweb.tv
+* Fix: film.org.pl
+* Fix: hentenaar.com
+* Kill: securenetsystems.net
+* Kill: debridfast.com
+* Fix: multiup.org
+* Kill: ynet.co.il
+
+
 ##### Release 8.7 (November 8, 2015)
-##### Script
+> Script
 * Improve: Aak.setCookie *function* (add argument path)
 * Fix: Aak.detected *function* (bug)
 * Fix: Aak.update *function* (bug auto update)
@@ -162,7 +207,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: motorradonline.de (Ad-Defend)
 * Kill: 20min.ch (Ad-Defend)
 * Fix: bitcoinker.com
-##### List
+
+> List
 * Kill: geo.de
 * Kill: eafyfsuh.net (ads)
 * Kill: androiding.how
@@ -189,8 +235,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: rtlxl.nl
 * Kill: macos-app.com
 
+
 ##### Release 8.6 (October 21, 2015)
-##### Script
+> Script
 * Fix: bug no results on Google search bar
 * Fix: ville-ideale.com
 * Kill: bakersfield.com
@@ -199,7 +246,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: shz.de
 * Kill: transfermarkt.de
 * Settings: add an option to enable video HD quality
-##### List
+
+> List
 * Kill: enlacespremium.biz
 * Kill: playbitco.in
 * Kill: skiplimite.tv
@@ -235,8 +283,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: bild.de
 * Kill: xxx-image.com
 
+
 ##### Release 8.5 (October 4, 2015)
-##### Script
+> Script
 * Update: metadata
 * Improve: exclude domains rule
 * Improve: debug mode
@@ -269,7 +318,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: tek.no
 * Fix: vg.no
 * Fix: e24.no
-##### List
+
+> List
 * Fix: youwatch.org (bug fullscreen+embed/iframe)
 * Fix: turbodebrideur.com (allow rule blocked by ListeFR)
 * Fix: openload.io / openload.tv / openload.co
@@ -333,21 +383,25 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: inwestycje.pl
 * Kill: tvsierpc.pl
 
+
 ##### Release 8.4 (August 23, 2015)
-* Exclude: pandoon.info (script)
-* Add: function *unpackScript* (script)
-* Add: function *getScript* (script)
-* Kill: AdBlock Blocker (script)
-* Kill: torrent-tv.ru (script+list)
-* Kill: italiatv.org (script)
-* Kill: bitcoinaliens.com (script)
-* Kill: binbucks.com (script)
-* Kill: 3dnews.ru (script)
-* Kill: bolor-toli.com (script)
-* Kill: mangahost.com (script)
-* Fix: youwatch.org (kill + hide ads allowed by easylist) (script+list)
-* Fix: turbodebrideur.com (script)
-* Fix: function *player.jwplayer5* (script)
+> Script
+* Exclude: pandoon.info
+* Add: function *unpackScript*
+* Add: function *getScript*
+* Kill: AdBlock Blocker
+* Kill: torrent-tv.ru
+* Kill: italiatv.org
+* Kill: bitcoinaliens.com
+* Kill: binbucks.com
+* Kill: 3dnews.ru
+* Kill: bolor-toli.com
+* Kill: mangahost.com
+* Fix: youwatch.org (kill + hide ads allowed by easylist)
+* Fix: turbodebrideur.com
+* Fix: function *player.jwplayer5*
+
+> List
 * Kill: vvvvid.it
 * Kill: djawir.com
 * Kill: wyborcza.pl
@@ -370,59 +424,63 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: tv3play.se / tv6play.se / tv8play.se / tv10play.se
 * Fix: hackintosh.zone
 
+
 ##### Release 8.3 (August 7, 2015)
-* Add: function *getFunctionCode* (script)
-* Add: function *addExternalScript* (script)
-* Fix: FuckAdBlock and BlockAdBlock (script+list)
-* Fix: function *addScript* (script)
-* Fix: Blogspot country redirection (script)
-* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE") (script)
-* Fix: m6web.fr (script)
-* Fix: bitcoinzebra.com (script)
-* Kill: 15min.lt (script)
-* Kill: gamestar.de (script)
-* kill: btcacid.com (script)
-* kill: cryptospot.me (script)
-* Kill: epicwallcz.blogspot.com (script)
-* Kill: masterwallcz.blogspot.com (script)
-* Kill: sportsplays.com (script)
-* Kill: slideplayer.com (script)
-* Kill: slideplayer.fr (script)
-* Kill: tek.no (script)
-* Kill: amer.no (script)
-* Kill: teknofil.no (script)
-* Kill: insidetelecom.no (script)
-* Kill: prisguide.no (script)
-* Kill: diskusjon.no (script)
-* Kill: teknojobb.no (script)
-* Kill: akam.no (script)
-* Kill: hardware.no (script)
-* Kill: ipla.tv (script)
-* Kill: turbodebrideur.com (script)
-* Kill: focus.de (script)(only firefox)
-* Kill: stern.de (script)(only firefox)
-* Kill: sat1.de (script)(only firefox)
-* Kill: prosieben.de (script)(only firefox)
-* Kill: kabeleins.de (script)(only firefox)
-* Kill: sat1gold.de (script)(only firefox)
-* Kill: sixx.de (script)(only firefox)
-* Kill: prosiebenmaxx.de (script)(only firefox)
-* Kill: fem.com (script)(only firefox)
-* Kill: the-voice-of-germany.de (script)(only firefox)
-* Kill: wetteronline.de (script)(only firefox)
-* Kill: wetter.com (script)(only firefox)
-* Kill: finanzen.net (script)(only firefox)
-* Kill: tvspielfilm.de (script)(only firefox)
-* Kill: gamestar.de (script)(only firefox)
-* Kill: pcwelt.de (script)(only firefox)
-* Kill: boerse-online.de (script)(only firefox)
-* Kill: sportauto.de (script)(only firefox)
-* Kill: auto-motor-und-sport.de (script)(only firefox)
-* Kill: motor-klassik.de (script)(only firefox)
-* Kill: 4wheelfun.de (script)(only firefox)
-* Kill: autostrassenverkehr.de (script)(only firefox)
-* Kill: lustich.de (script)(only firefox)
-* Kill: itectale.de (script)(only firefox)
+> Script
+* Add: function *getFunctionCode*
+* Add: function *addExternalScript*
+* Fix: FuckAdBlock and BlockAdBlock
+* Fix: function *addScript*
+* Fix: Blogspot country redirection
+* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
+* Fix: m6web.fr
+* Fix: bitcoinzebra.com
+* Kill: 15min.lt
+* Kill: gamestar.de
+* kill: btcacid.com
+* kill: cryptospot.me
+* Kill: epicwallcz.blogspot.com
+* Kill: masterwallcz.blogspot.com
+* Kill: sportsplays.com
+* Kill: slideplayer.com
+* Kill: slideplayer.fr
+* Kill: tek.no
+* Kill: amer.no
+* Kill: teknofil.no
+* Kill: insidetelecom.no
+* Kill: prisguide.no
+* Kill: diskusjon.no
+* Kill: teknojobb.no
+* Kill: akam.no
+* Kill: hardware.no
+* Kill: ipla.tv
+* Kill: turbodebrideur.com
+* Kill: focus.de (only firefox)
+* Kill: stern.de (only firefox)
+* Kill: sat1.de (only firefox)
+* Kill: prosieben.de (only firefox)
+* Kill: kabeleins.de (only firefox)
+* Kill: sat1gold.de (only firefox)
+* Kill: sixx.de (only firefox)
+* Kill: prosiebenmaxx.de (only firefox)
+* Kill: fem.com (only firefox)
+* Kill: the-voice-of-germany.de (only firefox)
+* Kill: wetteronline.de (only firefox)
+* Kill: wetter.com (only firefox)
+* Kill: finanzen.net (only firefox)
+* Kill: tvspielfilm.de (only firefox)
+* Kill: gamestar.de (only firefox)
+* Kill: pcwelt.de (only firefox)
+* Kill: boerse-online.de (only firefox)
+* Kill: sportauto.de (only firefox)
+* Kill: auto-motor-und-sport.de (only firefox)
+* Kill: motor-klassik.de (only firefox)
+* Kill: 4wheelfun.de (only firefox)
+* Kill: autostrassenverkehr.de (only firefox)
+* Kill: lustich.de (only firefox)
+* Kill: itectale.de (only firefox)
+
+> List
 * Fix: turkanime.tv
 * Kill: videoproxy.in
 * Kill: facebookproxy.info
@@ -481,23 +539,27 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: wtkplay.pl
 * Kill: xiaopan.co
 
+
 ##### Release 8.2 (June 13, 2015)
-* Exclude: xemvtv.net (script)
-* Exclude: vod.pl (script)
-* Kill: adultmult.tv (script)
-* Kill: vgtv.no (script)
-* Kill: turkanime.tv (script)
-* Kill: kisscartoon.me (script)
-* Kill: apkmirror.com (script)
-* Kill: pregen.net (script)
-* Kill: player.pl (script)
-* Kill: crash-aerien.aero (script)
-* Kill: hackintosh.zone (script)
-* Kill: notre-planete.info (script)
-* Kill: ville-ideale.com (script)
-* Kill: wtfbit.ch (script)
-* Kill: zeberka.pl (script)
-* Kill: kozaczek.pl (script)
+> Script
+* Exclude: xemvtv.net 
+* Exclude: vod.pl 
+* Kill: adultmult.tv 
+* Kill: vgtv.no 
+* Kill: turkanime.tv 
+* Kill: kisscartoon.me 
+* Kill: apkmirror.com 
+* Kill: pregen.net 
+* Kill: player.pl 
+* Kill: crash-aerien.aero 
+* Kill: hackintosh.zone 
+* Kill: notre-planete.info 
+* Kill: ville-ideale.com 
+* Kill: wtfbit.ch 
+* Kill: zeberka.pl 
+* Kill: kozaczek.pl 
+
+> List
 * Kill: fcportables.com
 * Kill: givemesome.tips
 * Kill: tek.no
@@ -566,6 +628,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: record.xl.pt (bug)
 * Update: README help section
 
+
 ##### Release 8.1 (May 11, 2015)
 * Kill: worldofgnome.org
 * Kill: foot-live.info
@@ -583,6 +646,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: turbogenerator.info
 * Fix: FuckAdBlock
 * Fix: AdUnBlockPremium
+
 
 ##### Release 8.0 (May 3, 2015)
 * Improve: fixes and improvement of the entire code
@@ -679,6 +743,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: streaming.crazy-bros.fr
 * Kill: AdBlock Notify (Plugin)
 
+
 ##### Release 7.8 (March 12, 2015)
 * Add: posibility donate by Dogecoin
 * Add: posibility donate by Litecoin
@@ -748,6 +813,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: cryptodrips.com
 * Kill: faucet.cashcat.eu
 * Kill: icebitco.in
+
 
 ##### Release 7.7 (January 26, 2015)
 * Add: meta keys @supportURL and @contributionURL
@@ -852,6 +918,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: lequipe.fr
 * Kill: AdBuddy (script)
 
+
 ##### Release 7.6 (September 28, 2014)
 * kill: online.dramacafe.in
 * Kill: javso.com
@@ -881,6 +948,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Edit: @excludes
 * Improve: Aak.player
 
+
 ##### Release 7.5 (August 26, 2014)
 * Kill: secret-zone.net
 * Kill: hln.be
@@ -909,6 +977,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: bug Aak.addScript
 * Improve: Aak.notification
 * Improve: detection of generic antiblocks
+
 
 ##### Release 7.4 (July 22, 2014)
 * Kill: siamfishing.com
@@ -947,6 +1016,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Improve: detection of generic antiblocks
 * Improve: Aak.player (jw5,jw6,flow)
 * Remove: obsolete code
+
 
 ##### Release 7.3 (June 29, 2014)
 * Kill: anisubsia.com
@@ -1011,6 +1081,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Improve: prototype.contains
 * Improve: Aak.addElement
 
+
 ##### Release 7.2 (May 20, 2014)
 * Kill: javzoo.com
 * Kill: advertise.com
@@ -1053,6 +1124,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Improve: Aak.getScriptManager (news script managers)
 * Optimize: userscript code
 
+
 ##### Release 7.1 (May 14, 2014)
 * Kill: ftlwiki.com
 * Kill: eami.in
@@ -1078,6 +1150,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Improve: Mutation Events + Mutation Observer
 * Optimize: userscript code
 
+
 ##### Release 7.0 (Apr 16, 2014)
 * Kill: tv.majorleaguegaming.com
 * Kill: imgleech.com
@@ -1089,6 +1162,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: codeclan.altervista.org (Fix)
 * Kill: Better Stop Adblock (script) (Fix)
 * Fix: bug synch repository (Github)
+
 
 ##### Release 6.9 (Mar 22, 2014)
 * Kill: adBuddy  (script)
@@ -1118,6 +1192,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: livesoccerhq.com (Fix)
 * Optimize: cleanup redundant rules filterlist
 
+
 ##### Release 6.8 (Fev 25, 2014)
 * Kill: xavboxforum.com
 * Kill: dramapassion.com
@@ -1129,6 +1204,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: afreesms.com (Fix)
 * Kill: video.kooora.com (Fix)
 
+
 ##### Release 6.7 (Fev 5, 2014)
 * Kill: livesoccerhq.com
 * Kill: pc.online143.com
@@ -1137,9 +1213,11 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: needrom.com (Fix)
 * Kill: rtl.de (by hoshie) (Fix)
 
+
 ##### Release 6.6 (Jan 26, 2014)
 * Kill: playtv.fr (Fix)
 * Remove: detectFilters (dont works properly)
+
 
 ##### Release 6.5 (Jan 26, 2014)
 * Kill: elahmad.com
@@ -1166,6 +1244,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Add: detectFilters
 * Replace: Mutation Events to Mutation Observer (by Watilin)
 
+
 ##### Release 6.4 (Jan 6, 2014)
 * Kill: roleplayer.me
 * Kill: dbzog.de
@@ -1173,6 +1252,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: risiko-gesundheit.de (Fix)
 * Kill: maisgasolina.com (Fix)
 * Improve: notification box
+
 
 ##### Release 6.3 (Dec 30, 2013)
 * Kill: beppegrillo.it
@@ -1187,10 +1267,12 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: pregen.net
 * Kill: uptobox.com (Fix)
 
+
 ##### Release 6.2 (Dec 18, 2013)
 * Kill: eami.in
 * Kill: sporttvdireto.com (only firefox)
 * Kill: eventhubs.com (Fix)
+
 
 ##### Release 6.1 (Dec 1, 2013)
 * Kill: free-movie-home.com
@@ -1204,12 +1286,14 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: boerse.bz
 * Kill: youmoviz.tv
 
+
 ##### Release 6.0 (Nov 16, 2013)
 * Kill: snsw.us
 * Kill: mako.co.il
 * Kill: eami.in
 * Kill: yellowbridge.com
 * Kill: cineplanet21.com
+
 
 ##### Release 5.9 (Nov 8, 2013)
 * Kill: thesimsresource.com
@@ -1219,6 +1303,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: runningmanengsub.com
 * Kill: jheberg.net (Fix)
 
+
 ##### Release 5.8 (Oct 26, 2013)
 * Kill: eclypsia.com
 * Kill: viki.com
@@ -1226,12 +1311,14 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: Aadb Anti Ads Blocker (script)
 * New: icon
 
+
 ##### Release 5.7 (Oct 22, 2013)
 * Kill: hentaistream.com
 * Kill: mrtzcmp3.net
 * Kill: twds4e2.nation2.com
 * Kill: videotools.12pings.net
 * Kill: preemlinks.com (Fix)
+
 
 ##### Release 5.6 (Oct 14, 2013)
 * Kill: camelstyle.net
@@ -1241,6 +1328,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: dizi-mag.com (Fix)
 * Kill: jheberg.net (Fix)
 
+
 ##### Release 5.5 (Oct 10, 2013)
 * Kill: jheberg.net
 * Kill: filmovizija.com
@@ -1248,10 +1336,12 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: seekingalpha.com
 * Kill: kissanime.com (Fix)
 
+
 ##### Release 5.4 (Oct 4, 2013)
 * Kill: maxdebrideur.com
 * Kill: needrom.com
 * Kill: hardware.no
+
 
 ##### Release 5.3 (Sep 25, 2013)
 * Kill: playtv.fr
@@ -1261,15 +1351,18 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: dizi-mag.com (Fix)
 * Kill: antennesport.com (Fix)
 
+
 ##### Release 5.2 (Sep 21, 2013)
 * Kill: 2site.me
 * Kill: tweaktown.com
 * Kill: dizi-mag.com
 
+
 ##### Release 5.1 (Sep 19, 2013)
 * Kill: hdtvtuga.com
 * Kill: bee4.biz
 * Kill: filmovizija.com
+
 
 ##### Release 5.0 (Sep 14, 2013)
 * Kill: privateinsta.com
@@ -1278,10 +1371,12 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: vipflash.net
 * Kill: eventhubs.com (Fix)
 
+
 ##### Release 4.9 (Sep 12, 2013)
 * Kill: debrastagi.com
 * Kill: downparadiz.com
 * Kill: sockshare.com
+
 
 ##### Release 4.8 (Sep 7, 2013)
 * Kill: doatoolsita.altervista.org
@@ -1322,6 +1417,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Add: command menu (checkupdates)
 * Create: filters list "Anti-Adblock Killer | Filters for Adblockers"
 
+
 ##### Release 4.7 (Sep 3, 2013)
 * Kill: estadiofutebol.com
 * Kill: casadossegredos.tv
@@ -1329,8 +1425,10 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: desportogratis.com
 * Kill: kissanime.com (just player) (Fix)
 
+
 ##### Release 4.6 (Sep 1, 2013)
 * Kill: fshost.me
+
 
 ##### Release 4.5 (Aug 30, 2013)
 * Kill: allsoftinone.com
@@ -1341,25 +1439,30 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: adfly (disable event unbeforeunload) (Fix)
 * Kill: kissanime.com (just player) (Fix)
 
+
 ##### Release 4.4 (Aug 28, 2013)
 * Kill: ecchi.animeron.tv
 * Kill: imgboo.me
 * Kill: antennesport.com (only Firefox)
 * Kill: kissanime.com (just player) (Fix)
 
+
 ##### Release 4.3 (Aug 27, 2013)
 * Kill: backin.net
 * Kill: kissanime.com (just player) (Fix)
+
 
 ##### Release 4.2 (Aug 25, 2013)
 * Kill: up-flow.org
 * Kill: mwfiles.net
 * Kill: kissanime.com (just player) (Fix)
 
+
 ##### Release 4.1 (Aug 23, 2013)
 * Kill: kissanime.com (Fix)
 * Kill: exrapidleech.info (Fix)
 * Kill: elahmad.com (Fix)
+
 
 ##### Release 4.0 (Aug 23, 2013)
 * Kill: teknogods.com
@@ -1367,6 +1470,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: dreamer.weboptime.com
 * Kill: webfilmek-sorozatok.blogspot.com
 * Kill: forum.gamespowerita.com (Fix)
+
 
 ##### Release 3.9 (Aug 22, 2013)
 * Kill: fileice.net
@@ -1388,23 +1492,28 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: vgunetwork.com
 * Kill: gamespowerita.com (Fix)
 
+
 ##### Release 3.8 (Aug 21, 2013)
 * Kill: realamateurwivesandgirlfriends.pornblogy.com
 * Kill: d3brid4y0u.info
 * Add: @exclude chromeactions.com
 
+
 ##### Release 3.7 (Aug 20, 2013)
 * Kill: kissanime.com (Fix)
 * Kill: go4up.com (Fix)
+
 
 ##### Release 3.6 (Aug 19, 2013)
 * Kill: ziddu.com (redirect to captcha)
 * Kill: jkanime.net
 * Kill: kissanime.com (Fix)
 
+
 ##### Release 3.5 (Aug 18, 2013)
 * Add: check updates automaticaly (every 8 hours)
 * Add: @grant
+
 
 ##### Release 3.4 (Aug 17, 2013)
 * Kill: freegamehosting.nl
@@ -1417,6 +1526,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: girafeshow.tv
 * Kill: automobile-sportive.com
 
+
 ##### Release 3.3 (Aug 15, 2013)
 * Kill: urlink.at
 * Kill: priva.us
@@ -1426,15 +1536,18 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Add: SSL on updateURL and downloadURL
 * Edit: css notification box
 
+
 ##### Release 3.2 (Aug 14, 2013)
 * Kill: go.phpnulledscripts.com
 * Kill: picstwist.com
+
 
 ##### Release 3.1 (Aug 12, 2013)
 * Kill: topzone.lt
 * Kill: file4go.com
 * Kill: cp-g.net
 * Kill: kissanime.com (Fix)
+
 
 ##### Release 3.0 (Aug 11, 2013)
 * Kill: 9.bb
@@ -1444,11 +1557,14 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: filesdld.com
 * Edit: css notification box
 
+
 ##### Release 2.9 (Aug 10, 2013)
 * Fix: various bugs
 
+
 ##### Release 2.8 (Aug 10, 2013)
 * Kill: kissanime.com (Fix)
+
 
 ##### Release 2.7 (Aug 9, 2013)
 * Kill: becompta.be
@@ -1463,17 +1579,21 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: pro-ddl.ws
 * Kill: leetgamerz.net
 
+
 ##### Release 2.6 (Aug 8, 2013)
 * Kill: interfans.org/forum
 * Kill: risiko-gesundheit.de (Fix)
+
 
 ##### Release 2.5 (Aug 7, 2013)
 * Kill: kissanime.com
 * Kill: 360haven.com (Fix)
 
+
 ##### Release 2.4 (Aug 7, 2013)
 * Kill: xxxdownloadsfree.blogspot.com
 * Kill: 360haven.com
+
 
 ##### Release 2.3 (Aug 6, 2013)
 * Kill: receive-sms.com
@@ -1489,10 +1609,12 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: youwatch.org
 * Kill: leetgamerz.net
 
+
 ##### Release 2.2 (Aug 5, 2013)
 * Kill: risiko-gesundheit.de
 * Kill: leetgamerz.net
 * Kill: codeclan.altervista.org
+
 
 ##### Release 2.1 (Aug 4, 2013)
 * Kill: gooddrama.net
@@ -1501,6 +1623,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: ilix.in
 * Add: notification box
 
+
 ##### Release 2.0 (Aug 3, 2013)
 * Kill: skippyfile.com
 * Kill: upshare.org
@@ -1508,6 +1631,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: raw.senmanga.com
 * Kill: antiblock v3 (script)
 * Fork: "Anti-AntiBlock Plus 2.1" by InfinityCoding
+
 
 ##### Release 1.4 (Jul 30, 2013)
 * Kill: adf.ly
