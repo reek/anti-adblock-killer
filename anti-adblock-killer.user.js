@@ -4,7 +4,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
 // @author Reek | reeksite.com
-// @version 8.7
+// @version 8.8
 // @encoding utf-8
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -69,7 +69,7 @@
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '8.7',
+  version : '8.8',
   scriptid : 'gJWEp0vB',
   homeURL : 'http://reek.github.io/anti-adblock-killer/',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -271,23 +271,6 @@ Aak = {
       console = console || unsafeWindow.console;
       console.info('Aak' + Aak.getVersion(), location.host, arguments);
     }
-  },
-  dumpDOM : function (delay) {
-    setTimeout(function () {
-      var array = [];
-      var win = Aak.uw;
-      for (var k in win) {
-        var curr = win[k];
-        if (typeof curr === 'object') {
-          try {
-            array.push(k + ': ' + JSON.stringify(curr));
-          } catch (e) {
-            console.log(k, typeof curr, curr);
-          }
-        }
-      }
-      document.body.innerHTML = '<textarea width="100%" height="500px">{' + array.join(',') + '}</textarea>';
-    }, delay || 0);
   },
   GMapiSupported : function () {
     if (Aak.noframe) {
@@ -1320,14 +1303,6 @@ Aak = {
     // --------------------------------------------------------------------------------------------
     // Anti-Adblock Killer
     // --------------------------------------------------------------------------------------------
-    exclude : {
-      // issues: https://github.com/reek/anti-adblock-killer/issues/617
-	  // issues: https://greasyfork.org/fr/forum/discussion/5426
-	  // issues: https://github.com/reek/anti-adblock-killer/issues/419
-      // issues: https://github.com/reek/anti-adblock-killer/issues/377
-      host : ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google\.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "stackoverflow.com", "tampermonkey.net", "tumblr.com", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com", "xemvtv.net", "vod.pl", "agar.io", "pandoon.info", "fsf.org", "adblockplus.org"],
-      exclude : true
-    },
     settings : {
       host : ['localhost', 'reek.github.io', 'reeksite.com'],
       onIdle : function () {
@@ -2005,24 +1980,18 @@ Aak = {
         };
       }
     },
-    cwtv_com : {
-      // issue: https://github.com/reek/anti-adblock-killer/issues/340
-      // code: http://pastebin.com/J7e73MpJ
-      host : ['cwtv.com'],
-      onAlways : function () {
-        Aak.uw.CLAPI = undefined;
-      },
-      onBeforeScript : function (e) {
-        if (Aak.contains(Aak.innerScript(e), 'CLAPI.IsAdBlocking(function(isAdBlocking, hasAdBlocked)')) {
-          Aak.stopScript(e);
-        }
-      }
-    },
     pregen_net : {
       host : ['pregen.net'],
       onStart : function () {
         // skip page info
         Aak.setCookie('pgn', 1);
+      }
+    },
+    phys_org : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/768
+      host : ['phys.org'],
+      onAlways : function () {
+        Aak.uw.chkAB = function () {};
       }
     },
     onvasortir_com : {
@@ -2315,7 +2284,32 @@ Aak = {
       onAlways : function () {
         Aak.uw.c_Oo_Advert_Shown = true;
       }
-    },	
+    },
+    cwtv_com : {
+	  // by: Kalbasit
+	  // pull: https://github.com/reek/anti-adblock-killer/pull/763
+      // issue: https://github.com/reek/anti-adblock-killer/issues/340
+      // issue: https://github.com/reek/anti-adblock-killer/issues/762
+      host : ['cwtv.com'],
+      onAlways : function () {
+        Aak.uw.CWTVIsAdBlocking = undefined;
+      },
+      onBeforeScript : function (e) {
+        if (Aak.contains(Aak.innerScript(e), 'CWTVIsAdBlocking(c)')) {
+          Aak.stopScript(e);
+        }
+      }
+    },
+    bild_de : {
+      // by: hacker999
+      // issue: https://github.com/reek/anti-adblock-killer/issues/664
+      host : ['bild.de'],
+      onStart : function () {
+        Aak.uw.de = cloneInto({}, Aak.uw);
+        Aak.uw.de.bild = {};
+        //Aak.stopRedirect();
+      }
+    },
     inn_co_il : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/532
       host : ['inn.co.il'],
@@ -2373,23 +2367,39 @@ Aak = {
       }
     },
     exrapidleech_info : {
+	  // by: Alexander255
+	  // patch: http://pastebin.com/Q664diQ2
+      // issue: https://github.com/reek/anti-adblock-killer/issues/745
+      // issue: https://github.com/reek/anti-adblock-killer/issues/729
       // issue: https://github.com/reek/anti-adblock-killer/issues/573
       host : ['exrapidleech.info'],
-      onAlways : function () {
-        Aak.uw.adblock = false;
+      onStart : function () {
+		  
+        Object.defineProperty(unsafeWindow, 'dec_pid', {
+          value : -1
+        });
+
+        Object.defineProperty(unsafeWindow, 'bdvbnr_pid', {
+          value : -1
+        });
+
+        Object.defineProperty(unsafeWindow, 'adblock', {
+          value : false
+        });
       }
     },
     vipleague_domains : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/765
 	  // issue: https://github.com/reek/anti-adblock-killer/issues/598
 	  // issue: https://github.com/reek/anti-adblock-killer/issues/326
-      // issue: https://github.com/reek/anti-adblock-killer/issues/322			
+      // issue: https://github.com/reek/anti-adblock-killer/issues/322
       // issue: https://github.com/reek/anti-adblock-killer/issues/301
 	  // issue: https://github.com/reek/anti-adblock-killer/issues/297
       // issue: https://github.com/reek/anti-adblock-killer/issues/290
       // issue: https://github.com/reek/anti-adblock-killer/issues/273
       // issue: https://github.com/reek/anti-adblock-killer/issues/271
       // +abp rule alt solution
-      host : ['vipleague.ws', 'vipleague.tv', 'vipleague.se', 'vipleague.me', 'vipleague.co', 'vipleague.sx', 'vipleague.ch', 'vipbox.tv', 'vipbox.co', 'vipbox.sx', 'vipboxsa.co', 'strikeout.co', 'homerun.re'],
+      host : ['vipleague.ws', 'vipleague.tv', 'vipleague.se', 'vipleague.me', 'vipleague.co', 'vipleague.sx', 'vipleague.ch', 'vipbox.tv', 'vipbox.co', 'vipbox.sx', 'vipboxsa.co', 'vipbox.biz', 'strikeout.co', 'homerun.re', 'vipboxtv.co', 'vipapp.me', 'vipapp.me', 'vipbox.eu', 'vipbox.so'],
       onStart : function () {
         // Solution 1
         Aak.uw.iExist = true;
@@ -2525,21 +2535,6 @@ Aak = {
         Aak.addStyle("#blockblockA {visibility:invisible!important;display:none!important;}#blockblockA td {visibility:invisible!important;display:none!important;}#blockblockA td p {visibility:invisible!important;display:none!important;}#blockblockB {visibility:visible!important;display:block!important;}");
       }
     },
-    bild_de : {
-      // by: hacker999
-      // issue: https://github.com/reek/anti-adblock-killer/issues/664
-      host : ['bild.de'],
-      onStart : function () {
-        var interval = setInterval(function () {
-            if (Aak.uw.window.de) {
-              Aak.uw.de.bild.abTesting = function (a) {
-                return;
-              }
-              clearInterval(interval);
-            }
-          }, 0);
-      }
-    },
     megadebrid_eu : {
       host : ['mega-debrid.eu'],
       onEnd : function () {
@@ -2602,7 +2597,7 @@ Aak = {
 	  // by: hamsterbacke
 	  // issue: https://github.com/reek/anti-adblock-killer/issues/685
       // pull: https://github.com/reek/anti-adblock-killer/pull/467
-      host : ['focus.de', 'stern.de', 'sat1.de', 'prosieben.de', 'kabeleins.de', 'sat1gold.de', 'sixx.de', 'prosiebenmaxx.de', 'fem.com', 'the-voice-of-germany.de', 'wetteronline.de', 'wetter.com', 'finanzen.net', 'tvspielfilm.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'itectale.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch'],
+      host : ['focus.de', 'stern.de', 'sat1.de', 'prosieben.de', 'kabeleins.de', 'sat1gold.de', 'sixx.de', 'prosiebenmaxx.de', 'fem.com', 'the-voice-of-germany.de', 'wetteronline.de', 'wetter.com', 'finanzen.net', 'tvspielfilm.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'itectale.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch', 'computerbild.de'],
       onBeforeScript : function (e) {
         // check all scripts before they are executed
         // addefend uses IIFE so the usual function killing isn't working
@@ -2948,7 +2943,7 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/178
       // issue: https://github.com/reek/anti-adblock-killer/issues/196
       // issue: https://github.com/reek/anti-adblock-killer/issues/56
-      host : ['kissanime.com'],
+      host : ['kissanime.com', 'kissanime.to'],
       onStart : function () {
         // Masking ads
         Aak.addStyle('iframe[id^="adsIfrme"], .divCloseBut { display:none; }');
@@ -3956,21 +3951,55 @@ Aak = {
 		    };
 		  });
 		}
-		
-        // Antiblock - http://antiblock.org/
-        var styles = document.querySelectorAll('style');
-        for (var i = 0; i < styles.length; i++) {
-          if (styles[i].innerHTML.length) {
-            var css = styles[i].innerHTML.replace(/[\n\r\t\s]+/g, "");
-            var id = /#([0-9a-z]{4,10})\{.*position:fixed\!important;.+document\.documentElement.scrollTop\?document\.documentElement\.scrollTop:document\.body\.scrollTop.+\}#/.exec(css);
-            if (id != null && id.length == 2) {
-              Aak.setLocal('aboBlockId', id[1]);
-            }
-          }
-        }
 
-        // Anti-Adblockers
-        var systems = {
+
+		// Antiblock.org v2+3
+		// note: detect and store block id
+		// test: http://tinyurl.com/nhyhpzk
+		//
+		var styles = document.querySelectorAll('style');
+		for (var i = 0; i < styles.length; i++) {
+		  var style = styles[i];
+		  var cssRules = style.sheet.cssRules;
+		  //console.log(cssRules)
+		  for (var j = 0; j < cssRules.length; j++) {
+		    var cssRule = cssRules[j];
+		    var cssText = cssRule.cssText;
+		    var pattern = /^#([a-z0-9]{4,10}) ~ \* \{ display: none; \}/;
+		    if (pattern.test(cssText)) {
+		      var id = pattern.exec(cssText)[1];
+		      Aak.setLocal('aboBlockId', id);
+		      //console.log('aboBlockIdStyle');
+		      break;
+		    }
+		  }
+		}
+
+		// Only v3
+		var win = Aak.uw;
+		for (var p in win) {
+		  var property = win[p];
+		  try {
+		    if (/^[a-z0-9]{4,10}$/.test(p) &&
+		      typeof property === 'object' &&
+		      property.deferExecution &&
+		      property.displayMessage &&
+		      property.getElementBy &&
+		      property.getStyle &&
+		      property.insert &&
+		      property.nextFunction) {
+		      Aak.setLocal('aboBlockId', p);
+		      //console.log('aboBlockIdDOM', p);
+			  break;
+		    }
+		  } catch (e) {
+		    //console.log('error', p)
+		  }
+		}
+
+		
+		// Anti-Adblockers
+		var systems = {
           // Plugins WordPress
           'NoAdblock' : '(/plugins/no-adblock/|/blockBlock/blockBlock.jquery.js)',
           'BetterStopAdblock' : '(/plugins/better-stop-adblock/|bsa-script-doctype.js|bsa-script-no-doctype.js)',
@@ -4080,22 +4109,6 @@ Aak = {
           Aak.removeElement(insertedNode);
         }
 
-        /* Do not still work
-        // FuckAdBlock (v3.1.0) - http://github.com/sitexw/FuckAdBlock
-        var reClass = /(pub_300x250|pub_300x250m|pub_728x90|text-ad|textAd|text_ad|text_ads|text-ads|text-ad-links)/;
-        var reCss = /width: 1px/;
-        if (insertedNode.nodeName == 'DIV' &&
-        insertedNode.style.cssText &&
-        reCss.test(insertedNode.style.cssText) &&
-        insertedNode.className &&
-        reClass.test(insertedNode.className)) {
-
-        // Remove
-        insertedNode.className='';
-        Aak.detected('FuckAdBlock', false, location.href);
-        Aak.removeElement(insertedNode);
-        }
-         */
 
         // Adunblock - http://adunblock.com/
         var reId = /^[a-z]{8}$/;
@@ -4150,8 +4163,22 @@ Aak = {
         var reWords1 = /ad blocker|ad block|ad-block|adblocker|ad-blocker|adblock|bloqueur|bloqueador|Werbeblocker|adblockert|&#1570;&#1583;&#1576;&#1604;&#1608;&#1603; &#1576;&#1604;&#1587;|блокировщиком/i;
         var reWords2 = /kapat|disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|&#945;&#960;&#949;&#957;&#949;&#961;&#947;&#959;&#960;&#959;&#943;&#951;&#963;&#951;|&#1079;&#1072;&#1087;&#1088;&#1077;&#1097;&#1072;&#1090;&#1100;|állítsd le|publicités|рекламе|verhindert/i;
 
+        // Antiblock.org v3 + v2 (Alternative Solution)
+        if (Aak.getLocal('aboBlockId') != 'undefined' &&
+          insertedNode.id == Aak.getLocal('aboBlockId')) {
+          if (typeof Aak.uw[insertedNode.id] == 'object') { // V3
+            Aak.uw[insertedNode.id] = null;
+            Aak.detected("Antiblock3Alt");
+          } else { // V2
+            Aak.detected("Antiblock2Alt");
+          }
+          // Disable
+          //Aak.log(insertedNode);
+          Aak.removeElement(insertedNode);
+        }
+		
         // Communs
-        if (insertedNode.parentNode &&
+        else if (insertedNode.parentNode &&
           insertedNode.id &&
           insertedNode.style &&
           insertedNode.firstChild &&
@@ -4196,21 +4223,7 @@ Aak = {
             // Disable
             //Aak.log(insertedNode, Aak.uw[insertedNode.id]);
             Aak.removeElement(insertedNode);
-            Aak.uw[insertedNode.id] = false;
-          }
-          // Antiblock.org v3 + v2 (Alternative Solution)
-          else if (Aak.getLocal('aboBlockId') != 'undefined' &&
-            insertedNode.id == Aak.getLocal('aboBlockId')) {
-            // V3
-            if (typeof Aak.uw[insertedNode.id] == 'object') {
-              Aak.uw[insertedNode.id] = false;
-               Aak.detected("Antiblock3 Alt");
-            } else { // V2
-               Aak.detected("Antiblock2 Alt");
-            }
-            // Disable
-            //Aak.log(insertedNode);
-            Aak.removeElement(insertedNode);
+            Aak.uw[insertedNode.id] = null;
           }
           // Antiblock.org v2
           else if (reWords1.test(insertedNode.innerHTML) &&
@@ -4224,154 +4237,169 @@ Aak = {
           else {
             //Aak.removeElement(insertedNode);
           }
-        }
+        } 
       }
     }
   },
   blockDetect : function () {
 
-    // Detect & Kill
-    for (var i in Aak.rules) {
-      var current = Aak.rules[i];
-      current.host.forEach(function (host) {
-        // Check host
-        if (new RegExp(host).test(location.host)) {
-          // Exclude host
-          if (current.exclude) {
-            if (Aak.opts.logExcluded) {
-              Aak.warn('Excluded');
-            }
-			throw 'Anti-Adblock killer stopped "' + location.host + '" excluded.';
-          }
-          // Before DOM load
-          if (current.onStart) {
-            current.onStart();
-          }
-          // On all statements
-          if (current.onAlways) {
-            current.onAlways(); // start
-            window.addEventListener('DOMContentLoaded', current.onAlways); // idle
-            window.addEventListener('load', current.onAlways); // end
-          }
-          // Before Script Executed
-          if (current.onBeforeScript) {
-            if ('onbeforescriptexecute' in document) { // Mozilla Firefox
-              window.addEventListener('beforescriptexecute', current.onBeforeScript);
-            }
-          } // After Script Executed
-          if (current.onAfterScript) {
-            if ('onafterscriptexecute' in document) { // Mozilla Firefox
-              window.addEventListener('afterscriptexecute', current.onAfterScript);
-            }
-          }
-          // When Window Load
-          if (current.onEnd) {
-            window.addEventListener('load', current.onEnd);
-          }
-          // When DOM Load
-          if (current.onIdle) {
-            window.addEventListener('DOMContentLoaded', current.onIdle);
-          }
-          // When DOM AttrModified
-          if (current.onAttrModified) {
-            window.addEventListener('DOMAttrModified', current.onAttrModified, false);
-          }
-          // When DOM SubtreeModified
-          if (current.onSubtreeModified) {
-            window.addEventListener('DOMSubtreeModified', current.onSubtreeModified, false);
-          }
-          // When DOM Elements are Inserted in Document
-          if (current.onInsert) {
-
-            // Mutation Observer
-            // doc: http://tinyurl.com/mxxzee4
-            // support: http://tinyurl.com/nepn7vy
-            if (typeof window.MutationObserver != 'undefined' ||
-              typeof WebKitMutationObserver != 'undefined') {
-
-              // Mutation Observer
-              var MutationObserver = window.MutationObserver || WebKitMutationObserver;
-
-              // Create an observer instance
-              var obs = new MutationObserver(function (mutations) {
-                  // We can safely use `forEach` because we already use mutation
-                  // observers that are more recent than `forEach`. (source: MDN)
-                  mutations.forEach(function (mutation) {
-                    // we want only added nodes
-                    if (mutation.addedNodes.length) {
-                      Array.prototype.forEach.call(mutation.addedNodes, function (addedNode) {
-                        if (Aak.opts.logInsertedNodes) {
-                          Aak.log(addedNode);
-                        }
-                        current.onInsert(addedNode);
-                      });
-                    }
-                  });
-                });
-              // Observer
-              obs.observe(document, {
-                childList : true,
-                subtree : true
-              });
-            }
-            // Mutation Events (Alternative Solution)
-            // doc: http://tinyurl.com/op95rfy
-            else {
-              window.addEventListener("DOMNodeInserted", function (e) {
-                if (Aak.opts.logInsertedNodes) {
-                  Aak.log(e.target);
-                }
-                current.onInsert(e.target);
-              }, false);
-            }
-          }
-          // When DOM Elements are Removed in Document
-          if (current.onRemove) {
-
-            // Mutation Observer
-            // doc: http://tinyurl.com/mxxzee4
-            // support: http://tinyurl.com/nepn7vy
-            if (typeof window.MutationObserver != 'undefined' ||
-              typeof WebKitMutationObserver != 'undefined') {
-
-              // Mutation Observer
-              var MutationObserver = window.MutationObserver || WebKitMutationObserver;
-
-              // Create an observer instance
-              var obs = new MutationObserver(function (mutations) {
-                  // We can safely use `forEach` because we already use mutation
-                  // observers that are more recent than `forEach`. (source: MDN)
-                  mutations.forEach(function (mutation) {
-                    // we want only removed nodes
-                    if (mutation.removedNodes.length) {
-                      Array.prototype.forEach.call(mutation.removedNodes, function (removedNode) {
-                        if (Aak.opts.logRemovedNodes) {
-                          Aak.log(removedNode);
-                        }
-                        current.onRemove(removedNode);
-                      });
-                    }
-                  });
-                });
-              // Observer
-              obs.observe(document, {
-                childList : true,
-                subtree : true
-              });
-            }
-            // Mutation Events (Alternative Solution)
-            // doc: http://tinyurl.com/op95rfy
-            else {
-              window.addEventListener("DOMNodeRemoved", function (e) {
-                if (Aak.opts.logRemovedNodes) {
-                  Aak.log(e.target);
-                }
-                current.onRemove(e.target);
-              }, false);
-            }
-          }
+  
+    // Exclude domains
+    // issues: https://github.com/reek/anti-adblock-killer/issues/617
+    // issues: https://greasyfork.org/fr/forum/discussion/5426
+    // issues: https://github.com/reek/anti-adblock-killer/issues/419
+    // issues: https://github.com/reek/anti-adblock-killer/issues/377
+    var excludes = ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google\.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "stackoverflow.com", "tampermonkey.net", "tumblr.com", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com", "xemvtv.net", "vod.pl", "agar.io", "pandoon.info", "fsf.org", "adblockplus.org"];
+    var host = location.host;
+    var excluded = false;
+    excludes.forEach(function (exclude) {
+      if (new RegExp(exclude).test(host)) {
+        excluded = true;
+        if (Aak.opts.logExcluded) {
+          Aak.warn('Excluded', host);
         }
-      });
+      }
+    });
+
+    // Include domains
+    if (!excluded) {
+
+      // Detect & Kill
+      for (var i in Aak.rules) {
+        var current = Aak.rules[i];
+        current.host.forEach(function (host) {
+          // Check host
+          if (new RegExp(host).test(location.host)) {
+            // Before DOM load
+            if (current.onStart) {
+              current.onStart();
+            }
+            // On all statements
+            if (current.onAlways) {
+              current.onAlways(); // start
+              window.addEventListener('DOMContentLoaded', current.onAlways); // idle
+              window.addEventListener('load', current.onAlways); // end
+            }
+            // Before Script Executed
+            if (current.onBeforeScript) {
+              if ('onbeforescriptexecute' in document) { // Mozilla Firefox
+                window.addEventListener('beforescriptexecute', current.onBeforeScript);
+              }
+            } // After Script Executed
+            if (current.onAfterScript) {
+              if ('onafterscriptexecute' in document) { // Mozilla Firefox
+                window.addEventListener('afterscriptexecute', current.onAfterScript);
+              }
+            }
+            // When Window Load
+            if (current.onEnd) {
+              window.addEventListener('load', current.onEnd);
+            }
+            // When DOM Load
+            if (current.onIdle) {
+              window.addEventListener('DOMContentLoaded', current.onIdle);
+            }
+            // When DOM AttrModified
+            if (current.onAttrModified) {
+              window.addEventListener('DOMAttrModified', current.onAttrModified, false);
+            }
+            // When DOM SubtreeModified
+            if (current.onSubtreeModified) {
+              window.addEventListener('DOMSubtreeModified', current.onSubtreeModified, false);
+            }
+            // When DOM Elements are Inserted in Document
+            if (current.onInsert) {
+
+              // Mutation Observer
+              // doc: http://tinyurl.com/mxxzee4
+              // support: http://tinyurl.com/nepn7vy
+              if (typeof window.MutationObserver != 'undefined' ||
+                typeof WebKitMutationObserver != 'undefined') {
+
+                // Mutation Observer
+                var MutationObserver = window.MutationObserver || WebKitMutationObserver;
+
+                // Create an observer instance
+                var obs = new MutationObserver(function (mutations) {
+                    // We can safely use `forEach` because we already use mutation
+                    // observers that are more recent than `forEach`. (source: MDN)
+                    mutations.forEach(function (mutation) {
+                      // we want only added nodes
+                      if (mutation.addedNodes.length) {
+                        Array.prototype.forEach.call(mutation.addedNodes, function (addedNode) {
+                          if (Aak.opts.logInsertedNodes) {
+                            Aak.log(addedNode);
+                          }
+                          current.onInsert(addedNode);
+                        });
+                      }
+                    });
+                  });
+                // Observer
+                obs.observe(document, {
+                  childList : true,
+                  subtree : true
+                });
+              }
+              // Mutation Events (Alternative Solution)
+              // doc: http://tinyurl.com/op95rfy
+              else {
+                window.addEventListener("DOMNodeInserted", function (e) {
+                  if (Aak.opts.logInsertedNodes) {
+                    Aak.log(e.target);
+                  }
+                  current.onInsert(e.target);
+                }, false);
+              }
+            }
+            // When DOM Elements are Removed in Document
+            if (current.onRemove) {
+
+              // Mutation Observer
+              // doc: http://tinyurl.com/mxxzee4
+              // support: http://tinyurl.com/nepn7vy
+              if (typeof window.MutationObserver != 'undefined' ||
+                typeof WebKitMutationObserver != 'undefined') {
+
+                // Mutation Observer
+                var MutationObserver = window.MutationObserver || WebKitMutationObserver;
+
+                // Create an observer instance
+                var obs = new MutationObserver(function (mutations) {
+                    // We can safely use `forEach` because we already use mutation
+                    // observers that are more recent than `forEach`. (source: MDN)
+                    mutations.forEach(function (mutation) {
+                      // we want only removed nodes
+                      if (mutation.removedNodes.length) {
+                        Array.prototype.forEach.call(mutation.removedNodes, function (removedNode) {
+                          if (Aak.opts.logRemovedNodes) {
+                            Aak.log(removedNode);
+                          }
+                          current.onRemove(removedNode);
+                        });
+                      }
+                    });
+                  });
+                // Observer
+                obs.observe(document, {
+                  childList : true,
+                  subtree : true
+                });
+              }
+              // Mutation Events (Alternative Solution)
+              // doc: http://tinyurl.com/op95rfy
+              else {
+                window.addEventListener("DOMNodeRemoved", function (e) {
+                  if (Aak.opts.logRemovedNodes) {
+                    Aak.log(e.target);
+                  }
+                  current.onRemove(e.target);
+                }, false);
+              }
+            }
+          }
+        });
+      }
     }
   }
 };
