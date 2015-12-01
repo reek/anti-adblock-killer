@@ -4164,7 +4164,7 @@ Aak = {
         var reWords2 = /kapat|disable|désactivez|désactiver|desactivez|desactiver|desative|desactivar|desactive|desactiva|deaktiviere|disabilitare|&#945;&#960;&#949;&#957;&#949;&#961;&#947;&#959;&#960;&#959;&#943;&#951;&#963;&#951;|&#1079;&#1072;&#1087;&#1088;&#1077;&#1097;&#1072;&#1090;&#1100;|állítsd le|publicités|рекламе|verhindert/i;
 
         // Antiblock.org v3 + v2 (Alternative Solution)
-        if (Aak.getLocal('aboBlockId') != 'undefined' &&
+        if (typeof Aak.getLocal('aboBlockId') != 'undefined' &&
           insertedNode.id == Aak.getLocal('aboBlockId')) {
           if (typeof Aak.uw[insertedNode.id] == 'object') { // V3
             Aak.uw[insertedNode.id] = null;
