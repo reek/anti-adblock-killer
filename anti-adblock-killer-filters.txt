@@ -9,7 +9,7 @@
 ! Contact: http://reek.github.io/anti-adblock-killer/#contact
 ! Support: https://github.com/reek/anti-adblock-killer/issues
 ! Contribution: https://github.com/reek/anti-adblock-killer#donate
-! WritingRules: https://adblockplus.org/fr/filters
+! WritingRules: https://adblockplus.org/filters
 ! RedundantRules: https://arestwo.org/famlam/redundantRuleChecker.html
 ! RegExpVisualizer http://www.regexper.com/
 !----------------------------------------------------------------------------------------------------!
@@ -73,6 +73,9 @@
 /jquery.adblock.js|$script
 ! jQuery AntiAdsBlock (Hendriono)
 /jquery.antiadsblock.js|$script
+! HowToRemoveAdblock
+! howtoremoveadblock.com
+||howtoremoveadblock.com/js/adblock-detector.js$script
 ! Adbuddy
 ! http://xenodesystems.appspot.com/adbuddy.html
 /js/adbuddy.min.js$script
@@ -126,6 +129,9 @@ b-website.com#@##adsense
 ! AdBlockConverter - http://www.adblockconverter.com/
 ! https://github.com/reek/anti-adblock-killer/issues/731
 ||adblockconverter.com/js/aab.js$script,third-party
+! BlockAdblock
+! http://blockadblock.com/
+#@##banner_ad
 ! Anti-Adblock (from easylist) -------------------------------------------------------------
 /ad-blocking-detector/*
 /adb_detector.
@@ -180,7 +186,7 @@ file4go.com#@#.afs_ads
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 ! afreesms.com
 ! https://github.com/reek/anti-adblock-killer/issues/120
-@@||166.62.118.104/adv.php?xadb=$script,third-party
+@@/adv.php?xadb=$script,third-party,domain=afreesms.com
 ! receive-sms.com
 @@||cpalead.com/mygateway.php?$domain=receive-sms.com
 ! gamecopyworld domains
@@ -1288,9 +1294,6 @@ spinbot.com#@#.adsbygoogle
 ! 4tuning.ro
 ! https://github.com/reek/anti-adblock-killer/issues/610
 4tuning.ro#@#.adsbygoogle
-! vtele.ca 
-! https://github.com/reek/anti-adblock-killer/issues/612
-@@||cdn.adgear.com/a/adgear.js/current/adgear.js$domain=vtele.ca
 ! tibiopedia.pl
 ! https://github.com/reek/anti-adblock-killer/issues/615
 @@||tibiopedia.pl/js/show_ads.js$script,domain=tibiopedia.pl
@@ -1560,6 +1563,7 @@ yocast.tv###notice
 @@||cloudfront.net/ads/ads.js$script,domain=thesimsresource.com
 ! vtele.ca
 ! https://github.com/reek/anti-adblock-killer/issues/752
+! https://github.com/reek/anti-adblock-killer/issues/612
 @@||cdn.adgear.com/a/adgear.js/current/adgear.js$script,domain=vtele.ca
 ! synonim.net
 ! https://github.com/reek/anti-adblock-killer/issues/758
@@ -1584,6 +1588,66 @@ hentenaar.com#@#.adsbygoogle
 ! ynet.co.il
 ! https://github.com/reek/anti-adblock-killer/issues/773
 @@||ynet.co.il/common/javascript/ads.js$script,~third-party
+! jeu-concours.biz
+! https://github.com/reek/anti-adblock-killer/issues/775
+@@||jeu-concours.biz/show_ads.js
+! hugo.sieradz.com.pl
+! https://github.com/reek/anti-adblock-killer/issues/780
+@@||hugo.sieradz.com.pl/$script
+! terrarium.com.pl
+! https://github.com/reek/anti-adblock-killer/issues/779
+@@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,script,domain=www.terrarium.com.pl
+! t2e.pl
+! https://github.com/reek/anti-adblock-killer/issues/778
+@@||t2e.pl/www/js/ads.js$script
+! topserialy.sk
+! https://github.com/reek/anti-adblock-killer/issues/785
+@@||topserialy.sk/js/scripts/ad.js$script
+! 6play.fr
+! https://github.com/reek/anti-adblock-killer/issues/787
+@@||6play.fr/media/js/publicite.js
+! animeheaven.eu
+! https://github.com/reek/anti-adblock-killer/issues/789
+@@||animeheaven.eu/a/showads$script
+! skyrock.com
+skyrock.com##IMG[src*="adblock/pave.png"]
+skyrock.com##IMG[src*="adblock/megabanner.png"]
+! novamov.com
+! https://github.com/reek/anti-adblock-killer/issues/795
+@@||novamov.com/banner.php$script
+! nowvideo.sx / nowvideo.to
+! https://github.com/reek/anti-adblock-killer/issues/797
+@@||nowvideo.sx/banner.php$script
+@@||nowvideo.to/banner.php$script
+! wholecloud.net
+! https://github.com/reek/anti-adblock-killer/issues/798
+@@||wholecloud.net/banner.php$script
+! cloudtime.to
+! https://github.com/reek/anti-adblock-killer/issues/799
+@@||cloudtime.to/banner.php$script
+! videoweed.es
+! https://github.com/reek/anti-adblock-killer/issues/795
+@@||videoweed.es/banner.php$script
+! showsport-tv.com
+! https://github.com/reek/anti-adblock-killer/issues/802
+||showsport-tv.com/js/detect.js$script
+||showsport-tv.com/js/detect.css$stylesheet
+! verdirectotv.com
+! https://github.com/reek/anti-adblock-killer/issues/801
+verdirectotv.com##div[id^="closeX"]
+verdirectotv.com##div[id^="capaoverlay"]
+verdirectotv.com##div[id^="capa"]
+tv.verdirectotv.org###divPanel
+tv.verdirectotv.org###total_banner
+tv.verdirectotv.org###total
+! broadbandforum.co
+! https://github.com/reek/anti-adblock-killer/issues/804
+broadbandforum.co#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=broadbandforum.co
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=broadbandforum.co
+! radioline.co
+! https://github.com/reek/anti-adblock-killer/issues/806
+@@||radioline.co/js/advert.js$xmlhttprequest,~third-party
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
