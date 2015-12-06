@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 8.8
+! Version: 8.9
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ! Homepage: http://reek.github.io/anti-adblock-killer/
@@ -132,6 +132,21 @@ b-website.com#@##adsense
 ! BlockAdblock
 ! http://blockadblock.com/
 #@##banner_ad
+! Tisoomi (direkt)
+! rechtslupe.de, infranken.de, formel1.de, fremdwort.de, inside-handy.de, autozeitung.de, motorsport-total.com, aussenwirtschaftslupe.de, donnerwetter.de, wintotal.de
+! http://pastebin.com/evd6pHZN
+@@||adternal.com/*/ad-loading.bmp$image
+! Tisoomi (indirekt)
+! energy.de, getvids.de, spielespielen24.de, dialo.de
+! http://pastebin.com/sXaZhrmd
+@@||s3-eu-west-1.amazonaws.com/bucket-ad/ad-image.png=$image
+! podcast.de
+! http://pastebin.com/ex0S1tQU
+@@||d2jqs2kfmi9hwf.cloudfront.net/ad-image.png=$image
+! WPAdBlock
+! http://schema.org/WPAdBlock
+! https://github.com/reek/anti-adblock-killer/issues/821
+#@#div[itemtype="http://schema.org/WPAdBlock"]
 ! Anti-Adblock (from easylist) -------------------------------------------------------------
 /ad-blocking-detector/*
 /adb_detector.
@@ -1391,10 +1406,6 @@ jetradar.pl##.ng-scope.no_adblock_wrapper
 ! proaudioz2.audio
 ! https://github.com/reek/anti-adblock-killer/issues/651
 @@||advert.popunder.ru/banners/advert.php$image,subdocument,domain=proaudioz2.audio
-! al.ly
-! https://github.com/reek/anti-adblock-killer/issues/652
-al.ly#@#.text_ads
-@@||al.ly/Advertiser.js$script
 ! dayt.se
 ! http://paste2.org/jeHAk7sg
 ! https://github.com/reek/anti-adblock-killer/issues/722
@@ -1465,8 +1476,8 @@ shinden.pl#@#.AD-RC-300x250
 ! bild.de
 ! https://github.com/reek/anti-adblock-killer/pull/687
 @@||bild.de^$elemhide
-@@||sascdn.com^$domain=bild.de
-@@||smartadserver.com^$domain=bild.de
+@@||sascdn.com^$script,domain=bild.de
+@@||smartadserver.com^$script,domain=bild.de
 ! itespresso.fr
 ! https://github.com/reek/anti-adblock-killer/issues/686
 @@/advertising.js$script,domain=itespresso.fr
@@ -1496,8 +1507,12 @@ androiding.how##.jsXY6yjBmGN4-bg
 ! https://github.com/reek/anti-adblock-killer/issues/708
 ||avxwcuaagfcdn.net^$domain=dagens.dk
 ! al.ly
+! https://github.com/reek/anti-adblock-killer/issues/819
 ! https://github.com/reek/anti-adblock-killer/issues/706
-@@||al.ly/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest
+! https://github.com/reek/anti-adblock-killer/issues/652
+! http://pastebin.com/Zg4H2xXi
+@@||al.ly/Advertiser.js$script
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=al.ly
 ! gokano.com
 ! https://github.com/reek/anti-adblock-killer/issues/704
 gokano.com#@#.adsbygoogle
@@ -1640,14 +1655,43 @@ verdirectotv.com##div[id^="capa"]
 tv.verdirectotv.org###divPanel
 tv.verdirectotv.org###total_banner
 tv.verdirectotv.org###total
-! broadbandforum.co
 ! https://github.com/reek/anti-adblock-killer/issues/804
-broadbandforum.co#@#.adsbygoogle
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=broadbandforum.co
-@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=broadbandforum.co
 ! radioline.co
 ! https://github.com/reek/anti-adblock-killer/issues/806
 @@||radioline.co/js/advert.js$xmlhttprequest,~third-party
+! purevid.com
+purevid.com#@##ad
+! cba.pl
+! https://github.com/reek/anti-adblock-killer/issues/815
+@@||go.idmnet.bbelements.com/bb/bb_one$script,domain=cba.pl
+@@||go.idmnet.bbelements.com/please/showit/$script,domain=cba.pl
+! voyageforum.com
+! https://github.com/reek/anti-adblock-killer/issues/816
+voyageforum.com###mainColumn > div[id][style*="text-align"][style*="justify"]:first-child
+voyageforum.com##div.PostAd
+voyageforum.com##div[id^="betAds"]
+voyageforum.com###mainColumn [id^="mainposttravelsbox"]
+! pssite.com
+! https://github.com/reek/anti-adblock-killer/issues/820
+pssite.com#@#.adver
+! hitek.fr
+! https://github.com/reek/anti-adblock-killer/issues/822
+@@||hitek.fr/ads.js$script
+! xboxforum.pl
+! https://github.com/reek/anti-adblock-killer/issues/823#issuecomment-162237832
+xboxforum.pl##.noticeContainer:not(.hidden)
+! teleboy.ch
+! https://greasyfork.org/forum/discussion/7303/
+@@||teleboy.ch/assets/js/werbung.ad.dc2.adtech.de.addyn.js$xmlhttprequest,domain=teleboy.ch
+! scooter-chinois-4t.com
+! https://github.com/reek/anti-adblock-killer/issues/829
+scooter-chinois-4t.com#@#.adsbygoogle
+! ultimate-goldust.fr.fo
+! https://github.com/reek/anti-adblock-killer/issues/828
+ultimate-goldust.fr.fo#@#.afs_ads
+! freeiphone.fr
+! https://github.com/reek/anti-adblock-killer/issues/827
+freeiphone.fr#@##adsense
 !----------------------------------------------------------------------------------------------------!
 ! FuckAdBlock & BlockAdBlock (Specific)
 !----------------------------------------------------------------------------------------------------!
@@ -1908,8 +1952,6 @@ s.m2pub.com###adk2_img
 ! tvportugalhd
 tvportugalhd.org,tvportugalhd.eu##.xbidv468
 tvportugalhd.org,tvportugalhd.eu##.bidv468
-! purevid.com
-purevid.com###ad
 ! tv.tugastvs.com
 tv.tugastvs.com###adtugas1
 tv.tugastvs.com###adtugas2
