@@ -4,7 +4,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers.
 // @author Reek | reeksite.com
-// @version 8.8
+// @version 8.9
 // @encoding utf-8
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -37,9 +37,9 @@
   Thanks
 =======================================================
 
-  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone, M. Silveira, K. MacArthur, M. Ivanov, A. Schmidt, A. Waage, F. Tismer, S. Ehnert, J. Corpus
+  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone, M. Silveira, K. MacArthur, M. Ivanov, A. Schmidt, A. Waage, F. Tismer, S. Ehnert, J. Corpus, J. Dluhos, Maklemenz, Strobelix
 
-  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT, F4z, Angelsl, Mikhaelk, Marek, Hamsterbacke, Gorhill, Hacker999
+  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT, F4z, Angelsl, Mikhaelk, Marek, Hamsterbacke, Gorhill, Hacker999, xxcriticxx, Skr4tchGr3azyMonkiBallllllZzzz
 
   Users: Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
 
@@ -48,7 +48,7 @@
 =======================================================
 
   Github: http://tinyurl.com/mcra3dn
-  Greasyfork: http://tinyurl.com/puyxrn4
+  Greasyfork: http://tinyurl.com/pbbdnh6
   Openuserjs: http://tinyurl.com/nnqje32
   MonkeyGuts: http://tinyurl.com/ka5fcqm
   Userscripts: http://tinyurl.com/q8xcejl
@@ -69,7 +69,7 @@
 
 Aak = {
   name : 'Anti-Adblock Killer',
-  version : '8.8',
+  version : '8.9',
   scriptid : 'gJWEp0vB',
   homeURL : 'http://reek.github.io/anti-adblock-killer/',
   changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -199,7 +199,7 @@ Aak = {
       info : ''
     },
     logDetected : {
-      group : 'debug',
+		group : 'debug',
       type : 'checkbox',
       value : true,
       label : 'Log detected anti-adblocks.',
@@ -1623,13 +1623,6 @@ Aak = {
         Aak.addStyle("#nopub { display: block; }");
       }
     },
-    tzetze_it : {
-      host : ['tzetze.it'],
-      onStart : function () {
-        // + abp rule
-        Aak.addStyle('#TzeTze_728x90 { height: 5px;}');
-      }
-    },
     simply_debrid_com : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/332
       host : ['simply-debrid.com'],
@@ -1718,13 +1711,22 @@ Aak = {
         Aak.addBaitElement('div#myTestAd');
       }
     },
+    imageraider_com : {
+      // issue: https://github.com/reek/anti-adblock-killer/issues/826
+      host : ['imageraider.com'],
+      onStart : function () {
+        Aak.addBaitElement('div#myGContainer');
+      }
+    },
     prem_link : {
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/794
       // issue: https://github.com/reek/anti-adblock-killer/issues/692
       // issue: https://github.com/reek/anti-adblock-killer/issues/572
       // issue: https://github.com/reek/anti-adblock-killer/issues/541
       host : ['prem.link'],
       onStart : function () {
-        Aak.addBaitElement('div#aswift_1');
+	    Aak.uw.detectadblock = function (){};
+        Aak.addBaitElement('div#aswift_2');
       }
     },
     cubeupload_com : {
@@ -1857,8 +1859,18 @@ Aak = {
         //Aak.uw.confirm = function (){};
         Aak.setCookie('genera', false);
       }
-      },
-      derstandard_at : {
+    },
+    adswizz_com : {
+	  // by: Skr4tchGr3azyMonkiBallllllZzzz
+      // issue: https://github.com/reek/anti-adblock-killer/issues/809
+      host : ['yes.fm'],
+      onStart : function () {
+        Aak.addScript(function () {
+          com_adswizz_synchro_initialize = function () {};
+        });
+      }
+    },
+    derstandard_at : {
         // by: Alexander255
         // patch: http://pastebin.com/raw.php?i=r7Q4DrfB
         // issue: https://github.com/reek/anti-adblock-killer/issues/105
@@ -1915,14 +1927,27 @@ Aak = {
       },
     tek_domains : {
       // by: Alexander255
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/788
       // issue: https://github.com/reek/anti-adblock-killer/issues/512
       host : ['tek.no', 'gamer.no', 'teknofil.no', 'insidetelecom.no', 'prisguide.no', 'diskusjon.no', 'teknojobb.no', 'akam.no', 'hardware.no', 'amobil.no'],
       onIdle : function () {
+	  
+	    /*
         var ad_frame = document.createElement("iframe");
         ad_frame.name = "_frame";
 		ad_frame.style.display = "none";
         document.body.appendChild(ad_frame);
 		ad_frame.contentWindow.wrappedJSObject.inFIF = true;
+		*/
+
+		// fix 27.11.2015
+        Aak.createElement({
+          tag : 'div',
+          id : 'google_ads_iframe_',
+          html : '<p></p>',
+          append : 'body'
+        });
+		
       }
     },
     planetatvonlinehd_blogspot : {
@@ -2179,13 +2204,6 @@ Aak = {
         Aak.setCookie('ad_locked', 1);
       }
     },
-    gametransfers_com : {
-      // issue: https://github.com/reek/anti-adblock-killer/issues/592
-      host : ['gametransfers.com'],
-      onAlways : function () {
-        Aak.setCookie('anCookie', true);
-      }
-    },
     bigdownloader_com : {
       // issue: 
       host : ['bigdownloader.com'],
@@ -2305,8 +2323,8 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/664
       host : ['bild.de'],
       onStart : function () {
-        Aak.uw.de = cloneInto({}, Aak.uw);
-        Aak.uw.de.bild = {};
+        //Aak.uw.de = cloneInto({}, Aak.uw);
+        //Aak.uw.de.bild = {};
         //Aak.stopRedirect();
       }
     },
@@ -2369,6 +2387,7 @@ Aak = {
     exrapidleech_info : {
 	  // by: Alexander255
 	  // patch: http://pastebin.com/Q664diQ2
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/777
       // issue: https://github.com/reek/anti-adblock-killer/issues/745
       // issue: https://github.com/reek/anti-adblock-killer/issues/729
       // issue: https://github.com/reek/anti-adblock-killer/issues/573
@@ -2376,16 +2395,13 @@ Aak = {
       onStart : function () {
 		  
         Object.defineProperty(unsafeWindow, 'dec_pid', {
-          value : -1
+          value : 383865
         });
 
         Object.defineProperty(unsafeWindow, 'bdvbnr_pid', {
-          value : -1
+          value : 1
         });
 
-        Object.defineProperty(unsafeWindow, 'adblock', {
-          value : false
-        });
       }
     },
     vipleague_domains : {
@@ -2593,22 +2609,6 @@ Aak = {
         Aak.uw.adBlockDetected = function () {};
       }  
     },	
-    ad_defend_general : {
-	  // by: hamsterbacke
-	  // issue: https://github.com/reek/anti-adblock-killer/issues/685
-      // pull: https://github.com/reek/anti-adblock-killer/pull/467
-      host : ['focus.de', 'stern.de', 'sat1.de', 'prosieben.de', 'kabeleins.de', 'sat1gold.de', 'sixx.de', 'prosiebenmaxx.de', 'fem.com', 'the-voice-of-germany.de', 'wetteronline.de', 'wetter.com', 'finanzen.net', 'tvspielfilm.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'itectale.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch', 'computerbild.de'],
-      onBeforeScript : function (e) {
-        // check all scripts before they are executed
-        // addefend uses IIFE so the usual function killing isn't working
-        var target = e.target || e.srcElement;
-        if (/uab.*/i.test(target.innerHTML)) {
-          // stop it
-          e.stopPropagation();
-          e.preventDefault();
-        }
-      }
-    },
     gamestar_de : {
       // by: hamsterbacke
       // pull: https://github.com/reek/anti-adblock-killer/pull/467
@@ -2771,18 +2771,11 @@ Aak = {
     openload_domains : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/475
       host : ['openload.co', 'openload.io', 'openload.tv'],
-      onIdle : function () {
-	    /*
-        var elMainWrapper = document.querySelector('#main .main-wrapper');
-        var clnMainWrapper = elMainWrapper.cloneNode(true);
-        interval = setInterval(function () {
-            var elAdblock = document.querySelector('#main .main-wrapper .adblock');
-            if (elAdblock) {
-              Aak.replaceElement(elAdblock.parentNode, clnMainWrapper);
-              clearInterval(interval);
-            }
-          }, 500);
-		  */
+      onStart : function () {
+        Aak.uw.adblock = false;
+        Aak.uw.popAdsLoaded = true;
+        // hide fake play button used to open popunder
+        //Aak.addStyle('#videooverlay { display:none; }')
       }
     },
     turbodebrideur_com : {
@@ -2943,7 +2936,7 @@ Aak = {
       // issue: https://github.com/reek/anti-adblock-killer/issues/178
       // issue: https://github.com/reek/anti-adblock-killer/issues/196
       // issue: https://github.com/reek/anti-adblock-killer/issues/56
-      host : ['kissanime.com', 'kissanime.to'],
+      host : ['kissanime.com', 'kissanime.to', 'kissasian.com'],
       onStart : function () {
         // Masking ads
         Aak.addStyle('iframe[id^="adsIfrme"], .divCloseBut { display:none; }');
@@ -3361,8 +3354,8 @@ Aak = {
       onEnd : function () {
         Aak.onElement('#detailEpisode', function () {
           
-          var sp = document.location.href.split(/[.,]/);
-          var id = sp[sp.length - 2];
+          var parts = document.location.href.split(/[.,]/);
+          var id = parts[parts.length - 2];
 		  var url = ['http://www.proxy.xmc.pl/index.php?hl=3e5&q=','http://player.pl/api/?platform=ConnectedTV&terminal=Samsung&format=json&v=2.0&authKey=ba786b315508f0920eca1c34d65534cd&type=episode&id=' + id + '&sort=newest&m=getItem&deviceScreenHeight=1080&deviceScreenWidth=1920'];
 
 		  if (Aak.getLocal('country_code')) {
@@ -3510,37 +3503,6 @@ Aak = {
       }
     },
     // Germany
-    sat1_de : { // research solution
-      host : ['sat1.de', 'sat1.ch'],
-      onStart : function () {},
-      onEnd : function () {
-        /*
-
-        Bad
-        gp_adBlockStatus emptyAd
-        abView 1
-        abView_X empty
-        noAbView empty
-        noAbView_X empty
-
-        OK
-        No gp_adBlockStatus
-        abView empty
-        abView_X empty
-        noAbView 1
-        noAbView_X empty
-
-        Sitemap: http://www.sat1.de/sitemaps/sitemap-videos.xml
-        Disallow: /videos
-        http://video.sevenoneintermedia.de/clips/mp4-840/2447000/2447529-840-148668.mp4
-        http://www.sat1.de/dynamic/thumbnails/full/2447000/2447529-full-52_88-original.jpg
-        http://www.sat1.de/tv/die-strengsten-eltern-der-welt/video/58-schlaege-und-make-up-clip
-
-
-        Aak.log(Aak.uw);
-         */
-      }
-    },
     now_domains : {
       // issue: https://github.com/reek/anti-adblock-killer/issues/336
       // test: http://tinyurl.com/peeobou
@@ -3771,6 +3733,115 @@ Aak = {
         }
       }
     },
+    fuckadblock_fork : {
+	  // by: Skr4tchGr3azyMonkiBallllllZzzz
+      // issue: https://github.com/reek/anti-adblock-killer/issues/784
+      host : ['tzetze.it', 'beppegrillo.it'],
+      onStart : function () {
+        Aak.addScript(function () {
+          var cadetect = {
+            onDetected : function () {
+              return this
+            },
+            onNotDetected : function () {
+              return this
+            }
+          };
+        });
+      }
+    },
+    phoenix_by_goyavelab : { // script anti-adblock obfuscated
+      // issue: https://github.com/reek/anti-adblock-killer/issues/
+	  // doc: http://tinyurl.com/gl3ghq2
+	  // source: http://pastebin.com/hsAmdSuf
+      host : ['dpstream.net', 'gum-gum-streaming.com', 'jeu.info'],
+      onAlways : function () {
+        var win = Aak.uw;
+        for (var p in win) {
+          var property = win[p];
+          try {
+            if (/^_[\$][0-9]/.test(p)) {
+              win[p] = null;
+            }
+          } catch (e) {}
+        }
+      }
+    },
+    an_scripts_adblock_notify : {
+	  // by: Skr4tchGr3azyMonkiBallllllZzzz
+      // issue: https://github.com/reek/anti-adblock-killer/issues/592
+      // issue: https://github.com/reek/anti-adblock-killer/issues/813
+      host : ['gametransfers.com', 'winandmac.com'],
+      onAlways : function () {
+        Aak.setCookie('anCookie', true);
+      }
+    },
+    ad_defend_uabp : {
+      // source: http://pastebin.com/cFQCp80W
+      host : ['tvspielfilm.de', 'finanzen.ch'],
+      onAlways : function () {
+        Aak.uw.UABPInject = function () {};
+        Aak.uw.UABPDetect = function () {};
+      },
+      onBeforeScript : function (e) {
+        var target = e.target || e.srcElement;
+        var text = target.text;
+        if (Aak.contains(text, 'function UABPInject')) {
+          Aak.stopScript(e);
+          Aak.log('Ad Defend UABPDetect');
+        }
+      }
+    },
+    ad_defend_uab : {
+      // userscript: https://openuserjs.org/scripts/schwarztee/AdDefend_Klatsche
+      // userscript: https://gist.github.com/anonymous/a9b9956baf1d59a107c5
+      // source: http://pastebin.com/BaZvJau3
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/733
+	  // issue: https://github.com/reek/anti-adblock-killer/issues/710
+      // issue: https://github.com/reek/anti-adblock-killer/issues/685
+	  // issue: https://github.com/reek/anti-adblock-killer/pull/467
+      host : ['focus.de', 'stern.de', 'sat1.', 'prosieben.', 'kabeleins.', 'sat1gold.', 'sixx.', 'prosiebenmaxx.', 'fem.com', 'the-voice-of-germany.', 'wetter.com', 'wetteronline.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch', 'main-spitze.de', 'wormser-zeitung.de', 'lampertheimer-zeitung.de', 'wiesbdener-tagblatt.de', 'buerstaedter-zeitung.de', 'wiesbdener-kurier.de', 'rhein-main-presse.de', 'allgemeine-zeitung.de', 'ariva.de', 'spiegel.de', 'brigitte.de', 'dshini.net', 'gala.de', 'gamepro.de', 'gamona.de', 'pnn.de', 'promobil.de', 'sportal.de', 'webfail.com', 'computerbild.de', 'finanzen.net'],
+      onAlways: function () {
+        Aak.uw.uabpdl = false;
+      }, 
+	  onBeforeScript : function (e) {
+        var target = e.target || e.srcElement;
+        var text = target.text;
+        if (Aak.contains(text, 'uabInject') && Aak.contains(text, 'uabDetect')) {
+          Aak.stopScript(e);
+          Aak.log('Ad Defend uabDetect');
+        }
+      }
+    },
+	/* solved by AakLIst
+    tisoomi_indirekt : {
+	  // inline: http://pastebin.com/npmXTUHw
+	  // external: http://pastebin.com/hvWnCuDw
+      host : ['energy.de', 'getvids.de', 'gewinde-normen.de', 'podcast.de', 'spielespielen24.de', 'dialo.de'],
+      onBeforeScript : function (e) {
+        var target = e.target || e.srcElement;
+        var text = target.text;
+        if (Aak.contains(text, 'n="abcdefghijklm",r="nopqrstuvwxyz",i="0123456789";var s=t==0?i:t==1?n')) {
+          Aak.stopScript(e);
+          Aak.log('Tisoomi Indirekt');
+        }
+      }
+    },
+	*/
+	/* solved by AakLIst
+    tisoomi_direkt : {
+	  // inline: http://pastebin.com/2vq38JXY
+      host : ['autozeitung.de', 'formel1.de', 'fremdwort.de', 'inside-handy.de', 'motorsport-total.com', 'aussenwirtschaftslupe.de', 'donnerwetter.de', 'wintotal.de'],
+      onBeforeScript : function (e) {
+        var target = e.target || e.srcElement;
+        var text = target.text;
+        if (Aak.contains(text, 'function detect()')) {
+          Aak.stopScript(e);
+          Aak.log('Tisoomi Direkt');
+        }
+      }
+    },
+	*/
     // --------------------------------------------------------------------------------------------
     // Firefox
     // --------------------------------------------------------------------------------------------
@@ -3817,7 +3888,7 @@ Aak = {
           Aak.stopScript(e);
         }
       }
-    },
+    },	
     // --------------------------------------------------------------------------------------------
     // Generic
     // --------------------------------------------------------------------------------------------
@@ -3842,16 +3913,17 @@ Aak = {
         // repo: https://github.com/sitexw/BlockAdBlock
         // note: when fuckadblock.js or blockadblock.js is blocked
 		// note: added check and clearEvent because http://sh.st/vovHE use a custom version
+		// issue: https://github.com/reek/anti-adblock-killer/issues/824
         if (typeof(Aak.uw.fuckAdBlock) === 'undefined' && typeof(Aak.uw.blockAdBlock) === 'undefined') {
           Aak.addScript(function () {
             fuckAdBlock = blockAdBlock = {
               onDetected : function (fn) {
                 this.on(true, fn);
-				return this;
+                return this;
               },
               onNotDetected : function (fn) {
                 this.on(false, fn);
-				return this;
+                return this;
               },
               on : function (detected, fn) {
                 if (!detected) {
@@ -3859,7 +3931,15 @@ Aak = {
                 }
                 return this;
               },
-              check : function () {},
+              setOption : function (options, value) {
+                return this;
+              },
+              check : function (loop) {
+                return true;
+              },
+              emitEvent : function (detected) {
+                return this;
+              },
               clearEvent : function () {}
             };
           });
@@ -3871,13 +3951,15 @@ Aak = {
         // AdBlock Detector (XenForo Rellect)
         // site: http://tinyurl.com/pa28xdn
         // cloneInto: http://tinyurl.com/k6qphme
+		// issue: https://github.com/reek/anti-adblock-killer/issues/805
+		// issue: https://github.com/reek/anti-adblock-killer/issues/804
 		// issue: https://github.com/reek/anti-adblock-killer/issues/591
         if (Aak.uw.XenForo && typeof Aak.uw.XenForo.rellect == 'object') {
-          Aak.uw.XenForo.rellect = cloneInto({
+          Aak.uw.XenForo.rellect = {
               AdBlockDetector : {
                 start : function () {}
               }
-            }, Aak.uw);
+            };
           Aak.detected('AdBlock Detector (XenForo Rellect)');
         }
 
@@ -3953,10 +4035,10 @@ Aak = {
 		}
 
 
-		// Antiblock.org v2+3
+		// Antiblock.org v2
 		// note: detect and store block id
 		// test: http://tinyurl.com/nhyhpzk
-		//
+		// Detect v3
 		var styles = document.querySelectorAll('style');
 		for (var i = 0; i < styles.length; i++) {
 		  var style = styles[i];
@@ -3968,14 +4050,15 @@ Aak = {
 		    var pattern = /^#([a-z0-9]{4,10}) ~ \* \{ display: none; \}/;
 		    if (pattern.test(cssText)) {
 		      var id = pattern.exec(cssText)[1];
-		      Aak.setLocal('aboBlockId', id);
-		      //console.log('aboBlockIdStyle');
-		      break;
+		      var script = Aak.getScript("w.addEventListener('load'," + id + ",false)");
+		      if (script) {
+		        Aak.setLocal('aboBlockId', id);
+		        break;
+		      }
 		    }
 		  }
 		}
-
-		// Only v3
+		// Detect v3
 		var win = Aak.uw;
 		for (var p in win) {
 		  var property = win[p];
@@ -3989,7 +4072,6 @@ Aak = {
 		      property.insert &&
 		      property.nextFunction) {
 		      Aak.setLocal('aboBlockId', p);
-		      //console.log('aboBlockIdDOM', p);
 			  break;
 		    }
 		  } catch (e) {
@@ -4166,15 +4248,17 @@ Aak = {
         // Antiblock.org v3 + v2 (Alternative Solution)
         if (typeof Aak.getLocal('aboBlockId') != 'undefined' &&
           insertedNode.id == Aak.getLocal('aboBlockId')) {
-          if (typeof Aak.uw[insertedNode.id] == 'object') { // V3
-            Aak.uw[insertedNode.id] = null;
-            Aak.detected("Antiblock3Alt");
-          } else { // V2
-            Aak.detected("Antiblock2Alt");
-          }
-          // Disable
-          //Aak.log(insertedNode);
-          Aak.removeElement(insertedNode);
+            // detect v3
+            if (Aak.uw.hasOwnProperty(insertedNode.id)) {
+              Aak.uw[insertedNode.id] = null;
+              Aak.detected("Antiblock3Alt");
+            } // detect v2
+            else {
+              Aak.detected("Antiblock2Alt");
+            }
+            // Disable
+            //Aak.log(insertedNode);
+            Aak.removeElement(insertedNode);
         }
 		
         // Communs
