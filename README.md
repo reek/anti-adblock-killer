@@ -41,7 +41,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * [Subscribe](http://reek.github.io/anti-adblock-killer/#fiterlist) *from github.com*
 * [Subscribe](http://reeksite.com/anti-adblock-killer/#fiterlist) *from reeksite.com*
 
-> ##### Note: uBlock Origin, you need just enable AakList on Options -> 3rd-party-filters and "Apply changes".
+> ##### Note: uBlock Origin, you must enable AakList on Options -> 3rd-party-filters and "Apply changes".
 
 #### Step 3: UserScript
 * [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
@@ -130,7 +130,9 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * No-Adblock (no-adblock.com)
 * AdBuddy
 * AdBlockConverter (adblockconverter.com)
-
+* HowToRemoveAdblock (howtoremoveadblock.com)
+* BlockAdblock (blockadblock.com)
+ 
 ##### Plugins (Wordpress)
 * AdBlock Blocker
 * No Adblock (noadblock.com)
@@ -139,15 +141,77 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Ad Blocking Detector
 * AntiBlock (BukssaAyman)
 * AdBlock Notify
+* WPAdBlock
 
 ##### Custom
 * Please consult the changelog
 
 ## Changelog
+##### Release 8.9 (December 6, 2015)
+> Script
+* Fix: AdBlock Detector XenForo Rellect (generic)
+* Fix: Antiblock.org (generic)
+* Fix: FuckAdBlock & BlockAdBlock (generic)
+* Fix: exrapidleech.info
+* Kill: beppegrillo.it
+* Fix: tek.no
+* Fix: prem.link
+* Kill: scriptznull.nl
+* Kill: winandmac.com
+* Kill: yes.fm
+* Kill: dpstream.net
+* Kill: gum-gum-streaming.com
+* Kill: jeu.info
+* Kill: imageraider.com
+* Kill: main-spitze.de
+* Kill: wormser-zeitung.de
+* Kill: lampertheimer-zeitung.de
+* Kill: wiesbadener-tagblatt.de
+* Kill: buerstaedter-zeitung.de
+* Kill: wiesbadener-kurier.de
+* Kill: rhein-main-presse.de
+* Kill: allgemeine-zeitung.de
+
+> List
+* Kill: jeu-concours.biz
+* Kill: hugo.sieradz.com.pl
+* Kill: terrarium.com.pl
+* Kill: t2e.pl
+* Fix: afreesms.com
+* Kill: topserialy.sk
+* Kill: 6play.fr
+* Kill: animeheaven.eu
+* Kill: skyrock.com
+* Kill: novamov.com
+* Kill: nowvideo.sx
+* Kill: nowvideo.to
+* Kill: wholecloud.net
+* Kill: cloudtime.to
+* Kill: videoweed.es
+* Kill: showsport-tv.com
+* Kill: verdirectotv.com
+* Kill: broadbandforum.co
+* Kill: radioline.co
+* Kill: howtoremoveadblock.com (generic)
+* Kill: blockadblock.com (generic)
+* Kill: mediafree.co
+* Kill: Tisoomi (generic)
+* Kill: cba.pl
+* Kill: voyageforum.com
+* Fix: al.ly
+* Kill: pssite.com
+* Kill: WPAdBlock (generic)
+* Kill: hitek.fr
+* Kill: xboxforum.pl
+* Kill: teleboy.ch
+* Kill: scooter-chinois-4t.com
+* Kill: ultimate-goldust.fr.fo
+* Kill: freeiphone.fr
+
 
 ##### Release 8.8 (November 22, 2015)
 > Script
-* Fix: Antiblock.org
+* Fix: Antiblock.org (generic)
 * Fix: exclude domains
 * Fix: bild.de
 * Kill: computerbild.de (Ad-Defend)
