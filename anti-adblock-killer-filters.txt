@@ -1935,6 +1935,8 @@ generatorlinkpremium.com##.secondsky
 gamejolt.com###ima-ad-container
 ! mangasproject.net.br
 @@||mangasproject.net.br/assets/js/lib/controllers/Leitor/ads.js$script
+! debridnet.com
+||http://debridnet.com/blocker.js$script
 ! Cloud --------------------------------------------------------------------------------------
 ! wawa-film.org
 wawa-film.org##A[href^="http://api.adlure.net/partner/click/"]
