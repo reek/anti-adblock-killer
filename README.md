@@ -147,6 +147,52 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+##### Release 9.0 (December 19, 2015)
+> Script
+* Improve: Aak.registerCommands
+* Add: Aak.pushCommmds
+* Add: Aak.listCommmds
+* Fix: warn 'window.webkitStorageInfo' is deprecated on Chrome
+* Fix: FuckAdblock (generic)
+* Fix: Antiblock.org (generic)
+* Kill: adreactor (generic)
+* Fix: youwatch.org
+* Fix: exashare.com
+* Exclude: plnkr.co
+* Kill: eurotransport.de
+* Kill: forbes.com
+* Fix: exrapidleech.info
+> List
+* Kill: receive-a-sms.com
+* Kill: movie7share.net
+* Kill: nowvideo.li
+* Kill: debridnet.com
+* Kill: wwwshooter.com
+* Kill: samehadaku.net
+* Kill: terrarium.pl
+* Kill: optyczne.pl
+* Fix: openload (network)
+* Kill: j.pl
+* Kill: c0.pl
+* Kill: y0.pl
+* Kill: epiotrkow.pl
+* Kill: di.se
+* Kill: wakanim.tv
+* Fix: crichd.tv
+* Kill: hayan.tv
+* Kill: quebeccoupongratuit.com
+* Kill: imgbb.net
+* Kill: ddtorun.pl
+* Kill: ddwloclawek.pl
+* Kill: benchmark.pl
+* Kill: unixmen.com
+* Kill: playerhd1.pw
+* Kill: playerhd2.pw
+* Kill: ruutu.fi
+* Kill: zelaznalogika.net
+* Kill: armorgames.com
+
+
 ##### Release 8.9 (December 6, 2015)
 > Script
 * Fix: AdBlock Detector XenForo Rellect (generic)
@@ -292,7 +338,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Fix: filmovizija.club
 * Fix: exashare.com (ads)
 * Kill: youporn.com
-* Fix: openload.io / openload.tv / openload.co
+* Fix: openload (network)
 * Fix: dayt.se
 * Kill: corporatecentral.com
 * Kill: cityam.com
@@ -337,7 +383,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: ghacks.net bug
 * Kill: vstrim.pl
 * Kill: multiup.org
-* Kill: openload.io / openload.tv / openload.co
+* Kill: openload (network)
 * Kill: londynek.net
 * Kill: javfor.me
 * Kill: ppe.pl
@@ -386,7 +432,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 > List
 * Fix: youwatch.org (bug fullscreen+embed/iframe)
 * Fix: turbodebrideur.com (allow rule blocked by ListeFR)
-* Fix: openload.io / openload.tv / openload.co
+* Fix: openload (network)
 * Fix: multiup.org
 * Kill: biggestplayer.me
 * Kill: krs-online.com.pl
@@ -404,7 +450,6 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: yocast.tv
 * Fix: some redundant rules
 * Fix: phonandroid.com
-* Fix: openload.io / openload.tv / openload.co
 * Fix: lachainemeteo.com (allow content blocked "MES FAVORIS MÉTÉO")
 * Fix: needrom.com
 * Kill: journaldugeek.com
@@ -482,7 +527,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: femmeactuelle.fr
 * Kill: algerie360.com
 * Kill: cpubenchmark.net
-* Fix: openload.io / openload.tv / openload.co
+* Fix: openload (network)
 * Fix: adultmult.tv 
 * Fix: youwatch.org
 * Fix: tv3play.se / tv6play.se / tv8play.se / tv10play.se
@@ -557,7 +602,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: up2stream.com
 * Kill: crypto-clix.net
 * Fix: videostar.pl
-* Kill: openload.io
+* Kill: openload (network)
 * Kill: hireteen.com
 * Kill: plus-belle-la-vie-video.blogspot.com
 * Kill: binbox.io
@@ -575,7 +620,6 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Kill: spaste.com
 * Kill: mupvl.us
 * Kill: booksmedicos.org
-* Kill: openload.io
 * Kill: wetter3.de
 * Kill: pebx.pl
 * Kill: vgtv.no
