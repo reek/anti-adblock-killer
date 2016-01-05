@@ -1617,7 +1617,7 @@ hentenaar.com#@#.adsbygoogle
 @@||6play.fr/media/js/publicite.js
 ! animeheaven.eu
 ! https://github.com/reek/anti-adblock-killer/issues/789
-@@||animeheaven.eu/a/showads$script
+@@||animeheaven.eu/*/showads$script
 ! skyrock.com
 skyrock.com##IMG[src*="adblock/pave.png"]
 skyrock.com##IMG[src*="adblock/megabanner.png"]
