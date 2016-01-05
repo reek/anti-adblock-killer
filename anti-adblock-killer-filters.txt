@@ -787,6 +787,7 @@ binbox.io#@#.banner-ad
 ! https://github.com/reek/anti-adblock-killer/issues/123
 @@||4shared.com/show_ad_.xml$script
 @@||4shared.com/show_ad_.xml$stylesheet
+||static.4shared.com/js/blockDetect/blockDetect.4min.js
 ! bit-vortex.com
 @@||bit-vortex.com/js/antiadblock.js$script
 ! fit.sh
