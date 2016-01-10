@@ -41,7 +41,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * [Subscribe](http://reek.github.io/anti-adblock-killer/#fiterlist) *from github.com*
 * [Subscribe](http://reeksite.com/anti-adblock-killer/#fiterlist) *from reeksite.com*
 
-> ##### Note: uBlock Origin, you must enable AakList on Options -> 3rd-party-filters and "Apply changes".
+> ##### Note: uBlock Origin, you must enable AakList in Options -> 3rd-party-filters and [Apply changes].
 
 #### Step 3: UserScript
 * [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
@@ -83,7 +83,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Try update or re-install Anti-Adblock Killer Script.
 * Try update or re-subscribe Anti-Adblock Killer List.
 * Check if you have another userscript that might interfere with Anti-Adblock Killer.
-* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript).
+* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript, HTTPS Everywhere).
 * Check if, your JavaScript is enabled [Test](http://activatejavascript.org/).
 * Remove duplicates Anti-Adblock Killer (Script/List).
 * Remove or disable personal filters.
@@ -147,11 +147,83 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+##### Release 9.1 (January 10, 2016)
+> Script
+* Add: Aak.fakeFuckAdBlock (function)
+* Fix: Aak.listDetect (function)
+* Fix: forbes.com
+* Fix: prem.link
+* Kill: bluesatoshi.com
+* Kill: satoshiempire.com
+* Kill: oneadfaucet.com
+* Kill: razercrypt.com
+* Fix: cityam.com
+* Kill: milfzr.com
+* Fix: FuckAdblock (generic)
+* Kill: farmet.info
+* Kill: gadzetomania.pl
+* Kill: micast.tv (prevent popunder)
+* Kill: linkdrop.net
+* Kill: agario.sx
+* Kill: semprot.com
+* Kill: megogo.net
+* Kill: autokult.pl
+* Kill: revclouds.com
+* Kill: koscian.net
+* Kill: globeslot.com
+
+> List
+* Kill: fdesouche.com
+* Kill: mymanga.io
+* Kill: rychlost.cz
+* Kill: bitcoin-gator.com
+* Fix: AdBlock Notify (generic)
+* Kill: how2play.pl 
+* Kill: theargus.co.uk
+* Kill: merlininkazani.com
+* Fix: 4shared.com
+* Kill: extremetube.com
+* Kill: pornhub.com
+* Kill: keezmovies.com
+* Kill: youporn.com
+* Kill: youporngay.com
+* Kill: spankwire.com
+* Kill: mofosex.com
+* Kill: hahasport.me (ads)
+* Kill: dabstrap.com (ads)
+* Kill: putlocker.is
+* Kill: anibatch.net
+* Kill: agarserv.com
+* Kill: zuuk.org ads
+* Kill: embeducaster.com (ads)
+* Kill: zoomtv.me ads
+* Kill: biggestplayer.me
+* Kill: mangahop.com
+* Kill: missmedia.pl
+* Kill: cast4u.tv
+* Kill: auroravid.to
+* Kill: appki.com.pl
+* Kill: androidpolska.pl
+* Kill: dstar.pzk.pl
+* Kill: animeheaven.eu
+* Kill: gq.com
+* Kill: multiup.org
+* Kill: rappers.in
+* Kill: faucetbitcoins.com
+* Kill: grajkownia.com
+* Kill: imgnova.xyz
+* Kill: stalker-worlds.ru
+* Kill: iprima.cz
+* Kill: woprime.com
+* Kill: boxfaucet.com
+* Kill: nnm-club.ws
+
+
 ##### Release 9.0 (December 19, 2015)
 > Script
-* Improve: Aak.registerCommands
-* Add: Aak.pushCommmds
-* Add: Aak.listCommmds
+* Improve: Aak.registerCommands (function)
+* Add: Aak.pushCommmds (function)
+* Add: Aak.listCommmds (function)
 * Fix: warn 'window.webkitStorageInfo' is deprecated on Chrome
 * Fix: FuckAdblock (generic)
 * Fix: Antiblock.org (generic)
