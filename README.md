@@ -38,8 +38,8 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: FilterList
-* [Subscribe](http://reek.github.io/anti-adblock-killer/#fiterlist) *from github.com*
-* [Subscribe](http://reeksite.com/anti-adblock-killer/#fiterlist) *from reeksite.com*
+* [Subscribe](http://reek.github.io/anti-adblock-killer/#filterlist) *from github.com*
+* [Subscribe](http://reeksite.com/anti-adblock-killer/#filterlist) *from reeksite.com*
 
 > ##### Note: uBlock Origin, you must enable AakList in Options -> 3rd-party-filters and [Apply changes].
 
@@ -83,7 +83,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Try update or re-install Anti-Adblock Killer Script.
 * Try update or re-subscribe Anti-Adblock Killer List.
 * Check if you have another userscript that might interfere with Anti-Adblock Killer.
-* Check if one of these extensions is problematic (Disable Anti-Adblock 3.1, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript, HTTPS Everywhere).
+* Check if one of these extensions is problematic (Disable Anti-Adblock, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript, HTTPS Everywhere).
 * Check if, your JavaScript is enabled [Test](http://activatejavascript.org/).
 * Remove duplicates Anti-Adblock Killer (Script/List).
 * Remove or disable personal filters.
@@ -94,6 +94,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Try with another browser.
 * How to disable the update check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * How to disable the list check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
+* How write Adblock filters [here](https://adblockplus.org/en/filters)
 * Where can report an advertisement [here](https://forums.lanik.us/)
 * Consult Discussions or Issues
 
