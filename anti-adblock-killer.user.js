@@ -453,7 +453,7 @@ Aak = {
               load : function () {
                 if (this.clientHeight) {
                   Aak.warn('AakList: UnSubscribed');
-                  Aak.notification('It seems that you have not subscribed to <b>AakList (Anti-Adblock Killer )</b> <a href="' + Aak.subscribeURL + '" target="_blank">Subscribe</a>');
+                  Aak.notification('It seems that you have not subscribed to <b>AakList</b>. <a href="' + Aak.subscribeURL + '" target="_blank">Subscribe</a> / <a href="' + Aak.settingsURL + '" target="_blank">Disable</a>');
                 } else {
                   Aak.info('AakList: Subscribed');
 				  Aak.setValue('listDetect', true);
