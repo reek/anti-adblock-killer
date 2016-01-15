@@ -133,7 +133,7 @@
               data[$field.attr('name')] = $field.val();
             });
             delete data.robot;
-            $.post("http://reeksite.com/aak/sendMail.php", data)
+            $.post("//reeksite.com/gm/anti-adblock-killer/mailer.php", data)
             .done(function (data) {
               $('#contact-form').html('<h4>' + data + '</h4>');
             });
