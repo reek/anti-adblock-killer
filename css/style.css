@@ -1,5 +1,5 @@
 @charset=utf-8;
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(//fonts.googleapis.com/css?family=Oswald);
 
 html {
   background-color: #DC143C;
@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  background: url("https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png") no-repeat 50px 10px;
+  background: url("//raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png") no-repeat 50px 10px;
   background-size: 48px 48px;
   background-color: #DC143C;
   color: #fff;
@@ -96,7 +96,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 label.css-label {
-  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_0fea4020df9b84ba7b132b93b0c784ed.png);
+  background-image: url(//csscheckbox.com/checkboxes/u/csscheckbox_0fea4020df9b84ba7b132b93b0c784ed.png);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -138,11 +138,11 @@ label.css-label {
 }
 
 .big {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .bigest {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .center {
@@ -155,6 +155,10 @@ label.css-label {
 
 .right {
   text-align: right;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .code {
