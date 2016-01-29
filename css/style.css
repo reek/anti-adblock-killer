@@ -96,7 +96,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 label.css-label {
-  background-image: url(//csscheckbox.com/checkboxes/u/csscheckbox_0fea4020df9b84ba7b132b93b0c784ed.png);
+  background-image: url(../images/checkboxes.png);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
