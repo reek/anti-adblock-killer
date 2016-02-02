@@ -9,7 +9,9 @@
 
 
 ## About
-Anti-Adblock Killer is a userscript aiming to circumvent many protections used on some websites that force the user to disable AdBlockers. This way, you can continue to visit such websites without having to disable your Adblocker.
+Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable.
+
+Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website. 
 
 
 ## Donate
@@ -27,9 +29,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 
 ## Instruction
 
-> ##### Note: AakList & AakScript are complementary each unblocked different websites.
-
-#### Step 1: Script Manager (Install)
+#### Step 1: ScriptManager
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported/Addon has been discontinued)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/fr/extensions/details/violent-monkey/) 
@@ -38,6 +38,7 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
 #### Step 2: FilterList
+
 * [Subscribe](http://reek.github.io/anti-adblock-killer/#filterlist) *from github.com*
 * [Subscribe](http://reeksite.com/anti-adblock-killer/#filterlist) *from reeksite.com*
 
@@ -88,10 +89,13 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Remove duplicates Anti-Adblock Killer (Script/List).
 * Remove or disable personal filters.
 * Enable only the filter lists you need, too many can make your browser unresponsive.
+* Force an update Adblocker lists
+* Force an update Script Manager
 * Check if the site is in "Supported Sites" or in "Changelog".
   * If the site is not in it, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide).
   * If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
-* Try with another browser.
+* Try with another Browser.
+* Try with another Script Manager.
 * How to disable the update check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * How to disable the list check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
 * How write Adblock filters [here](https://adblockplus.org/en/filters)
@@ -148,6 +152,76 @@ Anti-Adblock Killer is a userscript aiming to circumvent many protections used o
 * Please consult the changelog
 
 ## Changelog
+##### Release 9.2 (February 2, 2016)
+> Script
+* Update: metadata block
+* License: remove NC-clause
+* Fix: JSHint errors
+* Rename: some functions and variables
+* Improve: some functions
+* Improve: debug mode
+* Improve: BetterStopAdblock (generic)
+* Improve: Antiblock (generic)
+* Improve: BlockAdBlock (specific)
+* Improve: AdblockBlocker (generic)
+* Kill: premiumleecher.com
+* Kill: lewebtvbouquetfrancophone.overblog.com
+* Kill: webtv.bloguez.com
+* Kill: latelegratuite.blogspot.com
+* Kill: dbplanet.net
+* Kill: sofoot.com
+* Kill: gaara-fr.com
+* Kill: komorkomania.pl
+* Kill: mangahost.com
+* Kill: razercrypt.com
+* Kill: gamer.com.tw
+* Fix: armorgames.com
+* Kill: kafeteria.pl
+* Kill: tuxboard.com
+* Kill: getdebrid.com
+* Kill: debridfast.com
+* Exclude: exacttarget.com
+* Kill: monnsutogatya.com
+
+> List
+* License: remove NC-clause
+* Remove: redundant rules
+* Kill: 3bmeteo.com
+* Kill: itsrainingbitcoins.com
+* Kill: flymer.ru
+* Kill: mtlblog.com
+* Kill: captchme.net (generic)
+* Kill: phonearena.com
+* Kill: cnx-software.com
+* Fix: linkbucks (network)
+* Kill: AdDefender (generic)
+* Kill: world4ufree.cc
+* Kill: srnk.co
+* Kill: pornve.com
+* Kill: datalog.co.uk
+* Kill: darkbtc.info
+* Kill: daciaclub.cz
+* Kill: windows7themes.net
+* Kill: beforeitsnews.com
+* Kill: croydonguardian.co.uk
+* Kill: tobys.dk
+* Kill: fanfiktion.de (ads)
+* Kill: iprima.cz
+* Kill: iptvforever.com
+* Kill: bitvid.sx
+* Kill: cultofmac.com
+* Kill: ios-blog.co.ukà
+* Kill: dlneko.org
+* Kill: digitalcitizen.life
+* Kill: alluc.ee
+* Kill: gaijin.at
+* Kill: se.pl
+* Kill: filehorse.com
+* Kill: canalplus.fr
+* Kill: binbucks.com
+* Kill: talktv.vn
+
+
 ##### Release 9.1 (January 10, 2016)
 > Script
 * Add: Aak.fakeFuckAdBlock (function)
