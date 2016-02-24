@@ -1349,6 +1349,7 @@ fossbytes.com#@##adsense
 ! geektimes.ru
 ! https://github.com/reek/anti-adblock-killer/issues/606
 @@/advertising.js$script,domain=habrahabr.ru|megamozg.ru|geektimes.ru
+@@/adriver.js$script,domain=habrahabr.ru|megamozg.ru|geektimes.ru
 ! sharefreeall.com
 ! https://github.com/reek/anti-adblock-killer/issues/623
 sharefreeall.com#@##adsense
