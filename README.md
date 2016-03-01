@@ -246,7 +246,6 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Kill: abovetopsecret.com
 
 
-## Changelog
 ##### Release 9.2 (February 2, 2016)
 > Script
 * Update: metadata block
