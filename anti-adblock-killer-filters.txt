@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 9.2
+! Version: 9.3
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-sa/4.0/
 ! Homepage: https://github.com/reek/anti-adblock-killer/
@@ -56,12 +56,10 @@
 ! AntiAdblock (ErikSwan)
 ! http://erikswan.net/abp/ (<div id="tester">)
 ! AntiAdblock (D3xt3r)
-! http://d3xt3r.com/anti-adblock?test (blockblockA )
+! http://d3xt3r.com/anti-adblock?test (blockblockA)
 ! Default
-@@/advertisement.js$script,domain=~example.com
-! Suffix
-@@/\/advertisement([0-9]+|[\-._][a-z0-9]+)\.js/$script
-! Min
+@@/advertisement.js$script
+@@/advertisement*.js$script
 @@/advert.js$script,domain=~adultmult.tv
 ! FFBS Ad Blocker (to see)
 ! http://static.graddit.com/js/advertisement.js
@@ -85,6 +83,11 @@
 ! http://esd.io/blog/detecting-adblock-javascript.html
 ! https://github.com/elidickinson/ad-block-test
 #@##sponsored-ad
+! Adblock Blocker
+! https://wordpress.org/plugins/addblockblocker/
+! http://tinyurl.com/nswn6fz
+! http://pastebin.com/d65zr37m
+! #@#.afs_ads
 ! Anti ADs Blocker
 ! http://codecanyon.net/item/anti-adblock-aadb-anti-ads-blocker-script/5367731
 /aadb/script.js|$script
@@ -198,14 +201,40 @@ gq.com#@#.text-ad-links
 !----------------------------------------------------------------------------------------------------!
 ! Anti-Adblock (Specific) 
 !----------------------------------------------------------------------------------------------------!
-! ads.js
-/ads.js|$script,domain=visoterra.com
-! adb.js
-/adb.js|$script,domain=btcflow.net|bitcointree.net
-! adblock.js
-/adblock.js|$script,domain=mgcash.com
+! canRunAds
+! https://github.com/MatthewGross/CanRunAds
+! var canRunAds = true;
+! straight-world.de
+@@||straight-world.de/js/ads.js$script
+! satoshiquiz.com
+! https://github.com/reek/anti-adblock-killer/issues/206
+@@||satoshiquiz.com/ad.js$script
+@@||satoshiquiz.com/ads.js$script
+! fptplay.net
+@@||fptplay.net/js/ads.js$script
+! cpubenchmark.net
+! https://github.com/reek/anti-adblock-killer/issues/556
+@@||cpubenchmark.net/js/ads.js$script
+! vstrim.pl
+! https://github.com/reek/anti-adblock-killer/issues/670
+@@||vstrim.pl/js/ads.js$script,domain=vstrim.pl
+! hubturkey.net
+! https://github.com/reek/anti-adblock-killer/issues/786
+@@||hubturkey.net/js/ads.js$script
+! ynet.co.il
+! https://github.com/reek/anti-adblock-killer/issues/773
+@@||ynet.co.il/common/javascript/ads.js$script,~third-party
+! t2e.pl
+! https://github.com/reek/anti-adblock-killer/issues/778
+@@||t2e.pl/www/js/ads.js$script
+! datalog.co.uk
+! https://github.com/reek/anti-adblock-killer/issues/949
+@@||datalog.co.uk/js/ads.js$script
+! designtaxi.com
+! https://github.com/reek/anti-adblock-killer/issues/1011
+@@||designtaxi.com/js/ads.js$script
 ! Google Syndication
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=360haven.com|afreesms.com|agame.com|bbc.com|bitcoiner.net|carsfromitaly.info|codeasily.com|drivearabia.com|dsero.com|everythingon.tv|ffiles.com|file4go.com|freewaregenius.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gifmagic.com|ilix.in|kingofgames.net|korean-candy.com|megaallday.com|misheel.net|moviemistakes.com|ninjaraider.com|numberempire.com|nyharborwebcam.com|oldversion.com|omegadrivers.net|photos.essence.com|portcanaveralwebcam.com|portevergladeswebcam.com|priva.us|readersdigest.com.au|rotoinfo.com|seeingwithsound.com|tech-blog.net|techydoor.com|tipstank.com|trutower.com|tv-kino.net|upfordown.com|urlink.at|warp2search.net|preemlinks.com|risiko-gesundheit.de|skincodesgiveaway.com|ffa-hosting.com
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=360haven.com|agame.com|bbc.com|bitcoiner.net|carsfromitaly.info|codeasily.com|drivearabia.com|dsero.com|everythingon.tv|ffiles.com|file4go.com|freewaregenius.com|ftlauderdalewebcam.com|full-ngage-games.blogspot.com|gamespowerita.com|gifmagic.com|ilix.in|kingofgames.net|korean-candy.com|megaallday.com|misheel.net|moviemistakes.com|ninjaraider.com|numberempire.com|nyharborwebcam.com|oldversion.com|omegadrivers.net|photos.essence.com|portcanaveralwebcam.com|portevergladeswebcam.com|priva.us|readersdigest.com.au|rotoinfo.com|seeingwithsound.com|tech-blog.net|techydoor.com|tipstank.com|trutower.com|tv-kino.net|upfordown.com|urlink.at|warp2search.net|preemlinks.com|risiko-gesundheit.de|skincodesgiveaway.com|ffa-hosting.com
 ! hellsmedia.com
 @@||hellsmedia.com/js/advert.js$script
 ! writing.com
@@ -220,9 +249,6 @@ gq.com#@#.text-ad-links
 @@||siamfishing.com/_js/advert.js$script
 ! gamespowerita.com
 forum.gamespowerita.com#@##ad_block
-! backin.net
-@@||action.metaffiliation.com/suivi.php$domain=backin.net
-backin.net#@##adblock
 ! tvdez.com
 tvdez.com,casadossegredos.tv,estadiofutebol.com,televisaofutebol.com#@##pubfooter
 tvdez.com,casadossegredos.tv,estadiofutebol.com,televisaofutebol.com#@##pub2
@@ -235,10 +261,13 @@ file4go.com###banner_728x90B
 file4go.com#@#.afs_ads
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=file4go.com
 ! afreesms.com
+! https://github.com/reek/anti-adblock-killer/issues/1033
 ! https://github.com/reek/anti-adblock-killer/issues/120
-@@/adv.php?xadb=$script,third-party,domain=afreesms.com
+@@||afreesms.com/advertisement.js$script,xmlhttprequest
 ! receive-sms.com
 @@||cpalead.com/mygateway.php?$domain=receive-sms.com
+! sms-receive.net
+@@||sms-receive.net/advertisment.js$script
 ! gamecopyworld domains
 /getads.js$domain=gamecopyworld.com|gamecopyworld.eu
 gamecopyworld.com,gamecopyworld.eu###confirmOverlay
@@ -391,8 +420,8 @@ filecore.co.nz,fcore.eu#@#div[id^="div-gpt-ad-"]
 @@||partner.googleadservices.com/gpt/$domain=filecore.co.nz|fcore.eu,script
 ! gaijin.at
 gaijin.at##.box_error.box_error_icon
-! makemehost.com
-@@||makemehost.com/js/ads.js
+! makemehost.com (adblock_aktiv = false;)
+@@||makemehost.com/js/ads.js$script
 ! ukvarminting.com
 ukvarminting.com#@#.ipsAd
 ! tvdesporto.com
@@ -503,8 +532,6 @@ jeuxactu.com###infoBlock
 @@||bdv.bidvertiser.com/BidVertiser.dbm?$domain=vanhut.tk
 ! maxcheaters.com
 @@||maxcheaters.com/public/js/jsLoader.js$script
-! straight-world.de
-@@||straight-world.de/js/ads.js$script
 ! hqq.tv
 !||c.hqq.tv/js/adb/adb.js$script
 ! online.dramacafe.tv
@@ -537,6 +564,12 @@ paidverts.com#@#.afs_ads
 @@||gmads.net^$object-subrequest,domain=sat1.de|sat1.ch
 ! firstrowfr.eu
 firstrowfr.eu###adblockplus
+firstrowfr.eu###fanback
+! firstrowas.co
+firstrowas.co###ad_overlabut
+! ifirstrow.eu
+ifirstrow.eu###adblockplus
+ifirstrow.eu###fanback
 ! spaste.com
 ||spaste.com/adblock-detector.htm$subdocument
 ! safelinking.biz
@@ -604,6 +637,13 @@ redtube.com##.add-blocker-msg
 ! mackproject.com
 ||mackproject.com/tara.php$subdocument
 ! apkmirror.com
+! https://github.com/reek/anti-adblock-killer/issues/1083
+! https://github.com/reek/anti-adblock-killer/issues/940
+! https://github.com/reek/anti-adblock-killer/issues/378
+! https://github.com/reek/anti-adblock-killer/issues/224
+! https://github.com/reek/anti-adblock-killer/issues/78
+! http://pastebin.com/C4sw7edH
+apkmirror.com##script:contains(canRunAds = false)
 apkmirror.com#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/$script,domain=apkmirror.com
 ! latesthackingnews.com
@@ -645,11 +685,13 @@ filecore.co.nz#@#.adsense
 ! streaming-foot.info
 ||foot-live.info/images/adblok.mp3$media
 ||streaming-foot.info/images/adblok.mp3$media
-! gratisbitco.in
+! gratisbitco.in (isAdBlockActive=false;)
+! https://github.com/reek/anti-adblock-killer/issues/81
 @@||gratisbitco.in/scripts/ads.js$script
 ! labnol.org
 ||img.labnol.org/di/support.png$image
-! quickbitco.in
+! quickbitco.in (isAdBlockActive=false;)
+! https://github.com/reek/anti-adblock-killer/issues/106
 @@||quickbitco.in/js/ads.js$script
 ! onemanga.me
 onemanga.me#@#.adblock
@@ -732,7 +774,7 @@ turbogenerator.info###blanuncio
 turbogenerator.info###anuncio
 ! grifthost.com
 grifthost.com#@#.ad468
-! dota-trade.com
+! dota-trade.com (adblock = false)
 @@||media.dota-trade.com/js/ads.js$script
 ! rojadirecta.me
 rojadirecta.me#@##adserver
@@ -758,8 +800,6 @@ rlsbb.com###contentArea > .information
 ! freebetco.in
 ! qoinfaucet.com
 @@/show_ads.js$script,domain=bithourly.com|dailyfreebits.com|jewelrybitco.in|welovebtc.com
-! satoshiquiz.com
-@@/ads.js$script,domain=satoshiquiz.com
 ! ogmcdownload.com
 ogmcdownload.com#@#.afs_ads
 ! jetetroll.com
@@ -796,7 +836,7 @@ binbox.io#@#.banner-ad
 ! https://github.com/reek/anti-adblock-killer/issues/215
 ||lachainemeteo.com/js/lachainemeteo.js$script
 @@||a.ligatus.com/?ids=*&t=js$script,domain=lachainemeteo.com
-! bitonplay.com
+! bitonplay.com (isAdBlockActive=false;)
 @@||bitonplay.com/js/ads.js$script
 ! 4shared.com
 ! https://github.com/reek/anti-adblock-killer/issues/879
@@ -813,6 +853,7 @@ binbox.io#@#.banner-ad
 @@||server1.affiz.net/tracking/ads_display.php$script,domain=fit.sh
 @@||c.ad6media.fr/l.js$script,domain=fit.sh
 ! fosshub.com
+! https://github.com/reek/anti-adblock-killer/issues/250
 @@||fosshub.com/media/v2/js/ads.js$script
 ! coinracket.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=coinracket.com
@@ -832,11 +873,14 @@ binbox.io#@#.banner-ad
 ! flightradar24.com
 flightradar24.com##.noads
 ! ville-ideale.com
+! https://github.com/reek/anti-adblock-killer/issues/258
 ville-ideale.com###espace
 ville-ideale.com###enc
 ville-ideale.com###antyp
 ! notre-planete.info
+! https://github.com/reek/anti-adblock-killer/issues/258
 notre-planete.info###abp1
+@@||notre-planete.info/medias/pub_300x250.png
 ! fan-de-cinema.com
 @@||c.ad6media.fr/l.js$domain=fan-de-cinema.com
 ! xiaopan.co
@@ -844,6 +888,7 @@ xiaopan.co#@#.adsbygoogle
 ! thebitcoinsheep.com
 thebitcoinsheep.com##.col-md-6 font[size="5"] > font[color="white"] > font[color="white"][size="3"]
 ! mobilevids.org
+! https://github.com/reek/anti-adblock-killer/issues/347
 mobilevids.org#@#.afs_ads
 @@||syndication.exoclick.com/ads-iframe-display.php$subdocument,domain=mobilevids.org
 @@||ads.exoclick.com/ads.js$script,domain=mobilevids.org
@@ -860,9 +905,12 @@ cmmonitor.com#@#.adsbygoogle
 ! mangamap.com
 mangamap.com#@#.afs_ads
 ! videomega.tv
+! https://github.com/reek/anti-adblock-killer/issues/1012
+! https://github.com/reek/anti-adblock-killer/issues/77
 @@||adv.videomega.tv/hashverify.php$subdocument
 @@||videomega.tv/vjs/lib/videojs-contrib-ads/videojs.ads.css$stylesheet
 @@||videomega.tv/vjs/plugin/css/ads.css$stylesheet
+@@/BTVQRA6OS11SO6ARQVTB/pop.php$script,domain=videomega.tv
 ! theextopia.com
 theextopia.com##.adsbanner
 theextopia.com##.adsfoot1
@@ -890,6 +938,7 @@ proboards.com,freeforums.net,boards.net###support-message
 ! kwejk.pl
 @@||kwejk.pl^$elemhide
 ! ps3-infos.fr
+! https://github.com/reek/anti-adblock-killer/issues/312
 @@||ps3-infos.fr/adsense/openads/ads/ads.js$script
 ! plej.tv
 plej.tv#@#.advert_box
@@ -897,7 +946,7 @@ plej.tv#@#.advert_box
 @@||danslescoulisses.com/fr/min/$stylesheet
 ! vipleague
 ! Solution 3
-vipleague.ws,vipleague.tv,vipleague.se,vipleague.me,vipleague.co,vipleague.sx,vipleague.ch,vipbox.tv,vipbox.co,vipbox.biz,vipbox.sx,vipboxsa.co,strikeout.co,homerun.re,vipboxtv.co,vipapp.me,vipbox.eu,vipbox.so##script + script + script + style + div[id]
+vipleague.is,vipleague.ws,vipleague.tv,vipleague.se,vipleague.me,vipleague.co,vipleague.sx,vipleague.ch,vipbox.tv,vipbox.co,vipbox.biz,vipbox.sx,vipboxsa.co,strikeout.co,homerun.re,vipboxtv.co,vipapp.me,vipbox.eu,vipbox.so##script + script + script + style + div[id]
 ! linkdrop.net
 linkdrop.net#@#.afs_ads
 ! stream4free.eu
@@ -924,6 +973,7 @@ simply-debrid.com#@##adsense
 ! carambatv.ru
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest,domain=carambatv.ru
 ! rookie.com.pl
+! https://github.com/reek/anti-adblock-killer/issues/344
 @@||rookie.com.pl/jscripts/ads.js$script
 ! cwtv.com
 ||dzxxxg6ij9u99.cloudfront.net/wb.js$script,domain=cwtv.com
@@ -954,9 +1004,6 @@ uptobox.com#@#.ad-leader
 uptobox.com#@#.ad-leader > div[id]
 ! bitcoiner.net
 litecoiner.net,bitcoiner.net#@##ad-top
-! mangasproject.com.br (http://brazilunblock.info/)
-@@/ads.js$domain=mangasproject.com.br
-@@||mangasproject.com.br/assets/js/lib/controllers/Leitor/ads.js
 ! softpedia.com
 softpedia.com#@#.ad
 ! gamejolt.com
@@ -1063,9 +1110,11 @@ plus-belle-la-vie-video.blogspot.com#@##publicite
 plus-belle-la-vie-video.blogspot.com#@##adsense
 ! sharewareonsale.com
 @@||sharewareonsale.com/wp-content/plugins/checkout-ad-checker/assets/$script,stylesheet,image
-! kozaczek.pl
+! kozaczek.pl (isAdBlockActive=false;)
+! https://github.com/reek/anti-adblock-killer/issues/414
 @@||kozaczek.pl/js/ads.js$script,domain=kozaczek.pl
-! zeberka.pl
+! zeberka.pl (isAdBlockActive=false;)
+! https://github.com/reek/anti-adblock-killer/issues/414
 @@||zeberka.pl/js/ads.js$script,domain=zeberka.pl
 ! videostar.pl
 @@||static-videostar2.4vod.tv/assets/js/adcheck.js$script,domain=videostar.pl
@@ -1104,8 +1153,6 @@ videoproxy.in###overlay-holder
 @@||adv.gpm-digital.com/*now.ru$object-subrequest,domain=rutube.ru
 ! rutube.ru
 @@||ad4.liverail.com/?LR_PUBLISHER_ID=$object-subrequest,domain=rutube.ru
-! fptplay.net
-@@||fptplay.net/js/ads.js$script
 ! mytunnel.info
 mytunnel.info#@#.afs_ads
 ! up2stream.com
@@ -1202,16 +1249,20 @@ tree.tv#@##adverts
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=djawir.com
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=djawir.com
 ! vvvvid.it
-! https://github.com/reek/anti-adblock-killer/issues?q=vvvvid
-@@||vvvvid.it/img/ad/advertisment.jpg
-@@||vvvvid.it/img/pic01.jpg
+! https://github.com/reek/anti-adblock-killer/issues/756
+! https://github.com/reek/anti-adblock-killer/issues/585
+! https://github.com/reek/anti-adblock-killer/issues/513
+! https://github.com/reek/anti-adblock-killer/pull/282
+! https://github.com/reek/anti-adblock-killer/issues/205
+@@||imasdk.googleapis.com/js/sdkloader/$script,domain=vvvvid.it
+@@||vvvvid.it/img/ad/advertisement.xml$xmlhttprequest
 ! captchme.net / captchme.com
 ! https://github.com/reek/anti-adblock-killer/issues/934
 ! https://github.com/reek/anti-adblock-killer/issues/921
 ! https://github.com/reek/anti-adblock-killer/issues/533
 ! http://pastebin.com/gHPBA25S
 @@||api.captchme.net/api/media$image
-@@||googleads.g.doubleclick.net/pagead/ads$subdocument,third-party
+@@||googleads.g.doubleclick.net/pagead/ads$subdocument,third-party,domain=~afreesms.com
 ! wyborcza.pl / gazeta.pl
 ! https://github.com/reek/anti-adblock-killer/issues/531
 @@||squid.gazeta.pl/info/squid/fprint.js$script,domain=wyborcza.pl|gazeta.pl
@@ -1228,7 +1279,7 @@ torrent-tv.ru##.page > .right-side > .section + .section + .section
 freemulticoins.com#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=freemulticoins.com
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=freemulticoins.com
-! lowcygier.pl
+! lowcygier.pl (var niceAdsCheck = true;)
 ! https://github.com/reek/anti-adblock-killer/issues/539
 @@||lowcygier.pl/wp-content/themes/graphene/js/ads.js$script
 ! crichd.tv
@@ -1255,9 +1306,6 @@ la-faculte.net#@##adsense
 ! algerie360.com
 ! https://github.com/reek/anti-adblock-killer/issues/554
 algerie360.com#@#.afs_ads
-! cpubenchmark.net
-! https://github.com/reek/anti-adblock-killer/issues/556
-@@||cpubenchmark.net/js/ads.js$script
 ! hackintosh.zone
 ! https://github.com/reek/anti-adblock-killer/issues/559
 @@||adn.impactradius.com/gen-ad-code/$domain=hackintosh.zone
@@ -1349,13 +1397,14 @@ fossbytes.com#@##adsense
 ! geektimes.ru
 ! https://github.com/reek/anti-adblock-killer/issues/606
 @@/advertising.js$script,domain=habrahabr.ru|megamozg.ru|geektimes.ru
+@@/adriver.js$script,domain=habrahabr.ru|megamozg.ru|geektimes.ru
 ! sharefreeall.com
 ! https://github.com/reek/anti-adblock-killer/issues/623
 sharefreeall.com#@##adsense
 ! dziennikwschodni.pl
 ! https://github.com/reek/anti-adblock-killer/issues/633
 dziennikwschodni.pl#@#.adholder
-! polscygracze.pl
+! polscygracze.pl (var niceAdsCheck=true;)
 ! https://github.com/reek/anti-adblock-killer/issues/632
 @@||polscygracze.pl/wp-content/plugins/noadblock-nice-message/assets/js/ads.js$script,domain=polscygracze.pl
 ! wpworld.pl
@@ -1394,7 +1443,7 @@ f1fanklub.pl#@##topad
 ! jegostrona.pl
 ! prawnik.pl
 ! https://github.com/reek/anti-adblock-killer/issues/627
-@@||gazetaprawna.pl/js/ads.js$script,domain=dziennik.pl|forsal.pl|gazetaprawna.pl|jegostrona.pl|prawnik.pl
+@@||gazetaprawna.pl/gp/js/ads_blocker_test.js$script,domain=dziennik.pl|forsal.pl|gazetaprawna.pl|jegostrona.pl|prawnik.pl
 ! freeskier.com (also added script rule)
 ! https://github.com/reek/anti-adblock-killer/issues/639
 freeskier.com###adb-enabled
@@ -1466,9 +1515,6 @@ komentare.sme.sk###js-top-info-bar-wrapper
 ! ghacks.net
 ! https://github.com/reek/anti-adblock-killer/issues/672
 @@||ghacks.net/wp-content/plugins/bwp-minify/$stylesheet,domain=ghacks.net
-! vstrim.pl
-! https://github.com/reek/anti-adblock-killer/issues/670
-@@||vstrim.pl/js/ads.js$script,domain=vstrim.pl
 ! topfilmz.com
 ! https://github.com/reek/anti-adblock-killer/issues/667
 topfilmz.com#@##adsense
@@ -1573,8 +1619,6 @@ squidboards.com##.premiumContain
 ! https://github.com/reek/anti-adblock-killer/issues/732
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=mrpiracy.xyz
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=mrpiracy.xyz
-! hubturkey.net
-@@||hubturkey.net/js/ads.js$script
 ! iplex.pl
 ! https://github.com/reek/anti-adblock-killer/issues/735
 @@||cdn3.iplex.pl/iplex3/static/js/ads.js$script
@@ -1591,13 +1635,15 @@ yocast.tv###notice
 ! megabitload.com
 ! https://greasyfork.org/en/forum/discussion/7013
 @@||cpalead.com/cpalock.php$script,domain=megabitload.com
-! thesimsresource.com
+! thesimsresource.com (window.iHaveLoadedAds = true;)
 ! https://github.com/reek/anti-adblock-killer/issues/747
 @@||cloudfront.net/ads/ads.js$script,domain=thesimsresource.com
 ! vtele.ca
+! https://github.com/reek/anti-adblock-killer/issues/790
 ! https://github.com/reek/anti-adblock-killer/issues/752
 ! https://github.com/reek/anti-adblock-killer/issues/612
-@@||cdn.adgear.com/a/adgear.js/current/adgear.js$script,domain=vtele.ca
+@@/blockadblock.js$script,domain=vtele.ca
+@@/adgear.js$script,domain=vtele.ca
 ! synonim.net
 ! https://github.com/reek/anti-adblock-killer/issues/758
 @@||synonim.net/ads$script,xmlhttprequest,domain=synonim.net
@@ -1618,9 +1664,6 @@ hentenaar.com#@#.adsbygoogle
 ! debridfast.com
 ! https://github.com/reek/anti-adblock-killer/issues/769
 ||debridfast.com/blocker.js$script
-! ynet.co.il
-! https://github.com/reek/anti-adblock-killer/issues/773
-@@||ynet.co.il/common/javascript/ads.js$script,~third-party
 ! jeu-concours.biz
 ! https://github.com/reek/anti-adblock-killer/issues/775
 @@||jeu-concours.biz/show_ads.js
@@ -1630,9 +1673,6 @@ hentenaar.com#@#.adsbygoogle
 ! terrarium.com.pl
 ! https://github.com/reek/anti-adblock-killer/issues/779
 @@||advert-serv.johnmorris.me/adserver/adlogger_tracker.php$subdocument,script,domain=www.terrarium.com.pl
-! t2e.pl
-! https://github.com/reek/anti-adblock-killer/issues/778
-@@||t2e.pl/www/js/ads.js$script
 ! topserialy.sk
 ! https://github.com/reek/anti-adblock-killer/issues/785
 @@||topserialy.sk/js/scripts/ad.js$script
@@ -1649,10 +1689,12 @@ skyrock.com##IMG[src*="adblock/megabanner.png"]
 ! novamov.com
 ! https://github.com/reek/anti-adblock-killer/issues/795
 @@||novamov.com/banner.php$script
-! nowvideo.sx / nowvideo.to
+! nowvideo (network)
+! https://github.com/reek/anti-adblock-killer/issues/1040
 ! https://github.com/reek/anti-adblock-killer/issues/797
 @@||nowvideo.sx/banner.php$script
 @@||nowvideo.to/banner.php$script
+@@||nowvideo.co/banner.php$script
 ! nowvideo.li
 ! https://greasyfork.org/forum/discussion/7322/
 @@||nowvideo.li/banner.php$script
@@ -1698,9 +1740,10 @@ voyageforum.com###mainColumn [id^="mainposttravelsbox"]
 ! pssite.com
 ! https://github.com/reek/anti-adblock-killer/issues/820
 pssite.com#@#.adver
-! hitek.fr
+! hitek.fr (is_blocker = false;)
 ! https://github.com/reek/anti-adblock-killer/issues/822
 @@||hitek.fr/ads.js$script
+@@||hitek.fr/adserver.js$script
 ! xboxforum.pl
 ! https://github.com/reek/anti-adblock-killer/issues/823#issuecomment-162237832
 xboxforum.pl##.noticeContainer:not(.hidden)
@@ -1724,8 +1767,11 @@ freeiphone.fr#@##adsense
 ! https://github.com/reek/anti-adblock-killer/issues/834
 rlsbb.movie7share.net##.information > [color="red"] > H3
 ! debridnet.com
+! https://github.com/reek/anti-adblock-killer/issues/1077
 ! https://github.com/reek/anti-adblock-killer/issues/836
 ||debridnet.com/blocker.js$script
+||debridnet.com/b1.js$script
+||debridnet.com/b2.js$script
 ! wwwshooter.com
 ! https://github.com/reek/anti-adblock-killer/issues/835
 @@||wwwshooter.com/js/adblockdetect/_advertisement.js$script
@@ -1756,7 +1802,7 @@ hayan.tv#@##uzcrsite
 ! https://github.com/reek/anti-adblock-killer/issues/846
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=quebeccoupongratuit.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=quebeccoupongratuit.com
-! imgbb.net
+! imgbb.net (isAdBlockActive=false;)
 ! https://github.com/reek/anti-adblock-killer/issues/847
 @@||imgbb.net/js/ads.js$script
 ! ddtorun.pl
@@ -1814,8 +1860,9 @@ biggestplayer.me##.pipi
 ! mangahop.com
 ! https://github.com/reek/anti-adblock-killer/issues/899
 mangahop.com#@#.afs_ads
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=mangahop.com
-@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=mangahop.com
+! mangahen.com
+! https://github.com/reek/anti-adblock-killer/issues/1043
+mangahen.com#@#.afs_ads
 ! missmedia.pl
 ! https://github.com/reek/anti-adblock-killer/issues/897
 @@||go.idmnet.bbelements.com/bb/bb_one$script,domain=missmedia.pl
@@ -1889,8 +1936,10 @@ flymer.ru#@#.ad-unit
 ! https://github.com/reek/anti-adblock-killer/issues/936
 phonearena.com##.adblock_awareness
 ! cnx-software.com
+! https://github.com/reek/anti-adblock-killer/issues/1042
 ! https://github.com/reek/anti-adblock-killer/issues/937
 cnx-software.com##img[src="/pic/support_cnxsoft.png"]
+cnx-software.com##img[src="/pic/support_cnx-software.png"]
 ! world4ufree.cc
 ! https://github.com/reek/anti-adblock-killer/issues/942
 world4ufree.cc#@#.afs_ads
@@ -1900,9 +1949,7 @@ world4ufree.cc#@#.afs_ads
 ! pornve.com
 ! https://github.com/reek/anti-adblock-killer/issues/947
 @@||pornve.com/pop.js$script
-! datalog.co.uk
-! https://github.com/reek/anti-adblock-killer/issues/949
-@@||datalog.co.uk/js/ads.js$script
+@@||popads.net/pop.js$script,domain=pornve.com
 ! darkbtc.info
 ! https://github.com/reek/anti-adblock-killer/issues/953
 @@||darkbtc.info/banner.gif$image
@@ -1958,7 +2005,7 @@ dlneko.org##.DialogMask
 ! https://github.com/reek/anti-adblock-killer/issues/987
 digitalcitizen.life###dont-block-our-ads-popup
 digitalcitizen.life##.TopAdBanner
-! alluc.ee
+! alluc.ee (isAdBAct=false;isAdBlockActive=false;)
 ! https://github.com/reek/anti-adblock-killer/issues/988
 @@||alluc.ee/js/ads.js$script
 alluc.ee###aovl
@@ -1971,7 +2018,7 @@ alluc.ee###aovl
 ! se.pl
 ! https://github.com/reek/anti-adblock-killer/issues/992
 se.pl###adb_popup
-! filehorse.com
+! filehorse.com (isAdBlockActive=false;)
 ! https://github.com/reek/anti-adblock-killer/issues/993
 @@||filehorse.com/js/ads.js$script
 ! canalplus.fr
@@ -1982,6 +2029,152 @@ se.pl###adb_popup
 ! talktv.vn
 ! https://github.com/reek/anti-adblock-killer/issues/995
 @@||talktv.vn/resource/third-party/jwplayer/ads.js$object-subrequest
+! telegraaf.nl
+! https://github.com/reek/anti-adblock-killer/issues/1000
+@@||telegraaf.tcdn.nl/javascript/showads.*.js$script
+! mangasproject.com.br
+! mangasproject.net.br
+! mangas.zlx.com.br
+! http://brazilunblock.info/
+! https://greasyfork.org/fr/forum/discussion/4132
+! https://github.com/reek/anti-adblock-killer/issues/998
+@@/js/lib/controllers/Leitor/Leitor.min.js$script,domain=mangasproject.com.br|mangasproject.net.br|mangas.zlx.com.br
+! telegraph.co.uk
+! https://github.com/reek/anti-adblock-killer/issues/973
+||optimizely.com^$third-party
+! bleachmx.co
+! https://github.com/reek/anti-adblock-killer/issues/1005
+bleachmx.co#@##adsense
+! talktv.vn
+! https://github.com/reek/anti-adblock-killer/issues/995
+@@||talktv.vn/resource/third-party/jwplayer/ads.js$object-subrequest
+! dasolo.org
+! https://github.com/reek/anti-adblock-killer/issues/1018
+dasolo.org##[align="center"] > SPAN > SPAN[style="font-weight: bold; color: rgb(131, 0, 14);"]
+! twojeip.wp.pl
+! https://github.com/reek/anti-adblock-killer/issues/1019
+twojeip.wp.pl#@##adverts
+! sportdeutschland.tv
+! https://github.com/reek/anti-adblock-killer/issues/1015
+@@||ad.71i.de/global_js/$script,domain=sportdeutschland.tv
+@@||sportdeutschland.vidibuscloud.net/themes/sportdeutschland-623/javascripts/lib/my_ad_integration.js$script
+! f1i.com
+! https://github.com/reek/anti-adblock-killer/issues/1020
+@@||partner.googleadservices.com/gpt/pubads_impl_$script,domain=f1i.com
+! wallpapermania.eu
+! https://github.com/reek/anti-adblock-killer/issues/1023
+@@||wallpapermania.eu/assets/js/ads.js$xmlhttprequest
+! lepoint.fr
+! https://github.com/reek/anti-adblock-killer/issues/1027
+! https://github.com/reek/anti-adblock-killer/issues/1035
+@@||lepoint.fr/*/*/publicite.js$script
+@@||foglio.basilic.io/ad/basilic.adsense.js$script
+! jyllands-posten.dk
+! https://github.com/reek/anti-adblock-killer/issues/1031
+@@||jyllands-posten.dk/js/ads.js$script
+! rte.ie
+! https://github.com/reek/anti-adblock-killer/issues/1030
+! https://github.com/reek/anti-adblock-killer/issues/370
+@@||bs.serving-sys.com/crossdomain.xml$object-subrequest,domain=rte.ie
+! outlook.live.com
+! https://github.com/reek/anti-adblock-killer/issues/1022
+outlook.live.com###owaadbar
+! shencomics.com
+! http://pastebin.com/8EjnmMne
+! https://github.com/reek/anti-adblock-killer/issues/1036
+@@||adr.realclick.co.kr/favicon.ico$subdocument,image,domain=shencomics.com
+! lolsy.tv
+! https://github.com/reek/anti-adblock-killer/issues/1038
+lolsy.tv##.reklama-sidebar
+! playonlinux.com
+! https://github.com/reek/anti-adblock-killer/issues/1041
+!@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=playonlinux.com
+!@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=playonlinux.com
+playonlinux.com###ads + .login
+! wired.com
+! https://greasyfork.org/en/forum/discussion/8235
+!@@||wired.com^$script
+! onperiscope.com
+! https://greasyfork.org/forum/discussion/8223
+onperiscope.com#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onperiscope.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=onperiscope.com
+! downloads.codefi.re
+! https://github.com/reek/anti-adblock-killer/issues/1048
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=downloads.codefi.re
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=downloads.codefi.re
+! settlersonlinemaps.com
+! https://github.com/reek/anti-adblock-killer/issues/1051
+settlersonlinemaps.com###prb
+! hentai-foundry.com (var noadblocker=true;)
+! https://github.com/reek/anti-adblock-killer/issues/1059
+@@||img.hentai-foundry.com/themes/default/js/adv.js$script
+! massdj.org
+! https://github.com/reek/anti-adblock-killer/issues/1060
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=massdj.org
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=massdj.org
+! abysstream.com
+! https://github.com/reek/anti-adblock-killer/issues/1062
+@@||abysstream.com/ads.js$script
+! cekresi.com
+! https://github.com/reek/anti-adblock-killer/issues/1064
+cekresi.com##.pleasehideadblkuc.popio
+! gamersglobal.de
+! https://github.com/reek/anti-adblock-killer/issues/1068
+@@||gamersglobal.de/wbg/www/delivery/spcjs.js$script
+! auto.cz
+! https://github.com/reek/anti-adblock-killer/issues/1071
+@@||auto.cz/auto/skins/2012/js/advertisment.js$script
+! dragoart.com ()
+! https://github.com/reek/anti-adblock-killer/issues/1069
+@@||dragoart.com/ads.js$script,~third-party
+! trading-evolution.com
+! https://github.com/reek/anti-adblock-killer/issues/1070
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=trading-evolution.com
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=trading-evolution.com
+! creativeuncut.com
+! https://github.com/reek/anti-adblock-killer/issues/1072
+creativeuncut.com###g_abox
+! hrej.cz
+! https://greasyfork.org/fr/forum/discussion/8349
+@@||go.cz.bbelements.com/bb/bb_one2n.$script,domain=hrej.cz
+! nu.nl
+! https://github.com/reek/anti-adblock-killer/issues/1076
+@@||nu.nl/static/js/advertising.js$script
+! sport1.de
+! https://github.com/reek/anti-adblock-killer/issues/1075
+! http://pastebin.com/wLKxczeS
+sport1.de#@#.pub_300x250
+sport1.de#@#.pub_300x250m
+sport1.de#@#.pub_728x90
+sport1.de#@#.text-ad
+sport1.de#@#.textAd
+sport1.de#@#.text_ad
+sport1.de#@#.text_ads
+sport1.de#@#.text-ads
+sport1.de#@#.text-ad-links
+@@||trackertest.org/tracker.js$domain=sport1.de
+! mocospace.com
+! https://github.com/reek/anti-adblock-killer/issues/1008
+! http://pastebin.com/XAYLdNN8
+mocospace.com#@#.dfp_ad
+mocospace.com#@#.ads1x1
+@@/html/images/blank.png$image,domain=mocospace.com
+mocospace.com###dialog-adblocker
+mocospace.com##.jqmOverlay
+! filikula.com
+! PM
+filikula.com#@#.afs_ads
+@@||filikula.com/wp-admin/admin-ajax.php$xmlhttprequest
+! ruleporn.com
+! https://github.com/reek/anti-adblock-killer/issues/1079
+ruleporn.com#@##adsense
+! oglaszamy24.pl
+! https://github.com/reek/anti-adblock-killer/issues/1090
+@@||oglaszamy24.pl/js-css/reklamy/bannery/google_ads/ad/banner/adv.js$script
+! abovetopsecret.com
+! https://github.com/reek/anti-adblock-killer/issues/1093
+@@||abovetopsecret.com/ads.html$subdocument
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -2060,6 +2253,7 @@ se.pl###adb_popup
 ||whackyvidz.com/visitScript/$script,third-party
 ||youfap.me/visitScript/$script,third-party
 ||yyv.co/visitScript/$script,third-party
+||zatnawqy.net/visitScript/$script,third-party
 ||zff.co/visitScript/$script,third-party
 ! linkbucks.com (Full Page Script)
 ||allanalpass.com/Webservices/jsParseLinks.aspx$script,third-party
@@ -2099,6 +2293,7 @@ se.pl###adb_popup
 ||whackyvidz.com/Webservices/jsParseLinks.aspx$script,third-party
 ||youfap.me/Webservices/jsParseLinks.aspx$script,third-party
 ||yyv.co/Webservices/jsParseLinks.aspx$script,third-party
+||zatnawqy.net/Webservices/jsParseLinks.aspx$script,third-party
 ||zff.co/Webservices/jsParseLinks.aspx$script,third-party
 ! linkbucks.com (Load Target Url)
 @@||allanalpass.com/intermission/loadTargetUrl$xmlhttprequest
@@ -2138,9 +2333,10 @@ se.pl###adb_popup
 @@||whackyvidz.com/intermission/loadTargetUrl$xmlhttprequest
 @@||youfap.me/intermission/loadTargetUrl$xmlhttprequest
 @@||yyv.co/intermission/loadTargetUrl$xmlhttprequest
+@@||zatnawqy.net/intermission/loadTargetUrl$xmlhttprequest
 @@||zff.co/intermission/loadTargetUrl$xmlhttprequest
 ! linkbucks.com (Anti-Adblock)
-@@|http://*.net/*/$subdocument,third-party,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|cash4links.co|deb.gs|drstickyfingers.com|dyo.gs|eafyfsuh.net|fapoff.com|filesonthe.net|freean.us|freegaysitepass.com|galleries.bz|goneviral.com|hornywood.tv|linkbabes.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|poontown.net|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|sexpalace.gs|theseblogs.com|theseforums.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|youfap.me|yyv.co|zff.co
+@@|http://*.net/*/$subdocument,third-party,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|cash4links.co|deb.gs|drstickyfingers.com|dyo.gs|eafyfsuh.net|fapoff.com|filesonthe.net|freean.us|freegaysitepass.com|galleries.bz|goneviral.com|hornywood.tv|linkbabes.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|poontown.net|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|sexpalace.gs|theseblogs.com|theseforums.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|youfap.me|yyv.co|zatnawqy.net|zff.co 
 ! adf.ly
 ||cdn.adf.ly/js/entry.js$script,third-party
 ||cdn.j.gs/js/entry.js$script,third-party
@@ -2267,8 +2463,6 @@ generatorlinkpremium.com##.secondsky
 @@||static.game-state.com/js/adblock.js$script
 ! gamejolt.com
 gamejolt.com###ima-ad-container
-! mangasproject.net.br
-@@||mangasproject.net.br/assets/js/lib/controllers/Leitor/ads.js$script
 ! playerhd1.pw
 ! playerhd2.pw
 ! https://greasyfork.org/forum/discussion/7424/
@@ -2485,6 +2679,12 @@ zoomtv.me##[class^="topad"]
 ! pxstream.tv
 pxstream.tv###ImpedeTela
 pxstream.tv###mg_dindin
+! 04stream.com
+04stream.com##[id^="adv"]
+04stream.com##[id^="closediv"]
+04stream.com##[id^="otclosediv"]
+! sports4u.tv
+sports4u.tv###adblock
 ! ---------------------------------------------------------------------------------------------------!
 ! Others
 ! ---------------------------------------------------------------------------------------------------!
