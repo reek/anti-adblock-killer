@@ -152,6 +152,101 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Please consult the changelog
 
 ## Changelog
+##### Release 9.3 (February 29, 2016)
+> Script
+* Improve: Antiblock (generic)
+* Kill: canRunAds (generic)
+* Kill: leporno.org
+* Kill: mac4ever.com
+* Kill: xstory-fr.com
+* Kill: hentaifr.net
+* Kill: hentaihaven.org
+* Kill: filmstreaming-hd.com
+* Kill: filmvf.net
+* Kill: uploadshub.com
+* Kill: moje-filmy.tk (ads)
+* Kill: dasolo.org
+* Kill: mangas.zlx.com.br
+* Kill: mangasproject.com.br 
+* Kill: mangasproject.net.br
+* Kill: fullstuff.net
+* Kill: zeusnews.it
+* Kill: cheminots.net
+* Kill: filespace.com
+* Kill: lolsy.tv
+* Kill: free-steam-giveaways.com
+* Kill: multiup.org
+* Kill: exrapidleech.info
+* Kill: animes-mangas-ddl.com
+* Kill: noticiasautomotivas.com.br
+* Kill: backin.net
+* Kill: onmeda.de
+* Kill: darkstars.org
+* Kill: corepacks.com
+* Exclude: dolldivine.com 
+* Kill: petitchef.ro
+* Kill: link.tl
+
+> Liat
+* Kill: mangas.zlx.com.br
+* Kill: mangasproject.com.br 
+* Kill: mangasproject.net.br
+* Kill: telegraaf.nl
+* Kill: telegraph.co.uk
+* Kill: bleachmx.co
+* Kill: notre-planete.info
+* Kill: designtaxi.com
+* Kill: videomega.tv
+* Kill: dasolo.org
+* Kill: twojeip.wp.pl
+* Kill: satoshiquiz.com
+* Kill: gazetaprawna.pl
+* Kill: hitek.fr
+* Kill: sportdeutschland.tv
+* Kill: vtele.ca
+* Kill: f1i.com
+* Kill: wallpapermania.eu
+* Kill: lepoint.fr
+* Kill: jyllands-posten.dk
+* Kill: sms-receive.net
+* Kill: afreesms.com
+* Kill: rte.ie
+* Kill: outlook.live.com
+* Kill: shencomics.com
+* Kill: playonlinux.com
+* Kill: cnx-software.com
+* Kill: mangahen.com
+* Kill: onperiscope.com
+* Kill: downloads.codefi.re
+* Kill: settlersonlinemaps.com
+* Kill: pornve.com
+* Kill: hentai-foundry.com
+* Kill: massdj.org
+* Kill: abysstream.com
+* Kill: cekresi.com
+* Kill: gamersglobal.de
+* Kill: auto.cz
+* Kill: dragoart.com
+* Kill: trading-evolution.com
+* Kill: creativeuncut.com
+* Kill: hrej.cz
+* Kill: vvvvid.it
+* Kill: habrahabr.ru
+* Kill: megamozg.ru
+* Kill: geektimes.ru
+* Kill: debridnet.com
+* Kill: nu.nl
+* Kill: sport1.de
+* Kill: mocospace.com
+* Kill: filikula.com
+* Kill: ruleporn.com
+* Kill: apkmirror.com
+* Kill: oglaszamy24.pl
+* Kill: zatnawqy.net
+* Kill: abovetopsecret.com
+
+
+## Changelog
 ##### Release 9.2 (February 2, 2016)
 > Script
 * Update: metadata block
