@@ -1769,9 +1769,9 @@ rlsbb.movie7share.net##.information > [color="red"] > H3
 ! debridnet.com
 ! https://github.com/reek/anti-adblock-killer/issues/1077
 ! https://github.com/reek/anti-adblock-killer/issues/836
-||debridnet.com/blocker.js$script
-||debridnet.com/b1.js$script
-||debridnet.com/b2.js$script
+@@||debridnet.com/b1.js$script
+!@@||debridnet.com/b2.js$script
+@@||tags.h12-media.com/load.js$script,domain=debridnet.com
 ! wwwshooter.com
 ! https://github.com/reek/anti-adblock-killer/issues/835
 @@||wwwshooter.com/js/adblockdetect/_advertisement.js$script
