@@ -45,10 +45,10 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 > ##### Note: uBlock Origin, you must enable AakList in Options -> 3rd-party-filters and [Apply changes].
 
 #### Step 3: UserScript
-* [Install](http://tinyurl.com/mvpl5ku) *from greasyfork.org*
-* [Install](http://tinyurl.com/k39p6tz) *from openuserjs.org*
-* [Install](http://tinyurl.com/ong3bfe) *from github.com*
-* [Install](http://tinyurl.com/nd4qwlz) *from reeksite.com*
+* [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
+* [Install](https://openuserjs.org/install/reek/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
+* [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
+* [Install](http://reeksite.com/anti-adblock-killer/anti-adblock-killer.user.js) *from reeksite.com*
 
 > ##### Note: [Test](http://tinyurl.com/qecfa7w)
 
@@ -58,8 +58,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Share It (Social Network, Forums, Blogs, etc.)
 * Follow It ([Twitter](https://twitter.com/antiadbkiller))
 * Become a Fan
-* Report Anti-Adblockers
-
+* [Report Anti-Adblockers](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
 ## Features
 * Detect & Kill Anti-Adblockers
@@ -151,7 +150,10 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 ##### Custom
 * Please consult the changelog
 
+
 ## Changelog
+
+
 ##### Release 9.3 (February 29, 2016)
 > Script
 * Improve: Antiblock (generic)
