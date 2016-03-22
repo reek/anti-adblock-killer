@@ -180,6 +180,11 @@ gq.com#@#.text-ad-links
 ! test: http://trserver1.site40.net/projects/AdDefender/app-fullbanner.php.html
 ! issue: https://github.com/reek/anti-adblock-killer/issues/941
 @@/AdDefender/adwordstracking.js$script
+! Sorry AdBlocker
+! http://wp.openwill.jp/sorry-adblocker/
+! https://wordpress.org/plugins/sorry-adblocker/
+! test: http://wp.openwill.jp/sab-demo/
+/wp-content/plugins/sorry-adblocker/js/sab.js$script
 ! Anti-Adblock (from easylist)
 ! ---------------------------------------------------------------------------------------------------!
 /ad-blocking-detector/*
