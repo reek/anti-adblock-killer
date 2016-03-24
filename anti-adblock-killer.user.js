@@ -3784,6 +3784,20 @@ Aak = {
         }
       }
     },
+    lefigaro_fr : {
+      host : ['www.lefigaro.fr', 'lefigaro.fr'],
+      onAlways : function () {
+      	// Cancel effect on text
+        Aak.addStyle('.fig-article-body {color: black; text-shadow: none;}');
+      }
+    },
+    clubic_com : {
+      host : ['www.clubic.com', 'clubic.com'],
+      onAlways : function () {
+      	// Hide the iframe blocking the view
+        Aak.addStyle('iframe {pointer-events: none; opacity: 0; }');
+      }
+    },
     // Nederland
     rtlxl_nl : {
       // test: http://tinyurl.com/l2zkv3d
