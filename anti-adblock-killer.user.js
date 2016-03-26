@@ -4284,6 +4284,13 @@ Aak = {
         }
       }
     },
+    windows7themes : {
+      host : ['windows7themes.net'],
+      onStart : function () {
+        Aak.addBaitElement('div#partnerbox1');
+        Aak.addStyle("#partnerbox1 { height: 1px; }");
+      }
+    },
     // --------------------------------------------------------------------------------------------
     // Generic
     // --------------------------------------------------------------------------------------------
