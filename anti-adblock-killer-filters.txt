@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AakList (Anti-Adblock Killer)
 ! Author: Reek | http://reeksite.com/
-! Version: 9.3
+! Version: 9.4
 ! Expires: 1 days
 ! License: https://creativecommons.org/licenses/by-sa/4.0/
 ! Homepage: https://github.com/reek/anti-adblock-killer/
@@ -58,7 +58,6 @@
 ! AntiAdblock (D3xt3r)
 ! http://d3xt3r.com/anti-adblock?test (blockblockA)
 ! Default
-@@/advertisement.js$script
 @@/advertisement*.js$script
 @@/advert.js$script,domain=~adultmult.tv
 ! FFBS Ad Blocker (to see)
@@ -119,7 +118,7 @@
 @@/plugins/blockalyzer-adblock-counter/js/advert.js$script
 ! Ad Blocking Detector
 ! http://adblockingdetector.jtmorris.net/demo/
-@@/plugins/ad-blocking-detector/assets/js/advertisement.js$script
+@@/plugins/ad-blocking-detector/assets/js/$script
 ! AdBlock Notify
 ! http://b-website.com/adblock-notify-plugin-for-wordpress
 ! https://greasyfork.org/en/forum/discussion/7502
@@ -152,6 +151,10 @@ b-website.com#@##adsense
 ! http://schema.org/WPAdBlock
 ! https://github.com/reek/anti-adblock-killer/issues/821
 #@#div[itemtype="http://schema.org/WPAdBlock"]
+! KillAdBlock
+! http://tinyurl.com/zl2kxmq
+/kill-adblock//js/function.js$script
+/kill-adblock/js/function.js$script
 ! FuckAdBlock & BlockAdBlock (generic)
 ! 3x: http://fuckadblock.sitexw.fr/
 ! 4x: http://fuckadblock.sitexw.fr/beta/
@@ -180,6 +183,11 @@ gq.com#@#.text-ad-links
 ! test: http://trserver1.site40.net/projects/AdDefender/app-fullbanner.php.html
 ! issue: https://github.com/reek/anti-adblock-killer/issues/941
 @@/AdDefender/adwordstracking.js$script
+! Sorry AdBlocker
+! http://wp.openwill.jp/sorry-adblocker/
+! https://wordpress.org/plugins/sorry-adblocker/
+! test: http://wp.openwill.jp/sab-demo/
+/wp-content/plugins/sorry-adblocker/js/sab.js$script
 ! Anti-Adblock (from easylist)
 ! ---------------------------------------------------------------------------------------------------!
 /ad-blocking-detector/*
@@ -333,7 +341,6 @@ seekingalpha.com###alphabox-modal-overlay
 seekingalpha.com###readlater_register_login
 ! jheberg.net
 @@||jheberg.net/js/*_advertisement.js$script
-@@||jheberg.net/js/advertisement_*.js$script
 jheberg.net#@##ads_bottom
 jheberg.net##.jadb
 jheberg.net##.loading-background
@@ -399,16 +406,17 @@ anisearch.com##.box-error
 ! dailybitcoins.org
 dailybitcoins.org#@#.ad-img
 @@||dailybitcoins.org/banners/$image
-! freebitco.in
-@@||pagead2.googlesyndication.com/pagead/js/$domain=freebitco.in
-@@||freebitco.in/adsbygoogle.js$script
-@@||freebitco.in/show_ad.js$script
-@@||freebitco.in^$elemhide
-! freedoge.co.in
-@@||pagead2.googlesyndication.com/pagead/js/$domain=freedoge.co.in
-@@||freedoge.co.in/adsbygoogle.js$script
-@@||freedoge.co.in/show_ad.js$script
-@@||freedoge.co.in^$elemhide
+! freebitco.in / freedoge.co.in
+! https://github.com/reek/anti-adblock-killer/issues/498
+! https://github.com/reek/anti-adblock-killer/issues/372
+! https://github.com/reek/anti-adblock-killer/issues/59
+! http://pastebin.com/KXgLSQxZ
+freebitco.in,freedoge.co.in#@##box_ad_middle
+freebitco.in,freedoge.co.in#@##main_content_ad_left
+freebitco.in,freedoge.co.in#@#.adsbygoogle
+freebitco.in,freedoge.co.in#@#.ad-img
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=freebitco.in|freedoge.co.in
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=freebitco.in|freedoge.co.in
 ! 2unlimited.info
 @@||2unlimited.info/js/adsense.js
 ! anime-shinden.info
@@ -447,11 +455,8 @@ freedom-ip.com#@#.pub_vertical div
 avaxhome.cc##.adblock-warning
 ! fichier.net
 fichier.net#@##contentAd
-! pic4you.ru
-@@||pic4you.ru/js/advertisement_*.js$script
-pic4you.ru##.centerdiv
-! pic5you.ru
-@@||pic5you.ru/js/advertisement_*.js$script
+! pic4you.ru / pic5you.ru
+pic4you.ru,pic5you.ru##.centerdiv
 ! forum.thgtr.com
 forum.thgtr.com##.block_uyari
 ! exashare.com
@@ -555,7 +560,7 @@ clubedohardware.com.br#@#.ipsAd
 @@||ailde.biz/a.sponsorads.js$domain=cbs.com,script
 ! gamingroom.tv
 gamingroom.tv#@#.adsbygoogle
-@@||ad4.liverail.com^$xmlhttprequest
+@@||ad4.liverail.com^$xmlhttprequest,domain=gamingroom.tv
 ! upf.co.il
 @@||upf.co.il/advertisment.js$script
 ! paidverts.com
@@ -650,9 +655,6 @@ apkmirror.com#@#.adsbygoogle
 latesthackingnews.com#@#.afs_ads
 ! streamlive.to
 streamlive.to###adblockplus
-! knowlet3389.blogspot.com
-knowlet3389.blogspot.com#@##gAds
-@@||pagead2.googlesyndication.com/pagead/js/$script,domain=knowlet3389.blogspot.com
 ! gtaxscripting.blogspot.com
 gtaxscripting.blogspot.com#@##AdSense2
 @@||pagead2.googlesyndication.com/pagead/js/$script,domain=gtaxscripting.blogspot.com
@@ -962,10 +964,8 @@ simply-debrid.com#@##adsense
 @@||urbeez.com^$elemhide
 @@||urbeez.com^$script
 ! WP.tv
-@@||rek.www.wp.pl/vad.xml$xmlhttprequest
-@@||rek.www.wp.pl/?rekid=$script
-@@||adv.wp.pl/RM/Box/*/advertisement.js$script
-@@||adv.wp.pl/RM/Box/*/x.gif$image
+! https://github.com/reek/anti-adblock-killer/issues/543
+@@||wp.pl/bar.gif$xmlhttprequest
 ! sparkylinux.org
 @@||sparkylinux.org/images/ad/$image
 ! demonoid.pw
@@ -1337,9 +1337,12 @@ popeoftheplayers.eu###html4
 ! https://github.com/reek/anti-adblock-killer/issues/567
 @@||krs-online.com.pl/js/showads.js$script
 ! sc2casts.com
+! https://github.com/reek/anti-adblock-killer/issues/1220
+! https://github.com/reek/anti-adblock-killer/issues/1105
 ! https://github.com/reek/anti-adblock-killer/issues/880
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=sc2casts.com
 @@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=sc2casts.com
+@@||pagead2.googlesyndication.com/pagead/osd.js$script,domain=sc2casts.com
 ! nnm-club.ws
 ! https://greasyfork.org/forum/discussion/5923
 @@||assets.nnm-club.ws/forum/misc/js/advertising.js$script
@@ -1461,8 +1464,10 @@ inwestycje.pl###show-message
 ! https://github.com/reek/anti-adblock-killer/issues/643
 @@||bajaenlaces.com/adblock.js$script
 ! 8muses.com
+! https://greasyfork.org/forum/discussion/8515
+! https://github.com/reek/anti-adblock-killer/issues/1099
 ! https://greasyfork.org/en/forum/discussion/6407
-@@||8muses.com/data/web/js/adverts.js$script
+8muses.com#@#.adsbox
 ! videoo.info
 ! https://github.com/reek/anti-adblock-killer/issues/646
 @@||videoo.info/show_ads.js$script,domain=videoo.info
@@ -1733,10 +1738,9 @@ purevid.com#@##ad
 @@||go.idmnet.bbelements.com/please/showit/$script,domain=cba.pl|j.pl|c0.pl|y0.pl
 ! voyageforum.com
 ! https://github.com/reek/anti-adblock-killer/issues/816
-voyageforum.com###mainColumn > div[id][style*="text-align"][style*="justify"]:first-child
-voyageforum.com##div.PostAd
-voyageforum.com##div[id^="betAds"]
-voyageforum.com###mainColumn [id^="mainposttravelsbox"]
+@@||images.voyageforum.com^$image
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=voyageforum.com
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=voyageforum.com
 ! pssite.com
 ! https://github.com/reek/anti-adblock-killer/issues/820
 pssite.com#@#.adver
@@ -1766,12 +1770,15 @@ freeiphone.fr#@##adsense
 ! movie7share.net
 ! https://github.com/reek/anti-adblock-killer/issues/834
 rlsbb.movie7share.net##.information > [color="red"] > H3
-! debridnet.com
+! debridnet.com / livedebrid.com
+! https://github.com/reek/anti-adblock-killer/issues/1142
 ! https://github.com/reek/anti-adblock-killer/issues/1077
 ! https://github.com/reek/anti-adblock-killer/issues/836
-||debridnet.com/blocker.js$script
-||debridnet.com/b1.js$script
-||debridnet.com/b2.js$script
+@@||debridnet.com/b1.js$script
+@@||debridnet.com/b2.js$script
+@@||livedebrid.com/b1.js$script
+@@||livedebrid.com/b2.js$script
+@@||tags.h12-media.com/load.js$script,domain=debridnet.com|livedebrid.com
 ! wwwshooter.com
 ! https://github.com/reek/anti-adblock-killer/issues/835
 @@||wwwshooter.com/js/adblockdetect/_advertisement.js$script
@@ -1944,6 +1951,7 @@ cnx-software.com##img[src="/pic/support_cnx-software.png"]
 ! https://github.com/reek/anti-adblock-killer/issues/942
 world4ufree.cc#@#.afs_ads
 ! srnk.co
+! https://github.com/reek/anti-adblock-killer/issues/1178
 ! https://github.com/reek/anti-adblock-killer/issues/944
 @@||srnk.co/js/ads.js$xmlhttprequest
 ! pornve.com
@@ -2045,9 +2053,6 @@ se.pl###adb_popup
 ! bleachmx.co
 ! https://github.com/reek/anti-adblock-killer/issues/1005
 bleachmx.co#@##adsense
-! talktv.vn
-! https://github.com/reek/anti-adblock-killer/issues/995
-@@||talktv.vn/resource/third-party/jwplayer/ads.js$object-subrequest
 ! dasolo.org
 ! https://github.com/reek/anti-adblock-killer/issues/1018
 dasolo.org##[align="center"] > SPAN > SPAN[style="font-weight: bold; color: rgb(131, 0, 14);"]
@@ -2088,9 +2093,7 @@ outlook.live.com###owaadbar
 lolsy.tv##.reklama-sidebar
 ! playonlinux.com
 ! https://github.com/reek/anti-adblock-killer/issues/1041
-!@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=playonlinux.com
-!@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=playonlinux.com
-playonlinux.com###ads + .login
+playonlinux.com###menu_droite > .login > div
 ! wired.com
 ! https://greasyfork.org/en/forum/discussion/8235
 !@@||wired.com^$script
@@ -2175,6 +2178,251 @@ ruleporn.com#@##adsense
 ! abovetopsecret.com
 ! https://github.com/reek/anti-adblock-killer/issues/1093
 @@||abovetopsecret.com/ads.html$subdocument
+! seoghoer.dk
+! https://github.com/reek/anti-adblock-killer/issues/1096
+seoghoer.dk#@#.afs_ads
+||allercdn.net/randomurl.js$script,domain=seoghoer.dk
+! dama.bg
+! https://github.com/reek/anti-adblock-killer/issues/1100
+@@||dama.bg^*/js/ad$script
+! upvast.com
+! https://github.com/reek/anti-adblock-killer/issues/1102
+@@||upvast.com/pop.js$script
+! theguardian.com
+! https://github.com/reek/anti-adblock-killer/issues/1107
+theguardian.com##.js-adblock-sticky
+theguardian.com##.site-message--adblock-message
+! dlh.net
+! https://github.com/reek/anti-adblock-killer/issues/1108
+@@||dlh.net/ads.html$subdocument
+! 3dsthem.es
+! https://github.com/reek/anti-adblock-killer/issues/1109
+@@||3dsthem.es/js/ads.js$script
+! computerworld.com.au
+! https://github.com/reek/anti-adblock-killer/issues/1113
+||cdn.computerworld.com.au/compressor-staticfiles/adsmin/idg_gpt_pipeline_generated.js$script
+! vipracing.info
+! https://github.com/reek/anti-adblock-killer/issues/818
+vipracing.info##.in-video-adds
+! lol.moa.tw
+! https://github.com/reek/anti-adblock-killer/issues/1114
+lol.moa.tw#@#.adsbygoogle
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=lol.moa.tw
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=lol.moa.tw
+!! mangamint.com
+@@||image.mangabird.me/sites/default/files/selfupload/*$image,domain=mangamint.com
+mangamint.com#@#.ad728
+! clikcoin.pl
+! https://github.com/reek/anti-adblock-killer/issues/1121
+clikcoin.pl#@##adsense
+! vider.pl
+! https://github.com/reek/anti-adblock-killer/issues/1122
+@@||webshark.pl/adserver/*/main_script.js?advertise_check=1$script,domain=vider.pl
+! halamadrid.pl
+! https://github.com/reek/anti-adblock-killer/issues/1123
+@@||halamadrid.pl/wp-content/plugins/noadblock-nice-message/assets/js/ads.js$script
+! turfomania.fr
+! https://github.com/reek/anti-adblock-killer/issues/1125
+turfomania.fr###adblock-overlay
+! pcworld.co.nz
+! https://github.com/reek/anti-adblock-killer/issues/1126
+||pcworld.co.nz/*pipeline$script
+! bakersfield.com
+! https://github.com/reek/anti-adblock-killer/issues/1117
+@@||googletagservices.com/tag/js/gpt.js$script,domain=bakersfield.com
+! girlstory.kr
+! https://github.com/reek/anti-adblock-killer/issues/1130
+girlstory.kr#@#.adsbygoogle
+! olympiakos-live.gr
+! https://github.com/reek/anti-adblock-killer/issues/1120
+olympiakos-live.gr#@#.afs_ads
+! atdhe domains
+! https://github.com/reek/anti-adblock-killer/issues/1116
+@@||jupako.uk/ads.php$subdocument
+jupako.uk###over-small
+jupako.uk###over-large
+||atdhe.*/new/pu.js$script
+! wurst-client.tk
+! https://github.com/reek/anti-adblock-killer/issues/1134
+wurst-client.tk#@#.adsbygoogle
+! sweclockers.com
+! https://github.com/reek/anti-adblock-killer/issues/1138
+@@||sweclockers.com/js/ad.js$script
+! wstream.video
+! https://github.com/reek/anti-adblock-killer/issues/1137
+@@||ads.ad-center.com/smart_ad/display?$subdocument,domain=wstream.video
+! ria.ru
+! https://github.com/reek/anti-adblock-killer/issues/1136
+ria.ru##.antiblock
+! net.hr
+! https://github.com/reek/anti-adblock-killer/issues/1150
+! https://github.com/reek/anti-adblock-killer/issues/1139
+net.hr#@#.reklama
+! hdmovie14.net
+! https://github.com/reek/anti-adblock-killer/issues/1133
+185.63.252.176#@#div[id^="MarketGid"]
+hdmovie14.net#@#.pub_300x250
+hdmovie14.net#@#.pub_300x250m
+hdmovie14.net#@#.pub_728x90
+hdmovie14.net#@#.text-ad
+hdmovie14.net#@#.textAd
+hdmovie14.net#@#.text_ad
+hdmovie14.net#@#.text_ads
+hdmovie14.net#@#.text-ads
+hdmovie14.net#@#.text-ad-links
+! voici.fr
+! PM
+@@||ops.prismamediadigital.com/js/advertisement.js$xmlhttprequest,domain=voici.fr
+||live.prismamediadigital.com/ops/TRA/ab_ban/$image,domain=voici.fr
+! turkleech.com
+! https://greasyfork.org/en/forum/discussion/8571
+turkleech.com###h237
+! leo.org
+! https://github.com/reek/anti-adblock-killer/issues/1145
+leo.org##div.floatRight.p.tf1
+! joyreactor.cc
+! https://github.com/reek/anti-adblock-killer/issues/1140
+joyreactor.cc##div#sidebar
+! kupongid.ru
+! https://greasyfork.org/en/forum/discussion/8612
+@@||kupongid.ru/design/js/adblock_detector.js$script
+! pornhub.com
+! https://github.com/reek/anti-adblock-killer/issues/887
+@@||media.trafficjunky.net/js/holiday-promo.js$script,domain=pornhub.com
+! hackingwithswift.com
+! https://github.com/reek/anti-adblock-killer/issues/1151
+@@||hackingwithswift.com/js/adsbygoogle.js$script
+! tweaktown.com
+! https://github.com/reek/anti-adblock-killer/issues/1144
+tweaktown.com##[id*="_ADB_"]
+@@||tweaktown.com/zyx?p=
+! vtomske.ru
+! https://github.com/reek/anti-adblock-killer/issues/1149
+@@||st.vtomske.ru/js/adv*.js$script
+! appspot.com
+! https://github.com/reek/anti-adblock-killer/issues/1154
+@@||ge-map-overlays.appspot.com/files/js/ads.js$script
+! serve.netsh.org
+! https://github.com/reek/anti-adblock-killer/issues/1141
+@@||serve.netsh.org/pub/*/ads.js$xmlhttprequest
+! di.se
+! https://github.com/reek/anti-adblock-killer/issues/1159
+@@||di.se/oas/js/analys/ads.js$script
+! trackr.fr
+! PM
+@@||trackr.fr/sites/all/themes/contrib/touch/js/miroirs/adwordstracking.js$script
+! nokiahacking.pl
+! https://github.com/reek/anti-adblock-killer/issues/1162
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=nokiahacking.pl
+@@||pagead2.googlesyndication.com/pagead/js/r*/r*/show_ads_impl.js$script,domain=nokiahacking.pl
+! ekstrabladet.dk
+! https://github.com/reek/anti-adblock-killer/issues/1161
+||ekstrabladet.dk/template/*/shared/js/modules/usercommunication/$script
+! jeja.pl
+! https://github.com/reek/anti-adblock-killer/issues/1163
+jeja.pl#@##bottomAd
+! seguridadwireless.es
+! PM
+@@||googleads.g.doubleclick.net^$subdocument,domain=seguridadwireless.es
+! animevf.tv
+! https://github.com/reek/anti-adblock-killer/issues/1165
+animevf.tv#@#.afs_ads
+! semprot.com
+! https://github.com/reek/anti-adblock-killer/issues/1168
+@@||gambar123.com/js/show_ads.js$script,domain=64.237.43.94|semprot.com
+! brtfix.com
+! PM
+@@||e-mete.com/js/ads.js$script,domain=brtfix.com
+! embedupload.com
+! https://github.com/reek/anti-adblock-killer/issues/1174
+! https://github.com/reek/anti-adblock-killer/issues/1173
+embedupload.com#@#.pub_300x250
+embedupload.com#@#.pub_300x250m
+embedupload.com#@#.pub_728x90
+embedupload.com#@#.text-ad
+embedupload.com#@#.textAd
+embedupload.com#@#.text_ad
+embedupload.com#@#.text_ads
+embedupload.com#@#.text-ads
+embedupload.com#@#.text-ad-links
+! newyorker.com
+! https://github.com/reek/anti-adblock-killer/issues/1177
+newyorker.com#@#.ad-container
+! eskago.pl
+! https://github.com/reek/anti-adblock-killer/issues/1176
+@@||eskago.pl/html/js/ads-header.js$script
+! freetuts.net
+! https://github.com/reek/anti-adblock-killer/issues/1179
+@@||freetuts.net/*/adsense.js$script
+! twnt22.pl
+! https://github.com/reek/anti-adblock-killer/issues/1181
+twnt22.pl#@#.afs_ads
+! lemonde.fr
+! https://github.com/reek/anti-adblock-killer/issues/1186
+@@||lemonde.fr/*/advertisingbanner.js$xmlhttprequest
+! lefigaro.fr
+! https://github.com/reek/anti-adblock-killer/issues/1187
+@@||a.f1g.fr/*/adsense.js$script,domain=lefigaro.fr
+! lexpress.fr
+! https://github.com/reek/anti-adblock-killer/issues/1189
+@@||lexpress.fr/*/ads.css$stylesheet
+! lequipe.fr
+! https://github.com/reek/anti-adblock-killer/issues/1190
+@@||lequipe.fr/*/js/ads-v*.js$script
+@@||smartadserver.com/config.js$script,domain=lequipe.fr
+@@||smartadserver.com/diff/js/smart.js$script,domain=lequipe.fr
+! nouvelobs.com
+! https://github.com/reek/anti-adblock-killer/issues/1201
+||referentiel.nouvelobs.com/js/nobs;manifest-analytics.js$script
+! 20mn.fr
+! https://github.com/reek/anti-adblock-killer/issues/1180
+@@||20mn.fr/bundles/etnatracking/js/adblock.js$script
+! 20min.ch
+! https://github.com/reek/anti-adblock-killer/issues/1198
+||googletagmanager.com/gtm.js$script,domain=20min.ch
+! rtl.fr
+! https://github.com/reek/anti-adblock-killer/issues/1192
+rtl.fr#@##bottomAd
+! larvf.com
+! https://github.com/reek/anti-adblock-killer/issues/1191
+@@||larvf.com/js/ads.js$script
+! mkvcinemas.com
+! https://github.com/reek/anti-adblock-killer/issues/1185
+mkvcinemas.com#@#.afs_ads
+! newhdmovie24.com
+! https://github.com/reek/anti-adblock-killer/issues/1185
+newhdmovie24.com#@#.afs_ads
+! sports4u.tv
+! https://github.com/reek/anti-adblock-killer/issues/1185
+sports4u.tv#@##adblock
+! filesisland.com
+! https://github.com/reek/anti-adblock-killer/issues/1195
+@@||filesisland.com/js/ads.js$script
+! oneplay.tv
+! https://github.com/reek/anti-adblock-killer/issues/1193
+@@||oneplay.tv/embed/darkuzdev_ads.js$script
+! goldenmoustache.com
+! https://github.com/reek/anti-adblock-killer/issues/1200
+||goldenmoustache.com/wp-content/themes/golden-moustache/js/libs/modernizr-$script
+! clubic.com
+! https://github.com/reek/anti-adblock-killer/issues/1196
+! https://greasyfork.org/fr/forum/discussion/8713
+||clubic.com/assets/js/6f34f4c.js$script
+! 6play.fr
+! https://github.com/reek/anti-adblock-killer/issues/1204
+||6play.fr/assets/js/vendors-3600848c1f.js$script
+! bfmtv.com
+! https://github.com/reek/anti-adblock-killer/issues/1209
+bfmtv.com##.geste
+! crunchyroll.com
+! https://github.com/reek/anti-adblock-killer/issues/1206
+@@||crunchyroll.com/*/ads_enabled_flag.js$script
+! vgtv.no
+! https://github.com/reek/anti-adblock-killer/issues/1203
+vgtv.no##.vgtv-advert
+! btaia.com
+! https://github.com/reek/anti-adblock-killer/issues/1213
+@@||btaia.com/bloggerex.js$script
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
@@ -2469,12 +2717,14 @@ gamejolt.com###ima-ad-container
 playerhd1.pw,playerhd2.pw##[id^="total"]
 playerhd1.pw,playerhd2.pw##.ad
 playerhd1.pw,playerhd2.pw###divPanel
-! dinozap.com
-! dinozap.info
+! dinozap.com / dinozap.info / dinostream.pw
 ! https://github.com/reek/anti-adblock-killer/issues/715
-dinozap.com,dinozap.info##[id^="total"]
-dinozap.com,dinozap.info###divPanel
-dinozap.com,dinozap.info##[target="_blank"][href="http://drakulastream.eu"]
+dinozap.com,dinozap.info,dinostream.pw##[id^="total"]
+dinozap.com,dinozap.info,dinostream.pw###divPanel
+dinozap.com,dinozap.info,dinostream.pw##[target="_blank"][href="http://drakulastream.eu"]
+! cinestrenostv.tv
+cinestrenostv.tv##[id^="capa"]
+cinestrenostv.tv##[id^="closeX"]
 ! ---------------------------------------------------------------------------------------------------!
 ! Cloud
 ! ---------------------------------------------------------------------------------------------------!
@@ -2683,8 +2933,6 @@ pxstream.tv###mg_dindin
 04stream.com##[id^="adv"]
 04stream.com##[id^="closediv"]
 04stream.com##[id^="otclosediv"]
-! sports4u.tv
-sports4u.tv###adblock
 ! ---------------------------------------------------------------------------------------------------!
 ! Others
 ! ---------------------------------------------------------------------------------------------------!
