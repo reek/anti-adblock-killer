@@ -60,6 +60,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Become a Fan
 * [Report Anti-Adblockers](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
+
 ## Features
 * Detect & Kill Anti-Adblockers
 * Check if Anti-Adblock Killer list is installed
@@ -146,12 +147,117 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * AntiBlock (BukssaAyman)
 * AdBlock Notify
 * WPAdBlock
+* Sorry AdBlocker
 
 ##### Custom
 * Please consult the changelog
 
 
 ## Changelog
+##### Release 9.4 (March 26, 2016)
+> Script
+* Kill: naturalbd.com
+* Kill: narutoshippudenvf.com
+* Kill: thomas-n-ruth.com
+* Kill: mangamint.com
+* Kill: prem.link
+* Kill: thebadbuzz.com
+* Kill: agarabi.com
+* Kill: onmeda.de
+* Kill: newsinlevels.com
+* Kill: mobile-tracker-free.com
+* Kill: openload.us
+* Kill: cda-online.pl
+* Kill: urbanplanet.org
+* Kill: newyorker.com
+* Kill: moje-filmy.tk (ads)
+* Kill: nicoblog.org
+* Kill: europe1.fr
+* Kill: sadeempc.com
+* Kill: canShowAds (generic)
+* Kill: sports.fr
+* Kill: avmoo.com
+
+> List
+* Kill: KillAdBlock  (generic)
+* Kill: Sorry AdBlocker (generic)
+* Kill: seoghoer.dk
+* Kill: voyageforum.com
+* Kill: 8muses.com
+* Kill: dama.bg
+* Kill: upvast.com
+* Kill: sc2casts.com
+* Kill: theguardian.com
+* Kill: dlh.net
+* Kill: 3dsthem.es
+* Kill: debridnet.com
+* Kill: computerworld.com.au
+* Kill: vipracing.info
+* Kill: lol.moa.tw
+* Kill: mangamint.com
+* Kill: clikcoin.pl
+* Kill: vider.pl
+* Kill: halamadrid.pl
+* Kill: playonlinux.com
+* Kill: turfomania.fr
+* Kill: pcworld.co.nz
+* Kill: bakersfield.com
+* Kill: girlstory.kr
+* Kill: olympiakos-live.gr
+* Kill: wurst-client.tk
+* Kill: sweclockers.com
+* Kill: wstream.video
+* Kill: ria.ru
+* Kill: net.hr
+* Kill: hdmovie14.net
+* Kill: voici.fr
+* Kill: livedebrid.com
+* Kill: turkleech.com
+* Kill: leo.org
+* Kill: dinostream.pw
+* Kill: joyreactor.cc
+* Kill: kupongid.ru
+* Kill: pornhub.com
+* Kill: hackingwithswift.com
+* Kill: tweaktown.com
+* Kill: vtomske.ru
+* Kill: appspot.com
+* Kill: serve.netsh.org
+* Kill: di.se
+* Kill: trackr.fr
+* Kill: nokiahacking.pl
+* Kill: ekstrabladet.dk
+* Kill: jeja.pl
+* Kill: seguridadwireless.es
+* Kill: animevf.tv
+* Kill: semprot.com
+* Kill: brtfix.com
+* Kill: embedupload.com
+* Kill: newyorker.com
+* Kill: eskago.pl
+* Kill: freetuts.net
+* Kill: 20mn.fr
+* Kill: 20mn.ch
+* Kill: twnt22.pl
+* Kill: lemonde.fr
+* Kill: lefigaro.fr
+* Kill: lequipe.fr
+* Kill: nouvelobs.com
+* Kill: clubic.com
+* Kill: rtl.fr
+* Kill: larvf.com
+* Kill: mkvcinemas.com
+* Kill: newhdmovie24.com
+* Kill: sports4u.tv
+* Kill: filesisland.com
+* Kill: freebitco.in
+* Kill: freedoge.co.in
+* Kill: goldenmoustache.com
+* Kill: bfmtv.com
+* Kill: crunchyroll.com
+* Kill: vgtv.no
+* Kill: btaia.com
+
 
 
 ##### Release 9.3 (February 29, 2016)
