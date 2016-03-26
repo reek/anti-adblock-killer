@@ -259,7 +259,6 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Kill: btaia.com
 
 
-
 ##### Release 9.3 (February 29, 2016)
 > Script
 * Improve: Antiblock (generic)
