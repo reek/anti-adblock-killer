@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name Anti-Adblock Killer | Reek
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable.
@@ -69,7 +69,7 @@
   Script
 ======================================================*/
 
-Aak = {
+var Aak = {
   name : 'Anti-Adblock Killer',
   version : '9.5',
   scriptid : 'gJWEp0vB',
@@ -86,7 +86,7 @@ Aak = {
   listURL : "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
   nativeURL : 'https://github.com/reek/anti-adblock-killer/wiki/Native-Mode',
   iconURL : 'https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png',
-  imgBait : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUNCDsIxR/nKAAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAANklEQVRYw+3OMQEAIAwDsA41+FeDmyJjT6Igk+S2fVkybbPpZJmAgICAgICAgICAgICAwHrgA+mMBzm8q/ebAAAAAElFTkSuQmCCCiAJICAJIAo=',
+  imgBait : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAGklEQVR42mNg0GAYBaNgFIyCUTAKRsEoQAYATN8AKYNZ/x4AAAAASUVORK5CYII=',
   initialize : function () {
 
     Aak.registerSettings(); // registering your settings.
