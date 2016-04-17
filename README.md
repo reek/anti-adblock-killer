@@ -114,6 +114,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Adblock &#10004;
 * Adblock Plus &#10004;
 * uBlock Origin &#10004;
+* Adguard AdBlocker &#10004;
 
 
 ## Supported Sites
@@ -154,6 +155,117 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
+##### Release 9.5 (April 17, 2016)
+> Script
+* Improve: BlockAdBlock (generic)
+* Add: metablock connect
+* Kill: onmeda.de
+* Kill: thailande-fr.com
+* Kill: btaia.com
+* Kill: lol.moa.tw
+* Kill: rimladi.com
+* Kill: kitorelo.com
+* Kill: omnipola.com
+* Kill: rockfile.eu
+* Kill: agario.sx
+* Kill: 8muses.com
+* Kill: next-episode.net
+* Kill: tvn.pl
+* Kill: tvn24.pl
+* Kill: player.pl
+* Kill: popmech.ru (exclude)
+* Kill: tusoft.org
+* Kill: hisse.net
+* Kill: debrido.com
+* Kill: debridfast.com
+* Kill: getdebrid.com
+* Kill: debrid.us
+* Kill: todayidol.com
+* Kill: prem.link
+* Kill: whiskyprijzen.com
+* Kill: whiskyprices.co.uk
+* Kill: whiskypreise.com
+* Kill: whiskyprix.fr
+* Kill: europeup.com
+* Kill: nrj.fr
+* Kill: exashare.com
+* Kill: youwatch.org
+* Kill: superanimes.com
+* Kill: cnbeta.com
+* Kill: litv.tv
+* Kill: srnk.co
+* Kill: animmex.co
+* Kill: marketwatch.com
+* Kill: socketloop.com
+* Kill: crackhex.com
+* Kill: revealedtricks4u.com
+* Kill: di.se
+* Kill: computerworlduk.com
+* Kill: pizzamaking.com
+* Kill: computerworm.net
+* Kill: 360haven.com
+* Kill: abcmalayalam.com
+* Kill: slideplayer.pl
+
+> List
+* Improve: AdBlockBlocker (generic)
+* Kill: dl.free.fr
+* Kill: rte.ie
+* Kill: iptvcanales.com
+* Kill: sc2casts.com
+* Kill: blastingnews.com
+* Kill: freevaluator.com
+* Kill: 01net.com
+* Kill: wpmienphi.com
+* Kill: anisubsia.com
+* Kill: theplace2.ru
+* Kill: tut.by
+* Kill: sharefreeall.com
+* Kill: scambiofile.info
+* Kill: robotcoingame.com
+* Kill: monstercoingame.com
+* Kill: wonderlandco.in
+* Kill: remotupload.com
+* Kill: mangabird.me
+* Kill: cbsnews.com
+* Kill: bmw-club.cz
+* Kill: appdn.net
+* Kill: foerderland.de
+* Kill: elfqrin.com
+* Kill: file4go.net
+* Kill: nowdownload.ec
+* Kill: nationalgeographic.com
+* Kill: tutoriels-android.com
+* Kill: smiechawatv.pl
+* Kill: up2stream.com
+* Kill: filmyhd-online.com
+* Kill: 3dsthem.es
+* Kill: larioja.com
+* Kill: smashingmagazine.com
+* Kill: dz-android.com
+* Kill: tvseriesonline.pl
+* Kill: motorsport-total.com
+* Kill: directdownloadph.com
+* Kill: auto14.pw
+* Kill: workupload.com
+* Kill: aquabitcoin.com
+* Kill: dailydoge.org
+* Kill: bachtrack.com
+* Kill: mp3skull.is
+* Kill: sheekyforums.com
+* Kill: pcworld.idg.com.au
+* Kill: tvono.com
+* Kill: dasolo.org
+* Kill: purepc.pl
+* Kill: mtlblog.com
+* Kill: di.se
+* Kill: izzylaif.com
+* Kill: game4free.nl
+* Kill: spieletipps.de
+* Kill: fullmatchesandshows.com
+* Kill: satcesc.com
+
+
 ##### Release 9.4 (March 26, 2016)
 > Script
 * Kill: naturalbd.com
@@ -183,7 +295,6 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Kill: Sorry AdBlocker (generic)
 * Kill: seoghoer.dk
 * Kill: voyageforum.com
-* Kill: 8muses.com
 * Kill: dama.bg
 * Kill: upvast.com
 * Kill: sc2casts.com
@@ -2159,7 +2270,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## License 
-* [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
 
 
 ## Mirrors
