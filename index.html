@@ -126,7 +126,7 @@
       <div class="fieldset center">
         <h2>Browser (Ad-Blocker)</h2>
         <p>Necessary to execute <b>AakList</b></p>
-        <p><a class="button hvr-bounce-to-bottom" href="//getadblock.com/">AdBlock</a> or <a class="button hvr-bounce-to-bottom" href="//adblockplus.org/">AdBlock Plus</a> or <a class="button hvr-bounce-to-bottom" href="//github.com/gorhill/uBlock">uBlock Origin</a></p>
+        <p><a class="button hvr-bounce-to-bottom" href="//getadblock.com/">AdBlock</a> or <a class="button hvr-bounce-to-bottom" href="//adblockplus.org/">AdBlock Plus</a> or <a class="button hvr-bounce-to-bottom" href="//github.com/gorhill/uBlock">uBlock Origin</a> or <a class="button hvr-bounce-to-bottom" href="//adguard.com/en/adguard-adblock-browser-extension/overview.html">Adguard AdBlocker</a></p>
 
         <h2>Anti-Adblock Killer (List)</h2>
         <p>Click to add it automatically</p>
@@ -137,18 +137,7 @@
         </p>
       </div>
 
-      <p class="center"><a href="javascript:void($('#howto').slideToggle());">How to add/update AakList ?</a></p>
-
-      <div id="howto" class="fieldset">
-        <h5>Add</h5>
-        <div>Adblock: <span class="small code">Options -> Filterlist -> Custom filter lists -> Enter a AakList URL and click "Subscribe"</span></div>
-        <div>Adblock Plus: <span class="small code">Options -> Filter lists -> Add filter subscription -> Enter a AakList URL and click "Add"</span></div>
-        <div>uBlock Origin: <span class="small code">Options -> 3rd-party-filters -> Enable AakList -> Click "Apply changes"</span></div>
-        <h5>Update</h5>
-        <div>Adblock: <span class="small code">Options -> Filterlist -> Click "Update now"</span></div>
-        <div>Adblock Plus: <span class="small code">Options -> Filter lists -> Click "Update now"</span></div>
-        <div>uBlock Origin:<span class="small code"> Options -> 3rd-party-filters -> Click "Update now"</span></div>
-      </div>
+      <p class="center"><a href="//github.com/reek/anti-adblock-killer/wiki/Add-or-update">How to add/update AakList ?</a></p>
 
       <h3>Compatible</h3>
       <div class="fieldset center">
@@ -205,7 +194,7 @@
                   $('#contact-form').html('<h4>' + textStatus + '</h4>');
                 })
                 .done(function(data) {
-                  $('#contact-form').html('<h4>' + data + '</h4>');
+					$('#contact-form').html('<h4>' + data + '</h4>');
                 });
             }
           }
