@@ -1827,6 +1827,19 @@ Aak = {
         Aak.addBaitElement('ins.adsbygoogle');
       }
     },
+    rellect_adsbygoogle_annihilate : {
+        host : ['scriptznull.nl', 'broadbandforum.co'],
+        onBeforeScript : function (e) {
+            if ((/XenForo\.rellect\.AdBlockDetectorParams\.loadScript/ig.test(Aak.innerScript(e))) == 1) {
+                Aak.stopScript(e);
+                Aak.createElement({
+                    tag : 'script',
+                    text : e.target[('innerText' in document) ? 'innerText' : 'textContent'].replace(/XenForo\.rellect\.AdBlockDetectorParams\.loadScript\s*?\([\s\S]+?\)\s*?;/ig, '').trim(),
+                    replace : e.target
+                });
+            }
+        }
+    },
     bait_tester : {
       host : ['osoarcade.com', 'd3brid4y0u.info', 'fileice.net', 'nosteam.ro', 'openrunner.com', 'easybillets.com', 'spox.fr', 'yovoyages.com', 'tv3.co.nz', 'freeallmusic.info', 'putlocker.com', 'sockshare.com', 'dramapassion.com', 'yooclick.com', 'online.ua'],
       onStart : function () {
