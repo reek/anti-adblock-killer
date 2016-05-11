@@ -1965,7 +1965,7 @@ Aak = {
       },
       onIdle : function () {
         Aak.setElement('#pw_adbox_77830_5_0', {
-          html : '<br>'
+          html : '<br><br>'
         });
       }
     },
