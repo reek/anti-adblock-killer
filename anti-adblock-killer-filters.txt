@@ -2509,6 +2509,10 @@ fullmatchesandshows.com#@#.text-ad-links
 ! satcesc.com
 ! https://github.com/reek/anti-adblock-killer/issues/1327
 @@/banner.gif$image,domain=satcesc.com
+! uol.com.br
+! https://github.com/reek/anti-adblock-killer/issues/1396
+||paywall.*.uol.com.br^
+||www1.folha.uol.com.br/paywall/adblock.shtml^
 !----------------------------------------------------------------------------------------------------!
 ! Social Network (overlay like box)
 !----------------------------------------------------------------------------------------------------!
