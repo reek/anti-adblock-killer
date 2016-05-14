@@ -155,6 +155,93 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
+##### Release 9.6 (May 14, 2016)
+> Script
+Improve: onbeforescript, now compatible with chrome/opera
+Convert: UTF-8 without BOM
+Compatible: strict-mode
+Optimize: Aak.imgBailt
+Improve: Aak.video
+Kill: workupload.com
+Kill: player.pl
+Kill: marketwatch.com
+Kill: videowood.tv
+Kill: receive-a-sms.com
+Kill: wakeupcallme.com
+Kill: ringmycellphone.com
+Kill: faqmozilla.org
+Kill: themarker.com
+Kill: haaretz.co.il
+Kill: exrapidleech.info
+Kill: porosin.co.uk
+Kill: buzina.xyz
+Kill: leecher.us
+Kill: backin.net
+Kill: wstream.video
+Kill: canalwp.com
+Kill: topserialy.sk
+Kill: pcgames-download.net
+Kill: pornve.com
+Kill: alphahistory.com
+Kill: kissasian.com
+Kill: fix blockadblock generic
+Kill: 3dsthem.es
+Kill: manga-news.com
+Kill: game-debate.com
+Kill: 360haven.com
+Kill: tv3play network
+Kill: thememypc.com
+
+> List
+Kill: porncomix.info
+Kill: 20minutes.fr
+Kill: videowood.tv
+Kill: link.tl
+Kill: off-soft.net
+Kill: mrpiracy.club
+Kill: semprot.com
+Kill: yad2.co.il
+Kill: voici.fr
+Kill: detectadblock.com
+Kill: cinemablend.com
+Kill: exrapidleech.info
+Kill: hdzog.com (ads)
+Kill: wallpapershacker.com
+Kill: imgclick.net
+Kill: zevkleizle.com
+Kill: voicetv.co.th
+Kill: vvvvid.it
+Kill: playwire.com
+Kill: passimtv.xyz
+Kill: listamais.com.br
+Kill: snacktv.de
+Kill: euroman.dk
+Kill: titlovi.com
+Kill: dogry.pl
+Kill: telephoneannuaire.fr
+Kill: tiscali.cz
+Kill: clinefree.com
+Kill: spoiler.net
+Kill: onet.pl
+Kill: themarysue.com
+Kill: narcity.com
+Kill: purepc.pl
+Kill: minmote.no
+Kill: schoener-wohnen.de
+Kill: vizer.tv
+Kill: folha.uol.com.br
+Kill: iosworld.pl
+Kill: zarabiajnaokazjach.pl
+Kill: emucr.com
+Kill: ouest-france.fr
+Kill: godt.no
+Kill: mmm.dk
+Kill: topsport.bg
+Kill: darmowa-bramkasms.pl
+Kill: scigacz.pl
+Kill: inc.com
+
+
 ##### Release 9.5 (April 17, 2016)
 > Script
 * Improve: BlockAdBlock (generic)
