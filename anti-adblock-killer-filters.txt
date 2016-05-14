@@ -3310,3 +3310,5 @@ gaara-fr.com###pub01
 gaara-fr.com###ga-skin-left
 gaara-fr.com###ga-skin-right
 gaara-fr.com###ga-skin-top
+! topsport.bg
+@@||partner.googleadservices.com/gpt/$script,domain=topsport.bg
