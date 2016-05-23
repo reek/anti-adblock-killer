@@ -3,15 +3,16 @@
 
 [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate)
  
-## /!\ IMPORTANT /!\
+## ⚠ IMPORTANT ⚠
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
+
 > **BEFORE REPORTING ANYTHING PLEASE READ THIS**
 
 
 ## About
-Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable.
+Anti-Adblock Killer helps you keep your Ad-Blocker active when you visit a website and it asks you to disable.
 
-Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website. 
+It is composed of a user script «AakScript» written in JavaScript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus. The two are complementary and unlock different websites. 
 
 
 ## Donate
