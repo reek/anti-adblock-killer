@@ -1,1 +1,1 @@
-/* (^_^) */
+document.write('<div id="k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I" style="display:none;">(^_^)</div>');
