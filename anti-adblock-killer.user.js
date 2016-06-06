@@ -3,7 +3,7 @@
 // @namespace https://userscripts.org/scripts/show/155840
 // @description Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable.
 // @author Reek | reeksite.com
-// @version 9.6
+// @version 9.7
 // @encoding utf-8
 // @license https://creativecommons.org/licenses/by-sa/4.0/
 // @icon https://raw.github.com/reek/anti-adblock-killer/master/anti-adblock-killer-icon.png
@@ -34,19 +34,20 @@
 // @run-at document-start
 // @connect *
 // ==/UserScript==
+/*jshint newcap:false smarttabs:true*/
 /*=====================================================
   Thanks
-  =======================================================
+======================================================
 
-  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone, M. Silveira, K. MacArthur, M. Ivanov, A. Schmidt, A. Waage, F. Tismer, S. Ehnert, J. Corpus, J. Dluhos, Maklemenz, Strobelix, Modellpilot.EU, E. Benedetti, V. Venditti, Shakos, A. Eliason, A. Saloranta, S. Geiger, A. Otterloo, M. Coppen, S. Fischer, H. Becker, D. Ackerman, S. Pitsch, K. Pertcheck, S. Abel, K. O'Connor, B. Obrien, S. Vogler, S. Goebl, A. Biar, S. Scott, Bassmobile.org, S. Große, M. Peot, R. Chan Balam, L. Bond-Kennedy, R. Emond, A. Pavlov, W. Tracey, A. Sergey, R. López López, R. Reddy Kasireddy, A. Moujeer, M. Betz, M. Lefèvre, R. McCurdy, LR Geeks, M. Beauregard, CasperTech Ltd, M. Dudas, S. Scharf, S. Prokhorov, K. Papalias, J. Wojnowski, B. Curtis, D. Lawrence, D. He, N. Kelsall, Idogewallet, J. Spaulding
+  Donors: M. Howard, Shunjou, Charmine, Kierek93, G. Barnard, H. Young, Seinhor9, ImGlodar, Ivanosevitch, HomeDipo, R. Martin, DrFiZ, Tippy, B. Rohner, P. Kozica, M. Patel, W4rell, Tscheckoff, AdBlock Polska, AVENIR INTERNET, coolNAO, Ben, J. Park, C. Young, J. Bou, M. Cano, J. Jung, A. Sonino, J. Litten, M. Schrumpf, G. Pepe, A. Trufanov, R. Palmer, J. Rautiainen, S. Blystone, M. Silveira, K. MacArthur, M. Ivanov, A. Schmidt, A. Waage, F. Tismer, S. Ehnert, J. Corpus, J. Dluhos, Maklemenz, Strobelix, Modellpilot.EU, E. Benedetti, V. Venditti, Shakos, A. Eliason, A. Saloranta, S. Geiger, A. Otterloo, M. Coppen, S. Fischer, H. Becker, D. Ackerman, S. Pitsch, K. Pertcheck, S. Abel, K. O'Connor, B. Obrien, S. Vogler, S. Goebl, A. Biar, S. Scott, Bassmobile.org, S. Große, M. Peot, R. Chan Balam, L. Bond-Kennedy, R. Emond, A. Pavlov, W. Tracey, A. Sergey, R. López López, R. Reddy Kasireddy, A. Moujeer, M. Betz, M. Lefèvre, R. McCurdy, LR Geeks, M. Beauregard, CasperTech Ltd, M. Dudas, S. Scharf, S. Prokhorov, K. Papalias, J. Wojnowski, B. Curtis, D. Lawrence, D. He, N. Kelsall, Idogewallet, J. Spaulding, S. Lafon, Mat, H. Roberts, C. Hedlund, J. Hawkins
 
-  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT, F4z, Angelsl, Mikhaelk, Marek, Hamsterbacke, Gorhill, Hacker999, xxcriticxx, Skr4tchGr3azyMonkiBallllllZzzz, Giwayume, MrSherlockHolmes
+  Collaborators: InfinityCoding, Couchy, Dindog, Floxflob, U Bless, Watilin, @prdonahue, Hoshie, 3lf3nLi3d, Alexo, Crits, Noname120, Crt32, JixunMoe, Athorcis, Killerbadger, SMed79, Alexander255, Anonsubmitter, RaporLoLpro, Maynak00, Robotex, Vinctux, Blahx, MajkiIT, F4z, Angelsl, Mikhaelk, Marek, Hamsterbacke, Gorhill, Hacker999, xxcriticxx, Skr4tchGr3azyMonkiBallllllZzzz, Giwayume, MrSherlockHolmes, xDarkARG
 
   Users: Thank you to all those who use Anti Adblock Killer, who report problems, who write the review, which add to their favorites, making donations, which support the project and help in its development or promote.
 
 =======================================================
   Mirrors
-=======================================================
+  =======================================================
 
   Github: http://tinyurl.com/mcra3dn
   Greasyfork: http://tinyurl.com/pbbdnh6
@@ -73,7 +74,7 @@
   
   var Aak = {
     name : 'Anti-Adblock Killer',
-    version : '9.6',
+    version : '9.7',
     scriptid : 'gJWEp0vB',
     homeURL : 'https://github.com/reek/anti-adblock-killer/',
     changelogURL : 'https://github.com/reek/anti-adblock-killer#changelog',
@@ -148,7 +149,7 @@
         group : 'debug',
         type : 'checkbox',
         value : false,
-        label : 'Enable debug mode.',
+        label : 'Enable Logs.',
         info : ''
       },
       logInsertedNodes : {
@@ -176,14 +177,21 @@
         group : 'debug',
         type : 'checkbox',
         value : false,
-        label : 'Log xmlhttprequest',
+        label : 'Log HTTP requests',
         info : ''
       },
       logPlayer : {
         group : 'debug',
         type : 'checkbox',
         value : false,
-        label : 'Log player.',
+        label : 'Log player instances.',
+        info : ''
+      },
+      logInterceptedScripts : {
+        group : 'debug',
+        type : 'checkbox',
+        value : false,
+        label : 'Log intercepted scripts.',
         info : ''
       },
       logDetected : {
@@ -238,7 +246,7 @@
       this.info = Aak.opts.debug ? console.info.bind(console, args) : function () {};
       this.error = Aak.opts.debug ? console.error.bind(console, args) : function () {};
       this.warn = Aak.opts.debug ? console.warn.bind(console, args) : function () {};
-      this.detected = Aak.opts.debug && Aak.opts.logDetected ? console.info.bind(console, args) : function () {};
+      //this.detected = Aak.opts.debug && Aak.opts.logDetected ? console.info.bind(console, args) : function () {};
     },
     isTopframe : (parent == self),
     uw : typeof unsafeWindow != 'undefined' ? unsafeWindow : window,
@@ -272,13 +280,6 @@
     },
     reload : function () {
       window.location.reload(true);
-    },
-    ready : function (callback) {
-      if (window.addEventListener !== undefined) {
-        window.addEventListener('load', callback, false);
-      } else {
-        window.attachEvent('onload', callback);
-      }
     },
     contains : function (string, search) {
       return string.indexOf(search) != -1;
@@ -371,7 +372,7 @@
       return Aak.getValue(name);
     },
     schedule : function (days, name, callback) {
-      setTimeout(function () {
+      window.setTimeout(function () {
         var later = isNaN(Aak.getValue(name)) ? 1 : Number(Aak.getValue(name));
         var now = new Date().getTime();
         if (later < now) {
@@ -401,7 +402,7 @@
           callback : function (self) {
 
             // manually remove
-            window.addEventListener("message", function (event) {
+            Aak.onEvent(window, "message", function (event) {
               if (event.data == "removeNotification") {
                 self.remove();
               }
@@ -421,22 +422,18 @@
         Aak.schedule(1, 'nextchecklist', function () {
           Aak.ready(function () {
             Aak.createElement({
-              tag : 'img',
-              id : 'k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I',
-              src : Aak.imgBait,
+              tag : 'script',
+              src : atob('Ly9yZWVrLmdpdGh1Yi5pby9hbnRpLWFkYmxvY2sta2lsbGVyL2syVXc3aXNIck1tNUpYUDFWd2R4YzU2N1pLYzFhWjRJLmpz'),
               append : 'body',
               event : {
+                error : function () {
+                  this.remove();
+                  Aak.info('AakList detected !');
+                },
                 load : function () {
-                  var bait = this;
-                  setTimeout(function () {
-                    if (bait.clientHeight) {
-                      Aak.warn('AakList not detected !');
-                      Aak.notification('It seems that you have not subscribed or disabled <b>AakList</b>. <a href="' + Aak.subscribeURL + '" target="_blank">Subscribe</a> or <a href="' + Aak.settingsURL + '" target="_blank">Disable this alert</a>');
-                    } else {
-                      Aak.info('AakList detected !');
-                    }
-                    bait.remove();
-                  }, 6e4);
+                  this.remove();
+                  Aak.warn('AakList not detected !');
+                  Aak.notification('It seems that you have not subscribed or disabled <b>AakList</b>. <a href="' + Aak.subscribeURL + '" target="_blank">Subscribe</a> or <a href="' + Aak.settingsURL + '" target="_blank">Disable this alert</a>');
                 }
               }
             });
@@ -664,29 +661,63 @@
         return source && source.indexOf(contains) != -1;
       })[0];
     },
-    addScript : function (source) {
+    addScript : function (source, body) {
       var script = document.createElement('script');
-      script.innerHTML = (typeof source === 'function') ? Aak.toText(source) : source.toString();
-      document.head.appendChild(script);
-      document.head.removeChild(script);
+      script.type = "text/javascript";
+      script.innerHTML = (typeof source === 'function') ? Aak.intoString(source) : source.toString();
+      if (body) {
+        document.body.appendChild(script);
+      } else {
+        document.head.appendChild(script);
+      }
+      script.remove();
     },
-    addExternalScript : function (src, callback) {
+    loadScript : function (src, body, onload) {
       var script = document.createElement('script');
+      script.type = "text/javascript";
       script.src = src;
-      script.onload = (typeof callback === 'function') ? callback() : null;
-      document.head.appendChild(script);
-      //document.head.removeChild(script);
+      if (onload) {
+        script.onload = onload;
+      }
+      if (body) {
+        document.body.appendChild(script);
+      } else {
+        document.head.appendChild(script);
+      }
     },
-    toText : function (entry) {
-      if (typeof entry === 'function') {
-        var str = entry.toString();
+    intoString : function (a) {
+      if (typeof a === 'function') {
+        var str = a.toString();
         var first = str.indexOf("{") + 1;
         var last = str.lastIndexOf("}");
         return str.substr(first, last - first).trim();
       } else if (typeof entry === 'object') {
-        return JSON.stringify(entry);
+        return JSON.stringify(a);
       } else { // array or string
-        return entry.toString();
+        return a.toString();
+      }
+    },
+    intoArray : function (a) {
+      if (typeof a === 'object') {
+        return Object.keys(a).map(function (key) {
+          return a[key];
+        });
+      } else if (typeof a === 'string') {
+        return JSON.parse(a);
+      } else if (Array.isArray(a)) {
+        return a;
+      }
+    },
+    intoObject : function (a) {
+      if (typeof a === 'string') {
+        return JSON.parse(a);
+      } else if (Array.isArray(a)) {
+        for (var i = 0, o = {}; i < a.length; ++i) {
+          o[i] = a[i];
+        }
+        return o;
+      } else if (typeof a === 'object') {
+        return a;
       }
     },
     hasElement : function (selector, callback, timeout) {
@@ -710,14 +741,14 @@
         }
       }
     },
-    getElement : function (elem) {
-      if (typeof elem == 'string') {
-        return document.querySelector(elem) || false;
-      } else if (elem instanceof HTMLElement) {
-        return elem;
-      } else {
-        return false;
-        //throw 'Not object or invalid selector';
+    getElement : function (selector, contextNode) {
+      if (typeof selector === 'string') {
+        if (selector.indexOf('/') === 0) { // ex: //img[@class="photo"]
+          return document.evaluate(selector, contextNode || document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        }
+        return (contextNode || document).querySelector(selector);
+      } else if (selector instanceof HTMLElement) {
+        return selector;
       }
     },
     createElement : function (props) {
@@ -821,6 +852,12 @@
         document.head.appendChild(document.createElement('style')).innerHTML = css;
       }
     },
+    loadStyle : function (src) {
+      var style = document.createElement('link');
+      style.rel = "stylesheet";
+      style.href = src;
+      document.head.appendChild(style);
+    },
     getStyle : function (selector, prop) {
       var elem = Aak.getElement(selector);
       if (elem.currentStyle) {
@@ -893,7 +930,7 @@
     fakeFuckAdBlock : function (instanceName, className) {
 
       // inject fake fuckadbluck
-      Aak.addScript(Aak.toText(function () {
+      Aak.addScript(Aak.intoString(function () {
 
           var __CLASSNAME__ = function () {
             var self = this;
@@ -1030,6 +1067,44 @@
         Aak.log(so, clone, obj);
         Aak.replaceElement(so, clone);
       });
+
+    }, // Events
+    onEvent : function (element, type, listener, bubbles) {
+      if (window.addEventListener) { // For all major browsers, except IE 8 and earlier
+        (element || window).addEventListener(type, listener, bubbles || false);
+      } else { // For IE 8 and earlier versions
+        (element || window).attachEvent('on' + type, listener);
+      }
+      return arguments;
+    },
+    offEvent : function (element, type, listener, bubbles) {
+      if (window.removeEventListener) { // For all major browsers, except IE 8 and earlier
+        (element || window).removeEventListener(type, listener, bubbles || false);
+      } else { // For IE 8 and earlier versions
+        (element || window).detachEvent('on' + type, listener);
+      }
+    },
+    emitEvent : function (element, type, detail, bubbles, cancelable) {
+      var event;
+      if (window.CustomEvent) {
+        event = new CustomEvent(type, {
+            "detail" : detail || undefined
+          }, bubbles || false, cancelable || false);
+      } else {
+        event = document.createEvent('CustomEvent');
+        event.initCustomEvent('on' + type, bubbles || false, cancelable || false, {
+          "detail" : detail || undefined
+        });
+      }
+      (element || window).dispatchEvent(event);
+    },
+	detected : function (name) {
+      if (Aak.opts.debug && Aak.opts.logDetected) {
+        Aak.emitEvent(window, 'detected', name);
+      }
+	},
+    ready : function (callback) {
+      Aak.onEvent(window, 'load', callback);
     },
     player : { // http://tinyurl.com/pb6fthj
       input : {
@@ -1252,7 +1327,7 @@
         }
         this.get(id, method);
         this.nameplayer = 'jwplayer5';
-        this.attributes.src = setup.src || "http://player.longtailvideo.com/player.swf"; // v5.10
+        this.attributes.src = setup.src || "http://makeavoice.com/jwplayer/mediaplayer-5.10-licensed/player.swf"; // v5.10 dead http://player.longtailvideo.com/player.swf
         this.attributes.height = setup.height || this.input.node.clientHeight || "100%";
         this.attributes.width = setup.width || this.input.node.clientWidth || "100%";
         this.attributes.dl = setup.file;
@@ -1456,11 +1531,11 @@
               // user config
               Aak.createElement({
                 tag : 'div',
-                html : 'Version: ' + Aak.getVersion() + ' <br>AakScript: true <br>AakList: ' + (Aak.getElement('#k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I').clientHeight === 0) + ' <br>Browser: ' + Aak.getBrowser() + ' <br>ScriptManager: ' + Aak.getScriptManager(),
+                html : 'Version: ' + Aak.getVersion() + ' <br>AakScript: true <br>AakList: ' + (!Aak.getElement('#k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I')) + ' <br>Browser: ' + Aak.getBrowser() + ' <br>ScriptManager: ' + Aak.getScriptManager(),
                 append : '#aak-settings-config'
               });
 
-              // create options checkboxes
+              // create options 
               for (var optName in Aak.options) {
                 if (Aak.options.hasOwnProperty(optName)) {
                   var opt = Aak.options[optName];
@@ -1473,8 +1548,8 @@
                 }
               }
 
-              // add event save button
-              document.getElementById("aak-settings-save").addEventListener("click", function () {
+              // save options 
+              Aak.onEvent(Aak.getElement("#aak-settings-save"), "click", function () {
                 var elems = document.querySelectorAll('.css-checkbox');
                 for (var i = 0; i < elems.length; i++) {
                   var elem = elems[i];
@@ -1592,6 +1667,13 @@
         onIdle : function () {
           Aak.uw.jAntiBlock = function () {};
           Aak.uw.CekBlok = function () {};
+        }
+      },
+      freegameserverhost_com : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1512
+        host : ['freegameserverhost.com'],
+        onStart : function () {
+          Aak.addStyle("#fab13 { height: 11px; }");
         }
       },
       elahmad_com : {
@@ -1729,12 +1811,6 @@
           Aak.addStyle(".ad728 { height: 31px; }");
         }
       },
-      tweaktown_com : {
-        host : ['tweaktown.com'],
-        onStart : function () {
-          Aak.addStyle("#div-gpt-ad-1378071706813-0, #div-gpt-ad-1378150878492-1 { height: 3px; display: none; }");
-        }
-      },
       debrideurstream_fr : {
         host : ['debrideurstream.fr'],
         onStart : function () {
@@ -1811,6 +1887,14 @@
         host : ['mangabird.com'],
         onStart : function () {
           Aak.addStyle(".afs_ads { height: 5px; }");
+        }
+      },
+      kodilive_eu : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1528
+        // source: http://pastebin.com/ZxvXKqtc
+        host : ['kodilive.eu'],
+        onStart : function () {
+          Aak.addStyle(".Ad { height: 5px; }");
         }
       },
       backin_net : {
@@ -1949,25 +2033,6 @@
           });
         }
       },
-      _8muses_com : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1226
-        // issue: https://greasyfork.org/forum/discussion/8515
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1099
-        // issue: https://greasyfork.org/en/forum/discussion/6407
-        // source: http://pastebin.com/bMNDxecs
-        host : ['8muses.com'],
-        onStart : function () {
-          Aak.addScript(function () {
-            _setTimeout = window.setTimeout;
-            window.setTimeout = function (fn, delay) {
-              if (fn.indexOf("$(window).trigger('adblock');") > -1) {
-                return;
-              }
-              _setTimeout.apply(fn, delay);
-            };
-          });
-        }
-      },
       stream4free_eu : {
         host : ['stream4free.eu'],
         onStart : function () {
@@ -1987,16 +2052,84 @@
         }
       },
       _3dsthem_es : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1433
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1275
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1109
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=3dsthem
         host : ['3dsthem.es'],
         onStart : function () {
-          Aak.addStyle("#pw_adbox_77830_5_0 { height: 111px; width: 2px; }");
+          //Aak.addScript(function () {});
         },
+        onBeforeScript : function () {
+        /*
+          return [{
+              contains : 'main.js',
+              external : true,
+              override : '//pastebin.com/raw/2yGRPhRZ'
+            }
+          ];
+        */
+        }
+      },
+      _8muses_com : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=8muses
+        // issue: https://greasyfork.org/forum/discussion/8515
+        // issue: https://greasyfork.org/en/forum/discussion/6407
+        // source: http://pastebin.com/bMNDxecs
+        host : ['8muses.com'],
+        onStart : function () {
+          Aak.addScript(function () {
+            var _setTimeout = window.setTimeout;
+            window.setTimeout = function (fn, delay) {
+              if (fn.toString().indexOf("$(window).trigger('adblock');") > -1) {
+                fn = function () {
+                  console.info(['AntiAdbKiller', location.host, 'Anti-AdBlock intercepted :-)']);
+                };
+              }
+              _setTimeout.call(this, fn, delay);
+            };
+          });
+        }
+      },
+      thechive_com : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1453
+        // source: http://pastebin.com/TdpPyrbb
+        host : ['thechive.com'],
+        onStart : function () {
+          Aak.addScript(function () {
+            Object.defineProperties(window, {
+              stephaneDetector : {
+                value : {
+                  hook : function (cb) {
+                    cb(false);
+                  },
+                  init : function () {},
+                  broadcastResult : function () {}
+                },
+                writable : false
+              }
+            });
+          });
+        }
+      },
+      richonrails_com : {
+        // by: Giwayume
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1447
+        // source: http://pastebin.com/Ewfwg8BG
+        host : ['richonrails.com'],
         onIdle : function () {
-          Aak.setElement('#pw_adbox_77830_5_0', {
-            html : '<br>'
+          Aak.addScript(function () {
+            var adsByGoogleHtml = '"<ins+id="aswift_0_expand"+style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:750px;background-color:transparent"><ins+id="aswift_0_anchor"+style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:750px;background-color:transparent"><iframe+marginwidth="0"+marginheight="0"+vspace="0"+hspace="0"+allowtransparency="true"+scrolling="no"+allowfullscreen="true"+onload="var+i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else+if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"+id="aswift_0"+name="aswift_0"+style="left:0;position:absolute;top:0;"+width="750"+frameborder="0"+height="90"></iframe></ins></ins>"';
+            $.ajax({
+              url : $(".article-content").data("url"),
+              dataType : "script",
+              method : "post",
+              data : {
+                html : adsByGoogleHtml
+              },
+              success : function (result) {
+                var exec = result.replace("$('.article-content')", "$('.article-content-2')");
+                eval(exec);
+              }
+            });
+            $(".article-content").after('<div class="article-content-2"></div>').remove();
           });
         }
       },
@@ -2253,12 +2386,13 @@
 
         }
       },
-      planetatvonlinehd_blogspot : {
-        host : ['planetatvonlinehd.blogspot.'],
-        onAlways : function () {
-          Aak.uw.jQAntiAdsBlock = function () {
-            return false;
-          };
+      planetatvonlinehd_network : {
+		// issue: https://github.com/reek/anti-adblock-killer/issues/1467
+		// issue: https://github.com/reek/anti-adblock-killer/issues/159
+        host : ['planetatvonlinehd.blogspot.', 'planetatvonlinehd.com'],
+        onStart : function () {
+          Aak.addStyle('.adsantilok { height: 1px; }');
+          //Aak.uw.jQAntiAdsBlock = function (){}; // don't work
         }
       },
       beta_speedtest_net : {
@@ -2470,6 +2604,16 @@
           Aak.uw.stopAdBlock = {};
         }
       },
+      diarioinformacion_com : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1550
+        host : ['diarioinformacion.com'],
+        onStart : function () {
+          Object.defineProperty(Aak.uw, 'pr_okvalida', {
+            enumerable : true,
+            value : true
+          });
+        }
+      },
       cnbeta_com : {
         // issue: https://github.com/reek/anti-adblock-killer/issues/1301
         // source: http://pastebin.com/vXNCztwx
@@ -2502,11 +2646,15 @@
         }
       },
       _15min_lt : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/432
-        // source: http://pastebin.com/0cqV8LTY
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=15min.it
+        // source: http://pastebin.com/YWf3HTqr
         host : ['15min.lt'],
-        onAlways : function () {
-          Aak.uw.ado = {};
+        onStart : function () {
+          Object.defineProperty(Aak.uw, 'blocker', {
+            enumerable : true,
+            writable : false,
+            value : undefined
+          });
         }
       },
       vgunetwork_com : {
@@ -2544,7 +2692,7 @@
         }
       },
       eventosppv_me : {
-        // issue:
+        // issue: 
         host : ['eventosppv.me'],
         onIdle : function () {
           Aak.removeElement('#nf37');
@@ -2737,11 +2885,16 @@
         }
       },
       bild_de : {
-        // by: hacker999
-        // issue: https://github.com/reek/anti-adblock-killer/issues/664
-        // source: http://pastebin.com/hKr3BAFF
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=bild
         host : ['bild.de'],
-        onStart : function () {}
+        onBeforeScript : function () {
+          return [{
+              contains : 'http://www.bild.de/wa/ll/bild-de/unangemeldet-42925516.bild.html',
+              external : false,
+              replace : ['javascript', 'void(0);'].join(':')
+            }
+          ];
+        }
       },
       inn_co_il : {
         // issue: https://github.com/reek/anti-adblock-killer/issues/532
@@ -2803,55 +2956,49 @@
         host : ['exrapidleech.info'],
         onStart : function () {
 
-          // 2016.04.22
-          Object.defineProperty(Aak.uw, 'dec_pid', {
-            enumerable : true,
-            value : 383865
-          });
+          var tomorrow = new Date();
+          tomorrow.setDate(tomorrow.getDate() + 1);
 
+          // prevent popup
+          Aak.setCookie('popcashpuCap', 1);
+          Aak.setCookie('popcashpu', 1);
+          Aak.setCookie('nopopatall', tomorrow.getTime().toString());
+          Aak.setCookie('noadvtday', 0);
+          //Aak.setCookie('bv_DSKskdck_s1d', 'bvDSKskdcks1d');
+
+          // hide notice
+          Aak.addStyle('div.container div.row div.col-md-5 div.row fieldset div.alert.alert-danger.lead, div.container div.row div.panel.panel-default div.panel-body p {display:none;}');
+          
+          // prevent redirect to verify page
           Object.defineProperty(Aak.uw, 'bdvbnr_pid', {
             enumerable : true,
-            value : 383865
+            value : []
           });
 
           Aak.addScript(function () {
-
             // prevent popup
             window.open = function () {};
 
-            // add frames
+            // prevent redirect to verify page
             var frame1 = document.createElement('iframe');
             frame1.src = 'http://bdfrm.bidvertiser.com/BidVertiser.dbm?pid=383865&bid=1737418&RD=';
             frame1.id = 'bdvi';
             frame1.style = 'display:none';
-            frame2 = frame1.cloneNode(true);
             document.documentElement.appendChild(frame1);
-            document.documentElement.appendChild(frame2);
           });
-
         }
       },
       vipleague_domains : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/765
-        // issue: https://github.com/reek/anti-adblock-killer/issues/598
-        // issue: https://github.com/reek/anti-adblock-killer/issues/326
-        // issue: https://github.com/reek/anti-adblock-killer/issues/322
-        // issue: https://github.com/reek/anti-adblock-killer/issues/301
-        // issue: https://github.com/reek/anti-adblock-killer/issues/297
-        // issue: https://github.com/reek/anti-adblock-killer/issues/290
-        // issue: https://github.com/reek/anti-adblock-killer/issues/273
-        // issue: https://github.com/reek/anti-adblock-killer/issues/271
-        // +abp rule alt solution
-        host : ['vipleague.is', 'vipleague.ws', 'vipleague.tv', 'vipleague.se', 'vipleague.me', 'vipleague.co', 'vipleague.sx', 'vipleague.ch', 'vipbox.tv', 'vipbox.co', 'vipbox.sx', 'vipboxsa.co', 'vipbox.biz', 'strikeout.co', 'homerun.re', 'vipboxtv.co', 'vipapp.me', 'vipapp.me', 'vipbox.eu', 'vipbox.so'],
+        // note: also killed by AakList
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=vipbox
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=vipleague
+        // source: http://pastebin.com/NERVzHzS
+        host : ["vipleague.is", "vipleague.ws", "vipleague.tv", "vipleague.se", "vipleague.tv", "vipleague.me", "vipleague.mobi", "vipleague.co", "vipleague.sx", "vipleague.ch", "vipbox.tv", "vipbox.co", "vipbox.biz", "vipbox.sx", "vipbox.eu", "vipbox.so", "vipbox.nu", "vipboxsa.co", "strikeout.co", "homerun.re", "vipboxtv.co", "vipapp.me"],
         onStart : function () {
-          // Solution 1
           Aak.uw.iExist = true;
+          Aak.setCookie('xclsvip', 1);
           Aak.addStyle(".vip_052x003 { height: 250px; }");
           Aak.addStyle(".vip_09x827 { height: 26px; }");
-        },
-        onAlways : function () {
-          // Solution 2
-          Aak.uw.showmsgblock = function () {};
         }
       },
       vg_no : {
@@ -2949,24 +3096,6 @@
           Aak.setCookie('ppu_main', 1);
           Aak.setCookie('ppu_sub', 1);
           Aak.setCookie('ppu_show_on', 1);
-        }
-      },
-      marketwatch_com : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1297
-        host : ['marketwatch.com'],
-        onStart : function () {
-          Aak.addStyle(".container--bannerAd, .col--ad { display: none; }");
-          Aak.addScript(function () {
-            _addEventListener = document.addEventListener;
-            document.addEventListener = function (type, listener, options) {
-              if (type == 'sp.blocking') {
-                listener = function () {
-                  console.info(['AntiAdbKiller', location.host, 'Event ' + type + ' intercepted :-)']);
-                };
-              }
-              _addEventListener(type, listener, options);
-            };
-          });
         }
       },
       tny_cz : {
@@ -3072,17 +3201,6 @@
         onIdle : function () {
           // Remove Disable AdBlock
           Aak.removeElement('#tupiklan');
-        }
-      },
-      gamestar_de : {
-        // by: hamsterbacke
-        // pull: https://github.com/reek/anti-adblock-killer/pull/467
-        host : ['gamestar.de'],
-        onIdle : function () {
-          setTimeout(function () {
-            Aak.removeElement('body > div.centeredDiv > div[style="display: inline-block;"]');
-            window.stop();
-          }, 2500);
         }
       },
       picload_com : {
@@ -3269,12 +3387,13 @@
         }
       },
       link_tl : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/1087
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=link.tl
         // issue: https://greasyfork.org/fr/forum/discussion/8437
-        // source: http://pastebin.com/kc1KF2Mn
+        // source: http://pastebin.com/1MkCnmL7
         host : ['link.tl'],
         onStart : function () {
           Aak.addStyle('.adblock { height:1px; }');
+          Aak.uw.adblocker = false;
         }
       },
       wstream_video : {
@@ -3314,22 +3433,22 @@
         }
       },
       pcgames_download_net : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1451
         // issue: https://greasyfork.org/forum/discussion/9328
+		// source: http://pastebin.com/EBVZg3VB
         host : ['pcgames-download.net'],
         onAlways : function () {
-          Aak.uw.niceAdsCheck = true;
+          Aak.setCookie('noAdblockNiceMessage', 1);
+          Aak.uw.mgCanLoad30547 = true;
         }
       },
       lachainemeteo_com : {
+        // note: also killed by AakList
         // issue: https://github.com/reek/anti-adblock-killer/issues/590
         // issue: https://github.com/reek/anti-adblock-killer/issues/245
         // issue: https://github.com/reek/anti-adblock-killer/issues/215
         host : ['lachainemeteo.com'],
         onAlways : function () {
-          // Solution 1
-          // + abp rule
-
-          // Solution 2
           Aak.uw.js_loaded = true;
         }
       },
@@ -3443,7 +3562,7 @@
         }
       },
       openload_domains : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/475
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=openload
         host : ['openload.co', 'openload.io', 'openload.tv'],
         onStart : function () {
           Aak.uw.adblock = false;
@@ -3712,7 +3831,7 @@
                     url : Aak.getCookie('country_code') != 'PL' ? urlProxy + Aak.encodeURI(urlAPI) : urlAPI,
                     onload : function (result) {
                       var res = result.responseText;
-                      console.log(res);
+                      Aak.log(res);
                       var o = JSON.parse(res);
                       var videoUrl = o.item.videos.main.video_content[Number(Aak.opts.videoHD)].url;
                       var videoUrlWithSeed = AES_CBC(videoUrl, CryptoJS);
@@ -3940,41 +4059,36 @@
               oldHash = location.hash;
               videoId = oldHash.match(videoIdRegex)[1];
 
-			  /* don't work with chrome
-			  player.innerHTML = '<div id="noAdPlayer">This text will be replaced with a player.</div>';
-
-			  // skip video ad
-			  Aak.addScript(function () {
-			    setTimeout(function () {
-			      jwplayer('noAdPlayer').setup({
-			        "file" : "http://vgtvlive-f.akamaihd.net/i/20150630x114563_01@28597/master.m3u8?start=1435665657&end=1435665768",
-			        "height" : 360,
-			        "width" : 640
-			      })
-			      jwplayer('noAdPlayer').seek(0).play(true);
-			    }, 5000);
-			  });
+              /* don't work with chrome cGxheWVyLmlubmVySFRNTCA9ICc8ZGl2IGlkPSJub0FkUGxheWVyIj5UaGlzIHRleHQgd2lsbCBiZSByZXBsYWNlZCB3aXRoIGEgcGxheWVyLjwvZGl2Pic7CgoJCQkgIC8vIHNraXAgdmlkZW8gYWQKCQkJICBBYWsuYWRkU2NyaXB0KGZ1bmN0aW9uICgpIHsKCQkJICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gKCkgewoJCQkgICAgICBqd3BsYXllcignbm9BZFBsYXllcicpLnNldHVwKHsKCQkJICAgICAgICAiZmlsZSIgOiAiaHR0cDovL3ZndHZsaXZlLWYuYWthbWFpaGQubmV0L2kvMjAxNTA2MzB4MTE0NTYzXzAxQDI4NTk3L21hc3Rlci5tM3U4P3N0YXJ0PTE0MzU2NjU2NTcmZW5kPTE0MzU2NjU3NjgiLAoJCQkgICAgICAgICJoZWlnaHQiIDogMzYwLAoJCQkgICAgICAgICJ3aWR0aCIgOiA2NDAKCQkJICAgICAgfSkKCQkJICAgICAgandwbGF5ZXIoJ25vQWRQbGF5ZXInKS5zZWVrKDApLnBsYXkodHJ1ZSk7CgkJCSAgICB9LCA1MDAwKTsKCQkJICB9KTsKICAgICAgICAgICAgICAqLwoJCQkgIAogICAgICAgICAgICAgIC8qIGRvbid0IHdvcmsgd2l0aCBjaHJvbWUKICAgICAgICAgICAgICAvL2NvbnNvbGUubG9nKHVuc2FmZVdpbmRvdy5qd3BsYXllcikKICAgICAgICAgICAgICBBYWsucmVxdWVzdCh7CiAgICAgICAgICAgICAgdXJsIDogJ2h0dHA6Ly9zdnAudmcubm8vc3ZwL2FwaS92MS92Z3R2L2Fzc2V0cy8nICsgdmlkZW9JZCArICc/YWRkaXRpb25hbD1zZXR0aW5nc3xjaGFwdGVyc3xjdWVQb2ludHN8ZXh0ZXJuYWxJZHxiYXJyZWxzfGV4dGVybmFsQ2F0ZWdvcnlJZHxuZXh0QXNzZXQmYXBwTmFtZT12Z3R2LXdlYnNpdGUnLAogICAgICAgICAgICAgIG9ubG9hZCA6IGZ1bmN0aW9uIChyZXN1bHQpIHsKICAgICAgICAgICAgICB2YXIgcmVzID0gcmVzdWx0LnJlc3BvbnNlVGV4dDsKICAgICAgICAgICAgICB2YXIgb2JqID0gSlNPTi5wYXJzZShyZXMpOwogICAgICAgICAgICAgIEFhay5sb2cob2JqKTsKCiAgICAgICAgICAgICAgLy8gcmVwbGFjZSBwbGF5ZXIKICAgICAgICAgICAgICBBYWsucGxheWVyLmp3cGxheWVyNihwbGF5ZXIsIHsKICAgICAgICAgICAgICBmaWxlIDogb2JqLnN0cmVhbVVybHMuaGxzCiAgICAgICAgICAgICAgfSwgJ2lubmVyJyk7CiAgICAgICAgICAgICAgfQogICAgICAgICAgICAgIH0pOw==
               */
-			  
-              /* don't work with chrome
-              //console.log(unsafeWindow.jwplayer)
-              Aak.request({
-              url : 'http://svp.vg.no/svp/api/v1/vgtv/assets/' + videoId + '?additional=settings|chapters|cuePoints|externalId|barrels|externalCategoryId|nextAsset&appName=vgtv-website',
-              onload : function (result) {
-              var res = result.responseText;
-              var obj = JSON.parse(res);
-              Aak.log(obj);
-
-              // replace player
-              Aak.player.jwplayer6(player, {
-              file : obj.streamUrls.hls
-              }, 'inner');
-              }
-              });
-               */
             }
           }, 1e3);
-
+        }
+      },
+      mtg_radio : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1495
+        host : ['play.radio1.se', 'play.bandit.se', 'play.lugnafavoriter.com', 'play.rixfm.se'],
+        onEnd : function () {
+          Aak.addScript(function () {
+            setTimeout(function () {
+              player_load_live(window.stream_id);
+            }, 1000);
+          });
+        }
+      },
+      dplay_network : {
+	    // issue: https://github.com/reek/anti-adblock-killer/issues/1463
+        host : ['dplay.com', 'dplay.dk', 'dplay.se'],
+        onStart : function () {
+          var date = new Date();
+          date.setDate(date.getDate() + 365);
+          var timestamp = date.getTime().toString();
+          var value = JSON.stringify({
+              "notificationSubmission" : "submitted",
+              "reportingExpiry" : timestamp,
+              "notificationExpiry" : timestamp
+            });
+          Aak.setCookie('dsc-adblock', value);
         }
       },
       tv3play_network : {
@@ -3982,17 +4096,22 @@
         // issue: https://github.com/reek/anti-adblock-killer/issues?q=tv3play
         // test: http://tinyurl.com/j6qnqr4, http://tinyurl.com/zhzj8qp, http://tinyurl.com/zql5jll, http://tinyurl.com/jr4gvld, http://tinyurl.com/zk63zoa, http://tinyurl.com/hl7vtag
         host : ['tv3play.no', 'tv3play.dk', 'tv3play.se', 'tv6play.se', 'tv8play.se', 'tv10play.se', 'tvplay.skaties.lv'],
-        onEnd : function () {
+        onIdle : function () {
 
           /* don't wok
           http://play.tv3.lt/programos/lkl-sokeju-kovos/733362?autostart=true
           http://tv3play.tv3.ee/sisu/puhapaev-sepoga/728535?autostart=true
            */
 
-          // 
           Aak.hasElement('#video-player', function (thisElement) {
-            var videoId = location.pathname.split('/').pop();
-            console.log(thisElement, videoId);
+            //var videoId = location.pathname.split('/').pop();
+            var videoId = thisElement.getAttribute('data-video-id');
+            Aak.log(thisElement, videoId);
+
+            // replace player
+            // doc: http://tinyurl.com/hoxb3eu
+            thisElement.insertAdjacentHTML('beforebegin', '<video id="noAdPlayer" class="video-js vjs-default-skin" controls autoplay preload="auto" width="730" height="411"></video>');
+            thisElement.remove();
 
             // get video sources
             Aak.request({
@@ -4004,14 +4123,11 @@
 
                 // error
                 if (obj.msg) {
-                  thisElement.innerHTML = obj.msg;
+                  return Aak.getElement('noAdPlayer').innerHTML = obj.msg;
                 }
 
-                // replace player
-                thisElement.innerHTML = '<video id="noAdPlayer" class="video-js vjs-default-skin" controls autoplay preload="auto" width="730" height="411"></video>';
-
                 // initialize new player
-                Aak.addScript(Aak.toText(function () {
+                Aak.addScript(Aak.intoString(function () {
                     var noAdPlayer = videojs("noAdPlayer");
                     noAdPlayer.src([{
                           type : "application/x-mpegURL", // m3u8
@@ -4037,57 +4153,44 @@
         onIdle : function () {}
       },
       // TV Stream
-      firstrowsports : {
-        host : ['firstrow.co', 'firstrows.ru', 'firstrows.tv', 'firstrows.org', 'firstrows.co', 'firstrows.biz', 'firstrowus.eu', 'firstrow1us.eu', 'firstrowsportes.tv', 'firstrowsportes.com', 'justfirstrowsports.com', 'hahasport.me'],
+      block_streams_tv : {
+	    // note: redirect to http://block.streams.tv/
+        host : ['firstrow.co', 'firstrows.ru', 'firstrows.tv', 'firstrows.org', 'firstrows.co', 'firstrows.biz', 'firstrowus.eu', 'firstrow1us.eu', 'firstsrowsports.eu', 'firstrowsportes.tv', 'firstrowsportes.com', 'justfirstrowsports.com', 'hahasport.me', 'wiziwig.ru', 'wiziwig.sx', 'wiziwig.to', 'wiziwig.tv', 'myp2p.biz', 'myp2p.tv', 'myp2p.la', 'myp2p.ec', 'myp2p.eu', 'myp2p.sx', 'myp2p.ws', 'myp2p.com', 'atdhe.ru', 'atdhe.bz', 'atdhe.top', 'atdhe.to', 'atdhe.me', 'atdhe.mx', ' atdhe.li', 'atdhe.al'],
         onAlways : function () {
           Aak.setCookie("adb", 1); // prevent anti-adblock
           Aak.uw.open = function () {}; // prevent popup
           Aak.addStyle("#bannerInCenter, #hiddenBannerCanvas { display: none; }"); // hide ads
         }
       },
-      buzina_network : {
+      buzina_xyz : {
         // note: disable refcontrol, used by firstrowsports
         // issue: https://github.com/reek/anti-adblock-killer/issues/1268
         // issue: https://github.com/reek/anti-adblock-killer/issues/1243
         // issue: https://github.com/reek/anti-adblock-killer/issues/889
         // issue: https://greasyfork.org/forum/discussion/8975
         // source: http://pastebin.com/8VTrkvS9
-        host : ['buzina.xyz', 'farmet.info', 'rimladi.com', 'kitorelo.com', 'omnipola.com', 'porosin.co.uk', 'rimleno.com'],
+        host : ['buzina.xyz', 'farmet.info', 'rimladi.com', 'kitorelo.com', 'omnipola.com', 'porosin.co.uk', 'rimleno.com', 'simple4alls.com', 'arsopo.com'],
         onStart : function () {
           Aak.addStyle("#adsframe { height: 151px; }");
         },
         onIdle : function () {
           if (/buzina.xyz/.test(location.host)) { // keeps same host stream
             Aak.hasElement('iframe[src*=".php?hash="]', function (thisElement) {
-              // http://omnipola.com/w2.php?hash=panda58
+              // http://arsopo.com/w2.php?hash=panda58
+			  // http://www.buzina.xyz/nana1v1.php?onthetop
               var parts = thisElement.src.split('/');
-              parts[2] = 'omnipola.com';
-              console.log(thisElement, parts);
+              parts[2] = Aak.rules.buzina_xyz.host.pop();
+              Aak.log(thisElement, parts);
               thisElement.src = parts.join('/');
+
+			    /*	dmFyIG8gPSB7CgkJCSAgICAicGxheWxpc3QiIDogW3sKCQkJICAgICAgICAicHJvdmlkZXIiIDogInJ0bXAiLAoJCQkgICAgICAgICJ1cmwiIDogInBhbmRhMT9lJTNEMTQ2NTA3MDMyNiUyNnN0JTNEUHJ0SFl5dkJ6ZDlaZDdoRF9mUkhUZzExMTEzMCIKCQkJICAgICAgfQoJCQkgICAgXSwKCQkJICAgICJwbHVnaW5zIiA6IHsKCQkJICAgICAgInJ0bXAiIDogewoJCQkgICAgICAgICJ1cmwiIDogImZsb3dwbGF5ZXIucnRtcC0zLjIuMTEuc3dmIiwgCgkJCQkJLy8idXJsIjogImh0dHA6Ly9yZWxlYXNlcy5mbG93cGxheWVyLm9yZy9zd2YvZmxvd3BsYXllci5ydG1wLTMuMi4xMS5zd2YiLAoJCQkgICAgICAgICJuZXRDb25uZWN0aW9uVXJsIiA6ICJydG1wOi8vMTg1LjgyLjIxNS40NTozNTc5L3ZvZC8iCgkJCSAgICAgIH0sCgkJCSAgICAgICJjb250cm9scyIgOiB7CgkJCQkgICAgInVybCI6ICJodHRwOi8vcmVsZWFzZXMuZmxvd3BsYXllci5vcmcvc3dmL2Zsb3dwbGF5ZXIuY29udHJvbHMtMy4yLjE2LnN3ZiIsIC8vIGFkZGVkIGJlY2F1c2UgbWlzc2luZwoJCQkgICAgICAgICJwbGF5IiA6IGZhbHNlLAoJCQkgICAgICAgICJzY3J1YmJlciIgOiBmYWxzZQoJCQkgICAgICB9CgkJCSAgICB9LAoJCQkgICAgInBsYXllcklkIiA6ICJwbGF5ZXIiLAoJCQkgICAgImNsaXAiIDogewoJCQkgICAgICAidXJsIiA6ICJwYW5kYTE/ZSUzRDE0NjUwNzAzMjYlMjZzdCUzRFBydEhZeXZCemQ5WmQ3aERfZlJIVGcxMTExMzAiCgkJCSAgICB9CgkJCSAgfQoKCQkJICB2YXIgbmV3VXJsID0gcGFydHMuc2xpY2UoMCwgMykuam9pbignLycpICsgJy9mbG93cGxheWVyLTMuMi4xNi5zd2Y/Y29uZmlnPScgKyBlc2NhcGUoSlNPTi5zdHJpbmdpZnkobykpOwoJCQkgIC8vdmFyIG5ld1VybCA9ICdodHRwOi8vcmVsZWFzZXMuZmxvd3BsYXllci5vcmcvc3dmL2Zsb3dwbGF5ZXItMy4yLjE2LnN3Zj9jb25maWc9JyArIGVzY2FwZShKU09OLnN0cmluZ2lmeShvKSk7CgkJCSAgY29uc29sZS5sb2cobmV3VXJsKTsKCQkJICB0aGlzRWxlbWVudC5zcmMgPSBuZXdVcmw7
+				*/
+			  
             });
           } else { // skip anti-adblock
             Aak.removeElement('#adsframe');
             Aak.getElement('#remove-over').click();
           }
-        },
-        onBeforeScript : function () {
-          /*
-          return [{ // example inline
-          contains : 'stopadblock.info',
-          external : false,
-          override : 'window.onload=function(){document.getElementById("remove-over").click();}',
-          }, { // example inline
-          contains : 'popads.net',
-          external : false,
-          remove : true
-          }, { // example external
-          contains : 'example.com',
-          external : true,
-          override : "data:text/javascript;charset=utf-8," + encodeURIComponent("alert('Intercepted external !')")
-          //override: "//pastebin.com/raw/ttp9fNVG"
-          }
-          ];
-           */
         }
       },
       allmyvideos_net : {
@@ -4187,6 +4290,7 @@
         }
       },
       videomega_tv : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=videomega
         host : ['videomega.tv'],
         onStart : function () {
           if (/^\/view.php/.test(location.pathname)) {
@@ -4194,6 +4298,15 @@
             Aak.setCookie('vid_mainpu', true);
             Aak.setCookie('vid_subpu', true);
             Aak.setCookie('vid_delay', true);
+          }
+        },
+        onEnd : function () {
+          // fix bug on firefox: The video could not be loaded, either because the server or network failed or because the format is not supported.
+          var script = Aak.hasScript('Please disable AdBlock Plugin to watch the video');
+          if (script) {
+            var source = script.innerHTML;
+            var substring = source.substring(source.lastIndexOf('eval('), source.lastIndexOf(')') + 1);
+            Aak.addScript(substring);
           }
         }
       },
@@ -4221,15 +4334,24 @@
         }
       },
       r3z : {
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1545
         // issue: https://github.com/reek/anti-adblock-killer/issues/1323
         // issue: https://github.com/reek/anti-adblock-killer/issues/884
         // source: http://pastebin.com/C159kevn
         host : ['cityam.com', 'computerworlduk.com', 'techworld.com'],
         onStart : function () {
+		  /* don't work with chrome
           Object.defineProperty(Aak.uw, '_r3z', {
             enumerable : true,
+            writable : false,
             value : {}
           });
+		  */
+        },
+        onIdle : function () {
+          Aak.uw.$("#r3z-wait").remove();
+          Aak.uw.$(".r3z-hide").removeClass("r3z-hide");
+          Aak.uw._r3z = null;
         }
       },
       google_jobrunner : {
@@ -4251,7 +4373,7 @@
         // source: http://pastebin.com/SpEN5duS
         host : ['sports.fr'],
         onStart : function () {
-          Aak.fakeFuckAdBlock('fabInstance');
+          Aak.fakeFuckAdBlock('fabInstance', 'FabInstance');
         }
       },
       fab_europe1_fr : {
@@ -4259,23 +4381,32 @@
         // source: http://pastebin.com/ULe1vzQR
         host : ['europe1.fr'],
         onStart : function () {
-          Aak.fakeFuckAdBlock('fabInstance');
+          Aak.fakeFuckAdBlock('fabInstance', 'FabInstance');
         }
       },
       fab_newyorker_com : {
         // issue: https://github.com/reek/anti-adblock-killer/issues/1177
         host : ['newyorker.com'],
         onStart : function () {
-          Aak.fakeFuckAdBlock('sniffAdBlock');
+          Aak.fakeFuckAdBlock('sniffAdBlock', 'SniffAdBlock');
         }
       },
       fab_wired_com : {
-        // source: http://pastebin.com/Pq14v4FC
         // issue: https://github.com/reek/anti-adblock-killer/issues/1061
-        // issue: https://greasyfork.org/fr/forum/discussion/8235/x
+        // issue: https://greasyfork.org/fr/forum/discussion/8235
+        // source: http://pastebin.com/Pq14v4FC
         host : ['wired.com'],
         onStart : function () {
-          Aak.fakeFuckAdBlock('sniffAdBlock');
+          Aak.fakeFuckAdBlock('sniffAdBlock', 'SniffAdBlock');
+        }
+      },
+      fab_epicurious_com : {
+        // by: Giwayume
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1455
+        // source: http://pastebin.com/N42a5BjE
+        host : ['epicurious.com'],
+        onStart : function() {
+          Aak.addStyle(".tp-modal-open { overflow: visible; } .tp-modal,.tp-backdrop { display: none; }");
         }
       },
       fab_mangasproject_domains : {
@@ -4307,13 +4438,13 @@
           Aak.fakeFuckAdBlock('antiAdBlock');
         }
       },
-      fab_beppegrillo_it : {
+      fab_cadetect : {
         // by: Skr4tchGr3azyMonkiBallllllZzzz
         // issue: https://github.com/reek/anti-adblock-killer/issues/784
         // note: fuckadblock with custom instance name
-        host : ['tzetze.it', 'beppegrillo.it'],
+        host : ['tzetze.it', 'beppegrillo.it', 'la-cosa.it'],
         onStart : function () {
-          Aak.fakeFuckAdBlock('cadetect');
+          Aak.fakeFuckAdBlock('cadetect', 'CADetect');
         }
       },
       fab_agario_sx : {
@@ -4360,25 +4491,6 @@
           Aak.addStyle("#blockblockA {visibility:invisible;display:none;} #blockblockA td {visibility:invisible;display:none;} #blockblockA td p {visibility:invisible;display:none;} #blockblockB {visibility:visible;display:block;}");
         }
       },
-      phoenix_goyavelab : {
-        // issue: https://github.com/reek/anti-adblock-killer/issues/
-        // doc: http://tinyurl.com/gl3ghq2
-        // source: http://pastebin.com/hsAmdSuf
-        // note: script anti-adblock obfuscated,
-        host : ['demo-phoenix.com', 'dpstream.net', 'gum-gum-streaming.com', 'jeu.info', 'sofoot.com', 'gaara-fr.com', 'gaytube.com', 'tuxboard.com', 'xstory-fr.com', 'hentaifr.net', 'filmstreaming-hd.com', 'filmvf.net', 'hentaihaven.org', 'narutoshippudenvf.com', 'thebadbuzz.com', 'manga-news.com'],
-        onAlways : function () {
-          //Aak.uw.__$dc = function () {};
-          Aak.addStyle('body {visibility: visible;}');
-        },
-        onBeforeScript : function () {
-          return [{ 
-              contains : 'PHENV',
-              external : false,
-              remove: true
-            }
-          ];
-        }
-      },
       adblock_notify : {
         // by: Skr4tchGr3azyMonkiBallllllZzzz
         // issue: https://github.com/reek/anti-adblock-killer/issues/1392
@@ -4405,52 +4517,119 @@
         // site: blockadblock.com
         // note: random instance name
         // source: https://gist.github.com/Watilin/af75e0a2e82a2efb384bde9c7b41dec8
-        // issues: https://github.com/reek/anti-adblock-killer/issues?q=label%3ABlockAdBlock
+        // issues: https://github.com/reek/anti-adblock-killer/issues?q=label:BlockAdBlock
         // issue: https://greasyfork.org/forum/discussion/8273
         // issue: https://greasyfork.org/forum/discussion/7625
-        host : ['blockadblock.com', 'linkdrop.net', 'revclouds.com', 'leporno.org', 'uploadshub.com', 'dasolo.org', 'fullstuff.net', 'zeusnews.it', 'cheminots.net', 'lolsy.tv', 'animes-mangas-ddl.com', 'noticiasautomotivas.com.br', 'darkstars.org', 'corepacks.com', 'naturalbd.com', 'coolsoft.altervista.org', 'openload.us', 'cda-online.pl', 'urbanplanet.org', 'mamahd.com', 'sadeempc.com', 'avmoo.com', 'thailande-fr.com', 'btaia.com', 'tusoft.org', 'hisse.net', 'europeup.com', 'nrj.fr', 'srnk.co', 'animmex.co', 'socketloop.com', 'crackhex.com', 'revealedtricks4u.com', 'pizzamaking.com', 'computerworm.net'],
+        host : ['blockadblock.com', 'linkdrop.net', 'revclouds.com', 'leporno.org', 'uploadshub.com', 'dasolo.org', 'fullstuff.net', 'zeusnews.it', 'cheminots.net', 'lolsy.tv', 'animes-mangas-ddl.com', 'noticiasautomotivas.com.br', 'darkstars.org', 'corepacks.com', 'naturalbd.com', 'coolsoft.altervista.org', 'openload.us', 'cda-online.pl', 'urbanplanet.org', 'mamahd.com', 'sadeempc.com', 'avmoo.com', 'thailande-fr.com', 'btaia.com', 'tusoft.org', 'hisse.net', 'europeup.com', 'nrj.fr', 'srnk.co', 'animmex.co', 'socketloop.com', 'crackhex.com', 'revealedtricks4u.com', 'pizzamaking.com', 'computerworm.net', 'yourlifeupdated.net'],
         onStart : function () {
-          /*
           Aak.addScript(function () {
-          _setTimeout = window.setTimeout;
-          window.setTimeout = function (fn, delay) {
-          if (typeof fn === 'string' && fn.indexOf('bab_elementid') > -1) {
-          fn = function () {
-          console.info(['AntiAdbKiller', location.host, 'BlockAdBlock']);
-          };
-          }
-          _setTimeout(fn, delay);
-          };
+            var _setTimeout = window.setTimeout;
+            window.setTimeout = function (fn, delay) {
+              if (typeof fn === 'string' && fn.indexOf('bab_elementid') > -1) {
+                fn = function () {
+                  console.info(['AntiAdbKiller', location.host, 'BlockAdBlock']);
+                };
+              }
+              _setTimeout.call(this, fn, delay);
+            };
           });
-           */
+        }
+      },
+      gpt_sp : {
+        // note: when adblock detected inject new ads, redirect to http://tinyurl.com/zq2z5o6
+        // issue: https://github.com/reek/anti-adblock-killer/issues/1297
+		// issue: https://github.com/reek/anti-adblock-killer/issues/1144
+		// issue: https://github.com/reek/anti-adblock-killer/issues/1542
+        // source: http://pastebin.com/8Ajitfb2
+        host : ['marketwatch.com', 'deadline.com', 'tweaktown.com'],
+        onStart : function () {
+          Aak.addStyle(".container--bannerAd, .col--ad { display: none; }");
+          Aak.addScript(function () {
+            var _addEventListener = EventTarget.prototype.addEventListener;
+            EventTarget.prototype.addEventListener = function (type, listener, options) {
+              if (type == 'sp.blocking') {
+                listener = function () {
+                  console.info(['AntiAdbKiller', location.host, 'GPT{sp-blocking}']);
+                };
+              }
+              _addEventListener.call(this, type, listener, options);
+            };
+          });
+        }
+      },
+      krux_asl : {
+	    // note: when adblock detected inject new ads
+        // source: http://pastebin.com/0HD7N84i
+        host : ['commentcamarche.net', 'journaldesfemmes.com', 'linternaute.com'],
+        onBeforeScript : function () {
+          return [{
+		      detected : 'Krux{asl}',
+              contains : 'Asl.prototype.inject',
+              external : false,
+              remove : true
+            }
+          ];
+        }
+      },
+      krux_adp : {
+	    // note: when adblock detected inject new ads
+        // source: 
+        host : ['fourchette-et-bikini.fr', 'meteocity.com'],
+        onStart : function () {
+          Aak.uw.adProtect = 1;
+        }
+      },	 
+      phoenix_goyavelab : {
+	    // note: when adblock detected inject new ads
+        // note: script anti-adblock obfuscated,
+        // issue: https://github.com/reek/anti-adblock-killer/issues/
+        // doc: http://tinyurl.com/gl3ghq2
+        // source: http://pastebin.com/hsAmdSuf
+        host : ['demo-phoenix.com', 'dpstream.net', 'gum-gum-streaming.com', 'jeu.info', 'sofoot.com', 'gaara-fr.com', 'gaytube.com', 'tuxboard.com', 'xstory-fr.com', 'hentaifr.net', 'filmstreaming-hd.com', 'filmvf.net', 'hentaihaven.org', 'narutoshippudenvf.com', 'thebadbuzz.com', 'manga-news.com', 'jeu.video'],
+        onAlways : function () {
+          //Aak.uw.__$dc = function () {};
+          Aak.addStyle('body {visibility: visible;}');
+        },
+        onBeforeScript : function () {
+          return [{ 
+		      detected : 'PhoenixGoyavelab',		  
+              contains : 'PHENV',
+              external : false,
+              remove: true
+            }
+          ];
         }
       },
       ad_defend_uabp : {
+	    // note: when adblock detected inject new ads
         // source: http://pastebin.com/cFQCp80W
         host : ['tvspielfilm.de', 'finanzen.ch'],
-        onAlways : function () {
-          Aak.uw.UABPInject = function () {};
-          Aak.uw.UABPDetect = function () {};
-        },
         onBeforeScript : function () {
-          // function UABPInject
+          return [{
+		      detected : 'AdDefend{UABPInject}',
+              contains : 'UABPInject',
+              external : false,
+              remove : true
+            }
+          ];
         }
       },
       ad_defend_uab : {
+	    // note: when adblock detected inject new ads
         // userscript: https://openuserjs.org/scripts/schwarztee/AdDefend_Klatsche
         // userscript: https://gist.github.com/anonymous/a9b9956baf1d59a107c5
-        // source: http://pastebin.com/BaZvJau3
-        // issue: https://github.com/reek/anti-adblock-killer/issues/832
-        // issue: https://github.com/reek/anti-adblock-killer/issues/733
-        // issue: https://github.com/reek/anti-adblock-killer/issues/710
-        // issue: https://github.com/reek/anti-adblock-killer/issues/685
-        // issue: https://github.com/reek/anti-adblock-killer/pull/467
-        host : ['focus.de', 'stern.de', 'sat1.', 'prosieben.', 'kabeleins.', 'sat1gold.', 'sixx.', 'prosiebenmaxx.', 'fem.com', 'the-voice-of-germany.', 'wetter.com', 'wetteronline.de', 'gamestar.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch', 'main-spitze.de', 'wormser-zeitung.de', 'lampertheimer-zeitung.de', 'wiesbdener-tagblatt.de', 'buerstaedter-zeitung.de', 'wiesbdener-kurier.de', 'rhein-main-presse.de', 'allgemeine-zeitung.de', 'ariva.de', 'spiegel.de', 'brigitte.de', 'dshini.net', 'gala.de', 'gamepro.de', 'gamona.de', 'pnn.de', 'promobil.de', 'sportal.de', 'webfail.com', 'computerbild.de', 'finanzen.net', 'comunio.de'],
-        onAlways : function () {
-          Aak.uw.uabpdl = false;
-        },
+        // source: http://pastebin.com/1VyW0u9m, http://pastebin.com/AZqhRxWU
+        // issue: https://github.com/reek/anti-adblock-killer/issues?q=label:AdDefend
+        // pull: https://github.com/reek/anti-adblock-killer/pull/467
+        host : ['watchgeneration.fr', 'turbo.fr', '24matins.fr', 'foot01.com', 'clubic.com', 'macg.co', 'begeek.fr', 'igen.fr', 'gamestar.de', 'focus.de', 'stern.de', 'sat1.', 'prosieben.', 'kabeleins.', 'sat1gold.', 'sixx.', 'prosiebenmaxx.', 'fem.com', 'the-voice-of-germany.', 'wetter.com', 'wetteronline.de', 'pcwelt.de', 'boerse-online.de', 'sportauto.de', 'auto-motor-und-sport.de', 'motor-klassik.de', '4wheelfun.de', 'autostrassenverkehr.de', 'lustich.de', 'spox.com', 'shz.de', 'transfermarkt.de', 'rp-online.de', 'motorradonline.de', '20min.ch', 'main-spitze.de', 'wormser-zeitung.de', 'lampertheimer-zeitung.de', 'wiesbdener-tagblatt.de', 'buerstaedter-zeitung.de', 'wiesbdener-kurier.de', 'rhein-main-presse.de', 'allgemeine-zeitung.de', 'ariva.de', 'spiegel.de', 'brigitte.de', 'dshini.net', 'gala.de', 'gamepro.de', 'gamona.de', 'pnn.de', 'promobil.de', 'sportal.de', 'webfail.com', 'computerbild.de', 'finanzen.net', 'comunio.de'],
         onBeforeScript : function () {
-          // uabDetect
+          return [{
+		      detected : 'AdDefend{uabInject}',
+              contains : 'uabInject',
+              external : false,
+              remove : true
+            }
+          ];
         }
       },
       /* solved by AakLIst
@@ -4900,6 +5079,7 @@
     blockDetect : function () {
 
       // Exclude domains
+      // issue: https://github.com/reek/anti-adblock-killer/issues/1466
       // issue: https://github.com/reek/anti-adblock-killer/issues/1263
       // issue: https://greasyfork.org/en/forum/discussion/8422/
       // issue: https://github.com/reek/anti-adblock-killer/issues/986
@@ -4908,7 +5088,7 @@
       // issue: https://greasyfork.org/fr/forum/discussion/5426
       // issue: https://github.com/reek/anti-adblock-killer/issues/419
       // issue: https://github.com/reek/anti-adblock-killer/issues/377
-      var excludes = ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "stackoverflow.com", "tampermonkey.net", "tumblr.com", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com", "xemvtv.net", "vod.pl", "agar.io", "pandoon.info", "fsf.org", "adblockplus.org", "plnkr.co", "exacttarget.com", "dolldivine.com", "popmech.ru"];
+      var excludes = ["360.cn", "amazon.", "apple.com", "ask.com", "baidu.com", "bing.com", "bufferapp.com", "chatango.com", "chromeactions.com", "easyinplay.net", "ebay.com", "facebook.com", "flattr.com", "flickr.com", "ghacks.net", "google.", "imdb.com", "imgbox.com", "imgur.com", "instagram.com", "jsbin.com", "jsfiddle.net", "linkedin.com", "live.com", "mail.ru", "microsoft.com", "msn.com", "paypal.com", "pinterest.com", "preloaders.net", "qq.com", "reddit.com", "stackoverflow.com", "tampermonkey.net", "twitter.com", "vimeo.com", "wikipedia.org", "w3schools.com", "yahoo.", "yandex.ru", "youtu.be", "youtube.com", "xemvtv.net", "vod.pl", "agar.io", "pandoon.info", "fsf.org", "adblockplus.org", "plnkr.co", "exacttarget.com", "dolldivine.com", "popmech.ru", "calm.com"];
       var host = location.host;
       var excluded = false;
       excludes.forEach(function (exclude) {
@@ -4941,7 +5121,7 @@
               if (rule.host[0] != '.*?') {
                 Aak.detected('rule', rule);
               }
-
+			  
               // Before DOM load
               if (rule.onStart) {
                 rule.onStart();
@@ -4949,8 +5129,8 @@
               // On all statements
               if (rule.onAlways) {
                 rule.onAlways(); // start
-                window.addEventListener('DOMContentLoaded', rule.onAlways); // idle
-                window.addEventListener('load', rule.onAlways); // end
+                Aak.onEvent(window, 'DOMContentLoaded', rule.onAlways); // idle
+                Aak.onEvent(window, 'load', rule.onAlways); // end
               }
               // Before Script Executed
               if (rule.onBeforeScript) {
@@ -4965,9 +5145,9 @@
 
                     options.forEach(function (o) { // hasAttribute
                       var src = o.external ? 'src' : 'innerHTML';
+                      var search = new RegExp(o.contains, o.flags || '');
 
-                      if (thisScript[src] && thisScript[src].length && thisScript[src].search(o.contains) != -1) {
-                        Aak.log(thisScript, src, o, e);
+                      if (thisScript[src] && thisScript[src].length && search.test(thisScript[src])) {
 
                         // Stop script execution
                         if (isEvent) {
@@ -4980,8 +5160,8 @@
                         var newScript = document.createElement('script');
 
                         // Replace a part of the script
-                        if (o.search && o.replace) {
-                          newScript[src] = thisScript[src].replace(o.search, o.replace);
+                        if (o.replace) {
+                          newScript[src] = thisScript[src].replace(search, o.replace);
                           parent.replaceChild(newScript, thisScript);
                         } // Override script
                         else if (o.override) {
@@ -4991,18 +5171,23 @@
                         else if (o.remove) {
                           parent.removeChild(thisScript);
                         }
+						
+                        if (o.detected) {
+                          Aak.detected(o.detected);
+                        }						
+
+                        if (Aak.opts.logInterceptedScripts) {
+                          Aak.log(src, o, thisScript, newScript);
+                        }
                       }
                     });
                   };
 
                   // Browser supporting event beforescriptexecute
                   if ('onbeforescriptexecute' in document) {
-                    Aak.warn('onbeforescript-native');
-
-                    window.addEventListener('beforescriptexecute', function (e) {
+                    Aak.onEvent(window, 'beforescriptexecute', function (e) {
                       handlerBeforeScript(e, optionsBeforeScript);
                     });
-
                   } else { // Browser not suppoting beforescriptexecute
 
                     var loadDocument = function (optionsBeforeScript) {
@@ -5012,10 +5197,8 @@
                       Aak.warn('onbeforescript-compatible');
 
                       // Stop loading
-                      var script = document.createElement('script');
-                      script.innerHTML = 'window.stop();'; // chrome/opera
-                      //script.innerHTML = 'document.open();'; // firefox
-                      document.head.appendChild(script);
+					  Aak.addScript('window.stop();'); // chrome/opera
+                      //Aak.addScript('document.open();'); // firefox
 
                       // Get content
                       Aak.request({
@@ -5038,10 +5221,8 @@
                           html = doc.documentElement.outerHTML;
 
                           // Write new content to HTML document:
-                          var script = document.createElement('script');
-                          script.innerHTML = 'document.open(); document.write(unescape("' + escape(html) + '")); document.close();'; // chrome/opera
-                          //script.innerHTML = 'document.write(unescape("' + escape(html) + '")); document.close();'; // firefox
-                          document.head.appendChild(script);
+                          Aak.addScript('document.open(); document.write(unescape("' + escape(html) + '")); document.close();'); // chrome/opera
+                          //Aak.addScript('document.write(unescape("' + escape(html) + '")); document.close();'); // firefox
                         }
                       });
                     };
@@ -5051,7 +5232,7 @@
               } // After Script Executed
               if (rule.onAfterScript) {
                 if ('onafterscriptexecute' in document) { // Mozilla Firefox
-                  window.addEventListener('afterscriptexecute', rule.onAfterScript);
+                  Aak.onEvent(window, 'afterscriptexecute', rule.onAfterScript);
                 }
               }
               // When DOM Load
@@ -5059,7 +5240,8 @@
                 if (!Aak.useGM) { // Native mode
                   rule.onIdle();
                 } else {
-                  window.addEventListener('DOMContentLoaded', rule.onIdle);
+                  //Aak.onEvent(window, 'DOMContentLoaded', rule.onIdle);
+				  Aak.onEvent(window, 'DOMContentLoaded', rule.onIdle);
                 }
               }
               // When Window Load
@@ -5067,16 +5249,16 @@
                 if (!Aak.useGM) { // Native mode
                   rule.onEnd();
                 } else {
-                  window.addEventListener('load', rule.onEnd);
+                  Aak.onEvent(window, 'load', rule.onEnd);
                 }
               }
               // When DOM AttrModified
               if (rule.onAttrModified) {
-                window.addEventListener('DOMAttrModified', rule.onAttrModified, false);
+                Aak.onEvent(window, 'DOMAttrModified', rule.onAttrModified, false);
               }
               // When DOM SubtreeModified
               if (rule.onSubtreeModified) {
-                window.addEventListener('DOMSubtreeModified', rule.onSubtreeModified, false);
+                Aak.onEvent(window, 'DOMSubtreeModified', rule.onSubtreeModified, false);
               }
               // When DOM Elements are Inserted in Document
               if (rule.onInsert) {
@@ -5115,7 +5297,7 @@
                 // Mutation Events (Alternative Solution)
                 // doc: http://tinyurl.com/op95rfy
                 else {
-                  window.addEventListener("DOMNodeInserted", function (e) {
+                  Aak.onEvent(window, "DOMNodeInserted", function (e) {
                     if (Aak.opts.logInsertedNodes) {
                       Aak.log(e.target);
                     }
@@ -5160,7 +5342,7 @@
                 // Mutation Events (Alternative Solution)
                 // doc: http://tinyurl.com/op95rfy
                 else {
-                  window.addEventListener("DOMNodeRemoved", function (e) {
+                  Aak.onEvent(window, "DOMNodeRemoved", function (e) {
                     if (Aak.opts.logRemovedNodes) {
                       Aak.log(e.target);
                     }
@@ -5168,6 +5350,12 @@
                   }, false);
                 }
               }
+			  
+			  // Aak Events
+			  Aak.onEvent(window, 'detected', function (e) {
+			    Aak.info(e.detail);
+			  });
+			  
             }
           });
         };
