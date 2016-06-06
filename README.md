@@ -149,596 +149,174 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * AdBlock Notify
 * WPAdBlock
 * Sorry AdBlocker
+* FeatureBlock
+* DeAdblocker
+* NoAdblock Nice Message
 
 ##### Custom
 * Please consult the changelog
 
 
 ## Changelog
-##### Release 9.6 (May 14, 2016)
-> Script
-Improve: onbeforescript, now compatible with chrome/opera
-Convert: UTF-8 without BOM
-Compatible: strict-mode
-Optimize: Aak.imgBailt
-Improve: Aak.video
-Kill: workupload.com
-Kill: player.pl
-Kill: marketwatch.com
-Kill: videowood.tv
-Kill: receive-a-sms.com
-Kill: wakeupcallme.com
-Kill: ringmycellphone.com
-Kill: faqmozilla.org
-Kill: themarker.com
-Kill: haaretz.co.il
-Kill: exrapidleech.info
-Kill: porosin.co.uk
-Kill: buzina.xyz
-Kill: leecher.us
-Kill: backin.net
-Kill: wstream.video
-Kill: canalwp.com
-Kill: topserialy.sk
-Kill: pcgames-download.net
-Kill: pornve.com
-Kill: alphahistory.com
-Kill: kissasian.com
-Kill: fix blockadblock generic
-Kill: 3dsthem.es
-Kill: manga-news.com
-Kill: game-debate.com
-Kill: 360haven.com
-Kill: tv3play network
-Kill: thememypc.com
+#### Release 9.7 (June 6, 2016)
+##### UserScript
+* Core
+  * Add
+    * function: onEvent, offEvent, emitEvent, loadStyle, intoString, intoArray, intoObject
+  * Improve
+    * function: addScript, loadScript, getElement, checkList, onBeforeScript
 
-> List
-Kill: porncomix.info
-Kill: 20minutes.fr
-Kill: videowood.tv
-Kill: link.tl
-Kill: off-soft.net
-Kill: mrpiracy.club
-Kill: semprot.com
-Kill: yad2.co.il
-Kill: voici.fr
-Kill: detectadblock.com
-Kill: cinemablend.com
-Kill: exrapidleech.info
-Kill: hdzog.com (ads)
-Kill: wallpapershacker.com
-Kill: imgclick.net
-Kill: zevkleizle.com
-Kill: voicetv.co.th
-Kill: vvvvid.it
-Kill: playwire.com
-Kill: passimtv.xyz
-Kill: listamais.com.br
-Kill: snacktv.de
-Kill: euroman.dk
-Kill: titlovi.com
-Kill: dogry.pl
-Kill: telephoneannuaire.fr
-Kill: tiscali.cz
-Kill: clinefree.com
-Kill: spoiler.net
-Kill: onet.pl
-Kill: themarysue.com
-Kill: narcity.com
-Kill: purepc.pl
-Kill: minmote.no
-Kill: schoener-wohnen.de
-Kill: vizer.tv
-Kill: folha.uol.com.br
-Kill: iosworld.pl
-Kill: zarabiajnaokazjach.pl
-Kill: emucr.com
-Kill: ouest-france.fr
-Kill: godt.no
-Kill: mmm.dk
-Kill: topsport.bg
-Kill: darmowa-bramkasms.pl
-Kill: scigacz.pl
-Kill: inc.com
+* Rules
+  * Add/Fix
+    * 8muses.com, wiziwig (network), myp2p (network), atdhe (network), vipbox.nu, richonrails.com, jeu.video, pcgames-download.net, thechive.com, epicurious.com, dplay (network), planetatvonlinehd.com, youpeliculasweb.com, libredirecto-a.blogspot.com.ar, yourlifeupdated.net, link.tl, play.radio1.se, play.bandit.se, play.lugnafavoriter.com, play.rixfm.se, trucksim.org, freegameserverhost.com, kodilive.eu, deadline.com, la-cosa.it, diarioinformacion.com, computerworlduk.com, exrapidleech.info, bild.de, gamestar.de, 15min.lt, tweaktown.com, buzina.xyz, videomega.tv
+  * Exclude
+    * calm.com
 
+##### FilterList
+* Rules
+  * Add/Fix
+    * FeatureBlock (generic), DeAdblocker (generic), NoAdblock Nice Message (generic), sc2casts.com, forum.kooora.com, filechoco.com, boxfaucet.net, pornhub.com, vipbox.nu, ksl.com, wsj.com, politiken.dk, linkdecode.com, mathportal.org, vrank.org, tustoons.blogspot.com, userscloud.com, solidfiles.com, uplod.it, hulkload.com, bitcoin25.com, investors.com, ponlatv.com, azulyblanco.co, teledeporteonline.pw, vercanalestv.com, speedof.me, dmax.de, animezone.pl, adf.ly, kiplinger.com, cenapaliw.pl, fastrapidleech.com, gwshare.com, forumdz.com, hoy.es, jasaku.net, clarin.com, napisy24.pl, sumeronline.com, ticaretimiz.in, apk.tw, 012.tw, bloomberg.com, videomega.tv, sport1.de, passeportsante.net, idnes.cz, limitsizamca.org, la-cosa.it, oneplay.tv, b8b8.tv, stadt-bremerhaven.de, darkcomet-rat.com, napisy24.pl, bytzbiorowy.pl, imged.pl, debridnet.com, livedebrid.com, agar.io
+  * Remove
+    * player.pl (rule hiding player)
 
-##### Release 9.5 (April 17, 2016)
-> Script
-* Improve: BlockAdBlock (generic)
-* Add: metablock connect
-* Kill: onmeda.de
-* Kill: thailande-fr.com
-* Kill: btaia.com
-* Kill: lol.moa.tw
-* Kill: rimladi.com
-* Kill: kitorelo.com
-* Kill: omnipola.com
-* Kill: rockfile.eu
-* Kill: agario.sx
-* Kill: 8muses.com
-* Kill: next-episode.net
-* Kill: tvn.pl
-* Kill: tvn24.pl
-* Kill: player.pl
-* Kill: popmech.ru (exclude)
-* Kill: tusoft.org
-* Kill: hisse.net
-* Kill: debrido.com
-* Kill: debridfast.com
-* Kill: getdebrid.com
-* Kill: debrid.us
-* Kill: todayidol.com
-* Kill: prem.link
-* Kill: whiskyprijzen.com
-* Kill: whiskyprices.co.uk
-* Kill: whiskypreise.com
-* Kill: whiskyprix.fr
-* Kill: europeup.com
-* Kill: nrj.fr
-* Kill: exashare.com
-* Kill: youwatch.org
-* Kill: superanimes.com
-* Kill: cnbeta.com
-* Kill: litv.tv
-* Kill: srnk.co
-* Kill: animmex.co
-* Kill: marketwatch.com
-* Kill: socketloop.com
-* Kill: crackhex.com
-* Kill: revealedtricks4u.com
-* Kill: di.se
-* Kill: computerworlduk.com
-* Kill: pizzamaking.com
-* Kill: computerworm.net
-* Kill: 360haven.com
-* Kill: abcmalayalam.com
-* Kill: slideplayer.pl
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-> List
-* Improve: AdBlockBlocker (generic)
-* Kill: dl.free.fr
-* Kill: rte.ie
-* Kill: iptvcanales.com
-* Kill: sc2casts.com
-* Kill: blastingnews.com
-* Kill: freevaluator.com
-* Kill: 01net.com
-* Kill: wpmienphi.com
-* Kill: anisubsia.com
-* Kill: theplace2.ru
-* Kill: tut.by
-* Kill: sharefreeall.com
-* Kill: scambiofile.info
-* Kill: robotcoingame.com
-* Kill: monstercoingame.com
-* Kill: wonderlandco.in
-* Kill: remotupload.com
-* Kill: mangabird.me
-* Kill: cbsnews.com
-* Kill: bmw-club.cz
-* Kill: appdn.net
-* Kill: foerderland.de
-* Kill: elfqrin.com
-* Kill: file4go.net
-* Kill: nowdownload.ec
-* Kill: nationalgeographic.com
-* Kill: tutoriels-android.com
-* Kill: smiechawatv.pl
-* Kill: up2stream.com
-* Kill: filmyhd-online.com
-* Kill: 3dsthem.es
-* Kill: larioja.com
-* Kill: smashingmagazine.com
-* Kill: dz-android.com
-* Kill: tvseriesonline.pl
-* Kill: motorsport-total.com
-* Kill: directdownloadph.com
-* Kill: auto14.pw
-* Kill: workupload.com
-* Kill: aquabitcoin.com
-* Kill: dailydoge.org
-* Kill: bachtrack.com
-* Kill: mp3skull.is
-* Kill: sheekyforums.com
-* Kill: pcworld.idg.com.au
-* Kill: tvono.com
-* Kill: dasolo.org
-* Kill: purepc.pl
-* Kill: mtlblog.com
-* Kill: di.se
-* Kill: izzylaif.com
-* Kill: game4free.nl
-* Kill: spieletipps.de
-* Kill: fullmatchesandshows.com
-* Kill: satcesc.com
+#### Release 9.6 (May 14, 2016)
+##### UserScript
+* Core
+  * Improve
+    * function video, onbeforescript (now compatible with chrome/opera), convert to utf-8 without BOM and compatible *strict-mode*, optimize imgBailt
 
+* Rules
+  * Add/Fix
+    * workupload.com, marketwatch.com, videowood.tv, receive-a-sms.com, wakeupcallme.com, ringmycellphone.com, faqmozilla.org, themarker.com, haaretz.co.il, porosin.co.uk, buzina.xyz, leecher.us, backin.net, wstream.video, canalwp.com, topserialy.sk, pcgames-download.net, pornve.com, alphahistory.com, 3dsthem.es, manga-news.com, game-debate.com, 360haven.com, tv3play (network), thememypc.com, exrapidleech.info, player.pl, BlockAdBlock (generic), kissasian.com, buzina.xyz
 
-##### Release 9.4 (March 26, 2016)
-> Script
-* Kill: naturalbd.com
-* Kill: narutoshippudenvf.com
-* Kill: thomas-n-ruth.com
-* Kill: mangamint.com
-* Kill: prem.link
-* Kill: thebadbuzz.com
-* Kill: agarabi.com
-* Kill: onmeda.de
-* Kill: newsinlevels.com
-* Kill: mobile-tracker-free.com
-* Kill: openload.us
-* Kill: cda-online.pl
-* Kill: urbanplanet.org
-* Kill: newyorker.com
-* Kill: moje-filmy.tk (ads)
-* Kill: nicoblog.org
-* Kill: europe1.fr
-* Kill: sadeempc.com
-* Kill: canShowAds (generic)
-* Kill: sports.fr
-* Kill: avmoo.com
+##### FilterList
+* Rules
+  * Add/Fix
+    * porncomix.info, 20minutes.fr, videowood.tv, link.tl, off-soft.net, mrpiracy.club, semprot.com, yad2.co.il, voici.fr, detectadblock.com, cinemablend.com, hdzog.com (ads), wallpapershacker.com, imgclick.net, zevkleizle.com, voicetv.co.th, playwire.com, passimtv.xyz, listamais.com.br, snacktv.de, euroman.dk, titlovi.com, dogry.pl, telephoneannuaire.fr, tiscali.cz, clinefree.com, spoiler.net, onet.pl, themarysue.com, narcity.com, purepc.pl, minmote.no, schoener-wohnen.de, vizer.tv, folha.uol.com.br, iosworld.pl, zarabiajnaokazjach.pl, emucr.com, ouest-france.fr, godt.no, mmm.dk, topsport.bg, darmowa-bramkasms.pl, scigacz.pl, inc.com, exrapidleech.info, vvvvid.it
 
-> List
-* Kill: KillAdBlock  (generic)
-* Kill: Sorry AdBlocker (generic)
-* Kill: seoghoer.dk
-* Kill: voyageforum.com
-* Kill: dama.bg
-* Kill: upvast.com
-* Kill: sc2casts.com
-* Kill: theguardian.com
-* Kill: dlh.net
-* Kill: 3dsthem.es
-* Kill: debridnet.com
-* Kill: computerworld.com.au
-* Kill: vipracing.info
-* Kill: lol.moa.tw
-* Kill: mangamint.com
-* Kill: clikcoin.pl
-* Kill: vider.pl
-* Kill: halamadrid.pl
-* Kill: playonlinux.com
-* Kill: turfomania.fr
-* Kill: pcworld.co.nz
-* Kill: bakersfield.com
-* Kill: girlstory.kr
-* Kill: olympiakos-live.gr
-* Kill: wurst-client.tk
-* Kill: sweclockers.com
-* Kill: wstream.video
-* Kill: ria.ru
-* Kill: net.hr
-* Kill: hdmovie14.net
-* Kill: voici.fr
-* Kill: livedebrid.com
-* Kill: turkleech.com
-* Kill: leo.org
-* Kill: dinostream.pw
-* Kill: joyreactor.cc
-* Kill: kupongid.ru
-* Kill: pornhub.com
-* Kill: hackingwithswift.com
-* Kill: tweaktown.com
-* Kill: vtomske.ru
-* Kill: appspot.com
-* Kill: serve.netsh.org
-* Kill: di.se
-* Kill: trackr.fr
-* Kill: nokiahacking.pl
-* Kill: ekstrabladet.dk
-* Kill: jeja.pl
-* Kill: seguridadwireless.es
-* Kill: animevf.tv
-* Kill: semprot.com
-* Kill: brtfix.com
-* Kill: embedupload.com
-* Kill: newyorker.com
-* Kill: eskago.pl
-* Kill: freetuts.net
-* Kill: 20mn.fr
-* Kill: 20mn.ch
-* Kill: twnt22.pl
-* Kill: lemonde.fr
-* Kill: lefigaro.fr
-* Kill: lequipe.fr
-* Kill: nouvelobs.com
-* Kill: clubic.com
-* Kill: rtl.fr
-* Kill: larvf.com
-* Kill: mkvcinemas.com
-* Kill: newhdmovie24.com
-* Kill: sports4u.tv
-* Kill: filesisland.com
-* Kill: freebitco.in
-* Kill: freedoge.co.in
-* Kill: goldenmoustache.com
-* Kill: bfmtv.com
-* Kill: crunchyroll.com
-* Kill: vgtv.no
-* Kill: btaia.com
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#### Release 9.5 (April 17, 2016)
+##### UserScript
+* Metablock
+  * Add 
+    * connect
+* Rules
+  * Add/Fix
+    * onmeda.de, thailande-fr.com, btaia.com, lol.moa.tw, rimladi.com, kitorelo.com, omnipola.com, rockfile.eu, agario.sx, 8muses.com, next-episode.net, tvn.pl, tvn24.pl, player.pl, tusoft.org, hisse.net, debrido.com, debridfast.com, getdebrid.com, debrid.us, todayidol.com, prem.link, whiskyprijzen.com, whiskyprices.co.uk, whiskypreise.com, whiskyprix.fr, europeup.com, nrj.fr, exashare.com, youwatch.org, superanimes.com, cnbeta.com, litv.tv, srnk.co, animmex.co, marketwatch.com, socketloop.com, crackhex.com, revealedtricks4u.com, di.se, computerworlduk.com, pizzamaking.com, computerworm.net, 360haven.com, abcmalayalam.com, slideplayer.pl
+  * Improve
+    * BlockAdBlock (generic)
+  * Exclude
+    * popmech.ru
 
-##### Release 9.3 (February 29, 2016)
-> Script
-* Improve: Antiblock (generic)
-* Kill: canRunAds (generic)
-* Kill: leporno.org
-* Kill: mac4ever.com
-* Kill: xstory-fr.com
-* Kill: hentaifr.net
-* Kill: hentaihaven.org
-* Kill: filmstreaming-hd.com
-* Kill: filmvf.net
-* Kill: uploadshub.com
-* Kill: moje-filmy.tk (ads)
-* Kill: dasolo.org
-* Kill: mangas.zlx.com.br
-* Kill: mangasproject.com.br 
-* Kill: mangasproject.net.br
-* Kill: fullstuff.net
-* Kill: zeusnews.it
-* Kill: cheminots.net
-* Kill: filespace.com
-* Kill: lolsy.tv
-* Kill: free-steam-giveaways.com
-* Kill: multiup.org
-* Kill: exrapidleech.info
-* Kill: animes-mangas-ddl.com
-* Kill: noticiasautomotivas.com.br
-* Kill: backin.net
-* Kill: onmeda.de
-* Kill: darkstars.org
-* Kill: corepacks.com
-* Exclude: dolldivine.com 
-* Kill: petitchef.ro
-* Kill: link.tl
+##### FilterList
+* Rules
+  * Add/Fix
+    * dl.free.fr, rte.ie, iptvcanales.com, sc2casts.com, blastingnews.com, freevaluator.com, 01net.com, wpmienphi.com, anisubsia.com, theplace2.ru, tut.by, sharefreeall.com, scambiofile.info, robotcoingame.com, monstercoingame.com, wonderlandco.in, remotupload.com, mangabird.me, cbsnews.com, bmw-club.cz, appdn.net, foerderland.de, elfqrin.com, file4go.net, nowdownload.ec, nationalgeographic.com, tutoriels-android.com, smiechawatv.pl, up2stream.com, filmyhd-online.com, 3dsthem.es, larioja.com, smashingmagazine.com, dz-android.com, tvseriesonline.pl, motorsport-total.com, directdownloadph.com, auto14.pw, workupload.com, aquabitcoin.com, dailydoge.org, bachtrack.com, mp3skull.is, sheekyforums.com, pcworld.idg.com.au, tvono.com, dasolo.org, purepc.pl, mtlblog.com, di.se, izzylaif.com, game4free.nl, spieletipps.de, fullmatchesandshows.com, satcesc.com, AdBlockBlocker (generic)
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> Liat
-* Kill: mangas.zlx.com.br
-* Kill: mangasproject.com.br 
-* Kill: mangasproject.net.br
-* Kill: telegraaf.nl
-* Kill: telegraph.co.uk
-* Kill: bleachmx.co
-* Kill: notre-planete.info
-* Kill: designtaxi.com
-* Kill: videomega.tv
-* Kill: dasolo.org
-* Kill: twojeip.wp.pl
-* Kill: satoshiquiz.com
-* Kill: gazetaprawna.pl
-* Kill: hitek.fr
-* Kill: sportdeutschland.tv
-* Kill: vtele.ca
-* Kill: f1i.com
-* Kill: wallpapermania.eu
-* Kill: lepoint.fr
-* Kill: jyllands-posten.dk
-* Kill: sms-receive.net
-* Kill: afreesms.com
-* Kill: rte.ie
-* Kill: outlook.live.com
-* Kill: shencomics.com
-* Kill: playonlinux.com
-* Kill: cnx-software.com
-* Kill: mangahen.com
-* Kill: onperiscope.com
-* Kill: downloads.codefi.re
-* Kill: settlersonlinemaps.com
-* Kill: pornve.com
-* Kill: hentai-foundry.com
-* Kill: massdj.org
-* Kill: abysstream.com
-* Kill: cekresi.com
-* Kill: gamersglobal.de
-* Kill: auto.cz
-* Kill: dragoart.com
-* Kill: trading-evolution.com
-* Kill: creativeuncut.com
-* Kill: hrej.cz
-* Kill: vvvvid.it
-* Kill: habrahabr.ru
-* Kill: megamozg.ru
-* Kill: geektimes.ru
-* Kill: debridnet.com
-* Kill: nu.nl
-* Kill: sport1.de
-* Kill: mocospace.com
-* Kill: filikula.com
-* Kill: ruleporn.com
-* Kill: apkmirror.com
-* Kill: oglaszamy24.pl
-* Kill: zatnawqy.net
-* Kill: abovetopsecret.com
+#### Release 9.4 (March 26, 2016)
+##### UserScript
+* Rules
+  * Add/Fix
+    * naturalbd.com, narutoshippudenvf.com, thomas-n-ruth.com, mangamint.com, prem.link, thebadbuzz.com, agarabi.com, onmeda.de, newsinlevels.com, mobile-tracker-free.com, openload.us, cda-online.pl, urbanplanet.org, newyorker.com, moje-filmy.tk (ads), nicoblog.org, europe1.fr, sadeempc.com, canShowAds (generic), sports.fr, avmoo.com
 
+##### FilterList
+* Rules
+  * Add/Fix
+    * KillAdBlock (generic), Sorry AdBlocker (generic), seoghoer.dk, voyageforum.com, dama.bg, upvast.com, sc2casts.com, theguardian.com, dlh.net, 3dsthem.es, debridnet.com, computerworld.com.au, vipracing.info, lol.moa.tw, mangamint.com, clikcoin.pl, vider.pl, halamadrid.pl, playonlinux.com, turfomania.fr, pcworld.co.nz, bakersfield.com, girlstory.kr, olympiakos-live.gr, wurst-client.tk, sweclockers.com, wstream.video, ria.ru, net.hr, hdmovie14.net, voici.fr, livedebrid.com, turkleech.com, leo.org, dinostream.pw, joyreactor.cc, kupongid.ru, pornhub.com, hackingwithswift.com, tweaktown.com, vtomske.ru, appspot.com, serve.netsh.org, di.se, trackr.fr, nokiahacking.pl, ekstrabladet.dk, jeja.pl, seguridadwireless.es, animevf.tv, semprot.com, brtfix.com, embedupload.com, newyorker.com, eskago.pl, freetuts.net, 20mn.fr, 20mn.ch, twnt22.pl, lemonde.fr, lefigaro.fr, lequipe.fr, nouvelobs.com, clubic.com, rtl.fr, larvf.com, mkvcinemas.com, newhdmovie24.com, sports4u.tv, filesisland.com, freebitco.in, freedoge.co.in, goldenmoustache.com, bfmtv.com, crunchyroll.com, vgtv.no, btaia.com
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 9.2 (February 2, 2016)
-> Script
-* Update: metadata block
-* License: remove NC-clause
-* Fix: JSHint errors
-* Rename: some functions and variables
-* Improve: some functions
-* Improve: debug mode
-* Improve: BetterStopAdblock (generic)
-* Improve: Antiblock (generic)
-* Improve: BlockAdBlock (specific)
-* Improve: AdblockBlocker (generic)
-* Kill: premiumleecher.com
-* Kill: lewebtvbouquetfrancophone.overblog.com
-* Kill: webtv.bloguez.com
-* Kill: latelegratuite.blogspot.com
-* Kill: dbplanet.net
-* Kill: sofoot.com
-* Kill: gaara-fr.com
-* Kill: komorkomania.pl
-* Kill: mangahost.com
-* Kill: razercrypt.com
-* Kill: gamer.com.tw
-* Fix: armorgames.com
-* Kill: kafeteria.pl
-* Kill: tuxboard.com
-* Kill: getdebrid.com
-* Kill: debridfast.com
-* Exclude: exacttarget.com
-* Kill: monnsutogatya.com
+#### Release 9.3 (February 29, 2016)
+##### UserScript
+* Rules
+  * Add/Fix
+    * canRunAds (generic), leporno.org, mac4ever.com, xstory-fr.com, hentaifr.net, hentaihaven.org, filmstreaming-hd.com, filmvf.net, uploadshub.com, moje-filmy.tk (ads), dasolo.org, mangas.zlx.com.br, mangasproject.com.br , mangasproject.net.br, fullstuff.net, zeusnews.it, cheminots.net, filespace.com, lolsy.tv, free-steam-giveaways.com, multiup.org, exrapidleech.info, animes-mangas-ddl.com, noticiasautomotivas.com.br, backin.net, onmeda.de, darkstars.org, corepacks.com, petitchef.ro, link.tl
+  * Improve
+    * Antiblock (generic)
+  * Exclude
+    * dolldivine.com 
 
-> List
-* License: remove NC-clause
-* Remove: redundant rules
-* Kill: 3bmeteo.com
-* Kill: itsrainingbitcoins.com
-* Kill: flymer.ru
-* Kill: mtlblog.com
-* Kill: captchme.net (generic)
-* Kill: phonearena.com
-* Kill: cnx-software.com
-* Fix: linkbucks (network)
-* Kill: AdDefender (generic)
-* Kill: world4ufree.cc
-* Kill: srnk.co
-* Kill: pornve.com
-* Kill: datalog.co.uk
-* Kill: darkbtc.info
-* Kill: daciaclub.cz
-* Kill: windows7themes.net
-* Kill: beforeitsnews.com
-* Kill: croydonguardian.co.uk
-* Kill: tobys.dk
-* Kill: fanfiktion.de (ads)
-* Kill: iprima.cz
-* Kill: iptvforever.com
-* Kill: bitvid.sx
-* Kill: cultofmac.com
-* Kill: ios-blog.co.ukà
-* Kill: dlneko.org
-* Kill: digitalcitizen.life
-* Kill: alluc.ee
-* Kill: gaijin.at
-* Kill: se.pl
-* Kill: filehorse.com
-* Kill: canalplus.fr
-* Kill: binbucks.com
-* Kill: talktv.vn
+##### FilterList
+* Rules
+  * Add/Fix
+    * mangas.zlx.com.br, mangasproject.com.br , mangasproject.net.br, telegraaf.nl, telegraph.co.uk, bleachmx.co, notre-planete.info, designtaxi.com, videomega.tv, dasolo.org, twojeip.wp.pl, satoshiquiz.com, gazetaprawna.pl, hitek.fr, sportdeutschland.tv, vtele.ca, f1i.com, wallpapermania.eu, lepoint.fr, jyllands-posten.dk, sms-receive.net, afreesms.com, rte.ie, outlook.live.com, shencomics.com, playonlinux.com, cnx-software.com, mangahen.com, onperiscope.com, downloads.codefi.re, settlersonlinemaps.com, pornve.com, hentai-foundry.com, massdj.org, abysstream.com, cekresi.com, gamersglobal.de, auto.cz, dragoart.com, trading-evolution.com, creativeuncut.com, hrej.cz, vvvvid.it, habrahabr.ru, megamozg.ru, geektimes.ru, debridnet.com, nu.nl, sport1.de, mocospace.com, filikula.com, ruleporn.com, apkmirror.com, oglaszamy24.pl, zatnawqy.net, abovetopsecret.com
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 9.2 (February 2, 2016)
+##### UserScript
+* Metablock
+  * Update
+    * license remove NC-clause
+* Core
+  * Improve
+    * debug mode, some functions
+  * Fix
+    * JSHint errors
+* Rules
+  * Add/Fix
+    * premiumleecher.com, lewebtvbouquetfrancophone.overblog.com, webtv.bloguez.com, latelegratuite.blogspot.com, dbplanet.net, sofoot.com, gaara-fr.com, komorkomania.pl, mangahost.com, razercrypt.com, gamer.com.tw, armorgames.com, kafeteria.pl, tuxboard.com, getdebrid.com, debridfast.com, monnsutogatya.com
+  * Improve
+    * BetterStopAdblock (generic), Antiblock (generic), BlockAdBlock (specific), AdblockBlocker (generic)
+  * Exclude
+    * exacttarget.com
 
-##### Release 9.1 (January 10, 2016)
-> Script
-* Add: Aak.fakeFuckAdBlock (function)
-* Fix: Aak.listDetect (function)
-* Fix: forbes.com
-* Fix: prem.link
-* Kill: bluesatoshi.com
-* Kill: satoshiempire.com
-* Kill: oneadfaucet.com
-* Kill: razercrypt.com
-* Fix: cityam.com
-* Kill: milfzr.com
-* Fix: FuckAdblock (generic)
-* Kill: farmet.info
-* Kill: gadzetomania.pl
-* Kill: micast.tv (prevent popunder)
-* Kill: linkdrop.net
-* Kill: agario.sx
-* Kill: semprot.com
-* Kill: megogo.net
-* Kill: autokult.pl
-* Kill: revclouds.com
-* Kill: koscian.net
-* Kill: globeslot.com
+##### FilterList
+* Metablock
+  * Update
+    * license remove NC-clause
+* Rules
+  * Add/Fix
+    * 3bmeteo.com, itsrainingbitcoins.com, flymer.ru, mtlblog.com, captchme.net (generic), phonearena.com, cnx-software.com, linkbucks (network), AdDefender (generic), world4ufree.cc, srnk.co, pornve.com, datalog.co.uk, darkbtc.info, daciaclub.cz, windows7themes.net, beforeitsnews.com, croydonguardian.co.uk, tobys.dk, fanfiktion.de (ads), iprima.cz, iptvforever.com, bitvid.sx, cultofmac.com, ios-blog.co.ukà, dlneko.org, digitalcitizen.life, alluc.ee, gaijin.at, se.pl, filehorse.com, canalplus.fr, binbucks.com, talktv.vn
+  * Remove
+    * redundant rules
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Kill: fdesouche.com
-* Kill: mymanga.io
-* Kill: rychlost.cz
-* Kill: bitcoin-gator.com
-* Fix: AdBlock Notify (generic)
-* Kill: how2play.pl 
-* Kill: theargus.co.uk
-* Kill: merlininkazani.com
-* Fix: 4shared.com
-* Kill: extremetube.com
-* Kill: pornhub.com
-* Kill: keezmovies.com
-* Kill: youporn.com
-* Kill: youporngay.com
-* Kill: spankwire.com
-* Kill: mofosex.com
-* Kill: hahasport.me (ads)
-* Kill: dabstrap.com (ads)
-* Kill: putlocker.is
-* Kill: anibatch.net
-* Kill: agarserv.com
-* Kill: zuuk.org ads
-* Kill: embeducaster.com (ads)
-* Kill: zoomtv.me ads
-* Kill: biggestplayer.me
-* Kill: mangahop.com
-* Kill: missmedia.pl
-* Kill: cast4u.tv
-* Kill: auroravid.to
-* Kill: appki.com.pl
-* Kill: androidpolska.pl
-* Kill: dstar.pzk.pl
-* Kill: animeheaven.eu
-* Kill: gq.com
-* Kill: multiup.org
-* Kill: rappers.in
-* Kill: faucetbitcoins.com
-* Kill: grajkownia.com
-* Kill: imgnova.xyz
-* Kill: stalker-worlds.ru
-* Kill: iprima.cz
-* Kill: woprime.com
-* Kill: boxfaucet.com
-* Kill: nnm-club.ws
+#### Release 9.1 (January 10, 2016)
+##### UserScript
+* Core
+  * Add
+    * function: fakeFuckAdBlock
+  * Fix
+    * function: listDetect
+* Rules
+  * Add/Fix
+    * bluesatoshi.com, satoshiempire.com, oneadfaucet.com, razercrypt.com, milfzr.com, farmet.info, gadzetomania.pl, micast.tv (prevent popunder), linkdrop.net, agario.sx, semprot.com, megogo.net, autokult.pl, revclouds.com, koscian.net, globeslot.com, forbes.com, FuckAdblock (generic), cityam.com, prem.link
 
+##### FilterList
+* Rules
+  * Add/Fix
+    * fdesouche.com, mymanga.io, rychlost.cz, bitcoin-gator.com, how2play.pl , theargus.co.uk, merlininkazani.com, extremetube.com, pornhub.com, keezmovies.com, youporn.com, youporngay.com, spankwire.com, mofosex.com, hahasport.me (ads), dabstrap.com (ads), putlocker.is, anibatch.net, agarserv.com, zuuk.org ads, embeducaster.com (ads), zoomtv.me ads, biggestplayer.me, mangahop.com, missmedia.pl, cast4u.tv, auroravid.to, appki.com.pl, androidpolska.pl, dstar.pzk.pl, animeheaven.eu, gq.com, multiup.org, rappers.in, faucetbitcoins.com, grajkownia.com, imgnova.xyz, stalker-worlds.ru, iprima.cz, woprime.com, boxfaucet.com, nnm-club.ws, AdBlock Notify (generic), 4shared.com
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 9.0 (December 19, 2015)
-> Script
-* Improve: Aak.registerCommands (function)
-* Add: Aak.pushCommmds (function)
-* Add: Aak.listCommmds (function)
-* Fix: warn 'window.webkitStorageInfo' is deprecated on Chrome
-* Fix: FuckAdblock (generic)
-* Fix: Antiblock.org (generic)
-* Kill: adreactor (generic)
-* Fix: youwatch.org
-* Fix: exashare.com
-* Exclude: plnkr.co
-* Kill: eurotransport.de
-* Kill: forbes.com
-* Fix: exrapidleech.info
-
-> List
-* Kill: receive-a-sms.com
-* Kill: movie7share.net
-* Kill: nowvideo.li
-* Kill: debridnet.com
-* Kill: wwwshooter.com
-* Kill: samehadaku.net
-* Kill: terrarium.pl
-* Kill: optyczne.pl
-* Fix: openload (network)
-* Kill: j.pl
-* Kill: c0.pl
-* Kill: y0.pl
-* Kill: epiotrkow.pl
-* Kill: di.se
-* Kill: wakanim.tv
-* Fix: crichd.tv
-* Kill: hayan.tv
-* Kill: quebeccoupongratuit.com
-* Kill: imgbb.net
-* Kill: ddtorun.pl
-* Kill: ddwloclawek.pl
-* Kill: benchmark.pl
-* Kill: unixmen.com
-* Kill: playerhd1.pw
-* Kill: playerhd2.pw
-* Kill: ruutu.fi
-* Kill: zelaznalogika.net
-* Kill: armorgames.com
-
+#### Release 9.0 (December 19, 2015)
+##### UserScript
+* Core
+  * Add
+    * function: pushCommmds, listCommmds
+  * Improve
+    * function: registerCommands
+  * Fix
+    * warn 'window.webkitStorageInfo' is deprecated on Chrome
+* Rules
+  * Add/Fix
+    * FuckAdblock (generic), Antiblock.org (generic), adreactor (generic), youwatch.org, exashare.com, eurotransport.de, forbes.com, exrapidleech.info
+  * Exclude
+    plnkr.co
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * receive-a-sms.com, movie7share.net, nowvideo.li, debridnet.com, wwwshooter.com, samehadaku.net, terrarium.pl, optyczne.pl, openload (network), j.pl, c0.pl, y0.pl, epiotrkow.pl, di.se, wakanim.tv, crichd.tv, hayan.tv, quebeccoupongratuit.com, imgbb.net, ddtorun.pl, ddwloclawek.pl, benchmark.pl, unixmen.com, playerhd1.pw, playerhd2.pw, ruutu.fi, zelaznalogika.net, armorgames.com
+	
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
 ##### Release 8.9 (December 6, 2015)
 > Script
