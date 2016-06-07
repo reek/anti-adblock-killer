@@ -35,6 +35,9 @@
 @@||loxtk.com/gTemplate.php?GID=$subdocument,third-party
 @@||contentlockingnetworks.com/gLoader.php?GID=$script,third-party
 @@||contentlockingnetworks.com/gTemplate.php?GID=$subdocument,third-party
+!TrryMask.com (mask)
+https://trymask.com/api/v1/script/*
+###maskDisablePopup
 ! AdScendMedia
 ! if (gwloaded==false){window.location = "http://adscendmedia.com/gateway_adblock.php?p=4316";}
 ! https://adscendmedia.com/widget_adblock.php?p=12377 --> redirect
@@ -3436,4 +3439,6 @@ gaara-fr.com###pub01
 gaara-fr.com###ga-skin-left
 gaara-fr.com###ga-skin-right
 gaara-fr.com###ga-skin-top
+
+
 
