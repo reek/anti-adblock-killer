@@ -95,7 +95,7 @@
 /plugins/better-stop-adblock/*
 /js/bsa-script-doctype.js$script
 /js/bsa-script-no-doctype.js$script
-! Adblock Detector 
+! Adblock Detector
 /AdblockDetector/handler.min.js$script
 ! StopAdBlock
 ! http://www.stopadblock.org/
@@ -217,7 +217,7 @@ gq.com#@#.text-ad-links
 ! https://www.adreactor.com/
 ||adreactor.com/js/FAB.js$script,third-party
 !----------------------------------------------------------------------------------------------------!
-! Anti-Adblock (Specific) 
+! Anti-Adblock (Specific)
 !----------------------------------------------------------------------------------------------------!
 ! canRunAds
 ! https://github.com/MatthewGross/CanRunAds
@@ -1785,7 +1785,7 @@ rychlost.cz###cpcbsd9z1
 ! bitcoin-gator.com
 ! https://github.com/reek/anti-adblock-killer/issues/874
 @@||bitcoin-gator.com/public/adblock.js$script
-! how2play.pl 
+! how2play.pl
 ! https://github.com/reek/anti-adblock-killer/issues/876
 @@||how2play.pl/wp-content/themes/htp/js/vendor/adblock.js$script
 ! theargus.co.uk
@@ -2807,7 +2807,7 @@ bytzbiorowy.pl###stickymsg
 ||doremido.com^
 ||speednetwork14.com^
 ! ---------------------------------------------------------------------------------------------------!
-! Popup 
+! Popup
 ! ---------------------------------------------------------------------------------------------------!
 ||everydaycarry.com^$popup
 ||bet-at-home.com^$popup
@@ -3436,4 +3436,6 @@ gaara-fr.com###pub01
 gaara-fr.com###ga-skin-left
 gaara-fr.com###ga-skin-right
 gaara-fr.com###ga-skin-top
-
+! *.indiatimes.com
+! var window.canRun = true;
+@@||indiatimes.com/ads.cms$script
