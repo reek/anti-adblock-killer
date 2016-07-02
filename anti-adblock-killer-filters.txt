@@ -3439,3 +3439,6 @@ gaara-fr.com###ga-skin-top
 ! *.indiatimes.com
 ! var window.canRun = true;
 @@||indiatimes.com/ads.cms$script
+! hindustantimes.com
+! var window.canRun = true;
+@@||hindustantimes.com/res/js/ads.js$script
