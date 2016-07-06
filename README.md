@@ -138,7 +138,8 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * AdBlockConverter (adblockconverter.com)
 * HowToRemoveAdblock (howtoremoveadblock.com)
 * BlockAdblock (blockadblock.com)
- 
+* TryMask (trymask.com)
+
 ##### Plugins (Wordpress)
 * AdBlock Blocker
 * No Adblock (noadblock.com)
@@ -152,12 +153,33 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * FeatureBlock
 * DeAdblocker
 * NoAdblock Nice Message
+* Ad Block Defender
+* Ad Blocking Advisor
 
 ##### Custom
 * Please consult the changelog
 
 
 ## Changelog
+#### Release 9.8 (July 6, 2016)
+##### UserScript
+* Core
+  * Improve
+    * function: unpackScript, player
+  * Fix
+    * JSHint errors
+* Rules
+  * Add/Fix
+    * tvn.pl, tvn24.pl, player.pl, AntiBlock (generic), voici.fr, rtl.de, exrapidleech.info, desktopsolution.org, lesechos.fr, abczdrowie.pl, mybank.pl, infojobs.com.br, ekstrabladet.dk, eb.dk, jc-mp.com, 15min.lt, sc2casts.com, nypost.com, folha.uol.com.br, programme-tv.net, strikeout.me, aranzulla.it, thesimsresource.com, play.tv3.lt, tv3play.tv3.ee, simply-debrid.com, rapidgrab.pl, ajihezo.info, realgm.com, nasdaq.com, atdhe.se, libertaddigital.com, mil.ink, indiatimes.com
+
+##### FilterList
+* Rules
+  * Add/Fix
+    * myanimelist.net, TryMask (generic), tube8.com, tube8.fr, tube8.es, l2topzone.com, b.dk, semprot.com, skyrimcalculator.com, allmusic.com, q.gs, streaminporn.com, gaypornmasters.com, imgsicily.it, miuipro.ru, mercedesclub.cz, lepoint.fr, gry.pl, english-subtitles.club, r7.com, Ad Block Defender (generic), spaste.com, dragcave.net, Ad Blocking Advisor (generic), deviantart.com, nadajemy.pl, 52av.tv, multiup.org, burze.dzis.net, 380cc.cc, receive-sms-online.info, mp3skull.vg, javfreestreaming.com, strikeout.me, socketloop.com, diymediahome.org, pasazer.com, metal-bitcoin.com, slacker.com, dstar.pzk.pl, tsviewer.com, cnubis.com, itsupportguides.com, noticias.uol.com.br, proplanta.de, anitoonstv.com, seekingalpha.com, investing.com, crunchyroll.com, indiatimes.com, up2stream.com, vakarm.net, divertissonsnous.com, loi1901.com, eurosolidaire.com
+  * Remove
+    * bakersfield.com
+
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Release 9.7 (June 6, 2016)
 ##### UserScript
 * Core
@@ -165,7 +187,6 @@ Composed of a user script «AakScript» written in javascript and a filter list 
     * function: onEvent, offEvent, emitEvent, loadStyle, intoString, intoArray, intoObject
   * Improve
     * function: addScript, loadScript, getElement, checkList, onBeforeScript
-
 * Rules
   * Add/Fix
     * 8muses.com, wiziwig (network), myp2p (network), atdhe (network), vipbox.nu, richonrails.com, jeu.video, pcgames-download.net, thechive.com, epicurious.com, dplay (network), planetatvonlinehd.com, youpeliculasweb.com, libredirecto-a.blogspot.com.ar, yourlifeupdated.net, link.tl, play.radio1.se, play.bandit.se, play.lugnafavoriter.com, play.rixfm.se, trucksim.org, freegameserverhost.com, kodilive.eu, deadline.com, la-cosa.it, diarioinformacion.com, computerworlduk.com, exrapidleech.info, bild.de, gamestar.de, 15min.lt, tweaktown.com, buzina.xyz, videomega.tv
@@ -185,8 +206,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 ##### UserScript
 * Core
   * Improve
-    * function video, onbeforescript (now compatible with chrome/opera), convert to utf-8 without BOM and compatible *strict-mode*, optimize imgBailt
-
+    * function player, onbeforescript (now compatible with chrome/opera), convert to utf-8 without BOM and compatible *strict-mode*, optimize imgBailt
 * Rules
   * Add/Fix
     * workupload.com, marketwatch.com, videowood.tv, receive-a-sms.com, wakeupcallme.com, ringmycellphone.com, faqmozilla.org, themarker.com, haaretz.co.il, porosin.co.uk, buzina.xyz, leecher.us, backin.net, wstream.video, canalwp.com, topserialy.sk, pcgames-download.net, pornve.com, alphahistory.com, 3dsthem.es, manga-news.com, game-debate.com, 360haven.com, tv3play (network), thememypc.com, exrapidleech.info, player.pl, BlockAdBlock (generic), kissasian.com, buzina.xyz
@@ -318,305 +338,99 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 	
 --- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.9 (December 6, 2015)
-> Script
-* Fix: AdBlock Detector XenForo Rellect (generic)
-* Fix: Antiblock.org (generic)
-* Fix: FuckAdBlock & BlockAdBlock (generic)
-* Fix: exrapidleech.info
-* Kill: beppegrillo.it
-* Fix: tek.no
-* Fix: prem.link
-* Kill: scriptznull.nl
-* Kill: winandmac.com
-* Kill: yes.fm
-* Kill: dpstream.net
-* Kill: gum-gum-streaming.com
-* Kill: jeu.info
-* Kill: imageraider.com
-* Kill: main-spitze.de
-* Kill: wormser-zeitung.de
-* Kill: lampertheimer-zeitung.de
-* Kill: wiesbadener-tagblatt.de
-* Kill: buerstaedter-zeitung.de
-* Kill: wiesbadener-kurier.de
-* Kill: rhein-main-presse.de
-* Kill: allgemeine-zeitung.de
+#### Release 8.9 (December 6, 2015)
+##### UserScript
+* Rules
+  * Add/Fix
+    * AdBlock Detector XenForo Rellect (generic), Antiblock.org (generic), FuckAdBlock & BlockAdBlock (generic), exrapidleech.info, beppegrillo.it, tek.no, prem.link, scriptznull.nl, winandmac.com, yes.fm, dpstream.net, gum-gum-streaming.com, jeu.info, imageraider.com, main-spitze.de, wormser-zeitung.de, lampertheimer-zeitung.de, wiesbadener-tagblatt.de, buerstaedter-zeitung.de, wiesbadener-kurier.de, rhein-main-presse.de, allgemeine-zeitung.de
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * jeu-concours.biz, hugo.sieradz.com.pl, terrarium.com.pl, t2e.pl, afreesms.com, topserialy.sk, 6play.fr, animeheaven.eu, skyrock.com, novamov.com, nowvideo.sx, nowvideo.to, wholecloud.net, cloudtime.to, videoweed.es, showsport-tv.com, verdirectotv.com, broadbandforum.co, radioline.co, howtoremoveadblock.com (generic), blockadblock.com (generic), mediafree.co, Tisoomi (generic), cba.pl, voyageforum.com, al.ly, pssite.com, WPAdBlock (generic), hitek.fr, xboxforum.pl, teleboy.ch, scooter-chinois-4t.com, ultimate-goldust.fr.fo, freeiphone.fr
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Kill: jeu-concours.biz
-* Kill: hugo.sieradz.com.pl
-* Kill: terrarium.com.pl
-* Kill: t2e.pl
-* Fix: afreesms.com
-* Kill: topserialy.sk
-* Kill: 6play.fr
-* Kill: animeheaven.eu
-* Kill: skyrock.com
-* Kill: novamov.com
-* Kill: nowvideo.sx
-* Kill: nowvideo.to
-* Kill: wholecloud.net
-* Kill: cloudtime.to
-* Kill: videoweed.es
-* Kill: showsport-tv.com
-* Kill: verdirectotv.com
-* Kill: broadbandforum.co
-* Kill: radioline.co
-* Kill: howtoremoveadblock.com (generic)
-* Kill: blockadblock.com (generic)
-* Kill: mediafree.co
-* Kill: Tisoomi (generic)
-* Kill: cba.pl
-* Kill: voyageforum.com
-* Fix: al.ly
-* Kill: pssite.com
-* Kill: WPAdBlock (generic)
-* Kill: hitek.fr
-* Kill: xboxforum.pl
-* Kill: teleboy.ch
-* Kill: scooter-chinois-4t.com
-* Kill: ultimate-goldust.fr.fo
-* Kill: freeiphone.fr
+#### Release 8.8 (November 22, 2015)
+##### UserScript
+* Core
+  * Fix
+    * exclude domains
+* Rules
+  * Add/Fix
+    * Antiblock.org (generic), bild.de, computerbild.de (Ad-Defend), kissanime.to, exrapidleech.info, vipbox.biz, vipboxtv.co, vipapp.me, vipbox.eu, vipbox.so, cwtv.com, cnews.ru, phys.org
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * AdBlockConverter (generic), squidboards.com, hubturkey.net, afreesms.com, iplex.pl, giovanniterlingen.com, starmusiq.com, yocast.tv, getdebrid.com, megabitload.com, thesimsresource.com, filmovizija.co, skidrowcrack.com, javfor.me, vtele.ca, aseanlegacy.net, synonim.net, olweb.tv, film.org.pl, hentenaar.com, securenetsystems.net, debridfast.com, multiup.org, ynet.co.il
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 8.7 (November 8, 2015)
+##### UserScript
+* Core
+  * Add
+    * function: pushCommmds, listCommmds
+  * Improve
+    * function: setCookie, 
+  * Fix
+    * function: update, detected
+* Rules
+  * Add/Fix
+    * Antiblock.org (generic), prem.link, bild.de, cleodesktop.com, qnimate.com, hackintosh.zone, rp-online.de (Ad-Defend), cloudwebcopy.com, derstandard.at, motorradonline.de (Ad-Defend), 20min.ch (Ad-Defend), bitcoinker.com
+  * Exclude
+    adblockplus.org
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * geo.de, eafyfsuh.net (ads), androiding.how, techsini.com, b-website.com, cuisineactuelle.fr, maskinteknik.dk, dagens.dk, al.ly, gokano.com, binbox.io (blockscript), bc.vc (blockscript), hdwallpapers4you.com, dinozap.info, ctenetwork.com, p2pcast.tv, filmovizija.club, exashare.com (ads), youporn.com, openload (network), dayt.se, corporatecentral.com, cityam.com, rtlxl.nl, macos-app.com
 
-##### Release 8.8 (November 22, 2015)
-> Script
-* Fix: Antiblock.org (generic)
-* Fix: exclude domains
-* Fix: bild.de
-* Kill: computerbild.de (Ad-Defend)
-* Fix: kissanime.to
-* Fix: exrapidleech.info
-* Kill: vipbox.biz
-* Kill: vipboxtv.co
-* Kill: vipapp.me
-* Kill: vipbox.eu
-* Kill: vipbox.so
-* Fix: cwtv.com
-* Kill: cnews.ru
-* Kill: phys.org
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Kill: AdBlockConverter (generic)
-* Kill: squidboards.com
-* Kill: hubturkey.net
-* Kill: afreesms.com
-* Kill: iplex.pl
-* Kill: giovanniterlingen.com
-* Kill: starmusiq.com
-* Kill: yocast.tv
-* Kill: getdebrid.com
-* Kill: megabitload.com
-* Kill: thesimsresource.com
-* Kill: filmovizija.co
-* Kill: skidrowcrack.com
-* Kill: javfor.me
-* Kill: vtele.ca
-* Kill: aseanlegacy.net
-* Kill: synonim.net
-* Fix: olweb.tv
-* Fix: film.org.pl
-* Fix: hentenaar.com
-* Kill: securenetsystems.net
-* Kill: debridfast.com
-* Fix: multiup.org
-* Kill: ynet.co.il
+#### Release 8.6 (October 21, 2015)
+##### UserScript
+* Core
+  * Fix
+    * bug no results on Google search bar
+  * Settings
+    * add an option to enable video HD quality
+* Rules
+  * Add/Fix
+    * ville-ideale.com, bakersfield.com, bild.de, spox.com, shz.de, transfermarkt.de
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * enlacespremium.biz, playbitco.in, skiplimite.tv, 8muses.com, eveskunk.com, jetradar.pl, videoo.info, buickforums.com, dayt.se, al.ly, proaudioz2.audio, 360haven.com, zorofiles.com, ouo.io (ads), 4shared.com, myvideo123.me, zdunskawola24.pl, bakersfield.com, dayt.se, tv3sport.dk, freedisc.pl, komentare.sme.sk, ghacks.net bug, vstrim.pl, multiup.org, openload (network), londynek.net, javfor.me, ppe.pl, shinden.pl, manga-sanctuary.com, itespresso.fr, bild.de, xxx-image.com
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-
-##### Release 8.7 (November 8, 2015)
-> Script
-* Improve: Aak.setCookie *function* (add argument path)
-* Fix: Aak.detected *function* (bug)
-* Fix: Aak.update *function* (bug auto update)
-* Fix: Antiblock.org (bug)
-* Fix: prem.link
-* Fix: bild.de
-* Kill: cleodesktop.com
-* Kill: qnimate.com
-* Fix: hackintosh.zone
-* Kill: rp-online.de (Ad-Defend)
-* Kill: cloudwebcopy.com
-* Kill: derstandard.at
-* Exclude: adblockplus.org
-* Kill: motorradonline.de (Ad-Defend)
-* Kill: 20min.ch (Ad-Defend)
-* Fix: bitcoinker.com
-
-> List
-* Kill: geo.de
-* Kill: eafyfsuh.net (ads)
-* Kill: androiding.how
-* Kill: techsini.com
-* Kill: b-website.com
-* Kill: cuisineactuelle.fr
-* Kill: maskinteknik.dk
-* Kill: dagens.dk
-* Kill: al.ly
-* Kill: gokano.com
-* Kill: binbox.io (blockscript)
-* Kill: bc.vc (blockscript)
-* Kill: hdwallpapers4you.com
-* Kill: dinozap.info
-* Kill: ctenetwork.com
-* Kill: p2pcast.tv
-* Fix: filmovizija.club
-* Fix: exashare.com (ads)
-* Kill: youporn.com
-* Fix: openload (network)
-* Fix: dayt.se
-* Kill: corporatecentral.com
-* Kill: cityam.com
-* Kill: rtlxl.nl
-* Kill: macos-app.com
-
-
-##### Release 8.6 (October 21, 2015)
-> Script
-* Fix: bug no results on Google search bar
-* Fix: ville-ideale.com
-* Kill: bakersfield.com
-* Kill: bild.de
-* Kill: spox.com
-* Kill: shz.de
-* Kill: transfermarkt.de
-* Settings: add an option to enable video HD quality
-
-> List
-* Kill: enlacespremium.biz
-* Kill: playbitco.in
-* Kill: skiplimite.tv
-* Kill: 8muses.com
-* Kill: eveskunk.com
-* Kill: jetradar.pl
-* Kill: videoo.info
-* Kill: buickforums.com
-* Kill: dayt.se
-* Kill: al.ly
-* Kill: proaudioz2.audio
-* Kill: 360haven.com
-* Kill: zorofiles.com
-* Kill: ouo.io (ads)
-* Kill: 4shared.com
-* Kill: myvideo123.me
-* Kill: zdunskawola24.pl
-* Kill: bakersfield.com
-* Kill: dayt.se
-* Kill: tv3sport.dk
-* Kill: freedisc.pl
-* Kill: komentare.sme.sk
-* Kill: ghacks.net bug
-* Kill: vstrim.pl
-* Kill: multiup.org
-* Kill: openload (network)
-* Kill: londynek.net
-* Kill: javfor.me
-* Kill: ppe.pl
-* Kill: shinden.pl
-* Kill: manga-sanctuary.com
-* Kill: itespresso.fr
-* Kill: bild.de
-* Kill: xxx-image.com
-
-
-##### Release 8.5 (October 4, 2015)
-> Script
-* Update: metadata
-* Improve: exclude domains rule
-* Improve: debug mode
-* Improve: function *player*
-* Improve: function *notification*
-* Improve:  function *createElement*
-* Improve: function *request*
-* Improve:  function *update*
-* Improve:  function *getBrowser*
-* Remove: function *addElement*
-* Add: function *addBaitElement*
-* Add: feature settings
-* Add: some issues url
-* Kill: AdBlock Detector (XenForo Rellect) (Plugin)
-* Fix: ncr redirection loop
-* Kill: kingmaker.news
-* Fix: hackintosh.zone
-* Fix: prem.link
-* Kill: narkive.com
-* Kill: cubeupload.com
-* Kill: exrapidleech.info
-* Fix: totaldebrid.org
-* Kill: naruto-mx.net
-* Kill: gametransfers.com
-* Kill: leveldown.fr
-* Kill: turbodebrideur.com
-* Kill: sahadan.com
-* Kill: freeskier.com (script+list)
-* Fix: tek.no
-* Fix: tek.no
-* Fix: vg.no
-* Fix: e24.no
-
-> List
-* Fix: youwatch.org (bug fullscreen+embed/iframe)
-* Fix: turbodebrideur.com (allow rule blocked by ListeFR)
-* Fix: openload (network)
-* Fix: multiup.org
-* Kill: biggestplayer.me
-* Kill: krs-online.com.pl
-* Kill: sc2casts.com
-* Kill: nnm-club.ws
-* Kill: popeoftheplayers.eu
-* Kill: bricozone.fr
-* Kill: howtogeek.com
-* Fix: prizebitcoins.com
-* Remove: rule interfering with Firefox 40 "Get Add-ons"
-* Kill: privatestream.tv (ads/timer)
-* Kill: piter.tv
-* Kill: articlerewritertool.com
-* Kill: spinbot.com
-* Kill: yocast.tv
-* Fix: some redundant rules
-* Fix: phonandroid.com
-* Fix: lachainemeteo.com (allow content blocked "MES FAVORIS MÉTÉO")
-* Fix: needrom.com
-* Kill: journaldugeek.com
-* Kill: journaldugamer.com
-* Kill: pixelistes.com
-* Kill: jdubuzz.com
-* Kill: 990.ro
-* Kill: unshowmasonline.com
-* Kill: vtele.ca
-* Kill: tibiopedia.pl
-* Kill: playerapp1.pw
-* Kill: fossbytes.com
-* Kill: showup.tv
-* Kill: habrahabr.ru
-* Kill: megamozg.ru
-* Kill: geektimes.ru
-* Kill: sharefreeall.com
-* Kill: dziennikwschodni.pl
-* Kill: polscygracze.pl
-* Kill: wpworld.pl
-* Kill: windowsowo.pl
-* Kill: virpe.com
-* Kill: polotv.pl
-* Kill: lumload.com
-* Kill: shippuden.tv
-* Fix: zerozero.pt
-* Fix: exashare.com
-* Kill: eska.tv
-* Kill: voxmusic.tv
-* Kill: fokus.tv
-* Kill: f1fanklub.pl
-* Fix: multiup.org
-* Kill: dziennik.pl
-* Kill: forsal.pl
-* Kill: gazetaprawna.pl
-* Kill: jegostrona.pl
-* Kill: prawnik.pl
-* Kill: agar.io
-* Kill: hostuje.net
-* Kill: inwestycje.pl
-* Kill: tvsierpc.pl
-
+#### Release 8.5 (October 4, 2015)
+##### UserScript
+* Metablock
+  * Update
+    * homepage, contactURL
+* Core
+  * Add
+    * function: addBaitElement, settings
+  * Improve
+    * function: player, notification, createElement, request, update, getBrowser; exclude domains rule, debug mode
+  * Fix
+    * ncr redirection loop
+* Rules
+  * Add/Fix
+    * AdBlock Detector (XenForo Rellect) (Plugin), kingmaker.news, hackintosh.zone, prem.link, narkive.com, cubeupload.com, exrapidleech.info, totaldebrid.org, naruto-mx.net, gametransfers.com, leveldown.fr, turbodebrideur.com, sahadan.com, freeskier.com, tek.no, tek.no, vg.no, e24.no
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * youwatch.org (bug fullscreen+embed/iframe), turbodebrideur.com (allow rule blocked by ListeFR), openload (network), multiup.org, biggestplayer.me, krs-online.com.pl, sc2casts.com, nnm-club.ws, popeoftheplayers.eu, bricozone.fr, howtogeek.com, prizebitcoins.com,  privatestream.tv (ads/timer), piter.tv, articlerewritertool.com, spinbot.com, yocast.tv, some redundant rules, phonandroid.com, lachainemeteo.com (allow content blocked "MES FAVORIS MÉTÉO"), needrom.com, journaldugeek.com, journaldugamer.com, pixelistes.com, jdubuzz.com, 990.ro, unshowmasonline.com, vtele.ca, tibiopedia.pl, playerapp1.pw, fossbytes.com, showup.tv, habrahabr.ru, megamozg.ru, geektimes.ru, sharefreeall.com, dziennikwschodni.pl, polscygracze.pl, wpworld.pl, windowsowo.pl, virpe.com, polotv.pl, lumload.com, shippuden.tv, zerozero.pt, exashare.com, eska.tv, voxmusic.tv, fokus.tv, f1fanklub.pl, multiup.org, dziennik.pl, forsal.pl, gazetaprawna.pl, jegostrona.pl, prawnik.pl, agar.io, hostuje.net, inwestycje.pl, tvsierpc.pl
+  * Remove
+    * rule interfering with Firefox 40 "Get Add-ons".
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
 ##### Release 8.4 (August 23, 2015)
 > Script
