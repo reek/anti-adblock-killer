@@ -3090,16 +3090,19 @@ proplanta.de#@#.searchad
 ||cdn.adf.ly/js/entry.js$script,third-party
 ||cdn.j.gs/js/entry.js$script,third-party
 ||cdn.q.gs/js/entry.js$script,third-party
+||cdn.ay.gy/js/entry.js$script,third-party
 ||cdn.adf.ly/js/link-converter.js$script,third-party
 ||cdn.j.gs/js/link-converter.js$script,third-party
 ||cdn.q.gs/js/link-converter.js$script,third-party
+||cdn.ay.gy/js/link-converter.js$script,third-party
 ||cdn.adf.ly/js/display.js$script,third-party
 ||cdn.j.gs/js/display.js$script,third-party
 ||cdn.q.gs/js/display.js$script,third-party
+||cdn.ay.gy/js/display.js$script,third-party
 ! adf.ly (anti-adblock)
-@@||redirecting.ws/$subdocument,domain=adf.ly|q.gs|j.gs
-@@||s*-adfly.com/show.php$subdocument,domain=adf.ly|q.gs|j.gs
-adf.ly,q.gs,j.gs#@##bottom
+@@||redirecting.ws/$subdocument,domain=adf.ly|j.gs|q.gs|ay.gy
+@@||s*-adfly.com/show.php$subdocument,domain=adf.ly|j.gs|q.gs|ay.gy
+adf.ly,j.gs,q.gs,ay.gy#@##bottom
 ! shorte.st
 ||cdn.shorte.st/link-converter.min.js$script,third-party
 ! bc.vc
