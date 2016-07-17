@@ -2627,10 +2627,12 @@ zarabiajnaokazjach.pl#@##adsense
 ! mmm.dk
 ! https://github.com/reek/anti-adblock-killer/issues/1422
 @@||mmm.dk^$elemhide
-! topsport.bg
+! topsport.bg, news.bg
 ! https://github.com/reek/anti-adblock-killer/pull/1345
-@@||webnews.bg/assets/js/ads.js$script,domain=topsport.bg
-@@||partner.googleadservices.com/gpt/pubads_impl_84.js$script,domain=topsport.bg
+! https://github.com/reek/anti-adblock-killer/pull/1776
+@@||webnews.bg/assets/js/ads.js$script,domain=topsport.bg|news.bg
+@@||webnews.bg/assets/js/min/dfp.js$script,domain=topsport.bg|news.bg
+@@||partner.googleadservices.com/gpt/pubads_impl_84.js$script,domain=topsport.bg|news.bg
 ! darmowa-bramkasms.pl
 ! https://github.com/reek/anti-adblock-killer/issues/1429
 @@||darmowa-bramkasms.pl/ad-server/$script
