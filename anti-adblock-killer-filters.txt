@@ -2630,6 +2630,7 @@ zarabiajnaokazjach.pl#@##adsense
 ! topsport.bg
 ! https://github.com/reek/anti-adblock-killer/pull/1345
 @@||webnews.bg/assets/js/ads.js$script,domain=topsport.bg
+@@||webnews.bg/assets/js/min/dfp.js$script,domain=topsport.bg
 @@||partner.googleadservices.com/gpt/pubads_impl_84.js$script,domain=topsport.bg
 ! darmowa-bramkasms.pl
 ! https://github.com/reek/anti-adblock-killer/issues/1429
