@@ -2657,8 +2657,8 @@ filechoco.com#@#.adsbox
 ! https://github.com/reek/anti-adblock-killer/issues/1454
 ||online.wsj.com/javascript/abm.js$script
 ! politiken.dk
-! PM
-@@||politiken.dk/static/content/js/ads.js$script
+! MP
+politiken.dk##body>div:not([class="main-header"]):not([id="content"]):not([class="message-center"])
 ! linkdecode.com
 ! https://github.com/reek/anti-adblock-killer/issues/1458
 linkdecode.com#@#.adsbygoogle
