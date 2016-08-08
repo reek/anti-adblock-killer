@@ -4510,6 +4510,22 @@
               }
           }
       },
+      sport_ndtv_com: {
+          host: ['sports.ndtv.com'],
+          onIdle: function(){
+              var N = 0x29 + 0x921 + 0x3712; // #16476
+              Aak.addStyle("div#16476 { height: 1px; width:1px}");
+              Aak.addBaitElement('div#16476');
+              Aak.addStyle("div#16476 { height: 1px; width:1px}");
+              ad1 = Aak.createElement({
+                  tag : 'div',
+                  id: ''16476,
+                  //style : 'visibility:hidden;',
+                  append : 'body'
+              });
+              ad1.classname = 'ad300';
+          }
+      },
       aajtak_com: {
           host: ['aajtak.intoday.in', 'indiatoday.intoday.in'],
           onIdle: function(){
