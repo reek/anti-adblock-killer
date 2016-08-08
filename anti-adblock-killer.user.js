@@ -4500,6 +4500,22 @@
           }
         }
       },
+      ndtv_com: {
+          host: ['ndtv.com'],
+          onIdle: function(){
+              Aak.removeElement('#ndtv-message-users');
+              var el = document.getElementById("ins_storybody");
+              if (el !== null) {
+                  el.style.removeProperty("display");
+              }
+          }
+      },
+      aajtak_com: {
+          host: ['aajtak.intoday.in', 'indiatoday.intoday.in/'],
+          onIdle: function(){
+              Aak.removeElement('#adbocker_alt');
+          }
+      },
       videomega_tv : {
         // issue: https://github.com/reek/anti-adblock-killer/issues?q=videomega
         host : ['videomega.tv'],
