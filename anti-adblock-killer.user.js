@@ -4511,7 +4511,7 @@
           }
       },
       aajtak_com: {
-          host: ['aajtak.intoday.in', 'indiatoday.intoday.in/'],
+          host: ['aajtak.intoday.in', 'indiatoday.intoday.in'],
           onIdle: function(){
               Aak.removeElement('#adbocker_alt');
           }
