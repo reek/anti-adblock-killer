@@ -4700,6 +4700,18 @@
           });
         }
       },
+      blogs_indiatimes_com: {
+        host : ['blogs.timesofindia.indiatimes.com', 'blogs.economictimes.indiatimes.com'],
+        onAlways: function () {
+          Aak.addScript(function () {
+            Object.defineProperty(window, "canRun", {
+              value: true,
+              configurable: false,
+              writable: false
+            });
+          });
+        }
+      },
       d3xt3er_antiadblock : {
         // site: http://d3xt3r.com/anti-adblock
         // case: http://sport-show.fr/js/advertisement-AdBlock.js
