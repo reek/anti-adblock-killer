@@ -81,6 +81,7 @@
 /js/adbuddy.min.js$script
 ###adbuddy-no-adb-container
 ###adbuddy-overlay
+###aabl
 ! ABT - Ad Block Test check
 ! http://esd.io/blog/detecting-adblock-javascript.html
 ! https://github.com/elidickinson/ad-block-test
