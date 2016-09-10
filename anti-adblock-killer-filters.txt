@@ -1997,7 +1997,7 @@ twojeip.wp.pl#@##adverts
 @@||lepoint.fr/publicite/*/*/pub.js$script,~third-party
 ! jyllands-posten.dk
 ! https://github.com/reek/anti-adblock-killer/issues/1031
-@@||jyllands-posten.dk/js/ads.js$script
+@@||jyllands-posten.dk/*ad$script
 ! rte.ie
 ! https://github.com/reek/anti-adblock-killer/issues/1221
 ! https://github.com/reek/anti-adblock-killer/issues/1044
@@ -2658,7 +2658,7 @@ filechoco.com#@#.adsbox
 ||online.wsj.com/javascript/abm.js$script
 ! politiken.dk
 ! PM
-@@||politiken.dk/static/content/js/ads.js$script
+@@||politiken.dk/*ad$script
 ! linkdecode.com
 ! https://github.com/reek/anti-adblock-killer/issues/1458
 linkdecode.com#@#.adsbygoogle
