@@ -3570,3 +3570,5 @@ gaara-fr.com###pub01
 gaara-fr.com###ga-skin-left
 gaara-fr.com###ga-skin-right
 gaara-fr.com###ga-skin-top
+www.business-standard.com##script:contains(adBlocker)
+www.w3resource.com/##script:contains(checkAdblock)
