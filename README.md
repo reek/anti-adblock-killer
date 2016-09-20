@@ -34,6 +34,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/fr/extensions/details/violent-monkey/) 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [Tampermonkey](https://safari.tampermonkey.net/tampermonkey.safariextz) or [NinjaKit](https://github.com/os0x/NinjaKit)
+* ![](https://raw.githubusercontent.com/rogersachan/anti-adblock-killer/gh-pages/images/msedge.png) [Tampermonkey](https://www.microsoft.com/en-us/store/p/tampermonkey/9nblggh5162s)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
@@ -108,6 +109,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) Chrome &#10004;
 * ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) Opera &#10004;
 * ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) Safari &#10004;
+* ![Edge](https://raw.githubusercontent.com/rogersachan/anti-adblock-killer/gh-pages/images/msedge.png) Microsoft Edge &#10004;
 
 
 ## Supported Adblockers
