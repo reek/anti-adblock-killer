@@ -1593,6 +1593,20 @@
       // --------------------------------------------------------------------------------------------
       // Specific
       // --------------------------------------------------------------------------------------------
+      overclockers_ru : {
+        host : ['overclockers.ru'],
+        onStart : function () {
+          Aak.addStyle(".fixoldhtml { display: block; }");
+        },
+        onBeforeScript : function () {
+          return [{
+              contains : 'Adblock, AdGuard',
+              external : false,
+              remove : true
+            }
+          ];
+        }
+      },
       blogspot : {
         // No Country Redirect (NCR)
         // Prevent Blogger from Redirecting to Country-Specific Domains
