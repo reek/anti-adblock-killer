@@ -3,7 +3,7 @@
 
 [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate)
  
-## /!\ IMPORTANT /!\
+## ⚠ IMPORTANT ⚠
 > **THIS IS NOT A UNIVERSAL SOLUTION FOR ALL ANTI ADBLOCK SCRIPTS**
 > **BEFORE REPORTING ANYTHING PLEASE READ THIS**
 
@@ -32,7 +32,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 #### Step 1: ScriptManager
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/firefox.png) [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) or Scriptish (Not supported/Addon has been discontinued)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
-* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/fr/extensions/details/violent-monkey/) 
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/extensions/details/violent-monkey/) 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [Tampermonkey](https://safari.tampermonkey.net/tampermonkey.safariextz) or [NinjaKit](https://github.com/os0x/NinjaKit)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
@@ -161,6 +161,23 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
+#### Release 9.9 (November 7, 2016)
+##### UserScript
+* Core
+  * Add
+    * function: setReadOnly
+
+* Rules
+  * Add/Fix
+    * hindustantimes.com, bhaskar.com, divyabhaskar.co.in, 15min.lt, aranzulla.it, ndtv.com, happytrips.com, mangas-fr.com, v3.co.uk, businesstoday.in, intoday.in, citationmachine.net, BlockAdBlock (generic), animmex.com, animmex.net, hulkusc.com, zahitvstation.com, playlivenewz.com, zoomtv.me, dawn.com, australianfrequentflyer.com.au, happytrips.com, debridnet.com, livedebrid.com, nordpresse.be, livenewschat.eu
+
+##### FilterList
+* Rules
+  * Add/Fix
+    * hindustantimes.com, leparisien.fr, tv3sport.dk, narcity.com, jagran.com, dcode.fr, aternos.org, lasprovincias.es, mid-day.com, indiatimes.com, xmovies8.org, eenadu.net, globes.co.il, somersetcountygazette.co.uk, happy-hack.ru, pornhub.com, tube8.fr, tube8.es, tube8.com, skins4virtual.com, afdah.tv, codexpcgames.com, pokemonizle.net, swindonadvertiser.co.uk, graffica.info, hayhaytv.vn, comprovendolibri.it, jagranjunction.com, trovesaurus.com, dogefaucet.com, gogi.in, topsport.bg, news.bg, ay.gy, scambiofile.info, reuters.com, flashx.tv, bfmtv.com, record.xl.pt, ojogo.pt, zoomtv.me, strikeout.me, strikeout.co, filterbypass.me
+
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #### Release 9.8 (July 6, 2016)
 ##### UserScript
 * Core
@@ -180,6 +197,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
     * bakersfield.com
 
 --- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #### Release 9.7 (June 6, 2016)
 ##### UserScript
 * Core
