@@ -201,7 +201,6 @@
             }
           }
         </script>
-        <p>If you have any questions or comments, please use the form below. However if you wish to report a issue or anti-adblock, <a href="//github.com/reek/anti-adblock-killer/wiki/Report-Guide">read this</a>.</p>
         <form id="contact-form" onsubmit="return false;">
           <p>
             <input type="text" name="name" placeholder="Name" class="field" />
@@ -210,7 +209,14 @@
             <input type="text" name="email" placeholder="Email" class="field" />
           </p>
           <p>
-            <input type="text" name="subject" placeholder="Subject" class="field" />
+            <select name="subject" class="field">
+              <option value="" selected>-- Choose Subject --</option>        
+              <option value="Question or Help">Question or Help</option>
+              <option value="Feedback or Thanks">Feedback or Thanks</option>
+              <option value="Report a website or issue">Report a website or issue</option>
+              <option value="Submit a rule">Submit a rule</option>
+              <option value="Other">Other</option>
+            </select>
           </p>
           <p>
             <textarea name="message" rows="10" placeholder="Message" class="field"></textarea>
