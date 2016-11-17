@@ -71,7 +71,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Report
-* [Issue or anti-adblock](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
+* [Issue or website](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 
 
 ## Help
@@ -161,6 +161,19 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
+#### Release 10.0 (November 17, 2016)
+##### UserScript
+* Rules
+  * Add/Fix
+    * aranzulla.it, mid-day.com, badtv.it, badtaste.it, badgames.it, badcomics.it, samayam.com, backin.net, esmas.com, ewallstreeter.com, financialexpress.com, indianexpress.com, moje-filmy.live, happy-hack.ru, lg-firmware-rom.com, independent.co.uk, businesstoday.in, 8muses.com, sospc.name, indiatimes.com, business-standard.com, ndtv.com, mariage-franco-marocain.net, 5278bbs.com, tvgratuite.blogspot.com, fullhdzevki.com, newstatesman.com, baboo.com.br, multiup.org, youwatch.org, exashare.com, exrapidleech.info
+
+##### FilterList
+* Rules
+  * Add/Fix
+    * fox.com.tr, last.fm, onhax.me, liliputing.com, zahitvstation.com, livenewschat.eu, e-mete.com, qbasic.net, investing.com, abcmalayalam.com, televisa.com, pinoy1tv (network), uploadrocket.net, zeta.pokemon-vortex.com, trakt.tv, 5nowvideo.com, naasongs.com, nsongs.com, politiken.dk, ing.dk, jyllands-posten.dk, brtfix.com, ridediriddim.com, haxoff.net, hypixel.net, snesfun.com, tvp.p, linkdrop.net, swagbucks.com, pcbolsa.com, zahitvstation.com, seekingalpha.com, itv.com, cuisineaz.com, meteocity.com, radins.com, apkmos.com, dvbtmap.eu, sports4u.live, loksatta.com, fullstuff.co, apk.tw, mindgames.com, htmlgames.com, takwing.idv.hk, nicematin.com, wp.pl, hackintosh.zone, hackintosh.computer, lachainemeteo.com, hotslogs.com, minecraftbuildinginc.com, vgtv.no, server-setting.info, goalsarena.org, hulkusc.com, thehomestyle.co, adage.com, mymanga.io, emuparadise.me, yafud.pl, siamfishing.com, videacesky.cz, sitenable.com, sitenable.org, onvasortir.com, lfg.co, leasticoulddo.com, koddostu.com, lequipe.fr, filesupload.org, megatorrentshd.com, adf.ly, prem.link, wolfram-client.tk
+
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+    
 #### Release 9.9 (November 7, 2016)
 ##### UserScript
 * Core
@@ -450,796 +463,203 @@ Composed of a user script «AakScript» written in javascript and a filter list 
     
 --- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.4 (August 23, 2015)
-> Script
-* Exclude: pandoon.info
-* Add: function *unpackScript*
-* Add: function *getScript*
-* Kill: AdBlock Blocker
-* Kill: torrent-tv.ru
-* Kill: italiatv.org
-* Kill: bitcoinaliens.com
-* Kill: binbucks.com
-* Kill: 3dnews.ru
-* Kill: bolor-toli.com
-* Kill: mangahost.com
-* Fix: youwatch.org (kill + hide ads allowed by easylist)
-* Fix: turbodebrideur.com
-* Fix: function *player.jwplayer5*
+#### Release 8.4 (August 23, 2015)
+##### UserScript
+* Core
+  * Add
+    * function: player.jwplayer5, getScript, unpackScript
+  * Exclude
+    * pandoon.info
+* Rules
+  * Add/Fix
+    * AdBlock Blocker, torrent-tv.ru, italiatv.org, bitcoinaliens.com, binbucks.com, 3dnews.ru, bolor-toli.com, mangahost.com, youwatch.org, turbodebrideur.com
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * vvvvid.it, djawir.com, wyborcza.pl, freemulticoins.com, prem.link, lowcygier.pl, captchme.net, tsa-algerie.com, crichd.tv, aflamy.com, gazeta.pl, la-faculte.net, femmeactuelle.fr, algerie360.com, cpubenchmark.net, openload (network), adultmult.tv , youwatch.org, tv3play.se, tv6play.se, tv8play.se, tv10play.se, hackintosh.zone
+  * Remove
+    * rule interfering with Firefox 40 "Get Add-ons".
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Kill: vvvvid.it
-* Kill: djawir.com
-* Kill: wyborcza.pl
-* Kill: freemulticoins.com
-* Kill: prem.link
-* Kill: lowcygier.pl
-* Fix: broken Firefox's "Get Add-Ons" page (list)
-* Fix: captchme.net
-* Fix: tsa-algerie.com
-* Kill: crichd.tv
-* Kill: aflamy.com
-* Kill: gazeta.pl
-* Kill: la-faculte.net
-* Kill: femmeactuelle.fr
-* Kill: algerie360.com
-* Kill: cpubenchmark.net
-* Fix: openload (network)
-* Fix: adultmult.tv 
-* Fix: youwatch.org
-* Fix: tv3play.se / tv6play.se / tv8play.se / tv10play.se
-* Fix: hackintosh.zone
+#### Release 8.3 (August 7, 2015)
+##### UserScript
+* Core
+  * Add
+    * function: getFunctionCode, addExternalScript, unpackScript
+  * Improve
+    * function: addScript
+  * Exclude
+    * pandoon.info
+* Rules
+  * Add/Fix
+    * Blogspot country redirection, FuckAdBlock and BlockAdBlock, kissanime.com (conflicting with userstyle "KissAnime Project ABE"), m6web.fr, bitcoinzebra.com, 15min.lt, gamestar.de, btcacid.com, cryptospot.me, epicwallcz.blogspot.com, masterwallcz.blogspot.com, sportsplays.com, slideplayer.com, slideplayer.fr, tek.no, amer.no, teknofil.no, insidetelecom.no, prisguide.no, diskusjon.no, teknojobb.no, akam.no, hardware.no, ipla.tv, turbodebrideur.com, focus.de (only firefox), stern.de (only firefox), sat1.de (only firefox), prosieben.de (only firefox), kabeleins.de (only firefox), sat1gold.de (only firefox), sixx.de (only firefox), prosiebenmaxx.de (only firefox), fem.com (only firefox), the-voice-of-germany.de (only firefox), wetteronline.de (only firefox), wetter.com (only firefox), finanzen.net (only firefox), tvspielfilm.de (only firefox), gamestar.de (only firefox), pcwelt.de (only firefox), boerse-online.de (only firefox), sportauto.de (only firefox), auto-motor-und-sport.de (only firefox), motor-klassik.de (only firefox), 4wheelfun.de (only firefox), autostrassenverkehr.de (only firefox), lustich.de (only firefox), itectale.de (only firefox)
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * turkanime.tv, videoproxy.in, facebookproxy.info, proxywiky.com, kreanclix.com, rutube.ru, now.ru, fptplay.net, mytunnel.info, up2stream.com, crypto-clix.net, videostar.pl, openload (network), hireteen.com, plus-belle-la-vie-video.blogspot.com, binbox.io, gram.pl, lggautotrasporti.esy.es, filmovizija.com, filmovizija.in, bithourly.com, dailyfreebits.com, ewelrybitco.in, welovebtc.com, waterbitco.in, freedoge.co.in, freebitco.in, spaste.com, mupvl.us, booksmedicos.org, wetter3.de, pebx.pl, vgtv.no, telepolis.pl, italiatv.org, rapidmoviez.com, animedigitalnetwork.fr, comptoir-info.com, adultmult.tv, 4chan.org, exashare.com, phonandroid.com, mega-faucet.eu, leakyfaucet.uk, rocketfaucet.co.in, robcoins.eu, big-coin.eu/, btcfaucetlist.net, get-free-bitco.in, tree.tv, 4chan.org, aseanlegacy.net, monova.org, epoznan.pl, wtkplay.pl, xiaopan.co
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 8.2 (June 13, 2015)
+##### UserScript
+* Core
+  * Exclude
+    * xemvtv.net, vod.pl 
+* Rules
+  * Add/Fix
+    * adultmult.tv , vgtv.no , turkanime.tv , kisscartoon.me , apkmirror.com , pregen.net , player.pl , crash-aerien.aero , hackintosh.zone , notre-planete.info , ville-ideale.com , wtfbit.ch , zeberka.pl , kozaczek.pl 
+	
+##### FilterList
+* Rules
+  * Add/Fix
+    * fcportables.com, givemesome.tips, tek.no, gamer.no, teknofil.no, insidetelecom.no, prisguide.no, diskusjon.no, teknojobb.no, akam.no, hardware.no, fontsquirrel.com, zerozero.pt, annuaire-bleu.net, ville-ideale.com, playbitco.in, prizebitcoins.com, bad-boys-bit.co.in, rv-b.com, mojevideo.sk, zeperfs.com, vg.no, aftenposten.no, bt.no, aftenbladet.no, fvn.no, saikoanimes.net, tusmangas.net, moondoge.co.in, youtubeproxy.info, audipassion.com, shqip-tv.info, razem.tv, robcoins.eu, elenabitco.in, freebetco.in, qoinfaucet.com, hdkinoteatr.com, t3n.de, bricozone.fr, heavenly-blue.net, find-my-search.com, filmovizija.in, filmovizija.com, vide-greniers.org, comics-sanctuary.com, planete205.com, planete-205.com, trakt.tv, cinemaniahdd.com, agar.io, needrom.com, 4players.de, schoener-fernsehen.com, btava.com, plus-belle-la-vie-replay.blogspot.com, sharewareonsale.com, kozaczek.pl, zeberka.pl, videostar.pl, srnet.eu, carambatv.ru, onlinetv.planetfools.com, tutvgratis.tv, FuckAdBlock, record.xl.pt (bug)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.3 (August 7, 2015)
-> Script
-* Add: function *getFunctionCode*
-* Add: function *addExternalScript*
-* Fix: FuckAdBlock and BlockAdBlock
-* Fix: function *addScript*
-* Fix: Blogspot country redirection
-* Fix: kissanime.com (conflicting with userstyle "KissAnime Project ABE")
-* Fix: m6web.fr
-* Fix: bitcoinzebra.com
-* Kill: 15min.lt
-* Kill: gamestar.de
-* kill: btcacid.com
-* kill: cryptospot.me
-* Kill: epicwallcz.blogspot.com
-* Kill: masterwallcz.blogspot.com
-* Kill: sportsplays.com
-* Kill: slideplayer.com
-* Kill: slideplayer.fr
-* Kill: tek.no
-* Kill: amer.no
-* Kill: teknofil.no
-* Kill: insidetelecom.no
-* Kill: prisguide.no
-* Kill: diskusjon.no
-* Kill: teknojobb.no
-* Kill: akam.no
-* Kill: hardware.no
-* Kill: ipla.tv
-* Kill: turbodebrideur.com
-* Kill: focus.de (only firefox)
-* Kill: stern.de (only firefox)
-* Kill: sat1.de (only firefox)
-* Kill: prosieben.de (only firefox)
-* Kill: kabeleins.de (only firefox)
-* Kill: sat1gold.de (only firefox)
-* Kill: sixx.de (only firefox)
-* Kill: prosiebenmaxx.de (only firefox)
-* Kill: fem.com (only firefox)
-* Kill: the-voice-of-germany.de (only firefox)
-* Kill: wetteronline.de (only firefox)
-* Kill: wetter.com (only firefox)
-* Kill: finanzen.net (only firefox)
-* Kill: tvspielfilm.de (only firefox)
-* Kill: gamestar.de (only firefox)
-* Kill: pcwelt.de (only firefox)
-* Kill: boerse-online.de (only firefox)
-* Kill: sportauto.de (only firefox)
-* Kill: auto-motor-und-sport.de (only firefox)
-* Kill: motor-klassik.de (only firefox)
-* Kill: 4wheelfun.de (only firefox)
-* Kill: autostrassenverkehr.de (only firefox)
-* Kill: lustich.de (only firefox)
-* Kill: itectale.de (only firefox)
+#### Release 8.1 (May 11, 2015)
+##### UserScript/FilterList
+* Rules
+  * Add/Fix
+    * worldofgnome.org, foot-live.info, litecoiner.net, bitcoiner.net, uptostream.com, uptobox.com, game-state.com, gamejolt.com, mangasproject.com.br, softpedia.com, ogmods.net, sharecash.org, naekranie.pl, turbogenerator.info, FuckAdBlock, AdUnBlockPremium
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Fix: turkanime.tv
-* Kill: videoproxy.in
-* Kill: facebookproxy.info
-* Kill: proxywiky.com
-* Kill: kreanclix.com
-* Kill: rutube.ru
-* Kill: now.ru
-* Kill: fptplay.net
-* Kill: mytunnel.info
-* Kill: up2stream.com
-* Kill: crypto-clix.net
-* Fix: videostar.pl
-* Kill: openload (network)
-* Kill: hireteen.com
-* Kill: plus-belle-la-vie-video.blogspot.com
-* Kill: binbox.io
-* Kill: gram.pl
-* Kill: lggautotrasporti.esy.es
-* Fix: filmovizija.com
-* Fix: filmovizija.in
-* Fix: bithourly.com
-* Fix: dailyfreebits.com
-* Fix: ewelrybitco.in
-* Fix: welovebtc.com
-* Fix: waterbitco.in
-* Fix: freedoge.co.in
-* Fix: freebitco.in
-* Kill: spaste.com
-* Kill: mupvl.us
-* Kill: booksmedicos.org
-* Kill: wetter3.de
-* Kill: pebx.pl
-* Kill: vgtv.no
-* Kill: telepolis.pl
-* Kill: italiatv.org
-* Kill: rapidmoviez.com
-* Kill: animedigitalnetwork.fr
-* Kill: comptoir-info.com
-* Kill: adultmult.tv
-* Kill: 4chan.org
-* Kill: exashare.com
-* Kill: phonandroid.com
-* Kill: mega-faucet.eu
-* Kill: leakyfaucet.uk
-* Kill: rocketfaucet.co.in
-* Kill: robcoins.eu
-* Kill: big-coin.eu/
-* Kill: btcfaucetlist.net
-* Kill: get-free-bitco.in
-* Kill: tree.tv
-* Kill: 4chan.org
-* Kill: aseanlegacy.net
-* Kill: monova.org
-* Kill: epoznan.pl
-* Kill: wtkplay.pl
-* Kill: xiaopan.co
+#### Release 8.0 (May 3, 2015)
+##### UserScript/FilterList
+* Core
+  * Improve
+    * script code, logo, notification
+* Rules
+  * Add/Fix
+    * strikeout.co, bknime.com, vg.no, viki.mx, viki.com, alientube.co, proboards.com, freeforums.net, boards.net, pagefair.com (Tracking), youwatch.org, kwejk.pl, e24.no, online.ua, danslescoulisses.com, vipleague.ws, vipleague.tv, vipleague.se, vipleague.me, vipleague.co, vipleague.sx, vipleague.ch, vipbox.tv, vipbox.co, vipbox.sx, vipboxsa.co, strikeout.co, homerun.re, stream4free.eu, gsmpro.com.pl, mjmartino.eu, mairie-soustons.fr, lechia.net, rmprepusb.com, openpli.org, simply-debrid.com, dzemploi.org, sparkylinux.org, captchme.com, demonoid.pw, carambatv.ru, rookie.com.pl, wowebook.org, FuckAdBlock (Fix), Better Stop Adblock
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 7.9 (April 11, 2015)
+##### UserScript/FilterList
+* Core
+  * Improve
+    * script code
+* Rules
+  * Add/Fix
+    * bit-vortex.com, 4shared.com (Fix), fit.sh, fosshub.com, coinracket.com, faucetofamerica.com, thebitcoinsheep.com, landofdogecoin.com, usafaucet.tk, flightradar24.com, fan-de-cinema.com, xiaopan.co, ville-ideale.com, mobilevids.org, saikoanimes.net, bitvisits.com, cryptospout.com, cmmonitor.com, 777bitco.in, vipleague.se, vipleague.me, mangamap.com, videomega.tv, psarips.com, theextopia.com, urlchecker.org, onepiece-mx.net, filmovizija.com (Fix), vivo.sx, vvvvid.it, miniup.com (Fix), umahdroid.blogspot.com, streaming-foot.me, generatupremium.biz, linkcrypt.ws, myspass.de (Fix), droidsoft.fr, dirtstyle.tv, slideplayer.org, hackintosh.zone (Fix), streaming.crazy-bros.fr, AdBlock Notify (Plugin)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.2 (June 13, 2015)
-> Script
-* Exclude: xemvtv.net 
-* Exclude: vod.pl 
-* Kill: adultmult.tv 
-* Kill: vgtv.no 
-* Kill: turkanime.tv 
-* Kill: kisscartoon.me 
-* Kill: apkmirror.com 
-* Kill: pregen.net 
-* Kill: player.pl 
-* Kill: crash-aerien.aero 
-* Kill: hackintosh.zone 
-* Kill: notre-planete.info 
-* Kill: ville-ideale.com 
-* Kill: wtfbit.ch 
-* Kill: zeberka.pl 
-* Kill: kozaczek.pl 
+#### Release 7.8 (March 12, 2015)
+##### UserScript/FilterList
+* Rules
+  * Add/Fix
+    * zive.cz, viki.com, debilizator.tv, videopremium.tv, hackintosh.zone (Fix), filmovizija.com (Fix), psarips.com, skidrowcrack.com, afdah.com, alternativeto.net, transferfile.tk, bitdebrid.com, uploaded-fastpremium.com, uploaded-premium.in, bez-premki.pl, contasfree.com, ketubanjiwa.com, hentaienespaÃ±ol.net, turbogenerator.info, nana10.co.il, grifthost.com, dota-trade.com, rojadirecta.me, planetatvonlinehd.blogspot.com, seriesbang.net, mangabee.co, xpremiumx.blogspot.com, phonandroid.com, an1me.se, psarips.com, lolesporte.com, rlsbb.com, genbird.com, crococoin.com, treebitcoin.com, bithourly.com, dailyfreebits.com, jewelrybitco.in, welovebtc.com, satoshiquiz.com, ogmcdownload.com, jetetroll.com, lachainemeteo.com, hack-sat.com, flashback.org, captchme.net, sos-lettre.fr, socialblade.com, tamilmovierockers.net, dailyacc.com, premiumst0re.com, desihoes.com, vgtv.no, bitcoinpuddle.com, moondoge.co.in, faucet.bitcoinzebra.com, btcgratis.com, btc-gratis.com, dogecoinpuddle.com, omux.ru, moonliteco.in, bitonplay.com, cryptodrips.com, faucet.cashcat.eu, icebitco.in
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-> List
-* Kill: fcportables.com
-* Kill: givemesome.tips
-* Kill: tek.no
-* Kill: gamer.no
-* Kill: teknofil.no
-* Kill: insidetelecom.no
-* Kill: prisguide.no
-* Kill: diskusjon.no
-* Kill: teknojobb.no
-* Kill: akam.no
-* Kill: hardware.no
-* Kill: fontsquirrel.com
-* Kill: zerozero.pt
-* Kill: annuaire-bleu.net
-* Kill: ville-ideale.com
-* Kill: playbitco.in
-* Kill: prizebitcoins.com
-* Kill: bad-boys-bit.co.in
-* Kill: rv-b.com
-* Kill: mojevideo.sk
-* Kill: zeperfs.com
-* Kill: vg.no
-* Kill: aftenposten.no
-* Kill: bt.no
-* Kill: aftenbladet.no
-* Kill: fvn.no
-* Kill: saikoanimes.net
-* Kill: tusmangas.net
-* Kill: moondoge.co.in
-* Kill: youtubeproxy.info
-* Kill: audipassion.com
-* Kill: shqip-tv.info
-* Kill: razem.tv
-* Kill: robcoins.eu
-* Kill: elenabitco.in
-* Kill: freebetco.in
-* Kill: qoinfaucet.com
-* Kill: hdkinoteatr.com
-* Kill: t3n.de
-* Kill: bricozone.fr
-* Kill: heavenly-blue.net
-* Kill: find-my-search.com
-* Kill: filmovizija.in
-* Kill: filmovizija.com
-* Kill: vide-greniers.org
-* Kill: comics-sanctuary.com
-* Kill: planete205.com
-* Kill: planete-205.com
-* Kill: trakt.tv
-* Kill: cinemaniahdd.com
-* Kill: agar.io
-* Kill: needrom.com
-* Kill: 4players.de
-* Kill: schoener-fernsehen.com
-* Kill: btava.com
-* Kill: plus-belle-la-vie-replay.blogspot.com
-* Kill: sharewareonsale.com
-* Kill: kozaczek.pl
-* Kill: zeberka.pl
-* Kill: videostar.pl
-* Kill: srnet.eu
-* Kill: carambatv.ru
-* Kill: onlinetv.planetfools.com
-* Kill: tutvgratis.tv
-* Fix: FuckAdBlock
-* Fix: record.xl.pt (bug)
-* Update: README help section
+#### Release 7.7 (January 26, 2015)
+##### UserScript/FilterList
+* Metablock
+  * Add
+    * @supportURL, @contributionURL
+* Rules
+  * Add/Fix
+    * tv3play.se, tv6play.se, tv8play.se, tv10play.se, smashboards.com, sports.ru, mangabird.com, rtlxl.nl, oploverz.net, afreesms.com, manga9.com, avmask.com, fz.se, premiumleecher.com, leecher.us , debridx.com, tv-porinternet.com, debridit.com, premiumst0re.blogspot.com, readms.com, maxedtech.com, lequipe.fr, tvxat.org, comptoir-hardware.com, call-share.ddns.net, hackintosh.zone, testious.com, kissanime.com, afreesms.com, tzetze.it (Fix), cccam-server.info, lien-torrent.com, iphones.ru, tyrant.40in.net, onemanga.me, pencurimovie.cc, quickbitco.in, miniup.com, totaldebrid.org, turkdown.com, labnol.org, gratisbitco.in, streaming-foot.info, filecore.co.nz, safelinking.biz, adultkino.org, bywarrior.com, goldenboys.fr, porn-blog.me, coolkora.com, torrent-rutor.org, pogocheats.net, onvasortir.com, gtaxscripting.blogspot.com, eclypsia.com (Fix), fantagazzetta.com, knowlet3389.blogspot.com, streamlive.to, bitcoinker.com, faucet.bitcoinzebra.com, moonbit.co.in, freebitco.in (Fix), freedoge.co (Fix), zeb89.altervista.org (Fix), latesthackingnews.com, writing.com (Fix), videomega.tv (Fix), apkmirror.com, mackproject.com, play.novatv.bg, redtube.com, banid.pl, coingamez.com, linkcrypt.ws, filmweb.pl, skiplimite.tv, tzetze.it, Antiblock.org (Fix), mesddl.cc, rapeit.net, filecore.co.nz, videodroid.org, premiumst0re.blogspot.com, anizm.com, onlinemoviesfreee.com, planetatvonlinehd.blogspot.com, ver-flv.com, getbitcoins.nx.tc, freebitcoins.nx.tc, freecoins4.me, eventosppv.me, sylnk.net, eclypsia.com (improve), freedoge.co.in, doulci.net, linkguard.biz, receive-sms-online.info, extreamleech.com, lequipe.fr, AdBuddy (script)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 7.6 (September 28, 2014)
+##### UserScript/FilterList
+* Metablock
+  * Edit
+    * @excludes
+* Core
+  * Improve
+    * function player
+* Rules
+  * Add/Fix
+    * online.dramacafe.in, javso.com, videomega.tv, coolkora.com, eclypsia.com, StopAdBlock (script), linkshrink.net, spaste.com, sat1.de, kooralive.info, player.pl, scan-mx.com, paidverts.com, biztok.pl, wrzuta.pl, pudelek.tv, komediowo.pl, wp.pl, wp.tv, gamingroom.tv, domislive.com, upf.co.il, tvn24.pl (Fix), playtv.fr (Fix), file4go.com (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.1 (May 11, 2015)
-> Script + List
-* Kill: worldofgnome.org
-* Kill: foot-live.info
-* Kill: litecoiner.net
-* Kill: bitcoiner.net
-* Kill: uptostream.com
-* Kill: uptobox.com
-* Kill: game-state.com
-* Kill: gamejolt.com
-* Kill: mangasproject.com.br
-* Kill: softpedia.com
-* Kill: ogmods.net
-* Kill: sharecash.org
-* Kill: naekranie.pl
-* Kill: turbogenerator.info
-* Fix: FuckAdBlock
-* Fix: AdUnBlockPremium
+#### Release 7.5 (August 26, 2014)
+##### UserScript/FilterList
+* Metablock
+  * Add
+    * @grant unsafewindow
+* Core
+  * Fix
+    * function addScript, bug command menu (Scriptish)
+  * Improve
+    * event listeners, notification, generic detector
+  * Redirect
+    * discuss, feedback, comments to Github
+  * New
+    * logo
+* Rules
+  * Add/Fix
+    * secret-zone.net, hln.be, nieuwsblad.be, demorgen.be, megagames.com, online.dramacafe.tv, tvn24.pl, putlocker.is, straight-world.de, vinestown.com, maxcheaters.com, clubedohardware.com.br, forum.clubedohardware.com.br, kissanime.com (Fix), file4go.com (Fix), play.tv & playtv.fr (Fix), pipocas.tv (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 7.4 (July 22, 2014)
+##### UserScript/FilterList
+* Core
+  * Improve
+    * generic detector, function player
+  * Remove
+    * obsolete code
+* Rules
+  * Add/Fix
+    * siamfishing.com, aloneteam.net, video44.net, gamergen.com, writing.com, generatupremium.biz, jeuxactu.com, fansubresistance.biz, pronpic.org, hellsmedia.com, sportsplays.com, chrissmoove.com, pipocas.tv, tiervermittlung.de, mufa.de, vapingunderground.com, ytconv.net, privateinsta.com (Fix), videobug.net (Fix), play44.net (Fix), videofun.me (Fix), filecom.net (Fix), cardinals.clubs.nfl.com (Fix), breakmanga.com (Fix), fitshr.net (Fix), picload.org (Fix), chine-informations.com (Fix), btspread.com (Fix), javzoo.com (Fix), javpee.com (Fix), eveskunk.com (Fix), notre-planete.info (Fix), myanimes.li (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 8.0 (May 3, 2015)
-> Script + List
-* Improve: fixes and improvement of the entire code
-* Improve: logo + notification
-* Kill: strikeout.co
-* Kill: bknime.com
-* Kill: vg.no
-* Kill: viki.mx
-* Kill: viki.com
-* Kill: alientube.co
-* Kill: proboards.com
-* Kill: freeforums.net
-* Kill: boards.net
-* Kill: pagefair.com (Tracking)
-* Kill: youwatch.org
-* Kill: kwejk.pl
-* Kill: e24.no
-* Kill: online.ua
-* Kill: danslescoulisses.com
-* Kill: vipleague.ws
-* Kill: vipleague.tv
-* Kill: vipleague.se
-* Kill: vipleague.me
-* Kill: vipleague.co
-* Kill: vipleague.sx
-* Kill: vipleague.ch
-* Kill: vipbox.tv
-* Kill: vipbox.co
-* Kill: vipbox.sx
-* Kill: vipboxsa.co
-* Kill: strikeout.co
-* Kill: homerun.re
-* Kill: stream4free.eu
-* Kill: gsmpro.com.pl
-* Kill: mjmartino.eu
-* Kill: mairie-soustons.fr
-* Kill: lechia.net
-* Kill: rmprepusb.com
-* Kill: openpli.org
-* Kill: simply-debrid.com
-* Kill: dzemploi.org
-* Kill: sparkylinux.org
-* Kill: captchme.com
-* Kill: demonoid.pw
-* Kill: carambatv.ru
-* Kill: rookie.com.pl
-* Kill: wowebook.org
-* Kill: FuckAdBlock (Fix)
-* Kill: Better Stop Adblock
+#### Release 7.3 (June 29, 2014)
+##### UserScript/FilterList
+* Core
+  * Improve
+    * generic detector, prototype.contains, addElement, autoReport
+* Rules
+  * Add/Fix
+    * anisubsia.com, eveskunk.com, btspread.com, aseanlegacy.net, leecher.us, debrid.us, wowhq.ws, anime4fun.com, xbox360pcemulator.com, gta5hack.com, kingleech.com, securefile.info, xpango.com-cheat.in, 4shared.downloadlagu.info, freeudidregistration.com, b-books.info, copsilver.com, freebo2.com, techietricks.net, vinaftw.co.uk, spotifygratuit.com, free-itunes-gift-cards.com, freeminecraftaccount.us, ffa-hosting.com, skincodesgiveaway.com, game-debate.com, uploaded-premium.ru, mypcgamesfreedownload.blogspot.com, nakedhelen.com, asiofree.com, mol.cheatsplanet.net, debrideurgratuit.org, thebesttrainers.net, pickcrackpasswords.blogspot.com, yourcodeis.com, timepasss.com, thehyphy.com, search-an-inmate.com, getterraria.info, fullsoftwaredownload.info, premium-spotify.com, ndsroms.altervista.org, itunesgiftcard.fbmaniaz.com, phone-track.net, filepixy.com, watchmovies.just4umedia.com, netflixaccount.org, javzoo.com, javpee.com, multifichier.com, yellowbridge.com (Fix), abola.pt (video player) (Fix), javpee.com (Fix), javzoo.com (Fix), notre-planete.info (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
+#### Release 7.2 (May 20, 2014)
+##### UserScript/FilterList
+* Core
+  * Improve
+    * script code, function getVersion, getScriptManager
+* Rules
+  * Add/Fix
+    * javzoo.com, advertise.com, allsoftinone.com, annuaire-xavbox.com, b-books.info, consoledejeux.info, copsilver.com, free-itunes-gift-cards.com, freebo2.com, freeminecraftaccount.us, freewowmembership.com, fullmovieshd.org, fullsoftwaredownload.info, getterraria.info, mecozz.com, minecraftraffle.com, pose-de-puce.info, search-an-inmate.com , thehyphy.com, timepasss.com, videos.sominaltvfilms.com, yooclick.com, yourcodeis.com , Blogspot no country redirect (NCR), nas-forum.com, duoliphotography.com, pickcrackpasswords.blogspot.com, tekkitdupes.blogspot.com, watch-latest-movies-online-daily.blogspot.com, filmovizija.net/, filmovizija.com (Fix), thebesttrainers.net (Fix), bee4.biz (Fix), filesdld.com (Fix), uptobox.com (Fix), filesdld.com (Fix), privateinsta.com (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-##### Release 7.9 (April 11, 2015)
-> Script + List
-* Improve: part script code
-* Kill: bit-vortex.com
-* Kill: 4shared.com (Fix)
-* Kill: fit.sh
-* Kill: fosshub.com
-* Kill: coinracket.com
-* Kill: faucetofamerica.com
-* Kill: thebitcoinsheep.com
-* Kill: landofdogecoin.com
-* Kill: usafaucet.tk
-* Kill: flightradar24.com
-* Kill: fan-de-cinema.com
-* Kill: xiaopan.co
-* Kill: ville-ideale.com
-* Kill: mobilevids.org
-* Kill: saikoanimes.net
-* Kill: bitvisits.com
-* Kill: cryptospout.com
-* Kill: cmmonitor.com
-* Kill: 777bitco.in
-* Kill: vipleague.se
-* Kill: vipleague.me
-* Kill: mangamap.com
-* Kill: videomega.tv
-* Kill: psarips.com
-* Kill: theextopia.com
-* Kill: urlchecker.org
-* Kill: onepiece-mx.net
-* Kill: filmovizija.com (Fix)
-* Kill: vivo.sx
-* Kill: vvvvid.it
-* Kill: miniup.com (Fix)
-* Kill: umahdroid.blogspot.com
-* Kill: streaming-foot.me
-* Kill: generatupremium.biz
-* Kill: linkcrypt.ws
-* Kill: myspass.de (Fix)
-* Kill: droidsoft.fr
-* Kill: dirtstyle.tv
-* Kill: slideplayer.org
-* Kill: hackintosh.zone (Fix)
-* Kill: streaming.crazy-bros.fr
-* Kill: AdBlock Notify (Plugin)
+#### Release 7.1 (May 14, 2014)
+##### UserScript/FilterList
+* Metablock
+  * Update
+    * @updateURL, @downloadURL
+* Core
+  * Improve
+    * script code, function detectFilters, checkAuto, update, Mutation Events + Mutation Observer
+  * Fix
+    * bugs on Tampermonkey (Opera), NinjaKit (Safari), GM_getMetadata on Scriptish (Firefox), GM_registerMenuCommand on Scriptish (Firefox)
+* Rules
+  * Add/Fix
+    * ftlwiki.com, eami.in, seguridadwireless.es, tout-gratuit.be, bg-gledai.tv, filecore.co.nz, fcore.eu, hqpdb.com, watcharab.com (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
-
-##### Release 7.8 (March 12, 2015)
-> Script + List
-* Add: posibility donate by Dogecoin
-* Add: posibility donate by Litecoin
-* Optimize: AakList
-* Kill: zive.cz
-* Kill: viki.com
-* Kill: debilizator.tv
-* Kill: videopremium.tv
-* Kill: hackintosh.zone (Fix)
-* Kill: filmovizija.com (Fix)
-* Kill: psarips.com
-* Kill: skidrowcrack.com
-* Kill: afdah.com
-* Kill: alternativeto.net
-* Kill: transferfile.tk
-* Kill: bitdebrid.com
-* Kill: uploaded-fastpremium.com
-* Kill: uploaded-premium.in
-* Kill: bez-premki.pl
-* Kill: contasfree.com
-* Kill: ketubanjiwa.com
-* Kill: hentaienespaÃ±ol.net
-* Kill: turbogenerator.info
-* Kill: nana10.co.il
-* Kill: grifthost.com
-* Kill: dota-trade.com
-* Kill: rojadirecta.me
-* Kill: planetatvonlinehd.blogspot.com
-* Kill: seriesbang.net
-* Kill: mangabee.co
-* Kill: xpremiumx.blogspot.com
-* Kill: phonandroid.com
-* Kill: an1me.se
-* Kill: psarips.com
-* Kill: lolesporte.com
-* Kill: rlsbb.com
-* Kill: genbird.com
-* Kill: crococoin.com
-* Kill: treebitcoin.com
-* Kill: bithourly.com
-* Kill: dailyfreebits.com
-* Kill: jewelrybitco.in
-* Kill: welovebtc.com
-* Kill: satoshiquiz.com
-* Kill: ogmcdownload.com
-* Kill: jetetroll.com
-* Kill: lachainemeteo.com
-* Kill: hack-sat.com
-* Kill: flashback.org
-* Kill: captchme.net
-* Kill: sos-lettre.fr
-* Kill: socialblade.com
-* Kill: tamilmovierockers.net
-* Kill: dailyacc.com
-* Kill: premiumst0re.com
-* Kill: desihoes.com
-* Kill: vgtv.no
-* Kill: bitcoinpuddle.com
-* Kill: moondoge.co.in
-* Kill: faucet.bitcoinzebra.com
-* Kill: btcgratis.com
-* Kill: btc-gratis.com
-* Kill: dogecoinpuddle.com
-* Kill: omux.ru
-* Kill: moonliteco.in
-* Kill: bitonplay.com
-* Kill: cryptodrips.com
-* Kill: faucet.cashcat.eu
-* Kill: icebitco.in
-
-
-##### Release 7.7 (January 26, 2015)
-> Script + List
-* Add: meta keys @supportURL and @contributionURL
-* Kill: tv3play.se
-* Kill: tv6play.se
-* Kill: tv8play.se
-* Kill: tv10play.se
-* Kill: smashboards.com
-* Kill: sports.ru
-* Kill: mangabird.com
-* Kill: rtlxl.nl
-* Kill: oploverz.net
-* Kill: afreesms.com
-* Kill: manga9.com
-* Kill: avmask.com
-* Kill: fz.se
-* Kill: premiumleecher.com
-* Kill: leecher.us 
-* Kill: debridx.com
-* Kill: tv-porinternet.com
-* Kill: debridit.com
-* Kill: premiumst0re.blogspot.com
-* Kill: readms.com
-* Kill: maxedtech.com
-* Kill: lequipe.fr
-* Kill: tvxat.org
-* Kill: comptoir-hardware.com
-* Kill: call-share.ddns.net
-* Kill: hackintosh.zone
-* Kill: testious.com
-* Kill: kissanime.com
-* Kill: afreesms.com
-* Kill: tzetze.it (Fix)
-* Kill: cccam-server.info
-* Kill: lien-torrent.com
-* Kill: iphones.ru
-* Kill: tyrant.40in.net
-* Kill: onemanga.me
-* Kill: pencurimovie.cc
-* Kill: quickbitco.in
-* Kill: miniup.com
-* Kill: totaldebrid.org
-* Kill: turkdown.com
-* Kill: labnol.org
-* Kill: gratisbitco.in
-* Kill: streaming-foot.info
-* Kill: filecore.co.nz
-* Kill: safelinking.biz
-* Kill: adultkino.org
-* Kill: bywarrior.com
-* Kill: goldenboys.fr
-* Kill: porn-blog.me
-* Kill: coolkora.com
-* Kill: torrent-rutor.org
-* Kill: pogocheats.net
-* Kill: onvasortir.com
-* Kill: gtaxscripting.blogspot.com
-* Kill: eclypsia.com (Fix)
-* Kill: fantagazzetta.com
-* Kill: knowlet3389.blogspot.com
-* Kill: streamlive.to
-* Kill: bitcoinker.com
-* Kill: faucet.bitcoinzebra.com
-* Kill: moonbit.co.in
-* Kill: freebitco.in (Fix)
-* Kill: freedoge.co (Fix)
-* Kill: zeb89.altervista.org (Fix)
-* Kill: latesthackingnews.com
-* Kill: writing.com (Fix)
-* Kill: videomega.tv (Fix)
-* Kill: apkmirror.com
-* Kill: mackproject.com
-* Kill: play.novatv.bg
-* Kill: redtube.com
-* Kill: banid.pl
-* Kill: coingamez.com
-* Kill: linkcrypt.ws
-* Kill: filmweb.pl
-* Kill: skiplimite.tv
-* Kill: tzetze.it
-* Kill: Antiblock.org (Fix)
-* Kill: mesddl.cc
-* Kill: rapeit.net
-* Kill: filecore.co.nz
-* Kill: videodroid.org
-* Kill: premiumst0re.blogspot.com
-* Kill: anizm.com
-* Kill: onlinemoviesfreee.com
-* Kill: planetatvonlinehd.blogspot.com
-* Kill: ver-flv.com
-* Kill: getbitcoins.nx.tc
-* Kill: freebitcoins.nx.tc
-* Kill: freecoins4.me
-* Kill: eventosppv.me
-* Kill: sylnk.net
-* Kill: eclypsia.com (improve)
-* Kill: freedoge.co.in
-* Kill: doulci.net
-* Kill: linkguard.biz
-* Kill: receive-sms-online.info
-* Kill: extreamleech.com
-* Kill: lequipe.fr
-* Kill: AdBuddy (script)
-
-
-##### Release 7.6 (September 28, 2014)
-> Script + List
-* kill: online.dramacafe.in
-* Kill: javso.com
-* Kill: videomega.tv
-* Kill: coolkora.com
-* Kill: eclypsia.com
-* Kill: StopAdBlock (script)
-* Kill: linkshrink.net
-* Kill: spaste.com
-* Kill: sat1.de
-* Kill: kooralive.info
-* Kill: player.pl
-* kill: scan-mx.com
-* Kill: paidverts.com
-* Kill: biztok.pl
-* Kill: wrzuta.pl
-* Kill: pudelek.tv
-* Kill: komediowo.pl
-* Kill: wp.pl
-* Kill: wp.tv
-* Kill: gamingroom.tv
-* Kill: domislive.com
-* Kill: upf.co.il
-* Kill: tvn24.pl (Fix)
-* Kill: playtv.fr (Fix)
-* Kill: file4go.com (Fix)
-* Edit: @excludes
-* Improve: Aak.player
-
-
-##### Release 7.5 (August 26, 2014)
-> Script + List
-* Kill: secret-zone.net
-* Kill: hln.be
-* Kill: nieuwsblad.be
-* Kill: demorgen.be
-* Kill: megagames.com
-* Kill: online.dramacafe.tv
-* Kill: tvn24.pl
-* Kill: putlocker.is
-* Kill: straight-world.de
-* Kill: vinestown.com
-* Kill: maxcheaters.com
-* Kill: clubedohardware.com.br
-* Kill: forum.clubedohardware.com.br
-* Kill: kissanime.com (Fix)
-* Kill: file4go.com (Fix)
-* Kill: play.tv & playtv.fr (Fix)
-* Kill: pipocas.tv (Fix)
-* Add: Anti-Adblock Killer on Twitter
-* Add: Anti-Adblock Killer on MonkeyGuts
-* Add: @grant unsafewindow
-* Add: redirect discuss, feedback, comments to Github
-* New: icon
-* Edit: event listeners
-* Fix: bug command menu (Scriptish)
-* Fix: bug Aak.addScript
-* Improve: Aak.notification
-* Improve: detection of generic antiblocks
-
-
-##### Release 7.4 (July 22, 2014)
-> Script + List
-* Kill: siamfishing.com
-* Kill: aloneteam.net
-* Kill: video44.net
-* Kill: gamergen.com
-* Kill: writing.com
-* Kill: generatupremium.biz
-* Kill: jeuxactu.com
-* Kill: fansubresistance.biz
-* Kill: pronpic.org
-* Kill: hellsmedia.com
-* Kill: sportsplays.com
-* Kill: chrissmoove.com
-* Kill: pipocas.tv
-* Kill: tiervermittlung.de
-* Kill: mufa.de
-* Kill: vapingunderground.com
-* Kill: ytconv.net
-* Kill: privateinsta.com (Fix)
-* Kill: videobug.net (Fix)
-* Kill: play44.net (Fix)
-* Kill: videofun.me (Fix)
-* Kill: filecom.net (Fix)
-* Kill: cardinals.clubs.nfl.com (Fix)
-* Kill: breakmanga.com (Fix)
-* Kill: fitshr.net (Fix)
-* Kill: picload.org (Fix)
-* Kill: chine-informations.com (Fix)
-* Kill: btspread.com (Fix)
-* Kill: javzoo.com (Fix)
-* Kill: javpee.com (Fix)
-* Kill: eveskunk.com (Fix)
-* Kill: notre-planete.info (Fix)
-* Kill: myanimes.li (Fix)
-* Improve: detection of generic antiblocks
-* Improve: Aak.player (jw5,jw6,flow)
-* Remove: obsolete code
-
-
-##### Release 7.3 (June 29, 2014)
-> Script + List
-* Kill: anisubsia.com
-* Kill: eveskunk.com
-* Kill: btspread.com
-* Kill: aseanlegacy.net
-* Kill: leecher.us
-* Kill: debrid.us
-* Kill: wowhq.ws
-* Kill: anime4fun.com
-* Kill: xbox360pcemulator.com
-* Kill: gta5hack.com
-* Kill: kingleech.com
-* Kill: securefile.info
-* Kill: xpango.com-cheat.in
-* Kill: 4shared.downloadlagu.info
-* Kill: freeudidregistration.com
-* Kill: b-books.info
-* Kill: copsilver.com
-* Kill: freebo2.com
-* Kill: techietricks.net
-* Kill: vinaftw.co.uk
-* Kill: spotifygratuit.com
-* Kill: free-itunes-gift-cards.com
-* Kill: freeminecraftaccount.us
-* Kill: ffa-hosting.com
-* Kill: skincodesgiveaway.com
-* Kill: game-debate.com
-* Kill: uploaded-premium.ru
-* Kill: mypcgamesfreedownload.blogspot.com
-* Kill: nakedhelen.com
-* Kill: asiofree.com
-* Kill: mol.cheatsplanet.net
-* Kill: debrideurgratuit.org
-* Kill: thebesttrainers.net
-* Kill: pickcrackpasswords.blogspot.com
-* Kill: yourcodeis.com
-* Kill: timepasss.com
-* Kill: thehyphy.com
-* Kill: search-an-inmate.com
-* Kill: getterraria.info
-* Kill: fullsoftwaredownload.info
-* Kill: premium-spotify.com
-* Kill: ndsroms.altervista.org
-* Kill: itunesgiftcard.fbmaniaz.com
-* Kill: phone-track.net
-* Kill: filepixy.com
-* Kill: watchmovies.just4umedia.com
-* Kill: netflixaccount.org
-* Kill: javzoo.com
-* Kill: javpee.com
-* Kill: multifichier.com
-* Kill: yellowbridge.com (Fix)
-* Kill: abola.pt (video player) (Fix)
-* Kill: javpee.com (Fix)
-* Kill: javzoo.com (Fix)
-* Kill: notre-planete.info (Fix)
-* Fix: donate buttons
-* Add: Aak.autoReport
-* Add: various @grant
-* Improve: detection of generic antiblocks
-* Improve: prototype.contains
-* Improve: Aak.addElement
-
-
-##### Release 7.2 (May 20, 2014)
-> Script + List
-* Kill: javzoo.com
-* Kill: advertise.com
-* Kill: allsoftinone.com
-* Kill: annuaire-xavbox.com
-* Kill: b-books.info
-* Kill: consoledejeux.info
-* Kill: copsilver.com
-* Kill: free-itunes-gift-cards.com
-* Kill: freebo2.com
-* Kill: freeminecraftaccount.us
-* Kill: freewowmembership.com
-* Kill: fullmovieshd.org
-* Kill: fullsoftwaredownload.info
-* Kill: getterraria.info
-* Kill: mecozz.com
-* Kill: minecraftraffle.com
-* Kill: pose-de-puce.info
-* Kill: search-an-inmate.com 
-* Kill: thehyphy.com
-* Kill: timepasss.com
-* Kill: videos.sominaltvfilms.com
-* Kill: yooclick.com
-* Kill: yourcodeis.com 
-* Kill: Blogspot no country redirect (NCR)
-* Kill: nas-forum.com
-* Kill: duoliphotography.com
-* Kill: pickcrackpasswords.blogspot.com
-* Kill: tekkitdupes.blogspot.com
-* Kill: watch-latest-movies-online-daily.blogspot.com
-* Kill: filmovizija.net/
-* Kill: filmovizija.com (Fix)
-* Kill: thebesttrainers.net (Fix)
-* Kill: bee4.biz (Fix)
-* Kill: filesdld.com (Fix)
-* Kill: uptobox.com (Fix)
-* Kill: filesdld.com (Fix)
-* Kill: privateinsta.com (Fix)
-* Improve: Aak.getVersion (for unsupported script managers)
-* Improve: Aak.getScriptManager (news script managers)
-* Optimize: userscript code
-
-
-##### Release 7.1 (May 14, 2014)
-> Script + List
-* Kill: ftlwiki.com
-* Kill: eami.in
-* Kill: seguridadwireless.es
-* Kill: tout-gratuit.be
-* Kill: bg-gledai.tv
-* Kill: filecore.co.nz
-* Kill: fcore.eu
-* Kill: hqpdb.com
-* Kill: watcharab.com (Fix)
-* Add: Anti-Adblock Killer on Greasefork.org
-* Add: Anti-Adblock Killer on Openuserjs.org
-* Add: Anti-Adblock Killer on Github.com
-* Add: Aak.detectFilters
-* Fix: bugs on Tampermonkey (Opera)
-* Fix: bugs on NinjaKit (Safari)
-* Fix: bug GM_getMetadata on Scriptish (Firefox)
-* Fix: bug GM_registerMenuCommand on Scriptish (Firefox)
-* Replace: updateURL
-* Replace: downloadURL
-* Improve: Aak.checkAuto
-* Improve: Aak.update
-* Improve: Mutation Events + Mutation Observer
-* Optimize: userscript code
-
-
-##### Release 7.0 (Apr 16, 2014)
-> Script + List
-* Kill: tv.majorleaguegaming.com
-* Kill: imgleech.com
-* Kill: yellowbridge.com
-* Kill: oploverz.net
-* Kill: mydisc.net
-* Kill: tusfiles.net
-* Kill: filmovizija.com (Fix)
-* Kill: codeclan.altervista.org (Fix)
-* Kill: Better Stop Adblock (script) (Fix)
-* Fix: bug synch repository (Github)
-
+#### Release 7.0 (Apr 16, 2014)
+##### UserScript/FilterList
+* Rules
+  * Add/Fix
+    * tv.majorleaguegaming.com, imgleech.com, yellowbridge.com, oploverz.net, mydisc.net, tusfiles.net, filmovizija.com (Fix), codeclan.altervista.org (Fix), Better Stop Adblock (script) (Fix)
+    
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
 
 ##### Release 6.9 (Mar 22, 2014)
 > Script + List
