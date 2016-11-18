@@ -3037,6 +3037,7 @@ lfg.co,leasticoulddo.com#@#.act-ad-container
 @@||$xmlhttprequest,domain=last.fm
 @@||adsensecustomsearchads.com/adsense/$script,domain=last.fm
 @@||securepubads.g.doubleclick.net$script,domain=last.fm
+@@||dw.cbsimg.net$script,domain=last.fm
 ! liliputing.com
 ! https://github.com/reek/anti-adblock-killer/issues?q=liliputing.com
 @@||liliputing.com^$generichide
