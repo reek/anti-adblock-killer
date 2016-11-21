@@ -163,22 +163,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
-#### Release 10.1 (November x, 2016)
-##### UserScript
-* Core
-  * Add
-    * function: getArgsURL
-* Rules
-  * Add/Fix
-    * topserialy.sk, uploaded.net, mynavi-expert.pl, whosampled.com, forbes.com, insidertracking.com, canadianinsider.com, whattechsays.com, youwatch.org, exashare.com, anandabazar.com, fastrapidleech.com
-
-##### FilterList
-* Rules
-  * Add/Fix
-    * funradio.fr, lepoint.fr, smashingmagazine.com, biznesradar.pl, portalplock.pl, ki24.info, faktypilskie.pl, whosampled.com, standard.co.uk, insidertracking.com, canadianinsider.com, tvn24.pl, realkana.com, vvvvid.it, papergeek.fr, limitsizamca.org, mp3juices.cc, joyreactor.ru, cbssports.com, pokewatchers.com, ultim-telechargementz.com, lanacion.com.ar, mylifetime.com, ultraporn.biz, caradisiac.com, op.gg, pizap.com, slate.com, theargus.co.uk, auto-motor-und-sport.de, idnes.cz, anandabazar.com, anandabazar.com, thecomeback.com, bizarrepedia.com, citationmachine.net, cbsnews.com, history.com, thesimsresource.com, hosgeldi.com, thecountrycaller.com, adscendmedia.com, asmwall.com, thenextweb.com, rewards.gg, hulkpop.com, sport247.live, freshvideos.net, lemonde.fr, rajasthanpatrika.patrika.com, easybib.com, fastrapidleech.com, eliteanimes.com, litebitco.top, coinadd.xyz, washingtonpost.com
-
---- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    
-    
+ 
 #### Release 10.0 (November 17, 2016)
 ##### UserScript
 * Rules
