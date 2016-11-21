@@ -34,6 +34,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or Native (Not supported)
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) [Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/) or [Violentmonkey](https://addons.opera.com/extensions/details/violent-monkey/) 
 * ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) [Tampermonkey](https://safari.tampermonkey.net/tampermonkey.safariextz) or [NinjaKit](https://github.com/os0x/NinjaKit)
+* ![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/msedge.png) [Tampermonkey](https://www.microsoft.com/store/p/tampermonkey/9nblggh5162s)
 
 > ##### Note: After installation (which requires restarting your browser), you are now ready to install userscripts.
 
@@ -108,6 +109,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * ![Chrome](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/chrome.png) Chrome &#10004;
 * ![Opera](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/opera.png) Opera &#10004;
 * ![Safari](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/safari.png) Safari &#10004;
+* ![Edge](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/msedge.png) Microsoft Edge &#10004;
 
 
 ## Supported Adblockers
@@ -161,6 +163,22 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Changelog
+#### Release 10.1 (November x, 2016)
+##### UserScript
+* Core
+  * Add
+    * function: getArgsURL
+* Rules
+  * Add/Fix
+    * topserialy.sk, uploaded.net, mynavi-expert.pl, whosampled.com, forbes.com, insidertracking.com, canadianinsider.com, whattechsays.com, youwatch.org, exashare.com, anandabazar.com, fastrapidleech.com
+
+##### FilterList
+* Rules
+  * Add/Fix
+    * funradio.fr, lepoint.fr, smashingmagazine.com, biznesradar.pl, portalplock.pl, ki24.info, faktypilskie.pl, whosampled.com, standard.co.uk, insidertracking.com, canadianinsider.com, tvn24.pl, realkana.com, vvvvid.it, papergeek.fr, limitsizamca.org, mp3juices.cc, joyreactor.ru, cbssports.com, pokewatchers.com, ultim-telechargementz.com, lanacion.com.ar, mylifetime.com, ultraporn.biz, caradisiac.com, op.gg, pizap.com, slate.com, theargus.co.uk, auto-motor-und-sport.de, idnes.cz, anandabazar.com, anandabazar.com, thecomeback.com, bizarrepedia.com, citationmachine.net, cbsnews.com, history.com, thesimsresource.com, hosgeldi.com, thecountrycaller.com, adscendmedia.com, asmwall.com, thenextweb.com, rewards.gg, hulkpop.com, sport247.live, freshvideos.net, lemonde.fr, rajasthanpatrika.patrika.com, easybib.com, fastrapidleech.com, eliteanimes.com, litebitco.top, coinadd.xyz, washingtonpost.com
+
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+    
 #### Release 10.0 (November 17, 2016)
 ##### UserScript
 * Rules
