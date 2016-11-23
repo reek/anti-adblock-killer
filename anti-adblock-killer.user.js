@@ -16,6 +16,10 @@
 // @downloadURL https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js
 // @include http://*/*
 // @include https://*/*
+// @exclude http://localhost/*
+// @exclude http://localhost:*/*
+// @exclude https://localhost/*
+// @exclude https://localhost:*/*
 // @grant unsafeWindow
 // @grant GM_addStyle
 // @grant GM_getValue
