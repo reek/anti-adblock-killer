@@ -3185,6 +3185,7 @@ yafud.pl###adsense_banner_top
 ! wolfram-client.tk
 ! wolfram-client.tk
 @@||go.wolfram-client.tk^$generichide
+windowsxlive.net###modal
 ! ----- Hide/Block ------------------------------------------------------------------------------------------------------------------- !
 !
 ! ----- Annoying Elements ----- !
