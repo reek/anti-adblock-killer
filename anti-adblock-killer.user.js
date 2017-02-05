@@ -5032,6 +5032,15 @@
           ];
         }
       },
+      svetandroida_cz : {
+        host : ['svetandroida.cz'],
+        onEnd : function () {
+            if (anOptions) {
+                anOptions.anOptionStats = 2;
+            }
+            Aak.removeElement('#adsense.an-sponsored');
+          }
+      },
       /* solved by AakLIst
       tisoomi_indirekt : {
       // inline: http://pastebin.com/npmXTUHw
