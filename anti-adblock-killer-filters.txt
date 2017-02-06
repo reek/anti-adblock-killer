@@ -3848,6 +3848,7 @@ urlchecker.net###ads_notify
 urlchecker.org###adchecker
 urlchecker.org###adchecker_btn
 urlchecker.org###ads_notify
+@@||ratemyprofessors.com/*ads
 !
 ! ----- Internal Use ------------------------------------------------------------------------------------------------------------------- !
 !
