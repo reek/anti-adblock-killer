@@ -3849,6 +3849,7 @@ urlchecker.org###adchecker
 urlchecker.org###adchecker_btn
 urlchecker.org###ads_notify
 @@||ratemyprofessors.com/*ads
+||concernrain.com$script,domain=thewindowsclub.com
 !
 ! ----- Internal Use ------------------------------------------------------------------------------------------------------------------- !
 !
