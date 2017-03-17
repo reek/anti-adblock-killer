@@ -5016,7 +5016,7 @@
       },
       prevention_com : {
         host : ['prevention.com'],
-        onIdle : function () {
+        onAfterScript : function () {
           for (let item of document.body.getElementsByClassName("block")) {
             item.style.visibility = "hidden";
           }
