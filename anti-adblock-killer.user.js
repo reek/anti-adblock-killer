@@ -5014,6 +5014,18 @@
           ];
         }
       },
+      prevention_com : {
+        host : ['prevention.com'],
+        onIdle : function () {
+          for (let item of document.body.getElementsByClassName("block")) {
+            item.style.visibility = "hidden";
+          }
+
+          for (let item of document.querySelectorAll(".ad-blocker-custom-blur")) { 
+            item.className= "";
+          }
+        } 
+      },
       ad_defend_uab : {
         // note: when adblock detected inject new ads
         // userscript: https://openuserjs.org/scripts/schwarztee/AdDefend_Klatsche
