@@ -3848,7 +3848,10 @@ urlchecker.net###ads_notify
 urlchecker.org###adchecker
 urlchecker.org###adchecker_btn
 urlchecker.org###ads_notify
-!
+! imleagues.com
+! https://github.com/reek/anti-adblock-killer/issues?q=imleagues.com
+@@||www.imleagues.com/spa/ads/show_ads.js$xmlhttprequest,domain=www.imleagues.com
+imleagues.com#@#.AdSense!
 ! ----- Internal Use ------------------------------------------------------------------------------------------------------------------- !
 !
 ###k2Uw7isHrMm5JXP1Vwdxc567ZKc1aZ4I
