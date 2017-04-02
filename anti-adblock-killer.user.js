@@ -4822,6 +4822,15 @@
           Aak.fakeFuckAdBlock('sratNaVas', Aak.generateID());
         }
       },
+      fab_titulky_com : {
+        // note: fuckadblock with custom instance name
+        // source: https://pastebin.com/mrDAQSJn
+        // issue: https://github.com/reek/anti-adblock-killer/issues/2154
+        host : ['titulky.com'],
+        onStart : function () {
+          Aak.fakeFuckAdBlock('fADB', Aak.generateID());
+        }
+      },
       fab_customized : {
         // issue: https://github.com/reek/anti-adblock-killer/issues/1455
         // issue: https://github.com/reek/anti-adblock-killer/issues/1657
