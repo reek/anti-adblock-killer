@@ -1563,6 +1563,26 @@
           }
         }
       },
+      thefreedictionary_com : {
+        // Site: www.thefreedictionary.com
+        // shows back the site's word meaning when it tries to remove it.
+        host : ['thefreedictionary.com', 'tfd.com'],
+        onIdle : function () {
+          var contentDiv = document.getElementById('content'),
+              bodyDiv = document.getElementById('w1');
+
+          // Tamper the 'warn()' function not to create the top 'terror' banner
+          if (warn) {
+            warn = function() {
+              console.log("Tampermonkey/anti-adblock-killer(avengerx): Suppressed thefreedictionary snag banner!");
+            };
+          }
+
+          if (contentDiv && contentDiv.classList.length > 0) {
+            contentDiv.classList = {};
+          }
+        }
+      },
       openuserjs_org : {
         host : ['openuserjs.org'],
         onIdle : function () {
