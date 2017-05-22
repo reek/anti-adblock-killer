@@ -3240,6 +3240,7 @@ junksport.com##DIV[style="background-color: rgb(251, 236, 173); position: absolu
 ! ----- Shortners ----- !
 !
 ! linkbucks.com (Visit Script)
+||rule34hentai.net/visitScript/$script,third-party
 ||allanalpass.com/visitScript/$script,third-party
 ||amy.gs/visitScript/$script,third-party
 ||any.gs/visitScript/$script,third-party
@@ -3280,6 +3281,7 @@ junksport.com##DIV[style="background-color: rgb(251, 236, 173); position: absolu
 ||zatnawqy.net/visitScript/$script,third-party
 ||zff.co/visitScript/$script,third-party
 ! linkbucks.com (Full Page Script)
+||rule34hentai.net/Webservices/jsParseLinks.aspx$script,third-party
 ||allanalpass.com/Webservices/jsParseLinks.aspx$script,third-party
 ||amy.gs/Webservices/jsParseLinks.aspx$script,third-party
 ||any.gs/Webservices/jsParseLinks.aspx$script,third-party
@@ -3320,6 +3322,7 @@ junksport.com##DIV[style="background-color: rgb(251, 236, 173); position: absolu
 ||zatnawqy.net/Webservices/jsParseLinks.aspx$script,third-party
 ||zff.co/Webservices/jsParseLinks.aspx$script,third-party
 ! linkbucks.com (Load Target Url)
+@@||rule34hentai.net/intermission/loadTargetUrl$xmlhttprequest
 @@||allanalpass.com/intermission/loadTargetUrl$xmlhttprequest
 @@||amy.gs/intermission/loadTargetUrl$xmlhttprequest
 @@||any.gs/intermission/loadTargetUrl$xmlhttprequest
@@ -3360,7 +3363,7 @@ junksport.com##DIV[style="background-color: rgb(251, 236, 173); position: absolu
 @@||zatnawqy.net/intermission/loadTargetUrl$xmlhttprequest
 @@||zff.co/intermission/loadTargetUrl$xmlhttprequest
 ! linkbucks.com (Anti-Adblock)
-@@|http://*.net/*/$subdocument,third-party,domain=allanalpass.com|amy.gs|any.gs|cash4files.com|cash4links.co|deb.gs|drstickyfingers.com|dyo.gs|eafyfsuh.net|fapoff.com|filesonthe.net|freean.us|freegaysitepass.com|galleries.bz|goneviral.com|hornywood.tv|linkbabes.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|poontown.net|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|sexpalace.gs|theseblogs.com|theseforums.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|youfap.me|yyv.co|zatnawqy.net|zff.co
+@@|http://*.net/*/$subdocument,third-party,domain=rule34hentai.net|allanalpass.com|amy.gs|any.gs|cash4files.com|cash4links.co|deb.gs|drstickyfingers.com|dyo.gs|eafyfsuh.net|fapoff.com|filesonthe.net|freean.us|freegaysitepass.com|galleries.bz|goneviral.com|hornywood.tv|linkbabes.com|linkbucks.com|megaline.co|miniurls.co|picbucks.com|poontown.net|qqc.co|rqq.co|sasontnwc.net|seriousdeals.net|sexpalace.gs|theseblogs.com|theseforums.com|tinylinks.co|tnabucks.com|tubeviral.com|ultrafiles.net|urlbeat.net|whackyvidz.com|youfap.me|yyv.co|zatnawqy.net|zff.co
 ! adf.ly
 ||cdn.adf.ly/js/entry.js$script,third-party
 ||cdn.j.gs/js/entry.js$script,third-party
