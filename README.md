@@ -1,4 +1,4 @@
-##Anti-Adblock Killer | Reek
+## Anti-Adblock Killer | Reek
 ![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/header.png)
 
 [![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/github_circle_32.png)](https://github.com/reek/anti-adblock-killer#anti-adblock-killer--reek)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/twitter_circle_32.png)](https://twitter.com/antiadbkiller)[![](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/donate_circle_32.png)](https://github.com/reek/anti-adblock-killer#donate)
@@ -19,8 +19,8 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 **Benefits: Your queries will be given the highest priority, and you will be credited in the source code as a generous donor.**
 
-* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png) Paypal: [Donate](http://bit.ly/aakpaypal)
-* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/flattr.png) Flattr: [Donate](http://bit.ly/aakflattr)
+* ![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png) Paypal: [Donate](https://bit.ly/aakpaypal)
+* ![Flattr](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/flattr.png) Flattr: [Donate](https://bit.ly/aakflattr)
 * ![Bitcoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)  Bitcoin: 35w5N6YBWgr1Y1Qj9YoY3amo7zCbXLEJsA
 * ![Dogecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/dogecoin.png) Dogecoin: AF6TrxBAcnfv74zZmyP7jsHzRptmPzZBGr
 * ![Litecoin](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/litecoin.png)  Litecoin: 3EuoNXue1Fm6Jypiiuf6aXVFvJxhZ5Gqou
@@ -40,8 +40,8 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 #### Step 2: FilterList
 
-* [Subscribe](http://reek.github.io/anti-adblock-killer/#filterlist) *from github.com*
-* [Subscribe](http://reeksite.com/anti-adblock-killer/#filterlist) *from reeksite.com*
+* [Subscribe](https://reek.github.io/anti-adblock-killer/#filterlist) *from github.com*
+* [Subscribe](https://reeksite.com/anti-adblock-killer/#filterlist) *from reeksite.com*
 
 > ##### Note: uBlock Origin, you must enable AakList in Options -> 3rd-party-filters and [Apply changes].
 
@@ -49,9 +49,9 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * [Install](https://greasyfork.org/scripts/735-anti-adblock-killer-reek/code/Anti-Adblock%20Killer%20%7C%20Reek.user.js) *from greasyfork.org*
 * [Install](https://openuserjs.org/install/reek/Anti-Adblock_Killer_Reek.user.js) *from openuserjs.org*
 * [Install](https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer.user.js) *from github.com*
-* [Install](http://reeksite.com/anti-adblock-killer/anti-adblock-killer.user.js) *from reeksite.com*
+* [Install](https://reeksite.com/anti-adblock-killer/anti-adblock-killer.user.js) *from reeksite.com*
 
-> ##### Note: [Test](http://tinyurl.com/qecfa7w)
+> ##### Note: [Test](https://tinyurl.com/qecfa7w)
 
 #### Step 4: Support Author
 * [Donate It](https://github.com/reek/anti-adblock-killer#donate)
@@ -67,7 +67,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Check if Anti-Adblock Killer list is installed
 * Check & Notify updates
 * More filters for Adblockers
-* [Settings](http://reek.github.io/anti-adblock-killer/#settings)
+* [Settings](https://reek.github.io/anti-adblock-killer/#settings)
 * [Suggest features](https://github.com/reek/anti-adblock-killer/issues)
 
 
@@ -86,7 +86,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * Try update or re-subscribe Anti-Adblock Killer List.
 * Check if you have another userscript that might interfere with Anti-Adblock Killer.
 * Check if one of these extensions is problematic (Disable Anti-Adblock, Ghostery, Online Security Avast, Donotrackme, Privacy Badger, Disconnect, Blur, TrackerBlock, Kaspersky Anti-Banner, Freebox (Anti-pub), No Script, YesScript, HTTPS Everywhere).
-* Check if, your JavaScript is enabled [Test](http://activatejavascript.org/).
+* Check if, your JavaScript is enabled [Test](http://activatejavascript.org).
 * Remove duplicates Anti-Adblock Killer (Script/List).
 * Remove or disable personal filters.
 * Enable only the filter lists you need, too many can make your browser unresponsive.
@@ -97,10 +97,10 @@ Composed of a user script «AakScript» written in javascript and a filter list 
   * If it exists, but the script does not work, it probably means that the antiadblocker has changed, please report it [here](https://github.com/reek/anti-adblock-killer/wiki/Report-Guide)
 * Try with another Browser.
 * Try with another Script Manager.
-* How to disable the update check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
-* How to disable the list check [Settings](http://reek.github.io/anti-adblock-killer/#settings)
+* How to disable the update check [Settings](https://reek.github.io/anti-adblock-killer/#settings)
+* How to disable the list check [Settings](https://reek.github.io/anti-adblock-killer/#settings)
 * How write Adblock filters [here](https://adblockplus.org/en/filters)
-* Where can report an advertisement [here](https://forums.lanik.us/)
+* Where can report an advertisement [here](https://forums.lanik.us)
 * Consult Discussions or Issues
 
 
@@ -672,7 +672,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * [Github](https://github.com/reek/anti-adblock-killer)
 * [Greasyfork](https://greasyfork.org/scripts/735-anti-adblock-killer-reek)
 * [Openuserjs](https://openuserjs.org/scripts/reek/Anti-Adblock_Killer_Reek)
-* [Reeksite](https://reeksite.com/anti-adblock-killer/)
+* [Reeksite](https://reeksite.com/anti-adblock-killer)
 * [Userscripts](http://userscripts.org:8080/scripts/show/155840) (no longer available)
 * [MonkeyGuts](https://monkeyguts.com/code.php?id=351) (no longer available)
 
