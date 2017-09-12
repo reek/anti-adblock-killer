@@ -2797,7 +2797,7 @@
       themarker_haaretz : {
         // issue: https://github.com/reek/anti-adblock-killer/issues/1292
         // source: http://pastebin.com/m08dkDT4
-        host : ['themarker.com', 'haaretz.co.il'],
+        host : ['themarker.com', 'haaretz.co.il', 'haaretz.com'],
         onStart : function () {
           Object.defineProperty(Aak.uw, 'AdBlockUtil', {
             enumerable : true,
