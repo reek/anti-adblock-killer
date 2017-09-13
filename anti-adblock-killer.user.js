@@ -5090,6 +5090,7 @@
           // issue: https://github.com/reek/anti-adblock-killer/issues/824
           Aak.fakeFuckAdBlock('fuckAdBlock', 'FuckAdBlock');
           Aak.fakeFuckAdBlock('blockAdBlock', 'BlockAdBlock');
+          Aak.fakeFuckAdBlock('abb', 'ABB');
 
           // canRunAds
           // repo: https://github.com/MatthewGross/CanRunAds
