@@ -76,7 +76,7 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 
 
 ## Help
-* Check if you have only one Adblocker enabled. (Adblock, Adblock Plus or uBlock Origin)
+* Check if you have only one Adblocker enabled. (Adblock, Adblock Plus, uBlock Origin or Adguard AdBlocker)
 * Check if the script manager is enabled (Greasemonkey, Tampermonkey, NinjaKit, etc...).
 * Check if you have installed the latest version of Anti-Adblock Killer Script (Step 3).
 * Check if you have subscribed to Anti-Adblock Killer List (Step 2).
