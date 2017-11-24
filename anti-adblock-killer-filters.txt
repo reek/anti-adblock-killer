@@ -3861,3 +3861,9 @@ urlchecker.org###ads_notify
 gaara-fr.com###ga-skin-top
 ||www.avatar-realms.net/web_content/imgs/adblock.png$image
 www.avatar-realms.net###gf59
+liens-telechargement.com##script:inject(abort-current-inline-script.js, jQuery, desactiver)
+liens-telechargement.com##script:inject(abort-on-property-write.js, Fingerprint2)
+liens-telechargement.com##script:inject(setTimeout-defuser.js, getElementBy)
+liens-telechargement.com##script:inject(window.open-defuser.js)
+liens-telechargement.com##.trtbl
+liens-telechargement.com##a[href^="https://www.dl-protecte.com/"]
