@@ -228,6 +228,8 @@ gq.com#@#.text-ad-links
 !
 ! ----- Specific ----- !
 !
+! https://github.com/reek/anti-adblock-killer/issues/3539
+haaretz.com##script:inject(abort-current-inline-script.js, AdBlockUtil)
 ! canRunAds
 ! https://github.com/MatthewGross/CanRunAds
 ! var canRunAds = true;
