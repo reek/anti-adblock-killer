@@ -3848,6 +3848,9 @@ urlchecker.net###ads_notify
 urlchecker.org###adchecker
 urlchecker.org###adchecker_btn
 urlchecker.org###ads_notify
+! 4/14/2019 https://www.thelostogle.com
+www.thelostogle.com##div[id^="WQHlSqbsILAb"]
+www.thelostogle.com##.XOZneEsOQEZQ-bg
 !
 ! ----- Internal Use ------------------------------------------------------------------------------------------------------------------- !
 !
