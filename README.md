@@ -1,3 +1,5 @@
+# *This project has been abandoned & discontinued by @reek since November 2016, please uninstall the userscript/filterlist and everything associated with this project and DO NOT POST ON THE ISSUE TRACKER EITHER.*
+
 ##Anti-Adblock Killer | Reek
 ![Anti-Adblock Killer](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/header.png)
 
