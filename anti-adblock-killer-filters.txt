@@ -3863,3 +3863,5 @@ gaara-fr.com###ga-skin-top
 www.zone-annuaire.com##p
 www.zone-annuaire.com##center > span
 www.zone-annuaire.com##.toppad.wrapper > center
+! 04/03/2020 https://zt-protect.com
+zt-protect.com##b > span
