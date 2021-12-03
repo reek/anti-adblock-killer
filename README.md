@@ -752,3 +752,5 @@ Composed of a user script «AakScript» written in javascript and a filter list 
 * 안티 애드 블록 보호를 제거
 * 抗AdBlockを保護を解除
 * تعطيل مضادات آدبلوك
+#
+[![](backToTop.png?raw=true "Back to top")](#readme)
