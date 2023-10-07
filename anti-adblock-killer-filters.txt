@@ -2988,8 +2988,6 @@ reuters.com##.RTVSyndicatedPlayer
 ! flashx.tv
 ! https://github.com/reek/anti-adblock-killer/issues?q=flashx.tv
 @@||flashx.tv/js/-fleshlight2.js$script
-! record.xl.pt
-@@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html$subdocument,document=record.xl.pt
 ! ojogo.pt
 @@||ojogo.pt/common/scripts/ads.js$script
 ojogo.pt###AdBloquer
