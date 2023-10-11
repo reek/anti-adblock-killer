@@ -2936,6 +2936,16 @@
           ];
         }
       },
+      dr_farfar : {
+        host : ['dr-farfar'],
+        onStart : function () {
+          Object.defineProperty(Aak.uw, 'mdp_deblocker', {
+            enumerable : true,
+            writable : false,
+            value : ''
+          });
+        }
+      },
       dbplanet_net : {
         // issue: PM
         host : ['dbplanet.net'],
