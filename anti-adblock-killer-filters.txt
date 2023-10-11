@@ -17,6 +17,10 @@
 !
 ! ----- Generic ----- !
 !
+! Admiral
+! https://getadmiral.com
+! Triggers shortly after the page finishes loading and the user begins interacting with the page (mouse movement)
+unknowntray.com/*
 ! TryMask.com
 ! https://trymask.com/ (home)
 ! http://www.getgrubbing.com/ (demo)
