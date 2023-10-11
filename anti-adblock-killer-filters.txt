@@ -3537,8 +3537,8 @@ tous-sports.tv##IMG[src="http://www.tous-sports.tv/images/blanccloses.png"]
 ! hdcastream.com
 hdcastream.com###closeFrame_banner
 hdcastream.com###closeFrame1
-! btvsports.com
-btvsports.com###ai_tapar
+! btvsports.club
+btvsports.club###ai_tapar
 ! serverhd.eu
 serverhd.eu##[id^="closeFrame"]
 serverhd.eu###countDown
