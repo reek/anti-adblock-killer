@@ -3859,3 +3859,9 @@ urlchecker.org###ads_notify
 @@||vjs.zencdn.net/4.12/video.js$script
 @@||jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js$script
 gaara-fr.com###ga-skin-top
+! 04/03/2020 https://www.zone-annuaire.com
+www.zone-annuaire.com##p
+www.zone-annuaire.com##center > span
+www.zone-annuaire.com##.toppad.wrapper > center
+! 04/03/2020 https://zt-protect.com
+zt-protect.com##b > span
